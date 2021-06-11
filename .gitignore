@@ -1,0 +1,33 @@
+# All built stuff
+out/*
+
+# Log file
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Assignments
+assignments/
+asn*
+
+# IntelliJ/PyCharm stuff
+.idea
+*.iml
+
+# Build script
+build.sh
+
+
+# venv
+env/
+env
+venv/
+venv
+
