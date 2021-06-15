@@ -145,9 +145,11 @@ Ok. Now for something harder... Number of kms over the daily average allowance. 
         :param num_kms: Number of kms the renter drove in total
         :return: The number of kms over 100 they went (return 0 if it's less than 100)
         '''
+        # Calculate the number of kms traveled per day.
+        kms_per_day = average_kms_per_day(num_days, num_kms)
         # If the average kms traveled is above 100, return how much above we are
-        if average_kms_per_day(num_days, num_kms) > 100:
-            return average_kms_per_day(num_days, num_kms) - 100
+        if kms_per_day  > 100:
+            return kms_per_day - 100
         # otherwise, return 0
         else:
             return 0
@@ -166,24 +168,28 @@ Now for the tough one... calculate the total cost. What do we know?
    
     def calculate_total_charge(num_days, age, code, odometer_start, odometer_finish):
         '''
-        I'm too lazy to write a good function description.
+        Calculate how much the renter needs to be charged based on the classification,
+        the number of kms travelled and the age of the driver.
 
-        :param num_days: thing 1
-        :param age: thing 2
-        :param code: thing 3
-        :param odometer_start: thing 4
-        :param odometer_finish: thing 5
-        :return: what we actually want
+        :param num_days: Number of days the car was rented.
+        :param age: Age of the driver.
+        :param code: The classification code (B ord D).
+        :param odometer_start: Odometer when the renter took the car.
+        :param odometer_finish: Odomoter when the renter returned the car.
+        :return: The amount to charge the renter.
         '''
 
         # Setup a variable for our total charge
         total_charge = 0
+        # Calculate the number of kilometres traveled.
+        total_kms_traveled = total_kms(odometer_start, odometer_finish)
+
         # If B, $20/day + km charge of 0.30/km
         if code == 'B':
-            total_charge = 20.00 * num_days + 0.30 * total_kms(odometer_start, odometer_finish)
+            total_charge = 20.00 * num_days + 0.30 * total_kms_traveled
         # If D, $50 base charge, + 0.30/km OVER 100km
         else:
-            total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(num_days, total_kms(odometer_start, odometer_finish))
+            total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(num_days, total_kms_traveled)
 
         # if they're young, screw-em with an additional $10/day charge.
         if age < 25:
@@ -210,6 +216,7 @@ Now just do the IO part, which is easy.
     print('The total charge is: ' + str(total_charge))
 
 
+Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGziwmxh9-PjaqsP91tRRkk?usp=sharing>`_.
 
 .. admonition:: Activity
 
