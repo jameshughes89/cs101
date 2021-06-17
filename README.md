@@ -21,3 +21,6 @@ pip install -r requirements.txt
 ```sh
 sphinx-build -b html "$SOURCEDIR" "$OUTPUTDIR"
 ```
+
+# Contribute
+Check out the [CONTRIBUTING](CONTRIBUTING.md) guidelines.

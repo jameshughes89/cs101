@@ -1,4 +1,4 @@
-:new: :bomb: :mortar_board: :memo: :robot: :lipstick: :bug: :telescope: :art: Add relevant emojis to title. [See style guide.](https://github.com/jameshughes89/cs102/blob/main/CONTRIBUTING.md#style-guidelines).
+:new: :bomb: :mortar_board: :memo: :robot: :lipstick: :bug: :telescope: :art: Add relevant emojis to title. [See style guide.](https://github.com/jameshughes89/cs101/blob/main/CONTRIBUTING.md#style-guidelines).
 
 
 ### Related Issues or PRs

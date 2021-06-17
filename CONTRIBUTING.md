@@ -1,10 +1,10 @@
-# Contributing to cs102
+# Contributing to cs101
 
-## This is a First Year Course
+## This assumes no computer science background
 
 Keep content contributions at an appropriate level for students.
 
-At this stage they should be familiar with:
+The main learning objectives of this course are:
 * Variables
 * Types
 * I/O
@@ -18,9 +18,7 @@ At this stage they should be familiar with:
 * A little complexity analysis
 * Very little recursion
 
-The core learning objectives and topics for this course are:
-* Abstraction
-* Objects 
+Topics out of scope include:
 * Linked Structures  
 * Linear Data Structures
     * Stacks
@@ -35,14 +33,8 @@ The core learning objectives and topics for this course are:
 * Recursion
 * Searching and Sorting Algorithms
 
-Topics at a similar level that are considered out of scope may be:
-* General Inserts/Removals from a Tree
-* Self-Balancing Trees  
-* Graphs
-* Graph Algorithms
-* Hashing/Maps
 
-Although no programming language is a learning objective, Java-*isms* are presented where necessary. Additional Java design ideas are welcome, but keep them simple enough to be accessible for the level of student. 
+Although no programming language is a learning objective, Python-*isms* are presented where necessary. Additional Python design ideas are welcome, but keep them simple enough to be accessible for the level of student. 
 
 
 ## Content Categories
