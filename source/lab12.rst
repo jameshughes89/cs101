@@ -56,7 +56,7 @@ What is ``f(x)``?
 Part 2
 ^^^^^^
 
-Go work through the course content for :doc:`Class 18 </class18>` and :doc:`Class 19 </class19>`.
+Go work through the course content for :doc:`Topic 18 </topic18>` and :doc:`Topic 19 </topic19>`.
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
 

@@ -113,29 +113,29 @@ Course Notes
 .. toctree::
     :maxdepth: 1
    
-    class1
-    class2
-    class3
-    class4
-    class5
-    class5b
-    class6
-    class7
-    class8
-    class8b
-    class9
-    class10
-    class11
-    class11b
-    class12
-    class13
-    class13b
-    class14
-    class15
-    class16  
-    class17
-    class18
-    class19
+    topic1
+    topic2
+    topic3
+    topic4
+    topic5
+    topic5b
+    topic6
+    topic7
+    topic8
+    topic8b
+    topic9
+    topic10
+    topic11
+    topic11b
+    topic12
+    topic13
+    topic13b
+    topic14
+    topic15
+    topic16  
+    topic17
+    topic18
+    topic19
    
 Labs
 ^^^^
