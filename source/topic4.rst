@@ -1,4 +1,4 @@
-Class #4 -- Logic, if/else 
+Topic #4 -- Logic, if/else 
 =================
 
 Conditionals

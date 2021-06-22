@@ -1,4 +1,4 @@
-Class #12 -- File IO and Exceptions
+Topic #12 -- File IO and Exceptions
 ===================================
 
 Getting data into Python

@@ -1,4 +1,4 @@
-Class #8 -- Lists & Pointers
+Topic #8 -- Lists & Pointers
 ============================
 
 Lists

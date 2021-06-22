@@ -1,4 +1,4 @@
-Class #8b -- List & Pointer Trivia
+Topic #8b -- List & Pointer Trivia
 ==================================
 
 

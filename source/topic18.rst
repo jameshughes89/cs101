@@ -1,4 +1,4 @@
-Class #18 -- Data Visualization
+Topic #18 -- Data Visualization
 ===============================
 
 Plotting with Python

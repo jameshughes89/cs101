@@ -1,4 +1,4 @@
-Class #13b -- More About Objects
+Topic #13b -- More About Objects
 ====================
 
 More complexity

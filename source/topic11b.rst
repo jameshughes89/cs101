@@ -1,4 +1,4 @@
-Class #11b -- The Debugger
+Topic #11b -- The Debugger
 ==========================
 
 Now it's time...

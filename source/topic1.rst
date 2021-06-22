@@ -1,4 +1,4 @@
-Class #1 -- Intro, print
+Topic #1 -- Intro, print
 ========================
 
 What will I learn?

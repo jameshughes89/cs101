@@ -1,4 +1,4 @@
-Class #13 -- Objects
+Topic #13 -- Objects
 ====================
 
 * Like it or not, you've already been using objects for a while now

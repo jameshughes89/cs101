@@ -1,4 +1,4 @@
-Class #14 -- Searching
+Topic #14 -- Searching
 ======================
 
 .. image:: ../img/you_are_here.jpeg

@@ -4,7 +4,7 @@ Lab #10
 Before Kattis
 ^^^^^^^^^^^^^
 
-This lab relates to topics discussed in :doc:`class 13 </class13>` and :doc:`class 13b </class13b>`.
+This lab relates to topics discussed in :doc:`class 13 </topic13>` and :doc:`class 13b </topic13b>`.
 
 Let's make a small program with classes. We'll make a program that will store a contact list of people. 
 
@@ -83,7 +83,7 @@ That's all I think we'll need for now.
         1 Smith, Greg:	gsmith@xfts.ca
 
 
-If you are stuck on any of this, :doc:`you should have a look here </class13b>`.		
+If you are stuck on any of this, :doc:`you should have a look here </topic13b>`.		
 		
 Using Them Together
 ^^^^^^^^^^^^^^^^^^^

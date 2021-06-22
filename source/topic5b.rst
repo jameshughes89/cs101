@@ -1,4 +1,4 @@
-Class #5b -- Putting Things Together
+Topic #5b -- Putting Things Together
 ====================================
 
 What have we seen so far?
