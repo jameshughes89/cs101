@@ -1,4 +1,4 @@
-Class #10 -- Tuples, Dictionaries, and Sets
+Topic #10 -- Tuples, Dictionaries, and Sets
 ===========================================
 
 * So far we have seen *lists* and *numpy arrays*. 

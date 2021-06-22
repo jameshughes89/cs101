@@ -1,4 +1,4 @@
-Class #15 -- Some Sorting
+Topic #15 -- Some Sorting
 =========================
 
 .. Warning::

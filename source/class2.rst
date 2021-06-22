@@ -1,4 +1,4 @@
-Class #2 -- Values, Types, Variables, Print, Input
+Topic #2 -- Values, Types, Variables, Print, Input
 ==================================================
 
 Welcome back

@@ -1,4 +1,4 @@
-Class #6 -- Loops
+Topic #6 -- Loops
 =================
 
 Reusing variables

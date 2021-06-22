@@ -1,4 +1,4 @@
-Class #11 -- Debugging
+Topic #11 -- Debugging
 ===================================
 
 It's broke, I give up!

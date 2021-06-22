@@ -1,4 +1,4 @@
-Class #7 -- Strings & Objects
+Topic #7 -- Strings & Objects
 =============================
 
 The thing about strings

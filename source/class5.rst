@@ -1,4 +1,4 @@
-Class #5 -- Logic, Booleans, More Functions
+Topic #5 -- Logic, Booleans, More Functions
 ===========================================
 
 The Boolean type

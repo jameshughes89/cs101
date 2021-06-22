@@ -1,4 +1,4 @@
-Class #19 -- Machine Learning (Actually)
+Topic #19 -- Machine Learning (Actually)
 ========================================
 
 How did...

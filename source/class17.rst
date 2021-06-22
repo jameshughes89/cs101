@@ -1,4 +1,4 @@
-Class #17 -- Recursion and More Sorting
+Topic #17 -- Recursion and More Sorting
 =======================================
 
 .. image:: ../img/hands.jpg

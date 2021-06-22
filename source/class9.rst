@@ -1,4 +1,4 @@
-Class #9 -- More Lists and Numpy Arrays
+Topic #9 -- More Lists and Numpy Arrays
 =======================================
 
 .. image:: ../img/hypercube3.png

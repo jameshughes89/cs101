@@ -1,4 +1,4 @@
-Class #16 -- Models of Computation
+Topic #16 -- Models of Computation
 ==================================
 
 
