@@ -1,6 +1,5 @@
 Topic #3 -- Functions
 =====================
-=================
 
 .. image:: ../img/Eniac.jpeg
 
