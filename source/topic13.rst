@@ -27,7 +27,7 @@ Topic #13 -- Objects
 
 	  
 Objects and Abstract Data Structures (ADT)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------
 
 * You get to make this up now; what kinds of data do you want?
     * Do you want *car* data structures?
@@ -91,7 +91,7 @@ Objects and Abstract Data Structures (ADT)
 * Just like the rest of this class, we will learn by doing, so let's start doing. 
 
 Let's Make a Simple Object/ADT
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------
 
 .. image:: ../img/enthusiasm.jpg
     :height: 250px
@@ -280,7 +280,7 @@ Let's Make a Simple Object/ADT
     3. What happens to the attributes of the object after calling ``show_off``?
 
 __repr__
-^^^^^^^^
+--------
 
 There are a lot of other special functions for classes that you don't *need*, but are super handy. Here are 2 cool ones. 
 
@@ -304,7 +304,7 @@ There are a lot of other special functions for classes that you don't *need*, bu
     4. Run this ``a = str(a_student)``, and then check out the ``type`` of ``a``. 
 
 __eq__
-^^^^^^
+------
 
 What does it mean for 2 ``EnthusiasticStudent`` objects to be *equal*?
 
@@ -338,6 +338,6 @@ The above code may also make it somewhat obvious why the ``self`` reference is i
 
 			
 For next class (is anyone actually reading these? You really should!)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------------------------
 
 * Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_  

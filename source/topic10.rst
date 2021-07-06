@@ -6,7 +6,7 @@ Topic #10 -- Tuples, Dictionaries, and Sets
 * Let's have a look at a few more. 
 
 Tuples
-^^^^^^^
+------
 * A tuple looks a lot like a list, but with ``()`` instead of ``[]``:
 
     >>> tup = (5,3)
@@ -57,7 +57,7 @@ Tuples
         * When I say origin, I mean like (0,0) on a `Cartesian plane <https://en.wikipedia.org/wiki/Cartesian_coordinate_system>`_
 
 Dictionaries
-^^^^^^^^^^^^^
+------------
 * Python Dictionaries are a more complex data structure than what we've seen so far.
 * But... they are *very very very very very very very very useful*.
 * Imagine a list which you can index with *strings* instead of *numbers*.
@@ -172,7 +172,7 @@ Dictionaries
     return [0, 1].
 
 Sets
-^^^^
+----
 
 * A set is kinda' like a list, but it only holds *unique* things.
 * Also, sets typically do not have any ordering to them.
@@ -314,7 +314,7 @@ Sets
  
  
 The Bad News...
-^^^^^^^^^^^^^^^
+---------------
 
 * The above data structures are pretty awesome
 * Unfortunately... they're not *free*
@@ -326,7 +326,7 @@ The Bad News...
 
 
 The Good News...
-^^^^^^^^^^^^^^^^
+----------------
 
 * This does not really matter for us right now. 
 * As of now, we don't really need to know all this to get the computer to do fun things. 
@@ -334,10 +334,10 @@ The Good News...
 * Buuuuutttttttttttt... at the same time, if I was a race car driver, maybe knowing how things work under the hood could help me tweak and tune the car for the best performance. 
 
 The Good/Bad News...
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 * The under the hood stuff here is outside the scope of this course. 
-* If you're thinking **Thank F@^%!#& GAWD**, lucky you
+* If you're thinking **Thank F@-%!#& GAWD**, lucky you
 * If you're thinking *awhhhhhhhhhhhhhhhh, I wanna' know*, sorry
 
 * Either way, we will look at *some* of these data structures in CSCI 162!
@@ -349,7 +349,7 @@ The Good/Bad News...
  
    
 For next class
-^^^^^^^^^^^^^^
+--------------
 * `Get PyCharm installed! <https://www.jetbrains.com/pycharm/download>`_
 
 * Read `appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_   

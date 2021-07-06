@@ -1,8 +1,8 @@
 Lab #8
-========
+======
 
 Before Kattis
-^^^^^^^^^^^^^
+-------------
 
 .. Warning::
    Before you do ANYTHING, take out a scrap piece of paper. If I do not see your paper at the end of the lab, you will get **0** on this lab. 
@@ -65,7 +65,7 @@ Think about how much work your algorithm for **3** had to do in terms of *n*, wh
  
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+---------------
 
 These are the same problems from last week. They're good problems. Keep going. Start where you left off. 
 
@@ -87,7 +87,7 @@ Grab a scrap piece of paper to start scratching your ideas down on paper. The pr
 
 
 LeetCode Problems
-^^^^^^^^^^^^^^^^^
+-----------------
 
 If you have somehow finished everything so far, go check out `LeetCode <https://leetcode.com/problemset/all/>`_. Sort the problems by *Acceptance* (click the table header) and start seeing if you can solve some of these problems. 
 

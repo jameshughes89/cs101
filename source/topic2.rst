@@ -2,7 +2,7 @@ Topic #2 -- Values, Types, Variables, Print, Input
 ==================================================
 
 Welcome back
-^^^^^^^^^^^^
+------------
 
 Let's get started right away...
 
@@ -26,7 +26,7 @@ Let's get started right away...
 	  
 	     
 What's a program?
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------
 * The stuff in the computers
 * A thing that does stuff
 * A recipe
@@ -42,7 +42,7 @@ What's a program?
 
 
 What's debugging?
-^^^^^^^^^^^^^^^^^^^
+-----------------
 * Mystery novel
 * A logic puzzle
 * How you fix your mistakes
@@ -58,7 +58,7 @@ What's debugging?
    
    
 Languages
-^^^^^^^^^^
+---------
 * What's the difference between a formal, and a natural, language?
 * Why is ambiguity so important to natural language?
 * Why is ambiguity deadly for a formal language?
@@ -78,7 +78,7 @@ Languages
    
 
 Terminology
-^^^^^^^^^^^
+-----------
 * Hardware/Software
 * IO 
 * Processors
@@ -90,7 +90,7 @@ Terminology
    
    
 Okay, we're done with the background, let's get on with the real stuff
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------------------------------
 
 .. admonition:: Activity
 
@@ -98,14 +98,14 @@ Okay, we're done with the background, let's get on with the real stuff
    
 
 print
-^^^^^   
+-----   
 * Print is a *function* that allows us to print out information to the screen
 * Print might end up being your best friend
 * Get used to writing it
    
    
 Values 
-^^^^^^
+------
 
 * Values are things that a program manipulates
     * *Strings*: "abcdef"
@@ -155,7 +155,7 @@ Values
 
    
 Variables
-^^^^^^^^^^^^
+---------
 * Probably the most important feature of a procedural programming language.
 * If you're going to pay attention only once this term... now's the time.
 * **Variables let you store values in a labeled (named) location**
@@ -177,7 +177,7 @@ Variables
         * If I say ``print(a)``, where ``a`` was assigned to ``5``, python will print out the variable a which has the value ``5``
 
 What can you do with variables?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 * Anything you can do with values
 * For example, we can add variables:
     >>> a = 5
@@ -202,7 +202,7 @@ What can you do with variables?
    
 
 Choosing variable names
-^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
 * You can use whatever you want, within a few restrictions set by the language.
     * Python wants variable names that begin with a letter of the alphabet and limits what non-alphanumeric characters you can use
 * A good choice is a variable name that is descriptive of what the variable is meant to contain. 
@@ -219,7 +219,7 @@ Choosing variable names
 * What happened? (To your code, not the band!)   
 
 Constants
-^^^^^^^^^
+---------
 
 * They're just variables, but WE, as the programmers use them a special way
 * Imagine you are writing a program where you're doing a lot of calculations with sales tax
@@ -249,7 +249,7 @@ Constants
 	
    
 input
-^^^^^
+-----
 
 * So we saw how to out print **out** the contents of a variable
 * Is there a way to read **in** a value and put it into a variable?
@@ -295,7 +295,7 @@ So it will only work if it's a valid thing to ask
 
 
 Statements
-^^^^^^^^^^^
+----------
 * A **statement** is an order to Python: "*do something*"
 * An *instruction* that can be *executed* by Python
 * You type in the statement into the interpreter, press Enter, and Python does what you asked (or at least tries to)
@@ -304,7 +304,7 @@ Statements
 * We've already been using assignment statements (``=``), prints, inputs, and there are A LOT more
 
 Expressions
-^^^^^^^^^^^^^
+-----------
 * An **expression** is, roughly, a thing that can be crunched down to a **value**.
 * More precisely, an expression is a combination of:
    * literal values (e.g., ``5``)
@@ -316,7 +316,7 @@ Expressions
    
    
 Operators
-^^^^^^^^^^
+---------
 * **Operators** are symbols that tell Python to perform computations on expressions.
    * e.g., +, -, \*, / 
 
@@ -344,7 +344,7 @@ Operators
    
    
 Are operators just for numbers?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 * Nope! Values of all sorts have operators that work on 'em.
 
 .. admonition:: Activity
@@ -355,7 +355,7 @@ Are operators just for numbers?
 
    
 Doing sequences of things
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 * So far we've just been entering one line at a time into the Python.
 * That's not going to scale very well for most of the stuff we want to do...
@@ -385,7 +385,7 @@ Doing sequences of things
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/u-d3chSpFO4" frameborder="0" allowfullscreen></iframe><br><br>
    
 For next class
-^^^^^^^^^^^^^^^
+--------------
 
 * Read the rest of `chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
 * Read `chapter 4 of the text <http://openbookproject.net/thinkcs/python/english3e/functions.html>`_   

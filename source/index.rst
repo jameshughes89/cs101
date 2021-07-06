@@ -15,7 +15,7 @@ An introduction to computers, algorithms, and programming. No previous knowledge
 This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include problem analysis, algorithm development, data representation, control structures, lists, functions, and file manipulation.
 
 Professors
-^^^^^^^^^^
+----------
 
 * Dr. James Hughes
 * jhughes at stfx.ca
@@ -23,7 +23,7 @@ Professors
 * **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE** `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_ **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE**
 
 Class Times
-^^^^^^^^^^^
+-----------
 **Lecture Section 11**
 
 * Tue 11:15 - 12:05 (K4), MULH 2070
@@ -35,7 +35,7 @@ Class Times
 * Asynchronous - On your own time
 
 YouTube
-^^^^^^^
+-------
 
 `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
 
@@ -46,7 +46,7 @@ YouTube
 
 
 Labs
-^^^^
+----
 **Lab Section 11 & 12**
 
 * Sec 1: Thr 14:15 -- 16:05 (L8-A9), SCHW 256
@@ -57,7 +57,7 @@ Labs
 * Asynchronous - On your own time, with deadlines
 
 Office Hours
-^^^^^^^^^^^^
+------------
 
 `Office Hours Etiquette --- Don't Do This <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 
@@ -84,11 +84,11 @@ Office Hours
     
 
 .. Learning Centre
-.. ^^^^^^^^^^^^^^^
+.. ---------------
 .. * https://www2.mystfx.ca/mscs/learning-centre
 
 MSCS Tutorial Nights
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 The Math, Stats, and CS Society now has a time and location for our free tutorial sessions. 
 
 * Mon 18:00 -- 20:00, SCHW 205
@@ -96,12 +96,12 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
 
 
 Cool Things
-^^^^^^^^^^^^
+-----------
 * `kattis <https://open.kattis.com/>`_
 * `LeetCode <https://leetcode.com/problemset/all/>`_
 
 Getting Started
-^^^^^^^^^^^^^^^
+---------------
 .. toctree::
     :maxdepth: 1
    
@@ -109,7 +109,7 @@ Getting Started
   
 
 Course Notes
-^^^^^^^^^^^^
+------------
 .. toctree::
     :maxdepth: 1
    
@@ -138,7 +138,7 @@ Course Notes
     topic19
    
 Labs
-^^^^
+----
 .. toctree::
     :maxdepth: 1
    
@@ -156,7 +156,7 @@ Labs
     lab12
     
 Assignments
-^^^^^^^^^^^
+-----------
 .. toctree::
     :maxdepth: 1
    
@@ -166,7 +166,7 @@ Assignments
     asn4   
    
 Course Outline
-^^^^^^^^^^^^^^
+--------------
 .. toctree::
     :maxdepth: 1
    

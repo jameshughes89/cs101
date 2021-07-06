@@ -1,8 +1,8 @@
 Lab #11
-=======================
+=======
 
 Before Kattis
-^^^^^^^^^^^^^
+-------------
 
 **1**
 
@@ -103,7 +103,7 @@ There are a bunch of ways we can go about the next bit, but let's do it this way
 
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+---------------
 Go back and work on Kattis problems you have yet to solve. I'm betting there are **A LOT** of the early ones you got stuck on that you could not demolish. 
 
 Remember, the Kattis problems are great for practice, and practice is the only way to get good at programming. 

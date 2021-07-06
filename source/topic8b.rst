@@ -3,7 +3,7 @@ Topic #8b -- List & Pointer Trivia
 
 
 Nested lists
-^^^^^^^^^^^^^
+------------
 
 * If you can nest loops... can you nest lists?
 
@@ -20,7 +20,7 @@ Nested lists
         4. Are there *methods* for the lists?
 
 List Trivia
-^^^^^^^^^^^
+-----------
 let's assume we have ``a = [1,4,6,2,4,6]``
 
 * An empty list is a list!!!!
@@ -132,7 +132,7 @@ False
 	  
 	  	  
 For next class
-^^^^^^^^^^^^^^
+--------------
 * Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 * Read `chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
 

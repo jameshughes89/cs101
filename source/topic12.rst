@@ -2,7 +2,7 @@ Topic #12 -- File IO and Exceptions
 ===================================
 
 Getting data into Python
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 * You now know a lot about how to *manipulate* data.
 * But you probably want to manipulate *specific* data. *Your* data. Not toy examples.
@@ -11,7 +11,7 @@ Getting data into Python
 * Fortunately, Python makes it less painful than just about any other language I've ever used.
 
 Read/Write to a text file
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 * There are a bunch of ways to do it, but here's one.
 
@@ -51,7 +51,7 @@ Read/Write to a text file
 
 
 Loading a CSV file
-^^^^^^^^^^^^^^^^^^
+------------------
 
 * Regular text files are cool, but CSVs are a great way to format data. 
 
@@ -130,7 +130,7 @@ Loading a CSV file
 
    
 Exceptions
-^^^^^^^^^^
+----------
 
 * I'm not gonna' go into too much detail on *exceptions*, but I want you to be aware of them and what they are
 * You've all seen these
@@ -186,7 +186,7 @@ ValueError: I TOLD YOU NOT TO GIVE ME 5!!!
 * This function I just wrote will first check if ``b`` is ``0``. If it is, it will ``raise`` an exception.
 
 Catching Exceptions
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 * Exceptions are not necessarily errors. They are *exceptional situations*.
 * Let's consider ``divide`` above
@@ -305,7 +305,7 @@ Sally example
 
 
 Exception Types
-^^^^^^^^^^^^^^^
+---------------
 
 * There are A LOT of types of exceptions/errors out there
 * We can even make our own (outside the scope of this class though)
@@ -316,7 +316,7 @@ Exception Types
 
 
 Exceptional vs Error
-^^^^^^^^^^^^^^^^^^^^ 
+-------------------- 
 	
 * I'm not gonna' get too far into this, but long story short, there are some exceptions that are exceptional situations, and some that are just plane errors on the programmer's part. 
 * Things like ``IndexError: list index out of range`` are probably errors you made
@@ -325,7 +325,7 @@ Exceptional vs Error
 
 	
 Why do we care about exceptions?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
 * It allows programmers to pass info around and communicate through TiMe
 * It allows us to deal with exceptional situations effectively
@@ -334,7 +334,7 @@ Why do we care about exceptions?
 
 
 For next class
-^^^^^^^^^^^^^^
+--------------
 
 * Read `chapter 15 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_  
 * Read `chapter 16 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html>`_  

@@ -2,7 +2,7 @@ Topic #11 -- Debugging
 ===================================
 
 It's broke, I give up!
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 * By now, you'll have experienced code that doesn't do what you want it to.
 * You may have developed some coping strategies to help you fix things.
@@ -12,7 +12,7 @@ It's broke, I give up!
   for tackling these kind of problems.
 
 The importance of debugging
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------
 
 .. image:: ../img/hi.jpg
 
@@ -36,7 +36,7 @@ The importance of debugging
 
    
 Syntax errors
-^^^^^^^^^^^^^^
+-------------
 * These are easy to fix. 
 * You make a typo and Python tells you the problem, and where it is, straight away.
 * You fix the syntax and... problem solved.
@@ -54,7 +54,7 @@ Syntax errors
         broken(5)
    
 Type errors
-^^^^^^^^^^^^
+-----------
 
 * As we've seen many times, Python is pretty good at transparently guessing how to change types when you ask it do something that involves multiple types::
   
@@ -80,7 +80,7 @@ Type errors
 		 
          
 Other simple errors
-^^^^^^^^^^^^^^^^^^^^
+-------------------
 
 * If an error is "simple", it generates a message from Python.
 * This tells you *what* is wrong and *where* it's wrong.
@@ -88,7 +88,7 @@ Other simple errors
     * This is literally what I do. 
 
 Logic errors
-^^^^^^^^^^^^^
+------------
 
 * These are pretty much everything else...
 * *Much* harder to track down than simple errors
@@ -99,7 +99,7 @@ Logic errors
 	
 	
 Print
-^^^^^
+-----
 
 * By far the simplest method I use every day that works a lot of the time. 
 * If your code isn't doing what you expect it to, one way to figure what is happening is to insert ``print`` statements into your code.
@@ -158,7 +158,7 @@ Print
    
    
 Pencil & Paper (or better, a whiteboard)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------
 
 * Sometimes you end up chasing your tail with ``print`` statements.
 * The function you are debugging is so borked that you can't make heads or tails of it.
@@ -174,7 +174,7 @@ Pencil & Paper (or better, a whiteboard)
 * A lot of the best programmers advocate this method when you're stumped. There's a reason for that.   
 
 Rubber Duck Debugging
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 
 * `Rubber Duck Debugging. <https://en.wikipedia.org/wiki/Rubber_duck_debugging>`_	
 * A shockingly effectively form of debugging
@@ -183,7 +183,7 @@ Rubber Duck Debugging
 .. image:: ../img/Rubber_Duck.jpg
 
 Delta debugging
-^^^^^^^^^^^^^^^^
+----------------
 
 * Still stuck? (or don't want to try Pencil & Paper debug?)
 * Here's another approach:
@@ -201,7 +201,7 @@ Delta debugging
 
    
 For next class
-^^^^^^^^^^^^^^
+--------------
 * `Seriously, get PyCharm installed! <https://www.jetbrains.com/pycharm/download>`_
 
 * Read `appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_  

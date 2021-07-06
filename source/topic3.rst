@@ -1,11 +1,11 @@
 Topic #3 -- Functions
-=================
+=====================
 
 .. image:: ../img/Eniac.jpeg
 
 
 Functions
-^^^^^^^^^
+---------
 * Script/program files are a nice way to organize many statements
 * You eventually find yourself writing the same series of statements over and over
     * (or cutting and pasting in your editor)
@@ -56,7 +56,7 @@ Functions
 * ...
 
 There's gotta' be a better way!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------------
 * Well, there is
 
 * We want a way to *group together sequence of statements that we frequently reuse*
@@ -88,7 +88,7 @@ There's gotta' be a better way!
     Write your own function to do something with math. Honestly, whatever you want. 
 
 Function Parameters
-^^^^^^^^^^^^^^^^^^^^
+-------------------
 * Note carefully the parameter (``a_parameter``) in the definition of ``my_function``
 * When you are defining a function, you want the function to be very *general*
     * You want it to work with *any possible* parameter that someone might want to give it
@@ -157,7 +157,7 @@ Function Parameters
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/clFWPflvEKI" frameborder="0" allowfullscreen></iframe><br><br>
 
 Abstraction: first steps
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 * Why is abstraction important?
 
 .. admonition:: Activity
@@ -194,7 +194,7 @@ Abstraction: first steps
 
 
 Back to concrete things...
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 * The general format for defining a function is::
 
 	def function_name(p1,p2,p3,p4, ... ):
@@ -234,7 +234,7 @@ Back to concrete things...
 	
 	
 Execution Flow
-^^^^^^^^^^^^^^^
+--------------
 
 * Python executes one statement at a time
 * To make sense of programs, we need to know *which* instruction gets executed *when*
@@ -265,7 +265,7 @@ Execution Flow
 
    
 Function values
-^^^^^^^^^^^^^^^^
+---------------
 * Notice how ``do_stuff`` ended with a ``return`` statement
 * The ``return`` statement tells Python: "*return* this value to whoever called this function"
 * With ``return``, *functions* evaluate into *values*.
@@ -298,10 +298,10 @@ Function values
 
     Write a function ``compmag(r,m)`` to compute, and return, the magnitude of a complex number. It should take the real component of the number as parameter ``r`` and the imaginary component as ``m``.
    
-    .. Remember that :math:`|r + mi| = \sqrt{r^2 + m^2}`. Say, does Python have a square root function?
+    .. Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}`. Say, does Python have a square root function?
     .. How would you find it?
 
-    Remember that | r + mi | = sqrt(r^2 + m^2)... (if this looks scary, all I really want you do to is the right hand side of the equation) 
+    Remember that | r + mi | = sqrt(r-2 + m-2)... (if this looks scary, all I really want you do to is the right hand side of the equation) 
    
     Say, does Python have a square root function?
     How would you find it?
@@ -312,7 +312,7 @@ Function values
 	
 	
 Composition
-^^^^^^^^^^^^
+-----------
 * Python functions can be *composed* just like mathematical functions.
 * We've already seen ``print`` composed with ``do_stuff``
 * We can nest functions, too:
@@ -334,7 +334,7 @@ Composition
     Figure out the value of ``no_stuff(no_stuff(2,2), (no_stuff(2,2) + no_stuff(4,4)) )`` using only *pen and paper*. No computers!
 	
 Variable scope (not the mouthwash)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------
 * If you set a variable inside a function, it is *local* to that function.
 * No other function can see a function's local variables. They are *local*. Consider this code::
 
@@ -354,7 +354,7 @@ Variable scope (not the mouthwash)
 * Moral of the story: variables have *scope*. This can actually be a surprisingly delicate concept and we'll come back to it later.	
 	
 Optional parameters for functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 * Sometimes you want a function to have an optional parameter, with a pre-specified default value.
 * This is done very easily::
 
@@ -371,7 +371,7 @@ Optional parameters for functions
         return math.sqrt(2*d/a)	
 	
 Import
-^^^^^^^
+------
 * Another practical matter: sometimes you want to make a big library of functions. Maybe related to analysis data from your research. 
 * You'd like to access some of those functions from another program that you're writing.
 * If you put your functions in a file called 'myfuncs.py', you can *import* them into another program like this:
@@ -384,14 +384,14 @@ Import
     >>> myfuncs.do_stuff(...)
 
 Import --- MORE
-^^^^^^^^^^^^^^^
+---------------
 * Can also import other people's functions
 * 	>>> import math
 * 	>>> import numpy	
 
 
 COMMENTS!!!!!!!!!!!
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 * You can add *comments* to your code in Python with ``#``::
 
@@ -413,7 +413,7 @@ COMMENTS!!!!!!!!!!!
 * Find a healthy balance that works for you
 
 Function headers
-^^^^^^^^^^^^^^^^^
+----------------
 
 * Because so much of our programming consists of pasting together functions... it is of special
   importance to document what a function does.
@@ -450,6 +450,6 @@ After that happens enough times, you'll start writing comments.
 
 	
 For next class
-^^^^^^^^^^^^^^^
+--------------
 
 * Read `chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_

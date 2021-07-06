@@ -1,8 +1,8 @@
 Topic #4 -- Logic, if/else 
-=================
+==========================
 
 Conditionals
-^^^^^^^^^^^^
+------------
 
 * We're pretty good at telling python *exactly what to do* now.
 * But there is no room for choice. It's just: *do these steps in this order*
@@ -17,7 +17,7 @@ Conditionals
 * We need to work towards *conditional execution*
 
 Logic First
-^^^^^^^^^^^
+-----------
 * Sometimes things are `True` or `False`
 * I'm betting you actually are pretty familiar with some LOGIC
     * AND
@@ -68,7 +68,7 @@ Logic First
 
    
 Conditional execution
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 * Now we can test if a comparison statement is ``True`` or ``False``.
 * We need a way to use that to control our program.
 * ``if`` some condition is ``True``, do something::
@@ -92,7 +92,7 @@ Conditional execution
    
    
 Compound conditions
-^^^^^^^^^^^^^^^^^^^
+-------------------
 * We can use the logical operators ``and``, ``or`` and ``not`` to combine conditions.
 * The combinations can be arbitrarily complex::
 
@@ -107,7 +107,7 @@ Compound conditions
    
    
 Alternative execution
-^^^^^^^^^^^^^^^^^^^^^
+---------------------
 * This pattern is very common::
 
     if x > 10:
@@ -147,7 +147,7 @@ Alternative execution
 
    
 Chains of alternatives
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 * Sometimes a binary ``if``/``else`` isn't enough.
 * What if I want several, *mutually exclusive*, alternatives?::
 
@@ -179,7 +179,7 @@ Chains of alternatives
    
    
 Nested conditionals
-^^^^^^^^^^^^^^^^^^^
+-------------------
 * Computer scientists love "nesting" things: putting things inside other things.
 
 .. image:: ../img/dolls.jpeg
@@ -235,7 +235,7 @@ Nested conditionals
 
 
 Libraries
-^^^^^^^^^^
+---------
 * Most of you are here because you are pragmatic people who want to *get stuff done*
 * The fastest way to *get stuff done* is by leveraging stuff that other people have done.
 * Remember functions? Wouldn't it be awesome if there were huge collections of functions that already existed... and did a lot of the stuff you want to do? 
@@ -244,7 +244,7 @@ Libraries
 	   
 	   
 NumPy
-^^^^^^
+-----
 * The most important library for us is *Numerical Python* ("NumPy" for short).
 * We're going to get quite a bit of mileage out of NumPy, and some of it's affiliated packages, in this course.
 * NumPy is *not* a core part of Python, but it is included in Anaconda.
@@ -253,7 +253,7 @@ NumPy
     >>> import numpy
 
 NumPy Types
-^^^^^^^^^^^^
+-----------
 * Recall that Python values have types.
 * NumPy defines a `whole bunch of new types <http://docs.scipy.org/doc/numpy/user/basics.types.html>`_.
 * When you call NumPy functions, Python will, as always, try it's best to guess at type conversions for you.
@@ -292,7 +292,7 @@ NumPy Types
    
       
 For next class
-^^^^^^^^^^^^^^^
+--------------
 
 * Read `chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
 

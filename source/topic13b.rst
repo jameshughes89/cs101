@@ -1,8 +1,8 @@
 Topic #13b -- More About Objects
-====================
+================================
 
 More complexity
-^^^^^^^^^^^^^^^
+---------------
 
 * Let's make a slightly more complex object. 
 * What if I want to make ``MyStudents`` object. 
@@ -11,7 +11,7 @@ More complexity
 
 
 But first... a convention
-^^^^^^^^^^^^^^^^^^^^^^^^^
+-------------------------
 
 * Let's go look at out ``EnthusiasticStudent`` object and make one small change
 
@@ -74,7 +74,7 @@ But first... a convention
     * kinda...
 	
 Public/Private
-^^^^^^^^^^^^^^
+--------------
 
 * Long story short...
 * **Public** attributes/methods are visible outside the class
@@ -108,7 +108,7 @@ Public/Private
 * Don't worry too much if the point is still a little lost on you, it will get cleared in CSCI 162.
 
 Getters/Setters
-^^^^^^^^^^^^^^^
+---------------
 
 * So how do we interface with the attributes if we make them all private?
 * Getters and setters!
@@ -135,11 +135,11 @@ Getters/Setters
 
 
 MyStudents
-^^^^^^^^^^
+----------
 
 * Ok, we want an object to hold onto ``EnthusiasticStudent`` objects
 * What attributes do we want?
-    * Class Name
+    * -Name
     * List of the EnthusiasticStudents
 	
 
@@ -197,7 +197,7 @@ MyStudents
 
 
 Putting it Together
-^^^^^^^^^^^^^^^^^^^
+-------------------
 	
     .. code-block:: python
         :linenos:	
@@ -215,6 +215,6 @@ Putting it Together
 		
 		
 For next class (is anyone actually reading these? You really should!)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------------------------
 
 * Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_  

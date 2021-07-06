@@ -235,7 +235,7 @@ Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGzi
 * This is NORMAL.
       
 For next class
-^^^^^^^^^^^^^^^
+---------------
 
 * Read `chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
 

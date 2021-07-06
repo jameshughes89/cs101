@@ -1,8 +1,8 @@
 Lab #9
-========
+======
 
 Before Kattis
-^^^^^^^^^^^^^
+-------------
 
 .. Warning::
     Before you do ANYTHING, take out a scrap piece of paper. If I do not see your paper at the end of the lab, you will get **0** on this lab. 
@@ -318,13 +318,13 @@ This one is very buggy :(
 
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+---------------
 I'm willing to bet that in previous weeks you were working on Kattis problems that you couldn't quite debug. You may have been close, or way off, but the problem was you were stuck wondering how best to *fix* your code. Now that you're equipped with the debugger, go back and work on them! Seriously, GO BACK! But make use of this debugger. Whenever you can, USE THE DEBUGGER. Stuck on Kattis? DEBUGGER! Stuck on assignment? DEBUGGER! Stuck in life? DEBUGGER?
 
 If you're done everything I have listed so far, try some of the *easy* Kattis problems on the website that I didn't assign. 
 
 LeetCode Problems
-^^^^^^^^^^^^^^^^^
+-----------------
 
 If you have somehow finished everything so far, go check out `LeetCode <https://leetcode.com/problemset/all/>`_. Sort the problems by *Acceptance* (click the table header) and start seeing if you can solve some of these problems. 
 

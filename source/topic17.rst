@@ -4,7 +4,7 @@ Topic #17 -- Recursion and More Sorting
 .. image:: ../img/hands.jpg
 
 Recursion
-^^^^^^^^^
+---------
 
 .. code-block:: python
     :linenos:
@@ -31,7 +31,7 @@ Recursion
 
 
 Don't Panic
-^^^^^^^^^^^
+-----------
 
 * Before talking about the next few things, I want you to be very well aware that these algorithms are outside the scope of this course
 * I am showing you clever algorithms
@@ -41,7 +41,7 @@ Don't Panic
      
 
 Quicksort
-^^^^^^^^^^^
+---------
 
 **High Level**
 
@@ -93,7 +93,7 @@ Quicksort
 
             
 Mergesort
-^^^^^^^^^^
+---------
 
 **High Level**
 
@@ -150,7 +150,7 @@ Mergesort
             
             
 Self Reference
-^^^^^^^^^^^^^^
+--------------
 
 * Let's say I have the following code:
 
@@ -174,7 +174,7 @@ Self Reference
     *My nose is going to grow now* 
 
 Grelling-Nelson Paradox
-^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------
     
 * `Autological and Heterological words <https://en.wikipedia.org/wiki/Grelling%E2%80%93Nelson_paradox>`_ 
     * An *autological* word is one that describes itself
@@ -230,7 +230,7 @@ Grelling-Nelson Paradox
     
     
 Halting Problem
-^^^^^^^^^^^^^^^
+---------------
     
 .. admonition:: Activity++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
