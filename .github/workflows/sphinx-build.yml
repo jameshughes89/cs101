@@ -1,4 +1,6 @@
+
 name: Sphinx Build Deploy
+
 
 on:
   push:
@@ -29,7 +31,7 @@ jobs:
       with:
         name: website
         path: out/
-        
+
   deploy:
     needs:
     - sphinx
@@ -55,3 +57,4 @@ jobs:
     - name: Copy Files to the Website
       run: |
         aws s3 sync ./site s3://modsurski.com/csci161 --delete
+
