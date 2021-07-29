@@ -1,8 +1,9 @@
+******
 Lab #7
-========
+******
 
 Before Kattis
-^^^^^^^^^^^^^
+=============
 
 **Before you do ANYTHING, take out a scrap piece of paper.** 
 
@@ -124,7 +125,7 @@ w
 
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+===============
 
 Grab a scrap piece of paper to start scratching your ideas down on paper. The problems are getting tricky enough where this really is becoming a requirement. 
 

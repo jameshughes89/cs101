@@ -1,10 +1,11 @@
+******
 Lab #2
-======
+******
 
 Remember, the point of the lab is **not** to complete the tasks. The point of the labs is to understand why the code you have written does what it does. Do not rush through the steps. Take your time and understand everything we are doing. The understanding is important, **not** just knocking off the tasks. 
 
 Before Kattis
-^^^^^^^^^^^^^
+=============
 
 1. If you missed the first lab, go complete steps 10 -- 16 in lab 1. 
 
@@ -47,7 +48,7 @@ Before Kattis
         print(c)
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+===============
 
 The problems below are 
 

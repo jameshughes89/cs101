@@ -1,8 +1,10 @@
+****************************
 Topic #8 -- Lists & Pointers
-============================
+****************************
 
 Lists
-^^^^^^
+=====
+
 * Our values so far have been pretty simple. 
 * One thing at a time. One ``int``, one ``float``, one ``string``...
 * ... except, wait, strings were a bit different, weren't they?
@@ -41,7 +43,7 @@ Lists
         5. Can you have a list with nothing in it? An *empty* list?
 
 Data Structures
-^^^^^^^^^^^^^^^^
+===============
 
 * The ``list`` is your first real **data structure**.
 * The name "data *structure*" pretty much tells you everything you need to know.
@@ -66,7 +68,7 @@ Data Structures
         4. Write a *single line* of Python code to test if a particular value appears in a list (e.g. test if ``5`` appears *in* ``[1,7,5,3]``.)
 
 List operations
-^^^^^^^^^^^^^^^^
+===============
 
 * We can concatenate lists with the ``+`` operator:
     >>> a=[5,7,9,10]
@@ -81,7 +83,7 @@ List operations
 * As you've discovered for yourself, we can also *slice* lists (just like we did strings), find their size and check for membership.
 
 Range
-^^^^^
+=====
 
 * In real world programming applications, we very frequently need a list of integers.
     * For example: ``[1,2,3,4,5,...]`` so that we can count things.
@@ -110,7 +112,7 @@ Range
 
 
 Mutability 
-^^^^^^^^^^^
+==========
 
 * Strings do kinda look like "list of characters" and, in many ways, they are.
 * *But not exactly*.
@@ -142,7 +144,8 @@ Mutability
     [5, 7, 10]
 
 Aliasing 
-^^^^^^^^^
+========
+
 * Pay attention here, because this is a *major* source of confusion for new programmers.
     * It's not actually that weird, but it does trip people up
 
@@ -214,7 +217,7 @@ Aliasing
     Create a list named ``l``. Make an *alias* of the list named ``lalias``. Make a *copy* of the list named ``lcopy``. Prove to yourself that one is an alias and one is a copy.
 
 Pointers (THIS IS ACTUALLY A BIG DEAL)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+======================================
 
 * Here is an idealized view of RAM inside a computer
 
@@ -230,7 +233,8 @@ Pointers (THIS IS ACTUALLY A BIG DEAL)
 
     .. image:: ../img/functionLocation.png
 
-**Fixed Size Arrays**
+Fixed Size Arrays
+-----------------
    
 * Let's hit pause on lists for a sec and go back in time
 * In many programming languages, lists aren't *free* like they are in Python
@@ -246,7 +250,8 @@ Pointers (THIS IS ACTUALLY A BIG DEAL)
 * The contents are labeled *a -- h*, but let's pretend they're numbers
 
 
-**Primitive Types in Memory (RAM)** 
+Primitive Types in Memory (RAM)
+-------------------------------
 
 * Let's say we have a single integer called ``x`` (so, not an array anymore)
     * I know it's an ``x``, but let's pretend it's some value of type *int*
@@ -304,7 +309,8 @@ Pointers (THIS IS ACTUALLY A BIG DEAL)
 
 * ... but... how do we keep track of this?
 
-**Pointers**
+Pointers
+--------
 
 * Let's see what happens when we say this (people always say how complicated this is, but it's really not when you understand the intuition): 
 
@@ -363,7 +369,7 @@ Pointers (THIS IS ACTUALLY A BIG DEAL)
    
  
 Lists and loops 
-^^^^^^^^^^^^^^^^
+===============
 * ``for`` loops can be used to execute a block of code for every element in a list::
 
     for element in some_list:
@@ -427,7 +433,7 @@ Lists and loops
 * This is a special feature of the ``enumerate`` function.
 
 Mind the rotating knives
-^^^^^^^^^^^^^^^^^^^^^^^^^
+========================
 
 	.. image:: ../img/spinning.gif
 
@@ -441,7 +447,7 @@ Mind the rotating knives
     Figure out the answer to this question empirically. Write a function that will prove to you which of the two options above is correct. 
   
 Side effects
-^^^^^^^^^^^^
+============
 
 
 * Consider the code::
@@ -481,7 +487,7 @@ Side effects
     * The term "side effect" comes from our mathematical expectation of a "function". A function maps some parameters on to a value. If I give you the function `f(x,y,z)=x+y-z` and ask you to evaluate `f(1,2,3)`, you don't expect the values of `x`, `y` and `z` to change!
 
 Pure functions
-^^^^^^^^^^^^^^^
+==============
 * If a function has no side effects, we call it a *pure function*.
 * Some programming languages allow *only* pure functions (e.g., `Haskell <http://www.haskell.org/haskellwiki/Haskell>`_).
     * There are some nice theoretical, and practical benefits to this.
@@ -493,7 +499,7 @@ Pure functions
   
 
 Who wants to be pure?
-^^^^^^^^^^^^^^^^^^^^^^
+=====================
 * Anything you can possibly do with a computer *can* be done with pure functions...
 * ... but... some stuff is just plain easier to do with side effects. 
 * This is a course for working scientists, so let's be pragmatic:
@@ -504,7 +510,7 @@ Who wants to be pure?
 	  
 	  	  
 For next class
-^^^^^^^^^^^^^^
+==============
 * Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 * Read `chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
 

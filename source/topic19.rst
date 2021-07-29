@@ -1,8 +1,10 @@
+****************************************
 Topic #19 -- Machine Learning (Actually)
-========================================
+****************************************
 
 How did...
-^^^^^^^^^^^
+==========
+
 * ... `Nate Silver predict the results of the 2012 US Presidential election? <http://www.guardian.co.uk/science/grrlscientist/2012/nov/08/nate-sliver-predict-us-election>`_
 * ... `Amazon know what products heavy computer gamers like to purchase? <http://ca.kotaku.com/5588532/amazon-as-market-research-for-the-lonely-gamer>`_ **(NSFW)**
 * ... `Target know that this girl was pregnant before her parents did? <http://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/>`_
@@ -18,7 +20,7 @@ How did...
    
    
 Machine Learning
-^^^^^^^^^^^^^^^^^
+================
 
 * We're about to jump about threeish years ahead in your CS education.
 * There is a very rich, very old (by CS standards) field of computer science called `Artificial Intelligence <http://en.wikipedia.org/wiki/Artificial_intelligence>`_
@@ -64,14 +66,14 @@ What you can expect:
 
 
 scikit-learn
-^^^^^^^^^^^^^
+============
 
 * Lucky for us, Python has a whole whack of ML libraries (including many specialized for particular fields).
 * We're going to use `scikit-learn <http://scikit-learn.org/stable/>`_ as it is relatively full-featured and easy to use.
 
 
 Requires Supervision
-^^^^^^^^^^^^^^^^^^^^^
+====================
 
 * *Very* broadly speaking, there are two types of ML (there are more, but we're keeping it simple):
     * **Supervised** learning -- you have a bunch of *labeled* training data and you want to build a program that will learn to *generalize* the training data so that it can *classify* new inputs 
@@ -145,7 +147,7 @@ Requires Supervision
 * Here's the thing though. **Wouldn't it be awesome if we could have python come up with that function for us?**
 
 Supervised: k-Nearest Neighbours
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+================================
 
 * Imagine we do this:
     * For each row in our training set ``data``, plot the 4 features (lengths) in a 4D space.
@@ -255,7 +257,7 @@ Supervised: k-Nearest Neighbours
     
     
 Supervised: Support Vector Machines (SVM)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=========================================
 
 * Let's go back and look at a simple plotting of our data (reduced to 2D for convenience).
 * Maybe I could do this:
@@ -303,7 +305,7 @@ Supervised: Support Vector Machines (SVM)
     
     
 Unsupervised: K-means clustering
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+================================
 
 * Supervised machine learning is good and all, but what if you don't really have any labels. 
 * We obviously can't make a classifier...
@@ -354,7 +356,8 @@ Unsupervised: K-means clustering
    
    
 Cross-Validation
-^^^^^^^^^^^^^^^^^
+================
+
 * One of the things you learned above was the importance of proper *cross-validation* of machine learning results.
     * training/testing
 * Because this is so important, scikit-learn has *several* built in `cross-validation generators <http://scikit-learn.org/dev/modules/cross_validation.html>`_ that will slice your data into test and training sets for you... and then do the testing and training.
@@ -385,7 +388,7 @@ Cross-Validation
 
 
 The Zoo
-^^^^^^^^^
+=======
 
 * This has been a (very) meagre taste of ML.
 * There is a whole zoo of Supervised and Unsupervised learning methods, with new ones being published every day.

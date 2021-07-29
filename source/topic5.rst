@@ -1,8 +1,9 @@
+*******************************************
 Topic #5 -- Logic, Booleans, More Functions
-===========================================
+*******************************************
 
 The Boolean type
-^^^^^^^^^^^^^^^^^
+================
 * A value that is either ``True`` or ``False`` (and nothing else) has type `Boolean <http://en.wikipedia.org/wiki/George_Boole>`_.
 * We've used comparison operators (e.g., ``<,>,==``) in conditionals.
 * What's going on "under the hood" with the comparison, though?
@@ -38,7 +39,7 @@ The Boolean type
 
 
 More about returns
-^^^^^^^^^^^^^^^^^^
+==================
 
 * We've already seen that functions can return a value at the end.
 * In fact, a function can return a value *at any time*, not just the end.
@@ -61,7 +62,7 @@ More about returns
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
 
 The function type
-^^^^^^^^^^^^^^^^^
+=================
 
 * In Python, *functions* have a type, too:
 	>>> type(divisible_by)
@@ -95,7 +96,7 @@ The function type
 
 
 Developing bigger programs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==========================
 
 .. image:: ../img/softeigineering.jpeg
 

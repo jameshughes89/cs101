@@ -1,8 +1,9 @@
+*******
 Lab #10
-======================
+*******
 
 Before Kattis
-^^^^^^^^^^^^^
+=============
 
 This lab relates to topics discussed in :doc:`class 13 </topic13>` and :doc:`class 13b </topic13b>`.
 
@@ -11,7 +12,7 @@ Let's make a small program with classes. We'll make a program that will store a 
 We want 2 classes, and another script to interact with the objects we create. 
 
 Person
-^^^^^^
+======
 
 Start by making a simple object to store information for a ``Person``. Create a ``Person`` class. 
 
@@ -41,7 +42,7 @@ There, that's it for now. We can add more later if we want.
 That's about it for the ``Person`` object. It's pretty simple. 
 
 ContactList
-^^^^^^^^^^^
+===========
 
 Now let's make a class called ``ContactList`` to hold onto a list of ``Person`` objects. If using PyCharm or Spyder, open another empty python file in your working directory/project. Call it *ContactList.py*. Be sure to import the ``Person`` class at the top of this file.
 
@@ -86,7 +87,7 @@ That's all I think we'll need for now.
 If you are stuck on any of this, :doc:`you should have a look here </topic13b>`.		
 		
 Using Them Together
-^^^^^^^^^^^^^^^^^^^
+===================
 
 Create ANOTHER file and put this in it:
 
@@ -104,7 +105,7 @@ Create ANOTHER file and put this in it:
 Everything should work. If not, ask for help. 
 
 More Special Functions
-^^^^^^^^^^^^^^^^^^^^^^	
+======================	
 
 Add these to the ``ContactList`` class. 
 	
@@ -120,7 +121,7 @@ Add these to the ``ContactList`` class.
     * indexing with ``[x]`` calls the ``__getitem__`` method. 
 
 Testing
-^^^^^^^
+=======
 
 You should be able to run the below code and everything should work correctly. If not, ask for help. 
 
@@ -161,14 +162,15 @@ Make sure it makes sense to you *why* when we print out ``friendslist`` we now w
 	
 
 Add Some Things
-^^^^^^^^^^^^^^^
+===============
 
 Now that you have everything working, go add some additional attributes to the ``Person`` class, update methods, add new methods, use the methods in the ``ContactList`` class, etc. Basically I just want you to go nuts and see what you can do. 
 
 Maybe go even loop up other special python methods and see if you can hac them to work in weird ways. 
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+===============
+
 Can you do these with something other than lists? In fact, you might have to for the runtime requirements. You may come up with a perfect solution that will be correct 100% of the time; however, a correct solution is not necessarily a *good* solution. 
 
 1. https://open.kattis.com/problems/everywhere 
@@ -178,7 +180,7 @@ Can you do these with something other than lists? In fact, you might have to for
 5. https://open.kattis.com/problems/modulo
 
 LeetCode Problems
-^^^^^^^^^^^^^^^^^
+=================
 
 The following problem is a **classic** CS programming problem.
 

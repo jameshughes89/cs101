@@ -1,10 +1,11 @@
+***************************************
 Topic #17 -- Recursion and More Sorting
-=======================================
+***************************************
 
 .. image:: ../img/hands.jpg
 
 Recursion
-^^^^^^^^^
+=========
 
 .. code-block:: python
     :linenos:
@@ -31,7 +32,7 @@ Recursion
 
 
 Don't Panic
-^^^^^^^^^^^
+===========
 
 * Before talking about the next few things, I want you to be very well aware that these algorithms are outside the scope of this course
 * I am showing you clever algorithms
@@ -41,9 +42,10 @@ Don't Panic
      
 
 Quicksort
-^^^^^^^^^^^
+=========
 
-**High Level**
+High Level
+----------
 
 * An empty list, or a list with one thing in it, is already sorted, right?
 * If I take a sorted list of things less than a number *x*, and a sorted list of things greater than a number *x*, then I can just do this:
@@ -51,7 +53,8 @@ Quicksort
     
 * This will also result in a sorted list, right?
 
-**Less high level**
+Less high level
+---------------
 
 * You give me a list called ``in_list``
 * If the list has only one element (or none), just return the list without doing anything
@@ -93,14 +96,16 @@ Quicksort
 
             
 Mergesort
-^^^^^^^^^^
+=========
 
-**High Level**
+High Level
+----------
 
 * An empty list, or a list with one thing in it, is already sorted, right?
 * We can merge two sorted lists together into a new, bigger sorter list. 
 
-**Less high level**
+Less high level
+---------------
 
 * You give me a list, ``in_list`` with ``n`` elements
 * I divide ``in_list`` into ``n`` sublists, each having 1 element.
@@ -150,7 +155,7 @@ Mergesort
             
             
 Self Reference
-^^^^^^^^^^^^^^
+==============
 
 * Let's say I have the following code:
 
@@ -174,7 +179,7 @@ Self Reference
     *My nose is going to grow now* 
 
 Grelling-Nelson Paradox
-^^^^^^^^^^^^^^^^^^^^^^^
+=======================
     
 * `Autological and Heterological words <https://en.wikipedia.org/wiki/Grelling%E2%80%93Nelson_paradox>`_ 
     * An *autological* word is one that describes itself
@@ -230,7 +235,7 @@ Grelling-Nelson Paradox
     
     
 Halting Problem
-^^^^^^^^^^^^^^^
+===============
     
 .. admonition:: Activity++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

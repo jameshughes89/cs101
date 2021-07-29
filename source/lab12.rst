@@ -1,10 +1,11 @@
+*******
 Lab #12
-=======================
+*******
 
 .. image:: ../img/fib2.jpg
 
 Part 1
-^^^^^^
+======
 
 .. Warning:: 
     For these Qs in **Part 1**, you will be working out the ideas on paper and **not** the computer. Also, I strongly suggest you work together in small groups.
@@ -54,7 +55,7 @@ What is ``f(x)``?
 
 
 Part 2
-^^^^^^
+======
 
 Go work through the course content for :doc:`Topic 18 </topic18>` and :doc:`Topic 19 </topic19>`.
 
