@@ -31,9 +31,10 @@ Class Times
 ^^^^^^^^^^^
 **Lecture Section 11**
 
-* Tue 11:15 - 12:05 (K4), MULH 2070
-* Wed 13:15 - 14:05 (K5), MULH 2070
-* Fri 12:15 - 13:05 (K6), MULH 2070
+* Tue 11:15 - 12:05 (K4), SCHW 110
+* Wed 13:15 - 14:05 (K5), SCHW 110
+* Fri 12:15 - 13:05 (K6), SCHW 110
+
 
 **Lecture Section 12**
 
