@@ -1,10 +1,11 @@
+******
 Lab #1
-======
+******
 
 NOTE: I do not expect you to actually finish everything so don't worry. We'll aim to get up to step 16. 
 
 Getting Familiar 
-----------------
+================
 
 1. Get logged in. 
 2. Log onto Colab
@@ -23,7 +24,7 @@ Getting Familiar
     Do no panic. You do not need to remember how to use Colab, Spyder, PyCharm, and IPython at this stage. I'm simply just showing you so you have some familiarity. For now, I recommend sticking with Colab. Then, after a few days or weeks, start to get comfortable with IPython (my YouTube videos use this). Then, after a few more weeks, maybe go for one of the IDEs. 
 
 Refreshing What We Learned
---------------------------
+==========================
 
 10. Go back to Colab (or use whichever programming method you prefer)
 11. Enter the following into your code.
@@ -50,7 +51,7 @@ Refreshing What We Learned
 
 
 Kattis
-------
+======
 
 .. admonition:: Note
 
@@ -109,7 +110,7 @@ Kattis
       
       
 Back to Not Kattis
-------------------
+==================
 
 17. Seriously, look at the above code and take your time to understand it. 
 
@@ -119,7 +120,7 @@ Back to Not Kattis
     
 
 More Kattis Problems
---------------------
+====================
 Do not worry if you do not get this far. 
 
 Grab a scrap piece of paper to start scratching your ideas down on paper.

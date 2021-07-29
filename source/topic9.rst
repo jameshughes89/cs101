@@ -1,11 +1,12 @@
+***************************************
 Topic #9 -- More Lists and Numpy Arrays
-=======================================
+***************************************
 
 .. image:: ../img/hypercube3.png
 
 
 Higher Dimensions
------------------
+=================
 
 .. admonition:: Activity
 
@@ -85,7 +86,7 @@ Higher Dimensions
     Answer these, and then test it in code.
  
 Numpy *Arrays*
---------------
+==============
 
 .. warning::
 
@@ -145,7 +146,7 @@ Numpy *Arrays*
     How does ``+`` work differently on arrays than lists?
 
 Numpy array object attributes and methods
------------------------------------------
+=========================================
 
 * Remember how I showed you how objects, like strings, had some *methods* attached to them?
 * Objects can also have *attributes*
@@ -191,7 +192,7 @@ Numpy array object attributes and methods
    
    
 Making numpy arrays bigger
---------------------------
+==========================
 * With lists, we could always append items to make them bigger
 
     >>> a = [1, 2, 3]
@@ -240,7 +241,7 @@ Making numpy arrays bigger
     Did that last one work? What happened?   
    
 Flexibility vs Power
---------------------
+====================
 
 * Arrays are less flexible than lists:
     * We can't change their size
@@ -255,7 +256,7 @@ Flexibility vs Power
    
    
 Higher dimensions
------------------
+=================
 
 * Like lists, numpy arrays generalize to higher dimensions.
 * Let's create a 2D array:
@@ -286,7 +287,7 @@ Higher dimensions
     Finally ``flatten`` your 2D array into a 1D array.
    
 Starting points
-----------------
+===============
 * Sometimes you want an array of shape ``(n,m)`` that contains all zeros:
 
     >>> # The extra parentheses are important
@@ -296,7 +297,7 @@ Starting points
 * How about ``numpy.eye()``?
   
 Slicing
--------
+=======
 * We've already seen that you can index arrays like lists (and strings)
 * Likewise, you can use Python's powerful *slicing* on arrays
 
@@ -338,7 +339,7 @@ Slicing
    
    
 For loops
----------
+=========
 
 * If ``for`` loops work for lists, do you think they'll work for arrays?
 
@@ -358,7 +359,7 @@ For loops
    
    
 For next class
---------------
+==============
    
 * Read `chapter 9 of the text <http://openbookproject.net/thinkcs/python/english3e/tuples.html>`_   
 * Read `chapter 20 of the text <http://openbookproject.net/thinkcs/python/english3e/dictionaries.html>`_   

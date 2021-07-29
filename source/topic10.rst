@@ -1,12 +1,13 @@
+*******************************************
 Topic #10 -- Tuples, Dictionaries, and Sets
-===========================================
+*******************************************
 
 * So far we have seen *lists* and *numpy arrays*. 
 
 * Let's have a look at a few more. 
 
 Tuples
-------
+======
 * A tuple looks a lot like a list, but with ``()`` instead of ``[]``:
 
     >>> tup = (5,3)
@@ -57,7 +58,7 @@ Tuples
         * When I say origin, I mean like (0,0) on a `Cartesian plane <https://en.wikipedia.org/wiki/Cartesian_coordinate_system>`_
 
 Dictionaries
-------------
+============
 * Python Dictionaries are a more complex data structure than what we've seen so far.
 * But... they are *very very very very very very very very useful*.
 * Imagine a list which you can index with *strings* instead of *numbers*.
@@ -122,7 +123,8 @@ Dictionaries
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/e8nhfwlsBl0" frameborder="0" allowfullscreen></iframe>
 
-**So Why Are They Great?**
+So Why Are They Great?
+----------------------
 
 * Imagine we have a 2D list like this:
 
@@ -148,7 +150,8 @@ Dictionaries
     * Just index the dictionary!
     * Way better!
 
-**Are They Actually Better?**
+Are They Actually Better?
+-------------------------
 
 * Remember how the ``in`` keyword allowed us to do a linear search really easily. 
 * It wasn't really *better* than coding a linear search yourself, but it did save some typing. 
@@ -172,7 +175,7 @@ Dictionaries
     return [0, 1].
 
 Sets
-----
+====
 
 * A set is kinda' like a list, but it only holds *unique* things.
 * Also, sets typically do not have any ordering to them.
@@ -267,7 +270,8 @@ Sets
     >>> print(c == d)
     True
    
-**What makes them special other than just uniqueness and orderdness?**
+What makes them special other than just uniqueness and orderdness?
+------------------------------------------------------------------
 
 * So far they might not seem that special when compared to lists
 * But they are very very very special in many ways
@@ -314,7 +318,7 @@ Sets
  
  
 The Bad News...
----------------
+===============
 
 * The above data structures are pretty awesome
 * Unfortunately... they're not *free*
@@ -326,7 +330,7 @@ The Bad News...
 
 
 The Good News...
-----------------
+================
 
 * This does not really matter for us right now. 
 * As of now, we don't really need to know all this to get the computer to do fun things. 
@@ -334,7 +338,7 @@ The Good News...
 * Buuuuutttttttttttt... at the same time, if I was a race car driver, maybe knowing how things work under the hood could help me tweak and tune the car for the best performance. 
 
 The Good/Bad News...
---------------------
+====================
 
 * The under the hood stuff here is outside the scope of this course. 
 * If you're thinking **Thank F@-%!#& GAWD**, lucky you
@@ -349,7 +353,7 @@ The Good/Bad News...
  
    
 For next class
---------------
+==============
 * `Get PyCharm installed! <https://www.jetbrains.com/pycharm/download>`_
 
 * Read `appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_   

@@ -1,8 +1,9 @@
+*****************
 Topic #6 -- Loops
-=================
+*****************
 
 Reusing variables
------------------
+=================
 * Consider this code fragment::
 
     a = 5
@@ -39,7 +40,7 @@ Reusing variables
     * Now do the same thing again, but 736251442443 times.
 
 First loops
------------
+===========
 
 * So far, if we want Python to do the same thing over and over, we have to tell it explicitly by repeating those instructions over and over.
     * There has to be a better way!
@@ -122,7 +123,7 @@ First loops
     Don't worry about formatting the table, just ``print`` out the values.
 
 Encapsulation
--------------
+=============
 * Big word for a simple idea: take your code and "encapsulate" it in a function.
 * That's it.
 * Normal development process for scientific software:
@@ -136,7 +137,7 @@ Encapsulation
     * ...
  
 OMG some actual *science*!
---------------------------
+==========================
 * Okay, maybe not. But we're taking a step in that direction.
 
 .. admonition:: Activity
@@ -170,7 +171,7 @@ OMG some actual *science*!
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/9jrhr9rbwzc" frameborder="0" allowfullscreen></iframe>
 
 Algorithm
----------
+=========
 
 	.. image:: ../img/algorithm.png
 
@@ -195,7 +196,7 @@ Algorithm
   
 
 For next class
---------------
+==============
 
 * Read `chapter 8 of the text <http://openbookproject.net/thinkcs/python/english3e/strings.html>`_
 

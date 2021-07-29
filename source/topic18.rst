@@ -1,8 +1,9 @@
+*******************************
 Topic #18 -- Data Visualization
-===============================
+*******************************
 
 Plotting with Python
---------------------
+====================
 
 * Now that you know how to load and manipulate data, we're going to spend some time learning how to *visualize* our data (and the results of processing it).
 
@@ -16,7 +17,7 @@ Plotting with Python
     
 
 Let's get some data
--------------------
+===================
 
 .. admonition:: Activity
 
@@ -40,7 +41,7 @@ Let's get some data
     
     
 Simple plots
-------------
+============
 
 * We can do a simple line plot of 1D data with the ``plt.plot()`` command.
 * Try this:
@@ -116,7 +117,7 @@ Simple plots
     
     
 2D Plots
---------
+========
 
 * Let's look at our correlation matrix visually.
 
@@ -139,7 +140,7 @@ Simple plots
         <iframe width="560" height="315" src="https://www.youtube.com/embed/3FmNl8Q5UYA" frameborder="0" allowfullscreen></iframe>   
         
 Histograms
-----------
+==========
 
 * Sometimes you want to see the *distribution* of the values your data, rather than the values themselves.
 * Consider these data:
@@ -169,7 +170,7 @@ Histograms
 
 
 Scatter plots
--------------
+=============
 
 * Let's create 3 fake sets of experimental data:
 
@@ -209,7 +210,7 @@ Scatter plots
     
     
 Onward
-------
+======
 
 * We've barely even scratched the surface of what's available with Python.
 * The types of plots that are of interest to you will depend heavily on what your needs are.
