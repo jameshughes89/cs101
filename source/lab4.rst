@@ -1,8 +1,9 @@
+******
 Lab #4
-======
+******
 
 Before Kattis
--------------
+=============
 
 
 .. image:: ../img/carRental.png
@@ -31,7 +32,7 @@ A car rental place needs our help. They want a simple program to calculate how m
 * Print out the final total cost
 
 Kattis Problems
----------------
+===============
 
 If you finish the above task, go back and work on unsolved Kattis problems from previous labs. 
 

@@ -1,8 +1,9 @@
+******
 Lab #3
-======
+******
 
 Before Kattis
--------------
+=============
 
 
 1. Write a function that will take a grade between 0 - 100 and have it ``return`` either 'FAIL' ``if`` the grade is < 50 or 'PASS' otherwise. 
@@ -24,7 +25,7 @@ Before Kattis
    If this scares you, go back and look at the lecture notes. All the info you need is in there. BUT, if you really do get stuck, ASK FOR HELP! Ask someone next to you, ask a TA, ask me. 
 
 Kattis Problems
----------------
+===============
 
 Remember, here is the *magic* code we needed last week::
    

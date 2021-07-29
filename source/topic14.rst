@@ -1,10 +1,11 @@
+**********************
 Topic #14 -- Searching
-======================
+**********************
 
 .. image:: ../img/you_are_here.jpeg
 
 You are *here*
---------------
+==============
 
 * At this point in the course you should feel like:
     * The Python programming environment is a relatively familiar sight (Colab, IPython, PyCharm, Spyder)
@@ -29,7 +30,7 @@ You are *here*
     * You know how to make your own objects
 
 Back to fundamentals
---------------------
+====================
 
 * We've actually gone pretty deep into topics, so it's time to go back to some basic CS.
 * We have a lot of tools in our tool belt 
@@ -41,7 +42,7 @@ Back to fundamentals
 
 
 Searching (again)
------------------
+=================
 
 * I know I've beaten this into you at this point, but... *linear* search...
 
@@ -95,11 +96,12 @@ Searching (again)
 
 
 Quick look at different programming languages
----------------------------------------------
+=============================================
 
 Here are a few linear searchers in different programming languages. 
 
-**Python**
+Python
+------
 
 .. code-block:: python
     :linenos:
@@ -110,7 +112,8 @@ Here are a few linear searchers in different programming languages.
                 return True
         return False
 
-**C++**
+C++
+---
 		
 .. code-block:: cpp
     :linenos:	
@@ -124,7 +127,8 @@ Here are a few linear searchers in different programming languages.
         return false;
     }
 
-**Java**
+Java
+----
 
 .. code-block:: java
     :linenos:	
@@ -138,7 +142,8 @@ Here are a few linear searchers in different programming languages.
         return false;
     }
 
-**Haskell**
+Haskell
+-------
 
 .. code-block:: haskell
     :linenos:
@@ -150,7 +155,7 @@ Here are a few linear searchers in different programming languages.
   
 			
 For next class 
---------------
+==============
 
 * Keep reading `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_  
 

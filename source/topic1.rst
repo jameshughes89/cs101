@@ -1,8 +1,9 @@
+************************
 Topic #1 -- Intro, print
-========================
+************************
 
 What will I learn?
-------------------
+==================
 
 The short version:
 
@@ -23,7 +24,8 @@ The long version:
  
  
 What prerequisites do I need?
------------------------------
+=============================
+
 * Curiosity
 * A desire to learn a powerful new skill
 * A desire to distinguish yourself from peers in your discipline
@@ -37,7 +39,7 @@ What prerequisites do I need?
 
 
 Why are the course notes a website?
------------------------------------
+===================================
 
 
 * You're going to learn to program with Python
@@ -49,7 +51,7 @@ Why are the course notes a website?
 * Moodle will be used for announcements and assignment submissions
 
 There are two sections?
------------------------
+=======================
 
 * Yes
 * Section 11 is in person and will be a typical class
@@ -59,7 +61,7 @@ There are two sections?
   
   
 How will this class work?
--------------------------
+=========================
 
 This class is going to be run somewhat differently from other courses you may have experienced at university. 
 We're going to be using a somewhat, kinda' "partially flipped" classroom, with a "microlecture" format and lots of in class hands-on time.
@@ -106,7 +108,7 @@ We've already done this once already, but let's try it again:
    
    
 What should I bring to class
-----------------------------
+============================
 
 * Curiosity
 * Readiness to do stuff, rather than just listen
@@ -119,7 +121,7 @@ and you're keen to get the most out of the class, it's worth considering.
    
    
 Is this class easy?
--------------------
+===================
 
 .. admonition:: Quick Activity
 
@@ -138,7 +140,7 @@ Unfortunately, intro to CS classes do often have an unusually high fail rate.
 
 
 So I should be terrified?
--------------------------
+=========================
 
 No. Really really no. It's actually not that bad, but you should be prepared to be challenged (but that's why we're all here, right?). 
 
@@ -150,7 +152,7 @@ I really can't stress this enough. Most of the time when you're *working* on the
    
    
 I need help!
-------------
+============
 
 OK, cool. You probably will. If you feel like you're having a hard time, you're not special --- everyone runs into difficulties!
 
@@ -160,7 +162,7 @@ There are A LOT of resources to help you. We have Google, YouTube videos, email,
    
 
 Why did you just say Google so many times?
-------------------------------------------
+==========================================
 
 When a programmer isn't debugging, they're Googling their problems. This is so common that you can find an insane number of memes making fun of this. 
 
@@ -171,7 +173,7 @@ I am going to tell you to "Google It" very often in this course. This is intenti
    
 
 Can I write a program now?
---------------------------
+==========================
 
 Yes. Load up Python, and type this::
 
@@ -180,13 +182,12 @@ Yes. Load up Python, and type this::
 * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language.
    
 Wait... wut?
-------------
+============
 
 * Let's :doc:`get set up for CSCI 161 </gettingset>`
 
 All cool?
-
----------
+=========
 
 * Go back and run the "Hello, world!" program.
 * You're now officially a computer programmer!   
@@ -196,7 +197,7 @@ All cool?
    
    
 Videos
-------
+======
 
 * `Be sure to check out these YouTube videos! <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
 * **WARNING:** 
@@ -220,7 +221,7 @@ Videos
 
 
 For next week
--------------
+=============
 
 * `Read chapter 1 of the text <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html>`_
 * Read sections 2.1-2.5 of `chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_

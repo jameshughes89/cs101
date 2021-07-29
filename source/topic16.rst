@@ -1,9 +1,10 @@
+**********************************
 Topic #16 -- Models of Computation
-==================================
+**********************************
 
 
 Finite State Machines/Automata (FSM/FSA)
-----------------------------------------
+========================================
 
 * Simple models of computation. 
 * We can define a very very very very simple computer in terms of 
@@ -42,7 +43,7 @@ Finite State Machines/Automata (FSM/FSA)
     
 
 Pushdown Automata (PDA) and Context-Free Grammars 
--------------------------------------------------
+=================================================
 
 * FSM's are cool and all, but they can only solve certain types of problems. If we want to solve more *complex* problems (for lack of a better term), we need a more powerful machine. 
 
@@ -116,7 +117,7 @@ Pushdown Automata (PDA) and Context-Free Grammars
 
 
 Context-Sensitive Grammars
---------------------------
+==========================
 
 * Context matters now
 
@@ -136,7 +137,7 @@ Context-Sensitive Grammars
 
     
 Turing Machines 
----------------
+===============
 
 .. image:: ../img/TuringMachine.jpg
 
@@ -150,7 +151,7 @@ Turing Machines
 
     
 For next class
---------------
+==============
 
 * `Read Chapter 18 <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_
 
