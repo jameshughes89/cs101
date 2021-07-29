@@ -182,7 +182,6 @@ Rubber Duck Debugging
 * A shockingly effectively form of debugging
 * `If you don't have your own rubber duck, don't worry.  <https://play.google.com/store/apps/details?id=com.jameshughes89.dougtheduck>`_ 
 
-.. image:: ../img/Rubber_Duck.jpg
 
 Delta debugging
 ===============
