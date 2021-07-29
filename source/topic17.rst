@@ -151,8 +151,6 @@ Less high level
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NJoH6d1uAzk" frameborder="0" allowfullscreen></iframe>
 
-.. image:: ../img/marge.png  
-            
             
 Self Reference
 ==============
