@@ -286,9 +286,6 @@ Halting Problem
     * `I give up. <https://simple.wikipedia.org/wiki/Halting_problem>`_
     
 
-.. image:: ../img/scared.jpeg  
-
-
 **Why is this interesting?**
 
 * Humans want to be able to ask the question
