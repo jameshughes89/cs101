@@ -1,8 +1,9 @@
+***************************
 Getting set up for CSCI 161
-===========================
+***************************
 
 Colab
------
+=====
 
 There are a few ways to get setup to start programming in Python. By far the **easiest** and **recommended** way for CSCI 161 is to use `Google Colab <https://colab.research.google.com/notebooks/welcome.ipynb>`_.
 
@@ -10,8 +11,9 @@ There are a number of reasons this is the best choice for us, including being ve
 
 If you do not have a Google account, then it is easy to make one. If you are uncomfortable making a Google account, then no worries. You may use one of the options below. Do note that there is even a way to use the *notebook* style programming with the interpreter option and something called *Jupyter notebook*.
 
+
 Interpreter on Your Computer
-----------------------------
+============================
 
 Colab is awesome, however it does have one major downside... You **must** be connected to the internet for it to work. Although we'll still primarily use Colab, it is **strongly** recommended to also install Python on your computer. You'll pickup how to use both Colab and your local interpreter throught the course. 
 
@@ -21,8 +23,9 @@ Anaconda is my fav python distribution for a billion reasons. One of which is th
 
 .. image:: ../img/pathVariable.png
 
+
 Integrated Development Environment
-----------------------------------
+==================================
 
 If you would like, install an Integrated Development Environment (IDE). IDEs are special programs that can make it easier to write code. **HOWEVER**, I don't actually recommend using this in the course, or at least not at the start. Although IDEs do absolutely make a programmers life easier, at this stage of learning it will very very likely just confuse you and impeded your learning. 
 
