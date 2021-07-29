@@ -26,7 +26,6 @@ Professors
 * jdelamer at stfx.ca
 
 
-
 Class Times
 ^^^^^^^^^^^
 **Lecture Section 11 --- Dr. Hughes**
@@ -91,6 +90,7 @@ Office Hours
     * **TBD (TBD at stfx.ca)**:
         * TBD, TBD -- TBD
     
+    
 Learning Centre
 ^^^^^^^^^^^^^^^
 
@@ -104,11 +104,11 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
 * TBD, TBD
 
 
-
 Cool Things
 ^^^^^^^^^^^^
 * `kattis <https://open.kattis.com/>`_
 * `LeetCode <https://leetcode.com/problemset/all/>`_
+
 
 Getting Started
 ^^^^^^^^^^^^^^^
@@ -147,6 +147,7 @@ Course Notes
     topic18
     topic19
    
+   
 Labs
 ^^^^
 .. toctree::
@@ -165,6 +166,7 @@ Labs
     lab11
     lab12
     
+    
 Assignments
 ^^^^^^^^^^^
 .. toctree::
@@ -175,13 +177,14 @@ Assignments
     asn3
     asn4   
    
+   
 Course Outline
 ^^^^^^^^^^^^^^
 .. toctree::
     :maxdepth: 1
    
     outline11
-    outline12
+    .. outline12
 
 
 
