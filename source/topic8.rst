@@ -208,8 +208,6 @@ Aliasing
 * Spend some time getting used to this concept. I promise you, 100%, it will cause bugs in your code.
     * Happens to me all the time :(
 
-.. image:: ../img/sad.jpeg
-
 
 
 .. admonition:: Activity
