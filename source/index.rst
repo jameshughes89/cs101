@@ -17,10 +17,15 @@ This course is devoted to learning proper problem solving techniques and basic p
 Professors
 ^^^^^^^^^^
 
-* Dr. James Hughes
+* Dr. James Hughes (Section 11)
 * jhughes at stfx.ca
 * `@Modsurski <https://twitter.com/Modsurski>`_
 * **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE** `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_ **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE**
+
+* Dr. Jean-Alexis Delamer (Section 12)
+* jdelamer at stfx.ca
+
+
 
 Class Times
 ^^^^^^^^^^^
