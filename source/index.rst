@@ -74,37 +74,34 @@ Office Hours
 
 `Office Hours Etiquette --- Don't Do This <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 
-* **James Hughes** Annex 20B
-    * Tuesday, 10am -- 11am
-    * Wednesday, 10am -- 11am
-    * Thursday, 13:00 -- 14:00
-    * Friday, 10am -- 11am
+* **Dr. James Hughes** Annex 20B
+    * Tuesday, 10:00 -- 11:00
+    * Wednesday, 10:00 -- 11:00
+    * Thursday, 10:00 -- 11:00
+    * Friday, 10:00 -- 11:00
     
-* **(TAs)** via Blackboard Collaborate (Link on Moodle)
-    * **Mbongeni Ndlovu (TBD at stfx.ca)**:
-        * TBD, 9:15am -- 10:15am
-        * TBD, 10:15am -- 11:15am
-        
-    * **Priyanka Addagudi (x2019ftt at stfx.ca)**:
-        * Tuesday, 13:00 -- 14:00 (1pm -- 2pm)
-    
-* **TA Lab Office Hours (For Online Section Only)** via Blackboard Collaborate (Link on Moodle)
-    * **Liam Johnston (x2019brj at stfx.ca)**: 
-        * Thursday, 11:30am -- 12:30pm
-        
-    * **Travis MacDonald (x2015khn at stfx.ca)**: 
-        * Tuesday, 14:00 -- 15:00 (2pm -- 3pm)
-    
+   
+* **Dr. Jean-Alexis Delam** Annex TBD
+    * TBD, TBD -- TBD
 
-.. Learning Centre
-.. ^^^^^^^^^^^^^^^
-.. * https://www2.mystfx.ca/mscs/learning-centre
+* **(TAs)** TBD
+    * **TBD (TBD at stfx.ca)**:
+        * TBD, TBD -- TBD
+        
+    * **TBD (TBD at stfx.ca)**:
+        * TBD, TBD -- TBD
+    
+Learning Centre
+^^^^^^^^^^^^^^^
+
+* https://www2.mystfx.ca/mscs/learning-centre
+
 
 MSCS Tutorial Nights
 ^^^^^^^^^^^^^^^^^^^^
 The Math, Stats, and CS Society now has a time and location for our free tutorial sessions. 
 
-* Mon 18:00 -- 20:00, SCHW 205
+* TBD, TBD
 
 
 
