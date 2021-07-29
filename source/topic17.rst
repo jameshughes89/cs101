@@ -27,9 +27,6 @@ Recursion
 
 * `Use this website for a nice visualization! <http://www.pythontutor.com/visualize.html#mode=display>`_
 * Or use the debugger. 
-     
-.. image:: ../img/stackOverflow.jpg
-
 
 Don't Panic
 ===========
