@@ -56,14 +56,18 @@ YouTube
 
 Labs
 ^^^^
+
 **Lab Section 11 & 12**
 
-* Sec 1: Thr 14:15 -- 16:05 (L8-A9), SCHW 256
-* Sec 2: Fri 14:15 -- 16:05 (C9-K9), SCHW 256
+* Lab Sec 11: Thr 14:15 -- 16:05 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:15 -- 16:05 (C9-K9), MULH 4024
+
 
 **Lab Section 13 & 14**
 
-* Asynchronous - On your own time, with deadlines
+* Lab Sec 13: Mon 13:15 -- 15:05 (C4-A7), MULH 4024
+* Lab Sec 14: Tue 13:15 -- 15:05 (A5-K7), MULH 4024
+
 
 Office Hours
 ^^^^^^^^^^^^
