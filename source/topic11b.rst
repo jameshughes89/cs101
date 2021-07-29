@@ -1,8 +1,9 @@
+**************************
 Topic #11b -- The Debugger
-==========================
+**************************
 
 Now it's time...
-^^^^^^^^^^^^^^^^
+================
 
 * To follow along with this class you will need to have PyCharm installed. 
 * You should be familiar enough with Python and everything to be able to take advantage of PyCharm without it throwing you off too much
@@ -23,7 +24,7 @@ Now it's time...
 * I will focus on the PyCharm one here, but most of what I'm saying can be done in most debuggers in one way or another.
 
 Break Points
-^^^^^^^^^^^^
+============
 
     Some Broken Code::
    
@@ -60,7 +61,7 @@ Break Points
 * Now the program is frozen waiting on us
 
 Watching Variables
-^^^^^^^^^^^^^^^^^^
+==================
 
 * Check out the bottom of the screen in the previous picture.
 * It's telling us what the current value of ``a_list``, ``c``, ``cur_max``, and ``cur_max_index`` are. 
@@ -70,7 +71,7 @@ Watching Variables
 
 
 Evaluating Expressions on the fly
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=================================
 
 * We can even ask questions to Python at this time
 * Click the little calculator button
@@ -84,7 +85,7 @@ Evaluating Expressions on the fly
 .. image:: ../img/evalExprAsk.png
 
 Adding expressions to the watch list
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+====================================
 
 * Even more cool, instead of just asking a question once, we can add the expression to the watch list
 * Click the ``+`` button
@@ -100,7 +101,7 @@ Adding expressions to the watch list
 * But, what's so great about the watch list?
 
 Stepping through code one line at a time
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+========================================
 
 
 * Press the *step into* button and see what happens.
@@ -125,7 +126,7 @@ Stepping through code one line at a time
 * I blitzed through the above ideas and did a bad job explaining them. Just... for now... know they're a thing. The only way to learn them is to try them out. 
 
 The Call Stack
-^^^^^^^^^^^^^^
+==============
 
 * Over on the left hand side we see the *call stack*
 * Long story short, the thing at the top is where the code currently is
@@ -138,7 +139,7 @@ The Call Stack
 
 
 The Debugger Is Awesome
-^^^^^^^^^^^^^^^^^^^^^^^
+=======================
 
 * I really do hope you realize how amazing this tool is and that you start to make use of it. 
 * This is only the tip of the iceberg. There is A LOT we can do with a debugger. 
@@ -149,7 +150,7 @@ The Debugger Is Awesome
 
    
 For next class
-^^^^^^^^^^^^^^
+==============
      
 * Read `chapter 13 of the text <http://openbookproject.net/thinkcs/python/english3e/files.html>`_  
 * Read `chapter 19 of the text <http://openbookproject.net/thinkcs/python/english3e/exceptions.html>`_  

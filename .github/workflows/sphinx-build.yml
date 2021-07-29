@@ -1,0 +1,60 @@
+
+name: Sphinx Build Deploy
+
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  sphinx:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        python -m pip install -r requirements.txt
+    - name: Sphinx Build
+      run: |
+        sphinx-build -b html source/ out/
+    - name: Upload Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: website
+        path: out/
+
+  deploy:
+    needs:
+    - sphinx
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.repository == 'jameshughes89/cs101'
+    concurrency: deploying
+    steps: 
+    - name: Create Site Directory
+      run: mkdir site
+    - name: Download Build Artifact
+      uses: actions/download-artifact@v2
+      with:
+        name: website
+        path: site
+
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_REGION }}
+
+    - name: Copy Files to the Website
+      run: |
+        aws s3 sync ./site s3://modsurski.com/csci161 --delete
+

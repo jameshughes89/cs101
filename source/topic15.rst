@@ -1,12 +1,13 @@
+*************************
 Topic #15 -- Some Sorting
-=========================
+*************************
 
 .. Warning::
 
     We are into the domain of *nontrivial* algorithms. You should **not** expect to look at these algorithms and immediately understand how they work. (In fact, if you can do that, you should immediately enroll in grad school in Computer Science). These algorithms require *careful study* to make sense of. The best tool you have for understanding how they work is to *carefully trace their operation, step by step*. Trying to understand complex algorithms "all in one go" is a recipe for frustration. Take your time, and step through the algorithm (with pen and paper) on a small input to get a feel for what it's doing. I know you know about the debugger, but pen and paper is still #1. 
    
 Sorting
-^^^^^^^^
+=======
 
 * Believe it or not, there are a *lot* of ways to sort a list!
 * Some algorithms are just plain bad.
@@ -25,7 +26,7 @@ Sorting
     Each of the following algorithms have many implementations. What makes the algorithm the algorithm is the *high-level* idea, not the actual, literal implementations.
    
 Insertion sort
-^^^^^^^^^^^^^^^
+==============
 
 	.. image:: ../img/insertion.gif
 
@@ -69,7 +70,7 @@ Let's have a look at an insertion sort implementation in Python::
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/ofZ5ygghj9g" frameborder="0" allowfullscreen></iframe>
 	
 Selection Sort
-^^^^^^^^^^^^^^^
+==============
 
 	.. image:: ../img/selection.gif
 
@@ -126,7 +127,7 @@ Let's see Selection sort in action::
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/ADD6jsSS9HI" frameborder="0" allowfullscreen></iframe> 
 
 Bubble Sort
-^^^^^^^^^^^^
+===========
 
 	.. image:: ../img/bubble.gif
 
@@ -178,7 +179,7 @@ Let's see Bubble sort in Python::
 	
 	
 Bogosort
-^^^^^^^^^^
+========
 
 Here's another attempt at a sorting algorithm::
 
@@ -208,7 +209,7 @@ Here's another attempt at a sorting algorithm::
     Is this a good sorting algorithm? How many times do I have to go through the ``while`` loop in ``bogo_sort``? How about the ``for`` loop in ``is_sorted()``?
 
 WTF!?
-^^^^^
+=====
 
 * Searching a list is *way* faster when we have a sorted list. 
 * Why would someone want to sort a list in order to search it slightly faster when sorting is so slow?
@@ -218,7 +219,7 @@ WTF!?
 * BUT, also, there are better sorting algorithms...
 
 Why are we doing this again?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+============================
 
 * In your day-to-day life as a programmer, you won't write your own sorting routines. You'll rely on routines written by others, like Python's built-in ``sort()`` (which, by the way, uses the `Timsort algorithm <http://en.wikipedia.org/wiki/Timsort>`_ )
 * BUT... even if you don't build the tools yourself, you should understand how they work
@@ -229,7 +230,7 @@ Why are we doing this again?
 
 
 The horrible truth
-^^^^^^^^^^^^^^^^^^^
+==================
 
 * Insertion, Selection, and Bubble sort generally suck as sorting algorithms.
 * BUT... they are within our current means.
@@ -240,13 +241,13 @@ The horrible truth
         * It would be nearly impossible to overstate the importance of Donald Knuth's contributions to Computer Science.
 
 Let's see some sorting in action!
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=================================
 
 * http://www.sorting-algorithms.com/
 
    
 For next class 
-^^^^^^^^^^^^^^
+==============
 
 * Read `chapter 18 of the text <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_  
 

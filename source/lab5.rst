@@ -1,8 +1,9 @@
+******
 Lab #5
-========
+******
 
 Before Kattis
-^^^^^^^^^^^^^
+=============
 
 **1**
 
@@ -27,7 +28,7 @@ Write another function called ``add_one_n_times_f(a, n)`` that will add **one** 
 
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+===============
 
 Grab a scrap piece of paper to start scratching your ideas down on paper. The problems are getting tricky enough where this really is becoming a requirement. 
 

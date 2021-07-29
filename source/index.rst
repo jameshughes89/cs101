@@ -6,6 +6,7 @@
 Welcome to CSCI 161 --- Fall 2021
 =================================
 
+
 **This is the course webpage for both Sections 11 & 12 of CSCI 161.**
 
 **NOTE:** All posted/mentioned times mentioned related to this course are in Atlantic Time. 
@@ -15,7 +16,7 @@ An introduction to computers, algorithms, and programming. No previous knowledge
 This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include problem analysis, algorithm development, data representation, control structures, lists, functions, and file manipulation.
 
 Professors
-^^^^^^^^^^
+==========
 
 * Dr. James Hughes (Section 11)
 * jhughes at stfx.ca
@@ -27,23 +28,31 @@ Professors
 
 
 Class Times
-^^^^^^^^^^^
-**Lecture Section 11 --- Dr. Hughes**
+===========
+
+Lecture Section 11
+------------------
+
+**Dr. Hughes**
 
 * Tue 11:15 - 12:05 (K4), SCHW 110
 * Wed 13:15 - 14:05 (K5), SCHW 110
 * Fri 12:15 - 13:05 (K6), SCHW 110
 
 
-**Lecture Section 12 --- Dr. Delamer**
+Lecture Section 12
+------------------
+
+**Dr. Delamer**
 
 * Mon 10:15 - 11:05 (C1), GM 001
 * Wed 09:15 - 10:05 (C2), GM 001
 * Fri 08:15 - 09:05 (C3), GM 001
 
 
+
 YouTube
-^^^^^^^
+=======
 
 `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
 
@@ -54,22 +63,27 @@ YouTube
 
 
 Labs
-^^^^
+====
+Lab Section 11 & 12
+-------------------
 
-**Lab Section 11 & 12 --- Dr. Hughes**
+**Dr. Hughes**
 
 * Lab Sec 11: Thr 14:15 -- 16:05 (L8-A9), MULH 4024
 * Lab Sec 12: Fri 14:15 -- 16:05 (C9-K9), MULH 4024
 
 
-**Lab Section 13 & 14 --- Dr. Delamer**
+Lab Section 13 & 14
+-------------------
+
+**Dr. Delamer**
 
 * Lab Sec 13: Mon 13:15 -- 15:05 (C4-A7), MULH 4024
 * Lab Sec 14: Tue 13:15 -- 15:05 (A5-K7), MULH 4024
 
 
 Office Hours
-^^^^^^^^^^^^
+============
 
 `Office Hours Etiquette --- Don't Do This <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 
@@ -92,26 +106,27 @@ Office Hours
     
     
 Learning Centre
-^^^^^^^^^^^^^^^
+================
 
 * https://www2.mystfx.ca/mscs/learning-centre
 
 
 MSCS Tutorial Nights
-^^^^^^^^^^^^^^^^^^^^
+====================
+
 The Math, Stats, and CS Society now has a time and location for our free tutorial sessions. 
 
 * TBD, TBD
 
 
 Cool Things
-^^^^^^^^^^^^
+===========
 * `kattis <https://open.kattis.com/>`_
 * `LeetCode <https://leetcode.com/problemset/all/>`_
 
 
 Getting Started
-^^^^^^^^^^^^^^^
+===============
 .. toctree::
     :maxdepth: 1
    
@@ -119,7 +134,7 @@ Getting Started
   
 
 Course Notes
-^^^^^^^^^^^^
+============
 .. toctree::
     :maxdepth: 1
    
@@ -149,7 +164,7 @@ Course Notes
    
    
 Labs
-^^^^
+====
 .. toctree::
     :maxdepth: 1
    
@@ -168,7 +183,7 @@ Labs
     
     
 Assignments
-^^^^^^^^^^^
+===========
 .. toctree::
     :maxdepth: 1
    
@@ -179,7 +194,7 @@ Assignments
    
    
 Course Outline
-^^^^^^^^^^^^^^
+==============
 .. toctree::
     :maxdepth: 1
    
@@ -187,9 +202,9 @@ Course Outline
     .. outline12
 
 
-
+.. ******************
 .. Indices and tables
-   ==================
+.. ******************
 
     * :ref:`genindex`
     * :ref:`modindex`

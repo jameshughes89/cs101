@@ -1,8 +1,9 @@
+*****************************
 Topic #7 -- Strings & Objects
-=============================
+*****************************
 
 The thing about strings
-^^^^^^^^^^^^^^^^^^^^^^^
+=======================
 .. admonition:: Activity
 
     How is a string different from the other data types we've seen (``int``, ``float``, ``numpy.float32``, ``bool``)?
@@ -43,7 +44,7 @@ The thing about strings
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/cxppFPrjcow" frameborder="0" allowfullscreen></iframe>
 	
 More loops
-^^^^^^^^^^^^^
+==========
 * I can get the *length* of string like this:
     >>> len(a)
     15
@@ -96,7 +97,7 @@ More loops
     * Some are just more efficient, and easier to read, than others.
    
 Mutability
-^^^^^^^^^^^
+==========
 * So... if we can *access* an individual character in a string with an index...
 * ... you might be feeling tempted to try to *set* an individual character with an index, too.
 * Let's try::
@@ -113,7 +114,7 @@ Mutability
    
 
 in
-^^
+==
 
 .. admonition:: Activity
 
@@ -150,7 +151,7 @@ in
     Write a function ``where_is(char,string)`` that returns the *index* of the first occurrence of ``char`` in ``string``.
 
 String Trivia
-^^^^^^^^^^^^^
+=============
 * ``''`` or ``""`` will work for the quotes needed for strings
     * But you can put ``''`` inside ``""`` s
    
@@ -178,6 +179,7 @@ String Trivia
 
 * The string ``''`` is a string, but it's *empty*
     * This is a weirdly important detail actually
+
     >>> a = ''
     >>> print(len(a))
     0
@@ -190,6 +192,7 @@ String Trivia
     * '\\\t'
     * '\\\\'
     * There are a bunch 
+    
     >>> a = 'hello\nWorld\tFUN\\!'
     >>> print(a)
     hello
@@ -209,7 +212,7 @@ String Trivia
     A
    
 Formatting output (the ol' trusty way)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+======================================
 
 **%.2f** (percent dot two eff)
 
@@ -255,7 +258,7 @@ Formatting output (the ol' trusty way)
 
    
 Objects
-^^^^^^^
+=======
 
 .. warning::
    
@@ -280,7 +283,7 @@ Objects
 
 
 Methods
-^^^^^^^
+=======
 * We've seen built in functions 
     * ``print('this is a function')``
 * We've written our own functions
@@ -309,12 +312,14 @@ Methods
     * Sometimes we do things with functions
     * Sometimes we do things with methods
 
-**BUT WAIT...**
+BUT WAIT...
+-----------
 
 * Why do we have to do it like this ``a_string.upper()``
 * As opposed to like this: ``upper(a_string)``
 
-**Answer**
+Answer
+------
 
 1. Because... 
 
@@ -333,19 +338,20 @@ Methods
 5. But really... because
    
 
-**How are you supposed to keep track of what's what?**
+How are you supposed to keep track of what's what?
+--------------------------------------------------
 
 * Don't worry, you'll get it with practice
 * Do note though, **the key is practice** 
 
 Heavy lifting with strings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==========================
 * If the program you are writing needs to do a lot of string manipulation, you probably want to
     >>> import string
 * ... and `read about all the nifty stuff it does <http://docs.python.org/library/string.html>`_ 
 
 For next class
-^^^^^^^^^^^^^^^
+==============
 
 * Read `chapter 11 of the text <http://openbookproject.net/thinkcs/python/english3e/lists.html>`_
 
