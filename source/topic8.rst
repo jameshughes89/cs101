@@ -433,8 +433,6 @@ Lists and loops
 Mind the rotating knives
 ========================
 
-	.. image:: ../img/spinning.gif
-
 * Remember how assigning lists wasn't really *copying* them, but just creating a new name?
 * I wonder what happens when you pass a list to a function as an argument?
     * Does the function get it's own copy?
