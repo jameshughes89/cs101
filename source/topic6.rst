@@ -45,8 +45,6 @@ First loops
 * So far, if we want Python to do the same thing over and over, we have to tell it explicitly by repeating those instructions over and over.
     * There has to be a better way!
 
-.. image:: ../img/betterway.gif
-
 * We want to automate the process of repeating things.
 * If I can put a block of instructions into a function and call that function...
 * ... why can't I put a block of instructions somewhere and say "Hey, do that block of
