@@ -144,9 +144,6 @@ The Debugger Is Awesome
 * I really do hope you realize how amazing this tool is and that you start to make use of it. 
 * This is only the tip of the iceberg. There is A LOT we can do with a debugger. 
 * The only way to get good at using it is by using it and exploring. See what you can do!
- 
-
-.. image:: ../img/finally.jpg
 
    
 For next class

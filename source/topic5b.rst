@@ -36,8 +36,6 @@ A car rental place needs our help. They want a simple program to calculate how m
 * All renters under the age of 25 are charged an additional $10.00/day because they hate young people
 * Print out the final total cost
 
-.. image:: ../img/babyKeys.jpg
-
    
 **Step 1**
 
@@ -75,8 +73,6 @@ A car rental place needs our help. They want a simple program to calculate how m
     * Easy stuff
 * Need to know how many kms above 100 we are
     * So just figure out if a number is greater than 100?
-
-.. image:: ../img/money.jpg
 
 **Step 3:**
 

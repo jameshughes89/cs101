@@ -126,8 +126,6 @@ Values
    
 * Computers are exceptionally stupid. You must be completely explicit about everything
 
-    .. image:: ../img/machine.jpeg
-
 * To a computer, the integer 1 is not necessarily the same thing as the floating point number 1.0... because they have different *types*
     * They actually have different meaning
     * They even technically have different physical representations inside the computer too, which is neato  
@@ -222,8 +220,6 @@ Choosing variable names
 .. admonition:: Activity
 
    Suppose you're a big fan of '80s Arena Rock. Create two variables, named ``def`` and ``leppard``, set them to ``19`` and ``87`` respectively, then add them.
-
-.. image:: ../img/DL.jpeg
 
 * What happened? (To your code, not the band!)   
 
