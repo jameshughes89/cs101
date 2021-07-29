@@ -38,7 +38,10 @@ Class Times
 
 **Lecture Section 12**
 
-* Asynchronous - On your own time
+* Mon 10:15 - 11:05 (C1), GM 001
+* Wed 09:15 - 10:05 (C2), GM 001
+* Fri 08:15 - 09:05 (C3), GM 001
+
 
 YouTube
 ^^^^^^^
