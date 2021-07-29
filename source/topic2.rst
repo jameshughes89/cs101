@@ -221,8 +221,6 @@ Choosing variable names
 
    Suppose you're a big fan of '80s Arena Rock. Create two variables, named ``def`` and ``leppard``, set them to ``19`` and ``87`` respectively, then add them.
 
-.. image:: ../img/DL.jpeg
-
 * What happened? (To your code, not the band!)   
 
 Constants
