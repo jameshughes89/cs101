@@ -29,14 +29,14 @@ Professors
 
 Class Times
 ^^^^^^^^^^^
-**Lecture Section 11**
+**Lecture Section 11 --- Dr. Hughes**
 
 * Tue 11:15 - 12:05 (K4), SCHW 110
 * Wed 13:15 - 14:05 (K5), SCHW 110
 * Fri 12:15 - 13:05 (K6), SCHW 110
 
 
-**Lecture Section 12**
+**Lecture Section 12 --- Dr. Delamer**
 
 * Mon 10:15 - 11:05 (C1), GM 001
 * Wed 09:15 - 10:05 (C2), GM 001
@@ -57,13 +57,13 @@ YouTube
 Labs
 ^^^^
 
-**Lab Section 11 & 12**
+**Lab Section 11 & 12 --- Dr. Hughes**
 
 * Lab Sec 11: Thr 14:15 -- 16:05 (L8-A9), MULH 4024
 * Lab Sec 12: Fri 14:15 -- 16:05 (C9-K9), MULH 4024
 
 
-**Lab Section 13 & 14**
+**Lab Section 13 & 14 --- Dr. Delamer**
 
 * Lab Sec 13: Mon 13:15 -- 15:05 (C4-A7), MULH 4024
 * Lab Sec 14: Tue 13:15 -- 15:05 (A5-K7), MULH 4024
@@ -74,16 +74,16 @@ Office Hours
 
 `Office Hours Etiquette --- Don't Do This <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 
-* **James Hughes** via Blackboard Collaborate (Link on Moodle)
+* **James Hughes** Annex 20B
     * Tuesday, 10am -- 11am
     * Wednesday, 10am -- 11am
-    * Thursday, 13:00 -- 14:00 (1pm -- 2pm)
+    * Thursday, 13:00 -- 14:00
     * Friday, 10am -- 11am
     
 * **(TAs)** via Blackboard Collaborate (Link on Moodle)
-    * **Mbongeni Ndlovu (x2016oxv at stfx.ca)**:
-        * Wednesday, 9:15am -- 10:15am
-        * Thursday, 10:15am -- 11:15am
+    * **Mbongeni Ndlovu (TBD at stfx.ca)**:
+        * TBD, 9:15am -- 10:15am
+        * TBD, 10:15am -- 11:15am
         
     * **Priyanka Addagudi (x2019ftt at stfx.ca)**:
         * Tuesday, 13:00 -- 14:00 (1pm -- 2pm)
