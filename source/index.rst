@@ -95,7 +95,7 @@ Office Hours
     * Friday, 10:00 -- 11:00
     
    
-* **Dr. Jean-Alexis Delam** Annex TBD
+* **Dr. Jean-Alexis Delam** Annex 9C
     * TBD, TBD -- TBD
 
 * **(TAs)** TBD
