@@ -19,7 +19,6 @@ What will I learn?
 .. image:: ../img/turing.jpg
 
  
- 
 What prerequisites do I need?
 =============================
 
@@ -217,7 +216,6 @@ Videos
 .. raw:: html
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/MHwfXIl7O4U" frameborder="0" allowfullscreen></iframe><br><br>
-
 
 
 .. raw:: html

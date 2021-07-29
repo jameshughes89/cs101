@@ -1,8 +1,9 @@
+******
 Lab #6
-========
+******
 
 Before Kattis
-^^^^^^^^^^^^^
+=============
 
 We're going to do a bunch of linear searchers to start. 
 
@@ -25,7 +26,7 @@ Write a function ``where_is_for(char,string)`` that returns the index of the fir
 
 
 Kattis Problems
-^^^^^^^^^^^^^^^
+===============
 
 Grab a scrap piece of paper to start scratching your ideas down on paper. The problems are getting tricky enough where this really is becoming a requirement. 
 
