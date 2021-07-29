@@ -126,8 +126,6 @@ Values
    
 * Computers are exceptionally stupid. You must be completely explicit about everything
 
-    .. image:: ../img/machine.jpeg
-
 * To a computer, the integer 1 is not necessarily the same thing as the floating point number 1.0... because they have different *types*
     * They actually have different meaning
     * They even technically have different physical representations inside the computer too, which is neato  
