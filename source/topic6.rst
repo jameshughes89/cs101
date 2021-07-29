@@ -171,8 +171,6 @@ OMG some actual *science*!
 Algorithm
 =========
 
-	.. image:: ../img/algorithm.png
-
 * What you just saw, Newton's method, is an example of an **algorithm**.
 * An algorithm is a description of a series of steps to solve a problem.
 * Algorithms can be presented in natural language, but are easier to turn into a program when presented in a formal language.
