@@ -62,8 +62,6 @@ What you can expect:
 * In order to avoid getting bogged down in detail, I'm going to play fast and loose with some definitions and concepts. Sorry (or not, depending on your perspective).
 * You'll be able to turn your life up to an 11!
 
-.. image:: ../img/turnUp.jpg
-
 
 scikit-learn
 ============
