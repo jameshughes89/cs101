@@ -1,8 +1,8 @@
-===================================================================
-Computer Science 161 -- Introduction to Programming
-===================================================================
+=====================================================================
+Computer Science 161 Sections 11 & 12 --- Introduction to Programming
+=====================================================================
 
-Fall 2019
+Fall 2021
 =========
 
 Course Description
@@ -12,40 +12,78 @@ An introduction to computers, algorithms, and programming. No previous knowledge
 
 This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include problem analysis, algorithm development, data representation, control structures, lists, functions, and file manipulation.
 
-This class will use the programming language *PYTHON!*
+This class will use the programming language python.
 
 
 Prerequisites
 =============
-* An interest in learning a bit about what programming can do for *you*!
 
+* An interest in learning a bit about what programming can do for *you*!
 
 
 Instructor
 ==========
 
-* James Hughes
+Lecture Section 11
+------------------
+
+* Dr. James Hughes
 * Office: Annex 20B
 * Office Hours: Tuesday -- Friday, 10:00am -- 11:00am, Annex 20B
-* Email: jhughes@stfx.ca
+* Email: jhughes at stfx.ca
 
+
+Lecture Section 12
+------------------
+
+* Dr. Jean-Alexis Delamer
+* Office: Annex 9C
+* Office Hours: TBD, TBD, Annex 9C
+* Email: jdelamer at stfx.ca
 
 
 Class Times
 ===========
 
-* Tuesday   11:15 - 12:15, SCHW 110
-* Wednesday 13:15 - 14:15, SCHW 110
-* Friday    12:15 - 13:15, SCHW 110
+Lecture Section 11
+------------------
 
+**Dr. Hughes**
+
+* Tue 11:15 - 12:05 (K4), SCHW 110
+* Wed 13:15 - 14:05 (K5), SCHW 110
+* Fri 12:15 - 13:05 (K6), SCHW 110
+
+
+Lecture Section 12
+------------------
+
+**Dr. Delamer**
+
+* Mon 10:15 - 11:05 (C1), GM 001
+* Wed 09:15 - 10:05 (C2), GM 001
+* Fri 08:15 - 09:05 (C3), GM 001
 
 
 Lab
 ===
 
-* Sec 1: Thursday 14:15 - 16:15, MUL 4024
-* Sec 2: Friday   14:15 - 16:15, SCHW 256
+Lab Section 11 & 12
+-------------------
 
+**Dr. Hughes**
+
+* Lab Sec 11: Thr 14:15 -- 16:05 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:15 -- 16:05 (C9-K9), MULH 4024
+
+
+Lab Section 13 & 14
+-------------------
+
+**Dr. Delamer**
+
+* Lab Sec 13: Mon 13:15 -- 15:05 (C4-A7), MULH 4024
+* Lab Sec 14: Tue 13:15 -- 15:05 (A5-K7), MULH 4024
 
 
 Website
@@ -53,7 +91,6 @@ Website
 
 * Mostly :doc:`this website </index>`
 * MOODLE
-
 
 
 Textbook and Lecture Notes
@@ -113,7 +150,7 @@ Student Evaluation (Tentative Dates)
 +------------------------+------------+---------------------+
 | Lecture Activities     | 10%        | Throughout          |
 +------------------------+------------+---------------------+
-| Midterm Exam           | 10%        | Oct. 22nd, in class |
+| Midterm Exam           | 10%        | TBD, in class       |
 +------------------------+------------+---------------------+
 | Final Exam             | 30%        | TBA                 |
 +------------------------+------------+---------------------+
@@ -195,6 +232,8 @@ I may need to send email messages to the whole class or to students individually
 Note that StFX and most other email providers establish quotas or limits on the amount of space available to you. If you let your email accumulate there, your mailbox may fill up and you may lose important email from your instructors. Losing email is not an acceptable excuse for not knowing about the information that was sent. 
 
 Students are encouraged to contact their course instructor via email with brief, email appropriate questions regarding lecture materials or clarification of assignments. However, before sending email to an instructor, the student should check the course website to see if the requested information is already there. Students must send email from their StFX account and include CSCI 161 in the subject line of the email. Lengthy and in-depth questions are to be asked during office hours.
+
+**Email etiquette** --- Emails should be addressed to Dr./Prof. Hughes or Delamer.
 
 
 Attendance
