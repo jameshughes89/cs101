@@ -38,7 +38,11 @@ Lecture Section 12
 
 * Dr. Jean-Alexis Delamer
 * Office: Annex 9C
-* Office Hours: Monday 9:00am -- 10:00am, Wednesday 10:30am -- 11:30am, Annex 9C
+* Office Hours:
+    * Monday, 9:00am -- 10:00am
+    * Wednesday, 10:30am -- 11:30am
+    * Thursday, 9:00am -- 10:00am
+    * Friday, 11:00am -- 12:00pm
 * Email: jdelamer at stfx.ca
 
 
