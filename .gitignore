@@ -15,7 +15,7 @@ out/*
 
 # Assignments
 assignments/
-asn*
+
 
 # IntelliJ/PyCharm stuff
 .idea
