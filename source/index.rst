@@ -95,8 +95,11 @@ Office Hours
     * Friday, 10:00 -- 11:00
     
    
-* **Dr. Jean-Alexis Delam** Annex 9C
-    * TBD, TBD -- TBD
+* **Dr. Jean-Alexis Delamer** Annex 9C
+    * Monday, 9:00 -- 10:00
+    * Wednesday, 10:30 -- 11:30
+    * Thursday, 9:00 -- 10:00
+    * Friday, 11:00 -- 12:00
 
 * **(TAs)** TBD
     * **TBD (TBD at stfx.ca)**:
