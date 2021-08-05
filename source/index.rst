@@ -201,9 +201,8 @@ Course Outline
 ==============
 .. toctree::
     :maxdepth: 1
-   
-    outline11
-    .. outline12
+ 
+    outline
 
 
 .. ******************
