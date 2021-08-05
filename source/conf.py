@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CSCI 161'
-copyright = u'2018, James Hughes & Mark Daley'
+copyright = u'2021, James Hughes, Taras Mychaskiw, & Jean-Alexis Delamer'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
