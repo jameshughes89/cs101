@@ -96,9 +96,6 @@ Implementing Objects/ADTs
 Let's Make a Simple Object/ADT
 ==============================
 
-.. image:: ../img/enthusiasm.jpg
-    :height: 250px
-
 * All objects/ADTs, regardless of how simple or complex they are, are all build with the same basic things. 
 
 * But we're going to start really simple.

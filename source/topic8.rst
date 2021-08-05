@@ -208,8 +208,6 @@ Aliasing
 * Spend some time getting used to this concept. I promise you, 100%, it will cause bugs in your code.
     * Happens to me all the time :(
 
-.. image:: ../img/sad.jpeg
-
 
 
 .. admonition:: Activity
@@ -434,8 +432,6 @@ Lists and loops
 
 Mind the rotating knives
 ========================
-
-	.. image:: ../img/spinning.gif
 
 * Remember how assigning lists wasn't really *copying* them, but just creating a new name?
 * I wonder what happens when you pass a list to a function as an argument?
