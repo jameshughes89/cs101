@@ -1,5 +1,6 @@
+******************************************
 Assignment #4: Playing with Objects is fun
-==========================================
+******************************************
 
 * **Worth**: 20%
 * **DUE**: November 30th at 11:55pm; submitted on MOODLE.
@@ -31,7 +32,7 @@ We're going to write a program that will use objects to store, search, remove, a
     The trick here is to really focus on the sub-problems. I have seen a lot of people on the previous assignments get overwhelmed and distracted by the bigger picture. It's not a bad idea to keep the big picture in mind, but here just focus on the small problems, one at at time. Everything will come together. 
    
 Part 1
-^^^^^^
+======
 
 Make a Country Class. 
 
@@ -85,7 +86,7 @@ Your class should look like this, but with the functions filled in:
    Test that your Country objects work correctly. Test **THOROUGHLY**. Do **not** move on until you know everything here is working properly.
 
 Part 2
-^^^^^^
+======
 
 Make a CountryCatalogue class. 
 
@@ -209,7 +210,7 @@ Make a CountryCatalogue class.
 	
 
 Part 3
-^^^^^^
+======
 
 This part is just for making sure everything works. 
 
@@ -242,7 +243,8 @@ Do not worry about dealing with exceptions.
 Do not worry about uppercase vs lowercase. Like, Canada vs. canada. You can pretend they are two separate countries.  	
 		
 What to submit
-^^^^^^^^^^^^^^
+==============
+
 * Your ``Country.py`` and ``CountryCatalogue.py`` classes. Do not submit the ``main.py`` part.
 * If you used Colab, you probably have everything in one script. This is ok. 
 * If you used PyCharm or Spyder, you may have them in different files. This is OK, just submit both.  
@@ -253,7 +255,7 @@ What to submit
     * Use proper variable names
   
 General FAQ:
-^^^^^^^^^^^^
+============
 * I don't know how to do *X*.
     * OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
 * It’s not working, therefore Python is broken!

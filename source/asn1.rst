@@ -1,5 +1,6 @@
+***********************************
 Assignment #1: Density of Starbucks
-==================================================
+***********************************
 
 * **Worth**: 10%
 * **DUE**: October 13th at 11:55pm; submitted on MOODLE. (Later date than expected due to weird year). 
@@ -72,7 +73,7 @@ If you would like to *not* use Colab and work from your own computer, then just 
 .. image:: ../img/uploadStarbucks.png
 
 Complete Latitude/Longitude Conversion Function
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===============================================
 
 Humans like to express `latitudes <http://en.wikipedia.org/wiki/Latitude>`_ and  `longitudes <http://en.wikipedia.org/wiki/Longitude>`_ in degrees, minutes, and seconds. You *could* work with those units in Python, but your computations (and, hence, code) will
 be much *cleaner* if you convert to the single unit "degrees", using decimals of a degree to represent arcminutes and arcseconds (don't worry, I swear you that this isn't that complicated).
@@ -82,7 +83,7 @@ Your first task will be to fill out the code for the function ``convert_to_decim
 
 
 Have a peek at the data-loading function
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+========================================
 
 The function that loads the data is a freebie. It contains some stuff we haven't discussed in class yet, but it's pretty easy to figure out what's going on if you look at it and hack around. So... look at it. Get used to looking at code that isn't yours, using  unfamiliar ideas/idioms/patterns, and trying to figure out what it does. This isn't always easy (sometimes it's **very hard**), but you'll spend a lot of time doing it (whether you want to or not!). 
 
@@ -94,7 +95,8 @@ This data in the .csv file is fortunately already in decimal format so you will 
 
 
 Complete the function to compute lat-long rectangle area
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+========================================================
+
 We want to compute the *density* of Starbucks, not just the raw number of them. A reasonable measure for this is 'Starbucks per square kilometer'. To compute this, we first need to know how to find the area of a lat-long rectangle. The function ``subtended_area()`` takes as parameters the 'bottom left' and 'top right' corners of a lat-long rectangle (or, the left and bottom lines, and then the right and top lines). It should return the area of that lat-long rectangle in square kilometers. 
 
 To save you some solid angle computations: given two lat/long pairs, the formula to compute the subtended area is:
@@ -108,7 +110,8 @@ where *R* is the radius of the sphere (Earth in this case: 6378.1 km).
 
    
 Complete the function that counts the number of Starbucks in a region
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=====================================================================
+
 Counting up the number of Starbucks in a given area. The function ``num_starbucks()`` is already set up to *loop* over every Starbucks location in a *list*. All you have to do is remember to pass in the list. Have a look a the loop. Even if we haven't formally discussed this structure in class yet, it should be pretty clear what it's doing.
 
 Fortunately, the data coming in is already in decimal format, so there is no need to actually  convert these values with the ``convert_to_decimal`` function.
@@ -131,7 +134,8 @@ If the existing code is scaring you, think about it this way:
 
 
 Finally
-^^^^^^^^
+=======
+
 Finally, fill in a convenience function ``starbucks_per_kmsq()`` which, given subtending lat/long pairs, returns the density of Starbucks. 
 
 TODO:
@@ -144,12 +148,13 @@ TODO:
 
 
 Now try it!
-^^^^^^^^^^^^
+===========
+
 Try your code. Try small regions and big regions. What area has the highest Starbucks density you can find? The lowest? Make sure to print them out. 
 
 
 What to submit to Moodle
-^^^^^^^^^^^^^^^^^^^^^^^^^
+========================
 
 Submit your work on Moodle. 
 
@@ -168,7 +173,7 @@ Submit your work on Moodle.
 
 
 Some hints
-^^^^^^^^^^^
+==========
 
 * Work on one function at a time. 
 * Get each function *working perfectly* before you go on to the next one. 
@@ -177,7 +182,8 @@ Some hints
 * If you need help, *ask*! Drop by my office hours. 
 
 Some marking details
-^^^^^^^^^^^^^^^^^^^^^
+====================
+
 .. warning::
 	Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or even that your program is correct.
 
@@ -191,8 +197,9 @@ Below is a list of both *quantitative* and *qualitative* things we will look for
 * Did you do just weird things that make no sense?
 
 
-FAQ:
-^^^^^^^^^^^^^^^
+General FAQ:
+============
+
 * Does my text file have enough details?
 	* Probably. The shorter the better.
 * I don't know how to do *X*.
