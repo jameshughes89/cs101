@@ -274,9 +274,6 @@ NumPy Types
     3.33
 
 
-    .. image:: ../img/monster.jpeg
-
-
 * Floating point precision...
 * Let's think for a second about real numbers vs. computers. 	
 	

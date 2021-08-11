@@ -27,9 +27,6 @@ Recursion
 
 * `Use this website for a nice visualization! <http://www.pythontutor.com/visualize.html#mode=display>`_
 * Or use the debugger. 
-     
-.. image:: ../img/stackOverflow.jpg
-
 
 Don't Panic
 ===========
@@ -151,8 +148,6 @@ Less high level
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NJoH6d1uAzk" frameborder="0" allowfullscreen></iframe>
 
-.. image:: ../img/marge.png  
-            
             
 Self Reference
 ==============
@@ -290,9 +285,6 @@ Halting Problem
         
     * `I give up. <https://simple.wikipedia.org/wiki/Halting_problem>`_
     
-
-.. image:: ../img/scared.jpeg  
-
 
 **Why is this interesting?**
 

@@ -4,8 +4,9 @@
    contain the root `toctree` directive.
 
 *********************************
-Welcome to CSCI 161 --- Fall 2020
+Welcome to CSCI 161 --- Fall 2021
 *********************************
+
 
 **This is the course webpage for both Sections 11 & 12 of CSCI 161.**
 
@@ -18,24 +19,38 @@ This course is devoted to learning proper problem solving techniques and basic p
 Professors
 ==========
 
-* Dr. James Hughes
+* Dr. James Hughes (Section 11)
 * jhughes at stfx.ca
 * `@Modsurski <https://twitter.com/Modsurski>`_
 * **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE** `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_ **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE**
 
+* Dr. Jean-Alexis Delamer (Section 12)
+* jdelamer at stfx.ca
+
+
 Class Times
 ===========
+
 Lecture Section 11
 ------------------
 
-* Tue 11:15 - 12:05 (K4), MULH 2070
-* Wed 13:15 - 14:05 (K5), MULH 2070
-* Fri 12:15 - 13:05 (K6), MULH 2070
+**Dr. Hughes**
+
+* Tue 11:15 - 12:05 (K4), SCHW 110
+* Wed 13:15 - 14:05 (K5), SCHW 110
+* Fri 12:15 - 13:05 (K6), SCHW 110
+
 
 Lecture Section 12
 ------------------
 
-* Asynchronous - On your own time
+**Dr. Delamer**
+
+* Mon 10:15 - 11:05 (C1), GM 001
+* Wed 09:15 - 10:05 (C2), GM 001
+* Fri 08:15 - 09:05 (C3), GM 001
+
+
 
 YouTube
 =======
@@ -53,57 +68,66 @@ Labs
 Lab Section 11 & 12
 -------------------
 
-* Sec 1: Thr 14:15 -- 16:05 (L8-A9), SCHW 256
-* Sec 2: Fri 14:15 -- 16:05 (C9-K9), SCHW 256
+**Dr. Hughes**
+
+* Lab Sec 11: Thr 14:15 -- 16:05 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:15 -- 16:05 (C9-K9), MULH 4024
+
 
 Lab Section 13 & 14
 -------------------
 
-* Asynchronous - On your own time, with deadlines
+**Dr. Delamer**
+
+* Lab Sec 13: Mon 13:15 -- 15:05 (C4-A7), MULH 4024
+* Lab Sec 14: Tue 13:15 -- 15:05 (A5-K7), MULH 4024
+
 
 Office Hours
 ============
 
 `Office Hours Etiquette --- Don't Do This <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 
-* **James Hughes** via Blackboard Collaborate (Link on Moodle)
-    * Tuesday, 10am -- 11am
-    * Wednesday, 10am -- 11am
-    * Thursday, 13:00 -- 14:00 (1pm -- 2pm)
-    * Friday, 10am -- 11am
+* **Dr. James Hughes** Annex 20B
+    * Tuesday, 10:00 -- 11:00
+    * Wednesday, 10:00 -- 11:00
+    * Thursday, 10:00 -- 11:00
+    * Friday, 10:00 -- 11:00
     
-* **(TAs)** via Blackboard Collaborate (Link on Moodle)
-    * **Mbongeni Ndlovu (x2016oxv at stfx.ca)**:
-        * Wednesday, 9:15am -- 10:15am
-        * Thursday, 10:15am -- 11:15am
-        
-    * **Priyanka Addagudi (x2019ftt at stfx.ca)**:
-        * Tuesday, 13:00 -- 14:00 (1pm -- 2pm)
-    
-* **TA Lab Office Hours (For Online Section Only)** via Blackboard Collaborate (Link on Moodle)
-    * **Liam Johnston (x2019brj at stfx.ca)**: 
-        * Thursday, 11:30am -- 12:30pm
-        
-    * **Travis MacDonald (x2015khn at stfx.ca)**: 
-        * Tuesday, 14:00 -- 15:00 (2pm -- 3pm)
-    
+   
+* **Dr. Jean-Alexis Delamer** Annex 9C
+    * Monday, 9:00 -- 10:00
+    * Wednesday, 10:30 -- 11:30
+    * Thursday, 9:00 -- 10:00
+    * Friday, 11:00 -- 12:00
 
-.. Learning Centre
-.. ===============
-.. * https://www2.mystfx.ca/mscs/learning-centre
+* **(TAs)** TBD
+    * **TBD (TBD at stfx.ca)**:
+        * TBD, TBD -- TBD
+        
+    * **TBD (TBD at stfx.ca)**:
+        * TBD, TBD -- TBD
+    
+    
+Learning Centre
+================
+
+* https://www2.mystfx.ca/mscs/learning-centre
+
 
 MSCS Tutorial Nights
 ====================
+
 The Math, Stats, and CS Society now has a time and location for our free tutorial sessions. 
 
-* Mon 18:00 -- 20:00, SCHW 205
-
+* TBD, TBD
 
 
 Cool Things
 ===========
 * `kattis <https://open.kattis.com/>`_
 * `LeetCode <https://leetcode.com/problemset/all/>`_
+
 
 Getting Started
 ===============
@@ -142,6 +166,7 @@ Course Notes
     topic18
     topic19
    
+   
 Labs
 ====
 .. toctree::
@@ -160,6 +185,7 @@ Labs
     lab11
     lab12
     
+    
 Assignments
 ===========
 .. toctree::
@@ -170,13 +196,13 @@ Assignments
     asn3
     asn4   
    
+   
 Course Outline
 ==============
 .. toctree::
     :maxdepth: 1
-   
-    outline11
-    outline12
+ 
+    outline
 
 
 .. ******************
