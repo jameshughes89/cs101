@@ -29,7 +29,8 @@ Lecture Section 11
 
 * Dr. James Hughes
 * Office: Annex 20B
-* Office Hours: Tuesday -- Friday, 10:00am -- 11:00am, Annex 20B
+* Office Hours: 
+    * Tuesday -- Friday, 10:00am -- 11:00am --- **Virtual Only (Link on Moodle) **
 * Email: jhughes at stfx.ca
 
 
@@ -152,9 +153,7 @@ Student Evaluation (Tentative Dates)
 +------------------------+------------+---------------------+
 | Labs                   | 10%        | Throughout          |
 +------------------------+------------+---------------------+
-| Lecture Activities     | 10%        | Throughout          |
-+------------------------+------------+---------------------+
-| Midterm Exam           | 10%        | TBD, in class       |
+| Midterm Exam           | 20%        | TBD, in class       |
 +------------------------+------------+---------------------+
 | Final Exam             | 30%        | TBA                 |
 +------------------------+------------+---------------------+
@@ -162,23 +161,18 @@ Student Evaluation (Tentative Dates)
 .. *IMPORTANT NOTE: To be eligible to receive a passing grade in the course, your mark on the final exam must be at least 40%, and your weighted average on the assignments must be at least 40%. Otherwise, the maximum overall mark you can receive is 45%. To be eligible to receive a grade of 60% or higher, your mark on the final exam must be at least 50%, and your weighted average on the assignments must be at least 50%. Otherwise, the maximum overall mark you can receive is 58%.*
 
 
-
 Assignment Submission
 =====================
 
 * Instructions for the submission of assignments will be posted on the course website. It is each student's responsibility to read and follow the instructions. Failure to follow the submission instructions may result in the assignment receiving a mark of zero.
- 
 * You will be required to submit each programming assignment electronically. Details will be given in the assignment descriptions. We reserve the right to use similarity detection software to detect possible cheating cases.
-
 
 
 Assignment Due Dates
 ====================
 
 * The date and exact time assignments are due will be given in the assignment specifications.
-
 * No submissions will be taken after the due date; there are no late submissions.
-
 * No extensions will be given for assignments.
 
 
@@ -187,9 +181,7 @@ Assignment Marking
 ==================
 
 * Assignments are marked by the Teaching Assistants, who follow marking schemes provided by instructors. 
-
 * A request for adjustment in an assignment mark must be made within 2 weeks of the date on which it was first available after marking. (Beyond that date, regrading will not be considered, regardless of whether you retrieved your assignment.) Such a request must be submitted to the course instructor in writing, and must include specific reasons why you believe you deserve more marks. The request must be accompanied by all materials that were originally handed in, as well as the original marker's grade summary sheet. The instructor will inform you by email when the reevaluation process is complete. 
-
 * It is each student's responsibility to keep up-to-date backups of assignment disk files in case of system crashes or inadvertently erased files. Students must keep disk copies of all material submitted, as well as the actual graded assignment, to guard against the possibility of errors in recording marks. It is not safe to discard these materials until you are satisfied that your final mark for the course has been computed properly.
 
 
@@ -218,14 +210,14 @@ The purpose of the weekly labs is to give students hands-on experience. Labs wil
 
 
 
-Lecture Activities
-===================
+.. Lecture Activities
+.. ===================
 
-Lecture activities will take place at some point during certain lectures. Each completed activity is worth 1% of your final grade (to a maximum of 10%). If less than 10 lecture activities are given to the class, the activity weightings will be adjusted to make up 10% of the final grade. There will be no make-up activities.
+.. Lecture activities will take place at some point during certain lectures. Each completed activity is worth 1% of your final grade (to a maximum of 10%). If less than 10 lecture activities are given to the class, the activity weightings will be adjusted to make up 10% of the final grade. There will be no make-up activities.
 
-These activities require students to answer questions based on lecture material. Answers must be written by hand on clean blank paper that the students bring to class; paper will not be provided to the students. The paper will be submitted to the lecturer **within the allotted time**. The paper must be letter/A4 size, clean, the writing must be legible, the submission must be made by the student who completed the task, and the submission must have the completing/submitting student's name, student number, date, and activity number. If any of these requirements are violated, a mark of 0 will be applied. If a student attempts to submit another student's work, this will be considered academic misconduct and will be investigated fully. A grade of 0 will be applied to the full lecture activity component of the final grade.
+.. These activities require students to answer questions based on lecture material. Answers must be written by hand on clean blank paper that the students bring to class; paper will not be provided to the students. The paper will be submitted to the lecturer **within the allotted time**. The paper must be letter/A4 size, clean, the writing must be legible, the submission must be made by the student who completed the task, and the submission must have the completing/submitting student's name, student number, date, and activity number. If any of these requirements are violated, a mark of 0 will be applied. If a student attempts to submit another student's work, this will be considered academic misconduct and will be investigated fully. A grade of 0 will be applied to the full lecture activity component of the final grade.
 
-These activities are open book, students are strongly encouraged to collaborate and share ideas, and students can check the internet; however, all submitted work must ultimately be done individually.  
+.. These activities are open book, students are strongly encouraged to collaborate and share ideas, and students can check the internet; however, all submitted work must ultimately be done individually.  
 
 
 Email Contact
@@ -255,6 +247,7 @@ The materials in CSCI 161 at StFX are the property of the instructor, unless sta
 
 The course copyright policy will be aggressively enforced. 
 
+
 Class Recording Policy
 ======================
 
@@ -268,7 +261,6 @@ Scholastic offenses are taken seriously and students are directed to read the ap
 
 It is your responsibility to understand what academic misconduct is. Ignorance of the rules is not an admissible excuse for academic misconduct. I will pursue academic offenses fully. I will apply -100% (not 0) as a grade. I will also advocate for an automatic failure in the course, or expulsion from the university when allowed. 
 
- 
 
 Use of Plagiarism-Checking Software
 ===================================
@@ -276,12 +268,10 @@ Use of Plagiarism-Checking Software
 All required papers/submissions may be subject to submission for textual similarity review to the commercial plagiarism detection software under license to the University for the detection of plagiarism. All papers submitted for such checking will be included as source documents in the reference database for the purpose of detecting plagiarism of papers subsequently submitted to the system.
 
 
-
 Use of Cheating-Analysis Software
 =================================
 
 All submitted work may be subject to submission for similarity review by software that will check for unusual coincidences in answer patterns that may indicate cheating (MOSS).
-
 
 
 Tutoring
@@ -292,12 +282,10 @@ The role of tutoring is to help students understand course material. Tutors shou
 If you need help though, please just come by my office, or go see the TAs. We're here to help and most office hours are criminally underused (unless there's an assignment due... then it looks like Main st. at 4:45pm).
 
 
-
 Statement on Accommodation of Religious Observances
 ===================================================
 
 Requests for accommodation of specific religious or spiritual observance must be presented in writing to the instructor within the fist two weeks of class.
-
 
 
 Statement for Students with Disabilities
@@ -311,6 +299,7 @@ To book an appointment please use the following:
 * link --- http://stfxcal.mywconline.com
 * Phone --- 902 867 5349
 * Email --- tramble@stfx.ca
+
 
 Academic Accommodation for Medical Illness
 ==========================================
@@ -330,6 +319,13 @@ Equity
 Everyone learns more effectively in a respectful, safe and equitable learning environment, free from discrimination and harassment. We invite you to work with me to create a classroom space – both real and virtual – that fosters and promotes values of human dignity, equity, non-discrimination and respect for diversity. 
 
 Please feel free to talk with us about your questions or concerns about equity in our classroom or in the STFX community in general. If we cannot answer your questions or help you address your concerns, we encourage you to talk to the Chair/Coordinator of the Department/Program or the Human Rights and Equity Advisor. Please note that a Human Rights and Equity Advisor will soon be appointed. In the meantime, students, faculty, or staff may also contact the Director of Human Resources at hr@stfx.ca or the Office of the AVP&P.
+
+
+Preferred Pronouns
+==================
+
+Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender, gender variance, and nationalities. Class rosters are provided to the instructor with the student's legal name. Please advise me of this preference early in the semester. See policies at http://www2.mystfx.ca/equity/policies
+
 
 
 .. Addendum
