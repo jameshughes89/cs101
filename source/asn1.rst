@@ -44,7 +44,7 @@ To make life easier for the first assignment, you don't have to start from scrat
         :align: center
 
 
-Download the `asn1.ipynp <http://people.stfx.ca/jhughes/cs161/data/asn1-ipynb.zip>`_ notebook, unzip it (see image below), and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a COPY of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it. 
+Download the :download:`asn1.ipynp <../assignments_files/asn1.ipynb>` notebook, unzip it (see image below), and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a COPY of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it. 
 
 
 .. image:: ../img/unzipp.png
@@ -53,7 +53,7 @@ Download the `asn1.ipynp <http://people.stfx.ca/jhughes/cs161/data/asn1-ipynb.zi
 
 .. image:: ../img/uploadColab.png
 
-Alternatively, download `asn1.py <http://people.stfx.ca/jhughes/cs161/data/asn1-py.zip>`_ to get started if you want to not use Colab. Do whichever you want. It's the same as the notebook file, just missing the notebook stuff. 
+Alternatively, download :download:`asn1.py <../assignments_files/asn1.py>` to get started if you want to not use Colab. Do whichever you want. It's the same as the notebook file, just missing the notebook stuff. 
 
 The steps you need to do are laid out, in detail (and suggested order) below.
 
@@ -66,7 +66,7 @@ The steps you need to do are laid out, in detail (and suggested order) below.
 	  
 	You should also **NOT** be using the ``input()`` function in this assignment. 
 
-You will also need the data file `starbucks.csv <http://people.stfx.ca/jhughes/cs161/data/starbucks.csv>`_. Download this to your computer and upload it to your Colab files (see below image). Unfortunately, every time you open your colab project, you will need to re-upload. Not a big deal, but something you will need to remember. 
+You will also need the data file :download:`starbucks.csv <../assignments_files/starbucks.csv>`. Download this to your computer and upload it to your Colab files (see below image). Unfortunately, every time you open your colab project, you will need to re-upload. Not a big deal, but something you will need to remember. 
 
 If you would like to *not* use Colab and work from your own computer, then just be sure to save this file in the **same directory** that you are saving your assignment in. 
 

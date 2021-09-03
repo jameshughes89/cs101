@@ -112,8 +112,8 @@ Make a CountryCatalogue class.
         		
 
     * Obtain the sample data files (you might have to *right click* and select *save link as*):
-        * `Continents <http://people.stfx.ca/jhughes/cs161/data/continent.txt>`_
-        * `Countries <http://people.stfx.ca/jhughes/cs161/data/country.txt>`_		
+        * :download:`Continents <../assignments_files/continent.txt>`
+        * :download:`Countries <../assignments_files/country.txt>`
 		
     * Note that they have headers. 
 	
@@ -220,8 +220,8 @@ This part is just for making sure everything works.
 
 Make sure you have downloaded the files:
 
-    * `Continents <http://people.stfx.ca/jhughes/cs161/data/continent.txt>`_
-    * `Countries <http://people.stfx.ca/jhughes/cs161/data/country.txt>`_	
+    * :download:`Continents <../assignments_files/continent.txt>`
+    * :download:`Countries <../assignments_files/country.txt>`
 
 .. Warning::
 
@@ -229,7 +229,7 @@ Make sure you have downloaded the files:
 	
 Also, download this file:
 
-    * `main.py <http://people.stfx.ca/jhughes/cs161/data/main_py.zip>`_	
+    * :download:`main.py <../assignments_files/main.py>`
 
 .. Warning::
 

@@ -4,7 +4,7 @@ Assignment #2: Oh crap, Zombies!
 
 * **Worth**: 10%
 * **DUE**: October 26st at 11:55pm; submitted on MOODLE.
-* Starting point: `asn2.ipynb <http://people.stfx.ca/jhughes/cs161/data/asn2-ipynb.zip>`_ OR `asn2.py <http://people.stfx.ca/jhughes/cs161/data/asn2-py.zip>`_
+* Starting point: :download:`asn2.ipynb <../assignments_files/asn2.ipynb>` OR :download:`asn2.py <../assignments_files/asn2.py>`
 
 .. warning::
 
@@ -39,7 +39,7 @@ How to approach the assignment
 
 Once again, you are asked to extend existing code. Extending existing code can actually be more challenging than writing code from scratch, but this is what a lot of real world programming is (don't worry, you will start writing large programs from scratch very soon). 
 
-The first thing you should do is `download the existing notebook <http://people.stfx.ca/jhughes/cs161/data/asn2-ipynb.zip>`_ (`or download the .py if you want <http://people.stfx.ca/jhughes/cs161/data/asn2-py.zip>`_) and take a quick look at it (remember, you'll have to unzip here). Just skim it. Some of  the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
+The first thing you should do is :download:`download the existing notebook <../assignments_files/asn2.ipynb>` (:download:`or download the .py if you want <../assignments_files/asn2.py>`) and take a quick look at it (remember, you'll have to unzip here). Just skim it. Some of  the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
 
 So... look at that code. Seriously. Do it. Familiarizing yourself with what's going on in the file is the best possible preparation for doing the assignment. Consider this the first requirement of the assignment.
 
