@@ -1,9 +1,10 @@
+********************************
 Assignment #2: Oh crap, Zombies!
-================================
+********************************
 
 * **Worth**: 10%
 * **DUE**: October 26st at 11:55pm; submitted on MOODLE.
-* Starting point: `asn2.ipynb <http://people.stfx.ca/jhughes/cs161/data/asn2-ipynb.zip>`_ OR `asn2.py <http://people.stfx.ca/jhughes/cs161/data/asn2-py.zip>`_
+* Starting point: :download:`asn2.ipynb <../assignments_files/asn2.ipynb>` OR :download:`asn2.py <../assignments_files/asn2.py>`
 
 .. warning::
 
@@ -34,16 +35,16 @@ Simulations also let you do things you simply *can't* do in reality. Suppose you
 For this assignment, you will be simulating the outbreak of a **ZOMBIE APOCALYPSE**. Specifically, you'll be writing code to simulate the spread of zombies through a network of cities. Once your simulation is working, you'll write a bit more code to analyze the data produced by your simulation to determine exciting things like how long it will take for the world to end.
 
 How to approach the assignment
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+==============================
 
 Once again, you are asked to extend existing code. Extending existing code can actually be more challenging than writing code from scratch, but this is what a lot of real world programming is (don't worry, you will start writing large programs from scratch very soon). 
 
-The first thing you should do is `download the existing notebook <http://people.stfx.ca/jhughes/cs161/data/asn2-ipynb.zip>`_ (`or download the .py if you want <http://people.stfx.ca/jhughes/cs161/data/asn2-py.zip>`_) and take a quick look at it (remember, you'll have to unzip here). Just skim it. Some of  the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
+The first thing you should do is :download:`download the existing notebook <../assignments_files/asn2.ipynb>` (:download:`or download the .py if you want <../assignments_files/asn2.py>`) and take a quick look at it (remember, you'll have to unzip here). Just skim it. Some of  the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
 
 So... look at that code. Seriously. Do it. Familiarizing yourself with what's going on in the file is the best possible preparation for doing the assignment. Consider this the first requirement of the assignment.
 
 Data structures you need to know about
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+======================================
 
 Every city in our simulation is going to be represented by a list ``[name,infected,neighbours]``. The good news is, you've been using lists since week one in the labs. 
 
@@ -97,7 +98,7 @@ Well, really it will be more like this...
 
    
 Getting started
-^^^^^^^^^^^^^^^^
+===============
 
 To make your life easier, I've provided a function called ``set_up_cities`` that will randomly generate some cities, and connections between those cities, for you. If you call this function, it returns a *list* of cities, detailing the state of your simulated world. You'd use the function like this:
 
@@ -121,7 +122,7 @@ You should probably load up the ``asn2.ipynb`` (or ``asn2.py``) file into Colab 
    You should also **NOT** be using the ``input()`` function in this assignment in any area. 
    
 Coding, Part I
-^^^^^^^^^^^^^^
+==============
 
 Write the following functions:
 
@@ -190,7 +191,7 @@ Working now? Good. Make sure it's *commented* and has *function headers*. Make s
    
 
 Part I --- FAQ:
-^^^^^^^^^^^^^^^
+===============
 * My drawing looks different every time!
    * I know, it should, it's random every time.
 * My drawing isn't updating for each step!
@@ -200,7 +201,7 @@ Part I --- FAQ:
 
 
 Coding, Part II
-^^^^^^^^^^^^^^^
+===============
 
 As fun as it is to watch our zombies spread, we'd like to gather some hard data on the results of our
 simulations. In particular, top government officials want to know how long it will take for the world
@@ -247,7 +248,7 @@ So, write another function:
 All set? Make sure it's got good variable names, is *commented*, and has *function headers*. Then go on to the analysis.
   
 Analysis
-^^^^^^^^^
+========
 
 Now we get to play with our simulator to answer burning public health questions about zombie outbreaks. Play with the values of ``p_spread`` and ``p_cure``. How does changing those values change the "time to the end of the world"? Answer the following specific questions, and provide evidence from your simulation to support your answer: 
 
@@ -264,7 +265,8 @@ Now we get to play with our simulator to answer burning public health questions 
 .. image:: ../img/zhist.png
 
 Part II --- FAQ:
-^^^^^^^^^^^^^^^^
+================
+
 * It's broken
    * Maybe, or maybe your probabilities are bad and it's just running forever. 
 * My histogram looks different from yours!
@@ -275,7 +277,8 @@ Part II --- FAQ:
    * I don't know, maybe? If you're looking at code and have to ask if you should comment it... just comment it. That said, don't write me a book.
 
 What to submit
-^^^^^^^^^^^^^^^^^^^^^^^^^
+==============
+
 * Your version of ``asn2.py``. Also, please **DO NOT** change the name of this file. Leave it alone. 
 
   * Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program.
@@ -286,7 +289,8 @@ What to submit
    
    
 General FAQ:
-^^^^^^^^^^^^
+============
+
 * Does my text file have enough details?
    * Probably. The shorter the better. Include pictures with your submission though. 
 * I don't know how to do *X*.
