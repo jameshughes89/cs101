@@ -1,5 +1,6 @@
+**********************************************************
 Assignment #3: I'm only taking CS to make sick video games
-==========================================================
+**********************************************************
 
 * **Worth**: 20%
 * **UPDATED DUE DATE**: November 16th at 11:55pm; submitted on MOODLE.
@@ -49,7 +50,7 @@ Now, when I say, *X-treme* tic-tac-toe, I mean **X-treme**. Instead of being stu
 .. image:: ../img/a3_10x10.png
 
 Coding, Part I
-^^^^^^^^^^^^^^
+==============
 
 1. Write a function ``get_game_size()`` that will simply prompt the players to enter a game size and then the function will ``return`` the inputted value as an integer. They will only enter one integer. For example, if they enter 3, the function would return 3. This value will ultimately mean that the game is 3x3. If they enter 10, it would mean that the game is 10x10. **Once you are done, test the function!**
 
@@ -106,7 +107,7 @@ In case you want the actual text, here it is:
 
 
 Coding, Part II
-^^^^^^^^^^^^^^^
+===============
 
 The above got a lot of the scaffolding out of the way, but the game is still not playable or smart enough to know if anyone won. Part II will get us closer to our goal. 
 
@@ -143,7 +144,7 @@ We want to have some functions that will check to see if a given player has won.
 	  
 	  
 Coding, Part III
-^^^^^^^^^^^^^^^^
+================
 
 Now it's time to put all of the above together to actually make the game be a game. 
 
@@ -210,7 +211,8 @@ Below are some more pictures.
 
 
 What to submit
-^^^^^^^^^^^^^^
+==============
+
 * Your version of ``asn3.py``. Also, please **DO NOT** change the name of this file. Leave it alone. 
 
   * Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program.
@@ -218,7 +220,8 @@ What to submit
   * Use proper variable names
   
 General FAQ:
-^^^^^^^^^^^^
+============
+
 * I don't know how to do *X*.
    * OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
 * It’s not working, therefore Python is broken!
