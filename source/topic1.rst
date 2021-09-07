@@ -13,7 +13,7 @@ What will I learn?
     * A little bit about what on earth computer science actually is 
     * How to be a 21st century individual so you won't be left behind
 
-*The long version:
+* The long version:
     * :doc:`Read the outline </outline>`
 
 .. image:: ../img/turing.jpg
