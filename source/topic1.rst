@@ -197,7 +197,7 @@ Can I write a program now?
 
 * You're now officially a computer programmer!   
 
-. image:: ../img/HelloWorldColab.png
+.. image:: ../img/HelloWorldColab.png
    
    
 Videos
