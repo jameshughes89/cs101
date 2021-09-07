@@ -16,12 +16,16 @@ An introduction to computers, algorithms, and programming. No previous knowledge
 
 This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include problem analysis, algorithm development, data representation, control structures, lists, functions, and file manipulation.
 
+`The content used to generate the course can be found on GitHub <https://github.com/jameshughes89/cs101>`_ 
+
+
 Professors
 ==========
 
 * Dr. James Hughes (Section 11)
 * jhughes at stfx.ca
 * `@Modsurski <https://twitter.com/Modsurski>`_
+* `Twitch "Office Hours" <https://www.twitch.tv/conlabx>`_
 * **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE** `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_ **GO HERE** **GO HERE** **GO HERE** **GO HERE** **GO HERE**
 
 * Dr. Jean-Alexis Delamer (Section 12)

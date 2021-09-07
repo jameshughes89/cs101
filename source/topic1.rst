@@ -13,7 +13,7 @@ What will I learn?
     * A little bit about what on earth computer science actually is 
     * How to be a 21st century individual so you won't be left behind
 
-*The long version:
+* The long version:
     * :doc:`Read the outline </outline>`
 
 .. image:: ../img/turing.jpg
@@ -190,14 +190,14 @@ Can I write a program now?
 ==========================
 
 * If you have looked at :doc:`get set up for CSCI 161 </gettingset>`, then yes
-* Go to Google Colab and make your ``Hello, world!" program 
+* Go to Google Colab and make your "Hello, world!" program 
     * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language.
     
 	``print("Hello, world!")``
 
 * You're now officially a computer programmer!   
 
-. image:: ../img/HelloWorldColab.png
+.. image:: ../img/HelloWorldColab.png
    
    
 Videos
