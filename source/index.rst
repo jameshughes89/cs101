@@ -16,6 +16,9 @@ An introduction to computers, algorithms, and programming. No previous knowledge
 
 This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include problem analysis, algorithm development, data representation, control structures, lists, functions, and file manipulation.
 
+`The content used to generate the course can be found on GitHub <https://github.com/jameshughes89/cs101>`_ 
+
+
 Professors
 ==========
 
