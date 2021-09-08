@@ -108,9 +108,9 @@ Loading a CSV file
 
 .. admonition:: Activity+++
 
-    Now write a function ``get_name_from_code(airportCode,airportlist)`` that will return a string containing the full name of the airport with the code ``airportCode``. 
+    Now write a function ``get_name_from_code(airport_code, airport_list)`` that will return a string containing the full name of the airport with the code ``airport_code``. 
 
-    The parameter ``airportlist`` should be the list you loaded using ``load_airports()``.
+    The parameter ``airport_list`` should be the list you loaded using ``load_airports()``.
 
 
       .. raw:: html
