@@ -29,10 +29,10 @@ Kattis Problems
 
 Remember, here is the *magic* code we needed last week::
    
-   data = input()      # Read a WHOLE, SINGLE line of input
-   data = data.split() # Split string into individual pieces
-   aVar = int(data[0]) # Take string from data[X], convert it to int...   
-   bVar = int(data[1]) # ... And store it in some variable
+   data = input()       # Read a WHOLE, SINGLE line of input
+   data = data.split()  # Split string into individual pieces
+   a_var = int(data[0]) # Take string from data[X], convert it to int...   
+   b_var = int(data[1]) # ... And store it in some variable
 
 .. warning::
    
