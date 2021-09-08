@@ -40,10 +40,10 @@ If you're sick of Kattis, check out `LeetCode <https://leetcode.com/problemset/a
 
 Remember, here is the *magic* code we needed last week::
    
-   data = input()      # Read a WHOLE, SINGLE line of input
-   data = data.split() # Split string into individual pieces
-   aVar = int(data[0]) # Take string from data[X], convert it to int...   
-   bVar = int(data[1]) # ... And store it in some variable
+   data = input()       # Read a WHOLE, SINGLE line of input
+   data = data.split()  # Split string into individual pieces
+   a_Var = int(data[0]) # Take string from data[X], convert it to int...   
+   b_Var = int(data[1]) # ... And store it in some variable
 
 If you are done everything, feel free to work on the assignment. Just note that Lab time is **not** office hours and I will likely not provide support for assignment 1. 
 
