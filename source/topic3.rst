@@ -104,7 +104,7 @@ Function Parameters
    
 * To motivate this, let's go back to our previous example and throw it in a function::
    
-    def iHateMyBoss():
+    def i_hate_my_boss():
         x = 10 * 2
         y = x/4
         print(y)
@@ -324,7 +324,7 @@ Composition
 * Python functions can be *composed* just like mathematical functions.
 * We've already seen ``print`` composed with ``do_stuff``
 * We can nest functions, too:
-    >>> dostuff(dostuff(2,2),dostuff(2,2))
+    >>> do_stuff(do_stuff(2,2), do_stuff(2,2))
     72
 * If you get confused tracing nested functions, just remember:
     * Functions get *evaluted* and turned into values
