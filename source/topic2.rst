@@ -133,7 +133,7 @@ Values
 * Some languages (e.g., C, Fortran, Java) are very militant about types. You have to be totally explicit about them
 * Python is a little more relaxed. You *can* be explicit, but you don't have to be. Python will guess if you don't tell it
 * Upside: less to worry about and less clutter in your code
-* Downside: a longer rope gives you more fun and exciting ways to hang yourself!    
+
 
 * Can I ask Python to tell me its guess for the type of a value?
     >>> print(type(12))
