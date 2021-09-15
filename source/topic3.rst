@@ -54,7 +54,6 @@ Functions
 * Fixed.
     * While doing so, you actually missed the 2nd /4, but you fortunately caught your mistake in time
 * Your boss comes back again, saying that it needs to be done 18 more times, and they actually liked the divided by 4
-* you decide that this isn't worth it, so you quit
 * ...
 
 There's gotta' be a better way!
