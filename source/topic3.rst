@@ -183,10 +183,10 @@ Abstraction: first steps
 * You've now written programs at two levels of abstraction. Which was easier?
 * Functions allow us to build *towers of abstraction*. 
     * A low level function might worry about how to set the individual pixels of the display to show the letter ``A`` . 
-        * Consider ``print``
+        * Consider ``print()``
     * Would you want to cut-and-paste that code every time you needed to print ``A``?
-    * Instead, we have a function called ``print`` that hides all those messy details from us.
-    * We call ``print``, ``print`` calls other functions, which call other functions, which call other functions...
+    * Instead, we have a function called ``print()`` that hides all those messy details from us.
+    * We call ``print()``, ``print()`` calls other functions, which call other functions, which call other functions...
 
     * Without organizing things into *levels of abstraction* writing complex software would be impossibly difficult.
 
