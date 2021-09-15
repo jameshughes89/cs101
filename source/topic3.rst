@@ -334,8 +334,8 @@ Composition
 
     Figure out the value of ``no_stuff(no_stuff(2,2), (no_stuff(2,2) + no_stuff(4,4)) )`` using only *pen and paper*. No computers!
 	
-Variable scope (not the mouthwash)
-==================================
+Variable scope
+==============
 * If you set a variable inside a function, it is *local* to that function.
 * No other function can see a function's local variables. They are *local*. Consider this code::
 
