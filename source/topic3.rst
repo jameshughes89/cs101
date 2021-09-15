@@ -301,10 +301,7 @@ Function values
 
     Write a function ``compmag(r,m)`` to compute, and return, the magnitude of a complex number. It should take the real component of the number as parameter ``r`` and the imaginary component as ``m``.
    
-    .. Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}`. Say, does Python have a square root function?
-    .. How would you find it?
-
-    Remember that | r + mi | = sqrt(r-2 + m-2)... (if this looks scary, all I really want you do to is the right hand side of the equation) 
+    Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}` (if this looks scary, all I really want you do to is the right hand side of the equation) 
    
     Say, does Python have a square root function?
     How would you find it?
