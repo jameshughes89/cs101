@@ -54,7 +54,6 @@ Functions
 * Fixed.
     * While doing so, you actually missed the 2nd /4, but you fortunately caught your mistake in time
 * Your boss comes back again, saying that it needs to be done 18 more times, and they actually liked the divided by 4
-* you decide that this isn't worth it, so you quit
 * ...
 
 There's gotta' be a better way!
@@ -184,10 +183,10 @@ Abstraction: first steps
 * You've now written programs at two levels of abstraction. Which was easier?
 * Functions allow us to build *towers of abstraction*. 
     * A low level function might worry about how to set the individual pixels of the display to show the letter ``A`` . 
-        * Consider ``print``
+        * Consider ``print()``
     * Would you want to cut-and-paste that code every time you needed to print ``A``?
-    * Instead, we have a function called ``print`` that hides all those messy details from us.
-    * We call ``print``, ``print`` calls other functions, which call other functions, which call other functions...
+    * Instead, we have a function called ``print()`` that hides all those messy details from us.
+    * We call ``print()``, ``print()`` calls other functions, which call other functions, which call other functions...
 
     * Without organizing things into *levels of abstraction* writing complex software would be impossibly difficult.
 
@@ -235,10 +234,7 @@ Back to concrete things...
 
    		<iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe> 
 	
-	
-* This should have blown your mind!	
-	
-	
+		
 Execution Flow
 ==============
 
@@ -305,10 +301,7 @@ Function values
 
     Write a function ``compmag(r,m)`` to compute, and return, the magnitude of a complex number. It should take the real component of the number as parameter ``r`` and the imaginary component as ``m``.
    
-    .. Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}`. Say, does Python have a square root function?
-    .. How would you find it?
-
-    Remember that | r + mi | = sqrt(r-2 + m-2)... (if this looks scary, all I really want you do to is the right hand side of the equation) 
+    Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}` (if this looks scary, all I really want you do to is the right hand side of the equation) 
    
     Say, does Python have a square root function?
     How would you find it?
@@ -341,8 +334,8 @@ Composition
 
     Figure out the value of ``no_stuff(no_stuff(2,2), (no_stuff(2,2) + no_stuff(4,4)) )`` using only *pen and paper*. No computers!
 	
-Variable scope (not the mouthwash)
-==================================
+Variable scope
+==============
 * If you set a variable inside a function, it is *local* to that function.
 * No other function can see a function's local variables. They are *local*. Consider this code::
 
