@@ -3,7 +3,7 @@ Assignment #2: Oh crap, Zombies!
 ********************************
 
 * **Worth**: 10%
-* **DUE**: October 26st at 11:55pm; submitted on MOODLE.
+* **DUE**: TBD at 11:55pm; submitted on MOODLE.
 * Starting point: :download:`asn2.ipynb <../assignments_files/asn2.ipynb>` OR :download:`asn2.py <../assignments_files/asn2.py>`
 
 .. warning::
