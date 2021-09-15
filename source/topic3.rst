@@ -234,10 +234,7 @@ Back to concrete things...
 
    		<iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe> 
 	
-	
-* This should have blown your mind!	
-	
-	
+		
 Execution Flow
 ==============
 
