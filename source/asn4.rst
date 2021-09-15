@@ -2,8 +2,8 @@
 Assignment #4: Playing with Objects is fun
 ******************************************
 
-* **Worth**: 20%
-* **DUE**: November 30th at 11:55pm; submitted on MOODLE.
+* **Worth**: 10%
+* **DUE**: TBD at 11:55pm; submitted on MOODLE.
 
 .. Warning::
 
