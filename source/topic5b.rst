@@ -27,12 +27,15 @@ A car rental place needs our help. They want a simple program to calculate how m
     * Number of days rented
     * Starting odometer reading
     * Ending odometer reading
+    
 * If the classification code is **B**
     * Base charge of $20.00/day
     * Plus $0.30 for every km driven
+    
 * If the classification is **D**
     * Base charge of $50.00/day
     * Plus $0.30 for every km driven above the 100km/day average allowance. 
+    
 * All renters under the age of 25 are charged an additional $10.00/day because they hate young people
 * Print out the final total cost
 
@@ -40,6 +43,7 @@ A car rental place needs our help. They want a simple program to calculate how m
 **Step 1**
 
 * Freak out
+   
    
 **Step 2**
    
@@ -52,6 +56,7 @@ A car rental place needs our help. They want a simple program to calculate how m
     * Freak out again
     * Then realize we can break it down into bits and pieces that we can solve
    
+   
 **Let's look at the requirements:**
    
 * *If* the classification code is B
@@ -60,6 +65,7 @@ A car rental place needs our help. They want a simple program to calculate how m
 * *If* the classification is D
     * Base charge of $50.00/days
     * Plus $0.30 *for every km* driven *above* the 100km/day *average* allowance.
+
 
 **What do I see?**
 
@@ -74,6 +80,7 @@ A car rental place needs our help. They want a simple program to calculate how m
 * Need to know how many kms above 100 we are
     * So just figure out if a number is greater than 100?
 
+
 **Step 3:**
 
 Based on this, I will write:
@@ -86,6 +93,7 @@ Based on this, I will write:
 .. warning::
    
     THERE ARE LITERALLY INFINITE WAYS YOU COULD DO THIS. THIS IS JUST ONE!
+   
    
 Function to calculate the total number of kms. What do we know? 
     * Odometer readings!
@@ -102,6 +110,7 @@ Function to calculate the total number of kms. What do we know?
         :param odometer_finish: The number of kms the car had after rending
         :return: The total kms driven during the rental period
         '''
+        
         return odometer_finish - odometer_start
 
 **Who thought that was too easy?**
@@ -123,6 +132,7 @@ Function to calculate the daily average number of kms. What do we know?
         :param num_kms: The total number of kilometers driven during the rental period
         :return: The average number of kilometers driven per day
         '''
+        
         return num_kms/num_days
 
 **Who thought that was also too easy?**
@@ -142,12 +152,14 @@ Ok. Now for something harder... Number of kms over the daily average allowance. 
         :param num_kms: Number of kms the renter drove in total
         :return: The number of kms over 100 they went (return 0 if it's less than 100)
         '''
+        
         # Calculate the number of kms traveled per day.
         kms_per_day = average_kms_per_day(num_days, num_kms)
-        # If the average kms traveled is above 100, return how much above we are
+        
+        # If the average kms traveled is above 100, 
+        # return how much above
         if kms_per_day  > 100:
             return kms_per_day - 100
-        # otherwise, return 0
         else:
             return 0
 		 
@@ -178,6 +190,7 @@ Now for the tough one... calculate the total cost. What do we know?
 
         # Setup a variable for our total charge
         total_charge = 0
+        
         # Calculate the number of kilometres traveled.
         total_kms_traveled = total_kms(odometer_start, odometer_finish)
 
