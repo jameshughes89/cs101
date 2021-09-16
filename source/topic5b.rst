@@ -210,7 +210,7 @@ Now for the tough one... calculate the total cost. What do we know?
 
 **Hmm, defo was tricker, but still not too bad at all!**
 
-Now just do the IO part, which is easy
+Now just do the IO part, which we have done a bunch of times before
 
 .. code-block:: python
     :linenos:
