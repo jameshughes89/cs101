@@ -34,7 +34,7 @@ A car rental place needs our help. They want a simple program to calculate how m
     
 * If the classification is **D**
     * Base charge of $50.00/day
-    * Plus $0.30 for every km driven above the 100km/day average allowance. 
+    * Plus $0.30 for every km driven above the 100km/day average allowance 
     
 * All renters under the age of 25 are charged an additional $10.00/day because they hate young people
 * Print out the final total cost
@@ -49,7 +49,7 @@ A car rental place needs our help. They want a simple program to calculate how m
    
 * Let's take a deep breath and break this problem down
 
-* Half of the description is IO. 
+* Half of the description is IO 
     * Let's save this for last because it's super easy
    
 * The only beefy part of this is the calculation
@@ -138,7 +138,7 @@ Function to calculate the daily average number of kms. What do we know?
 **Who thought that was also too easy?**
 
 Ok. Now for something harder... Number of kms over the daily average allowance. What do we know?
-    * Function to calculate the daily average. 
+    * Function to calculate the daily average 
    
 .. code-block:: python
     :linenos:
@@ -163,7 +163,7 @@ Ok. Now for something harder... Number of kms over the daily average allowance. 
         else:
             return 0
 		 
-**Who thought that wasn't too bad?s**
+**Who thought that wasn't too bad?**
 		
 Now for the tough one... calculate the total cost. What do we know?
     * age
@@ -210,7 +210,7 @@ Now for the tough one... calculate the total cost. What do we know?
 
 **Hmm, defo was tricker, but still not too bad at all!**
 
-Now just do the IO part, which is easy. 
+Now just do the IO part, which is easy
 
 .. code-block:: python
     :linenos:
@@ -230,7 +230,7 @@ Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGzi
 
 .. admonition:: Activity
 
-    Think about how you would write this differently. 
+    Think about how you would write this differently 
         * Would you use all the same functions?
         * Would you change how the functions worked?
         * Would you move where you called the functions?
@@ -238,11 +238,11 @@ Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGzi
         * Would you use constants? (say yes)
 
 * So, why did I write it the way I did?
-* Honestly, just *because*. 
-* No other reason other than it was the way I wrote it. 
-* What matters here is that it worked. 
-* But I could write this so so so many other ways and still have it work. 
-* This is NORMAL.
+* Honestly, just *because*
+* No other reason other than it was the way I wrote it
+* What matters here is that it worked
+* But I could write this so so so many other ways and still have it work 
+* This is NORMAL
       
 For next class
 ==============
