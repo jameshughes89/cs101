@@ -32,7 +32,7 @@ Before Kattis
 4. Write a **function** called ``add_three_nums_print`` that takes three integers as parameters, adds them together, and then prints out the result. Call the function to verify its correctness. You **MUST** do this with a function.
 
 
-5. Write a **function** called ``add_two_nums_return`` that takes two integers as parameters, adds them together, and then *returns* the result. Effectively this will be identical to ``add_two_nums_print``, but replace the ``print`` inside the function (in addition to the one in the name of the function) with ``return``. Run the following code to verify its correctness. :doc:`What's return? </topic3#function-values>`
+5. Write a **function** called ``add_two_nums_return`` that takes two integers as parameters, adds them together, and then *returns* the result. Effectively this will be identical to ``add_two_nums_print``, but replace the ``print`` inside the function (in addition to the one in the name of the function) with ``return``. Run the following code to verify its correctness. `What's return? <http://modsurski.com/csci161/topic3.html#function-values>`_
 
     .. code-block:: python
    
