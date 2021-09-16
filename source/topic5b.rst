@@ -201,7 +201,7 @@ Now for the tough one... calculate the total cost. What do we know?
         else:
             total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(num_days, total_kms_traveled)
 
-        # if they're young, screw-em with an additional $10/day charge.
+        # if they're young, add an additional $10/day charge.
         if age < 25:
             total_charge += (10 * num_days)
 
