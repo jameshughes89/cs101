@@ -288,7 +288,7 @@ Function values
 
 .. admonition:: Activity
 
-    * Write a function ``no_stuff(a,b)`` which is identical to ``do_stuff(a, b)`` **except** it does not contain a ``return`` statement.
+    * Write a function ``no_stuff(a, b)`` which is identical to ``do_stuff(a, b)`` **except** it does not contain a ``return`` statement.
     * What happens when you try this?
         >>> print(no_stuff(2, 2))
     * What happens when you try this?
