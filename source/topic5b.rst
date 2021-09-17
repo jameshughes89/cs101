@@ -27,12 +27,15 @@ A car rental place needs our help. They want a simple program to calculate how m
     * Number of days rented
     * Starting odometer reading
     * Ending odometer reading
+    
 * If the classification code is **B**
     * Base charge of $20.00/day
     * Plus $0.30 for every km driven
+    
 * If the classification is **D**
     * Base charge of $50.00/day
-    * Plus $0.30 for every km driven above the 100km/day average allowance. 
+    * Plus $0.30 for every km driven above the 100km/day average allowance 
+    
 * All renters under the age of 25 are charged an additional $10.00/day because they hate young people
 * Print out the final total cost
 
@@ -41,16 +44,18 @@ A car rental place needs our help. They want a simple program to calculate how m
 
 * Freak out
    
+   
 **Step 2**
    
 * Let's take a deep breath and break this problem down
 
-* Half of the description is IO. 
+* Half of the description is IO 
     * Let's save this for last because it's super easy
    
 * The only beefy part of this is the calculation
     * Freak out again
     * Then realize we can break it down into bits and pieces that we can solve
+   
    
 **Let's look at the requirements:**
    
@@ -60,6 +65,7 @@ A car rental place needs our help. They want a simple program to calculate how m
 * *If* the classification is D
     * Base charge of $50.00/days
     * Plus $0.30 *for every km* driven *above* the 100km/day *average* allowance.
+
 
 **What do I see?**
 
@@ -74,6 +80,7 @@ A car rental place needs our help. They want a simple program to calculate how m
 * Need to know how many kms above 100 we are
     * So just figure out if a number is greater than 100?
 
+
 **Step 3:**
 
 Based on this, I will write:
@@ -86,6 +93,7 @@ Based on this, I will write:
 .. warning::
    
     THERE ARE LITERALLY INFINITE WAYS YOU COULD DO THIS. THIS IS JUST ONE!
+   
    
 Function to calculate the total number of kms. What do we know? 
     * Odometer readings!
@@ -102,6 +110,7 @@ Function to calculate the total number of kms. What do we know?
         :param odometer_finish: The number of kms the car had after rending
         :return: The total kms driven during the rental period
         '''
+        
         return odometer_finish - odometer_start
 
 **Who thought that was too easy?**
@@ -123,12 +132,13 @@ Function to calculate the daily average number of kms. What do we know?
         :param num_kms: The total number of kilometers driven during the rental period
         :return: The average number of kilometers driven per day
         '''
+        
         return num_kms/num_days
 
 **Who thought that was also too easy?**
 
 Ok. Now for something harder... Number of kms over the daily average allowance. What do we know?
-    * Function to calculate the daily average. 
+    * Function to calculate the daily average 
    
 .. code-block:: python
     :linenos:
@@ -142,16 +152,18 @@ Ok. Now for something harder... Number of kms over the daily average allowance. 
         :param num_kms: Number of kms the renter drove in total
         :return: The number of kms over 100 they went (return 0 if it's less than 100)
         '''
+        
         # Calculate the number of kms traveled per day.
         kms_per_day = average_kms_per_day(num_days, num_kms)
-        # If the average kms traveled is above 100, return how much above we are
+        
+        # If the average kms traveled is above 100, 
+        # return how much above
         if kms_per_day  > 100:
             return kms_per_day - 100
-        # otherwise, return 0
         else:
             return 0
 		 
-**Who thought that wasn't too bad?s**
+**Who thought that wasn't too bad?**
 		
 Now for the tough one... calculate the total cost. What do we know?
     * age
@@ -178,6 +190,7 @@ Now for the tough one... calculate the total cost. What do we know?
 
         # Setup a variable for our total charge
         total_charge = 0
+        
         # Calculate the number of kilometres traveled.
         total_kms_traveled = total_kms(odometer_start, odometer_finish)
 
@@ -188,7 +201,7 @@ Now for the tough one... calculate the total cost. What do we know?
         else:
             total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(num_days, total_kms_traveled)
 
-        # if they're young, screw-em with an additional $10/day charge.
+        # if they're young, add an additional $10/day charge.
         if age < 25:
             total_charge += (10 * num_days)
 
@@ -197,7 +210,7 @@ Now for the tough one... calculate the total cost. What do we know?
 
 **Hmm, defo was tricker, but still not too bad at all!**
 
-Now just do the IO part, which is easy. 
+Now just do the IO part, which we have done a bunch of times before
 
 .. code-block:: python
     :linenos:
@@ -217,7 +230,7 @@ Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGzi
 
 .. admonition:: Activity
 
-    Think about how you would write this differently. 
+    Think about how you would write this differently 
         * Would you use all the same functions?
         * Would you change how the functions worked?
         * Would you move where you called the functions?
@@ -225,11 +238,11 @@ Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGzi
         * Would you use constants? (say yes)
 
 * So, why did I write it the way I did?
-* Honestly, just *because*. 
-* No other reason other than it was the way I wrote it. 
-* What matters here is that it worked. 
-* But I could write this so so so many other ways and still have it work. 
-* This is NORMAL.
+* Honestly, just *because*
+* No other reason other than it was the way I wrote it
+* What matters here is that it worked
+* But I could write this so so so many other ways and still have it work 
+* This is NORMAL
       
 For next class
 ==============
