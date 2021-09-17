@@ -254,7 +254,7 @@ Execution Flow
     y = 3
     z = do_stuff(x, y)
     print(z)
-    print('where am I?')
+    print("where am I?")
 
 * So what happens is:
     * Program starts at the top, and computer sees that a function is being *declared* (not called yet)
