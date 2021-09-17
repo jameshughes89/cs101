@@ -252,7 +252,8 @@ Execution Flow
 	
     x = 2
     y = 3
-    print(do_stuff(x, y))
+    z = do_stuff(x, y)
+    print(z)
     print('where am I?')
 
 * So what happens is:
