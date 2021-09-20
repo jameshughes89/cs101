@@ -203,7 +203,7 @@ General FAQ:
 ============
 
 * Does my text file have enough details?
-	* Probably. The shorter the better.
+	* Probably. The shorter the better. I really just want to see that you played around a little.
 * I don't know how to do *X*.
 	* OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
 * It’s not working, therefore Python is broken!
@@ -211,7 +211,7 @@ General FAQ:
 * My thing keeps telling me ``No such file or directory: 'starbucks.csv'``
 	* Then the starbucks file probably isn't where python is looking.
 * But density will grow larger the smaller I make the area (aren't I so smart).
-	* Congratulations, you understand basic math. 
+	* Congratulations, you understand basic arithmetic. 
 * Is my area a high/low enough density?
 	* I really don't care how high/low it is. Just try a few things and see what you get.    
 * But I never used the one function!!!!1!
