@@ -33,7 +33,7 @@ Learning objectives:
 
 In this assignment, you will use a real dataset containing the locations of all North American Starbucks Coffee houses (as of a few years ago) to compute the *density* of Starbucks on a given patch of the Earth's surface.
 
-To make life easier for the first assignment, you don't have to start from scratch. I've already started a file for you to use as a template. This is also somewhat realistic for programmers; you don't always start completely from scratch... Sometimes you're trying to modify someone else's code that you downloaded or inherited. Also, Learning how to work with existing code is a huge way to learn. 
+To make life easier for the first assignment, you don't have to start from scratch. I've already started a file for you to use as a template. This is also somewhat realistic for programmers; you don't always start completely from scratch... Sometimes you're trying to modify someone else's code that you downloaded or inherited. Also, learning how to work with existing code is a huge way to learn. 
 
 .. warning::
    
