@@ -221,7 +221,7 @@ General FAQ:
 * Wtf do the functions do that you gave me?
 	* Read the descriptions. Try figuring it out. This is actually part of the assignment learning objectives. 
 * Some of the code in the functions you gave us look like magic.
-	* That's because it's magic.
+	* At this point it may seem that way, but by the end of the semester, they will lose their magic 
 * Do I have enough comments?
 	* I don't know, maybe? If you're looking at code and have to ask if you should comment it... just comment it. That said, don't write me a book.
 * I know you told me to do it this way, but I did it another way, and I think my way is better.
