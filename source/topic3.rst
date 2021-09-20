@@ -244,16 +244,17 @@ Execution Flow
     * Later, we'll learn how to jump around
 * What happens when a function gets called? Let's trace through this program::
 
-    def do_stuff(a,b):
-        c = b*2
-        d = (a+4)*2
+    def do_stuff(a, b):
+        c = b * 2
+        d = (a+4) * 2
         c = d + c
         return c
 	
     x = 2
     y = 3
-    print(do_stuff(x,y))
-    print('where am I?')
+    z = do_stuff(x, y)
+    print(z)
+    print("where am I?")
 
 * So what happens is:
     * Program starts at the top, and computer sees that a function is being *declared* (not called yet)
