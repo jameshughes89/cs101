@@ -85,7 +85,7 @@ Your first task will be to fill out the code for the function ``convert_to_decim
 Have a peek at the data-loading function
 ========================================
 
-The function that loads the data is a freebie. It contains some stuff we haven't discussed in class yet, but it's pretty easy to figure out what's going on if you look at it and hack around. So... look at it. Get used to looking at code that isn't yours, using  unfamiliar ideas/idioms/patterns, and trying to figure out what it does. This isn't always easy (sometimes it's **very hard**), but you'll spend a lot of time doing it (whether you want to or not!). 
+The function that loads the data is a freebie. It contains some stuff we haven't discussed in class yet, but it's pretty simple to figure out what's going on if you look at it and hack around. So... look at it. Get used to looking at code that isn't yours, using  unfamiliar ideas/idioms/patterns, and trying to figure out what it does. This isn't always simple (sometimes it's **very hard**), but you'll spend a lot of time doing it (whether you want to or not!). 
 
 This data in the .csv file is fortunately already in decimal format so you will not need to  convert it with ``convert_to_decimal()``, however, you still need to do part 1 and make sure  it works properly even though you might not actually use ``convert_to_decimal()`` for the below parts!!!!!!
 
