@@ -3,7 +3,7 @@ Assignment #1: Density of Starbucks
 ***********************************
 
 * **Worth**: 10%
-* **DUE**: TBD at 11:55pm; submitted on MOODLE.
+* **DUE**: October 4th, 2021 at 11:55pm; submitted on MOODLE.
 
 .. image:: ../img/starbucks_escher.jpeg
 
