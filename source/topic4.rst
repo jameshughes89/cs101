@@ -247,11 +247,10 @@ Libraries
 NumPy
 =====
 * The most important library for us is *Numerical Python* ("NumPy" for short).
-* We're going to get quite a bit of mileage out of NumPy, and some of it's affiliated packages, in this course.
-* NumPy is *not* a core part of Python, but it is included in Anaconda.
-* For a scientist (or anyone really) working with real data in Python, NumPy is *absolutely essential*
+* For anyone working with real data in Python, NumPy is awesome
 * Because it isn't 'built in' to Python, we have to tell Python that we want to use NumPy:
     >>> import numpy
+    
 
 NumPy Types
 ===========
