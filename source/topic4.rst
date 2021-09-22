@@ -241,8 +241,7 @@ Libraries
 * Most of you are here because you are pragmatic people who want to *get stuff done*
 * The fastest way to *get stuff done* is by leveraging stuff that other people have done.
 * Remember functions? Wouldn't it be awesome if there were huge collections of functions that already existed... and did a lot of the stuff you want to do? 
-* One of reasons we're using Python is because it has a *huge* variety of existing **libraries**/**packages**.
-* No matter what you want to do, there's probably a library that can help you.
+* Python has a *huge* variety of existing **libraries**/**packages**.
 	   
 	   
 NumPy
