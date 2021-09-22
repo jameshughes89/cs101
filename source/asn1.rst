@@ -44,16 +44,12 @@ To make life easier for the first assignment, you don't have to start from scrat
         :align: center
 
 
-Download the :download:`asn1.ipynp <../assignments_files/asn1.ipynb>` notebook, unzip it (see image below), and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a COPY of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it. 
+Download the :download:`asn1.ipynp <../assignments_files/asn1.ipynb>` notebook and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a copy of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it. 
 
-
-.. image:: ../img/unzipp.png
-
-(^^^^^^^ Extract All... means unzip in this situation ^^^^^^^)
 
 .. image:: ../img/uploadColab.png
 
-Alternatively, download :download:`asn1.py <../assignments_files/asn1.py>` to get started if you want to not use Colab. Do whichever you want. It's the same as the notebook file, just missing the notebook stuff. 
+Alternatively if you want, download :download:`asn1.py <../assignments_files/asn1.py>` to get started if you want to *not* use Colab. Do whichever you want. It's the same as the notebook file, just missing the notebook stuff. 
 
 The steps you need to do are laid out, in detail (and suggested order) below.
 
