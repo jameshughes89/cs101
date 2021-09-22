@@ -202,6 +202,8 @@ Nested conditionals
 * In the above example, we *could* have done it without nesting by using ``and`` and whatnot, but for fun we can nest it
 
 * Again, no limit to how deep you nest... but mind the readability of your code!
+    * Actually, technically, Python has a limit of 20 nested statements, but other languages have much deeper limits
+    * In a more mathematical/theoreticaltical sense, there is no limit 
 
 * Do not go to anyone with this::
 
