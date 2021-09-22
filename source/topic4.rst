@@ -199,9 +199,11 @@ Nested conditionals
         else:
             print('Third Quadrant')
 			
-* In the above example, we *could* have done it without nesting and using just ``and`` and whatnot, but the nesting does make things easy to follow. 
+* In the above example, we *could* have done it without nesting by using ``and`` and whatnot, but for fun we can nest it
 
 * Again, no limit to how deep you nest... but mind the readability of your code!
+    * Actually, technically, Python has a limit of 20 nested statements, but other languages have much deeper limits
+    * In a more mathematical/theoreticaltical sense, there is no limit 
 
 * Do not go to anyone with this::
 
@@ -241,18 +243,16 @@ Libraries
 * Most of you are here because you are pragmatic people who want to *get stuff done*
 * The fastest way to *get stuff done* is by leveraging stuff that other people have done.
 * Remember functions? Wouldn't it be awesome if there were huge collections of functions that already existed... and did a lot of the stuff you want to do? 
-* One of reasons we're using Python is because it has a *huge* variety of existing **libraries**/**packages**.
-* No matter what you want to do, there's probably a library that can help you.
+* Python has a *huge* variety of existing **libraries**/**packages**.
 	   
 	   
 NumPy
 =====
 * The most important library for us is *Numerical Python* ("NumPy" for short).
-* We're going to get quite a bit of mileage out of NumPy, and some of it's affiliated packages, in this course.
-* NumPy is *not* a core part of Python, but it is included in Anaconda.
-* For a scientist (or anyone really) working with real data in Python, NumPy is *absolutely essential*
+* For anyone working with real data in Python, NumPy is awesome
 * Because it isn't 'built in' to Python, we have to tell Python that we want to use NumPy:
     >>> import numpy
+    
 
 NumPy Types
 ===========
