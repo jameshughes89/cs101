@@ -199,7 +199,7 @@ Nested conditionals
         else:
             print('Third Quadrant')
 			
-* In the above example, we *could* have done it without nesting and using just ``and`` and whatnot, but the nesting does make things easy to follow. 
+* In the above example, we *could* have done it without nesting by using ``and`` and whatnot, but for fun we can nest it
 
 * Again, no limit to how deep you nest... but mind the readability of your code!
 
