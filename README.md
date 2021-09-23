@@ -1,7 +1,7 @@
 # cs101
 CS 101: Introduction to Computer Science --- Python
 
-The course can be found [here](http://modsurski.com/csci162)
+The course can be found [here](http://modsurski.com/csci161)
 
 Your typical CS101 class covering:
 - Types
