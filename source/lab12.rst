@@ -60,7 +60,3 @@ Part 2
 Go work through the course content for :doc:`Topic 18 </topic18>` and :doc:`Topic 19 </topic19>`.
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
-
-.. warning::
-   
-    If you are in the online section, you **must** submit the .py (python scripts), not the .ipynb (notebook files). To get the python scripts from Colab, simply select *File* and in te dropdown menue, hit *Download .py*. 
