@@ -3,7 +3,7 @@ Assignment #1: Density of Starbucks
 ***********************************
 
 * **Worth**: 10%
-* **DUE**: TBD at 11:55pm; submitted on MOODLE.
+* **DUE**: October 4th, 2021 at 11:55pm; submitted on MOODLE.
 
 .. image:: ../img/starbucks_escher.jpeg
 
@@ -33,7 +33,7 @@ Learning objectives:
 
 In this assignment, you will use a real dataset containing the locations of all North American Starbucks Coffee houses (as of a few years ago) to compute the *density* of Starbucks on a given patch of the Earth's surface.
 
-To make life easier for the first assignment, you don't have to start from scratch. I've already started a file for you to use as a template. This is also somewhat realistic for programmers; you don't always start completely from scratch... Sometimes you're trying to modify someone else's code that you downloaded or inherited. Also, Learning how to work with existing code is a huge way to learn. 
+To make life easier for the first assignment, you don't have to start from scratch. I've already started a file for you to use as a template. This is also somewhat realistic for programmers; you don't always start completely from scratch... Sometimes you're trying to modify someone else's code that you downloaded or inherited. Also, learning how to work with existing code is a huge way to learn. 
 
 .. warning::
    
@@ -44,16 +44,12 @@ To make life easier for the first assignment, you don't have to start from scrat
         :align: center
 
 
-Download the :download:`asn1.ipynp <../assignments_files/asn1.ipynb>` notebook, unzip it (see image below), and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a COPY of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it. 
+Download the :download:`asn1.ipynp <../assignments_files/asn1.ipynb>` notebook and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a copy of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it. 
 
-
-.. image:: ../img/unzipp.png
-
-(^^^^^^^ Extract All... means unzip in this situation ^^^^^^^)
 
 .. image:: ../img/uploadColab.png
 
-Alternatively, download :download:`asn1.py <../assignments_files/asn1.py>` to get started if you want to not use Colab. Do whichever you want. It's the same as the notebook file, just missing the notebook stuff. 
+Alternatively if you want, download :download:`asn1.py <../assignments_files/asn1.py>` to get started if you want to *not* use Colab. Do whichever you want. It's the same as the notebook file, just missing the notebook stuff. 
 
 The steps you need to do are laid out, in detail (and suggested order) below.
 
@@ -85,7 +81,7 @@ Your first task will be to fill out the code for the function ``convert_to_decim
 Have a peek at the data-loading function
 ========================================
 
-The function that loads the data is a freebie. It contains some stuff we haven't discussed in class yet, but it's pretty easy to figure out what's going on if you look at it and hack around. So... look at it. Get used to looking at code that isn't yours, using  unfamiliar ideas/idioms/patterns, and trying to figure out what it does. This isn't always easy (sometimes it's **very hard**), but you'll spend a lot of time doing it (whether you want to or not!). 
+The function that loads the data is a freebie. It contains some stuff we haven't discussed in class yet, but it's pretty simple to figure out what's going on if you look at it and hack around. So... look at it. Get used to looking at code that isn't yours, using  unfamiliar ideas/idioms/patterns, and trying to figure out what it does. This isn't always simple (sometimes it's **very hard**), but you'll spend a lot of time doing it (whether you want to or not!). 
 
 This data in the .csv file is fortunately already in decimal format so you will not need to  convert it with ``convert_to_decimal()``, however, you still need to do part 1 and make sure  it works properly even though you might not actually use ``convert_to_decimal()`` for the below parts!!!!!!
 
@@ -114,7 +110,9 @@ Complete the function that counts the number of Starbucks in a region
 
 Counting up the number of Starbucks in a given area. The function ``num_starbucks()`` is already set up to *loop* over every Starbucks location in a *list*. All you have to do is remember to pass in the list. Have a look a the loop. Even if we haven't formally discussed this structure in class yet, it should be pretty clear what it's doing.
 
-Fortunately, the data coming in is already in decimal format, so there is no need to actually  convert these values with the ``convert_to_decimal`` function.
+.. note::
+    Fortunately, the data coming in is **already in decimal format**, so there is no need to actually  convert these values with the ``convert_to_decimal`` function.
+
 
 Your work is in the body of the loop. Each time through the loop we'll be considering a new Starbucks location. The existing code will put the current location's latitude in ``loc_lat`` and longitude in ``loc_lon``. Your job is to figure out if this location falls in the area between the lat/long pairs defining your region. If this location is within the box defined by the lats and longs then it is in our defined region and we need to count it. 
 
@@ -201,7 +199,7 @@ General FAQ:
 ============
 
 * Does my text file have enough details?
-	* Probably. The shorter the better.
+	* Probably. The shorter the better. I really just want to see that you played around a little.
 * I don't know how to do *X*.
 	* OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
 * It’s not working, therefore Python is broken!
@@ -209,7 +207,7 @@ General FAQ:
 * My thing keeps telling me ``No such file or directory: 'starbucks.csv'``
 	* Then the starbucks file probably isn't where python is looking.
 * But density will grow larger the smaller I make the area (aren't I so smart).
-	* Congratulations, you understand basic math. 
+	* Congratulations, you understand basic arithmetic. 
 * Is my area a high/low enough density?
 	* I really don't care how high/low it is. Just try a few things and see what you get.    
 * But I never used the one function!!!!1!
@@ -219,7 +217,7 @@ General FAQ:
 * Wtf do the functions do that you gave me?
 	* Read the descriptions. Try figuring it out. This is actually part of the assignment learning objectives. 
 * Some of the code in the functions you gave us look like magic.
-	* That's because it's magic.
+	* At this point it may seem that way, but by the end of the semester, they will lose their magic 
 * Do I have enough comments?
 	* I don't know, maybe? If you're looking at code and have to ask if you should comment it... just comment it. That said, don't write me a book.
 * I know you told me to do it this way, but I did it another way, and I think my way is better.

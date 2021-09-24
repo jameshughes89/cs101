@@ -6,7 +6,7 @@ Before Kattis
 =============
 
 
-1. Write a function that will take a grade between 0 - 100 and have it ``return`` either 'FAIL' ``if`` the grade is < 50 or 'PASS' otherwise. 
+1. Write a **function** that will take a grade between 0 - 100 and have it ``return`` either 'FAIL' ``if`` the grade is < 50 or 'PASS' otherwise. 
 
 2. Write some code to take ``input`` for a grade between 0 - 100. Store this in some variable. 
 
@@ -19,6 +19,8 @@ Before Kattis
 6. Let's change our function a little. Make it so it can ``return`` the letter grade (0 - 50 -> F, 50 - 60 -> D, 60 - 70 -> C, 70 - 80 -> B, 80 - 90 -> A, 90 - 100 -> A+).
 
 7. Do you know what to expect when you run your code again? Run your code. Did it do what you expected?
+
+8. Now dow 6 & 7 again, but this time, reverse the order of your ``if`` statements. For example, if you checked for a fail first, check for the A+ first now. 
 
 .. warning::
    
@@ -50,7 +52,3 @@ Remember, here is the *magic* code we needed last week::
 
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
-
-.. warning::
-   
-    If you are in the online section, you **must** submit the .py (python scripts), not the .ipynb (notebook files). To get the python scripts from Colab, simply select *File* and in te dropdown menue, hit *Download .py*. 

@@ -135,15 +135,15 @@ Function Parameters
    
 * Let's do one more example with adding two numbers::
 
-    def add_print(a,b):
-        print(a+b)
+    def add_print(a, b):
+        print(a + b)
 
 * Now that the function is defined, we can *call* it. Like this:
 
-    >>> add_print(5,2)
+    >>> add_print(5, 2)
     7
 
-* The *call* ``add_print(5,2)`` gets handled like this:
+* The *call* ``add_print(5, 2)`` gets handled like this:
     * Python checks to see if it knows about a function named ``add_print``
         * We just defined ``add_print``, so it does.
     * When we defined it, we told Python it should have two parameters: ``a`` and ``b``.
@@ -202,7 +202,7 @@ Back to concrete things...
 
 * The general format for defining a function is::
 
-	def function_name(p1,p2,p3,p4, ... ):
+	def function_name(p1, p2, p3, p4, ... ):
 		statement 1
 		statement 2
 		...
@@ -274,13 +274,13 @@ Function values
 * The ``return`` statement tells Python: "*return* this value to whoever called this function"
 * With ``return``, *functions* evaluate into *values*.
 * Consider:
-    >>> print(do_stuff(2,2))
+    >>> print(do_stuff(2, 2))
     16
     
-    >>> print(do_stuff(4,4))
+    >>> print(do_stuff(4, 4))
     24
 	
-    >>> print(do_stuff(2,2) + do_stuff(4,4))
+    >>> print(do_stuff(2, 2) + do_stuff(4, 4))
     40
     
 * When Python hits a ``do_stuff``, it goes and *does stuff* (executes the function).
@@ -288,11 +288,11 @@ Function values
 
 .. admonition:: Activity
 
-    * Write a function ``no_stuff(a,b)`` which is identical to ``do_stuff(a,b)`` **except** it does not contain a ``return`` statement.
+    * Write a function ``no_stuff(a, b)`` which is identical to ``do_stuff(a, b)`` **except** it does not contain a ``return`` statement.
     * What happens when you try this?
-        >>> print(no_stuff(2,2))
+        >>> print(no_stuff(2, 2))
     * What happens when you try this?
-        >>> print(do_stuff(2,2))
+        >>> print(do_stuff(2, 2))
 
 .. Warning:: 
     The difference between a ``print`` and a ``return`` is **HUGE**, yet, every year this difference ends up being a problem for many students. Make sure to take your time understanding the difference. Take your time. Play around. Remember, playing around with Python is the best way to learn this stuff.   
@@ -318,7 +318,7 @@ Composition
 * Python functions can be *composed* just like mathematical functions.
 * We've already seen ``print`` composed with ``do_stuff``
 * We can nest functions, too:
-    >>> do_stuff(do_stuff(2,2), do_stuff(2,2))
+    >>> do_stuff(do_stuff(2, 2), do_stuff(2, 2))
     72
 * If you get confused tracing nested functions, just remember:
     * Functions get *evaluted* and turned into values
@@ -329,24 +329,24 @@ Composition
 
 .. admonition:: Activity
 
-    Figure out the value of ``do_stuff(do_stuff(2,2), (do_stuff(2,2) + do_stuff(4,4)) )`` using only *pen and paper*. No computers!
+    Figure out the value of ``do_stuff(do_stuff(2, 2), (do_stuff(2, 2) + do_stuff(4, 4)) )`` using only *pen and paper*. No computers!
 
 .. admonition:: Activity
 
-    Figure out the value of ``no_stuff(no_stuff(2,2), (no_stuff(2,2) + no_stuff(4,4)) )`` using only *pen and paper*. No computers!
+    Figure out the value of ``no_stuff(no_stuff(2, 2), (no_stuff(2, 2) + no_stuff(4, 4)) )`` using only *pen and paper*. No computers!
 	
 Variable scope
 ==============
 * If you set a variable inside a function, it is *local* to that function.
 * No other function can see a function's local variables. They are *local*. Consider this code::
 
-    def do_more(a,b):
+    def do_more(a, b):
         c = 2*a + b
         return c
 
 
 * What happens if I do this:
-    >>> print do_more(4,4)
+    >>> print do_more(4, 4)
     12
 
     >>> print(c)
@@ -360,16 +360,16 @@ Optional parameters for functions
 * Sometimes you want a function to have an optional parameter, with a pre-specified default value.
 * This is done very easily::
 
-    def my_function(a,b,c=3):
+    def my_function(a, b, c=3):
         do_stuff()
       
-* When you call ``my_function(5,12)``, ``a`` will have value ``5``, ``b`` value ``12`` and ``c`` value ``3``.
+* When you call ``my_function(5, 12)``, ``a`` will have value ``5``, ``b`` value ``12`` and ``c`` value ``3``.
 * Because we specified a *default* value for ``c``, we don't have to provide one when we call the function.
-* If we want to *override* the default though, we can: ``my_function(4,3,2)``.
+* If we want to *override* the default though, we can: ``my_function(4, 3, 2)``.
 
 * A reasonable example::
 
-    def time_to_fall(d, a = 9.807):
+    def time_to_fall(d, a=9.807):
         return math.sqrt(2*d/a)	
 	
 Import
@@ -431,7 +431,7 @@ Function headers
         :return: a list of cities
         """
 
-        print 1+2
+        print 1 + 2
 
 * The stuff between the ``"""`` is the function header and should appear *immediately after* the ``def``.
 * It should explain what the function is going to do, in plain English. If I have to read the function code to figure out what it does, your header description sucks.

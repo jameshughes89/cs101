@@ -113,7 +113,3 @@ Remember, the Kattis problems are great for practice, and practice is the only w
 At this point, many of the not-so-difficult problems are totally doable by you now. If you're looking for more problems, or want more practice for tests, etc. sort the Kattis problems by difficulty and have fun. 
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
-
-.. warning::
-   
-    If you are in the online section, you **must** submit the .py (python scripts), not the .ipynb (notebook files). To get the python scripts from Colab, simply select *File* and in te dropdown menue, hit *Download .py*. 

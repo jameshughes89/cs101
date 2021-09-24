@@ -330,7 +330,3 @@ LeetCode Problems
 If you have somehow finished everything so far, go check out `LeetCode <https://leetcode.com/problemset/all/>`_. Sort the problems by *Acceptance* (click the table header) and start seeing if you can solve some of these problems. 
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
-
-.. warning::
-   
-    If you are in the online section, you **must** submit the .py (python scripts), not the .ipynb (notebook files). To get the python scripts from Colab, simply select *File* and in te dropdown menue, hit *Download .py*. 
