@@ -128,7 +128,7 @@ MSCS Tutorial Nights
 
 The Math, Stats, and CS Society now has a time and location for our free tutorial sessions. 
 
-* TBD, TBD
+* Mondays, 17:00 -- 19:00, MULH 4024
 
 
 Cool Things
