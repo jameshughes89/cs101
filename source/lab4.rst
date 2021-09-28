@@ -28,7 +28,7 @@ A car rental place needs our help. They want a simple program to calculate how m
 * If the classification is **D**
    * Base charge of $50.00/day
    * Plus $0.30 for every km driven above the 100km/day average allowance. 
-* All renters under the age of 25 are charged an additional $10.00/day because they hate young people
+* All renters under the age of 25 are charged an additional $10.00/day 
 * Print out the final total cost
 
 Kattis Problems
