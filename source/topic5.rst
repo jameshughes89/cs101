@@ -57,7 +57,7 @@ More about returns
     * How about ``divisible_by(4,3)``? 
     * Now write a new function ``not_divisible_by(a,b)`` that returns ``True`` when ``a`` is *not* divisible by ``b`` and ``False`` otherwise.
     * Now write this function to do the same thing with only **1** return statement.
-    * Now write it with only **1** line of code.
+    * Now write it with only **1** line of code within the function (so, 2 lines including the function header).
    
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
 
