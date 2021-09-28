@@ -5,7 +5,7 @@ Topic #5 -- Logic, Booleans, More Functions
 The Boolean type
 ================
 * A value that is either ``True`` or ``False`` (and nothing else) has type `Boolean <http://en.wikipedia.org/wiki/George_Boole>`_.
-* We've used comparison operators (e.g., ``<,>,==``) in conditionals.
+* We've used comparison operators (e.g., ``<, >, ==``) in conditionals.
 * What's going on "under the hood" with the comparison, though?
     >>> 5>2
     True
@@ -13,7 +13,7 @@ The Boolean type
     >>> 5<2
     False
 	
-* A comparison like ``a>b`` is just an *expression*, like ``a+b``.
+* A comparison like ``a > b`` is just an *expression*, like ``a + b``.
 * The difference is that the value it produces isn't an integer, it's either ``True`` or ``False``
 * This may seem like a subtle thing, but it's a big deal:
     * An operator that takes 2 numbers and produces a number: 
@@ -53,11 +53,11 @@ More about returns
 
 .. admonition:: Activity
 
-    * What is the result of the function call ``divisible_by(4,2)``? 
-    * How about ``divisible_by(4,3)``? 
-    * Now write a new function ``not_divisible_by(a,b)`` that returns ``True`` when ``a`` is *not* divisible by ``b`` and ``False`` otherwise.
+    * What is the result of the function call ``divisible_by(4, 2)``? 
+    * How about ``divisible_by(4, 3)``? 
+    * Now write a new function ``not_divisible_by(a, b)`` that returns ``True`` when ``a`` is *not* divisible by ``b`` and ``False`` otherwise.
     * Now write this function to do the same thing with only **1** return statement.
-    * Now write it with only **1** line of code.
+    * Now write it with only **1** line of code within the function (so, 2 lines including the function header).
    
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
 
@@ -83,8 +83,8 @@ The function type
 
 .. admonition:: Activity
 
-    * What is the value of ``do_something(add,5,7)``?
-    * How about ``do_something(substract,5,7)``?
+    * What is the value of ``do_something(add, 5, 7)``?
+    * How about ``do_something(substract, 5, 7)``?
     * Now make sense of what exactly is happening!
    
 * If all of this weirds you out... good. You're normal. Passing around functions is crazy weird stuff.
