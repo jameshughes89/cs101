@@ -45,7 +45,7 @@ More about returns
 * In fact, a function can return a value *at any time*, not just the end.
 * We can take advantage of this fact to have multiple returns!::
 
-    def divisible_by(a,b):
+    def divisible_by(a, b):
         if a % b == 0:
             return True
         else:
@@ -72,14 +72,14 @@ The function type
 * You can read up on `first-class functions <http://en.wikipedia.org/wiki/First-class_function>`_ if you want to be a nerd about it.
 * This allows us to do some very "meta" things and quickly write code that is really general::
 
-    def add(a,b):
-        return a+b
+    def add(a, b):
+        return a + b
 
-    def subtract(a,b):
-        return a-b
+    def subtract(a, b):
+        return a - b
         
-    def do_something(f,a,b):
-        return f(a,b)
+    def do_something(f, a, b):
+        return f(a, b)
 
 .. admonition:: Activity
 
