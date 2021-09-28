@@ -7,10 +7,10 @@ The Boolean type
 * A value that is either ``True`` or ``False`` (and nothing else) has type `Boolean <http://en.wikipedia.org/wiki/George_Boole>`_.
 * We've used comparison operators (e.g., ``<, >, ==``) in conditionals.
 * What's going on "under the hood" with the comparison, though?
-    >>> 5>2
+    >>> 5 > 2
     True
     
-    >>> 5<2
+    >>> 5 < 2
     False
 	
 * A comparison like ``a > b`` is just an *expression*, like ``a + b``.
@@ -24,7 +24,7 @@ The Boolean type
         * `1 < 2 -> True`
    
 
-    >>> type(5>2)
+    >>> type(5 > 2)
     <class 'bool'>
 
 .. admonition:: Activity
