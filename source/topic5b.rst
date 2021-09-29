@@ -104,7 +104,7 @@ Function to calculate the total number of kms. What do we know?
     def total_kms(odometer_start, odometer_finish):
         '''
         This function calculates the total number of kilometers driven based
-        based on starting and ending odometer readings.
+        on starting and ending odometer readings.
 
         :param odometer_start: The number of kms the car had before renting
         :param odometer_finish: The number of kms the car had after rending
