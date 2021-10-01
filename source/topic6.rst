@@ -10,10 +10,10 @@ Reusing variables
     print(a)
     b = 6
     print(a)
-    a = a+b
+    a = a + b
     print(a)
     a = 3
-    a = a+1
+    a = a + 1
     print(a)
 
 .. admonition:: Very Quick Activity
@@ -55,12 +55,12 @@ First loops
     a = 1
     while a < 11:
         print(a)
-        a = a  + 1
+        a = a + 1
 
 * That code will print the numbers from 1 to 10. Take a minute to note three things:
     * Before the ``while`` statement, we *initialize* the loop variable ``a``
     * The ``while`` statement is followed by a condition (which can be any boolean function/statement/expression!). If the condition is ``True``, the body of the loop gets executed, otherwise it gets skipped. (don't forget the ``:`` !)
-    * What would happen if we didn't have ``a=a+1``?
+    * What would happen if we didn't have ``a = a + 1``?
 
   .. raw:: html
 
