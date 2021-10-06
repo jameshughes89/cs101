@@ -291,7 +291,7 @@ Methods
 
 .. admonition:: Activity
 
-    In Python (or whatever IDE):
+    In Colab (or whatever IDE):
         1. Make a string
         2. Assign it to a variable (if using Colab, hit run too)
         3. Type the name of the variable
