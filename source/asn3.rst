@@ -3,7 +3,7 @@ Assignment #3: I'm only taking CS to make sick video games
 **********************************************************
 
 * **Worth**: 10%
-* **DUE**: TBD at 11:55pm; submitted on MOODLE.
+* **DUE**: November 15th at 11:55pm; submitted on MOODLE.
 * Starting point: Create a new thing called asn3 
 * Learning Objectives
    * Starting from scratch 
