@@ -16,7 +16,7 @@ Assignment #3: I'm only taking CS to make sick video games
 
 .. warning::
 
-    `Remember, List vs. Pointer to a List! <https://people.stfx.ca/jhughes/cs161/class8.html#aliasing>`_
+    `Remember, List vs. Pointer to a List! <http://modsurski.com/csci161/topic8.html#aliasing>`_
     
     
        
