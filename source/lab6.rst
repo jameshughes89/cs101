@@ -13,16 +13,16 @@ Write a function ``char_is_in_while(character, phrase)`` that returns ``True`` i
 
 **2**
 
-Write a function ``char_is_in_for(char, phrase)`` that returns ``True`` if the letter ``character``appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *for* loop. 
+Write a function ``char_is_in_for(character, phrase)`` that returns ``True`` if the letter ``character`` appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *for* loop. 
 
 **3**
 
-Write a function ``where_is_while(char, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``. This function **must** use a *while* loop. 
+Write a function ``where_is_while(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``. This function **must** use a *while* loop. 
 
 
 **4**
 
-Write a function ``where_is_for(char, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``. This function **must** use a *for* loop.
+Write a function ``where_is_for(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``. This function **must** use a *for* loop.
 
 
 Kattis Problems
