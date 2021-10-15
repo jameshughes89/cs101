@@ -17,7 +17,7 @@ Assignment #3: I'm only taking CS to make sick video games
 
 .. warning::
 
-    Remember, List vs. Pointer to a List! :ref:`label-topic8-aliasing`.
+    Remember, List vs. Pointer to a List! Review the discussion on :ref:`label-topic8-aliasing`.
     
 
 .. image:: ../img/a3_videoGame.jpg
