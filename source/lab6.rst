@@ -13,7 +13,7 @@ Write a function ``char_is_in_while(character, phrase)`` that returns ``True`` i
 
 **2**
 
-Write a function ``char_is_in_for(char, phrase)`` that returns ``True`` if the letter ``character``appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *for* loop. 
+Write a function ``char_is_in_for(char, phrase)`` that returns ``True`` if the letter ``character`` appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *for* loop. 
 
 **3**
 
