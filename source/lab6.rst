@@ -17,12 +17,12 @@ Write a function ``char_is_in_for(character, phrase)`` that returns ``True`` if 
 
 **3**
 
-Write a function ``where_is_while(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``. This function **must** use a *while* loop. 
+Write a function ``where_is_while(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``, or return `-1` if it does not exist. This function **must** use a *while* loop. 
 
 
 **4**
 
-Write a function ``where_is_for(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``. This function **must** use a *for* loop.
+Write a function ``where_is_for(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``, or return `-1` if it does not exist. This function **must** use a *for* loop.
 
 
 Kattis Problems
