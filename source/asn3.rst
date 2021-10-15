@@ -14,12 +14,11 @@ Assignment #3: I'm only taking CS to make sick video games
    * 2D lists
    * Generalizing rules 
 
+
 .. warning::
 
-    `Remember, List vs. Pointer to a List! <https://people.stfx.ca/jhughes/cs161/class8.html#aliasing>`_
+    Remember, List vs. Pointer to a List! :ref:`_label-topic8-aliasing`.
     
-    
-       
 
 .. image:: ../img/a3_videoGame.jpg
 
