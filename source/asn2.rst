@@ -12,7 +12,7 @@ Assignment #2: Oh crap, Zombies!
 
 .. warning::
 
-   For this assignment, you will need to use special Python packages (networkx, numpy, matplotlib). The good news is that if you are using Colab (or you have installed anaconda), you've got them installed already!
+   For this assignment, you will need to use special Python packages (networkx, matplotlib). The good news is that if you are using Colab (or you have installed anaconda), you've got them installed already!
    
    You can access these in Colab or PyCharm. If using PyCharm and you create a PyCharm project, make sure to select the **Conda** interpreter. 
    
@@ -46,7 +46,7 @@ So... look at that code. Seriously. Do it. Familiarizing yourself with what's go
 Data structures you need to know about
 ======================================
 
-Every city in our simulation is going to be represented by a list ``[name,infected,neighbours]``. The good news is, you've been using lists since week one in the labs. 
+Every city in our simulation is going to be represented by a list ``[name, infected, neighbours]``. The good news is, you've been using lists since week one in the labs. 
 
 * ``name`` is a string with the name of the city. 
 * ``infected`` is a ``bool`` . ``True`` if the city has zombies, ``False`` if it doesn't.
@@ -140,21 +140,21 @@ Write the following functions:
  
 2. ``cure(cities, cityno)``. The opposite of ``zombify``. Clear the infection flag for the city.  
    
-3. ``sim_step(cities,p_spread,p_cure)``. This is the most important function in the assignment. This function will execute a single *time step* of your simulation. Depending on how fast you want to think of your zombies spreading, that time step could be a day, an hour, a week, whatever. When modelling a real zombie outbreak, you'd determine the size of your time step from the empirical data. Here is some English-language "pseudocode" for function. You'll have to turn it into Python::
+3. ``sim_step(cities, p_spread, p_cure)``. This is the most important function in the assignment. This function will execute a single *time step* of your simulation. Depending on how fast you want to think of your zombies spreading, that time step could be a day, an hour, a week, whatever. When modelling a real zombie outbreak, you'd determine the size of your time step from the empirical data. Here is some English-language "pseudocode" for function. You'll have to turn it into Python::
    
-    for each city in cities:
-        if the city is infected and numpy.random.rand() < p_spread:
-            choose a victim city (at random -- hint: numpy.random.randint()) from the list of this city's neighbours
+    for each city in cities (enumerate?):
+        if the city is infected and random.random() < p_spread:
+            choose a victim city (at random -- hint: random.randint, random.randrange, or maybe random.choice) from the list of this city's neighbours
             infect the victim city!
         
-        if the city is infected and numpy.random.rand() < p_cure:
+        if the city is infected and random.random() < p_cure:
             cure the city!
          
     Make sure that city 0 *always* has zombies. It can't be cured. 
    
-   So, what's going on there? Well, ``numpy.random.rand()`` isn't so much pseudocode as actual Python code. It generates a random number between 0 and 1 every time you call it. Think of it like rolling dice. The parameter ``p_spread`` is the *probability of the zombie plague spreading* and the parameter ``p_cure`` is the probability of the plague being cured. For starters use values of 0.5 for ``p_spread`` and 0.0 for ``p_cure`` while you're getting things working. We'll play with these later. (Note: a value of 0.0 means it will never happen, and a value of 1.0 will mean that it always happens.)   
+   So, what's going on there? Well, ``random.random()`` isn't so much pseudocode as actual Python code. It generates a random number between 0 and 1 every time you call it. Think of it like rolling dice. The parameter ``p_spread`` is the *probability of the zombie plague spreading* and the parameter ``p_cure`` is the probability of the plague being cured. For starters use values of 0.5 for ``p_spread`` and 0.0 for ``p_cure`` while you're getting things working. We'll play with these later. (Note: a value of 0.0 means it will never happen, and a value of 1.0 will mean that it always happens.)   
    
-   To help explain the whole *probability* bit better, imagine you had a 10 sided die and a probability to spread of 0.8 (80%). So, think about it this way... we have an 8/10 chance to spread (80%). So if we roll the die and a 2 pops up, we will spread. We roll again, and a 7 pops up, we spread. Roll and a 1 pops up, we spread. Roll and a 9 pops up, we do **not** spread. That's what we're doing here. But instead of a die, we have ``numpy.random.rand()``.   
+   To help explain the whole *probability* bit better, imagine you had a 10 sided die and a probability to spread of 0.8 (80%). So, think about it this way... we have an 8/10 chance to spread (80%). So if we roll the die and a 2 pops up, we will spread. We roll again, and a 7 pops up, we spread. Roll and a 1 pops up, we spread. Roll and a 9 pops up, we do **not** spread. That's what we're doing here. But instead of a die, we have ``random.random()``.   
    
    .. warning::
    
@@ -169,7 +169,7 @@ Once you've done this, you now have a working zombie apocalypse simulator! So sp
    .. code-block:: python   
    
       my_world = set_up_cities()
-      zombify(my_world,0)
+      zombify(my_world, 0)
       draw_world(my_world)
       sim_step(my_world, 0.5, 0)
       draw_world(my_world)
@@ -211,7 +211,7 @@ Write the following functions:
   
 4. ``is_end_of_world(cities)``. Loop through all the cities in the list ``cities``. If *all* of them are infected, return ``True`` (it's been nice knowing you). Otherwise, return ``False``.  
 
-5. ``time_to_end_of_world(p_spread,p_cure)``. Run a simulation, for specific values of ``p_spread`` and ``p_cure`` and count how long it takes the world to end (which you can now test with ``is_end_of_world``, of course). Some pseudocode for you::
+5. ``time_to_end_of_world(p_spread, p_cure)``. Run a simulation, for specific values of ``p_spread`` and ``p_cure`` and count how long it takes the world to end (which you can now test with ``is_end_of_world``, of course). Some pseudocode for you::
    
       set up a new list of cities (``world = set_up_cities()``)
       zombify city 0
@@ -223,7 +223,7 @@ Write the following functions:
     
       return the value of the end-of-world counter
 
-   Now, to run an experiment to see how long it takes the world to end, all we have to do is call ``time_to_end_of_world(0.5,0)``
+   Now, to run an experiment to see how long it takes the world to end, all we have to do is call ``time_to_end_of_world(0.5, 0)``
    
    .. warning::
       Be careful with what values you select for ``p_spread`` and ``p_cure``. This simulation works on probabilities. If you have a high probability to spread, do you think the simulation will take a long time? What if you had a low probability? Will it take longer?. How would the cure probability impact the runtimes?
@@ -236,7 +236,7 @@ We have to run our simulation *many times* to sample the space of possible outco
 
 So, write another function:
 
-6. ``end_world_many_times(n,p_spread,p_cure)``. This function should initialize a *list* of results and then use a loop to run ``time_to_end_of_world(p_spread,p_cure)`` a total of ``n`` times. After each simulation, add the time it took for the world to end to the list. Return a list of ``n`` "times to the end of the world". Some pseudocode for you::
+6. ``end_world_many_times(n,p_spread, p_cure)``. This function should initialize a *list* of results and then use a loop to run ``time_to_end_of_world(p_spread, p_cure)`` a total of ``n`` times. After each simulation, add the time it took for the world to end to the list. Return a list of ``n`` "times to the end of the world". Some pseudocode for you::
 
     create an empty list
     while we have not done n simulations
@@ -258,7 +258,7 @@ Now we get to play with our simulator to answer burning public health questions 
 
 3. Fix the value of ``p_spread`` at 0.5. How does varying the value of ``p_cure`` affect the time to the end of world?  
 
-4. Pick three pairs of ``p_spread`` , ``p_cure`` values that you think are interesting. Run 500 simulations for them (e.g, `end_world_many_times(500,your_value,your_value)``. What does the *distribution* of times to the end of the world look like? If you've taken a stats course: is it normal (Gaussian)? (If you haven't taken stats, just ignore the Gaussian bit). Call the function I gave you called ``draw_pretty_histogram(times)`` with a list of times to the end of the world. Cool eh!
+4. Pick three pairs of ``p_spread`` , ``p_cure`` values that you think are interesting. Run 500 simulations for them (e.g, `end_world_many_times(500, your_value, your_value)``. What does the *distribution* of times to the end of the world look like? If you've taken a stats course: is it normal (Gaussian)? (If you haven't taken stats, just ignore the Gaussian bit). Call the function I gave you called ``draw_pretty_histogram(times)`` with a list of times to the end of the world. Cool eh!
 
    Here's a sample histogram of times to the end of the world for ``p_spread = 0.5`` and ``p_cure = 0.0``:
 
