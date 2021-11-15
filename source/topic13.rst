@@ -135,7 +135,7 @@ Let's Make a Simple Object/ADT
 1. Write this at the top of some cell in Colab ``class EnthusiasticStudent:``. 
 
     .. Warning::
-        If using PyCharm or Sypder, you can put everything in the same script, or alternatively, you could do the *better* thing and put all classes in their own files. I'd recommend this. 
+        If using PyCharm or Spyder, you can put everything in the same script, or alternatively, you could do the *better* thing and put all classes in their own files. I'd recommend this. 
 
     * This tells python *Hey, everything that follows is gonna be about the EnthusiasticStudent*
     * Classes do **not** need to be in their own files, but it's often a good call
