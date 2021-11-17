@@ -36,7 +36,7 @@ A car rental place needs our help. They want a simple program to calculate how m
     * Base charge of $50.00/day
     * Plus $0.30 for every km driven above the 100km/day average allowance 
     
-* All renters under the age of 25 are charged an additional $10.00/day because they hate young people
+* All renters under the age of 25 are charged an additional $10.00/day
 * Print out the final total cost
 
    
@@ -104,7 +104,7 @@ Function to calculate the total number of kms. What do we know?
     def total_kms(odometer_start, odometer_finish):
         '''
         This function calculates the total number of kilometers driven based
-        based on starting and ending odometer readings.
+        on starting and ending odometer readings.
 
         :param odometer_start: The number of kms the car had before renting
         :param odometer_finish: The number of kms the car had after rending

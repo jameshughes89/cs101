@@ -3,7 +3,7 @@ Assignment #3: I'm only taking CS to make sick video games
 **********************************************************
 
 * **Worth**: 10%
-* **DUE**: TBD at 11:55pm; submitted on MOODLE.
+* **DUE**: November 15th at 11:55pm; submitted on MOODLE.
 * Starting point: Create a new thing called asn3 
 * Learning Objectives
    * Starting from scratch 
@@ -14,12 +14,11 @@ Assignment #3: I'm only taking CS to make sick video games
    * 2D lists
    * Generalizing rules 
 
+
 .. warning::
 
-    `Remember, List vs. Pointer to a List! <https://people.stfx.ca/jhughes/cs161/class8.html#aliasing>`_
+    Remember, List vs. Pointer to a List! Review the discussion on :ref:`label-topic8-aliasing`.
     
-    
-       
 
 .. image:: ../img/a3_videoGame.jpg
 

@@ -9,20 +9,20 @@ We're going to do a bunch of linear searchers to start.
 
 **1**
 
-Write a function ``char_is_in_while(char,string)`` that returns True if the character char appears in the string ``string``. This function **must** use a *while* loop. 
+Write a function ``char_is_in_while(character, phrase)`` that returns ``True`` if the letter ``character`` appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *while* loop. 
 
 **2**
 
-Write a function ``char_is_in_for(char,string)`` that returns True if the character char appears in the string ``string``. This function **must** use a *for* loop. 
+Write a function ``char_is_in_for(character, phrase)`` that returns ``True`` if the letter ``character`` appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *for* loop. 
 
 **3**
 
-Write a function ``where_is_while(char,string)`` that returns the index of the first occurrence of ``char`` in ``string``. This function **must** use a *while* loop. 
+Write a function ``where_is_while(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``, or return `-1` if it does not exist. This function **must** use a *while* loop. 
 
 
 **4**
 
-Write a function ``where_is_for(char,string)`` that returns the index of the first occurrence of ``char`` in ``string``. This function **must** use a *for* loop.
+Write a function ``where_is_for(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``, or return `-1` if it does not exist. This function **must** use a *for* loop.
 
 
 Kattis Problems

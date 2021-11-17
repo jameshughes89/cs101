@@ -134,7 +134,7 @@ Print
             return total
 	  
 
-            print(count_numbers_up_to(5))  
+	print(count_numbers_up_to(5))  
    
    
 * Good thing we made sure the function was working perfectly before using it somewhere else and assuming it worked!  

@@ -155,7 +155,7 @@ Are They Actually Better?
 
 * Remember how the ``in`` keyword allowed us to do a linear search really easily. 
 * It wasn't really *better* than coding a linear search yourself, but it did save some typing. 
-* Is the dictionary not just doing the linear search work for us lime how ``in`` was?
+* Is the dictionary not just doing the linear search work for us like how ``in`` was?
     * **NO** (asterisk) 
     * But I won't teach you this yet because it's well beyond the scope of this class. 
         * Sorry :(   
