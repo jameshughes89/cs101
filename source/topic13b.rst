@@ -142,13 +142,13 @@ Getters/Setters
 
             a_student = EnthusiasticStudent("Bob", "Ross", "007")
 
-            # A user change manually the private attibutes
+            # A user manually changes the private attibute
             a_student._student_num = 5
 
             print(a_student)
 
     * What is the problem?
-    * How ``set_student_num()`` can help us?
+    * How can ``set_student_num()`` help us?
 
 
 MyStudents
