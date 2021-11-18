@@ -156,7 +156,7 @@ MyStudents
 
 * Ok, we want an object to hold onto ``EnthusiasticStudent`` objects
 * What attributes do we want?
-    * -Name
+    * Name
     * List of the EnthusiasticStudents
 	
 
