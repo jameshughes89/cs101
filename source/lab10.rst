@@ -20,9 +20,9 @@ If using PyCharm or Spyder, open an empty python file in your working directory/
 
 **Attributes**
 
-* A first name 
-* A last name
-* An email
+* A first name (``_first_name``)
+* A last name (``_last_name``)
+* An email (``_email``)
 
 There, that's it for now. We can add more later if we want. 
 
