@@ -30,7 +30,7 @@ There, that's it for now. We can add more later if we want.
 
 * Constructor
 * Getters/setters for the attributes. 
-    * eg: ``getFirstName(self)``, ``setFirstName(self, newFirstName)``
+    * eg: ``get_first_name(self)``, ``set_first_name(self, newFirstName)``
 * The repr method (``__repr__``)
     * You decide what should be returned here to give us a string representation of the object. Just come up with something reasonable. 
     * My output looked like this 
@@ -59,14 +59,14 @@ That's all I think we'll need for now.
     * Here we *could* pass it a list I guess, but let's not.
     * We do want a list attribute though.
 
-* addFriend --- a method to add a ``Person`` object to the contact list.
+* add_friend --- a method to add a ``Person`` object to the contact list.
     * See that. **We need to create a Person OBJECT**.
     * Here we have a design decision to make. Which parameters should the method get?
         * Should we pass a reference to a ``Person`` object to the method 
-            ``def addFriend(self, aPerson):``
+            ``def add_friend(self, aPerson):``
 			
         * Should we pass the details to make a person to the method? 
-            ``def addFriend(self, fName, lName, email):``
+            ``def add_friend(self, fName, lName, email):``
 		
     * Hard to really say actually. For now let's go with the 2nd option. 
     * The choice will really impact how we *interface* with the objects.
@@ -96,11 +96,11 @@ Create ANOTHER file and put this in it:
 
     #from ContactList import *      # Only need if using multiple files 
 
-    friendsList = ContactList()
-    friendsList.addFriend('Semaj', 'Sehguh', 'ssehguh@xfts.ca')
-    friendsList.addFriend('Greg', 'Smith', 'gsmith@xfts.ca')
+    friends_list = ContactList()
+    friends_list.add_friend('Semaj', 'Sehguh', 'ssehguh@xfts.ca')
+    friends_list.add_friend('Greg', 'Smith', 'gsmith@xfts.ca')
 
-    print(friendsList)
+    print(friends_list)
 	
 Everything should work. If not, ask for help. 
 
@@ -112,12 +112,12 @@ Add these to the ``ContactList`` class.
 * ``__len__`` --- A method that returns the length of the ``ContactList`` (the length of the list of friends)
     * I wonder how we can then use this to get the ``len`` of the object?
     * Try adding this to the script we're running to test it out
-        ``print(len(friendsList))``
+        ``print(len(friends_list))``
     * ``len`` calls the ``__len__`` method. 
 	
 * ``__getitem__`` --- A method that returns a ``Person`` object from a given index in the list of friends. 
     * Try adding this to the script we're running to test it out
-        ``print(friendsList[1])``
+        ``print(friends_list[1])``
     * indexing with ``[x]`` calls the ``__getitem__`` method. 
 
 Testing
@@ -133,32 +133,32 @@ You should be able to run the below code and everything should work correctly. I
     #from Person import *
     #from ContactList import *
 
-    friendsList = ContactList()
-    friendsList.addFriend('Semaj', 'Sehguh', 'ssehguh@xfts.ca')
-    friendsList.addFriend('Greg', 'Smith', 'gsmith@xfts.ca')
+    friends_list = ContactList()
+    friends_list.add_friend('Semaj', 'Sehguh', 'ssehguh@xfts.ca')
+    friends_list.add_friend('Greg', 'Smith', 'gsmith@xfts.ca')
 
-    print(friendsList)
-    print(len(friendsList))
-    aFriend = friendsList[1]
-    print(aFriend)
+    print(friends_list)
+    print(len(friends_list))
+    a_friend = friends_list[1]
+    print(a_friend)
 
-    # This just makes sure that aFriend is 
+    # This just makes sure that a_friend is 
     # pointing to a a Person object.
     # If it is, nothing special happens
     # If it's not, it will crash the program
-    assert isinstance(aFriend, Person)
+    assert isinstance(a_friend, Person)
 
-    print(aFriend.getFirstName())
-    print(aFriend.getLastName())
-    print(aFriend.getEmail())
-    aFriend.setFirstName('Not')
-    aFriend.setLastName('A')
-    aFriend.setLastName('Thing')
+    print(a_friend.get_first_name())
+    print(a_friend.get_last_name())
+    print(a_friend.get_email())
+    a_friend.set_first_name('Not')
+    a_friend.set_last_name('A')
+    a_friend.set_email('Thing')
 
-    print(friendsList)
+    print(friends_list)
 	
 	
-Make sure it makes sense to you *why* when we print out ``friendslist`` we now wee an altered person. 	
+Make sure it makes sense to you *why* when we print out ``friends_list`` we now wee an altered person. 	
 	
 
 Add Some Things
