@@ -96,7 +96,7 @@ There are a bunch of ways we can go about the next bit, but let's do it this way
 * Be sure we're setting the attribute ``_was_it_there``.
 
 * The trick now is to figure out how to make this all work. Despite the *trick*, there is no magic here. You should be able to figure this out.
-    * Run this with the files `toSearchA <http://people.stfx.ca/jhughes/cs161/data/toSearchA.txt>`_  and `toSearchB <http://people.stfx.ca/jhughes/cs161/data/toSearchB.txt>`_..
+    * Run this with the files :download:`toSearchA<../data/toSearchA.txt>` and :download:`toSearchB<../data/toSearchB.txt>` 
     
 * Call the getter for the attribute. 
 * print out the result. 
