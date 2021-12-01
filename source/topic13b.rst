@@ -133,6 +133,22 @@ Getters/Setters
     * We can enforce data integrity rules
         * Eg. Ensure all Student Numbers are 9 chars long. 
 
+.. admonition:: Activity
+
+    * Try this example and see what happens when you change a private attribute without control on the modification.
+
+    .. code-block:: python
+            :linenos:
+
+            a_student = EnthusiasticStudent("Bob", "Ross", "007")
+
+            # A user manually changes the private attibute
+            a_student._student_num = 5
+
+            print(a_student)
+
+    * What is the problem?
+    * How can ``set_student_num()`` help us?
 
 
 MyStudents
@@ -140,7 +156,7 @@ MyStudents
 
 * Ok, we want an object to hold onto ``EnthusiasticStudent`` objects
 * What attributes do we want?
-    * -Name
+    * Name
     * List of the EnthusiasticStudents
 	
 

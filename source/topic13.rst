@@ -8,7 +8,7 @@ Topic #13 -- Objects
         * Function vs Method? 
         * Variable vs Property/Attributes?
 
-* For better or worse, you will will have to get used to them. So start loving them. 
+* For better or worse, you will have to get used to them. So start loving them. 
 * Big reasons Computer Scientists like objects is because of *abstraction* and the logical *encapsulation* of stuff. 
 
 * We get to focus on *what* as opposed to *how* (and sometimes ignoring the *why* altogether)
@@ -135,7 +135,7 @@ Let's Make a Simple Object/ADT
 1. Write this at the top of some cell in Colab ``class EnthusiasticStudent:``. 
 
     .. Warning::
-        If using PyCharm or Sypder, you can put everything in the same script, or alternatively, you could do the *better* thing and put all classes in their own files. I'd recommend this. 
+        If using PyCharm or Spyder, you can put everything in the same script, or alternatively, you could do the *better* thing and put all classes in their own files. I'd recommend this. 
 
     * This tells python *Hey, everything that follows is gonna be about the EnthusiasticStudent*
     * Classes do **not** need to be in their own files, but it's often a good call
