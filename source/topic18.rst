@@ -21,7 +21,7 @@ Let's get some data
 
 .. admonition:: Activity
 
-    Download this `Google Trends CSV <http://people.stfx.ca/jhughes/cs161/data/trends.csv>`_ .
+    Download this :download:`Google Trends CSV<../data/trends.csv>`.
     
         * Each row is a week. Starting in 2004, up to the 2012-ish
         * The columns are the search terms 'vampire', 'zombie', 'flu', 'ice cream'

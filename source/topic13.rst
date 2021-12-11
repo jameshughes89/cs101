@@ -8,7 +8,7 @@ Topic #13 -- Objects
         * Function vs Method? 
         * Variable vs Property/Attributes?
 
-* For better or worse, you will will have to get used to them. So start loving them. 
+* For better or worse, you will have to get used to them. So start loving them. 
 * Big reasons Computer Scientists like objects is because of *abstraction* and the logical *encapsulation* of stuff. 
 
 * We get to focus on *what* as opposed to *how* (and sometimes ignoring the *why* altogether)
