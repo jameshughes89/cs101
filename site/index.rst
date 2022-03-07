@@ -191,7 +191,7 @@ Labs
     labs/lab9/debugging
     labs/lab10/objects
     labs/lab11/more-objects
-    labs/lab12/more-objects
+    labs/lab12/recursion
     
     
 Assignments
