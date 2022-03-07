@@ -188,7 +188,7 @@ Labs
     labs/lab6/linear-search
     labs/lab7/2d-lists
     labs/lab8/more-lists
-    labs/lab9/debugging
+    labs/lab9/debug
     labs/lab10/objects
     labs/lab11/more-objects
     labs/lab12/recursion
