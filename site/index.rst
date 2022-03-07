@@ -180,7 +180,7 @@ Labs
 .. toctree::
     :maxdepth: 1
    
-    lab1
+    labs/lab1/hello-world
     lab2
     lab3
     lab4
