@@ -13,10 +13,6 @@
 *.tar.gz
 *.rar
 
-# Assignments
-assignments/
-
-
 # IntelliJ/PyCharm stuff
 .idea
 *.iml
