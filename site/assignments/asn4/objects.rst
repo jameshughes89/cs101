@@ -21,7 +21,7 @@ Assignment #4: Playing with Objects is Fun
     * Generalizing rules 
     * Testing code
 
-.. image:: ../img/world.png
+.. image:: world.png
 
 Now for another more engineering-ie assignment where we will build something. In fact, we're going to build our own objects from scratch. This may seem intimidating, but in reality, coding this way can often really simplify all of your problems. It's all about nice *encapsulation*. 
 
@@ -112,8 +112,8 @@ Make a CountryCatalogue class.
         		
 
     * Obtain the sample data files (you might have to *right click* and select *save link as*):
-        * :download:`Continents <../assignments_files/continent.txt>`
-        * :download:`Countries <../assignments_files/country.txt>`
+        * :download:`Continents <continent.txt>`
+        * :download:`Countries <country.txt>`
 		
     * Note that they have headers. 
 	
@@ -220,8 +220,8 @@ This part is just for making sure everything works.
 
 Make sure you have downloaded the files:
 
-    * :download:`Continents <../assignments_files/continent.txt>`
-    * :download:`Countries <../assignments_files/country.txt>`
+    * :download:`Continents <continent.txt>`
+    * :download:`Countries <country.txt>`
 
 .. Warning::
 
@@ -229,7 +229,7 @@ Make sure you have downloaded the files:
 	
 Also, download this file:
 
-    * :download:`main.py <../assignments_files/main.py>`
+    * :download:`main.py <main.py>`
 
 .. Warning::
 

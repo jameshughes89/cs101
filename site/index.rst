@@ -202,7 +202,7 @@ Assignments
     assignments/asn1/starbucks
     assignments/asn2/zombies
     assignments/asn3/tictactoe
-    asn4   
+    assignments/asn4/objects
    
    
 Course Outline
