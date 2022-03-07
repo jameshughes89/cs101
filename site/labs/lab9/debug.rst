@@ -137,7 +137,7 @@ Obviously you should know where the problem is given that you fixed this above, 
 6. Now you will press the *step into* button. Take your time with this, for real. If you don't, you're using the debugger wrong and it won't actually be helpful. This is where the magic happens. The trick is to (a) do **not** skip a step, (b) do **not** make any assumptions, (c) critically think about what *should* happen if the code was correct, and compare your hypothesis to what is *actually* happening, (d) oh, and TAKE YOUR TIME. 
 
 
-.. image:: ../img/stepInto.png
+.. image:: ../../topics/topic11b/stepInto.png
 
 
 7. I know you know where the problem is, so just spay special attention to what your hypothesis for ``curMaxIndex`` should be when ``curMax`` is set to 8, and how the code actually reacts. 

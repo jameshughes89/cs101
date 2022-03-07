@@ -181,17 +181,17 @@ Labs
     :maxdepth: 1
    
     labs/lab1/hello-world
-    lab2
-    lab3
-    lab4
-    lab5
-    lab6
-    lab7
-    lab8
-    lab9
-    lab10
-    lab11
-    lab12
+    labs/lab2/functions
+    labs/lab3/conditionals
+    labs/lab4/car-rental
+    labs/lab5/loops
+    labs/lab6/linear-search
+    labs/lab7/2d-lists
+    labs/lab8/more-lists
+    labs/lab9/debugging
+    labs/lab10/objects
+    labs/lab11/more-objects
+    labs/lab12/more-objects
     
     
 Assignments

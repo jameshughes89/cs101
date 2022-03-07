@@ -44,7 +44,7 @@ d
 e
 f
 
-.. image:: ../img/matRow.png
+.. image:: matRow.png
 
 **2**
 
@@ -57,7 +57,7 @@ c
 f
 i
 
-.. image:: ../img/matCol.png
+.. image:: matCol.png
 
 **3**
 
@@ -70,7 +70,7 @@ a
 e
 i
 
-.. image:: ../img/matDiag3.png
+.. image:: matDiag3.png
 
 **4**
 
@@ -83,19 +83,19 @@ g
 e
 c
 
-.. image:: ../img/matDiag4.png
+.. image:: matDiag4.png
 
 **5**
 
 Write a function ``printDownLeft(mat)`` that will work similarly to above, but starting in the top right. 
 
-.. image:: ../img/matDiag5.png
+.. image:: matDiag5.png
 
 **6**
 
 Write a function ``printUpLeft(mat)`` that will work similarly to above, but starting in the bottom right.
 
-.. image:: ../img/matDiag6.png
+.. image:: matDiag6.png
 
 **7**
 

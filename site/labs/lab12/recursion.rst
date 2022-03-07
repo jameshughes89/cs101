@@ -2,7 +2,7 @@
 Lab #12
 *******
 
-.. image:: ../img/fib2.jpg
+.. image:: fib2.jpg
 
 Part 1
 ======
@@ -24,8 +24,7 @@ Part 1
 
 2. When thinking about computational complexity, we basically ask how many times some code is run. For example, with a linear search we're typically going to have a loop and we ask ourselves "how many times does the code in the loop run?". Assuming we have `n` things, it will be `O(n)`. Here we have no loop, but take a moment and think about how much work is being done; how many times will the function get called?
     
-3. Can you come up with an algorithm to do this *not* recursively? You don't have to actually implement it (but you can if you want). Just come up with the general idea and convince each other that it's right. 
-
+3. Can you come up with an algorithm to do this *not* recursively? You don't have to actually implement it (but you can if you want). Just come up with the general idea and convince each other that it's right.
 
 4. See if you can derive/find the **recursive** function based on the input and outputs below:
 
@@ -51,7 +50,7 @@ Part 1
 
 What is ``f(x)``?
 
-.. image:: ../img/fib.png
+.. image:: fib.png
 
 
 Part 2
