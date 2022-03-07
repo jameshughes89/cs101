@@ -1,5 +1,5 @@
 # All built stuff
-out/*
+/out/
 
 # Log file
 *.log
@@ -38,7 +38,8 @@ venv
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
