@@ -201,7 +201,7 @@ Assignments
    
     assignments/asn1/starbucks
     assignments/asn2/zombies
-    assignments/asn2/tictactoe
+    assignments/asn3/tictactoe
     asn4   
    
    
