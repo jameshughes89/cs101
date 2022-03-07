@@ -4,7 +4,7 @@ Assignment #2: Oh crap, Zombies!
 
 * **Worth**: 10%
 * **DUE**: Oct 25, at 11:55pm; submitted on MOODLE.
-* Starting point: :download:`asn2.ipynb <../assignments_files/asn2.ipynb>` OR :download:`asn2.py <../assignments_files/asn2.py>`
+* Starting point: :download:`asn2.ipynb <asn2.ipynb>` OR :download:`asn2.py <asn2.py>`
 
 .. warning::
 
@@ -16,17 +16,17 @@ Assignment #2: Oh crap, Zombies!
    
    You can access these in Colab or PyCharm. If using PyCharm and you create a PyCharm project, make sure to select the **Conda** interpreter. 
    
-   .. image:: ../img/pycharmconda.png
+   .. image:: pycharmconda.png
    
    
    **IGNORE IF USING COLAB** If for whatever reason PyCharm is being a troublemaker, you can use Spyder still. Just open up Spyder. On Windows, you can just search for it in the start menue. On Mac and Windows, you can also just open up the **Anaconda Navigator**. Then from within the navigator, open up Spyder. 
    
-   .. image:: ../img/windowsSpyder.png
+   .. image:: windowsSpyder.png
    
-   .. image:: ../img/anacondanav.png
+   .. image:: anacondanav.png
 
 
-.. image:: ../img/zombieheader.jpeg
+.. image:: zombieheader.jpeg
    
 If you can simulate something accurately enough, the simulation might have real advantages over actually doing an experiment. For example, if you simulate a protein folding -- and get it right -- you can actually stop, rewind, replay, and even do matrix-style 'bullet time' pans around the protein, as it folds. This allows you to watch interactions on a level of detail that is completely impossible experimentally.
 
@@ -39,7 +39,7 @@ How to approach the assignment
 
 Once again, you are asked to extend existing code. Extending existing code can actually be more challenging than writing code from scratch, but this is what a lot of real world programming is (don't worry, you will start writing large programs from scratch very soon). 
 
-The first thing you should do is :download:`download the existing notebook <../assignments_files/asn2.ipynb>` (:download:`or download the .py if you want <../assignments_files/asn2.py>`) and take a quick look at it. Just skim it. Some of the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
+The first thing you should do is :download:`download the existing notebook <asn2.ipynb>` (:download:`or download the .py if you want <asn2.py>`) and take a quick look at it. Just skim it. Some of the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
 
 So... look at that code. Seriously. Do it. Familiarizing yourself with what's going on in the file is the best possible preparation for doing the assignment. Consider this the first requirement of the assignment.
 
@@ -115,7 +115,7 @@ To make your life easier, I've provided a function called ``set_up_cities`` that
 
 You should probably load up the ``asn2.ipynb`` (or ``asn2.py``) file into Colab or your IDE and play around with the ``set_up_cities()`` function to get a feel for it. Have a look at the lists it generates (``print``) and make sure you understand their structure. I'm not being silly here. You should do this. Playing with the code is the best way to learn how it works.   
 
-.. image:: ../img/zahead.jpeg
+.. image:: zahead.jpeg
 
 .. warning::
 
@@ -179,7 +179,7 @@ Once you've done this, you now have a working zombie apocalypse simulator! So sp
    
 The function ``draw_world`` is one that's already written for you. It graphically displays the state of your world. Cities are red circles if they have zombies and blue circles if they're clean. If zombies can travel between two cities, there is a line drawn between the cities. If you update this display after each ``sim_step`` you can watch your zombies spread! It'll look something like this:
 
-.. image:: ../img/zgraph.png
+.. image:: zgraph.png
 
 If you get tired of typing ``sim_step`` for every single step... you could always automate the process with a function that calls ``sim_step`` in a loop!
 
@@ -187,7 +187,7 @@ Once you're convinced that your zombie simulator works, move on to Part 2. If yo
 
 Working now? Good. Make sure it's *commented* and has *function headers*. Make sure you've got good variable names too. 
 
-.. image:: ../img/cdc.jpeg   
+.. image:: cdc.jpeg
    
 
 Part I --- FAQ:
@@ -262,7 +262,7 @@ Now we get to play with our simulator to answer burning public health questions 
 
    Here's a sample histogram of times to the end of the world for ``p_spread = 0.5`` and ``p_cure = 0.0``:
 
-.. image:: ../img/zhist.png
+.. image:: zhist.png
 
 Part II --- FAQ:
 ================

@@ -200,7 +200,7 @@ Assignments
     :maxdepth: 1
    
     assignments/asn1/starbucks
-    asn2
+    assignments/asn2/zombies
     asn3
     asn4   
    
