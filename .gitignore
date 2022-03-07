@@ -20,7 +20,6 @@
 # Build script
 build.sh
 
-
 # venv
 env/
 env
