@@ -2,7 +2,6 @@
 Topic #1 -- Intro, print
 ************************
 
-
 What will I learn?
 ==================
 
@@ -16,7 +15,7 @@ What will I learn?
 * The long version:
     * :doc:`Read the outline </outline>`
 
-.. image:: ../img/turing.jpg
+.. image:: turing.jpg
 
  
 What prerequisites do I need?
@@ -163,7 +162,7 @@ So I should be terrified?
 I need help!
 ============
 
-.. image:: ../img/beforeGoogle.jpg
+.. image:: beforeGoogle.jpg
 
 There are A LOT of resources to help you. We have `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, YouTube videos, email, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `office hours, <https://vimeo.com/270014784>`_ labs, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `etc. <https://www.youtube.com/watch?v=e9C_cgL2150>`_. 
    
@@ -181,7 +180,7 @@ Why did you just say Google so many times?
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
-.. image:: ../img/Googling.jpg
+.. image:: Googling.jpg
     :width: 500 px
     :align: center
    
@@ -197,7 +196,7 @@ Can I write a program now?
 
 * You're now officially a computer programmer!   
 
-.. image:: ../img/HelloWorldColab.png
+.. image:: HelloWorldColab.png
    
    
 Videos

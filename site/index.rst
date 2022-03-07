@@ -150,7 +150,7 @@ Course Notes
 .. toctree::
     :maxdepth: 1
    
-    topic1
+    topics/topic1/intro
     topic2
     topic3
     topic4
