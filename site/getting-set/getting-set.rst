@@ -21,7 +21,7 @@ Anaconda is my fav python distribution for a billion reasons. One of which is th
 
 **IMPORTANT:** When installing it, there will be an option about setting a PATH variable. The installer recommends against checking the box, but ignore this. YOU **SHOULD** CHECK THIS BOX! See image. 
 
-.. image:: ../img/pathVariable.png
+.. image:: pathVariable.png
 
 
 Integrated Development Environment
@@ -36,4 +36,4 @@ Another popular IDE is **PyCharm**. `If you want it, download the free community
 
 Note, I will not be providing IT support for IDEs (or really any IT support in general). 
 
-.. image:: ../img/pyCharm.png
+.. image:: pyCharm.png
