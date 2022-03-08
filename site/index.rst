@@ -153,8 +153,8 @@ Course Notes
     topics/topic1/intro
     topics/topic2/values-variables-types
     topics/topic3/functions
-    topic4
-    topic5
+    topics/topic4/if-else
+    topics/topic5/booleans
     topic5b
     topic6
     topic7

@@ -98,7 +98,7 @@ The function type
 Developing bigger programs
 ==========================
 
-.. image:: ../img/softeigineering.jpeg
+.. image:: softeigineering.jpeg
 
 * The best way to do this is still a (very) open research problem in software engineering.
 * Here, I'm going to suggest *bottom up*, incremental, development.

@@ -20,7 +20,7 @@ Conditionals
 Logic First
 ===========
 
-* Sometimes things are `True` or `False`
+* Sometimes things are ``True`` or ``False``
 * I'm betting you actually are pretty familiar with some LOGIC
     * AND
     * OR
@@ -182,9 +182,10 @@ Chains of alternatives
    
 Nested conditionals
 ===================
+
 * Computer scientists love "nesting" things: putting things inside other things.
 
-.. image:: ../img/dolls.jpeg
+.. image:: dolls.jpeg
 
 * You can "nest" a conditional inside another conditional::
 
@@ -283,13 +284,9 @@ NumPy Types
 
 .. admonition:: Activity
 
-    Write a Python function that takes two Python ``float`` s as inputs, converts them both into ``numpy.float32`` type and then returns the product.   
-   
-   
-   
-   
-   
-      
+    Write a Python function that takes two Python ``float`` s as inputs, converts them both into ``numpy.float32`` type and then returns the product.
+
+
 For next class
 ==============
 
