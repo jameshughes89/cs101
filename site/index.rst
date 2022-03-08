@@ -150,29 +150,29 @@ Course Notes
 .. toctree::
     :maxdepth: 1
    
-    topics/topic1/intro
-    topics/topic2/values-variables-types
-    topics/topic3/functions
-    topics/topic4/if-else
-    topics/topic5/booleans
-    topics/topic5b/car-rental
-    topics/topic6/loops
-    topics/topic7/strings
-    topics/topic8/lists
-    topics/topic8b/more-lists
-    topics/topic9/more-more-lists
-    topics/topic10/dictionaries-sets
-    topics/topic11/debug
-    topics/topic11b/debugger
-    topics/topic12/fileIO-exceptions
-    topics/topic13/objects
-    topics/topic13b/more-objects
-    topics/topic14/searching
-    topics/topic15/sorting
-    topics/topic16/models-of-computation
-    topics/topic17/recursion
-    topics/topic18/data-visualization
-    topics/topic19/machine-learning
+    topics/intro/intro
+    topics/values-variables-types/values-variables-types
+    topics/functions/functions
+    topics/if-else/if-else
+    topics/booleans/booleans
+    topics/car-rental/car-rental
+    topics/loops/loops
+    topics/strings/strings
+    topics/lists/lists
+    topics/more-lists/more-lists
+    topics/more-more-lists/more-more-lists
+    topics/dictionaries-sets/dictionaries-sets
+    topics/debug/debug
+    topics/debugger/debugger
+    topics/fileIO-exceptions/fileIO-exceptions
+    topics/objects/objects
+    topics/more-objects/more-objects
+    topics/searching/searching
+    topics/sorting/sorting
+    topics/models-of-computation/models-of-computation
+    topics/recursion/recursion
+    topics/data-visualization/data-visualization
+    topics/machine-learning/machine-learning
    
    
 Labs
