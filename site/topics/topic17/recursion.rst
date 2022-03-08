@@ -2,7 +2,7 @@
 Topic #17 -- Recursion and More Sorting
 ***************************************
 
-.. image:: ../img/hands.jpg
+.. image:: hands.jpg
 
 Recursion
 =========

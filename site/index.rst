@@ -170,7 +170,7 @@ Course Notes
     topics/topic14/searching
     topics/topic15/sorting
     topics/topic16/models-of-computation
-    topic17
+    topics/topic17/recursion
     topic18
     topic19
    
