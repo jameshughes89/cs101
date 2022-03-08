@@ -151,8 +151,8 @@ Course Notes
     :maxdepth: 1
    
     topics/topic1/intro
-    topic2
-    topic3
+    topics/topic2/values-variables-types
+    topics/topic3/functions
     topic4
     topic5
     topic5b

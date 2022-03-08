@@ -2,7 +2,7 @@
 Topic #3 -- Functions
 *********************
 
-.. image:: ../img/Eniac.jpeg
+.. image:: Eniac.jpeg
 
 
 Functions
