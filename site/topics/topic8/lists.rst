@@ -224,7 +224,7 @@ Pointers (THIS IS ACTUALLY A BIG DEAL)
 
 * Here is an idealized view of RAM inside a computer
 
-.. image:: ../img/RAM.png 
+.. image:: RAM.png
 
 .. warning::
 
@@ -234,7 +234,7 @@ Pointers (THIS IS ACTUALLY A BIG DEAL)
    
     Note that the ``0x`` means that the number is in hexadecimal
 
-    .. image:: ../img/functionLocation.png
+    .. image:: functionLocation.png
 
 Fixed Size Arrays
 -----------------
@@ -245,7 +245,7 @@ Fixed Size Arrays
     * Like a list, but fixed size, and no fancy methods
         * BTW, the following is basically the same for lists too, but slightly easier to explain if we talk about arrays
  
-.. image:: ../img/array_1.png 
+.. image:: array_1.png
  
  
 * Above is an array with length **8**
@@ -278,7 +278,7 @@ Primitive Types in Memory (RAM)
 
 >>> x = 17
 
-.. image:: ../img/Int_in_RAM.png 
+.. image:: Int_in_RAM.png
 
 * Something like this will happen. 
     * The value 17 will go into one of the open divvied up chunks of RAM
@@ -288,7 +288,7 @@ Primitive Types in Memory (RAM)
 
 >>> y = x
 
-.. image:: ../img/copy_int_in_RAM.png 
+.. image:: copy_int_in_RAM.png
 
 * Something like this will happen. 
     * Copy the contents in the location that the ``x`` refers to some other location
@@ -305,7 +305,7 @@ Primitive Types in Memory (RAM)
 * Wait, there's actually a simple solution. What if we block off chunks of RAM to be the array?
 * So if I have the array ``[a, b, c, d, e, f, g, h]``, we get this...
 
-.. image:: ../img/array_in_RAM.png 
+.. image:: array_in_RAM.png
 
 * We're just putting each element into it's own RAM location
 * We just need to know that our array starts at memory address 677 and goes to 684.
@@ -319,7 +319,7 @@ Pointers
 
 >>> z = [a, b, c, d, e, f, g, h]
 
-.. image:: ../img/array_pointer.png 
+.. image:: array_pointer.png
 
 * ``z`` gets us to a memory location whose contents is another memory address (pointer)
     * It effectively *points* to another chunk of RAM
@@ -347,7 +347,7 @@ Pointers
 
 >>> w = z
 
-.. image:: ../img/array_pointer_copy.png 
+.. image:: array_pointer_copy.png
 
 
 * Just follow the rules we followed for primitive types
@@ -360,7 +360,7 @@ Pointers
 
 >>> w[4] = P
 
-.. image:: ../img/array_pointer_copy_change.png 
+.. image:: array_pointer_copy_change.png
 
 * Did I change the contents at the memory location ``w``?
    * No, I changed something that the pointer in the memory location ``w`` was pointing to!!

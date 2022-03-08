@@ -299,7 +299,7 @@ What makes them special other than just uniqueness and orderdness?
    
     **HINT:** hit tab.
 
-.. image:: ../img/sets.png
+.. image:: sets.png
    
   
 .. admonition:: Activity
@@ -312,11 +312,7 @@ What makes them special other than just uniqueness and orderdness?
    
     4. What If I wanted to know which words were in one book, but not the other?
 
-   
 
-   
- 
- 
 The Bad News...
 ===============
 

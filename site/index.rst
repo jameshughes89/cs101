@@ -158,10 +158,10 @@ Course Notes
     topics/topic5b/car-rental
     topics/topic6/loops
     topics/topic7/strings
-    topic8
-    topic8b
-    topic9
-    topic10
+    topics/topic8/lists
+    topics/topic8b/more-lists
+    topics/topic9/more-more-lists
+    topics/topic10/dictionaries-sets
     topic11
     topic11b
     topic12
