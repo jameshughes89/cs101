@@ -149,6 +149,7 @@ Course Notes
 ============
 .. toctree::
     :maxdepth: 1
+    :numbered:
    
     topics/intro/intro
     topics/values-variables-types/values-variables-types
@@ -179,6 +180,7 @@ Labs
 ====
 .. toctree::
     :maxdepth: 1
+    :numbered:
    
     labs/hello-world/hello-world
     labs/functions/functions
@@ -198,6 +200,7 @@ Assignments
 ===========
 .. toctree::
     :maxdepth: 1
+    :numbered:
    
     assignments/starbucks/starbucks
     assignments/zombies/zombies
