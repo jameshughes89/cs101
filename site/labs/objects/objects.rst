@@ -1,5 +1,5 @@
 *******
-Lab #10
+Objects
 *******
 
 Before Kattis
