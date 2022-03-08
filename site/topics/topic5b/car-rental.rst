@@ -14,7 +14,7 @@ What have we seen so far?
 * Logic
 * If/Else
 
-.. image:: ../img/carRental.png
+.. image:: carRental.png
 
 A car rental place needs our help. They want a simple program to calculate how much a customer is to be charged based on their rental agreement, age, how far they drove, and how long they had the car. 
 

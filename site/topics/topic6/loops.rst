@@ -142,7 +142,7 @@ OMG some actual *science*!
 
     Find the solution to the equation (for what value of ``x`` is this statement true?):
    
-    * .. image:: ../img/cosx.png
+    * .. image:: cosx.png
    
     No need to worry about degrees/radians here. Just use ``cos`` and ``sin``.
    
@@ -152,7 +152,7 @@ OMG some actual *science*!
 * Here's what you do:
     * Pick a value ``x`` between 0 and 1. Any will do. Seriously.
     * Compute: 
-        * .. image:: ../img/xminuscosxminusxqueu.png
+        * .. image:: xminuscosxminusxqueu.png
     * The answer to that equation is an *approximation* of the solution
     * It's not a very *good* approximation yet. What to do?
     * Set ``x`` equal to the new approximation and plug in to the formula again.

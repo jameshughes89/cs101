@@ -155,8 +155,8 @@ Course Notes
     topics/topic3/functions
     topics/topic4/if-else
     topics/topic5/booleans
-    topic5b
-    topic6
+    topics/topic5b/car-rental
+    topics/topic6/loops
     topic7
     topic8
     topic8b
