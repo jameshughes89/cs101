@@ -180,18 +180,18 @@ Labs
 .. toctree::
     :maxdepth: 1
    
-    labs/lab1/hello-world
-    labs/lab2/functions
-    labs/lab3/conditionals
-    labs/lab4/car-rental
-    labs/lab5/loops
-    labs/lab6/linear-search
-    labs/lab7/2d-lists
-    labs/lab8/more-lists
-    labs/lab9/debug
-    labs/lab10/objects
-    labs/lab11/more-objects
-    labs/lab12/recursion
+    labs/hello-world/hello-world
+    labs/functions/functions
+    labs/conditionals/conditionals
+    labs/car-rental/car-rental
+    labs/loops/loops
+    labs/linear-search/linear-search
+    labs/2d-lists/2d-lists
+    labs/more-lists/more-lists
+    labs/debug/debug
+    labs/objects/objects
+    labs/more-objects/more-objects
+    labs/recursion/recursion
     
     
 Assignments
