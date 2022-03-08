@@ -157,7 +157,7 @@ Course Notes
     topics/topic5/booleans
     topics/topic5b/car-rental
     topics/topic6/loops
-    topic7
+    topics/topic7/strings
     topic8
     topic8b
     topic9

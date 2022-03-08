@@ -201,7 +201,7 @@ String Trivia
 * ASCII Table
     * Every *character* is a *number*
 
-    .. image:: ../img/ascii.gif
+    .. image:: ascii.gif
    
     >>> wut = ord('a')	# get the num of 'a'
     >>> print(wut)
@@ -298,8 +298,8 @@ Methods
         4. Press dot (period)
         5. Wait... (or space or press ctrl-space (depends on IDE))
 
-    .. image:: ../img/methods2.png
-    .. image:: ../img/methods.png
+    .. image:: methods2.png
+    .. image:: methods.png
 
 .. admonition:: Activity
 
