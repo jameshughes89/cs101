@@ -1,5 +1,5 @@
 # All built stuff
-out/*
+/out/
 
 # Log file
 *.log
@@ -13,17 +13,12 @@ out/*
 *.tar.gz
 *.rar
 
-# Assignments
-assignments/
-
-
 # IntelliJ/PyCharm stuff
 .idea
 *.iml
 
 # Build script
 build.sh
-
 
 # venv
 env/
@@ -36,9 +31,6 @@ venv
 .DS_Store
 .AppleDouble
 .LSOverride
-
-# Icon must end with two \r
-Icon
 
 # Thumbnails
 ._*
