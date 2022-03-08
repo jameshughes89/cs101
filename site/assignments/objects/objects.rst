@@ -1,6 +1,6 @@
-******************************************
-Assignment #4: Playing with Objects is Fun
-******************************************
+***************************
+Playing with Objects is Fun
+***************************
 
 * **Worth**: 10%
 * **DUE**: December 6th at 11:55pm; submitted on MOODLE.

@@ -1,6 +1,6 @@
-***********************************
-Assignment #1: Density of Starbucks
-***********************************
+********************
+Density of Starbucks
+********************
 
 * **Worth**: 10%
 * **DUE**: October 4th, 2021 at 11:55pm; submitted on MOODLE.

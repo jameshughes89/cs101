@@ -1,6 +1,6 @@
-********************************
-Assignment #2: Oh crap, Zombies!
-********************************
+*****************
+Oh crap, Zombies!
+*****************
 
 * **Worth**: 10%
 * **DUE**: Oct 25, at 11:55pm; submitted on MOODLE.

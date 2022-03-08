@@ -1,6 +1,6 @@
-**********************************************************
-Assignment #3: I'm only taking CS to make sick video games
-**********************************************************
+*******************************************
+I'm only taking CS to make sick video games
+*******************************************
 
 * **Worth**: 10%
 * **DUE**: November 15th at 11:55pm; submitted on MOODLE.
