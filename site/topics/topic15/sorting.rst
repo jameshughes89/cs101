@@ -28,7 +28,7 @@ Sorting
 Insertion sort
 ==============
 
-	.. image:: ../img/insertion.gif
+	.. image:: insertion.gif
 
 * You give me a list called ``in_list``
 * I create a new, empty, list called ``sorted_list``
@@ -72,7 +72,7 @@ Let's have a look at an insertion sort implementation in Python::
 Selection Sort
 ==============
 
-	.. image:: ../img/selection.gif
+	.. image:: selection.gif
 
 * You give me a list called ``in_list``
 * I scan through the whole list to find the smallest element
@@ -129,7 +129,7 @@ Let's see Selection sort in action::
 Bubble Sort
 ===========
 
-	.. image:: ../img/bubble.gif
+	.. image:: bubble.gif
 
 * Maybe you find Insertion sort or Selection sort ugly or offensive?
 * No problem. Remember: there are *many* algorithms to solve any one problem.

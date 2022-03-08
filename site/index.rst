@@ -162,14 +162,14 @@ Course Notes
     topics/topic8b/more-lists
     topics/topic9/more-more-lists
     topics/topic10/dictionaries-sets
-    topic11
-    topic11b
-    topic12
-    topic13
-    topic13b
-    topic14
-    topic15
-    topic16  
+    topics/topic11/debug
+    topics/topic11b/debugger
+    topics/topic12/fileIO-exceptions
+    topics/topic13/objects
+    topics/topic13b/more-objects
+    topics/topic14/searching
+    topics/topic15/sorting
+    topics/topic16/models-of-computation
     topic17
     topic18
     topic19

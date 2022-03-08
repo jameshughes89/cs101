@@ -9,7 +9,7 @@ Now it's time...
 * You should be familiar enough with Python and everything to be able to take advantage of PyCharm without it throwing you off too much
 * Don't worry though. If you finish this lecture and realize you hate PyCharm, then that's OK. Keep doing what you're doing. 
 
-.. image:: ../img/debugger2.png
+.. image:: debugger2.png
 
 * A lot of IDE's have GUI debuggers
 * A debugger is a powerful tool that lets us to a lot of cool tings
@@ -44,12 +44,12 @@ Break Points
 
 * In your IDE, click just to the right of a line number on a line of code you're interested in.
 
-.. image:: ../img/breakPointSet.png
+.. image:: breakPointSet.png
 
 * Now, hit the debug button in the top right.
 
 
-.. image:: ../img/breakPointStop.png
+.. image:: breakPointStop.png
 
 * WOAH!
 * What just happened!?
@@ -76,13 +76,13 @@ Evaluating Expressions on the fly
 * We can even ask questions to Python at this time
 * Click the little calculator button
 
-.. image:: ../img/evalExpr.png
+.. image:: evalExpr.png
 
 
 * Now I can ask a question like this based on what the current values of the variables
 
+.. image:: evalExprAsk.png
 
-.. image:: ../img/evalExprAsk.png
 
 Adding expressions to the watch list
 ====================================
@@ -90,11 +90,11 @@ Adding expressions to the watch list
 * Even more cool, instead of just asking a question once, we can add the expression to the watch list
 * Click the ``+`` button
 
-.. image:: ../img/addWatch.png
+.. image:: addWatch.png
 
 * Type in your question
 
-.. image:: ../img/addWatch2.png
+.. image:: addWatch2.png
 
 * WOW!
 * Now it's added to our watch list
@@ -106,13 +106,13 @@ Stepping through code one line at a time
 
 * Press the *step into* button and see what happens.
 
-.. image:: ../img/stepInto.png
+.. image:: stepInto.png
 
 * In this particular example, the code will go back to the top of the loop
 * Also notice that the value of ``c`` changed!
     * Why? Because the line of code ``c += 1`` makes it
 
-.. image:: ../img/stepInto.png
+.. image:: stepInto2.png
 
 * We can now tell tell Python to run one line at a time. 
 * We can also see how the variables change in the watch list as we step through the code
@@ -135,7 +135,7 @@ The Call Stack
     * In the below example, it's just the script
 * Let's not get toooo bogged down by this right now. 
 
-.. image:: ../img/callStack.png
+.. image:: callStack.png
 
 
 The Debugger Is Awesome

@@ -314,7 +314,7 @@ Exception Types
 * There is even a hierarchy 
     * `I stole this pic from here <https://o7planning.org/en/11421/python-exception-handling-tutorial>`_ 
 
-.. image:: ../img/exceptions.png
+.. image:: exceptions.png
 
 
 Exceptional vs Error

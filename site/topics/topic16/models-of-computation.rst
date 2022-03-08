@@ -27,11 +27,11 @@ Finite State Machines/Automata (FSM/FSA)
 * Let's say we want a lock that has the combination **7, 7, 3**. 
 * Here's a FSM for that lock
 
-.. image:: ../img/FSM_lock.png  
+.. image:: FSM_lock.png
 
 * Or, we can go the other way and say, given this machine, what input can it accept. 
 
-.. image:: ../img/FSM_regex.png
+.. image:: FSM_regex.png
 
 .. admonition:: Activity
    
@@ -139,7 +139,7 @@ Context-Sensitive Grammars
 Turing Machines 
 ===============
 
-.. image:: ../img/TuringMachine.jpg
+.. image:: TuringMachine.jpg
 
 * Turing Machines are even more powerful models of computation
 * *Basically*, the computers we use today are kinda' like these

@@ -15,7 +15,7 @@ It's broke, I give up!
 The importance of debugging
 ===========================
 
-.. image:: ../img/hi.jpg
+.. image:: hi.jpg
 
 * The more complex your programs get, the more time you'll spend debugging.
 * No matte how *good* you are as a programmer, you still spend **a lot** of time debugging.

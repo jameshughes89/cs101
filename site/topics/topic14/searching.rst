@@ -2,7 +2,7 @@
 Topic #14 -- Searching
 **********************
 
-.. image:: ../img/you_are_here.jpeg
+.. image:: you_are_here.jpeg
 
 You are *here*
 ==============

@@ -17,13 +17,13 @@ Topic #13 -- Objects
     * Answering *how* really depends on the level of **abstraction** we're talking about
 
 
-.. image:: ../img/engine.gif
+.. image:: engine.gif
    :height: 250px
 
-.. image:: ../img/ignitCar.jpg
+.. image:: ignitCar.jpg
    :height: 250px
 
-.. image:: ../img/carKey.jpg
+.. image:: carKey.jpg
    :height: 250px
 
 	  
@@ -63,7 +63,7 @@ Remember Numpy Arrays?
 
     2. Now type ``a.`` (the **a** followed by a period) (sometimes you have to hit *tab* too). You should see a list of things like this:
 
-        .. image:: ../img/ehDot.png
+        .. image:: ehDot.png
             :height: 250px
 
     3. These are either **attributes/properties** or **methods**
