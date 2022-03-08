@@ -1,6 +1,6 @@
-**********************
-Topic #14 -- Searching
-**********************
+*********
+Searching
+*********
 
 .. image:: you_are_here.jpeg
 

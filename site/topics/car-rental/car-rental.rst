@@ -1,6 +1,6 @@
-************************************
-Topic #5b -- Putting Things Together
-************************************
+***********************
+Putting Things Together
+***********************
 
 What have we seen so far?
 

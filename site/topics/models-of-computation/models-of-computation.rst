@@ -1,6 +1,6 @@
-**********************************
-Topic #16 -- Models of Computation
-**********************************
+*********************
+Models of Computation
+*********************
 
 
 Finite State Machines/Automata (FSM/FSA)
