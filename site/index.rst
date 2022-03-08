@@ -142,7 +142,7 @@ Getting Started
 .. toctree::
     :maxdepth: 1
    
-    /getting-set/getting-set
+    getting-set/getting-set
   
 
 Course Notes
