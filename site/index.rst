@@ -199,10 +199,10 @@ Assignments
 .. toctree::
     :maxdepth: 1
    
-    assignments/asn1/starbucks
-    assignments/asn2/zombies
-    assignments/asn3/tic-tac-toe
-    assignments/asn4/objects
+    assignments/starbucks/starbucks
+    assignments/zombies/zombies
+    assignments/tic-tac-toe/tic-tac-toe
+    assignments/objects/objects
    
    
 Course Outline
