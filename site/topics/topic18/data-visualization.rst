@@ -21,7 +21,7 @@ Let's get some data
 
 .. admonition:: Activity
 
-    Download this :download:`Google Trends CSV<../data/trends.csv>`.
+    Download this :download:`Google Trends CSV<trends.csv>`.
     
         * Each row is a week. Starting in 2004, up to the 2012-ish
         * The columns are the search terms 'vampire', 'zombie', 'flu', 'ice cream'
@@ -52,8 +52,8 @@ Simple plots
 
     ``plt.show()``
   
-.. image:: ../img/simplePlot2.png  
-.. image:: ../img/simplePlot.png
+.. image:: simplePlot2.png
+.. image:: simplePlot.png
 
 .. admonition:: Activity
 

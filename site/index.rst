@@ -171,8 +171,8 @@ Course Notes
     topics/topic15/sorting
     topics/topic16/models-of-computation
     topics/topic17/recursion
-    topic18
-    topic19
+    topics/topic18/data-visualization
+    topics/topic19/machine-learning
    
    
 Labs
