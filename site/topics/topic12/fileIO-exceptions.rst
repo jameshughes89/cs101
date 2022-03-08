@@ -100,7 +100,7 @@ Loading a CSV file
 	
 .. admonition:: Activity+
 	
-    Figure out how it works. Download :download:`this csv file <../data/airports.csv>` to your computer. **NOTE:** If using Colab, you'll have to upload it. 
+    Figure out how it works. Download :download:`this csv file </airports.csv>` to your computer. **NOTE:** If using Colab, you'll have to upload it.
    
     Now write a function called ``load_airports()`` that loads this CSV file into a list. 
 
