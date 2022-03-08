@@ -1,6 +1,6 @@
-*******************************************
-Topic #10 -- Tuples, Dictionaries, and Sets
-*******************************************
+******************************
+Tuples, Dictionaries, and Sets
+******************************
 
 * So far we have seen *lists* and *numpy arrays*. 
 
