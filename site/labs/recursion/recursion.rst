@@ -56,6 +56,6 @@ What is ``f(x)``?
 Part 2
 ======
 
-Go work through the course content for :doc:`Topic 18 </topic18>` and :doc:`Topic 19 </topic19>`.
+Go work through the course content for :doc:`Topic 18 </topics/topic18/data-visualization>` and :doc:`Topic 19 </topics/topic19/machine-learning>`.
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**

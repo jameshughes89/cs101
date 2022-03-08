@@ -11,7 +11,7 @@ Before Kattis
 
 1. If you missed the first lab, go complete steps 10 -- 16 in lab 1. 
 
-**NOTE:**  :doc:`If you forget how to do the function stuff, go back to the class notes. </topic3>`
+**NOTE:**  :doc:`If you forget how to do the function stuff, go back to the class notes. </topics/topic3/functions>`
 
 
 2. Write a **function** called ``add_five_print`` that takes one integer as a parameter, adds five to it, and then prints out the result. Call the function to verify its correctness. You **MUST** do this with a function. Below I have given you the code you need to start writing your function. 

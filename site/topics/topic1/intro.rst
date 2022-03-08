@@ -13,7 +13,7 @@ What will I learn?
     * How to be a 21st century individual so you won't be left behind
 
 * The long version:
-    * :doc:`Read the outline </outline>`
+    * :doc:`Read the outline </outline/outline>`
 
 .. image:: turing.jpg
 
@@ -188,7 +188,7 @@ Why did you just say Google so many times?
 Can I write a program now?
 ==========================
 
-* If you have looked at :doc:`get set up for CSCI 161 </gettingset>`, then yes
+* If you have looked at :doc:`get set up for CSCI 161 </gettingset/gettingset>`, then yes
 * Go to Google Colab and make your "Hello, world!" program 
     * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language.
     
@@ -227,5 +227,5 @@ For next week
 
 * `Read chapter 1 of the text <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html>`_
 * Read sections 2.1-2.5 of `chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
-* Get your computer at home :doc:`set up for CS 161 </gettingset>` 
+* Get your computer at home :doc:`set up for CS 161 </gettingset/gettingset>`
 
