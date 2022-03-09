@@ -1,6 +1,9 @@
 # All built stuff
 /out/
 
+# Cache stuff
+__pycache__
+
 # Log file
 *.log
 
