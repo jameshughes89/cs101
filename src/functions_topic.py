@@ -11,12 +11,12 @@ def concatenate_strings(string1: str, string2: str) -> str:
     @param string1: First string of the concatenation
     @param string2: Second string of the concatenation
     @return: The concatenation of string1 and string2
-
     """
     concatenated = string1 + string2
     return concatenated
 
 
+# Tests for the concatenate_strings method
 tester.test_function("", concatenate_strings, "", "")
 tester.test_function("ab", concatenate_strings, "a", "b")
 
@@ -40,5 +40,6 @@ def criss_cross_concatenation(string1: str, string2: str, string3: str, string4:
     return first_third_second_fourth
 
 
+# Tests for the criss_cross_concatenation method
 tester.test_function("", criss_cross_concatenation, "", "", "", "")
 tester.test_function("acbd", criss_cross_concatenation, "a", "b", "c", "d")
