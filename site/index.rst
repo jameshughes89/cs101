@@ -2,14 +2,11 @@
 Welcome to CSCI 161 --- Fall 2022
 *********************************
 
-**This is the course webpage for both Sections 11 & 12 of CSCI 161.**
-
-An introduction to computers, algorithms, and programming. No previous knowledge of algorithms or programming is
+An introduction to computer science, programming, algorithms, and data structures. No experience with programming is
 required.
 
-This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include
-problem analysis, algorithm development, data representation, control structures, lists, functions, and file
-manipulation.
+This course is devoted to learning problem solving and elementary programming skills. Topics include
+problem analysis, algorithm development, data representation, control structures, functions, lists, and objects.
 
 `The content used to generate the course can be found on GitHub <https://github.com/jameshughes89/cs101>`_ 
 
