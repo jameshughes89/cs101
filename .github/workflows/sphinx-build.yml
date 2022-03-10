@@ -1,4 +1,4 @@
-name: Unittest Sphinx Build Deploy
+name: Flake8 Test Sphinx Build Deploy
 
 
 on:
@@ -10,7 +10,7 @@ on:
     - main
 
 jobs:
-  format:
+  flake8:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -24,7 +24,8 @@ jobs:
         python -m pip install --editable .
     - name: Format Check
       run: |
-        format
+        flake8 ./src/
+        flake8 ./test/
         
   test:
     runs-on: ubuntu-latest
