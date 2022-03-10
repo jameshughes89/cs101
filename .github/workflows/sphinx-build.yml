@@ -41,7 +41,6 @@ jobs:
     - name: Build Site    
       uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "docs/"
         build-command: "sphinx-build -b html ./site/ ./out/"
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v2
