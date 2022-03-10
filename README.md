@@ -31,7 +31,7 @@ pip install --editable .
 ## Bash
 
 ```sh
-python -m venv --clear --prompt cs101 venv
+python3.8 -m venv --clear --prompt cs101 venv
 . venv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip install --editable .
