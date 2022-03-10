@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 
 def run_code_formatters():
-    for tool in ["isort .", "black .", "mdformat ."]:
+    for tool in ["isort .", "black .", "flake8 src/", "flake8 test/", "mdformat ."]:
         print(f"running `{tool}`")
         subprocess.run(tool, shell=True)
 
@@ -28,9 +28,5 @@ if __name__ == "__main__":
             "sphinx==4.0.1",
             "sphinx-rtd-theme==1.0.0",
         ],
-        entry_points={
-            "console_scripts": [
-                f"format = setup:{run_code_formatters.__name__} [dev]",
-            ]
-        },
+        entry_points={"console_scripts": [f"format = setup:{run_code_formatters.__name__}", f"test = "]},
     )
