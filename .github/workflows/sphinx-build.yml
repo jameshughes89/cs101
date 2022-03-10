@@ -27,8 +27,6 @@ jobs:
         python -m unittest discover -s .\test\ -p "*_test.py"
 
   sphinx:
-    needs:
-    - test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
