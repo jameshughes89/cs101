@@ -1,2 +1,5 @@
+black==22.1.0
+flake8==4.0.1
+isort==5.10.1
 sphinx==4.0.1
 sphinx-rtd-theme==1.0.0
