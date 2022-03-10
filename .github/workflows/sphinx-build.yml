@@ -10,7 +10,7 @@ on:
     - main
 
 jobs:
-flake8:
+  flake8:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
