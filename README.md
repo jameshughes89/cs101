@@ -37,7 +37,13 @@ pip install --upgrade pip setuptools wheel
 pip install --editable .
 ```
 
-# build
+# Formatter
+
+```sh
+format # just type this
+```
+
+# Build
 
 ```sh
 sphinx-build -b html "$SOURCEDIR" "$OUTPUTDIR"
