@@ -1,6 +1,6 @@
 import unittest
 
-from src.functions_topic import *
+from src.functions_topic import concatenate_strings, criss_cross_concatenation
 
 
 class TestFunctionsTopic(unittest.TestCase):
@@ -13,7 +13,5 @@ class TestFunctionsTopic(unittest.TestCase):
     def test_criss_cross_concatenation_empty_strings_returns_empty_string(self):
         self.assertEqual("", criss_cross_concatenation("", "", "", ""))
 
-    def test_criss_cross_concatenation_returns_contatenated_strings_in_correct_order(
-        self,
-    ):
+    def test_criss_cross_concatenation_returns_contatenated_strings_in_correct_order(self):
         self.assertEqual("acbd", criss_cross_concatenation("a", "b", "c", "d"))
