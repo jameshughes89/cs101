@@ -14,7 +14,7 @@ if __name__ == "__main__":
         name="cs101",
         version="1.0",
         url="https://github.com/jameshughes89/cs101",
-        python_requires=">=3.10",
+        python_requires=">=3.8",
         packages=find_packages(),
         install_requires=[
             "black==22.1.0",
