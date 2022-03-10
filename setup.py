@@ -28,5 +28,5 @@ if __name__ == "__main__":
             "sphinx==4.0.1",
             "sphinx-rtd-theme==1.0.0",
         ],
-        entry_points={"console_scripts": [f"format = setup:{run_code_formatters.__name__}", f"test = "]},
+        entry_points={"console_scripts": [f"format = setup:{run_code_formatters.__name__}"]},
     )
