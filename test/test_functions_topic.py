@@ -1,5 +1,5 @@
 import unittest
-# This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8. This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8. This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8. This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8. This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8.
+
 from src.functions_topic import concatenate_strings, criss_cross_concatenation
 
 
