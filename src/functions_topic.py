@@ -18,7 +18,9 @@ assert "" == concatenate_strings("", "")
 assert "ab" == concatenate_strings("a", "b")
 
 
-def criss_cross_concatenation(string1: str, string2: str, string3: str, string4: str) -> str:
+def criss_cross_concatenation(
+    string1: str, string2: str, string3: str, string4: str
+) -> str:
     """
     Returns the concatenation of the strings in the order of first third second fourth.
     E.g.
