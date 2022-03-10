@@ -1,4 +1,3 @@
-# This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8. This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8. This is a stupidly long comment that I am using to see what happens with the github action's job on checking flake8.
 def concatenate_strings(string1: str, string2: str) -> str:
     """
     Returns the concatenation of two strings.
