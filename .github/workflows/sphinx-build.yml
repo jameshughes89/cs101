@@ -1,4 +1,4 @@
-name: Flake8 Test Sphinx Build Deploy
+name: Test Sphinx Build Deploy
 
 
 on:
@@ -22,10 +22,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip setuptools wheel
         python -m pip install --editable .
-    - name: Format Check
+    - name: Verify Format
       run: |
-        flake8 ./src/
-        flake8 ./test/
+        flake8 ./src/ ./test/
     - name: Unit Test Sample Code
       run: |
         python -m unittest
