@@ -24,7 +24,7 @@ jobs:
         python -m pip install --editable .
     - name: Verify Format
       run: |
-        flake8 ./src/ ./test/
+        validate
     - name: Unit Test Sample Code
       run: |
         python -m unittest
