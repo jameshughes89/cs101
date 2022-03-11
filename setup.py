@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 
 def run_code_formatters():
-    for tool in ["isort .", "black .", "flake8 src/", "flake8 test/", "mdformat ."]:
+    for tool in ["isort .", "black .", "mdformat ."]:
         print(f"running `{tool}`")
         subprocess.run(tool, shell=True)
 
