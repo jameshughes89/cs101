@@ -15,6 +15,12 @@ def run_code_verification():
     subprocess.run(tool, shell=True)
 
 
+def run_sphinx_build():
+    tool = "sphinx-build -b html site/ out/"
+    print(f"running `{tool}`")
+    subprocess.run(tool, shell=True)
+
+
 if __name__ == "__main__":
     setup(
         name="cs101",
@@ -38,6 +44,7 @@ if __name__ == "__main__":
             "console_scripts": [
                 f"format = setup:{run_code_formatters.__name__}",
                 f"validate = setup:{run_code_verification.__name__}",
+                f"site = setup:{run_sphinx_build.__name__}",
             ]
         },
     )
