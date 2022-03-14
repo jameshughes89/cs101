@@ -2,10 +2,11 @@
 ## Name: PLEASE FILL THIS IN
 ## Student number: SERIOUSLY
 
-import matplotlib.pyplot as plt
-import numpy
-import networkx
 import string
+
+import matplotlib.pyplot as plt
+import networkx
+import numpy
 
 #### This stuff you just have to use, you're not expected to know how it works.
 #### You just need to read the plain English function headers.

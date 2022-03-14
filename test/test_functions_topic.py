@@ -1,9 +1,9 @@
 import unittest
-from src.functions_topic import *
+
+from src.functions_topic import concatenate_strings, criss_cross_concatenation
 
 
 class TestFunctionsTopic(unittest.TestCase):
-
     def test_concatenate_strings_empty_strings_returns_empty_string(self):
         self.assertEqual("", concatenate_strings("", ""))
 
