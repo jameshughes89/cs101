@@ -382,6 +382,7 @@ Doing sequences of things
    * Notepad++ (Windows)
    * Sublime (Windows and Mac)
    * Integrated Development Environment
+   * VS Code (Windows, Linux, and Mac)
    * PyCharm!
    
 
