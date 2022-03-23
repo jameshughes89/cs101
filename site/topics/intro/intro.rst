@@ -28,16 +28,14 @@ What Prerequisites Do I Need?
 * Curiosity
 
 
-Why are the course notes a website?
+Why Are The Course Notes A Website?
 ===================================
 
-* You're going to learn to program with Python
-* A nice thing about Python is that it has a **vast** collection of *libraries* to do useful things
-* Most of those libraries are documented with something called Sphinx
-* The course notes are made with Sphinx
-* The idea: get used to reading material in this format. It'll be useful to you
-* `Here's an example <https://docs.python.org/3/library/math.html>`_
-* Moodle will be used for announcements and assignment submissions
+* You're going to learn to write programs in Python
+* Most Python documentation is made with something called Sphinx
+* These course notes are made with Sphinx
+* The idea: get used to reading and learning from something in this format
+    * `Here's an example <https://docs.python.org/3/library/math.html>`_
 
 
 There are two sections?
