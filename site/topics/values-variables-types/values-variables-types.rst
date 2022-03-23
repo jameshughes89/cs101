@@ -2,7 +2,6 @@
 Values, Variables, Types, Print, Input
 **************************************
 
-
 .. admonition:: Activity
 
     What is *computation?* What is a *computer?* What is *programming?*
@@ -11,33 +10,34 @@ Values, Variables, Types, Print, Input
 .. admonition:: Activity
 
     `Who can name different kinds of *computers* ? <https://en.wikipedia.org/wiki/Computer#Unconventional_computers>`_
-	  
-	  
-	     
-What's a program?
-=================
 
-* The stuff in the computers
-* A thing that does stuff
-* A recipe
-* A sequence of instructions that specifies *exactly* how to perform a computation?
+
+What Is A Program/Algorithm?
+============================
 
 .. admonition:: Activity
 
     Explain to a partner how you would go about making breakfast in the morning.
-   
-   
-* There, that's basically a program.
-* What kind of computer was executing this program?   
 
 
-What's debugging?
-=================
+* There, that's an algorithm
+    * It is a series of instructions that can be followed to achieve something
 
-* Mystery novel
-* A logic puzzle
-* How you fix your mistakes
-* What most programming is
+* What kind of computer was executing this program?
+
+
+What Is debugging?
+==================
+
+* Most of the time your code will be wrong
+    * This is true for both new and experienced programmers
+
+* Debugging is the process of addressing the bugs in your code
+* Realistically, expect to debug a lot
+
+* Remember, you will be wrong every time you run your program before you get it right
+    * The point is, you will be wrong a lot more than you will be right --- get used to this
+
 
 .. admonition:: Quick Activity
 
@@ -46,12 +46,13 @@ What's debugging?
     What were they? 
 
     Did you understand them?
-   
+
    
 Languages
 =========
 
-* What's the difference between a formal, and a natural, language?
+* What is a natural language?
+* What is a formal language?
 * Why is ambiguity so important to natural language?
 * Why is ambiguity deadly for a formal language?
 
@@ -73,13 +74,13 @@ Terminology
 ===========
 
 * Hardware/Software
-* IO 
+* Input/Output (I/O)
 * Processors
 * Hard Drive
-* RAM
+* Memory and Random Access Memory (RAM)
 * Binary
 * Compiling
-* Interpreter vs IDE
+* Interpreter vs Integrated Development Environment (IDE)
    
    
 Okay, we're done with the background, let's get on with the real stuff
@@ -87,7 +88,7 @@ Okay, we're done with the background, let's get on with the real stuff
 
 .. admonition:: Activity
 
-    Write a (single-line) Python program that prints a witty message, of your choice.   
+    Write a (single-line) Python program that prints a witty message, of your choice.
    
 
 print
