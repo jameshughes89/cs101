@@ -69,18 +69,16 @@ How Will This Class Work?
    * How do you think you will use what you learn in the future?
    
    
-What should I bring to class
+What Should I Bring To Class
 ============================
 
 * Curiosity
 * Readiness to do stuff, rather than just listen
-* A laptop (if you want) or pen and paper 
-    * The weapon of choice of some of the greatest programmers in past generations
+* A laptop and/or pen and paper
+    * Taking notes is still important even though the content is online
+    * If you can bring a laptop, I strongly recommend it as there will be opportunity for you to program during activities
 
-* Just to be crystal clear: you **do not** need to bring a laptop to class
-* If you have one, and you're keen to get the most out of the class, it's worth considering
-   
-   
+
 Is this class easy?
 ===================
 
