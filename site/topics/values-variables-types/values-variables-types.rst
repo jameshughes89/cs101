@@ -99,7 +99,7 @@ Print
 
 .. admonition:: Activity
 
-    Write a (single-line) Python program that prints a witty message, of your choice.
+    Write a (single-line) Python program that prints a witty message of your choice.
 
 
 * Print is a *function* that allows us to print out information to the screen
