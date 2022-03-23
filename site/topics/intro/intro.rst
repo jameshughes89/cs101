@@ -172,29 +172,6 @@ Can I Write A Program Now?
 
 * You're now officially a computer programmer
 
-   
-Videos
-======
-
-* `Be sure to check out these YouTube videos! <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
-* **WARNING:** 
-   * These videos are not a substitute for lecture or the course notes. They are supplementary. 
-   * These videos were **NOT** created for this course, but a similar class, so they'll probably be handy
-   * These videos are using the local interpreter. You will not see any Colab in them. They will still be super useful though. 
-   * These videos were made for Python 2 (but that won't really matter for you. Most you'll have to deal with is adding brackets to the print statements.)
-
-   
-.. `Check out this video. <https://www.youtube.com/watch?v=EzBHGSMdwjg/>`_
-
-.. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/MHwfXIl7O4U" frameborder="0" allowfullscreen></iframe><br><br>
-
-
-.. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/lN6uUAQcKgY" frameborder="0" allowfullscreen></iframe><br><br>
-
 
 For next week
 =============
