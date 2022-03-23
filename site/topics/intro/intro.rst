@@ -104,16 +104,15 @@ The quick answer is, it depends...
     * Stay on top of the content
 
 
-So I should be terrified?
+So I Should Be Terrified?
 =========================
 
 * No
-* It's actually not that bad, *if you put in the effort*
-    * But that's why we're all here, right?
-
-* Real waring though: The class is dense and very accumulative, do not fall behind!
+* It's entirely doable **if you put in the effort**
+* Waring though --- the class is dense and very accumulative, do not fall behind
 
 * The good news is, you get to make mistakes
+    * In fact, expect to make **a lot** of mistakes
 * You get to see if what you did works or not
 * Most of this class will be you beating your head against your keyboard until you get it right
 * Not many classes or disciplines give you this luxury
@@ -124,8 +123,8 @@ So I should be terrified?
     * Get used to making mistakes
         * This is a good thing
         * This is normal
-   
-   
+
+
 I need help!
 ============
 
