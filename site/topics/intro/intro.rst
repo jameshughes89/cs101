@@ -6,18 +6,17 @@ What will I learn?
 ==================
 
 * The short version:
-    * How to write computer programs with *python*
+    * How to write computer programs
     * How to write programs to solve problems
     * A little bit of how computers work
-    * A little bit about what on earth computer science actually is 
-    * How to be a 21st century individual so you won't be left behind
+    * A little bit about what on earth computer science is
 
 * The long version:
     * :doc:`Read the outline </outline/outline>`
 
 .. image:: turing.jpg
 
- 
+
 What prerequisites do I need?
 =============================
 
