@@ -231,39 +231,48 @@ Naming Variables
 * Two important conventions we will follow
     * Use lowercase letters
     * Separate words in the variable name with underscores (snake case)
-        * ``total_bill``
+        * ``some_bill``
 
 
 Constants
-=========
+---------
 
-* They're just variables, but WE, as the programmers use them a special way
+* In Python, constants are just variables that we as programmers use in a special way
 * Imagine you are writing a program where you're doing a lot of calculations with sales tax
 
-    >>> some_bill = 10.45 * 1.15
-    12.0175
-    
-    >>> another_bill = 4.99 * 1.15
-    5.7385
-    ...
-	
-* This is clearly correct, butttt:
-    * What if one of your friends looks at this code and wonders "wtf is 1.15?"
+.. code-block:: python
+    :linenos:
+
+    some_bill = 10.45 * 1.15
+    another_bill = 4.99 * 1.15
+
+
+* This is clearly correct, however
+    * What if someone else looks at this code and wonders what 1.15 is?
     * What if the gov changes the sales tax in the future?
 
-* Isn't that a little clearer?
- 
-	
-	>>> SALES_TAX = 1.15
-	>>> some_bill = 10.45 * SALES_TAX
-	12.0175
-	>>> another_bill = 4.99 * SALES_TAX
-	5.7385
-	...
-	
-* Convention is all uppercase and underscores   
-	
-   
+* Although there is nothing wrong with the above code, one could do the following instead
+
+.. code-block:: python
+    :linenos:
+
+    SALES_TAX = 1.15
+    some_bill = 10.45 * SALES_TAX
+    another_bill = 4.99 * SALES_TAX
+
+
+* Now, just by looking at those lines of code, I know exactly what we are multiplying the numbers with
+* If the sales tax rate is ever lowered, all I need to do is change the one line of code (``SALES_TAX = 1.15``)
+
+* The naming convention for constants is all uppercase letters separate with underscores
+
+* The idea behind the constants are that once the value is set by you, they are not to change
+    * You can change them in the code, but the code should not alter the value of ``SALES_TAX``
+
+* In Python, there is nothing stopping you from changing the value other than the convention
+    * In some languages, the language actually prevents the program from altering the value of a constant
+
+
 input
 =====
 
