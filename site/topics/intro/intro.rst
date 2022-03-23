@@ -155,11 +155,6 @@ Google?
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
-.. image:: Googling.jpg
-    :width: 500 px
-    :align: center
-   
-
 Can I write a program now?
 ==========================
 
