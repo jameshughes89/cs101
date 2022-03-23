@@ -124,15 +124,13 @@ Values And Types
     * Float
    
 * To a computer, the integer ``1`` is not necessarily the same thing as the floating point number ``1.0`` or the string ``"1"``
-    * Because they have different *types*
 
-* Some of the errors you will make will be a result from mixing types inappropriately
+* Some of the errors you will make will be a result from mixing types incorrectly
 * Some languages (e.g., C, Java) are strict about types
     * You have to be totally explicit about them
 
 * Python is a little more relaxed
-    * You *can* be explicit, but you don't have to be
-    * Python will guess if you don't tell it
+    * Python will guess what the type is
     * Upside: less to worry about and less clutter in your code
     * Downside: more likely to introduce errors caused by mixing types
 
