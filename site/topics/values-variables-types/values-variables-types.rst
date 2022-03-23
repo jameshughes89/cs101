@@ -140,6 +140,9 @@ Values And Types
     * ``print(type(3.75))`` would print out ``<class 'float'>``
     * ``print(type(type(1.1)))`` would print out ``<class 'type'>``
 
+* Notice that we are using two functions in the above examples
+    * ``print``
+    * ``type``
 
 .. admonition:: Activity
 
