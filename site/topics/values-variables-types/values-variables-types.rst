@@ -93,24 +93,21 @@ Terminology
 * Compiling
 * Interpreter vs IDE
    
-   
-Okay, we're done with the background, let's get on with the real stuff
-======================================================================
+
+Print
+=====
 
 .. admonition:: Activity
 
-    Write a (single-line) Python program that prints a witty message, of your choice.   
-   
+    Write a (single-line) Python program that prints a witty message, of your choice.
 
-print
-=====
 
 * Print is a *function* that allows us to print out information to the screen
 * Print might end up being your best friend
 * Get used to writing it
-   
-   
-Values 
+
+
+Values
 ======
 
 * Values are things that a program manipulates
