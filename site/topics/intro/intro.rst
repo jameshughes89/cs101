@@ -79,7 +79,7 @@ What Should I Bring To Class
     * If you can bring a laptop, I strongly recommend it as there will be opportunity for you to program during activities
 
 
-Is this class easy?
+Is This Class Easy?
 ===================
 
 The quick answer is, it depends...
@@ -94,11 +94,14 @@ The quick answer is, it depends...
    * Who here knows how to build a house?
 
 
-* Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging   
-   
-* These topics really are going to be shockingly different from what you are probably used to. Very few classes can prepare you for the way of thinking that will be required for this class
-
-* Unfortunately, intro to CS classes do often have an unusually high fail rate
+* Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
+* These topics really are going to be shockingly different from what you are probably used to
+    * Very few classes can prepare you for the way of thinking that will be required for this class
+* Unfortunately, intro to computer science classes do often have an unusually high fail rate
+* The best way to set yourself up for success is
+    * Practice
+    * Read
+    * Stay on top of the content 
 
 
 So I should be terrified?
