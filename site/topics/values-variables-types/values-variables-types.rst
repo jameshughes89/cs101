@@ -213,21 +213,26 @@ Using Variables
     #. Figure out how to display the current contents of a variable.
    
 
-Choosing variable names
-=======================
+Naming Variables
+----------------
 
-* You can use whatever you want, within a few restrictions set by the language.
+* You can use whatever you want within a few restrictions set by the language
     * Python wants variable names that begin with a letter of the alphabet and limits what non-alphanumeric characters you can use
-* A good choice is a variable name that is descriptive of what the variable is meant to contain. 
+
+* A good choice is a variable name that is descriptive of what the variable is meant to contain
     * good: ``density``
     * less good: ``d``
     * bad: ``definitely_not_density``
 
-.. admonition:: Activity
+* There are a few other important restrictions that you may come across
+    * For example, you cannot use reserved words (words that already have a specific meaning in Python)
+        * ``def = 55`` will not work since ``def`` is a reserved word
 
-   Suppose you're a big fan of '80s Arena Rock. Create two variables, named ``def`` and ``leppard``, set them to ``19`` and ``87`` respectively, then add them.
+* Two important conventions we will follow
+    * Use lowercase letters
+    * Separate words in the variable name with underscores (snake case)
+        * ``total_bill``
 
-* What happened? (To your code, not the band!)   
 
 Constants
 =========
