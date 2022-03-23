@@ -161,25 +161,29 @@ Values
 Variables
 =========
 
-* Probably the most important feature of a procedural programming language.
-* If you're going to pay attention only once this term... now's the time.
-* **Variables let you store values in a labeled (named) location**
-* You store *values* into *variables* by using the *assignment operator* **=**	
-    >>> a=5
-    >>> m='Variables are fun'
-	
-* For historical reasons, we're stuck with the '=' symbol for assignment, but it doesn't really mean the same thing as the '=' sign in math.
-* In math when we write 'a = 5' we mean that '5' and 'a' *are equivalent as they exist*. We're not asking to change anything; we're making a **statement of fact**.   
-   
-* In Python when we write
-    >>> a=5
-* ... we're saying "Hey, Python interpreter! Create a variable named ``a`` and store the value ``5`` in it. This isn't a statement of fact, it's an *order*!  
-    * a *is* 5 now
-    * a is **not** a literal though, it's a *variable*
-    * Wait, what? Literal, variable?
-        * It's simple
-        * If I say ``print(5)`` python will print out the literal ``5``
-        * If I say ``print(a)``, where ``a`` was assigned to ``5``, python will print out the variable a which has the value ``5``
+* Variables let you store values in a labeled (named) location
+* You store *values* into *variables* by using the assignment operator --- ``=``
+
+.. code-block:: python
+    :linenos:
+
+    a = 5
+    m = "Some String"
+
+
+* In the above example, the variable ``a`` now has the value ``5``
+* Both the *variable* ``a`` and the literal ``5`` both have the same value
+    * If I say ``print(5)``, Python will print out the literal ``5``
+    * If I say ``print(a)``, Python will print out the value stored in the variable ``a``, which is ``5``
+
+.. warning::
+
+    The ``=`` in Python has a very different meaning from what you are familiar with in math. In math, when one writes
+    :math:`a = 5`, it means that :math:`a` and :math:`5` are equivalent as they exist --- it is stating a fact.
+
+    In Python, and many other programming languages, it is not a statement about equality, but an assignment. In Python,
+    if one writes ``a = 5``, it means that the variable ``a`` is now storing the value ``5`` within it.
+
 
 What can you do with variables?
 ===============================
