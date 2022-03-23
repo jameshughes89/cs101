@@ -14,8 +14,6 @@ What will I learn?
 * The long version:
     * :doc:`Read the outline </outline/outline>`
 
-.. image:: turing.jpg
-
 
 What prerequisites do I need?
 =============================
