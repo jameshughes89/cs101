@@ -1,18 +1,6 @@
 **************************************
-Values, Types, Variables, Print, Input
+Values, Variables, Types, Print, Input
 **************************************
-
-Welcome back
-============
-
-Let's get started right away...
-
-.. admonition:: Quick Activity
-
-    Did you try anything interesting with Python yet?
-   
-   
-**Heads up:** Before we get to the "super awesome fun stuff", we've got to cover the basics. I understand that the basics aren't super awesome. Don't worry, we'll get there. But we can't get there without the basics.
 
 
 .. admonition:: Activity
@@ -22,7 +10,7 @@ Let's get started right away...
 
 .. admonition:: Activity
 
-    Who can name different kinds of *computers* `? <https://en.wikipedia.org/wiki/Computer#Unconventional_computers>`_
+    `Who can name different kinds of *computers* ? <https://en.wikipedia.org/wiki/Computer#Unconventional_computers>`_
 	  
 	  
 	     
