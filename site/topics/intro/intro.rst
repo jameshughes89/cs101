@@ -155,19 +155,23 @@ Google?
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
-Can I write a program now?
+Can I Write A Program Now?
 ==========================
 
-* If you have looked at :doc:`get set up for CSCI 161 </getting-set/getting-set>`, then yes
+* If you have gone through :doc:`get set up for CSCI 161 </getting-set/getting-set>`, then yes
 * Go to Google Colab and make your "Hello, world!" program 
-    * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language.
-    
-	``print("Hello, world!")``
+    * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language
 
-* You're now officially a computer programmer!   
+.. code-block:: python
+    :linenos:
+
+    print("Hello, world!")
+
 
 .. image:: HelloWorldColab.png
-   
+
+* You're now officially a computer programmer
+
    
 Videos
 ======
