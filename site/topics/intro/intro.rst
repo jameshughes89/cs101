@@ -130,7 +130,7 @@ I Need help!
 
 .. image:: beforeGoogle.jpg
 
-* Knowing the challenges students face, we have provided many resources to help you succeed 
+* Knowing the challenges students face, we have provided many resources to help you succeed
     * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
     * YouTube videos
     * Email
@@ -141,15 +141,16 @@ I Need help!
     * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
-Why did you just say Google so many times?
-==========================================
+Google?
+-------
 
 * When a programmer isn't debugging, they're Googling their problems 
-* This is so common that you can find an insane number of memes making fun of this 
+    * This is so common that it's a meme
 
 * I am going to tell you to "Google It" very often in this course
     * This is intentional
-* Independent learning is one of the most important things you will learn at university
+
+* Independent learning is one of the most important things you will learn
 * Further, it will be your go to tool when you're programming in the future 
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
