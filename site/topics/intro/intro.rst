@@ -46,40 +46,16 @@ There Are Two Sections?
 * Section 12 is taught by Dr. Delamer
 
 
-  
-How will this class work?
+How Will This Class Work?
 =========================
 
 * This class is going to be run somewhat differently from other courses you may have experienced at university 
-* We're going to be using a "partially flipped" classroom, with a "microlecture" format and lots of in class hands-on time
+* I have a number of activities throughout the topics that we will take time to work on
+    * They also help with breaking up the monotony of listening to a lecture for an hour straight
 
-* There are a few reasons for this:
-    * It's been `demonstrated <http://www.sciencemag.org/content/332/6031/862.full?ijkey=GMW4zTHNMM1Tc&keytype=ref&siteid=sci>`_ that students from classes using the microlecture/work format outperform students from traditional lecture classes. The students are also report being happier and more engaged
-    * Listening to a lecturer droning on for hours isn't very engaging
-    * You get better value for your tuition dollar (what can a lecture give you that a Khan academy video or a textbook can't?)
-
-* A standard class works like this:
-
-    * I lecture for one hour
-    * You get bored 10 minutes in and start thinking about products you might like to buy on Amazon or what you're going to watch on Netflix when you get home
-    * I keep going
-    * You keep daydreaming...
-
-* Our class will work like this:
-
-    * You'll be offered suggested readings every week
-    * You do the reading (or not, your choice... although I really really recommend it)
-        * People that actually do the readings typically get 90+ in the course
-    * You check out the YouTube videos
-    * I give a short microlecture on a topic from the readings
-    * I give the class a problem to solve, based on the microlecture
-    * You work with your neighbours in class to solve the problem
-    * I walk around and **interact** with the class. Answering questions, giving pointers, etc.
-    * I depend on **YOU** to interact with me
-        * I will need your help throughout the lectures
-    * We repeat this process until the time is up for the day
-
-* We've already done this once already, but let's try it again:
+* At the end of each topic there are linked suggested readings you should work through to get practice
+    * The only way to learn this stuff is through practice
+    * You can watch every YouTube video on how to play piano that exists, but you still won't know how to play piano unless you practice
 
 
 .. admonition:: Activity
