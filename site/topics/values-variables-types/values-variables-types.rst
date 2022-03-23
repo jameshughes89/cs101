@@ -185,30 +185,32 @@ Variables
     if one writes ``a = 5``, it means that the variable ``a`` is now storing the value ``5`` within it.
 
 
-What can you do with variables?
-===============================
+Using Variables
+---------------
 
-* Anything you can do with values
-* For example, we can add variables:
-    >>> a = 5
-    >>> b = 7
-    >>> a+b
-    12
-    
-    >>> b=5
-    >>> a+b
-    10
-	
-* This seems pretty straightforward now, but it's this ability to store results that will let us do all the cool stuff later.   
-   
+* You can use variables in the same way you use literals
+
+.. code-block:: python
+    :linenos:
+
+    print(5 + 6)
+
+    a = 5
+    b = 6
+    print(a + b)
+
+* Both ``print``s will print out ``11``
+    * The first one adds the literals ``5`` and ``6``
+    * The second one adds the variables ``a`` and ``b``
+
    
 .. admonition:: Activity
 
-    * Assign various values of types string, integer and float to variables. 
-    * Try adding variables of the same type. What happens? 
-    * Try adding variables of different types. What happens? 
-    * Try the assignment *5=a*. What happens?
-    * Figure out how to display the current contents of a variable.   
+    #. Assign various values of types string, integer and float to variables.
+    #. Try adding variables of the same type. What happens?
+    #. Try adding variables of different types. What happens?
+    #. Try the assignment ``5 = a``. What happens?
+    #. Figure out how to display the current contents of a variable.
    
 
 Choosing variable names
