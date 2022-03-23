@@ -14,22 +14,18 @@ What will I learn?
 * The long version:
     * :doc:`Read the outline </outline/outline>`
 
+.. admonition:: Activity
+
+    Where have you encountered computer programs before?
+
+    Can anyone name an area of Science where they think having computer programming skill would be a bad thing? How
+    about Social Science? Humanities? Art? Talk with your neighbours.
+
 
 What prerequisites do I need?
 =============================
 
 * Curiosity
-* A desire to learn a powerful new skill
-* A desire to distinguish yourself from peers in your discipline
-
-
-.. admonition:: Activity
-
-   Where have you encountered computer programs before?
-
-   Can anyone name an area of Science where they think having computer 
-   programming skill would be a bad thing? How about Social Science? Humanities? 
-   Art? Work with your neighbours.
 
 
 Why are the course notes a website?
@@ -52,7 +48,7 @@ There are two sections?
 * Section 12 is taught by Dr. Delamer
 
 .. * I will make every attempt to record all lectures and post them to `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
-  
+
   
 How will this class work?
 =========================
