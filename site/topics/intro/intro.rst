@@ -38,14 +38,13 @@ Why Are The Course Notes A Website?
     * `Here's an example <https://docs.python.org/3/library/math.html>`_
 
 
-There are two sections?
+There Are Two Sections?
 =======================
 
 * Yes
 * Section 11 is taught by Dr. Hughes
 * Section 12 is taught by Dr. Delamer
 
-.. * I will make every attempt to record all lectures and post them to `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
 
   
 How will this class work?
