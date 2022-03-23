@@ -2,7 +2,7 @@
 Introduction and Output
 ***********************
 
-What will I learn?
+What Will I Learn?
 ==================
 
 * The short version:
@@ -22,7 +22,7 @@ What will I learn?
     about Social Science? Humanities? Art? Talk with your neighbours.
 
 
-What prerequisites do I need?
+What Prerequisites Do I Need?
 =============================
 
 * Curiosity
