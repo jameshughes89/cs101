@@ -125,13 +125,21 @@ So I Should Be Terrified?
         * This is normal
 
 
-I need help!
+I Need help!
 ============
 
 .. image:: beforeGoogle.jpg
 
-There are A LOT of resources to help you. We have `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, YouTube videos, email, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `office hours, <https://vimeo.com/270014784>`_ labs, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `etc. <https://www.youtube.com/watch?v=e9C_cgL2150>`_. 
-   
+* Knowing the challenges students face, we have provided many resources to help you succeed 
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
+    * YouTube videos
+    * Email
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
+    * Office hours
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
+    * Labs
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
+
 
 Why did you just say Google so many times?
 ==========================================
