@@ -101,7 +101,7 @@ The quick answer is, it depends...
 * The best way to set yourself up for success is
     * Practice
     * Read
-    * Stay on top of the content 
+    * Stay on top of the content
 
 
 So I should be terrified?
