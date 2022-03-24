@@ -32,15 +32,11 @@ Expressions
 Operators
 =========
 
-* We have been using these in our code already 
+* We have been using these in our code already
 * **Operators** are symbols that tell Python to perform computations on expressions
     * example arithmetic operators --- ``+``, ``-``, ``*``, ``/``
 
-.. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8M0uZ5gclOQ" frameborder="0" allowfullscreen></iframe><br><br>
-
-   
 .. admonition:: Activity
 
    Generate expressions to: 
