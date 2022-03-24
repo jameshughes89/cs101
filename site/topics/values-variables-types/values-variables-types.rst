@@ -1,6 +1,6 @@
-**************************************
-Values, Variables, Types, Print, Input
-**************************************
+*******************************
+Values, Variables, Types, Print
+*******************************
 
 .. admonition:: Activity
 
@@ -253,52 +253,6 @@ Constants
 
 * In Python, there is nothing stopping you from changing the value other than the convention
     * In some languages, the language actually prevents the program from altering the value of a constant
-
-
-input
-=====
-
-* So we saw how to out print **out** the contents of a variable
-* Is there a way to read **in** a value and put it into a variable?
-* **YES!**
-
-* Let's type this
-	>>> my_value = input('give me a value: ')
-
-* The string between the parentheses is what will be displayed to the user 
-    * We can leave it blank too, but nothing will be printed out (this is important for Kattis)
-        >>> my_value = input()
-        
-* The program will wait for the user to enter a value
-* After a value is entered, it will be stored in the variable ``myValue`` 
-
-.. admonition:: Activity
-
-    * Read in some value into the computer. 
-    * Print out the value you inputted.
-    * What is the type of the value? How can I test this?
-   
-* What if we want it to be an int?
-
-    >>> my_value = input('give me a value: ')
-    >>> my_value = int(my_value)
-
-or	
-	
-    >>> my_value = int(input('give me a value: '))
-		
-	
-* We can actually use this idea to convert types.
-   * int will convert something to an int
-   * str will convert something to a string
-   * float will convert something to a float
-   
-but...
-
-    >>> int('hi')
-    ValueError: invalid literal for int() with base 10: 'hi'
-	
-So it will only work if it's a valid thing to ask
 
 
 Statements

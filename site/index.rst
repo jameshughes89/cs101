@@ -118,6 +118,7 @@ Course Notes
    
     topics/intro/intro
     topics/values-variables-types/values-variables-types
+    topics/input/input
     topics/functions/functions
     topics/if-else/if-else
     topics/booleans/booleans
