@@ -82,71 +82,64 @@ Terminology
 * Compiling
 * Interpreter vs Integrated Development Environment (IDE)
    
-   
-Okay, we're done with the background, let's get on with the real stuff
-======================================================================
+
+Print
+=====
 
 .. admonition:: Activity
 
-    Write a (single-line) Python program that prints a witty message, of your choice.
-   
+    Write a (single-line) Python program that prints a witty message of your choice.
 
-print
-=====
 
 * Print is a *function* that allows us to print out information to the screen
 * Print might end up being your best friend
 * Get used to writing it
-   
-   
-Values 
-======
+
+
+Values And Types
+================
 
 * Values are things that a program manipulates
-    * *Strings*: "abcdef"
-    * *Integers*: 7, 42, 97
-    * *Floating-point numbers*: 3.792, 0.000000000005
+    * *Strings*: ``"abcdefg"``, ``"Hello World"``
+    * *Integers*: ``7``, ``42``, ``97``
+    * *Floating-point numbers*: ``3.792``, ``0.000000000005``
+
 * These values are called **literals**
-    * like, 1 is *literally* 1  
+    * Like, ``1`` is *literally* ``1``
+
 * Notice how I described the **type** of each value along with the value itself
     * Strings
     * Integers
     * Float
    
-* Computers are exceptionally stupid. You must be completely explicit about everything
+* To a computer, the integer ``1`` is not necessarily the same thing as the floating point number ``1.0`` or the string ``"1"``
 
-* To a computer, the integer 1 is not necessarily the same thing as the floating point number 1.0... because they have different *types*
-    * They actually have different meaning
-    * They even technically have different physical representations inside the computer too, which is neato  
-* Many of the errors you will make in programming result from mixing types inappropriately
-* Some languages (e.g., C, Fortran, Java) are very militant about types. You have to be totally explicit about them
-* Python is a little more relaxed. You *can* be explicit, but you don't have to be. Python will guess if you don't tell it
-* Upside: less to worry about and less clutter in your code
+* Some of the errors you will make will be a result from mixing types incorrectly
+* Some languages (e.g., C, Java) are strict about types
+    * You have to be totally explicit about them
 
+* Python is a little more relaxed
+    * Python will guess what the type is
+    * Upside: less to worry about and less clutter in your code
+    * Downside: more likely to introduce errors caused by mixing types
 
-* Can I ask Python to tell me its guess for the type of a value?
-    >>> print(type(12))
-    <class 'int'>
-    
-    >>> print(type('Witty remark'))
-    <class 'str'>
-	
-    >>> print(type(3.75))
-    <class 'float'>
-	
-    >>> print(type(type(1.1)))
-    <class 'type'>
+* You can check the type of something in Python by using the ``type`` function
+    * ``print(type(12))`` would print out ``<class 'int'>``
+    * ``print(type("Hello, World"))`` would print out ``<class 'str'>``
+    * ``print(type(3.75))`` would print out ``<class 'float'>``
+    * ``print(type(type(1.1)))`` would print out ``<class 'type'>``
 
-
-* It's kinda' easy to tell the type of a value isn't it?
-    * Most of the time... but this will bite you... trust me!
-
+* Notice that we are using two functions in the above examples
+    * ``print``
+    * ``type``
 
 .. admonition:: Activity
 
-    Write a single line program to print out the *integer* 1. Now write a single line program to print out the *string* 1. Can you tell the difference by looking at the output?   
+    #. Write a single line program to print out the *integer* ``1``.
+    #. Now write a single line program to print out the *string* ``"1"``.
+    #. Can you tell the difference by looking at the output?
 
-   
+
 Variables
 =========
 
@@ -407,4 +400,4 @@ For next class
 ==============
 
 * Read the rest of `chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
-* Read `chapter 4 of the text <http://openbookproject.net/thinkcs/python/english3e/functions.html>`_   
+* Read `chapter 4 of the text <http://openbookproject.net/thinkcs/python/english3e/functions.html>`_
