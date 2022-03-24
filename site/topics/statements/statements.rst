@@ -2,17 +2,20 @@
 Statements and Expressions
 **************************
 
+* Programs we write will be made up of multiple lines of code
+* Each line will be doing some sort of work/computation
 
 
 Statements
 ==========
 
-* A **statement** is an order to Python: "*do something*"
-* An *instruction* that can be *executed* by Python
-* You type in the statement into the interpreter, press Enter, and Python does what you asked (or at least tries to)
-* If you type a series of statements into Colab and press run, Python does what you asked (or, again, at least tries to)
-* Some statements produce immediate output, some just change things 'behind the scenes'
-* We've already been using assignment statements (``=``), prints, inputs, and there are A LOT more
+* A **statement** is an instruction for Python to *do something*
+* If you type a series of statements and press run, Python does what you asked (or at least tries to)
+* Some statements result in some immediate output
+    * ``print("Hello world")``
+* Others will do some work behind the scenes
+    * ``some_variable = 5``
+
 
 Expressions
 ===========
