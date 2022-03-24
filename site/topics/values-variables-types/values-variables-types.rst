@@ -63,12 +63,7 @@ Languages
     Can I describe *anything*? *Any* computation? 
 
     **HINT**: Is the following statement true or false: "This statement is false."
-   
-* The world is a screwed up, scary, place (for mathematicians, anyways). If you want to fall down this particular rabbit hole:
-    * https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems
-	* http://en.wikipedia.org/wiki/Principia_Mathematica
-	* http://en.wikipedia.org/wiki/Computability   
-   
+
 
 Terminology
 ===========
