@@ -173,8 +173,8 @@ Can I Write A Program Now?
 * You're now officially a computer programmer
 
 
-For Next Week
-=============
+For Next Class
+==============
 
 * If you have not yet, :doc:`go through set up for CS 161 </getting-set/getting-set>`
 * `Read Chapter 1 of the text <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html>`_
