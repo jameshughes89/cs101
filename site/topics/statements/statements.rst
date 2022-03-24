@@ -98,8 +98,9 @@ Doing sequences of things
       .. raw:: html
 
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/u-d3chSpFO4" frameborder="0" allowfullscreen></iframe><br><br>
-   
+
+
 For Next Class
 ==============
 
-* Read the rest of `Chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
+* If you have not yet, read the rest of `Chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
