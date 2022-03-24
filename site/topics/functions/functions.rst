@@ -2,9 +2,6 @@
 Functions
 *********
 
-.. image:: Eniac.jpeg
-
-
 Functions
 =========
 
