@@ -150,98 +150,118 @@ Values
 Variables
 =========
 
-* Probably the most important feature of a procedural programming language.
-* If you're going to pay attention only once this term... now's the time.
-* **Variables let you store values in a labeled (named) location**
-* You store *values* into *variables* by using the *assignment operator* **=**	
-    >>> a=5
-    >>> m='Variables are fun'
-	
-* For historical reasons, we're stuck with the '=' symbol for assignment, but it doesn't really mean the same thing as the '=' sign in math.
-* In math when we write 'a = 5' we mean that '5' and 'a' *are equivalent as they exist*. We're not asking to change anything; we're making a **statement of fact**.   
-   
-* In Python when we write
-    >>> a=5
-* ... we're saying "Hey, Python interpreter! Create a variable named ``a`` and store the value ``5`` in it. This isn't a statement of fact, it's an *order*!  
-    * a *is* 5 now
-    * a is **not** a literal though, it's a *variable*
-    * Wait, what? Literal, variable?
-        * It's simple
-        * If I say ``print(5)`` python will print out the literal ``5``
-        * If I say ``print(a)``, where ``a`` was assigned to ``5``, python will print out the variable a which has the value ``5``
+* Variables let you store values in a labeled (named) location
+* You store *values* into *variables* by using the assignment operator --- ``=``
 
-What can you do with variables?
-===============================
+.. code-block:: python
+    :linenos:
 
-* Anything you can do with values
-* For example, we can add variables:
-    >>> a = 5
-    >>> b = 7
-    >>> a+b
-    12
-    
-    >>> b=5
-    >>> a+b
-    10
-	
-* This seems pretty straightforward now, but it's this ability to store results that will let us do all the cool stuff later.   
-   
+    a = 5
+    m = "Some String"
+
+
+* In the above example, the variable ``a`` now has the value ``5``
+* Both the *variable* ``a`` and the literal ``5`` both have the same value
+    * If I say ``print(5)``, Python will print out the literal ``5``
+    * If I say ``print(a)``, Python will print out the value stored in the variable ``a``, which is ``5``
+
+.. warning::
+
+    The ``=`` in Python has a very different meaning from what you are familiar with in math. In math, when one writes
+    :math:`a = 5`, it means that :math:`a` and :math:`5` are equivalent as they exist --- it is stating a fact.
+
+    In Python, and many other programming languages, it is not a statement about equality, but an assignment. In Python,
+    if one writes ``a = 5``, it means that the variable ``a`` is now storing the value ``5`` within it.
+
+
+Using Variables
+---------------
+
+* You can use variables in the same way you use literals
+
+.. code-block:: python
+    :linenos:
+
+    print(5 + 6)
+
+    a = 5
+    b = 6
+    print(a + b)
+
+* Both ``print``s will print out ``11``
+    * The first one adds the literals ``5`` and ``6``
+    * The second one adds the variables ``a`` and ``b``
+
    
 .. admonition:: Activity
 
-    * Assign various values of types string, integer and float to variables. 
-    * Try adding variables of the same type. What happens? 
-    * Try adding variables of different types. What happens? 
-    * Try the assignment *5=a*. What happens?
-    * Figure out how to display the current contents of a variable.   
+    #. Assign various values of types string, integer and float to variables.
+    #. Try adding variables of the same type. What happens?
+    #. Try adding variables of different types. What happens?
+    #. Try the assignment ``5 = a``. What happens?
+    #. Figure out how to display the current contents of a variable.
    
 
-Choosing variable names
-=======================
+Naming Variables
+----------------
 
-* You can use whatever you want, within a few restrictions set by the language.
+* You can use whatever you want within a few restrictions set by the language
     * Python wants variable names that begin with a letter of the alphabet and limits what non-alphanumeric characters you can use
-* A good choice is a variable name that is descriptive of what the variable is meant to contain. 
+
+* A good choice is a variable name that is descriptive of what the variable is meant to contain
     * good: ``density``
     * less good: ``d``
     * bad: ``definitely_not_density``
 
-.. admonition:: Activity
+* There are a few other important restrictions that you may come across
+    * For example, you cannot use reserved words (words that already have a specific meaning in Python)
+        * ``def = 55`` will not work since ``def`` is a reserved word
 
-   Suppose you're a big fan of '80s Arena Rock. Create two variables, named ``def`` and ``leppard``, set them to ``19`` and ``87`` respectively, then add them.
+* Two important conventions we will follow
+    * Use lowercase letters
+    * Separate words in the variable name with underscores (snake case)
+        * ``some_bill``
 
-* What happened? (To your code, not the band!)   
 
 Constants
-=========
+---------
 
-* They're just variables, but WE, as the programmers use them a special way
+* In Python, constants are just variables that we as programmers use in a special way
 * Imagine you are writing a program where you're doing a lot of calculations with sales tax
 
-    >>> some_bill = 10.45 * 1.15
-    12.0175
-    
-    >>> another_bill = 4.99 * 1.15
-    5.7385
-    ...
-	
-* This is clearly correct, butttt:
-    * What if one of your friends looks at this code and wonders "wtf is 1.15?"
+.. code-block:: python
+    :linenos:
+
+    some_bill = 10.45 * 1.15
+    another_bill = 4.99 * 1.15
+
+
+* This is clearly correct, however
+    * What if someone else looks at this code and wonders what 1.15 is?
     * What if the gov changes the sales tax in the future?
 
-* Isn't that a little clearer?
- 
-	
-	>>> SALES_TAX = 1.15
-	>>> some_bill = 10.45 * SALES_TAX
-	12.0175
-	>>> another_bill = 4.99 * SALES_TAX
-	5.7385
-	...
-	
-* Convention is all uppercase and underscores   
-	
-   
+* Although there is nothing wrong with the above code, one could do the following instead
+
+.. code-block:: python
+    :linenos:
+
+    SALES_TAX = 1.15
+    some_bill = 10.45 * SALES_TAX
+    another_bill = 4.99 * SALES_TAX
+
+
+* Now, just by looking at those lines of code, I know exactly what we are multiplying the numbers with
+* If the sales tax rate is ever lowered, all I need to do is change the one line of code (``SALES_TAX = 1.15``)
+
+* The naming convention for constants is all uppercase letters separate with underscores
+
+* The idea behind the constants are that once the value is set by you, they are not to change
+    * You can change them in the code, but the code should not alter the value of ``SALES_TAX``
+
+* In Python, there is nothing stopping you from changing the value other than the convention
+    * In some languages, the language actually prevents the program from altering the value of a constant
+
+
 input
 =====
 
