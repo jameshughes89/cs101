@@ -20,26 +20,26 @@ Statements
 Expressions
 ===========
 
-* An **expression** is, roughly, a thing that can be crunched down to a **value**.
+* An **expression** is, roughly, a statement that can be crunched down to a **value**
 * More precisely, an expression is a combination of:
-   * literal values (e.g., ``5``)
-   * variables (e.g., ``leppard``)
-   * operators (e.g., ``+``)
-	>>> leppard = 87
-	>>> print(leppard * 2 + 7)
-	181   
-   
-   
+    * literal values (e.g., ``5``, ``"Hello world"``)
+    * variables (e.g., ``some_variable``)
+    * operators (e.g., ``+``, ``*``)
+
+* ``some_other_variable = (some_variable + 1) * 2`` is an example of an expression (and statement)
+
+
 Operators
 =========
 
-* **Operators** are symbols that tell Python to perform computations on expressions.
-   * e.g., +, -, \*, / 
+* We have been using these in our code already 
+* **Operators** are symbols that tell Python to perform computations on expressions
+    * example arithmetic operators --- ``+``, ``-``, ``*``, ``/``
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8M0uZ5gclOQ" frameborder="0" allowfullscreen></iframe><br><br>   
-   
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/8M0uZ5gclOQ" frameborder="0" allowfullscreen></iframe><br><br>
+
    
 .. admonition:: Activity
 
