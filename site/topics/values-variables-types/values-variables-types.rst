@@ -9,7 +9,7 @@ Values, Variables, Types, Print, Input
 
 .. admonition:: Activity
 
-    `Who can name different kinds of *computers* ? <https://en.wikipedia.org/wiki/Computer#Unconventional_computers>`_
+    `Who can name different kinds of computers? <https://en.wikipedia.org/wiki/Computer#Unconventional_computers>`_
 
 
 What Is A Program/Algorithm?
