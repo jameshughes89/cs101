@@ -1,95 +1,61 @@
-************
-Intro, print
-************
+***********************
+Introduction and Output
+***********************
 
-What will I learn?
+What Will I Learn?
 ==================
 
 * The short version:
-    * How to write computer programs with *python*
+    * How to write computer programs
     * How to write programs to solve problems
     * A little bit of how computers work
-    * A little bit about what on earth computer science actually is 
-    * How to be a 21st century individual so you won't be left behind
+    * A little bit about what on earth computer science is
 
 * The long version:
     * :doc:`Read the outline </outline/outline>`
 
-.. image:: turing.jpg
+.. admonition:: Activity
 
- 
-What prerequisites do I need?
+    Where have you encountered computer programs before?
+
+    Can anyone name an area of Science where they think having computer programming skill would be a bad thing? How
+    about Social Science? Humanities? Art? Talk with your neighbours.
+
+
+What Prerequisites Do I Need?
 =============================
 
 * Curiosity
-* A desire to learn a powerful new skill
-* A desire to distinguish yourself from peers in your discipline
 
 
-.. admonition:: Activity
-
-   Where have you encountered computer programs before?
-
-   Can anyone name an area of Science where they think having computer 
-   programming skill would be a bad thing? How about Social Science? Humanities? 
-   Art? Work with your neighbours.
-
-
-Why are the course notes a website?
+Why Are The Course Notes A Website?
 ===================================
 
-* You're going to learn to program with Python
-* A nice thing about Python is that it has a **vast** collection of *libraries* to do useful things
-* Most of those libraries are documented with something called Sphinx
-* The course notes are made with Sphinx
-* The idea: get used to reading material in this format. It'll be useful to you
-* `Here's an example <https://docs.python.org/3/library/math.html>`_
-* Moodle will be used for announcements and assignment submissions
+* You're going to learn to write programs in Python
+* Most Python documentation is made with something called Sphinx
+* These course notes are made with Sphinx
+* The idea: get used to reading and learning from something in this format
+    * `Here's an example <https://docs.python.org/3/library/math.html>`_
 
 
-There are two sections?
+There Are Two Sections?
 =======================
 
 * Yes
 * Section 11 is taught by Dr. Hughes
 * Section 12 is taught by Dr. Delamer
 
-.. * I will make every attempt to record all lectures and post them to `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
-  
-  
-How will this class work?
+
+How Will This Class Work?
 =========================
 
 * This class is going to be run somewhat differently from other courses you may have experienced at university 
-* We're going to be using a "partially flipped" classroom, with a "microlecture" format and lots of in class hands-on time
+* I have a number of activities throughout the topics that we will take time to work on
+    * They also help with breaking up the monotony of listening to a lecture for an hour straight
 
-* There are a few reasons for this:
-    * It's been `demonstrated <http://www.sciencemag.org/content/332/6031/862.full?ijkey=GMW4zTHNMM1Tc&keytype=ref&siteid=sci>`_ that students from classes using the microlecture/work format outperform students from traditional lecture classes. The students are also report being happier and more engaged
-    * Listening to a lecturer droning on for hours isn't very engaging
-    * You get better value for your tuition dollar (what can a lecture give you that a Khan academy video or a textbook can't?)
-
-* A standard class works like this:
-
-    * I lecture for one hour
-    * You get bored 10 minutes in and start thinking about products you might like to buy on Amazon or what you're going to watch on Netflix when you get home
-    * I keep going
-    * You keep daydreaming...
-
-* Our class will work like this:
-
-    * You'll be offered suggested readings every week
-    * You do the reading (or not, your choice... although I really really recommend it)
-        * People that actually do the readings typically get 90+ in the course
-    * You check out the YouTube videos
-    * I give a short microlecture on a topic from the readings
-    * I give the class a problem to solve, based on the microlecture
-    * You work with your neighbours in class to solve the problem
-    * I walk around and **interact** with the class. Answering questions, giving pointers, etc.
-    * I depend on **YOU** to interact with me
-        * I will need your help throughout the lectures
-    * We repeat this process until the time is up for the day
-
-* We've already done this once already, but let's try it again:
+* At the end of each topic there are linked suggested readings you should work through to get practice
+    * The only way to learn this stuff is through practice
+    * You can watch every YouTube video on how to play piano that exists, but you still won't know how to play piano unless you practice
 
 
 .. admonition:: Activity
@@ -103,19 +69,17 @@ How will this class work?
    * How do you think you will use what you learn in the future?
    
    
-What should I bring to class
+What Should I Bring To Class
 ============================
 
 * Curiosity
 * Readiness to do stuff, rather than just listen
-* A laptop (if you want) or pen and paper 
-    * The weapon of choice of some of the greatest programmers in past generations
+* A laptop and/or pen and paper
+    * Taking notes is still important even though the content is online
+    * If you can bring a laptop, I strongly recommend it as there will be opportunity for you to program during activities
 
-* Just to be crystal clear: you **do not** need to bring a laptop to class
-* If you have one, and you're keen to get the most out of the class, it's worth considering
-   
-   
-Is this class easy?
+
+Is This Class Easy?
 ===================
 
 The quick answer is, it depends...
@@ -130,23 +94,25 @@ The quick answer is, it depends...
    * Who here knows how to build a house?
 
 
-* Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging   
-   
-* These topics really are going to be shockingly different from what you are probably used to. Very few classes can prepare you for the way of thinking that will be required for this class
+* Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
+* These topics really are going to be shockingly different from what you are probably used to
+    * Very few classes can prepare you for the way of thinking that will be required for this class
+* Unfortunately, intro to computer science classes do often have an unusually high fail rate
+* The best way to set yourself up for success is
+    * Practice
+    * Read
+    * Stay on top of the content
 
-* Unfortunately, intro to CS classes do often have an unusually high fail rate
 
-
-So I should be terrified?
+So I Should Be Terrified?
 =========================
 
 * No
-* It's actually not that bad, *if you put in the effort*
-    * But that's why we're all here, right?
-
-* Real waring though: The class is dense and very accumulative, do not fall behind!
+* It's entirely doable **if you put in the effort**
+* Waring though --- the class is dense and very accumulative, do not fall behind
 
 * The good news is, you get to make mistakes
+    * In fact, expect to make **a lot** of mistakes
 * You get to see if what you did works or not
 * Most of this class will be you beating your head against your keyboard until you get it right
 * Not many classes or disciplines give you this luxury
@@ -157,75 +123,59 @@ So I should be terrified?
     * Get used to making mistakes
         * This is a good thing
         * This is normal
-   
-   
-I need help!
+
+
+I Need help!
 ============
 
 .. image:: beforeGoogle.jpg
 
-There are A LOT of resources to help you. We have `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, YouTube videos, email, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `office hours, <https://vimeo.com/270014784>`_ labs, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_, `etc. <https://www.youtube.com/watch?v=e9C_cgL2150>`_. 
-   
+* Knowing the challenges students face, we have provided many resources to help you succeed
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
+    * YouTube videos
+    * Email
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
+    * Office hours
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
+    * Labs
+    * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
-Why did you just say Google so many times?
-==========================================
+
+Google?
+-------
 
 * When a programmer isn't debugging, they're Googling their problems 
-* This is so common that you can find an insane number of memes making fun of this 
+    * This is so common that it's a meme
 
 * I am going to tell you to "Google It" very often in this course
     * This is intentional
-* Independent learning is one of the most important things you will learn at university
+
+* Independent learning is one of the most important things you will learn
 * Further, it will be your go to tool when you're programming in the future 
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
-.. image:: Googling.jpg
-    :width: 500 px
-    :align: center
-   
-
-Can I write a program now?
+Can I Write A Program Now?
 ==========================
 
-* If you have looked at :doc:`get set up for CSCI 161 </getting-set/getting-set>`, then yes
+* If you have gone through :doc:`get set up for CSCI 161 </getting-set/getting-set>`, then yes
 * Go to Google Colab and make your "Hello, world!" program 
-    * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language.
-    
-	``print("Hello, world!")``
+    * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language
 
-* You're now officially a computer programmer!   
+.. code-block:: python
+    :linenos:
+
+    print("Hello, world!")
+
 
 .. image:: HelloWorldColab.png
-   
-   
-Videos
-======
 
-* `Be sure to check out these YouTube videos! <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
-* **WARNING:** 
-   * These videos are not a substitute for lecture or the course notes. They are supplementary. 
-   * These videos were **NOT** created for this course, but a similar class, so they'll probably be handy
-   * These videos are using the local interpreter. You will not see any Colab in them. They will still be super useful though. 
-   * These videos were made for Python 2 (but that won't really matter for you. Most you'll have to deal with is adding brackets to the print statements.)
-
-   
-.. `Check out this video. <https://www.youtube.com/watch?v=EzBHGSMdwjg/>`_
-
-.. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/MHwfXIl7O4U" frameborder="0" allowfullscreen></iframe><br><br>
+* You're now officially a computer programmer
 
 
-.. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/lN6uUAQcKgY" frameborder="0" allowfullscreen></iframe><br><br>
-
-
-For next week
+For Next Week
 =============
 
-* `Read chapter 1 of the text <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html>`_
-* Read sections 2.1-2.5 of `chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
-* Get your computer at home :doc:`set up for CS 161 </getting-set/getting-set>`
-
+* If you have not yet, :doc:`go through set up for CS 161 </getting-set/getting-set>`
+* `Read Chapter 1 of the text <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html>`_
+* `Read Sections 2.1-2.5 of Chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
