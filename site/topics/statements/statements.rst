@@ -41,18 +41,20 @@ Operators
 
    Generate expressions to: 
 
-   * 1) Add two variables 
-   * 2) Multiply two variables 
-   * 4) Divide result of step 3 by the result of step 1
-   * 3) Add a third variable to the result of step 2
+   #. Add two variables together (use whichever values you want) and save the result to some variable.
+   #. Multiply two variables together and save the result to some other variable.
+   #. Divide result of step 2 by the result of step 1.
+   #. Add a third variable to the result of step 3.
 
-   ARE YOU READY FOR THIS?
 
-   * Convert a temperature in Celsius to Fahrenheit.  
-      * `But I don't know how to convert Celsius to Fahrenheit!!!! <https://www.google.com/search?sxsrf=ACYBGNR8TzZ_PzGMU9aXJ2I1VNjrV2XESg%3A1566411780922&source=hp&ei=BIxdXfP-NZLr-gTIp7v4CQ&q=how+to+convert+c+to+f>`_   
-      .. raw:: html
+.. admonition:: Activity
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/R1ScWDNUEnM" frameborder="0" allowfullscreen></iframe><br><br>   
+    Now for a tougher one. Cnvert a temperature from Celsius to Fahrenheit.
+        * `But I don't know how to convert Celsius to Fahrenheit!!!! <https://www.google.com/search?q=how+to+convert+celsius+to+fahrenheit>`_
+
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R1ScWDNUEnM" frameborder="0" allowfullscreen></iframe><br><br>
    
    
 Are operators just for numbers?
