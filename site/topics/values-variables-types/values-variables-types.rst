@@ -1,5 +1,5 @@
 *******************************
-Values, Variables, Types, Print
+Print, Values, Variables, Types
 *******************************
 
 .. admonition:: Activity
@@ -66,8 +66,8 @@ Languages
    
 * The world is a screwed up, scary, place (for mathematicians, anyways). If you want to fall down this particular rabbit hole:
     * https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems
-	* http://en.wikipedia.org/wiki/Principia_Mathematica
-	* http://en.wikipedia.org/wiki/Computability   
+    * http://en.wikipedia.org/wiki/Principia_Mathematica
+    * http://en.wikipedia.org/wiki/Computability
    
 
 Terminology
@@ -85,6 +85,8 @@ Terminology
 
 Print
 =====
+
+* We already made use of ``print`` in the previous topic
 
 .. admonition:: Activity
 
