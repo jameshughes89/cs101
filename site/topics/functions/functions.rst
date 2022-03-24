@@ -13,11 +13,16 @@ Functions
     * Your code can become harder to maintain
 
 
-Creating Functions
-==================
+Functions
+=========
 
 * We like to group together sequences of statements that serve a coherent purpose
 * In Python, and many other programming languages, we do this with *functions*
+
+
+Defining a Function
+-------------------
+
 * Once you've **defined** a function, you can *call* it exactly the same way you call *built-in functions* like ``print``
 
 .. code-block:: python
@@ -35,25 +40,31 @@ Creating Functions
     * It is a group of statements that serves a single purpose
     * It can be reused every time we want to do the conversion without having to write the whole conversion formula out
 
-  
-* So let's use our function:
-    >>> my_function(2)
-    4
-    
-    >>> my_function(7)
-    14
-	
-    >>> my_function('James')
-    JamesJames
 
-* When we *call* ``my_function``, Python executes the statements that
-  make up the function, in order.
-* Functions make code easy to reuse, easy to edit, and easy to read. More importantly they *facilitate abstraction*.	
+Calling a Function
+------------------
+
+* Given the function definition of ``celsius_to_fahrenheit``, we can now *call* the function
+    * ``celsius_to_fahrenheit(0)`` gives us ``32.0``
+    * ``celsius_to_fahrenheit(-40)`` gives us ``-40.0``
+    * ``celsius_to_fahrenheit(32)`` gives us ``89.6``
+
+* It's always good to test your functions a little to verify that they are doing what you expect
+
+* When we call a function, Python executes the statements within the function in the order that they appear
+* Functions make your code easy to
+    * Reuse --- Just call it any time you need it
+    * Edit --- If there is a bug in the function, you only need to change the function once
+    * Read --- ``celsius_to_fahrenheit`` is a lot easier to recognize when compared to something like ``(C * 9/5) + 32``
+
+* More importantly they *facilitate abstraction*
+    * More on this later
 
 
 .. admonition:: Quick Activity
 
     Write your own function to do something with math. Honestly, whatever you want. 
+
 
 Function Parameters
 ===================
