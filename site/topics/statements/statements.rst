@@ -76,7 +76,7 @@ Large Series of Statements
 * So far we have been writing programs that are about one line long
 * There is nothing stopping us from writing large programs with many lines of code
     * Saved in Colab or some other file
-* We often vall these Python programs **scripts**
+* We often call these Python programs **scripts**
 * Python will run each line of the program, one line at a time, in the order that they exist
 
 * Technically you can write your script in any text editor, but there are editors/environments designed for programming languages
