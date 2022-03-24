@@ -52,10 +52,10 @@ Calling a Function
 * It's always good to test your functions a little to verify that they are doing what you expect
 
 * When we call a function, Python executes the statements within the function in the order that they appear
-* Functions make your code easy to
+* Functions allow for
     * Reuse --- Just call it any time you need it
-    * Edit --- If there is a bug in the function, you only need to change the function once
-    * Read --- ``celsius_to_fahrenheit`` is a lot easier to recognize when compared to something like ``(C * 9/5) + 32``
+    * Maintainability --- If there is a bug in the function, you only need to change the function once
+    * Readability --- ``celsius_to_fahrenheit`` is a lot easier to recognize when compared to something like ``(C * 9/5) + 32``
 
 * More importantly they *facilitate abstraction*
     * More on this later
