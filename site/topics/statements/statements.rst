@@ -70,36 +70,31 @@ Operators On Other Types
     $. Try mixing strings and integers with various operators. What happens there?
 
    
-Doing sequences of things
-=========================
+Large Series of Statements
+==========================
 
-* So far we've just been entering one line at a time into the Python.
-* That's not going to scale very well for most of the stuff we want to do...
-* You can store an (arbitrarily long) series of statements in Colab (or in a file), and then ask Python to run that file for you.
-* Python will execute each line of the file, in order, as if you'd typed them in.
-* There are lots of ways to run scripts. Suppose you put a series of statements into a file called ``my_program.py``
-    * from Colab: hit the run button or press Ctrl-Enter
-    * from your IDE: hit the run button or figure out the hotkey
-    * from the shell: ``$ python my_program.py`` or ``ipython my_program.py``
-    * from the interpreter: ``>>> execfile('my_program.py')``
-    * if you're using Ipython: ``%run my_program``
-* To edit the script, you can use any text editor that you want. You'll have an easier time with one that is "Python aware", though.
-   * Wut?
-   * Colab
-   * Notepad++ (Windows)
-   * Sublime (Windows and Mac)
-   * Integrated Development Environment
-   * VS Code (Windows, Linux, and Mac)
-   * PyCharm!
-   
+* So far we have been writing programs that are about one line long
+* There is nothing stopping us from writing large programs with many lines of code
+    * Saved in Colab or some other file
+* We often vall these Python programs **scripts**
+* Python will run each line of the program, one line at a time, in the order that they exist
+
+* Technically you can write your script in any text editor, but there are editors/environments designed for programming languages
+    * Colab (use through the internet)
+    * Notepad++ (Windows)
+    * Sublime (Windows and Mac)
+    * PyCharm (Windows, Linux, and Mac)
+    * VS Code (Windows, Linux, and Mac)
+
 
 .. admonition:: Activity
 
-    Consider the sentence ``Def Leppard is a poor substitute for Van Halen``. Write a program that stores *each word* of that sentence in it's own variable, and then prints the whole sentence to the screen, *using only a single print statement*.
+    Consider the sentence "I am taking CSCI 161". Write a program that stores each word of that sentence in it's own
+    variable, and then prints the whole sentence to the screen, using only a single ``print``.
 
-      .. raw:: html
+    .. raw:: html
 
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/u-d3chSpFO4" frameborder="0" allowfullscreen></iframe><br><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-d3chSpFO4" frameborder="0" allowfullscreen></iframe><br><br>
 
 
 For Next Class
