@@ -4,7 +4,6 @@ Input
 
 * We know how to get information *out* of the program
     * ``print``
-
 * And there is a similarly simple way to get information *into* the program
     * ``input``
 
@@ -22,7 +21,6 @@ Input
     * ``my_inputted_value = input()``
     * If you do leave it blank, nothing will be displayed to the user (this is what we will want when using Kattis)
 
-
 .. admonition:: Activity
 
     #. Read in some value into the computer.
@@ -31,7 +29,8 @@ Input
         * **Hint:** ``type``
 
 
-
+The Type Of The Inputted Value
+==============================
 
 * What if we want it to be an int?
 
