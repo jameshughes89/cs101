@@ -396,8 +396,7 @@ Doing sequences of things
 
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/u-d3chSpFO4" frameborder="0" allowfullscreen></iframe><br><br>
    
-For next class
+For Next Class
 ==============
 
-* Read the rest of `chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
-* Read `chapter 4 of the text <http://openbookproject.net/thinkcs/python/english3e/functions.html>`_
+* Read the rest of `Chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
