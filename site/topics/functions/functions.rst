@@ -158,14 +158,21 @@ Return
 * The value ``68`` is stored in the variable ``temperature``
 * The value of ``temperature`` (``68``) is printed out
 
+* If you do not write a ``return`` statement in a function, the function will still return a value, but the value will be ``None``
+* ``None`` is a special type and value that means *nothing*
 
 .. admonition:: Activity
 
-    * Write a function ``no_stuff(a, b)`` which is identical to ``do_stuff(a, b)`` **except** it does not contain a ``return`` statement.
-    * What happens when you try this?
-        >>> print(no_stuff(2, 2))
-    * What happens when you try this?
-        >>> print(do_stuff(2, 2))
+    Write a function ``print_celsius_to_fahrenheit`` that is identical to ``celsius_to_fahrenheit``, except instead of
+    ``return``ing the final value, it just ``prints`` the value out within the function (just replace the final line
+    with ``print(temp_in_fahrenheit)``).
+
+    Run the following and see if you can figure out why it is doing what it is doing
+        * ``print(print_celsius_to_fahrenheit(20))``
+        * ``print(celsius_to_fahrenheit(20))``
+        * ``print_celsius_to_fahrenheit(20)``
+        * ``celsius_to_fahrenheit(20)`` **NOTE:** This one is lying to you
+
 
 .. Warning::
     The difference between a ``print`` and a ``return`` is **HUGE**, yet, every year this difference ends up being a problem for many students. Make sure to take your time understanding the difference. Take your time. Play around. Remember, playing around with Python is the best way to learn this stuff.
