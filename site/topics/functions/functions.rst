@@ -140,21 +140,24 @@ Execution of a Function
 Return
 ======
 
-* Notice how ``do_stuff`` ended with a ``return`` statement
-* The ``return`` statement tells Python: "*return* this value to whoever called this function"
-* With ``return``, *functions* evaluate into *values*.
-* Consider:
-    >>> print(do_stuff(2, 2))
-    16
+* Every function you call *returns* a value
+* Notice that we wrote ``return`` at the end of the previous functions
+* This allows me to specify the value being returned by the function
 
-    >>> print(do_stuff(4, 4))
-    24
+* Consider the following example
 
-    >>> print(do_stuff(2, 2) + do_stuff(4, 4))
-    40
+.. code-block:: python
+    :linenos:
 
-* When Python hits a ``do_stuff``, it goes and *does stuff* (executes the function).
-* Because that function ends in a ``return``, when execution flow comes back to the calling program, the call to ``do_stuff`` gets replaced with whatever value got ``return`` ed.
+    temperature = celsius_to_fahrenheit(20)
+    print(temperature)
+
+
+* Here, the function call ``celsius_to_fahrenheit(20)`` will execute the function
+* When the function finishes executing, it returns the value ``68``
+* The value ``68`` is stored in the variable ``temperature``
+* The value of ``temperature`` (``68``) is printed out
+
 
 .. admonition:: Activity
 
