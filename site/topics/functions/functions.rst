@@ -92,7 +92,6 @@ Function Parameters
 * You have already been specifying the parameter in the ``print`` function
     * The value you want printed out is the value you are setting for the parameter that ``print`` takes
 
-
 * In reality, you have been using this idea in math class for years
 
     :math:`f(x) = x * 9/5 + 32`
@@ -109,32 +108,34 @@ Function Parameters
 * This is the same idea we used in ``celsius_to_fahrenheit``, but in Python instead of our typical math syntax
 
 
+Execution of a Function
+-----------------------
 
-* Let's do one more example with adding two numbers::
+* Below is a simple and arbitrary function (``square_of_sum``) that takes two parameters (``a`` and ``b``) and calculates what the square of their sum is
 
-    def add_print(a, b):
-        print(a + b)
+.. code-block:: python
+    :linenos:
 
-* Now that the function is defined, we can *call* it. Like this:
+    def square_of_sum(a, b):
+        c = a + b
+        d = c * c
+        return d
 
-    >>> add_print(5, 2)
-    7
 
-* The *call* ``add_print(5, 2)`` gets handled like this:
-    * Python checks to see if it knows about a function named ``add_print``
-        * We just defined ``add_print``, so it does.
-    * When we defined it, we told Python it should have two parameters: ``a`` and ``b``.
-    * Python now takes the values in the call (in this case, ``5`` and ``2``) and assigns those
-     values to the function parameters ``a`` and ``b``.
-        * In other words, the first thing Python does in this case is set ``a = 5`` and ``b = 2``, just like variables. 
-    * Then Python executes the body of the function, with the parameters having their new values.
+* If I were to call this function with ``square_of_sum(2, 9)``, Python handles the execution like this
+    #. Python will check to see if it knows about a function called ``square_of_sum``
+    #. Python takes the values supplied to it when called (``2`` and ``9``) and assigns them to their respective parameters
+        * ``a = 2`` and ``b = 3``
+    #. The sum of ``a`` and ``b`` is put into a variable ``c``
+    #. The variable ``c`` is multiplied with itself (effectively squaring it) and the result is assigned to ``d``
+    #. The function returns the value associated with ``d``
 
-     
 * What happens if we don't give it enough, or too many parameters?
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/clFWPflvEKI" frameborder="0" allowfullscreen></iframe><br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/clFWPflvEKI" frameborder="0" allowfullscreen></iframe><br><br>
+
 
 Abstraction: first steps
 ========================
