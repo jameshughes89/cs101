@@ -90,19 +90,23 @@ Function Parameters
 * Note carefully the parameter (``a_parameter``) in the definition of ``my_function``
 * When you are defining a function, you want the function to be very *general*
     * You want it to work with *any possible* parameter that someone might want to give it
-   
-* Like it or not, you've been doing this for years in math class
-   
-    ``f(x) = x + 5``
-   
-* This is a math *function* that takes a *parameter* 
-* What happens if you say... f(5)
-    * ``f(5) = 5 + 5``
-    * ``f(5) = 10``
 
-* IT'S THE SAME WITH THIS HERE!!
-   
-   
+* In reality, you have been using this idea in math class for years
+
+    :math:`f(x) = x * 9/5 + 32`
+
+* This is the definition of a function called :math:`f` that takes a parameter :math:`x`
+* If I asked you what :math:`f(20)` is, you can calculate the result
+
+    :math:`f(20) = 20 * 9/5 + 32`
+
+    :math:`f(20) = 36 + 32`
+
+    :math:`f(20) = 68`
+
+* This is the same idea we used in ``celsius_to_fahrenheit``, but in Python instead of our typical math syntax
+
+
 * Let's do one more example with adding two numbers::
 
     def add_print(a, b):
