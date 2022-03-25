@@ -2,92 +2,69 @@
 Functions
 *********
 
-.. image:: Eniac.jpeg
+
+* Script/program files are a nice way to organize many statements
+* However, eventually you will find yourself writing the same series of statements over and over
+    * Or copying and pasting in your editor
+
+* This is troubling since
+    * It is tedious
+    * You can introduce errors
+    * Your code can become harder to maintain
 
 
 Functions
 =========
 
-* Script/program files are a nice way to organize many statements
-* You eventually find yourself writing the same series of statements over and over
-    * (or cutting and pasting in your editor)
+* We like to group together sequences of statements that serve a coherent purpose
+* In Python, and many other programming languages, we do this with *functions*
 
 
-* Imagine the following code is super important::
+Defining a Function
+-------------------
 
-    x = 10 * 2
-    y = x/4
-    print(y)
+* Once you've **defined** a function, you can *call* it exactly the same way you call *built-in functions* like ``print``
 
-* OK, good, that wasn't so bad
-* But now your boss says that you need to do the same calculation two more times, but with 9 and then 8 instead of 10
-* Now your program looks like this::
+.. code-block:: python
+    :linenos:
 
-    x = 10 * 2
-    y = x/4
-    print(y)
-	
-    x = 9 * 2
-    y = x/4
-    print(y)
-	
-    x = 8 * 2
-    y = x/4
-    print(y)
+    def celsius_to_fahrenheit(temp_in_celsius):
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
 
-* That wasn't *soooooo* bad, but it does feel somewhat silly to copy/paste the code
-* Your boss can't make up their mind, and they now say that it should be divided by 3 instead of 4...
-* So you change your code::
 
-	x = 10 * 2
-	y = x/3
-	print(y)
-	
-	x = 9 * 2
-	y = x/3
-	print(y)
-	
-	x = 8 * 2
-	y = x/3
-	print(y)
+* Above is an example definition of a function that converts temperature units from Celsius to Fahrenheit
+* The details on all the parts will be discussed as we move through this topic
+* You can probably already get a sense that
+    * It is a group of statements that serves a single purpose
+    * It can be reused every time we want to do the conversion without having to write the whole conversion formula out
 
-* Fixed.
-    * While doing so, you actually missed the 2nd /4, but you fortunately caught your mistake in time
-* Your boss comes back again, saying that it needs to be done 18 more times, and they actually liked the divided by 4
-* ...
 
-There's gotta' be a better way!
-===============================
+Calling a Function
+------------------
 
-* Well, there is
+* Given the function definition of ``celsius_to_fahrenheit``, we can now *call* the function
+    * ``celsius_to_fahrenheit(0)`` gives us ``32.0``
+    * ``celsius_to_fahrenheit(-40)`` gives us ``-40.0``
+    * ``celsius_to_fahrenheit(32)`` gives us ``89.6``
 
-* We want a way to *group together sequence of statements that we frequently reuse*
-* In Python, we do this with a *function*. Here's one now::
+* It's always good to test your functions a little to verify that they are doing what you expect
 
-    def my_function(a_parameter):
-        b = a_parameter * 2
-        print(b)
-		
-* Once you've defined a function, you can *call* it exactly the same way you'd call a *built-in function* like ``print()``.
-  
-* So let's use our function:
-    >>> my_function(2)
-    4
-    
-    >>> my_function(7)
-    14
-	
-    >>> my_function('James')
-    JamesJames
+* When we call a function, Python executes the statements within the function in the order that they appear
+* Functions allow for
+    * Reuse --- Just call it any time you need it
+    * Maintainability --- If there is a bug in the function, you only need to change the function once
+    * Readability --- ``celsius_to_fahrenheit`` is a lot easier to recognize when compared to something like ``(C * 9/5) + 32``
 
-* When we *call* ``my_function``, Python executes the statements that
-  make up the function, in order.
-* Functions make code easy to reuse, easy to edit, and easy to read. More importantly they *facilitate abstraction*.	
+* More importantly they *facilitate abstraction*
+    * More on this later
 
 
 .. admonition:: Quick Activity
 
     Write your own function to do something with math. Honestly, whatever you want. 
+
 
 Function Parameters
 ===================

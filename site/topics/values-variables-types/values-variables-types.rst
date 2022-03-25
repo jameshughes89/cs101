@@ -1,5 +1,5 @@
 *******************************
-Values, Variables, Types, Print
+Print, Values, Variables, Types
 *******************************
 
 .. admonition:: Activity
@@ -80,6 +80,8 @@ Terminology
 
 Print
 =====
+
+* We already made use of ``print`` in the previous topic
 
 .. admonition:: Activity
 
