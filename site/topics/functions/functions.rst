@@ -137,6 +137,51 @@ Execution of a Function
     <iframe width="560" height="315" src="https://www.youtube.com/embed/clFWPflvEKI" frameborder="0" allowfullscreen></iframe><br><br>
 
 
+Return
+======
+
+* Notice how ``do_stuff`` ended with a ``return`` statement
+* The ``return`` statement tells Python: "*return* this value to whoever called this function"
+* With ``return``, *functions* evaluate into *values*.
+* Consider:
+    >>> print(do_stuff(2, 2))
+    16
+
+    >>> print(do_stuff(4, 4))
+    24
+
+    >>> print(do_stuff(2, 2) + do_stuff(4, 4))
+    40
+
+* When Python hits a ``do_stuff``, it goes and *does stuff* (executes the function).
+* Because that function ends in a ``return``, when execution flow comes back to the calling program, the call to ``do_stuff`` gets replaced with whatever value got ``return`` ed.
+
+.. admonition:: Activity
+
+    * Write a function ``no_stuff(a, b)`` which is identical to ``do_stuff(a, b)`` **except** it does not contain a ``return`` statement.
+    * What happens when you try this?
+        >>> print(no_stuff(2, 2))
+    * What happens when you try this?
+        >>> print(do_stuff(2, 2))
+
+.. Warning::
+    The difference between a ``print`` and a ``return`` is **HUGE**, yet, every year this difference ends up being a problem for many students. Make sure to take your time understanding the difference. Take your time. Play around. Remember, playing around with Python is the best way to learn this stuff.
+
+
+.. admonition:: Activity
+
+    Write a function ``compmag(r,m)`` to compute, and return, the magnitude of a complex number. It should take the real component of the number as parameter ``r`` and the imaginary component as ``m``.
+
+    Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}` (if this looks scary, all I really want you do to is the right hand side of the equation)
+
+    Say, does Python have a square root function?
+    How would you find it?
+
+      .. raw:: html
+
+   		<iframe width="560" height="315" src="https://www.youtube.com/embed/yMaFqibYwQE" frameborder="0" allowfullscreen></iframe>
+
+
 Abstraction: first steps
 ========================
 
@@ -242,52 +287,7 @@ Execution Flow
     * Python makes a note of where the function is being called from
     * The *flow of execution* passes to the function
     * Python executes each statement in the function, in order
-    * At the end of the function, control returns to the point from which the function was called	
-
-   
-Function values
-===============
-
-* Notice how ``do_stuff`` ended with a ``return`` statement
-* The ``return`` statement tells Python: "*return* this value to whoever called this function"
-* With ``return``, *functions* evaluate into *values*.
-* Consider:
-    >>> print(do_stuff(2, 2))
-    16
-    
-    >>> print(do_stuff(4, 4))
-    24
-	
-    >>> print(do_stuff(2, 2) + do_stuff(4, 4))
-    40
-    
-* When Python hits a ``do_stuff``, it goes and *does stuff* (executes the function).
-* Because that function ends in a ``return``, when execution flow comes back to the calling program, the call to ``do_stuff`` gets replaced with whatever value got ``return`` ed.
-
-.. admonition:: Activity
-
-    * Write a function ``no_stuff(a, b)`` which is identical to ``do_stuff(a, b)`` **except** it does not contain a ``return`` statement.
-    * What happens when you try this?
-        >>> print(no_stuff(2, 2))
-    * What happens when you try this?
-        >>> print(do_stuff(2, 2))
-
-.. Warning:: 
-    The difference between a ``print`` and a ``return`` is **HUGE**, yet, every year this difference ends up being a problem for many students. Make sure to take your time understanding the difference. Take your time. Play around. Remember, playing around with Python is the best way to learn this stuff.   
-
-
-.. admonition:: Activity
-
-    Write a function ``compmag(r,m)`` to compute, and return, the magnitude of a complex number. It should take the real component of the number as parameter ``r`` and the imaginary component as ``m``.
-   
-    Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}` (if this looks scary, all I really want you do to is the right hand side of the equation) 
-   
-    Say, does Python have a square root function?
-    How would you find it?
-
-      .. raw:: html
-
-   		<iframe width="560" height="315" src="https://www.youtube.com/embed/yMaFqibYwQE" frameborder="0" allowfullscreen></iframe>	
+    * At the end of the function, control returns to the point from which the function was called
 	
 	
 Composition
