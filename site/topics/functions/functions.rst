@@ -69,6 +69,24 @@ Calling a Function
 Function Parameters
 -------------------
 
+* Notice how the function ``celsius_to_fahrenheit`` has a *parameter* called ``temp_in_celsius``
+* When defining functions, we want them to be very general
+    * For example, it would be rather silly to write a function ``twenty_degrees_celsius_to_fahrenheit`` that was only capable of converting 20 degrees Celsius to Fahrenheit
+        * What happens if we want to calculate 30 degrees Celsius in Fahrenheit, write another function called ``thirty_degrees_celsius_to_fahrenheit``?
+    * Instead, we wrote the function such that the temperature in Celsius is a parameter that we can specify when calling the function
+        * ``celsius_to_fahrenheit(20)``
+        * ``celsius_to_fahrenheit(30)``
+
+.. code-block:: python
+    :linenos:
+
+    # This is rather silly and useless
+    def twenty_degrees_celsius_to_fahrenheit():
+        partial_conversion = 20 * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
+
+
 * Note carefully the parameter (``a_parameter``) in the definition of ``my_function``
 * When you are defining a function, you want the function to be very *general*
     * You want it to work with *any possible* parameter that someone might want to give it
