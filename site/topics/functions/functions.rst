@@ -122,9 +122,9 @@ Execution of a Function
         return d
 
 
-* If I were to call this function with ``square_of_sum(2, 9)``, Python handles the execution like this
+* If I were to call this function with ``square_of_sum(2, 3)``, Python handles the execution like this
     #. Python will check to see if it knows about a function called ``square_of_sum``
-    #. Python takes the values supplied to it when called (``2`` and ``9``) and assigns them to their respective parameters
+    #. Python takes the values supplied to it when called (``2`` and ``3``) and assigns them to their respective parameters
         * ``a = 2`` and ``b = 3``
     #. The sum of ``a`` and ``b`` is put into a variable ``c``
     #. The variable ``c`` is multiplied with itself (effectively squaring it) and the result is assigned to ``d``
