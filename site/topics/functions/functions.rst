@@ -167,7 +167,7 @@ Return
     ``return``ing the final value, it just ``prints`` the value out within the function (just replace the final line
     with ``print(temp_in_fahrenheit)``).
 
-    Run the following and see if you can figure out why it is doing what it is doing
+    Run the following and see if you can figure out why it is doing what it is doing:
         * ``print(print_celsius_to_fahrenheit(20))``
         * ``print(celsius_to_fahrenheit(20))``
         * ``print_celsius_to_fahrenheit(20)``
@@ -175,7 +175,21 @@ Return
 
 
 .. Warning::
-    The difference between a ``print`` and a ``return`` is **HUGE**, yet, every year this difference ends up being a problem for many students. Make sure to take your time understanding the difference. Take your time. Play around. Remember, playing around with Python is the best way to learn this stuff.
+
+    Colab is misleading you when you call ``celsius_to_fahrenheit(20)``. Colab will make it seem as if
+    ``celsius_to_fahrenheit(20)`` is printing out the result, but it is not --- Colab is being "nice" and just
+    displaying any values produced on the last line of code, regardless of if you printed it out. To demonstrate this
+    to yourself, run the following:
+
+    .. code-block:: python
+        :linenos:
+
+        celsius_to_fahrenheit(20)
+        print("Now you do not see any value from celsius_to_fahrenheit")
+
+
+    In the above example, if you want to keep track of the value returned by ``celsius_to_fahrenheit``, simply assign it
+    to a variable for later ``some_variable = celsius_to_fahrenheit(20)``.
 
 
 .. admonition:: Activity
