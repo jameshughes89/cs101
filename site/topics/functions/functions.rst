@@ -87,8 +87,11 @@ Function Parameters
         return temp_in_fahrenheit
 
 
+* If it helps, just think of the parameters as variables that belong to the function
+
 * You have already been specifying the parameter in the ``print`` function
     * The value you want printed out is the value you are setting for the parameter that ``print`` takes
+
 
 * In reality, you have been using this idea in math class for years
 
