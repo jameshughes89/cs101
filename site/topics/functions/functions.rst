@@ -87,9 +87,8 @@ Function Parameters
         return temp_in_fahrenheit
 
 
-* Note carefully the parameter (``a_parameter``) in the definition of ``my_function``
-* When you are defining a function, you want the function to be very *general*
-    * You want it to work with *any possible* parameter that someone might want to give it
+* You have already been specifying the parameter in the ``print`` function
+    * The value you want printed out is the value you are setting for the parameter that ``print`` takes
 
 * In reality, you have been using this idea in math class for years
 
@@ -105,6 +104,7 @@ Function Parameters
     :math:`f(20) = 68`
 
 * This is the same idea we used in ``celsius_to_fahrenheit``, but in Python instead of our typical math syntax
+
 
 
 * Let's do one more example with adding two numbers::
