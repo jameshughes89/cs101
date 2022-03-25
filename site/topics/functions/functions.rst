@@ -91,31 +91,6 @@ Function Parameters
 * When you are defining a function, you want the function to be very *general*
     * You want it to work with *any possible* parameter that someone might want to give it
    
-* Imagine we want to write a function to add two numbers together
-    * We want to be able to have this function add **any** two numbers together
-
-* Parameters are like variables. When you *call* the function, the first thing that happens is the parameter values get set.   
-   
-* To motivate this, let's go back to our previous example and throw it in a function::
-   
-    def i_hate_my_boss():
-        x = 10 * 2
-        y = x/4
-        print(y)
-
-* This function is kinda' stuck; it will only ever do multiply 10 by 2, and then divide it by 4...
-* Instead, we'll give it parameters::
-
-	def i_hate_my_boss(a_value, another_value):
-	   x = a_value * 2
-	   y = x/another_value
-	   print(y)
-
-* And we can call it like this::
-
-    i_hate_my_boss(10, 4)
-
-* If this is scaring you, chill
 * Like it or not, you've been doing this for years in math class
    
     ``f(x) = x + 5``
