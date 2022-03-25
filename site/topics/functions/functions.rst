@@ -170,16 +170,11 @@ Return
 
 .. admonition:: Activity
 
-    Write a function ``compmag(r,m)`` to compute, and return, the magnitude of a complex number. It should take the real component of the number as parameter ``r`` and the imaginary component as ``m``.
+    Write a function called ``euclidean_distance(x1, y1, x2, y2)`` that calculates and returns the Euclidean distance
+    between two points. Remember, Euclidean distance is defined as :math:`\sqrt{(x1 - x2)^{2} + (y1 - y2)^{2}}`
 
-    Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}` (if this looks scary, all I really want you do to is the right hand side of the equation)
-
-    Say, does Python have a square root function?
-    How would you find it?
-
-      .. raw:: html
-
-   		<iframe width="560" height="315" src="https://www.youtube.com/embed/yMaFqibYwQE" frameborder="0" allowfullscreen></iframe>
+    Does Python have a square root function? How do you calculate the square of a value in Python?
+    `How would I find out? <https://www.google.ca/>`_
 
 
 Abstraction: first steps
