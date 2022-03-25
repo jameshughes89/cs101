@@ -67,7 +67,7 @@ Calling a Function
 
 
 Function Parameters
-===================
+-------------------
 
 * Note carefully the parameter (``a_parameter``) in the definition of ``my_function``
 * When you are defining a function, you want the function to be very *general*
