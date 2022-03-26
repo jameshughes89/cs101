@@ -67,74 +67,139 @@ Calling a Function
 
 
 Function Parameters
-===================
+-------------------
 
-* Note carefully the parameter (``a_parameter``) in the definition of ``my_function``
-* When you are defining a function, you want the function to be very *general*
-    * You want it to work with *any possible* parameter that someone might want to give it
-   
-* Imagine we want to write a function to add two numbers together
-    * We want to be able to have this function add **any** two numbers together
+* Notice how the function ``celsius_to_fahrenheit`` has a *parameter* called ``temp_in_celsius``
+* When defining functions, we want them to be very general
+    * For example, it would be rather silly to write a function ``twenty_degrees_celsius_to_fahrenheit`` that was only capable of converting 20 degrees Celsius to Fahrenheit
+        * What happens if we want to calculate 30 degrees Celsius in Fahrenheit, write another function called ``thirty_degrees_celsius_to_fahrenheit``?
+    * Instead, we wrote the function such that the temperature in Celsius is a parameter that we can specify when calling the function
+        * ``celsius_to_fahrenheit(20)``
+        * ``celsius_to_fahrenheit(30)``
 
-* Parameters are like variables. When you *call* the function, the first thing that happens is the parameter values get set.   
-   
-* To motivate this, let's go back to our previous example and throw it in a function::
-   
-    def i_hate_my_boss():
-        x = 10 * 2
-        y = x/4
-        print(y)
+.. code-block:: python
+    :linenos:
 
-* This function is kinda' stuck; it will only ever do multiply 10 by 2, and then divide it by 4...
-* Instead, we'll give it parameters::
+    # This is rather silly and useless
+    def twenty_degrees_celsius_to_fahrenheit():
+        partial_conversion = 20 * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
 
-	def i_hate_my_boss(a_value, another_value):
-	   x = a_value * 2
-	   y = x/another_value
-	   print(y)
 
-* And we can call it like this::
+* If it helps, just think of the parameters as variables that belong to the function
 
-    i_hate_my_boss(10, 4)
+* You have already been specifying the parameter in the ``print`` function
+    * The value you want printed out is the value you are setting for the parameter that ``print`` takes
 
-* If this is scaring you, chill
-* Like it or not, you've been doing this for years in math class
-   
-    ``f(x) = x + 5``
-   
-* This is a math *function* that takes a *parameter* 
-* What happens if you say... f(5)
-    * ``f(5) = 5 + 5``
-    * ``f(5) = 10``
+* In reality, you have been using this idea in math class for years
 
-* IT'S THE SAME WITH THIS HERE!!
-   
-   
-* Let's do one more example with adding two numbers::
+    :math:`f(x) = x * 9/5 + 32`
 
-    def add_print(a, b):
-        print(a + b)
+* This is the definition of a function called :math:`f` that takes a parameter :math:`x`
+* If I asked you what :math:`f(20)` is, you can calculate the result
 
-* Now that the function is defined, we can *call* it. Like this:
+    :math:`f(20) = 20 * 9/5 + 32`
 
-    >>> add_print(5, 2)
-    7
+    :math:`f(20) = 36 + 32`
 
-* The *call* ``add_print(5, 2)`` gets handled like this:
-    * Python checks to see if it knows about a function named ``add_print``
-        * We just defined ``add_print``, so it does.
-    * When we defined it, we told Python it should have two parameters: ``a`` and ``b``.
-    * Python now takes the values in the call (in this case, ``5`` and ``2``) and assigns those
-     values to the function parameters ``a`` and ``b``.
-        * In other words, the first thing Python does in this case is set ``a = 5`` and ``b = 2``, just like variables. 
-    * Then Python executes the body of the function, with the parameters having their new values.
+    :math:`f(20) = 68`
 
-     
+* This is the same idea we used in ``celsius_to_fahrenheit``, but in Python instead of our typical math syntax
+
+
+Execution of a Function
+-----------------------
+
+* Below is a simple and arbitrary function (``square_of_sum``) that takes two parameters (``a`` and ``b``) and calculates what the square of their sum is
+
+.. code-block:: python
+    :linenos:
+
+    def square_of_sum(a, b):
+        c = a + b
+        d = c * c
+        return d
+
+
+* If I were to call this function with ``square_of_sum(2, 3)``, Python handles the execution like this
+    #. Python will check to see if it knows about a function called ``square_of_sum``
+    #. Python takes the values supplied to it when called (``2`` and ``3``) and assigns them to their respective parameters
+        * ``a = 2`` and ``b = 3``
+    #. The sum of ``a`` and ``b`` is put into a variable ``c``
+    #. The variable ``c`` is multiplied with itself (effectively squaring it) and the result is assigned to ``d``
+    #. The function returns the value associated with ``d``
+
 * What happens if we don't give it enough, or too many parameters?
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/clFWPflvEKI" frameborder="0" allowfullscreen></iframe><br><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/clFWPflvEKI" frameborder="0" allowfullscreen></iframe><br><br>
+
+
+Return
+======
+
+* Every function you call *returns* a value
+* Notice that we wrote ``return`` at the end of the previous functions
+* This allows me to specify the value being returned by the function
+
+* Consider the following example
+
+.. code-block:: python
+    :linenos:
+
+    temperature = celsius_to_fahrenheit(20)
+    print(temperature)
+
+
+* Here, the function call ``celsius_to_fahrenheit(20)`` will execute the function
+* When the function finishes executing, it returns the value ``68``
+* The value ``68`` is stored in the variable ``temperature``
+* The value of ``temperature`` (``68``) is printed out
+
+* If you do not write a ``return`` statement in a function, the function will still return a value, but the value will be ``None``
+* ``None`` is a special type and value that means *nothing*
+
+.. admonition:: Activity
+
+    Write a function ``print_celsius_to_fahrenheit`` that is identical to ``celsius_to_fahrenheit``, except instead of
+    ``return``ing the final value, it just ``prints`` the value out within the function (just replace the final line
+    with ``print(temp_in_fahrenheit)``).
+
+    Run the following and see if you can figure out why it is doing what it is doing:
+        * ``print(print_celsius_to_fahrenheit(20))``
+        * ``print(celsius_to_fahrenheit(20))``
+        * ``print_celsius_to_fahrenheit(20)``
+        * ``celsius_to_fahrenheit(20)`` **NOTE:** This one is lying to you
+
+
+.. Warning::
+
+    Colab is misleading you when you call ``celsius_to_fahrenheit(20)``. Colab will make it seem as if
+    ``celsius_to_fahrenheit(20)`` is printing out the result, but it is not --- Colab is being "nice" and just
+    displaying any values produced on the last line of code, regardless of if you printed it out. To demonstrate this
+    to yourself, run the following:
+
+    .. code-block:: python
+        :linenos:
+
+        celsius_to_fahrenheit(20)
+        print("Now you do not see any value from celsius_to_fahrenheit")
+
+
+    In the above example, if you want to keep track of the value returned by ``celsius_to_fahrenheit``, simply assign it
+    to a variable for later ``some_variable = celsius_to_fahrenheit(20)``.
+
+
+.. admonition:: Activity
+
+    Write a function called ``euclidean_distance(x1, y1, x2, y2)`` that calculates and returns the Euclidean distance
+    between two points. Remember, Euclidean distance is defined as :math:`\sqrt{(x1 - x2)^{2} + (y1 - y2)^{2}}`
+
+    Does Python have a square root function? How do you calculate the square of a value in Python?
+    `How would I find out? <https://www.google.ca/>`_
+
 
 Abstraction: first steps
 ========================
@@ -241,52 +306,7 @@ Execution Flow
     * Python makes a note of where the function is being called from
     * The *flow of execution* passes to the function
     * Python executes each statement in the function, in order
-    * At the end of the function, control returns to the point from which the function was called	
-
-   
-Function values
-===============
-
-* Notice how ``do_stuff`` ended with a ``return`` statement
-* The ``return`` statement tells Python: "*return* this value to whoever called this function"
-* With ``return``, *functions* evaluate into *values*.
-* Consider:
-    >>> print(do_stuff(2, 2))
-    16
-    
-    >>> print(do_stuff(4, 4))
-    24
-	
-    >>> print(do_stuff(2, 2) + do_stuff(4, 4))
-    40
-    
-* When Python hits a ``do_stuff``, it goes and *does stuff* (executes the function).
-* Because that function ends in a ``return``, when execution flow comes back to the calling program, the call to ``do_stuff`` gets replaced with whatever value got ``return`` ed.
-
-.. admonition:: Activity
-
-    * Write a function ``no_stuff(a, b)`` which is identical to ``do_stuff(a, b)`` **except** it does not contain a ``return`` statement.
-    * What happens when you try this?
-        >>> print(no_stuff(2, 2))
-    * What happens when you try this?
-        >>> print(do_stuff(2, 2))
-
-.. Warning:: 
-    The difference between a ``print`` and a ``return`` is **HUGE**, yet, every year this difference ends up being a problem for many students. Make sure to take your time understanding the difference. Take your time. Play around. Remember, playing around with Python is the best way to learn this stuff.   
-
-
-.. admonition:: Activity
-
-    Write a function ``compmag(r,m)`` to compute, and return, the magnitude of a complex number. It should take the real component of the number as parameter ``r`` and the imaginary component as ``m``.
-   
-    Remember that :math:`|r + mi| = \sqrt{r-2 + m-2}` (if this looks scary, all I really want you do to is the right hand side of the equation) 
-   
-    Say, does Python have a square root function?
-    How would you find it?
-
-      .. raw:: html
-
-   		<iframe width="560" height="315" src="https://www.youtube.com/embed/yMaFqibYwQE" frameborder="0" allowfullscreen></iframe>	
+    * At the end of the function, control returns to the point from which the function was called
 	
 	
 Composition
