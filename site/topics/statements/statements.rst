@@ -67,7 +67,7 @@ Operators On Other Types
    
     #. Experiment with the operators you know on *strings* (instead of just integers).
     #. Which ones work? What do they do?
-    $. Try mixing strings and integers with various operators. What happens there?
+    #. Try mixing strings and integers with various operators. What happens there?
 
    
 Large Series of Statements
