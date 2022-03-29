@@ -348,35 +348,6 @@ Variable scope
 * Error! But ``c`` is defined in ``do_more``! Why did we get an error?
 * Moral of the story: variables have *scope*. This can actually be a surprisingly delicate concept and we'll come back to it later.	
 	
-Optional parameters for functions
-=================================
-* Sometimes you want a function to have an optional parameter, with a pre-specified default value.
-* This is done very easily::
-
-    def my_function(a, b, c=3):
-        do_stuff()
-      
-* When you call ``my_function(5, 12)``, ``a`` will have value ``5``, ``b`` value ``12`` and ``c`` value ``3``.
-* Because we specified a *default* value for ``c``, we don't have to provide one when we call the function.
-* If we want to *override* the default though, we can: ``my_function(4, 3, 2)``.
-
-* A reasonable example::
-
-    def time_to_fall(d, a=9.807):
-        return math.sqrt(2*d/a)	
-	
-Import
-======
-* Another practical matter: sometimes you want to make a big library of functions. Maybe related to analysis data from your research. 
-* You'd like to access some of those functions from another program that you're writing.
-* If you put your functions in a file called 'myfuncs.py', you can *import* them into another program like this:
-    >>> from myfuncs import *
-* (The ``*`` here means *everything*)
-* You could also use:
-    >>> import myfuncs
-* This is my preferred way
-* **BUT**, this adds a namespace. To access a function called ``do_stuff`` in the file ``myfunc`` after this style of ``import``, you'd have to type
-    >>> myfuncs.do_stuff(...)
 
 Import --- MORE
 ===============
