@@ -222,6 +222,8 @@ Abstraction
     Write down a "program" to make spaghetti (not in python, like on paper). You can use plain English prose and assume
     you are addressing a human being who is familiar with a kitchen and making pasta.
 
+    Assume you start from a clean, empty, kitchen.
+
 
 * You have now created two different programs for making spaghetti at two different levels of abstraction, which version was easier?
 * You have been making use of the ``print`` function every time you needed to display something
