@@ -201,6 +201,45 @@ Return
     `How would I find out? <https://www.google.ca/>`_
 
 
+Execution Flow
+==============
+
+* Python executes one statement at a time
+* In a program, the statements get executed in the order in which they appear, top to bottom
+* However, statements within a function only get executed when that function is called
+
+.. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius):
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
+
+    celsius = 24
+    fahrenheit = celsius_to_fahrenheit(celsius)
+    print(fahrenheit)
+
+    celsius = 32
+    fahrenheit = celsius_to_fahrenheit(celsius)
+    print(fahrenheit)
+
+
+* In the above example, the program starts running at line 1, however Python notes that this is a function definition
+    * It is not *called* yet --- it does not run yet
+* Python takes note of the function and knows that it exists
+* The first line to get executed in this program is line 6 where the value of ``24`` is assigned to ``celsius``
+* Line 7 makes a call to the function ``celsius_to_fahrenheit``, and so the execution jumps to line 1
+* The program will run the whole function (lines 1 -- 4) and return the value to where it was called (line 7) and the value is stored in the variable ``fahrenheit``
+    * Functions end when there are no more lines to execute, or a ``return`` statement is hit
+* Like 8 prints out the value of ``fahrenheit``
+* Line 10 assigns a value to a variable
+* Like 11 calls the function ``celsius_to_fahrenheit`` again, which means our execution jumps to line 1 again
+* Once the function is complete (lines 1 -- 4), the value is returned to like 11 and the returned value is assigned to ``fahrenheit``
+* Line 12 prints out the value of ``fahrenheit``
+* The program is now complete
+
+
 Abstraction: first steps
 ========================
 
@@ -276,39 +315,7 @@ Back to concrete things...
 
    		<iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe> 
 	
-		
-Execution Flow
-==============
 
-* Python executes one statement at a time
-* To make sense of programs, we need to know *which* instruction gets executed *when*
-* In a program, the statements get executed in the order in which they appear in the program, top to bottom of the file
-    * Later, we'll learn how to jump around
-* What happens when a function gets called? Let's trace through this program::
-
-    def do_stuff(a, b):
-        c = b * 2
-        d = (a+4) * 2
-        c = d + c
-        return c
-	
-    x = 2
-    y = 3
-    z = do_stuff(x, y)
-    print(z)
-    print("where am I?")
-
-* So what happens is:
-    * Program starts at the top, and computer sees that a function is being *declared* (not called yet)
-        * NOT RUN YET THOUGH!
-    * Computer basically skips down to where the function ends
-    * We assign some values to variables   
-    * Python makes a note of where the function is being called from
-    * The *flow of execution* passes to the function
-    * Python executes each statement in the function, in order
-    * At the end of the function, control returns to the point from which the function was called
-	
-	
 Composition
 ===========
 
