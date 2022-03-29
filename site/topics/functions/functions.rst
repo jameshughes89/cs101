@@ -164,7 +164,7 @@ Return
 .. admonition:: Activity
 
     Write a function ``print_celsius_to_fahrenheit`` that is identical to ``celsius_to_fahrenheit``, except instead of
-    ``return``ing the final value, it just ``prints`` the value out within the function (just replace the final line
+    ``return``\ing the final value, it just ``prints`` the value out within the function (just replace the final line
     with ``print(temp_in_fahrenheit)``).
 
     Run the following and see if you can figure out why it is doing what it is doing:
