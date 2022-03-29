@@ -201,10 +201,8 @@ Return
     `How would I find out? <https://www.google.ca/>`_
 
 
-Abstraction: first steps
-========================
-
-* Why is abstraction important?
+Abstraction
+===========
 
 .. admonition:: Activity
 
@@ -218,25 +216,23 @@ Abstraction: first steps
 
     Assume you start from a clean, empty, kitchen.
 
+
 .. admonition:: Activity
 
-    Write down a "program" to make spaghetti (not in python, like on paper). You can use plain English prose and assume you are addressing a human being.
+    Write down a "program" to make spaghetti (not in python, like on paper). You can use plain English prose and assume
+    you are addressing a human being who is familiar with a kitchen and making pasta.
 
-* You've now written programs at two levels of abstraction. Which was easier?
-* Functions allow us to build *towers of abstraction*. 
-    * A low level function might worry about how to set the individual pixels of the display to show the letter ``A`` . 
-        * Consider ``print()``
-    * Would you want to cut-and-paste that code every time you needed to print ``A``?
-    * Instead, we have a function called ``print()`` that hides all those messy details from us.
-    * We call ``print()``, ``print()`` calls other functions, which call other functions, which call other functions...
 
-    * Without organizing things into *levels of abstraction* writing complex software would be impossibly difficult.
+* You have now created two different programs for making spaghetti at two different levels of abstraction, which version was easier?
+* You have been making use of the ``print`` function every time you needed to display something
+* Fortunately, you did not need to worry about setting individual pixels on your display to show the characters
+* ``print`` has collected all the complex information and instructions needed to print
+* Because of this, we can think about ``print`` every time we need to print instead of worrying about the underlying workings of how to set pixels on a display
 
-* Forget programming. In the rest of your life, learning to think in terms of levels of abstraction is a hugely important skill.
-  
-* In fact, think about us. 
-    * When you move your arms, did you explicitly think about firing neurons, flexing muscles and moving tendons?
-    * When driving a car, do you think about the pistons firing? 
+* Without being able to organize things into *levels of abstraction*, writing complex software would be prohibitively difficult
+
+    * The same is true for your every day live --- learning to think of things in terms of levels of abstraction is very important
+    * For example, when driving a car, do you think about the pistons firing?
 
 
 Back to concrete things...
