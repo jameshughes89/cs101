@@ -5,9 +5,11 @@ Functions
 
 * Script/program files are a nice way to organize many statements
 * However, eventually you will find yourself writing the same series of statements over and over
+
     * Or copying and pasting in your editor
 
 * This is troubling since
+
     * It is tedious
     * You can introduce errors
     * Your code can become harder to maintain
@@ -73,6 +75,7 @@ Function Parameters
 * When defining functions, we want them to be very general
     * For example, it would be rather silly to write a function ``twenty_degrees_celsius_to_fahrenheit`` that was only capable of converting 20 degrees Celsius to Fahrenheit
         * What happens if we want to calculate 30 degrees Celsius in Fahrenheit, write another function called ``thirty_degrees_celsius_to_fahrenheit``?
+
     * Instead, we wrote the function such that the temperature in Celsius is a parameter that we can specify when calling the function
         * ``celsius_to_fahrenheit(20)``
         * ``celsius_to_fahrenheit(30)``
@@ -126,6 +129,7 @@ Execution of a Function
     #. Python will check to see if it knows about a function called ``square_of_sum``
     #. Python takes the values supplied to it when called (``2`` and ``3``) and assigns them to their respective parameters
         * ``a = 2`` and ``b = 3``
+
     #. The sum of ``a`` and ``b`` is put into a variable ``c``
     #. The variable ``c`` is multiplied with itself (effectively squaring it) and the result is assigned to ``d``
     #. The function returns the value associated with ``d``
