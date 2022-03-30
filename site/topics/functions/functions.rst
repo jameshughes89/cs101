@@ -252,12 +252,15 @@ Format of a Function
         statement m
 
 
-* ``function_name`` is... the name of the function. This can be almost whatever you want.
-* ``parameter_1, parameter_2`` , etc. are called the *parameters*, you can have as many as you like and call them almost whatever you want.
-* You tell Python which statements make up the *body* of the function by using *indentation*.
-    * This is a somewhat unique feature of Python. 
-        * And somewhat hated by some people. 
-    * Many other languages use pairs like ``begin, end`` , ``do, done`` or ``{, }`` to delimit the body of a function.
+* ``function_name`` is what the function is named
+* ``parameter_1, parameter_2`` , etc. are called the parameters, you can have as many as you like and call them almost whatever you want
+
+    * You can think of these like variables
+
+* You tell Python which statements make up the body of the function by using *indentation*
+
+    * Some languages use other syntax, like ``begin`` and ``end`` or braces (``{ }``)
+
 
 .. admonition:: Activity
 
