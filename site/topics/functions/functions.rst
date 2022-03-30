@@ -275,9 +275,12 @@ Format of a Function
    
 .. admonition:: Activity
 
-    **NOTE:** This one is tricky but super important to understand. If you're still stuck after class, be sure to take your time to figure this out. There's a YouTube video to help you out. 
+    **Warning:** This one is tricky. If you're still stuck after lecture, be sure to take your time to figure this out.
+    There's a YouTube video to help.
    
-    Now write a function ``crosscat`` that will take *four* strings and print out the concatenation of the first and third string, and then, on a new line, the concatenation of the second and fourth string. **BUT**: your function isn't allowed to use a ``print`` function! You can, however, use your ``catstr`` function.
+    Now write a function ``criss_cross_concatenation`` that will take four strings and return the concatenation of the
+    first, third, second, and fourth, in that order. **BUT** your function isn't allowed to directly use the ``+`` to
+    concatenate strings. You can, however, use the ``concatenate_strings`` function.
 
     .. raw:: html
 
