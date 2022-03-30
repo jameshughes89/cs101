@@ -237,8 +237,8 @@ Abstraction
     * For example, when driving a car, do you think about the pistons firing?
 
 
-Back to concrete things...
-==========================
+Format of a Function
+====================
 
 * The general format for defining a function is::
 
