@@ -414,34 +414,42 @@ Comments
 Function Headers
 ----------------
 
-* Because so much of our programming consists of pasting together functions... it is of special
-  importance to document what a function does.
-* We do this with a *function header*::
+* We will find that, as we write bigger and bigger programs, we will be making use of functions a lot
 
-    def set_up_cities(names):
+    * Not only those that already exist like ``print``, but functions we write
+
+* Since functions tend to be some coherent set of statements that serve a purpose, we write *function headers* to describe what the function does
+
+
+.. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius):
         """
-        Set up a collection of cities (world) for our simulator.
-        Each city is a 3 element list, and our world will be a list of cities.
-        
-        :param names: A list with the names of the cities in the world.
-        
-        :return: a list of cities
+        Convert a temperature from Celsius units to Fahrenheit units.
+
+        :param temp_in_celsius: The temperature in Celsius to be converted.
+        :return: The temperature in Fahrenheit.
         """
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
 
-        print 1 + 2
 
-* The stuff between the ``"""`` is the function header and should appear *immediately after* the ``def``.
-* It should explain what the function is going to do, in plain English. If I have to read the function code to figure out what it does, your header description sucks.
-* It should explain *every* parameter.
-* If the function returns something, it should explain that too
+* The stuff between the ``"""`` is the function header and should appear immediately after the ``def`` line
+* It explains what the function does in plane English
+* It explains what each parameter is
+* If the function ``return``\s something, then explain that too
 
-This might all seem like a lot of extra work. And it is. But it's *less* work than trying to figure out how everything works after you've been away from the code for 2 months.
+* This may feel like a lot of work, especially with such a simple function in the above example
+* But having these headers describing the functions makes it easier for anyone looking at your code
 
-You don't believe me. You'll leave this course and go write code with no comments. Seriously, you will. You might *mean* to write comments, but you won't. You're just too *busy*.
- 
-Then, at some later point, you'll have to go back to your code. It won't have comments. You'll have no clue how anything works. It'll take you a day or two just to figure out what you'd done before.
+    * `This includes yourself one weeks from now <https://i.redd.it/p172loj7q7j31.jpg>`_
 
-After that happens enough times, you'll start writing comments.
+* Trust me when I say, there will be a time in your life where you regret not writing comments/headers
+
+    * `And when that time comes, I want you to remember that I warned you <https://i.redd.it/b9e4xbeg40151.jpg>`_
+
 
   .. raw:: html
 
