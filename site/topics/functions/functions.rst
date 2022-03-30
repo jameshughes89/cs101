@@ -451,4 +451,4 @@ After that happens enough times, you'll start writing comments.
 For next class
 ==============
 
-* Read `chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
+* Read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
