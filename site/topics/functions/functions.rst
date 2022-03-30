@@ -215,6 +215,7 @@ Return
     `How would I find out? <https://www.google.ca/>`_
 
 
+
 Execution Flow
 ==============
 
@@ -258,10 +259,8 @@ Execution Flow
 * The program is now complete
 
 
-Abstraction: first steps
-========================
-
-* Why is abstraction important?
+Abstraction
+===========
 
 .. admonition:: Activity
 
@@ -275,25 +274,25 @@ Abstraction: first steps
 
     Assume you start from a clean, empty, kitchen.
 
+
 .. admonition:: Activity
 
-    Write down a "program" to make spaghetti (not in python, like on paper). You can use plain English prose and assume you are addressing a human being.
+    Write down a "program" to make spaghetti (not in python, like on paper). You can use plain English prose and assume
+    you are addressing a human being who is familiar with a kitchen and making pasta.
 
-* You've now written programs at two levels of abstraction. Which was easier?
-* Functions allow us to build *towers of abstraction*. 
-    * A low level function might worry about how to set the individual pixels of the display to show the letter ``A`` . 
-        * Consider ``print()``
-    * Would you want to cut-and-paste that code every time you needed to print ``A``?
-    * Instead, we have a function called ``print()`` that hides all those messy details from us.
-    * We call ``print()``, ``print()`` calls other functions, which call other functions, which call other functions...
+    Assume you start from a clean, empty, kitchen.
 
-    * Without organizing things into *levels of abstraction* writing complex software would be impossibly difficult.
 
-* Forget programming. In the rest of your life, learning to think in terms of levels of abstraction is a hugely important skill.
-  
-* In fact, think about us. 
-    * When you move your arms, did you explicitly think about firing neurons, flexing muscles and moving tendons?
-    * When driving a car, do you think about the pistons firing? 
+* You have now created two different programs for making spaghetti at two different levels of abstraction, which version was easier?
+* You have been making use of the ``print`` function every time you needed to display something
+* Fortunately, you did not need to worry about setting individual pixels on your display to show the characters
+* ``print`` has collected all the complex information and instructions needed to print
+* Because of this, we can think about ``print`` every time we need to print instead of worrying about the underlying workings of how to set pixels on a display
+
+* Without being able to organize things into *levels of abstraction*, writing complex software would be prohibitively difficult
+
+    * The same is true for your every day live --- learning to think of things in terms of levels of abstraction is very important
+    * For example, when driving a car, do you think about the pistons firing?
 
 
 Back to concrete things...
@@ -377,35 +376,6 @@ Variable scope
 * Error! But ``c`` is defined in ``do_more``! Why did we get an error?
 * Moral of the story: variables have *scope*. This can actually be a surprisingly delicate concept and we'll come back to it later.	
 	
-Optional parameters for functions
-=================================
-* Sometimes you want a function to have an optional parameter, with a pre-specified default value.
-* This is done very easily::
-
-    def my_function(a, b, c=3):
-        do_stuff()
-      
-* When you call ``my_function(5, 12)``, ``a`` will have value ``5``, ``b`` value ``12`` and ``c`` value ``3``.
-* Because we specified a *default* value for ``c``, we don't have to provide one when we call the function.
-* If we want to *override* the default though, we can: ``my_function(4, 3, 2)``.
-
-* A reasonable example::
-
-    def time_to_fall(d, a=9.807):
-        return math.sqrt(2*d/a)	
-	
-Import
-======
-* Another practical matter: sometimes you want to make a big library of functions. Maybe related to analysis data from your research. 
-* You'd like to access some of those functions from another program that you're writing.
-* If you put your functions in a file called 'myfuncs.py', you can *import* them into another program like this:
-    >>> from myfuncs import *
-* (The ``*`` here means *everything*)
-* You could also use:
-    >>> import myfuncs
-* This is my preferred way
-* **BUT**, this adds a namespace. To access a function called ``do_stuff`` in the file ``myfunc`` after this style of ``import``, you'd have to type
-    >>> myfuncs.do_stuff(...)
 
 Import --- MORE
 ===============
@@ -414,66 +384,74 @@ Import --- MORE
 * 	>>> import numpy	
 
 
-COMMENTS!!!!!!!!!!!
-===================
+Comments
+========
 
-* You can add *comments* to your code in Python with ``#``::
-
-    do_something()
-    # We just did something
-    # Now we'll do something else
-    do_something_else() # doing something else
-   
+* You can add *comments* to your code in Python with ``#``
 * As soon as Python sees ``#`` it ignores the rest of the current line
-* Writing comments makes your code *easier to read*
-* Especially 6 weeks later when you have to change it
+
+.. code-block:: python
+    :linenos:
+
+    # Calculate the Euclidean distance between two points
+    d = ((x1 - x2)**2 + (y1 - y2)**2)**0.5
+
+* We want our code to be written in such a way that it is correct, but also understandable
+* However, sometimes we may have some code that is rather complex and not immediately clear
+
+    * This becomes particularly important if you are working with others that need to look at your code
+
+* When situations like these arise, we add comments to our code to explain what's going on
+* It's not about explaining everything, but explaining what is likely to be unclear
 
 
-* And *especially* when someone else has to make sense of your mess
-* Comments shouldn't just repeat what's obvious from reading the code
-* They should provide a *higher level* description of what's happening.
-* Computer Scientists get real geeky about comments
-* Physicists immediately go into shock and collapse if they write a single comment
-* Find a healthy balance that works for you
 
-Function headers
-================
+Docstring
+---------
 
-* Because so much of our programming consists of pasting together functions... it is of special
-  importance to document what a function does.
-* We do this with a *function header*::
+* We will find that, as we write bigger and bigger programs, we will be making use of functions a lot
 
-    def set_up_cities(names):
+    * Not only those that already exist like ``print``, but functions we write
+
+* Since functions tend to be some coherent set of statements that serve a purpose, we write *docstrings* to describe what the function does
+
+
+.. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius):
         """
-        Set up a collection of cities (world) for our simulator.
-        Each city is a 3 element list, and our world will be a list of cities.
-        
-        :param names: A list with the names of the cities in the world.
-        
-        :return: a list of cities
+        Convert a temperature from Celsius units to Fahrenheit units.
+
+        :param temp_in_celsius: The temperature in Celsius to be converted.
+        :return: The temperature in Fahrenheit.
         """
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
 
-        print 1 + 2
 
-* The stuff between the ``"""`` is the function header and should appear *immediately after* the ``def``.
-* It should explain what the function is going to do, in plain English. If I have to read the function code to figure out what it does, your header description sucks.
-* It should explain *every* parameter.
-* If the function returns something, it should explain that too
+* The stuff between the ``"""`` is the docstring and should appear immediately after the ``def`` line
+* It explains what the function does in plane English
+* It explains what each parameter is
+* If the function ``return``\s something, then explain that too
 
-This might all seem like a lot of extra work. And it is. But it's *less* work than trying to figure out how everything works after you've been away from the code for 2 months.
+* This may feel like a lot of work, especially with such a simple function in the above example
+* But having these describing the functions makes it easier for anyone looking at your code
 
-You don't believe me. You'll leave this course and go write code with no comments. Seriously, you will. You might *mean* to write comments, but you won't. You're just too *busy*.
- 
-Then, at some later point, you'll have to go back to your code. It won't have comments. You'll have no clue how anything works. It'll take you a day or two just to figure out what you'd done before.
+    * `This includes yourself one weeks from now <https://i.redd.it/p172loj7q7j31.jpg>`_
 
-After that happens enough times, you'll start writing comments.
+* Trust me when I say, there will be a time in your life where you regret not writing comments/docstrings
+
+    * `And when that time comes, I want you to remember that I warned you <https://i.redd.it/b9e4xbeg40151.jpg>`_
+
 
   .. raw:: html
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/eD1iff-zLLo" frameborder="0" allowfullscreen></iframe>
 
 	
-For next class
+For Next Class
 ==============
 
-* Read `chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
+* Read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
