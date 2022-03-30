@@ -389,27 +389,27 @@ Import --- MORE
 * 	>>> import numpy	
 
 
-COMMENTS!!!!!!!!!!!
-===================
+Comments
+========
 
-* You can add *comments* to your code in Python with ``#``::
-
-    do_something()
-    # We just did something
-    # Now we'll do something else
-    do_something_else() # doing something else
-   
+* You can add *comments* to your code in Python with ``#``
 * As soon as Python sees ``#`` it ignores the rest of the current line
-* Writing comments makes your code *easier to read*
-* Especially 6 weeks later when you have to change it
+
+.. code-block:: python
+    :linenos:
+
+    # Calculate the Euclidean distance between two points
+    d = ((x1 - x2)**2 + (y1 - y2)**2)**0.5
+
+* We want our code to be written in such a way that it is correct, but also understandable
+* However, sometimes we may have some code that is rather complex and not immediately clear
+
+    * This becomes particularly important if you are working with others that need to look at your code
+
+* When situations like these arise, we add comments to our code to explain what's going on
+* It's not about explaining everything, but explaining what is likely to be unclear
 
 
-* And *especially* when someone else has to make sense of your mess
-* Comments shouldn't just repeat what's obvious from reading the code
-* They should provide a *higher level* description of what's happening.
-* Computer Scientists get real geeky about comments
-* Physicists immediately go into shock and collapse if they write a single comment
-* Find a healthy balance that works for you
 
 Function headers
 ================
