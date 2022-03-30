@@ -236,10 +236,19 @@ Making Use of Abstraction
 * ``print`` has collected all the complex information and instructions needed to print
 * Because of this, we can think about ``print`` every time we need to print instead of worrying about the underlying workings of how to set pixels on a display
 
+
+Building Abstraction
+--------------------
+
 * Without being able to organize things into *levels of abstraction*, writing complex software would be prohibitively difficult
 
     * The same is true for your every day live --- learning to think of things in terms of levels of abstraction is very important
     * For example, when driving a car, do you think about the pistons firing?
+    * Or, do you need to think about neurons firing and ion pumps to move your arm?
+
+* You are already experts at this in real life
+
+
 
 
 Back to concrete things...
