@@ -226,6 +226,11 @@ Abstraction
 
 
 * You have now created two different programs for making spaghetti at two different levels of abstraction, which version was easier?
+
+
+Making Use of Abstraction
+-------------------------
+
 * You have been making use of the ``print`` function every time you needed to display something
 * Fortunately, you did not need to worry about setting individual pixels on your display to show the characters
 * ``print`` has collected all the complex information and instructions needed to print
