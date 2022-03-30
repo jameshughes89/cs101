@@ -411,8 +411,8 @@ Comments
 
 
 
-Function headers
-================
+Function Headers
+----------------
 
 * Because so much of our programming consists of pasting together functions... it is of special
   importance to document what a function does.
