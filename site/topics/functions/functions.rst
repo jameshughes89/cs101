@@ -264,7 +264,9 @@ Format of a Function
 
 .. admonition:: Activity
 
-    Write a function ``catstr`` which takes two strings as parameters and then prints out the concatenation of the strings. e.g., if I call ``catstr('Hello ','world!')`` it will print ``Hello world!``.
+    Write a function ``concatenate_strings`` that takes two strings as parameters and then returns the concatenation of
+    the strings. For example, if I call ``concatenate_strings("Hello","World!")`` it will return ``Helloworld!``. Do
+    not add a space between the two strings being concatenated.
 
     .. raw:: html
 
