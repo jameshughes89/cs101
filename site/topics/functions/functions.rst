@@ -456,7 +456,7 @@ Function Headers
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/eD1iff-zLLo" frameborder="0" allowfullscreen></iframe>
 
 	
-For next class
+For Next Class
 ==============
 
 * Read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
