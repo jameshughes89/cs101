@@ -250,6 +250,17 @@ Creating Abstraction
 * Unfortunately, however, it is not simple to just start creating abstraction in your code
 * Knowing how and where to create levels of abstraction requires a deep understanding of the problem you are trying to address
 
+.. warning::
+
+    It needs to be emphasized that how, when, and where to create levels of abstraction can be very difficult. This is
+    not something you can learn by just reading about it; this is a skill that you will be developing throughout your
+    careers. Over time you will get better and better at it.
+
+    Often there isn't even a *right* way to do it. Some may be better than others, but that does not mean that the
+    others are not "correct".
+
+    The point is, however, that no one is expecting you to be an expert in this at this stage. Expect this to not be
+    trivial.
 
 
 Back to concrete things...
