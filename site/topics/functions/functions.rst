@@ -247,7 +247,8 @@ Creating Abstraction
     * Or, do you need to think about neurons firing and ion pumps to move your arm?
 
 * You are already experts at this in real life
-* Unfortunately, however, it is not simple to just start creating abstraction in your code 
+* Unfortunately, however, it is not simple to just start creating abstraction in your code
+* Knowing how and where to create levels of abstraction requires a deep understanding of the problem you are trying to address
 
 
 
