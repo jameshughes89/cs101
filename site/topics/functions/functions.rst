@@ -411,14 +411,14 @@ Comments
 
 
 
-Function Headers
-----------------
+Docstring
+---------
 
 * We will find that, as we write bigger and bigger programs, we will be making use of functions a lot
 
     * Not only those that already exist like ``print``, but functions we write
 
-* Since functions tend to be some coherent set of statements that serve a purpose, we write *function headers* to describe what the function does
+* Since functions tend to be some coherent set of statements that serve a purpose, we write *docstrings* to describe what the function does
 
 
 .. code-block:: python
@@ -436,17 +436,17 @@ Function Headers
         return temp_in_fahrenheit
 
 
-* The stuff between the ``"""`` is the function header and should appear immediately after the ``def`` line
+* The stuff between the ``"""`` is the docstring and should appear immediately after the ``def`` line
 * It explains what the function does in plane English
 * It explains what each parameter is
 * If the function ``return``\s something, then explain that too
 
 * This may feel like a lot of work, especially with such a simple function in the above example
-* But having these headers describing the functions makes it easier for anyone looking at your code
+* But having these describing the functions makes it easier for anyone looking at your code
 
     * `This includes yourself one weeks from now <https://i.redd.it/p172loj7q7j31.jpg>`_
 
-* Trust me when I say, there will be a time in your life where you regret not writing comments/headers
+* Trust me when I say, there will be a time in your life where you regret not writing comments/docstrings
 
     * `And when that time comes, I want you to remember that I warned you <https://i.redd.it/b9e4xbeg40151.jpg>`_
 
