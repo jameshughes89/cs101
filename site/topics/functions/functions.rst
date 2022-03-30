@@ -240,16 +240,20 @@ Abstraction
 Format of a Function
 ====================
 
-* The general format for defining a function is::
+* The general format for defining a function is as follows
 
-	def function_name(p1, p2, p3, p4, ... ):
-		statement 1
-		statement 2
-		...
-		statement m
-		
+.. code-block:: python
+    :linenos:
+
+    def function_name(parameter_1, parameter_2, parameter_3, parameter_4, ... parameter_n):
+        statement 1
+        statement 2
+        ...
+        statement m
+
+
 * ``function_name`` is... the name of the function. This can be almost whatever you want.
-* ``p1, p2`` , etc. are called the *parameters*, you can have as many as you like and call them almost whatever you want. 
+* ``parameter_1, parameter_2`` , etc. are called the *parameters*, you can have as many as you like and call them almost whatever you want.
 * You tell Python which statements make up the *body* of the function by using *indentation*.
     * This is a somewhat unique feature of Python. 
         * And somewhat hated by some people. 
