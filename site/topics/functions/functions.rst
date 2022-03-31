@@ -321,42 +321,54 @@ Creating Abstraction
     trivial.
 
 
-Back to concrete things...
-==========================
+Format of a Function
+====================
 
-* The general format for defining a function is::
+* The format for defining a function is as follows
 
-	def function_name(p1, p2, p3, p4, ... ):
-		statement 1
-		statement 2
-		...
-		statement m
-		
-* ``function_name`` is... the name of the function. This can be almost whatever you want.
-* ``p1, p2`` , etc. are called the *parameters*, you can have as many as you like and call them almost whatever you want. 
-* You tell Python which statements make up the *body* of the function by using *indentation*.
-    * This is a somewhat unique feature of Python. 
-        * And somewhat hated by some people. 
-    * Many other languages use pairs like ``begin, end`` , ``do, done`` or ``{, }`` to delimit the body of a function.
+.. code-block:: python
+    :linenos:
+
+    def function_name(parameter_1, parameter_2, parameter_3, parameter_4, ... parameter_n):
+        statement 1
+        statement 2
+        ...
+        statement m
+
+
+* ``function_name`` is what the function is named
+* ``parameter_1, parameter_2`` , etc. are called the parameters, you can have as many as you like and call them almost whatever you want
+
+    * You can think of these like variables
+
+* You tell Python which statements make up the body of the function by using *indentation*
+
+    * Some languages use other syntax, like ``begin`` and ``end`` or braces (``{ }``)
+
 
 .. admonition:: Activity
 
-    Write a function ``catstr`` which takes two strings as parameters and then prints out the concatenation of the strings. e.g., if I call ``catstr('Hello ','world!')`` it will print ``Hello world!``.
+    Write a function ``concatenate_strings`` that takes two strings as parameters and then returns the concatenation of
+    the strings. For example, if I call ``concatenate_strings("Hello","World!")`` it will return ``HelloWorld!``. Do
+    not add a space between the two strings being concatenated.
 
-      .. raw:: html
+    .. raw:: html
 
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/cMTPTq7xpOA" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cMTPTq7xpOA" frameborder="0" allowfullscreen></iframe>
    
    
 .. admonition:: Activity
 
-    **NOTE:** This one is tricky but super important to understand. If you're still stuck after class, be sure to take your time to figure this out. There's a YouTube video to help you out. 
+    **Warning:** This one is tricky. If you're still stuck after lecture, be sure to take your time to figure this out.
+    There's a YouTube video to help.
    
-    Now write a function ``crosscat`` that will take *four* strings and print out the concatenation of the first and third string, and then, on a new line, the concatenation of the second and fourth string. **BUT**: your function isn't allowed to use a ``print`` function! You can, however, use your ``catstr`` function.
+    Now write a function ``criss_cross_concatenation`` that will take four strings and return the concatenation of the
+    first, third, second, and fourth, in that order. **BUT** your function isn't allowed to directly use the ``+`` to
+    concatenate strings. You can, however, use the ``concatenate_strings`` function.
 
-      .. raw:: html
+    .. raw:: html
 
-   		<iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe>
 	
 
 Composition
