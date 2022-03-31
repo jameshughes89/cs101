@@ -265,7 +265,7 @@ Format of a Function
 .. admonition:: Activity
 
     Write a function ``concatenate_strings`` that takes two strings as parameters and then returns the concatenation of
-    the strings. For example, if I call ``concatenate_strings("Hello","World!")`` it will return ``Helloworld!``. Do
+    the strings. For example, if I call ``concatenate_strings("Hello","World!")`` it will return ``HelloWorld!``. Do
     not add a space between the two strings being concatenated.
 
     .. raw:: html
