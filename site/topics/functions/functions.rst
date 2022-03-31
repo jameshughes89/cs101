@@ -240,7 +240,7 @@ Abstraction
 Format of a Function
 ====================
 
-* The general format for defining a function is as follows
+* The format for defining a function is as follows
 
 .. code-block:: python
     :linenos:
