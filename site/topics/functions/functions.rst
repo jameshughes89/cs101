@@ -284,15 +284,41 @@ Abstraction
 
 
 * You have now created two different programs for making spaghetti at two different levels of abstraction, which version was easier?
+
+
+Making Use of Abstraction
+-------------------------
+
 * You have been making use of the ``print`` function every time you needed to display something
 * Fortunately, you did not need to worry about setting individual pixels on your display to show the characters
 * ``print`` has collected all the complex information and instructions needed to print
 * Because of this, we can think about ``print`` every time we need to print instead of worrying about the underlying workings of how to set pixels on a display
 
+
+Creating Abstraction
+--------------------
+
 * Without being able to organize things into *levels of abstraction*, writing complex software would be prohibitively difficult
 
     * The same is true for your every day live --- learning to think of things in terms of levels of abstraction is very important
     * For example, when driving a car, do you think about the pistons firing?
+    * Or, do you need to think about neurons firing and ion pumps to move your arm?
+
+* You are already experts at this in real life
+* Unfortunately, however, it is not simple to just start creating abstraction in your code
+* Knowing how and where to create levels of abstraction requires a deep understanding of the problem you are trying to address
+
+.. warning::
+
+    It needs to be emphasized that how, when, and where to create levels of abstraction can be very difficult. This is
+    not something you can learn by just reading about it; this is a skill that you will be developing throughout your
+    careers. Over time you will get better and better at it.
+
+    Often there isn't even a *right* way to do it. Some may be better than others, but that does not mean that the
+    others are not "correct".
+
+    The point is, however, that no one is expecting you to be an expert in this at this stage. Expect this to not be
+    trivial.
 
 
 Back to concrete things...
