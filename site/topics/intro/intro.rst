@@ -5,13 +5,15 @@ Introduction and Output
 What Will I Learn?
 ==================
 
-* The short version:
+* The short version
+
     * How to write computer programs
     * How to write programs to solve problems
     * A little bit of how computers work
     * A little bit about what on earth computer science is
 
 * The long version:
+
     * :doc:`Read the outline </outline/outline>`
 
 .. admonition:: Activity
@@ -35,6 +37,7 @@ Why Are The Course Notes A Website?
 * Most Python documentation is made with something called Sphinx
 * These course notes are made with Sphinx
 * The idea: get used to reading and learning from something in this format
+
     * `Here's an example <https://docs.python.org/3/library/math.html>`_
 
 
@@ -51,9 +54,11 @@ How Will This Class Work?
 
 * This class is going to be run somewhat differently from other courses you may have experienced at university 
 * I have a number of activities throughout the topics that we will take time to work on
+
     * They also help with breaking up the monotony of listening to a lecture for an hour straight
 
 * At the end of each topic there are linked suggested readings you should work through to get practice
+
     * The only way to learn this stuff is through practice
     * You can watch every YouTube video on how to play piano that exists, but you still won't know how to play piano unless you practice
 
@@ -75,6 +80,7 @@ What Should I Bring To Class
 * Curiosity
 * Readiness to do stuff, rather than just listen
 * A laptop and/or pen and paper
+
     * Taking notes is still important even though the content is online
     * If you can bring a laptop, I strongly recommend it as there will be opportunity for you to program during activities
 
@@ -96,9 +102,12 @@ The quick answer is, it depends...
 
 * Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
 * These topics really are going to be shockingly different from what you are probably used to
+
     * Very few classes can prepare you for the way of thinking that will be required for this class
+
 * Unfortunately, intro to computer science classes do often have an unusually high fail rate
 * The best way to set yourself up for success is
+
     * Practice
     * Read
     * Stay on top of the content
@@ -112,15 +121,19 @@ So I Should Be Terrified?
 * Waring though --- the class is dense and very accumulative, do not fall behind
 
 * The good news is, you get to make mistakes
+
     * In fact, expect to make **a lot** of mistakes
+
 * You get to see if what you did works or not
 * Most of this class will be you beating your head against your keyboard until you get it right
 * Not many classes or disciplines give you this luxury
 
 * I really can't stress this enough
+
     * Most of the time when you're *working* on the course material you will be getting things wrong
     * The majority of programming is actually *debugging*
     * Get used to making mistakes
+
         * This is a good thing
         * This is normal
 
@@ -131,6 +144,7 @@ I Need help!
 .. image:: beforeGoogle.jpg
 
 * Knowing the challenges students face, we have provided many resources to help you succeed
+
     * `Google <https://www.youtube.com/watch?v=e9C_cgL2150>`_
     * YouTube videos
     * Email
@@ -144,10 +158,12 @@ I Need help!
 Google?
 -------
 
-* When a programmer isn't debugging, they're Googling their problems 
+* When a programmer isn't debugging, they're Googling their problems
+
     * This is so common that it's a meme
 
 * I am going to tell you to "Google It" very often in this course
+
     * This is intentional
 
 * Independent learning is one of the most important things you will learn
@@ -159,7 +175,8 @@ Can I Write A Program Now?
 ==========================
 
 * If you have gone through :doc:`get set up for CSCI 161 </getting-set/getting-set>`, then yes
-* Go to Google Colab and make your "Hello, world!" program 
+* Go to Google Colab and make your "Hello, world!" program
+
     * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language
 
 .. code-block:: python
