@@ -3,8 +3,11 @@ Input and Changing Types
 ************************
 
 * We know how to get information *out* of the program
+
     * ``print``
+
 * And there is a similarly simple way to get information *into* the program
+
     * ``input``
 
 
@@ -18,6 +21,7 @@ Input and Changing Types
 * Once the user enters the value, it will be stored in the ``my_inputted_value`` variable
 
 * The string between the parentheses is what will be displayed to the user, but it is entirely optional
+
     * ``my_inputted_value = input()``
     * If you do leave it blank, nothing will be displayed to the user (this is what we will want when using Kattis)
 
@@ -26,6 +30,7 @@ Input and Changing Types
     #. Read in some value into the computer.
     #. Print out the value you inputted.
     #. What is the type of the value? How can I test this?
+
         * **Hint:** ``type``
 
 
@@ -33,6 +38,7 @@ The Type Of The Inputted Value
 ==============================
 
 * Whenever data is input like this, Python will always assume the data is a string
+
     * If you enter ``Hello world``, the value of ``my_inputted_value`` would be the string ``"Hello world"``
     * If you enter ``1``, the value of ``my_inputted_value`` would be the string ``"1"``
 
@@ -51,6 +57,7 @@ The Type Of The Inputted Value
 * After everything, the value of ``my_value_as_int`` will be the integer ``1``
 
 * Note that writing ``my_value_as_int = int(input("give me a value: "))`` would achieve the same thing, but on one line of code
+
     * Removing the middleman (``my_value_as_string``)
 
 
@@ -67,6 +74,7 @@ Changing Types
 * However, this assumes that the value whose type is being changed can actually be changed to that type
 * Python is happy to change the type of the integer ``1`` to a float or a string
 * But if I try to change the type of ``"Hello world"`` to an integer, that's going to be a problem
+
     * ``int("Hello world")`` will cause an error
     * Python will even say ``ValueError: invalid literal for int() with base 10: 'Hello world'``
 

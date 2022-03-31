@@ -12,8 +12,11 @@ Statements
 * A **statement** is an instruction for Python to *do something*
 * If you type a series of statements and press run, Python does what you asked (or at least tries to)
 * Some statements result in some immediate output
+
     * ``print("Hello world")``
+
 * Others will do some work behind the scenes
+
     * ``some_variable = 5``
 
 
@@ -21,7 +24,8 @@ Expressions
 ===========
 
 * An **expression** is, roughly, a statement that can be crunched down to a **value**
-* More precisely, an expression is a combination of:
+* More precisely, an expression is a combination of
+
     * literal values (e.g., ``5``, ``"Hello world"``)
     * variables (e.g., ``some_variable``)
     * operators (e.g., ``+``, ``*``)
@@ -34,6 +38,7 @@ Operators
 
 * We have been using these in our code already
 * **Operators** are symbols that tell Python to perform computations on expressions
+
     * example arithmetic operators --- ``+``, ``-``, ``*``, ``/``
 
 
@@ -50,6 +55,7 @@ Operators
 .. admonition:: Activity
 
     Now for a tougher one. Convert a temperature from Celsius to Fahrenheit.
+
         * `But I don't know how to convert Celsius to Fahrenheit!!!! <https://www.google.com/search?q=how+to+convert+celsius+to+fahrenheit>`_
 
     .. raw:: html
@@ -75,11 +81,14 @@ Large Series of Statements
 
 * So far we have been writing programs that are about one line long
 * There is nothing stopping us from writing large programs with many lines of code
+
     * Saved in Colab or some other file
+
 * We often call these Python programs **scripts**
 * Python will run each line of the program, one line at a time, in the order that they exist
 
 * Technically you can write your script in any text editor, but there are editors/environments designed for programming languages
+
     * Colab (use through the internet)
     * Notepad++ (Windows)
     * Sublime (Windows and Mac)

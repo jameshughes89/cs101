@@ -21,6 +21,7 @@ What Is A Program/Algorithm?
 
 
 * There, that's an algorithm
+
     * It is a series of instructions that can be followed to achieve something
 
 * What kind of computer was executing this program?
@@ -30,12 +31,14 @@ What Is debugging?
 ==================
 
 * Most of the time your code will be wrong
+
     * This is true for both new and experienced programmers
 
 * Debugging is the process of addressing the bugs in your code
 * Realistically, expect to debug a lot
 
 * Remember, you will be wrong every time you run your program before you get it right
+
     * The point is, you will be wrong a lot more than you will be right --- get used to this
 
 
@@ -97,14 +100,17 @@ Values And Types
 ================
 
 * Values are things that a program manipulates
+
     * *Strings*: ``"abcdefg"``, ``"Hello World"``
     * *Integers*: ``7``, ``42``, ``97``
     * *Floating-point numbers*: ``3.792``, ``0.000000000005``
 
 * These values are called **literals**
+
     * Like, ``1`` is *literally* ``1``
 
 * Notice how I described the **type** of each value along with the value itself
+
     * Strings
     * Integers
     * Float
@@ -113,20 +119,24 @@ Values And Types
 
 * Some of the errors you will make will be a result from mixing types incorrectly
 * Some languages (e.g., C, Java) are strict about types
+
     * You have to be totally explicit about them
 
 * Python is a little more relaxed
+
     * Python will guess what the type is
     * Upside: less to worry about and less clutter in your code
     * Downside: more likely to introduce errors caused by mixing types
 
 * You can check the type of something in Python by using the ``type`` function
+
     * ``print(type(12))`` would print out ``<class 'int'>``
     * ``print(type("Hello, World"))`` would print out ``<class 'str'>``
     * ``print(type(3.75))`` would print out ``<class 'float'>``
     * ``print(type(type(1.1)))`` would print out ``<class 'type'>``
 
 * Notice that we are using two functions in the above examples
+
     * ``print``
     * ``type``
 
@@ -152,6 +162,7 @@ Variables
 
 * In the above example, the variable ``a`` now has the value ``5``
 * Both the *variable* ``a`` and the literal ``5`` both have the same value
+
     * If I say ``print(5)``, Python will print out the literal ``5``
     * If I say ``print(a)``, Python will print out the value stored in the variable ``a``, which is ``5``
 
@@ -179,6 +190,7 @@ Using Variables
     print(a + b)
 
 * Both ``print``s will print out ``11``
+
     * The first one adds the literals ``5`` and ``6``
     * The second one adds the variables ``a`` and ``b``
 
@@ -196,20 +208,26 @@ Naming Variables
 ----------------
 
 * You can use whatever you want within a few restrictions set by the language
+
     * Python wants variable names that begin with a letter of the alphabet and limits what non-alphanumeric characters you can use
 
 * A good choice is a variable name that is descriptive of what the variable is meant to contain
+
     * good: ``density``
     * less good: ``d``
     * bad: ``definitely_not_density``
 
 * There are a few other important restrictions that you may come across
+
     * For example, you cannot use reserved words (words that already have a specific meaning in Python)
+
         * ``def = 55`` will not work since ``def`` is a reserved word
 
 * Two important conventions we will follow
+
     * Use lowercase letters
     * Separate words in the variable name with underscores (snake case)
+
         * ``some_bill``
 
 
@@ -227,6 +245,7 @@ Constants
 
 
 * This is clearly correct, however
+
     * What if someone else looks at this code and wonders what 1.15 is?
     * What if the gov changes the sales tax in the future?
 
@@ -246,9 +265,11 @@ Constants
 * The naming convention for constants is all uppercase letters separate with underscores
 
 * The idea behind the constants are that once the value is set by you, they are not to change
+
     * You can change them in the code, but the code should not alter the value of ``SALES_TAX``
 
 * In Python, there is nothing stopping you from changing the value other than the convention
+
     * In some languages, the language actually prevents the program from altering the value of a constant
 
 
