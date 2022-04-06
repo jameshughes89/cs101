@@ -393,27 +393,39 @@ Composition
 .. admonition:: Activity
 
     Figure out the value of ``no_stuff(no_stuff(2, 2), (no_stuff(2, 2) + no_stuff(4, 4)) )`` using only *pen and paper*. No computers!
-	
-Variable scope
+
+
+Variable Scope
 ==============
-* If you set a variable inside a function, it is *local* to that function.
-* No other function can see a function's local variables. They are *local*. Consider this code::
 
-    def do_more(a, b):
-        c = 2*a + b
-        return c
+* You may have already noticed that variables you create within a function are not accessible outside the function
+* These variables within the function are *local* to that function
+* Nothing can access a function's local variables
+
+.. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius):
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
+
+* With the ``celsius_to_fahrenheit`` function, the variables ``temp_in_celsius``, ``partial_conversion``, and ``temp_in_fahrenheit`` are local
+* If I were to call the function and then later try to access the ``partial_conversion`` variable, I would have a problem
+
+.. code-block:: python
+    :linenos:
+
+    print(celsius_to_fahrenheit(28))
+    print(temp_in_fahrenheit)
 
 
-* What happens if I do this:
-    >>> print do_more(4, 4)
-    12
+* Trying to run the above code would result in the error  ``NameError: name 'temp_in_fahrenheit' is not defined``
 
-    >>> print(c)
-    NameError: name 'c' is not defined
-	
-* Error! But ``c`` is defined in ``do_more``! Why did we get an error?
-* Moral of the story: variables have *scope*. This can actually be a surprisingly delicate concept and we'll come back to it later.	
-	
+* Long story short, variables have *scope*
+* You will probably encounter errors caused by this
+* Scope is an important concept that you will fortunately pick up quickly as you practice
+
 
 Import
 ======
