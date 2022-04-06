@@ -415,11 +415,34 @@ Variable scope
 * Moral of the story: variables have *scope*. This can actually be a surprisingly delicate concept and we'll come back to it later.	
 	
 
-Import --- MORE
-===============
-* Can also import other people's functions
-* 	>>> import math
-* 	>>> import numpy	
+Import
+======
+
+* Sometimes you need to access complex functions that already exist out there and you don't want to write
+* For example, you may have already found that you wanted to make use of the square root (``sqrt``) function
+* Fortunately the ``sqrt`` function exists in Python
+* Unfortunately, you don't get it by default when you start up Python
+* Fortunately, there is a rather simple way to access the function
+* We ``import`` the math module, which is where the function is stored
+
+    * `Within the math module is many common mathematical functions you may want to use <<https://docs.python.org/3/library/math.html>`_
+    * The ``math`` module is just one of many we can import
+    * `Here is a link to Python's "Standard Library" <https://docs.python.org/3/library/>`_ 
+
+.. code-block:: python
+    :linenos:
+
+    import math
+
+    root_of_two = math.sqrt(2)
+
+* In the above example, the math module is imported
+* We then access the ``sqrt`` function by prefacing it with the module name ``math``
+
+    * ``math.sqrt``
+
+* You can think of it as, *from the math module, call the square root function*
+
 
 
 Comments
