@@ -1,6 +1,6 @@
-*****************
-Testing and Hints
-*****************
+********************************
+Testing Your Code and Type Hints
+********************************
 
 	
 For Next Class
