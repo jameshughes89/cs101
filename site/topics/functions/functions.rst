@@ -354,7 +354,7 @@ Format of a Function
 
     .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cMTPTq7xpOA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMTPTq7xpOA" frameborder="0" allowfullscreen></iframe>
    
    
 .. admonition:: Activity
@@ -368,7 +368,7 @@ Format of a Function
 
     .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe>
 	
 
 Composition
