@@ -427,7 +427,7 @@ Import
 
     * `Within the math module is many common mathematical functions you may want to use <<https://docs.python.org/3/library/math.html>`_
     * The ``math`` module is just one of many we can import
-    * `Here is a link to Python's "Standard Library" <https://docs.python.org/3/library/>`_ 
+    * `Here is a link to Python's "Standard Library" <https://docs.python.org/3/library/>`_
 
 .. code-block:: python
     :linenos:
@@ -435,6 +435,7 @@ Import
     import math
 
     root_of_two = math.sqrt(2)
+    print(root_of_two)
 
 * In the above example, the math module is imported
 * We then access the ``sqrt`` function by prefacing it with the module name ``math``
