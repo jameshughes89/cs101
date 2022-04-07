@@ -1,9 +1,18 @@
 import unittest
 
-from src.functions_topic import concatenate_strings, criss_cross_concatenation
+from src.functions_topic import concatenate_strings, criss_cross_concatenation, celsius_to_fahrenheit
 
 
 class TestFunctionsTopic(unittest.TestCase):
+    def test_celsius_to_fahrenheit_positive_celsius_values_returns_correct_fahrenheit_value(self):
+        self.assertEqual(104, celsius_to_fahrenheit(40))
+
+    def test_celsius_to_fahrenheit_negative_celsius_values_returns_correct_fahrenheit_value(self):
+        self.assertEqual(-40, celsius_to_fahrenheit(-40))
+
+    def test_celsius_to_fahrenheit_float_celsius_values_returns_correct_fahrenheit_value(self):
+        self.assertAlmostEqual(89.96, celsius_to_fahrenheit(32.2), 3)
+
     def test_concatenate_strings_empty_strings_returns_empty_string(self):
         self.assertEqual("", concatenate_strings("", ""))
 
