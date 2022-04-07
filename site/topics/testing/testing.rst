@@ -51,6 +51,35 @@ Writing Tests
     assert 0 == abs(0)
 
 * If we run the above example, we should expect the program to produce no output since the assertions were all correct
+* For the sake of demonstrating what would happen if an assertion failed, we will write a broken absolute value function
+
+.. code-block:: python
+    :linenos:
+
+    # Broken
+    def broken_abs(x):
+        return x
+
+    assert 5 == broken_abs(5)
+    assert 5 == broken_abs(-5)
+    assert 0 == broken_abs(0)
+
+
+* The above ``broken_abs`` is clearly not correct as it just returns whatever ``x`` is, regardless of the sign
+
+    * But let's assume that we *think* it is correct
+
+* If we run this code, we would see an error message like this
+
+.. code-block:: python
+    :linenos:
+
+        assert 5 == broken_abs(-5)
+    AssertionError
+
+* This is Python telling us that the assertion failed
+* More precisely, it failed on the input of ``-5``
+* This now tells me that the function is not correct, and under which condition it is not correct
 
 
 Square of Sums Example Tests
