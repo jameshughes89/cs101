@@ -39,6 +39,19 @@ Writing Tests
 
 * Checking zero is perhaps not necessary, but it is somewhat of a peculiar case since zero doesn't have a sign
 
+* To do these tests, we could just call the function and check the output ourselves
+* But we want to automate this process a little
+* Instead, we will make use of assertions
+
+.. code-block:: python
+    :linenos:
+
+    assert 5 == abs(5)
+    assert 5 == abs(-5)
+    assert 0 == abs(0)
+
+* If we run the above example, we should expect the program to produce no output since the assertions were all correct
+
 
 Square of Sums Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
