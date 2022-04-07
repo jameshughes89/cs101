@@ -1,6 +1,11 @@
 import unittest
 
-from src.functions_topic import concatenate_strings, criss_cross_concatenation, celsius_to_fahrenheit, square_of_sum
+from src.functions_topic import (
+    celsius_to_fahrenheit,
+    concatenate_strings,
+    criss_cross_concatenation,
+    square_of_sum,
+)
 
 
 class TestFunctionsTopic(unittest.TestCase):
