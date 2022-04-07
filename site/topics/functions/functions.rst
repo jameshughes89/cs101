@@ -381,14 +381,14 @@ Composition
 * Since functions often return a useful value, we can nest function calls in statements
 
     * ``square_of_sum(2, 2) + square_of_sum(3, 3)``
-    * ``8 + 18``
-    * ``26``
+    * ``16 + 81``
+    * ``97``
 
 * Similarly, we can nest function calls as parameters to other functions
 
     * ``square_of_sum(square_of_sum(2, 2), square_of_sum(3, 3))``
-    * ``square_of_sum(8, 18)``
-    * ``388``
+    * ``square_of_sum(16, 81)``
+    * ``9409``
 
 * It is a good exercise to work these out by hand to help with your understanding
 * If you get confused tracking what is happening in the above example
@@ -401,7 +401,7 @@ Composition
 
 .. admonition:: Activity
 
-    Figure out the value of ``square_of_sum(square_of_sum(2, 2), (square_of_sum(2, 2) + square_of_sum(4, 4)))`` using
+    Figure out the value of ``square_of_sum(square_of_sum(1, 1), (square_of_sum(1, 1) + square_of_sum(0, 1)))`` using
     only pencil and paper --- no computers!
 
 
