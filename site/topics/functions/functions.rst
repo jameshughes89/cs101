@@ -407,30 +407,87 @@ Composition
 
 Variable scope
 ==============
-* If you set a variable inside a function, it is *local* to that function.
-* No other function can see a function's local variables. They are *local*. Consider this code::
 
-    def do_more(a, b):
-        c = 2*a + b
-        return c
+* You may have already noticed that variables you create within a function are not accessible outside the function
+* These variables within the function are *local* to that function
+* Nothing can access a function's local variables
+
+.. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius):
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
+
+* With the ``celsius_to_fahrenheit`` function, the variables ``temp_in_celsius``, ``partial_conversion``, and ``temp_in_fahrenheit`` are local
+* If I were to call the function and then later try to access the ``partial_conversion`` variable, I would have a problem
+
+.. code-block:: python
+    :linenos:
+
+    print(celsius_to_fahrenheit(28))
+    print(temp_in_fahrenheit)
 
 
-* What happens if I do this:
-    >>> print do_more(4, 4)
-    12
+* Trying to run the above code would result in the error  ``NameError: name 'temp_in_fahrenheit' is not defined``
 
-    >>> print(c)
-    NameError: name 'c' is not defined
-	
-* Error! But ``c`` is defined in ``do_more``! Why did we get an error?
-* Moral of the story: variables have *scope*. This can actually be a surprisingly delicate concept and we'll come back to it later.	
-	
+* Where this can get tricky is when you have two variables with the same name, but in different scope
 
-Import --- MORE
-===============
-* Can also import other people's functions
-* 	>>> import math
-* 	>>> import numpy	
+.. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius):
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
+
+    temp_in_fahrenheit = "Hello, world!"
+    print(celsius_to_fahrenheit(28))
+    print(temp_in_fahrenheit)
+
+
+* In the above example, ``print(temp_in_fahrenheit)`` prints out ``Hello, world!``
+* Although variables with the name ``temp_in_fahrenheit`` exists within the function ``celsius_to_fahrenheit`` and outside the function, they are actually *different* variables
+
+    * The variable ``temp_in_fahrenheit`` outside the function has no knowledge of the one inside the function
+    * The variable ``temp_in_fahrenheit`` inside the function has no knowledge of the one outside the function
+
+.. Note::
+
+    There is a way to set a variable to have *global* scope, which allows the variable to be accessed everywhere. This,
+    however is generally bad practice and something we will not do.
+
+
+Import
+------
+
+* Scope does not only apply to variables
+* Sometimes you need to access complex functions that already exist out there and you don't want to write
+* For example, you may have already found that you wanted to make use of the square root (``sqrt``) function
+* Fortunately the ``sqrt`` function exists in Python
+* Unfortunately, you don't get it by default when you start up Python as it is not in scope
+* Fortunately, in spite of this, there is a rather simple way to access the function
+* We ``import`` the math module, which is where the function is stored
+
+    * `Within the math module is many common mathematical functions you may want to use <<https://docs.python.org/3/library/math.html>`_
+    * The ``math`` module is just one of many we can import
+    * `Here is a link to Python's "Standard Library" <https://docs.python.org/3/library/>`_
+
+.. code-block:: python
+    :linenos:
+
+    import math
+
+    root_of_two = math.sqrt(2)
+    print(root_of_two)
+
+* In the above example, the math module is imported
+* We then access the ``sqrt`` function by prefacing it with the module name ``math``
+
+    * ``math.sqrt``
+
+* You can think of it as, *from the math module, call the square root function*
 
 
 Comments
@@ -495,9 +552,9 @@ Docstring
     * `And when that time comes, I want you to remember that I warned you <https://i.redd.it/b9e4xbeg40151.jpg>`_
 
 
-  .. raw:: html
+    .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/eD1iff-zLLo" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eD1iff-zLLo" frameborder="0" allowfullscreen></iframe>
 
 	
 For Next Class
