@@ -450,7 +450,7 @@ Variable Scope
 
 
 Import
-======
+------
 
 * Sometimes you need to access complex functions that already exist out there and you don't want to write
 * For example, you may have already found that you wanted to make use of the square root (``sqrt``) function
