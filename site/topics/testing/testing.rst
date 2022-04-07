@@ -25,6 +25,20 @@ Testing
 Writing Tests
 -------------
 
+* For simplicity, we will keep our testing strategy to assertions about the data
+* Let's say we want to test the absolute value function ``abs``
+
+    * This function is provided to you by Python, so there is no actual need to test it here
+    * It is just being used for demonstration purposes
+
+* If we are to consider how we could test the ``abs`` function, I would want to make sure that the function output (returns) matches what it should be based on the input (parameters)
+* There is not too much to check with ``abs``
+    * Check that the absolute value of a positive number is itself
+    * Check that the absolute value of a negative number is the positive version of itself
+    * Check that the absolute value of zero is zero
+
+* Checking zero is perhaps not necessary, but it is somewhat of a peculiar case since zero doesn't have a sign
+
 
 Square of Sums Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
