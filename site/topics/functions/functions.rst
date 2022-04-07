@@ -354,7 +354,7 @@ Format of a Function
 
     .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cMTPTq7xpOA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cMTPTq7xpOA" frameborder="0" allowfullscreen></iframe>
    
    
 .. admonition:: Activity
@@ -368,34 +368,44 @@ Format of a Function
 
     .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe>
 	
 
 Composition
 ===========
 
-* Python functions can be *composed* just like mathematical functions.
-* We've already seen ``print`` composed with ``do_stuff``
-* We can nest functions, too:
-    >>> do_stuff(do_stuff(2, 2), do_stuff(2, 2))
-    72
-* If you get confused tracing nested functions, just remember:
-    * Functions get *evaluted* and turned into values
-    * Find a function you can evaluate
-    * Evaluate it
-    * Cross out the function and replace it with the *value* it returns
-    * Keep doing this until you're down to one value.
+* We can compose functions of other functions
+
+    * Like in the ``criss_cross_concatenation`` function that makes use of ``concatenate_strings``
+
+* Since functions often return a useful value, we can nest function calls in statements
+
+    * ``square_of_sum(2, 2) + square_of_sum(3, 3)``
+    * ``8 + 18``
+    * ``26``
+
+* Similarly, we can nest function calls as parameters to other functions
+
+    * ``square_of_sum(square_of_sum(2, 2), square_of_sum(3, 3))``
+    * ``square_of_sum(8, 18)``
+    * ``388``
+
+* It is a good exercise to work these out by hand to help with your understanding
+* If you get confused tracking what is happening in the above example
+
+    #. Slow down; there is one trick --- follow the code
+    #. Functions get *evaluated*  and turned into values
+    #. Find a function you can evaluate and evaluate it
+    #. Cross out the function and replace it with the returned value
+    #. Keep going
 
 .. admonition:: Activity
 
-    Figure out the value of ``do_stuff(do_stuff(2, 2), (do_stuff(2, 2) + do_stuff(4, 4)) )`` using only *pen and paper*. No computers!
-
-.. admonition:: Activity
-
-    Figure out the value of ``no_stuff(no_stuff(2, 2), (no_stuff(2, 2) + no_stuff(4, 4)) )`` using only *pen and paper*. No computers!
+    Figure out the value of ``square_of_sum(square_of_sum(2, 2), (square_of_sum(2, 2) + square_of_sum(4, 4)))`` using
+    only pencil and paper --- no computers!
 
 
-Variable Scope
+Variable scope
 ==============
 
 * You may have already noticed that variables you create within a function are not accessible outside the function
