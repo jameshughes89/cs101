@@ -22,6 +22,23 @@ Testing
     * If there are any *edge cases*
 
 
+Writing Tests
+-------------
+
+
+Square of Sums Example Tests
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Celsius to Fahrenheit Example Tests
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Automated Testing
+-----------------
+
+
+
 
 	
 For Next Class
