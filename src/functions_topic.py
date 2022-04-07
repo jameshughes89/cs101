@@ -34,7 +34,7 @@ def square_of_sum(a, b):
     return d
 
 
-# Tests for square_of_sum
+# Tests for square_of_sum function
 assert 0 == square_of_sum(0, 0)
 assert 0 == square_of_sum(1, -1)
 assert 4 == square_of_sum(1, 1)
@@ -59,7 +59,7 @@ def concatenate_strings(string1: str, string2: str) -> str:
     return concatenated
 
 
-# Tests for the concatenate_strings method
+# Tests for the concatenate_strings function
 assert "" == concatenate_strings("", "")
 assert "ab" == concatenate_strings("a", "b")
 
@@ -83,6 +83,6 @@ def criss_cross_concatenation(string1: str, string2: str, string3: str, string4:
     return first_third_second_fourth
 
 
-# Tests for the criss_cross_concatenation method
+# Tests for the criss_cross_concatenation function
 assert "" == criss_cross_concatenation("", "", "", "")
 assert "acbd" == criss_cross_concatenation("a", "b", "c", "d")
