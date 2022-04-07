@@ -422,9 +422,31 @@ Variable Scope
 
 * Trying to run the above code would result in the error  ``NameError: name 'temp_in_fahrenheit' is not defined``
 
-* Long story short, variables have *scope*
-* You will probably encounter errors caused by this
-* Scope is an important concept that you will fortunately pick up quickly as you practice
+* Where this can get tricky is when you have two variables with the same name, but in different scope
+
+.. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius):
+        partial_conversion = temp_in_celsius * 9/5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
+
+    temp_in_fahrenheit = "Hello, world!"
+    print(celsius_to_fahrenheit(28))
+    print(temp_in_fahrenheit)
+
+
+* In the above example, ``print(temp_in_fahrenheit)`` prints out ``Hello, world!``
+* Although variables with the name ``temp_in_fahrenheit`` exists within the function ``celsius_to_fahrenheit`` and outside the function, they are actually *different* variables
+
+    * The variable ``temp_in_fahrenheit`` outside the function has no knowledge of the one inside the function
+    * The variable ``temp_in_fahrenheit`` inside the function has no knowledge of the one outside the function
+
+.. Note::
+
+    There is a way to set a variable to have *global* scope, which allows the variable to be accessed everywhere. This,
+    however is generally bad practice and something we will not do.
 
 
 Import
