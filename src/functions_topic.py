@@ -1,3 +1,24 @@
+def celsius_to_fahrenheit(temp_in_celsius):
+    """
+    Convert a temperature from Celsius units to Fahrenheit units.
+
+    :param temp_in_celsius: The temperature in Celsius to be converted.
+    :return: The temperature in Fahrenheit.
+    """
+    partial_conversion = temp_in_celsius * 9 / 5
+    temp_in_fahrenheit = partial_conversion + 32
+    return temp_in_fahrenheit
+
+
+# Tests for celsius_to_fahrenheit function
+assert 32 == celsius_to_fahrenheit(0)
+assert -40 == celsius_to_fahrenheit(-40)
+assert 86 == celsius_to_fahrenheit(30)
+assert 89.6 == celsius_to_fahrenheit(32)
+# To address precision issues, we can look for a sufficiently small difference between the expected and actual
+assert 0.001 > abs(celsius_to_fahrenheit(37.7777) - 100)
+
+
 def concatenate_strings(string1: str, string2: str) -> str:
     """
     Returns the concatenation of two strings.
