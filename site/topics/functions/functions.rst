@@ -540,7 +540,12 @@ Docstring
 * The stuff between the ``"""`` is the docstring and should appear immediately after the ``def`` line
 * It explains what the function does in plane English
 * It explains what each parameter is
+
+    * Mind the use of ``:``\s
+
 * If the function ``return``\s something, then explain that too
+
+    * Mind the use of ``:``\s here too
 
 * This may feel like a lot of work, especially with such a simple function in the above example
 * But having these describing the functions makes it easier for anyone looking at your code
