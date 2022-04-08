@@ -1,9 +1,10 @@
-def celsius_to_fahrenheit(temp_in_celsius):
+def celsius_to_fahrenheit(temp_in_celsius: float) -> float:
     """
     Convert a temperature from Celsius units to Fahrenheit units.
 
-    :param temp_in_celsius: The temperature in Celsius to be converted.
-    :return: The temperature in Fahrenheit.
+    @rtype: float
+    @param temp_in_celsius: The temperature in Celsius to be converted.
+    @return: The temperature in Fahrenheit.
     """
     partial_conversion = temp_in_celsius * 9 / 5
     temp_in_fahrenheit = partial_conversion + 32
@@ -19,12 +20,13 @@ assert 89.6 == celsius_to_fahrenheit(32)
 assert 0.001 > abs(celsius_to_fahrenheit(37.7777) - 100)
 
 
-def square_of_sum(a, b):
+def square_of_sum(a: float, b: float) -> float:
     """
     Calculate the square of the sum of the two provided numbers.
     E.g.
         square_if_sum(2, 3) -> 25
 
+    @rtype: float
     @param a: First number
     @param b: Second number
     @return: The square of the sum of a and b
