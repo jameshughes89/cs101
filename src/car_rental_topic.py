@@ -13,4 +13,5 @@ def total_kms(odometer_start, odometer_finish):
 
 assert 0 == total_kms(0, 0)
 assert 100 == total_kms(0, 100)
+assert -100 == total_kms(100, 0)
 assert 100.5 == total_kms(100.5, 201)
