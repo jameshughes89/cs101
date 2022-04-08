@@ -60,3 +60,53 @@ assert 0 == num_kms_above_average(100)
 assert 1 == num_kms_above_average(101)
 assert 0 == num_kms_above_average(99)
 assert 100 == num_kms_above_average(200)
+
+
+def calculate_total_charge(num_days: float, age: float, rental_code: str, odometer_start: float,
+                           odometer_finish: float) -> float:
+    """
+    Calculate how much the renter needs to be charged based on the classification,
+    the number of kms travelled and the age of the driver.
+
+    @rtype: float
+    @param num_days: Number of days the car was rented.
+    @param age: Age of the driver.
+    @param rental_code: The classification code (B ord D).
+    @param odometer_start: Odometer when the renter took the car.
+    @param odometer_finish: Odometer when the renter returned the car.
+    @return: The amount to charge the renter.
+    """
+    # Set up a variable for our total charge
+    total_charge = 0
+
+    # Calculate the number of kilometres traveled.
+    total_kms_traveled = total_kms(odometer_start, odometer_finish)
+
+    # Calculate the average number of kilometers travelled per day
+    average_kms = average_kms_per_day(num_days, total_kms_traveled)
+
+    if rental_code == "B":
+        total_charge = 20.00 * num_days + 0.30 * total_kms_traveled
+    else:
+        total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(average_kms)
+
+    # if they're under 25, add additional charge
+    if age < 25:
+        total_charge += (10 * num_days)
+
+    # Return the final total charge
+    return total_charge
+
+
+assert 20 == calculate_total_charge(1, 30, "B", 0, 0)
+assert 50 == calculate_total_charge(1, 30, "D", 0, 0)
+assert 30 == calculate_total_charge(1, 20, "B", 0, 0)
+assert 60 == calculate_total_charge(1, 20, "D", 0, 0)
+assert 50 == calculate_total_charge(1, 30, "B", 0, 100)
+assert 50 == calculate_total_charge(1, 30, "D", 0, 100)
+assert 60 == calculate_total_charge(1, 20, "B", 0, 100)
+assert 60 == calculate_total_charge(1, 20, "D", 0, 100)
+assert 190 == calculate_total_charge(2, 30, "B", 0, 500)
+assert 145 == calculate_total_charge(2, 30, "D", 0, 500)
+assert 210 == calculate_total_charge(2, 20, "B", 0, 500)
+assert 165 == calculate_total_charge(2, 20, "D", 0, 500)
