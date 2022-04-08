@@ -1,4 +1,4 @@
-def total_kms(odometer_start, odometer_finish):
+def total_kms(odometer_start: float, odometer_finish: float) -> float:
     """
     This function calculates the total number of kilometers driven based
     on starting and ending odometer readings.
@@ -17,7 +17,7 @@ assert -100 == total_kms(100, 0)
 assert 100.5 == total_kms(100.5, 201)
 
 
-def average_kms_per_day(num_days, num_kms):
+def average_kms_per_day(num_days: float, num_kms: float) -> float:
     """
     Calculate the average number of kilometers driven per day
     over the rental period
