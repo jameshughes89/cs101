@@ -529,8 +529,8 @@ Docstring
         """
         Convert a temperature from Celsius units to Fahrenheit units.
 
-        :param temp_in_celsius: The temperature in Celsius to be converted.
-        :return: The temperature in Fahrenheit.
+        @param temp_in_celsius: The temperature in Celsius to be converted.
+        @return: The temperature in Fahrenheit.
         """
         partial_conversion = temp_in_celsius * 9/5
         temp_in_fahrenheit = partial_conversion + 32
