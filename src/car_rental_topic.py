@@ -3,6 +3,7 @@ def total_kms(odometer_start: float, odometer_finish: float) -> float:
     This function calculates the total number of kilometers driven based
     on starting and ending odometer readings.
 
+    @rtype: float
     @param odometer_start: The number of kms the car had before renting
     @param odometer_finish: The number of kms the car had after rending
     @return: The total kms driven
@@ -22,6 +23,7 @@ def average_kms_per_day(num_days: float, num_kms: float) -> float:
     Calculate the average number of kilometers driven per day
     over the rental period
 
+    @rtype: float
     @param num_days: The total number of days the car was rented
     @param num_kms: The total number of kilometers driven during the rental period
     @return: The average number of kilometers driven per day
@@ -41,6 +43,7 @@ def num_kms_above_average(avg_num_kms: float) -> float:
     Calculates the number of kms the renter went over of their daily allowance.
     We will use the customer's average daily kms.
 
+    @rtype: float
     @param avg_num_kms: average number of kms driven per day
     @return: The number of kms over 100 they went (return 0 if it's less than 100)
     """
