@@ -1,6 +1,11 @@
 import unittest
 
-from car_rental_topic import total_kms, average_kms_per_day, num_kms_above_average, calculate_total_charge
+from car_rental_topic import (
+    average_kms_per_day,
+    calculate_total_charge,
+    num_kms_above_average,
+    total_kms,
+)
 
 
 class TestFunctionsTopic(unittest.TestCase):

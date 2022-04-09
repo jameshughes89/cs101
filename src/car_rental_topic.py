@@ -62,8 +62,9 @@ assert 0 == num_kms_above_average(99)
 assert 100 == num_kms_above_average(200)
 
 
-def calculate_total_charge(num_days: float, age: float, rental_code: str, odometer_start: float,
-                           odometer_finish: float) -> float:
+def calculate_total_charge(
+    num_days: float, age: float, rental_code: str, odometer_start: float, odometer_finish: float
+) -> float:
     """
     Calculate how much the renter needs to be charged based on the classification,
     the number of kms travelled and the age of the driver.
@@ -92,7 +93,7 @@ def calculate_total_charge(num_days: float, age: float, rental_code: str, odomet
 
     # if they're under 25, add additional charge
     if age < 25:
-        total_charge += (10 * num_days)
+        total_charge += 10 * num_days
 
     # Return the final total charge
     return total_charge
