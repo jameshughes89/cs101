@@ -1,6 +1,6 @@
 import unittest
 
-from car_rental_topic import total_kms, average_kms_per_day, num_kms_above_average
+from car_rental_topic import total_kms, average_kms_per_day, num_kms_above_average, calculate_total_charge
 
 
 class TestFunctionsTopic(unittest.TestCase):
@@ -25,5 +25,26 @@ class TestFunctionsTopic(unittest.TestCase):
     def test_num_kms_above_average_50_avg_returns_0(self):
         self.assertEqual(0, num_kms_above_average(50))
 
+    def test_calculate_total_charge_code_B_1_day_0_kms_over_25_returns_20(self):
+        self.assertEqual(20, calculate_total_charge(1, 30, "B", 0, 0))
 
-num_kms_above_average
+    def test_calculate_total_charge_code_B_1_day_0_kms_under_25_returns_30(self):
+        self.assertEqual(30, calculate_total_charge(1, 20, "B", 0, 0))
+
+    def test_calculate_total_charge_code_B_arbitrary_over_25_returns_correct_result(self):
+        self.assertEqual(190, calculate_total_charge(2, 30, "B", 500, 1000))
+
+    def test_calculate_total_charge_code_B_arbitrary_under_25_returns_correct_result(self):
+        self.assertEqual(210, calculate_total_charge(2, 20, "B", 500, 1000))
+
+    def test_calculate_total_charge_code_D_1_day_0_kms_over_25_returns_20(self):
+        self.assertEqual(50, calculate_total_charge(1, 30, "D", 0, 0))
+
+    def test_calculate_total_charge_code_D_1_day_0_kms_under_25_returns_30(self):
+        self.assertEqual(60, calculate_total_charge(1, 20, "D", 0, 0))
+
+    def test_calculate_total_charge_code_D_arbitrary_over_25_returns_correct_result(self):
+        self.assertEqual(145, calculate_total_charge(2, 30, "D", 500, 1000))
+
+    def test_calculate_total_charge_code_D_arbitrary_under_25_returns_correct_result(self):
+        self.assertEqual(165, calculate_total_charge(2, 20, "D", 500, 1000))
