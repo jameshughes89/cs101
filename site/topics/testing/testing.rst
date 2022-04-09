@@ -30,7 +30,7 @@ Writing Tests
 
     * This function is provided to you by Python, so there is no actual need to test it here
 
-* If we are to consider how we could test the ``abs`` function, we want to check that the function output (returns) matches what it should be based on the input (parameters)
+* If we are to consider how we could test the ``abs`` function, we want to check that the function output (returns) matches what it should be based on the input (arguments)
 * There is not too much to check with ``abs``
 
     * Check that the absolute value of a positive number is itself
