@@ -26,25 +26,25 @@ class TestFunctionsTopic(unittest.TestCase):
         self.assertEqual(0, num_kms_above_average(50))
 
     def test_calculate_total_charge_code_B_1_day_0_kms_over_25_returns_20(self):
-        self.assertEqual(20, calculate_total_charge(1, 30, "B", 0, 0))
+        self.assertEqual(20, calculate_total_charge(1, 25, "B", 0, 0))
 
     def test_calculate_total_charge_code_B_1_day_0_kms_under_25_returns_30(self):
-        self.assertEqual(30, calculate_total_charge(1, 20, "B", 0, 0))
+        self.assertEqual(30, calculate_total_charge(1, 24, "B", 0, 0))
 
     def test_calculate_total_charge_code_B_arbitrary_over_25_returns_correct_result(self):
-        self.assertEqual(190, calculate_total_charge(2, 30, "B", 500, 1000))
+        self.assertEqual(190, calculate_total_charge(2, 25, "B", 500, 1000))
 
     def test_calculate_total_charge_code_B_arbitrary_under_25_returns_correct_result(self):
-        self.assertEqual(210, calculate_total_charge(2, 20, "B", 500, 1000))
+        self.assertEqual(210, calculate_total_charge(2, 24, "B", 500, 1000))
 
     def test_calculate_total_charge_code_D_1_day_0_kms_over_25_returns_20(self):
-        self.assertEqual(50, calculate_total_charge(1, 30, "D", 0, 0))
+        self.assertEqual(50, calculate_total_charge(1, 25, "D", 0, 0))
 
     def test_calculate_total_charge_code_D_1_day_0_kms_under_25_returns_30(self):
-        self.assertEqual(60, calculate_total_charge(1, 20, "D", 0, 0))
+        self.assertEqual(60, calculate_total_charge(1, 24, "D", 0, 0))
 
     def test_calculate_total_charge_code_D_arbitrary_over_25_returns_correct_result(self):
-        self.assertEqual(145, calculate_total_charge(2, 30, "D", 500, 1000))
+        self.assertEqual(145, calculate_total_charge(2, 25, "D", 500, 1000))
 
     def test_calculate_total_charge_code_D_arbitrary_under_25_returns_correct_result(self):
-        self.assertEqual(165, calculate_total_charge(2, 20, "D", 500, 1000))
+        self.assertEqual(165, calculate_total_charge(2, 24, "D", 500, 1000))
