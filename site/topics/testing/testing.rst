@@ -78,6 +78,32 @@ Writing Tests
 Square of Sums Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+ .. code-block:: python
+    :linenos:
+
+    def square_of_sum(a, b):
+        """
+        Calculate the square of the sum of the two provided numbers.
+        E.g.
+            square_if_sum(2, 3) -> 25
+
+        :param a: First number
+        :param b: Second number
+        :return: The square of the sum of a and b
+        """
+        c = a + b
+        d = c * c
+        return d
+
+
+    # Tests for square_of_sum function
+    assert 0 == square_of_sum(0, 0)
+    assert 0 == square_of_sum(1, -1)
+    assert 100 == square_of_sum(5, 5)
+    assert 100 == square_of_sum(-5, -5)
+    # To address precision issues, we can look for a sufficiently small difference between the expected and actual
+    assert 0.001 > abs(square_of_sum(2.2, 2.2) - 19.36)
+
 
 Celsius to Fahrenheit Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
