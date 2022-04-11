@@ -144,6 +144,9 @@ Square of Sums Example Tests
     There would be no sense testing beyond a difference of ``0.001`` liters since you cannot get beyond that precision
     in real life with those instruments.
 
+    Long story short, it you want to check equality between floating point numbers --- don't. Simply check that their
+    difference is less than some threshold. 
+
 
 * The above tests do a good job at catching the different scenarios
 * But you may be wondering why I didn't test some other case like when the inputs are both positive, but different values
