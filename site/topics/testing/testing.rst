@@ -203,6 +203,17 @@ Celsius to Fahrenheit Example Tests
 
 * If you were writing tests for this function and ended up having a few more tests that are arguably unnecessary, that's OK
 
+.. note::
+
+    It needs to be re-emphasized how important testing is. Writing code is only a small part of programming, and if your
+    code isn't even correct, then you haven't solved the problem.
+
+    There is an argument for thinking about your tests *before* actually writing the function. This gets you to really
+    think about the problem to better prepare yourself for writing the code.
+
+    Further, if you find you have a function that is particularly difficult to write tests for, perhaps the function you
+    wrote is also too difficult to use? By thinking about testing first, you can hedge against this problem.
+
 
 Automated Testing
 -----------------
