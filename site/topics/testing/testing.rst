@@ -114,6 +114,23 @@ Square of Sums Example Tests
     * The input is all negative?
     * What happens when we have floating point numbers?
 
+* We look to capture the broad cases as it is not reasonable to test all possible inputs
+* Further, it's not necessary to test all possible cases
+
+    * If we test ``square_of_sum(5, 5)``, it's reasonable to assume that ``square_of_sum(6, 6)`` would also be fine
+
+* The above tests do a good job at catching the different scenarios
+* But you may be wondering why I didn't test some other case like when the inputs are both positive, but different values
+
+    * Something like ``square_of_sum(5, 6)``
+
+* Or why didn't we test when the first argument was negative and the second was positive
+
+    * ``square_of_sum(-1, 1)``
+
+* Including these tests is not unreasonable, so maybe they should have been included
+* If you had included these cases in your tests, and perhaps some others, you would not be wrong
+* Testing can feel a lot more like an art than a science
 
 
 Celsius to Fahrenheit Example Tests
