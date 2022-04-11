@@ -266,6 +266,36 @@ Type Hints
 Setting Type Hints
 ------------------
 
+* We can tell Python what the types *should* be when writing the functions
+* We can also tell Python what the return type *should* be too
+* We do this with *type hints*
+* Below is the ``add_together`` function with type hints included
+
+ .. code-block:: python
+    :linenos:
+    :emphasize-lines: 1,5
+
+    def add_together(a: float, b: float) -> float:
+      """
+      Calculate and return the sum of the two provided values.
+
+      :rtype: float
+      :param a: First number
+      :param b: Second number
+      :return: The sum of the two numbers
+      """
+      return a + b
+
+
+* In the parameter list, each parameter's type is explicitly stated
+* The return type of the function is also stated after the parameter list
+
+    * This part `` -> float:``
+
+* It is also good to include the return type in the docstring for the function
+
+    * ``:rtype: float``
+
 
 What You Get
 ------------
