@@ -230,6 +230,23 @@ Automated Testing
 
 * Regardless, at this stage these frameworks are overkill and the assertions we are using are more than sufficient
 
+
+Type Hints
+==========
+
+
+Setting Type Hints
+------------------
+
+
+What You Get
+------------
+
+
+What You Don't Get
+------------------
+
+
 	
 For Next Class
 ==============
