@@ -165,10 +165,70 @@ Square of Sums Example Tests
 Celsius to Fahrenheit Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+ .. code-block:: python
+    :linenos:
+
+    def celsius_to_fahrenheit(temp_in_celsius: float) -> float:
+        """
+        Convert a temperature from Celsius units to Fahrenheit units.
+
+        :rtype: float
+        :param temp_in_celsius: The temperature in Celsius to be converted.
+        :return: The temperature in Fahrenheit.
+        """
+        partial_conversion = temp_in_celsius * 9 / 5
+        temp_in_fahrenheit = partial_conversion + 32
+        return temp_in_fahrenheit
+
+
+    # Tests for celsius_to_fahrenheit function
+    assert 32 == celsius_to_fahrenheit(0)
+    assert -40 == celsius_to_fahrenheit(-40)
+    assert 23 == celsius_to_fahrenheit(-5)
+    assert 86 == celsius_to_fahrenheit(30)
+    assert 89.6 == celsius_to_fahrenheit(32)
+    # To address precision issues, we can look for a sufficiently small difference between the expected and actual
+    assert 0.001 > abs(celsius_to_fahrenheit(37.7777) - 100)
+
+
+* Above is a series of assertion tests for the ``celsius_to_fahrenheit`` function
+* Notice the key, broad tests
+
+    * Input of zero
+    * Input when Celsius and Fahrenheit are equal
+    * Negative input
+    * Positive input
+    * Input is a float
+    * Output is a float
+
+* If you were writing tests for this function and ended up having a few more tests that are arguably unnecessary, that's OK
+
+.. note::
+
+    It needs to be re-emphasized how important testing is. Writing code is only a small part of programming, and if your
+    code isn't even correct, then you haven't solved the problem.
+
+    There is an argument for thinking about your tests *before* actually writing the function. This gets you to really
+    think about the problem to better prepare yourself for writing the code.
+
+    Further, if you find you have a function that is particularly difficult to write tests for, perhaps the function you
+    wrote is also too difficult to use? By thinking about testing first, you can hedge against this problem.
+
 
 Automated Testing
 -----------------
 
+* Many programming languages have systems for automating tests with extra helpful functionality
+* In Python, there are two very popular modules to facilitate this
+
+    * ``unittest`` --- The standard Python testing framework
+    * ``pytest`` --- Another popular framework
+
+* These require quite a bit of programming knowledge to use effectively, so we will not cover them here
+
+    * But ``unittest`` will be discussed later in the course once the requisite knowledge has been covered
+
+* Regardless, at this stage these frameworks are overkill and the assertions we are using are more than sufficient
 
 
 Type Hints
@@ -185,6 +245,7 @@ What You Get
 
 What You Don't Get
 ------------------
+
 
 	
 For Next Class

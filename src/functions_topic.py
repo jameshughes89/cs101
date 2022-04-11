@@ -14,6 +14,7 @@ def celsius_to_fahrenheit(temp_in_celsius: float) -> float:
 # Tests for celsius_to_fahrenheit function
 assert 32 == celsius_to_fahrenheit(0)
 assert -40 == celsius_to_fahrenheit(-40)
+assert 23 == celsius_to_fahrenheit(-5)
 assert 86 == celsius_to_fahrenheit(30)
 assert 89.6 == celsius_to_fahrenheit(32)
 # To address precision issues, we can look for a sufficiently small difference between the expected and actual
