@@ -119,6 +119,32 @@ Square of Sums Example Tests
 
     * If we test ``square_of_sum(5, 5)``, it's reasonable to assume that ``square_of_sum(6, 6)`` would also be fine
 
+
+.. note::
+
+    Notice how the last test looks a little different --- ``assert 0.001 > abs(square_of_sum(2.2, 2.2) - 19.36)``.
+
+    This will be discussed in more detail a little later in the course, but briefly, computers are not great with
+    floating point numbers.
+
+        * What comes after the integer :math:`1`? That's easy, it's :math:`2`.
+        * What comes after the floating point number :math`1.0`? Is it :math`1.1`? Or :math`1.01`? Maybe :math`1.00001`?
+
+    If I run ``square_of_sum(2.2, 2.2)``, the correct answer is ``19.36``, but Python will say ``19.360000000000003``
+    due to the floating point number issue.
+
+    The simple way to address this issue is to check that the *absolute difference* between the expected answer and
+    the function's result is less than some threshold. In the above example, the absolute difference between the
+    correct answer and what Python says is ``0.000000000000003``, which is a tiny difference; the numbers are nearly
+    identical. I chose a threshold of ``0.001``, so if the absolute difference between the expected and actual result is
+    less than that threshold, I will consider that a passed test.
+
+    The choice of the threshold will depend on the situation. Above I could have picked a much smaller number and the
+    test would have passed. But imagine you are a chemist using instruments that can measure to the nearest milliliter.
+    There would be no sense testing beyond a difference of ``0.001`` liters since you cannot get beyond that precision
+    in real life with those instruments.
+
+
 * The above tests do a good job at catching the different scenarios
 * But you may be wondering why I didn't test some other case like when the inputs are both positive, but different values
 
