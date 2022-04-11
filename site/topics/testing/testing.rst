@@ -234,6 +234,34 @@ Automated Testing
 Type Hints
 ==========
 
+* Python does a pretty good job at figuring out the types of data for us
+* However, it can only do so much, and at the end of the day it's going to follow the code that you write
+* Unfortunately, when types get mixed up, we can end up with some serious bugs in our code
+* Try running the following code and see if it acts the way you expect
+
+ .. code-block:: python
+    :linenos:
+
+    def add_together(a, b):
+      """
+      Calculate and return the sum of the two provided numbers.
+
+      :param a: First number
+      :param b: Second number
+      :return: The sum of the two numbers
+      """
+      return a + b
+
+    x = input("First number: ")
+    y = input("Second number: ")
+    result = add_together(x, y)
+    print(result)
+
+
+* The trouble here is, chances are, one would expect the function to work on numbers
+* But when we read the input, we didn't change the strings to numbers
+* So, although we intended for the function to add two numbers together, Python assumed you knew what you were doing when you provided strings as arguments to the function
+
 
 Setting Type Hints
 ------------------
