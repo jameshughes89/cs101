@@ -105,6 +105,17 @@ Square of Sums Example Tests
     assert 0.001 > abs(square_of_sum(2.2, 2.2) - 19.36)
 
 
+* In the above example, the ``square_of_sum`` function is tested a number of times under different input cases
+* Take care to notice that the cases are not just testing different arbitrary input values, but the input values are trying to capture broader cases
+
+    * What happens when the input is zero?
+    * The input has a positive and negative?
+    * There are two positives?
+    * The input is all negative?
+    * What happens when we have floating point numbers?
+
+
+
 Celsius to Fahrenheit Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
