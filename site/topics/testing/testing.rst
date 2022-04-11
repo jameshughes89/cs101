@@ -205,8 +205,17 @@ Celsius to Fahrenheit Example Tests
 Automated Testing
 -----------------
 
+* Many programming languages have systems for automating tests with extra helpful functionality
+* In Python, there are two very popular modules to facilitate this
 
+    * ``unittest`` --- The standard Python testing framework
+    * ``pytest`` --- Another popular framework
 
+* These require quite a bit of programming knowledge to use effectively, so we will not cover them here
+
+    * But ``unittest`` will be discussed later in the course once the requisite knowledge has been covered
+
+* Regardless, at this stage these frameworks are overkill and the assertions we are using are more than sufficient
 
 	
 For Next Class
