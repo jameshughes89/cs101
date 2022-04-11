@@ -39,7 +39,6 @@ def square_of_sum(a: float, b: float) -> float:
 # Tests for square_of_sum function
 assert 0 == square_of_sum(0, 0)
 assert 0 == square_of_sum(1, -1)
-assert 4 == square_of_sum(1, 1)
 assert 100 == square_of_sum(5, 5)
 assert 100 == square_of_sum(-5, -5)
 # To address precision issues, we can look for a sufficiently small difference between the expected and actual
