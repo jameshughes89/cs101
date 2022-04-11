@@ -234,9 +234,67 @@ Automated Testing
 Type Hints
 ==========
 
+* Python does a pretty good job at figuring out the types of data for us
+* However, it can only do so much, and at the end of the day it's going to follow the code that you write
+* Unfortunately, when types get mixed up, we can end up with some serious bugs in our code
+* Try running the following code and see if it acts the way you expect
+
+ .. code-block:: python
+    :linenos:
+
+    def add_together(a, b):
+      """
+      Calculate and return the sum of the two provided numbers.
+
+      :param a: First number
+      :param b: Second number
+      :return: The sum of the two numbers
+      """
+      return a + b
+
+    x = input("First number: ")
+    y = input("Second number: ")
+    result = add_together(x, y)
+    print(result)
+
+
+* The trouble here is, chances are, one would expect the function to work on numbers
+* But when we read the input, we didn't change the strings to numbers
+* So, although we intended for the function to add two numbers together, Python assumed you knew what you were doing when you provided strings as arguments to the function
+
 
 Setting Type Hints
 ------------------
+
+* We can tell Python what the types *should* be when writing the functions
+* We can also tell Python what the return type *should* be too
+* We do this with *type hints*
+* Below is the ``add_together`` function with type hints included
+
+ .. code-block:: python
+    :linenos:
+    :emphasize-lines: 1,5
+
+    def add_together(a: float, b: float) -> float:
+      """
+      Calculate and return the sum of the two provided values.
+
+      :rtype: float
+      :param a: First number
+      :param b: Second number
+      :return: The sum of the two numbers
+      """
+      return a + b
+
+
+* In the parameter list, each parameter's type is explicitly stated
+* The return type of the function is also stated after the parameter list
+
+    * This part `` -> float:``
+
+* It is also good to include the return type in the docstring for the function
+
+    * ``:rtype: float``
 
 
 What You Get
