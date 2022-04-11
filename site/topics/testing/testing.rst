@@ -145,7 +145,7 @@ Square of Sums Example Tests
     in real life with those instruments.
 
     Long story short, it you want to check equality between floating point numbers --- don't. Simply check that their
-    difference is less than some threshold. 
+    difference is less than some reasonable threshold.
 
 
 * The above tests do a good job at catching the different scenarios
