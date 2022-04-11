@@ -171,6 +171,20 @@ Automated Testing
 
 
 
+Type Hints
+==========
+
+
+Setting Type Hints
+------------------
+
+
+What You Get
+------------
+
+
+What You Don't Get
+------------------
 
 	
 For Next Class
