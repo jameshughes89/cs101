@@ -300,10 +300,43 @@ Setting Type Hints
 What You Get
 ------------
 
+* Now, whenever some reads the description of the function they will know what the types are intended to be
+* In Colab, you will also see a popup when trying to call the function with the details of the function. including the types
+
+.. image:: popup.png
+
 
 What You Don't Get
 ------------------
 
+* Unfortunately, Python will not actually stop you from using the wrong types
+
+    * They're more for documentation and other programmers
+
+* In other words, the inclusion of type hints would not actually address the original problem
+
+ .. code-block:: python
+    :linenos:
+
+    def add_together(a: float, b: float) -> float:
+      """
+      Calculate and return the sum of the two provided values.
+
+      :rtype:
+      :param a: First number
+      :param b: Second number
+      :return: The sum of the two numbers
+      """
+      return a + b
+
+    x = input("First number: ")
+    y = input("Second number: ")
+    result = add_together(x, y)
+    print(result)
+
+* In the above example, despite type hints being included, it would behave the same way as it did without type hints.   
+    
+    * It would still cncatenate the strings
 
 	
 For Next Class
