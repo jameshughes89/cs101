@@ -12,13 +12,13 @@ Testing
 * Once you write a function, you need to ensure that it is actually correct
 
     * Once a function is written we often call it a few times to check that it is doing what we expect
-    * But we want to be a little more systematic and through in our tests
+    * But we want to be a little more systematic and thorough in our tests
 
 * We end up writing small snippets of code designed to test our code
 * In addition to ensure correctness, writing tests for our code also helps us *think* about our code more
 
-    * You will have to think about what is correct/incorrect
-    * Think about the different cases that your function needs to deal with
+    * What is correct/incorrect
+    * Different cases that your function needs to deal with
     * If there are any *edge cases*
 
 
