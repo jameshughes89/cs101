@@ -60,36 +60,3 @@ More about returns
     * Now write it with only **1** line of code within the function (so, 2 lines including the function header).
    
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
-
-The function type
-=================
-
-* In Python, *functions* have a type, too:
-	>>> type(divisible_by)
-	<class 'function'>
-	
-* Not all programming languages are so enlightened.
-* You can read up on `first-class functions <http://en.wikipedia.org/wiki/First-class_function>`_ if you want to be a nerd about it.
-* This allows us to do some very "meta" things and quickly write code that is really general::
-
-    def add(a, b):
-        return a + b
-
-    def subtract(a, b):
-        return a - b
-        
-    def do_something(f, a, b):
-        return f(a, b)
-
-.. admonition:: Activity
-
-    * What is the value of ``do_something(add, 5, 7)``?
-    * How about ``do_something(substract, 5, 7)``?
-    * Now make sense of what exactly is happening!
-   
-* If all of this weirds you out... good. You're normal. Passing around functions is crazy weird stuff.
-* Don't worry if you aren't 100% confident on this yet. We'll come back to it in more detail later.
-
-  .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/7CAIlaxRpsg" frameborder="0" allowfullscreen></iframe>
