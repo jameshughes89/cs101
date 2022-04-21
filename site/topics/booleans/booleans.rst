@@ -1,6 +1,59 @@
-*******************************
-Logic, Booleans, More Functions
-*******************************
+***************
+Predicate Logic
+***************
+
+Logic First
+===========
+
+* Sometimes things are ``True`` or ``False``
+* I'm betting you actually are pretty familiar with some LOGIC
+    * AND
+    * OR
+    * NOT
+
+.. admonition:: Activity
+
+    Write out the truth tables for the logical operations **AND**, **OR** and **NOT**.
+
+    Don't know what a 'logical operator' or 'truth table' is? No problem, Ask:
+
+    * Wikipedia
+    * Google
+    * Your neighbour
+    * Just don't ask me!
+
+
+* To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
+* We need: logic.
+* Let's try some comparison:
+    >>> 19 == 87
+    False
+
+    >>> 5 == 5
+    True
+
+* Note that ``==`` is *comparison* while ``=`` is *assignment*. They are not the same! Python will punish you if you forget this!
+    * You'll all mess this up eventually
+    * Just be thankful this isn't C/C++
+
+.. admonition:: Activity
+
+    Figure out what the other comparison operators in Python are. Hint: ``3`` doesn't equal ``5``, it is *____ than* 5.
+
+* These operators can be applied to any two expressions (could be simply a value or variable, but can be more complex):
+    >>> a = 15
+    >>> b = 37
+    >>> (a+b)*9 > (b-a)*3 + 2
+    True
+
+* What is the *type* of the result of applying a comparison operator?
+
+
+  .. raw:: html
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
+
+
 
 The Boolean type
 ================
@@ -60,73 +113,3 @@ More about returns
     * Now write it with only **1** line of code within the function (so, 2 lines including the function header).
    
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
-
-The function type
-=================
-
-* In Python, *functions* have a type, too:
-	>>> type(divisible_by)
-	<class 'function'>
-	
-* Not all programming languages are so enlightened.
-* You can read up on `first-class functions <http://en.wikipedia.org/wiki/First-class_function>`_ if you want to be a nerd about it.
-* This allows us to do some very "meta" things and quickly write code that is really general::
-
-    def add(a, b):
-        return a + b
-
-    def subtract(a, b):
-        return a - b
-        
-    def do_something(f, a, b):
-        return f(a, b)
-
-.. admonition:: Activity
-
-    * What is the value of ``do_something(add, 5, 7)``?
-    * How about ``do_something(substract, 5, 7)``?
-    * Now make sense of what exactly is happening!
-   
-* If all of this weirds you out... good. You're normal. Passing around functions is crazy weird stuff.
-* Don't worry if you aren't 100% confident on this yet. We'll come back to it in more detail later.
-
-  .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/7CAIlaxRpsg" frameborder="0" allowfullscreen></iframe>
-
-
-Developing bigger programs
-==========================
-
-.. image:: softeigineering.jpeg
-
-* The best way to do this is still a (very) open research problem in software engineering.
-* Here, I'm going to suggest *bottom up*, incremental, development.
-* Start with an empty function that returns a constant value (e.g., 0.0)
-* Try the function. Works? Ok, step 1 down.
-* Add 1 or 2 lines of code to accomplish part of what you want to do.
-* Try the function. Make sure those lines worked!
-* Repeat.
-* Build up your function *incrementally* and **test** at each increment.
-* The alternative is to try to sit down and bang out the whole function in one go.
-    * If you're perfect, this is faster.
-    * Otherwise... you'll spend a *lot* of time debugging.
-        * You're already going to spend a lot of time debugging, so don't give yourself more work. 
-    * Besides, I'm sorry, but you're not perfect.
-   
-.. admonition:: Activity
-
-    Build a function to compute compound interest given a starting amount(``P``), an annual interest rate (``r``), the number of compounding periods per year(``n``) and the total number of years (``t``). 
-
-    Your function should return the value of the principle plus the interest after compounding.
-
-     .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/epghFryGafA" frameborder="0" allowfullscreen></iframe>
-	
-
-* For bigger projects: break your problem down into a hierarchy of subproblems (remember, think in terms of *levels of abstraction*!).
-* Solve the easiest, smallest, subproblems first.
-* For us, solving means "writing a function to do it".
-* Immediately after writing the function, *test it right there and then*.
-* Once you've written all the really easy, low level, functions, start combining them to write the higher level ones.

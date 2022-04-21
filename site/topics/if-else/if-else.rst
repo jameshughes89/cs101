@@ -17,58 +17,7 @@ Conditionals
    
 * We need to work towards *conditional execution*
 
-Logic First
-===========
 
-* Sometimes things are ``True`` or ``False``
-* I'm betting you actually are pretty familiar with some LOGIC
-    * AND
-    * OR
-    * NOT
-
-.. admonition:: Activity
-
-    Write out the truth tables for the logical operations **AND**, **OR** and **NOT**. 
-   
-    Don't know what a 'logical operator' or 'truth table' is? No problem, Ask: 
-
-    * Wikipedia 
-    * Google 
-    * Your neighbour
-    * Just don't ask me!
-   
-   
-* To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
-* We need: logic.
-* Let's try some comparison:
-    >>> 19 == 87
-    False
-
-    >>> 5 == 5
-    True
-	
-* Note that ``==`` is *comparison* while ``=`` is *assignment*. They are not the same! Python will punish you if you forget this! 
-    * You'll all mess this up eventually
-    * Just be thankful this isn't C/C++
-
-.. admonition:: Activity
-
-    Figure out what the other comparison operators in Python are. Hint: ``3`` doesn't equal ``5``, it is *____ than* 5.
-
-* These operators can be applied to any two expressions (could be simply a value or variable, but can be more complex):
-    >>> a = 15
-    >>> b = 37
-    >>> (a+b)*9 > (b-a)*3 + 2
-    True
-	
-* What is the *type* of the result of applying a comparison operator?
- 
-
-  .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>   
-
-   
 Conditional execution
 =====================
 * Now we can test if a comparison statement is ``True`` or ``False``.
@@ -104,8 +53,8 @@ Compound conditions
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8OAsHilB0jw" frameborder="0" allowfullscreen></iframe>   
-   
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/8OAsHilB0jw" frameborder="0" allowfullscreen></iframe>
+
    
    
 Alternative execution

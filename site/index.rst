@@ -122,8 +122,8 @@ Course Notes
     topics/input/input
     topics/functions/functions
     topics/testing/testing
-    topics/if-else/if-else
     topics/booleans/booleans
+    topics/if-else/if-else
     topics/car-rental/car-rental
     topics/loops/loops
     topics/strings/strings
