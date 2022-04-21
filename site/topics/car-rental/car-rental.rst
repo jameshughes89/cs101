@@ -14,10 +14,36 @@ What have we seen so far?
 * Logic
 * If/Else
 
+* Each of the individual topics may feel simple on their own
+* The difficult part tends to be when putting these topics together to solve complex problem
+
+
+Writing Bigger Programs
+=======================
+
+* There is no single correct way to write programs, but there are some strategies
+* For now I recomment a bottom up, incremental approach
+
+    # Start with an empty function and have it return some arbitrary constant value (e.g., ``0``)
+    # Run the function and verify that it does what you expect
+    # Add one or two lines of code
+    # Run the function and verify that it does what you expect
+    # Repeat
+
+* This incremental strategy is great because a lot of the problem solving you will be doing will be incremental
+* ADdditionally, it helps you make sure everything is working along the way
+
+    * If everything *was* working and you added two lines of code and suddenly it stops working, perhaps the issue is with the two new lines you wrote
+
+* We would still want to write tests for our completed functions, but you may find it difficult to debug a whole complete function when compared to one or two lines of code
+
+
+Car Rental
+==========
+
 .. image:: carRental.png
 
 A car rental place needs our help. They want a simple program to calculate how much a customer is to be charged based on their rental agreement, age, how far they drove, and how long they had the car. 
-
 
 **Rules:**
 
