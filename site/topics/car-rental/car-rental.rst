@@ -15,7 +15,7 @@ What have we seen so far?
 * If/Else
 
 * Each of the individual topics may feel simple on their own
-* The difficult part tends to be when putting these topics together to solve complex problem
+* The difficult part tends to be when putting these topics together to solve complex problems
 
 
 Writing Bigger Programs
@@ -31,7 +31,7 @@ Writing Bigger Programs
     # Repeat
 
 * This incremental strategy is great because a lot of the problem solving you will be doing will be incremental
-* ADdditionally, it helps you make sure everything is working along the way
+* Addditionally, it helps you make sure everything is working along the way
 
     * If everything *was* working and you added two lines of code and suddenly it stops working, perhaps the issue is with the two new lines you wrote
 
