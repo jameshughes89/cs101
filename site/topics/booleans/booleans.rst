@@ -55,7 +55,15 @@ Propositional Logic
     * Is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
 
 
+* You may have observed that
 
+    * For ``and``, both statements must be ``True`` to produce ``True``, otherwise it is ``False``
+    * For ``or``, only one statement must be ``True`` to produce ``True``, otherwise it is ``False``
+    * ``not`` changes ``True`` -> ``False`` and ``False`` -> ``True``
+
+    .. raw:: html
+
+	    <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
@@ -84,9 +92,6 @@ Propositional Logic
 * What is the *type* of the result of applying a comparison operator?
 
 
-  .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
 
