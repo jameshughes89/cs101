@@ -1,11 +1,15 @@
-***************
-Predicate Logic
-***************
-
-Logic First
-===========
+*******************
+Propositional Logic
+*******************
 
 * Sometimes things are ``True`` or ``False``
+
+    * This course focuses on introductory computer science --- ``True``
+    * This topic is titled "Not Logic" --- ``False``
+
+* This is rather intuitive since you use this type of simple logic in every day life to make decisions
+* Additionally,
+
 * I'm betting you actually are pretty familiar with some LOGIC
     * AND
     * OR
