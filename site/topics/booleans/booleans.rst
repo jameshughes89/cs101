@@ -1,26 +1,80 @@
-***************
-Predicate Logic
-***************
-
-Logic First
-===========
+*******************
+Propositional Logic
+*******************
 
 * Sometimes things are ``True`` or ``False``
-* I'm betting you actually are pretty familiar with some LOGIC
-    * AND
-    * OR
-    * NOT
 
-.. admonition:: Activity
+    * This course focuses on introductory computer science --- ``True``
+    * This topic is titled "Not Logic" --- ``False``
 
-    Write out the truth tables for the logical operations **AND**, **OR** and **NOT**.
+* This is rather intuitive since you use this type of simple logic in every day life to make decisions
+* Additionally, you are alreay familiar with some *operators* we can use on these ``True``/``False`` statements
 
-    Don't know what a 'logical operator' or 'truth table' is? No problem, Ask:
+    * ``and``
+    * ``or``
+    * ``not``
 
-    * Wikipedia
-    * Google
-    * Your neighbour
-    * Just don't ask me!
+
+Truth Table
+===========
+
+.. list-table:: Truth Table
+    :widths: 50 50 50 50 50
+    :header-rows: 1
+
+    * - ``A``
+      - ``B``
+      - ``A and B``
+      - ``A or B``
+      - ``not A``
+    * - ``True``
+      - ``True``
+      - ``True``
+      - ``True``
+      - ``False``
+    * - ``True``
+      - ``False``
+      - ``False``
+      - ``True``
+      - ``False``
+    * - ``False``
+      - ``True``
+      - ``False``
+      - ``True``
+      - ``True``
+    * - ``False``
+      - ``False``
+      - ``False``
+      - ``False``
+      - ``True``
+
+
+* The above *truth table* is a rather formal representation of some everyday ideas
+* To put it slightly different
+
+    * Is *the sky blue* ``and`` is *water wet*? --- ``True``
+    * Is *the sky blue* ``and`` is it *over 100 degreed Celsius outside*? --- ``False``
+    * Is *the sky blue* ``or`` is it *over 100 degreed Celsius outside*? --- ``True``
+    * Is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
+    * Is *the sky blue* ``and`` is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
+
+
+* You may have observed that
+
+    * For ``and``, both statements must be ``True`` to produce ``True``, otherwise it is ``False``
+    * For ``or``, only one statement must be ``True`` to produce ``True``, otherwise it is ``False``
+    * ``not`` changes ``True`` -> ``False`` and ``False`` -> ``True``
+
+.. note::
+
+    For ``or``, both statements being ``True`` produces ``True``. There is another operator called *exclusive or* that
+    is ``True`` only when one of the statements is ``True``. Exclusive or is not going to come up in this course. It is
+    only noted here since some people find ``or`` ambiguous at first.
+
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
@@ -49,9 +103,6 @@ Logic First
 * What is the *type* of the result of applying a comparison operator?
 
 
-  .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
 
