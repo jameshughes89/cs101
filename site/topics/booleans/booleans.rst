@@ -61,9 +61,16 @@ Propositional Logic
     * For ``or``, only one statement must be ``True`` to produce ``True``, otherwise it is ``False``
     * ``not`` changes ``True`` -> ``False`` and ``False`` -> ``True``
 
-    .. raw:: html
+.. note::
 
-	    <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
+    For ``or``, both statements being ``True`` produces ``True``. There is another operator called *exclusive or* that
+    is ``True`` only when one of the statements is ``True``. Exclusive or is not going to come up in this course. It is
+    only noted here since some people find ``or`` ambiguous at first.
+
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
