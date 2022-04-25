@@ -46,6 +46,18 @@ Propositional Logic
       - ``True``
 
 
+* The above *truth table* is a rather formal representation of some everyday ideas
+* To put it slightly different
+
+    * Is *the sky blue* ``and`` is *water wet*? --- ``True``
+    * Is *the sky blue* ``and`` is it *over 100 degreed Celsius outside*? --- ``False``
+    * Is *the sky blue* ``or`` is it *over 100 degreed Celsius outside*? --- ``True``
+    * Is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
+
+
+
+
+
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
 * We need: logic.
 * Let's try some comparison:
