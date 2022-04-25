@@ -53,6 +53,7 @@ Propositional Logic
     * Is *the sky blue* ``and`` is it *over 100 degreed Celsius outside*? --- ``False``
     * Is *the sky blue* ``or`` is it *over 100 degreed Celsius outside*? --- ``True``
     * Is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
+    * Is *the sky blue* ``and`` is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
 
 
 * You may have observed that
