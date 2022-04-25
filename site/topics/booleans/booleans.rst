@@ -15,6 +15,9 @@ Propositional Logic
     * ``not``
 
 
+Truth Table
+===========
+
 .. list-table:: Truth Table
     :widths: 50 50 50 50 50
     :header-rows: 1
