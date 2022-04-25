@@ -14,16 +14,36 @@ Propositional Logic
     * ``or``
     * ``not``
 
-.. admonition:: Activity
 
-    Write out the truth tables for the logical operations **AND**, **OR** and **NOT**.
+.. list-table:: Truth Table
+    :widths: 50 50 50 50 50
+    :header-rows: 1
 
-    Don't know what a 'logical operator' or 'truth table' is? No problem, Ask:
-
-    * Wikipedia
-    * Google
-    * Your neighbour
-    * Just don't ask me!
+    * - ``A``
+      - ``B``
+      - ``A and B``
+      - ``A or B``
+      - ``not A``
+    * - ``True``
+      - ``True``
+      - ``True``
+      - ``True``
+      - ``False``
+    * - ``True``
+      - ``False``
+      - ``False``
+      - ``True``
+      - ``False``
+    * - ``False``
+      - ``True``
+      - ``False``
+      - ``True``
+      - ``True``
+    * - ``False``
+      - ``False``
+      - ``False``
+      - ``False``
+      - ``True``
 
 
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
