@@ -8,12 +8,11 @@ Propositional Logic
     * This topic is titled "Not Logic" --- ``False``
 
 * This is rather intuitive since you use this type of simple logic in every day life to make decisions
-* Additionally,
+* Additionally, you are alreay familiar with some *operators* we can use on these ``True``/``False`` statements
 
-* I'm betting you actually are pretty familiar with some LOGIC
-    * AND
-    * OR
-    * NOT
+    * ``and``
+    * ``or``
+    * ``not``
 
 .. admonition:: Activity
 
