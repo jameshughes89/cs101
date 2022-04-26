@@ -114,6 +114,28 @@ Boolean Operators
     * e.g., ``True and False`` is ``False``
 
 
+Comparison Operators
+--------------------
+
+* As you have probably noticed, asking ``True and False`` is not overly helpful as it is
+* Based how we use this logic in real life, we need a way to evaluate statements into their Boolean values
+* For example, is it ``not`` *over 100 degrees Celsius outside*?
+
+    * We need a way to check if the given temperature is greater than 100 degrees Celsius
+
+* For these situations, we make use of comparison operators you already use in your everyday life
+
+    * Is five greater than three?
+    * ``5 > 3`` is ``True``
+
+* More generally, these comparison operators take values to be compared
+* Consider the greater than (``>``) comparison operator
+
+    * It two values as operands
+    * It produces a Boolean as a result
+    * e.g., ``1 > 7`` is ``False``
+
+
 
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
 * We need: logic.
