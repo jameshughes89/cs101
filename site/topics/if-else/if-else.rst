@@ -24,7 +24,7 @@ Conditional Statements
 
     * ``a_number > 0``
 
-* The key now is to tell Python that, if some condition is ``True``, do something
+* The key now is to tell Python that, ``if`` some condition is ``True``, do something
 
 .. code-block:: python
     :linenos:
