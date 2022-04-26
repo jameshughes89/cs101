@@ -68,8 +68,8 @@ Truth Table
 .. note::
 
     For ``or``, both statements being ``True`` produces ``True``. There is another operator called *exclusive or* that
-    is ``True`` only when one of the statements is ``True``. Exclusive or is not going to come up in this course. It is
-    only noted here since some people find ``or`` ambiguous at first.
+    is ``True`` only when one of the statements is ``True``. Exclusive or is not going to come up in this course and it
+    is only noted here since some people find ``or`` ambiguous at first.
 
 
 .. raw:: html
@@ -77,90 +77,85 @@ Truth Table
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
-* To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
-* We need: logic.
-* Let's try some comparison:
-    >>> 19 == 87
-    False
+Boolean Type
+============
 
-    >>> 5 == 5
-    True
+* `Booleans <http://en.wikipedia.org/wiki/George_Boole>`_ are a type in Python, like integers, strings, and floats
 
-* Note that ``==`` is *comparison* while ``=`` is *assignment*. They are not the same! Python will punish you if you forget this!
-    * You'll all mess this up eventually
-    * Just be thankful this isn't C/C++
+    * ``type(True)`` gives us ``bool``
 
-.. admonition:: Activity
+* Unlike integers, strings, and floats which can take on many different values, booleans can only be one of two values
 
-    Figure out what the other comparison operators in Python are. Hint: ``3`` doesn't equal ``5``, it is *____ than* 5.
-
-* These operators can be applied to any two expressions (could be simply a value or variable, but can be more complex):
-    >>> a = 15
-    >>> b = 37
-    >>> (a+b)*9 > (b-a)*3 + 2
-    True
-
-* What is the *type* of the result of applying a comparison operator?
+    * ``True``
+    * ``False``
 
 
+Boolean Operators
+-----------------
+
+* Just like the arithmatic operators we use on integers and floats, Booleans have operators too
+
+    * The ones we just used
+
+        * ``and``
+        * ``or``
+        * ``not``
+
+* Consider the arithmatic operator ``+``
+
+    * It takes two number *operands*
+    * It produces a new number as a result
+    * e.g., ``1 + 2`` is ``3``
+
+* For Booleans, consider ``and``
+
+    * It takes two *Boolean* operands
+    * It produces a new Boolean as a result
+    * e.g., ``True and False`` is ``False``
 
 
+Comparison Operators
+--------------------
 
-The Boolean type
-================
-* A value that is either ``True`` or ``False`` (and nothing else) has type `Boolean <http://en.wikipedia.org/wiki/George_Boole>`_.
-* We've used comparison operators (e.g., ``<, >, ==``) in conditionals.
-* What's going on "under the hood" with the comparison, though?
-    >>> 5 > 2
-    True
-    
-    >>> 5 < 2
-    False
-	
-* A comparison like ``a > b`` is just an *expression*, like ``a + b``.
-* The difference is that the value it produces isn't an integer, it's either ``True`` or ``False``
-* This may seem like a subtle thing, but it's a big deal:
-    * An operator that takes 2 numbers and produces a number: 
-        * `1 + 1 -> 2`
-    * An operator that takes 2 booleans and produces a boolean: 
-        * `True and False -> False`
-    * An operator that athes 2 numbers and produces a boolean: 
-        * `1 < 2 -> True`
-   
+* As you have probably noticed, asking ``True and False`` is not overly helpful as it is
+* Based how we use this logic in real life, we need a way to evaluate statements into their Boolean values
+* For example, is it ``not`` *over 100 degrees Celsius outside*?
 
-    >>> type(5 > 2)
-    <class 'bool'>
+    * We need a way to check if the given temperature is greater than 100 degrees Celsius
 
-.. admonition:: Activity
+* For these situations, we make use of comparison operators you already use in your everyday life
 
-    Write a function ``is_negative(n)`` that *returns* ``True`` if the argument ``n`` is negative and ``False`` otherwise.
+    * Is five greater than three?
+    * ``5 > 3`` is ``True``
 
-    Verify that the return type is correct.
+* More generally, these comparison operators take values to be compared
+* Consider the greater than (``>``) comparison operator
 
-     .. raw:: html
+    * It two values as operands
+    * It produces a Boolean as a result
+    * e.g., ``1 > 7`` is ``False``
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/xrBzzvmLCvQ" frameborder="0" allowfullscreen></iframe>   
+* The comparison operators we make use of are
 
-
-More about returns
-==================
-
-* We've already seen that functions can return a value at the end.
-* In fact, a function can return a value *at any time*, not just the end.
-* We can take advantage of this fact to have multiple returns!::
-
-    def divisible_by(a, b):
-        if a % b == 0:
-            return True
-        else:
-            return False
+    * Equal ``==``
+    * Not equal ``!=``
+    * Greater than ``>``
+    * Greater than or equal ``>=``
+    * Less than ``<``
+    * Less than or equal ``<=``
 
 .. admonition:: Activity
 
-    * What is the result of the function call ``divisible_by(4, 2)``? 
-    * How about ``divisible_by(4, 3)``? 
-    * Now write a new function ``not_divisible_by(a, b)`` that returns ``True`` when ``a`` is *not* divisible by ``b`` and ``False`` otherwise.
-    * Now write this function to do the same thing with only **1** return statement.
-    * Now write it with only **1** line of code within the function (so, 2 lines including the function header).
-   
-* Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
+    Play around with the above operators on different integers and see if you can find operands that produce
+    ``True``/``False`` for each.
+
+    Play around with the operators on different types. For example, what happens when you compare Booleans, floats, and
+    strings?
+
+.. warning::
+
+    Mind the use of two equal signs (``==``) for checking equality. Remember, a single equals sign (``=``) is the
+    assignment operator.
+
+        * ``some_variable = 5`` assigns the value ``5`` to the variable ``some_variable``
+        * ``some_variable == 5`` checks if the value stored in ``some_variable`` is equal to the value ``5``
