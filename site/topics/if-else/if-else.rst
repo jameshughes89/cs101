@@ -1,45 +1,89 @@
-**************
-Logic, if/else
-**************
+*******
+If/Else
+*******
 
-Conditionals
-============
+.. admonition:: Activity
 
-* We're pretty good at telling python *exactly what to do* now.
-* But there is no room for choice. It's just: *do these steps in this order*
-* That doesn't give us much flexibility (or computational power)
+    Using only what we have learned so far, write a function ``smush(a_number)`` that checks if the number is
+    positive or negative. If ``a_number`` is positive, the function will return half the value of ``a_number``. If
+    the number is not positive, simply return ``a_number``.
 
+
+Conditional Expressions
+=======================
+
+* Booleans were discussed in the previous topic
+
+    * We discussed them as a type
+    * How to use Boolean operators
+    * How to use comparison operators
+
+* But Booleans allow us to do a lot more than just evaluate an expression to ``True``/``False``
+* Consider ``smush`` from the above activity
+* We know how to *ask* if ``a_number`` is positive
+
+    * ``a_number > 0``
+
+* The key now is to tell Python that, ``if`` some condition is ``True``, do something
+
+.. code-block:: python
+    :linenos:
+    :lines-emphasis: 11
+
+    def smush(a_number: float) -> float:
+        """
+        Returns half the value of the parameter a_number if the value is positive,
+        otherwise, return the value of a_number.
+
+        :rtype: float
+        :param a_number: Some arbitrary number.
+        :return: Half of a_number when it is positive, a_number when not positive.
+        """
+        return_value = a_number
+        if a_number > 0:
+            return_value = return_value / 2
+        return return_value
+
+
+    # Tests for smush
+    assert 5 == smush(10)
+    assert -10 == smush(-10)
+    assert 0 == smush(0)
+
+
+* In the above example we made use of an ``if`` statement
+* When the evaluated Boolean value after the ``if`` is ``True``, the indented code is executed, otherwise the indented code block is ignored
+
+* If we follow the code within the function when ``a_number`` is ``10``, the execution is as follows
+
+    * Assign the value of ``a_number`` (``10``) to ``return_value``
+    * Evaluate ``a_number > 0``
+
+        * ``10 > 0``
+        * ``True``
+
+    * Since the expression evaluated to ``True``, the indented code is run
+    * Divide ``return_value`` by ``2`` and assign it back into ``return_value``
+    * Return the value stored in ``return_value`` (``5``)
+
+
+* Similarly, if we follow the code when ``a_number`` is ``-10``, the execution is as follows
+
+    * Assign the value of ``a_number`` (``-10``) to ``return_value``
+    * Evaluate ``a_number > 0``
+
+        * ``-10 > 0``
+        * ``False``
+
+    * Since the expression evaluated to ``False``, the indented code is skipped
+    * Return the value stored in ``return_value`` (``-10``)
 
 
 .. admonition:: Activity
 
-    Using **only** the Python features/statements **we've seen so far**, can you write a program that will divide a number in half *only if* that number is a multiple of 2?
-   
-* We need to work towards *conditional execution*
+    Write a function ``is_negative(a_number)`` that returns ``True`` if ``a_number`` is negative and ``False``
+    otherwise.
 
-
-Conditional execution
-=====================
-* Now we can test if a comparison statement is ``True`` or ``False``.
-* We need a way to use that to control our program.
-* ``if`` some condition is ``True``, do something::
-
-    if grade < 50:
-        print('should have gone to class more often.')
-  
-* If the condition following the keyword ``if`` is ``True``, the code after the ``:`` gets executed.
-* If the condition is ``False``, the code gets skipped over.
-* As usual, the block that gets executed/skipped is denoted with indentation 
-* The block can be as long as you want; no maximum size (though the minimum size is 1)
-* (like in a function definition)
-
-* **NOTE:** Remember that the thing in the if statement is either `True` or `False`!
-
-.. admonition:: Activity
-
-    Using only the Python features/statements we've seen so far, can you write a program that will divide a number in half *only if* that number is a multiple of 2?
-
-    **HINT**: You may want to look up the Python modulus operator: ``%``.   
    
    
 Compound conditions
