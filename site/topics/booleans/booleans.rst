@@ -169,7 +169,12 @@ More about returns
 Composing Operators and Values
 ==============================
 
+* We have seen different operators that work on different types
+* As long as the types check out and we follow the `order of operations <https://docs.python.org/3/reference/expressions.html#operator-precedence>`_, we can compose rather complex expressions
 
+    * Don't worry about memorizing the order of operations
+    * They follow what you are used to for the most part
+    * When in doubt, make use of parentheses
 
 
 
