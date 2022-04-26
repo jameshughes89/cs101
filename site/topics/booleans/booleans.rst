@@ -209,31 +209,13 @@ Evaluating Example Expressions
 * This is because, as long as one of the operands for an ``or`` is ``True``, we know the whole expression is ``True``
 
 
-**``(101 == 100) and ((((66 - 17) > 18) or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``**
+**``(101 == 100) and  ((66 - 17) < 54))``**
 
-``False and ((((66 - 17) > 18) or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+``False and ((66 - 17) < 54)``
 
-``False and (((49 > 18) or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+``False and (49 < 54)``
 
-``False and ((True or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
-
-``False and ((True or (-3 < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
-
-``False and ((True or True) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
-
-``False and (True and (((4 + 17) < 20) or ((66 - 17) < 44)))``
-
-``False and (True and ((21 < 20) or ((66 - 17) < 44)))``
-
-``False and (True and (False or ((66 - 17) < 44)))``
-
-``False and (True and (False or (49 < 44)))``
-
-``False and (True and (False or False))``
-
-``False and (True and False)``
-
-``False and False``
+``False and True``
 
 ``False``
 
