@@ -8,6 +8,20 @@ If/Else
     ``a_number`` is negative and returns ``False`` when it is not?
 
 
+Conditional Statements
+======================
+
+* Booleans were discussed in the previous topic
+
+    * We discussed them as a type
+    * How to use Boolean operators
+    * How to use comparison operators
+
+* But Booleans allow us to do a lot more than just evaluate an expression to ``True``/``False``
+
+
+
+
 Conditional execution
 =====================
 * Now we can test if a comparison statement is ``True`` or ``False``.
