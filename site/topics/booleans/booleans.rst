@@ -177,6 +177,65 @@ Composing Operators and Values
     * When in doubt, make use of parentheses
 
 
+Evaluating Example Expressions
+------------------------------
+
+**``((17 + 2) < 18) or (17 != 18)``**
+
+``(19 < 18) or (17 != 18)``
+
+``False or (17 != 18)``
+
+``False or True``
+
+``True``
+
+
+**``(14 > 0) or ((6 != 7) and ((4 + 17) < 20))``**
+
+``True or ((6 != 7) and ((4 + 17) < 20))``
+
+``True or (True and ((4 + 17) < 20))``
+
+``True or (True and (21 < 20))``
+
+``True or (True and False)``
+
+``True or False``
+
+``True``
+
+
+**``(101 == 100) and ((((66 - 17) > 18) or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``**
+
+``False and ((((66 - 17) > 18) or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+
+``False and (((49 > 18) or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+
+``False and ((True or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+
+``False and ((True or (-3 < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+
+``False and ((True or True) and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+
+``False and (True and (((4 + 17) < 20) or ((66 - 17) < 44)))``
+
+``False and (True and ((21 < 20) or ((66 - 17) < 44)))``
+
+``False and (True and (False or ((66 - 17) < 44)))``
+
+``False and (True and (False or (49 < 44)))``
+
+``False and (True and (False or False))``
+
+``False and (True and False)``
+
+``False and False``
+
+``False``
+
+
+
 
 
 For Next Class
