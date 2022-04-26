@@ -67,7 +67,16 @@ Conditional Statements
     * Return the value stored in ``return_value`` (``5``)
 
 
+* Similarly, if we follow the code when ``a_number`` is ``-10``, the execution is as follows
 
+    * Assign the value of ``a_number`` (``-10``) to ``return_value``
+    * Evaluate ``a_number > 0``
+
+        * ``-10 > 0``
+        * ``False``
+
+    * Since the expression evaluated to ``False``, the indented code is skipped
+    * Return the value stored in ``return_value`` (``-10``)
 
 Conditional execution
 =====================
