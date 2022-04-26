@@ -20,6 +20,11 @@ Conditional Statements
 
 * But Booleans allow us to do a lot more than just evaluate an expression to ``True``/``False``
 * Consider ``smush`` from the above activity
+* We know how to *ask* if ``a_number`` is positive
+
+    * ``a_number > 0``
+
+* The key now is to tell Python that, if some condition is ``True``, do something
 
 .. code-block:: python
     :linenos:
