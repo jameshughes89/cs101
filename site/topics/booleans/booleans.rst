@@ -90,6 +90,31 @@ Boolean Type
     * ``False``
 
 
+Boolean Operators
+-----------------
+
+* Just like the arithmatic operators we use on integers and floats, Booleans have operators too
+
+    * The ones we just used
+
+        * ``and``
+        * ``or``
+        * ``not``
+
+* Consider the arithmatic operator ``+``
+
+    * It takes two number *operands*
+    * It produces a new number as a result
+    * e.g., ``1 + 2`` is ``3``
+
+* For Booleans, consider ``and``
+
+    * It takes two *Boolean* operands
+    * It produces a new Boolean as a result
+    * e.g., ``True and False`` is ``False``
+
+
+
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
 * We need: logic.
 * Let's try some comparison:
