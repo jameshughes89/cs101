@@ -84,29 +84,6 @@ Conditional Statements
     Write a function ``is_negative(a_number)`` that returns ``True`` if ``a_number`` is negative and ``False``
     otherwise.
 
-
-Conditional execution
-=====================
-* Now we can test if a comparison statement is ``True`` or ``False``.
-* We need a way to use that to control our program.
-* ``if`` some condition is ``True``, do something::
-
-    if grade < 50:
-        print('should have gone to class more often.')
-  
-* If the condition following the keyword ``if`` is ``True``, the code after the ``:`` gets executed.
-* If the condition is ``False``, the code gets skipped over.
-* As usual, the block that gets executed/skipped is denoted with indentation 
-* The block can be as long as you want; no maximum size (though the minimum size is 1)
-* (like in a function definition)
-
-* **NOTE:** Remember that the thing in the if statement is either `True` or `False`!
-
-.. admonition:: Activity
-
-    Using only the Python features/statements we've seen so far, can you write a program that will divide a number in half *only if* that number is a multiple of 2?
-
-    **HINT**: You may want to look up the Python modulus operator: ``%``.   
    
    
 Compound conditions
