@@ -84,12 +84,10 @@ Boolean Type
 
     * ``type(True)`` gives us ``bool``
 
-* Unlike integers, strings, and floats however, booleans can only take on two values
+* Unlike integers, strings, and floats which can take on many different values, booleans can only be one of two values
 
     * ``True``
     * ``False``
-
-
 
 
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
