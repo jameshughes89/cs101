@@ -225,9 +225,9 @@ Evaluating Example Expressions
 
 .. warning::
 
-    The last two examples are quite contrived and are entirely unrealistic to use. These were simply used here to
-    demonstrate the evaluation of the expressions. If you find yourself writing long boolean expressions like this, you
-    are likely doing something wrong.
+    If you find yourself writing long and complex boolean expressions, chances are you are doing something wrong. Even
+    if we have a long list of conditions you need to check in your program, there are ways to make them more manageable
+    and easier to follow.
 
 
 For Next Class
