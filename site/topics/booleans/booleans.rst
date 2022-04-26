@@ -152,6 +152,7 @@ Comparison Operators
     Play around with the operators on different types. For example, what happens when you compare Booleans, floats, and
     strings?
 
+
 .. warning::
 
     Mind the use of two equal signs (``==``) for checking equality. Remember, a single equals sign (``=``) is the
@@ -159,3 +160,72 @@ Comparison Operators
 
         * ``some_variable = 5`` assigns the value ``5`` to the variable ``some_variable``
         * ``some_variable == 5`` checks if the value stored in ``some_variable`` is equal to the value ``5``
+
+
+Composing Operators and Values
+==============================
+
+* We have seen different operators that work on different types
+* As long as the types check out and we follow the `order of operations <https://docs.python.org/3/reference/expressions.html#operator-precedence>`_, we can compose rather complex expressions
+
+    * Don't worry about memorizing the order of operations
+    * They follow what you are used to for the most part
+    * When in doubt, make use of parentheses
+
+
+Evaluating Example Expressions
+------------------------------
+
+**``((17 + 2) < 18) or (17 != 18)``**
+
+``(19 < 18) or (17 != 18)``
+
+``False or (17 != 18)``
+
+``False or True``
+
+``True``
+
+
+**``(101 == 100) and  ((66 - 17) < 54))``**
+
+``False and ((66 - 17) < 54)``
+
+``False and (49 < 54)``
+
+``False and True``
+
+``False``
+
+* Once we evaluated ``(101 == 100)`` as ``False``, we didn't need to evaluate the remainder of the expression
+* With ``and``, if one of the operands are ``False``, the whole expression evaluated to ``False``
+
+
+**``(14 > 0) or ((6 != 7) and ((4 + 17) < 20))``**
+
+``True or ((6 != 7) and ((4 + 17) < 20))``
+
+``True or (True and ((4 + 17) < 20))``
+
+``True or (True and (21 < 20))``
+
+``True or (True and False)``
+
+``True or False``
+
+``True``
+
+* Notice that once we evaluated ``(14 > 0)`` as ``True``, we really didn't need to finish evaluating the remainder of the expression
+* This is because, as long as one of the operands for an ``or`` is ``True``, we know the whole expression is ``True``
+
+.. warning::
+
+    If you find yourself writing long and complex boolean expressions, chances are you are doing something wrong. Even
+    if we have a long list of conditions you need to check in your program, there are ways to make them more manageable
+    and easier to follow.
+
+
+For Next Class
+==============
+
+* If you have not yet, read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
