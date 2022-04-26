@@ -51,6 +51,24 @@ Conditional Statements
     assert 0 == smush(0)
 
 
+* In the above example we made use of an ``if`` statement
+* When the evaluated Boolean value after the ``if`` is ``True``, the indented code is executed, otherwise the indented code block is ignored
+
+* If we follow the code within the function when ``a_number`` is ``10``, the execution is as follows
+
+    * Assign the value of ``a_number`` (``10``) to ``return_value``
+    * Evaluate ``a_number > 0``
+
+        * ``10 > 0``
+        * ``True``
+
+    * Since the expression evaluated to ``True``, the indented code is run
+    * Divide ``return_value`` by ``2`` and assign it back into ``return_value``
+    * Return the value stored in ``return_value`` (``5``)
+
+
+
+
 Conditional execution
 =====================
 * Now we can test if a comparison statement is ``True`` or ``False``.
