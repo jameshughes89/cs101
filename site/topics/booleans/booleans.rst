@@ -135,6 +135,30 @@ Comparison Operators
     * It produces a Boolean as a result
     * e.g., ``1 > 7`` is ``False``
 
+* The comparison operators we make use of are
+
+    * Equal ``==``
+    * Not equal ``!=``
+    * Greater than ``>``
+    * Greater than or equal ``>=``
+    * Less than ``<``
+    * Less than or equal ``<=``
+
+.. admonition:: Activity
+
+    Play around with the above operators on different integers and see if you can find operands that produce
+    ``True``/``False`` for each.
+
+    Play around with the operators on different types. For example, what happens when you compare Booleans, floats, and
+    strings?
+
+.. warning::
+
+    Mind the use of two equal signs (``==``) for checking equality. Remember, a single equals sign (``=``) is the
+    assignment operator.
+
+        * ``some_variable = 5`` assigns the value ``5`` to the variable ``some_variable``
+        * ``some_variable == 5`` checks if the value stored in ``some_variable`` is equal to the value ``5``
 
 
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
@@ -173,20 +197,20 @@ The Boolean type
 * What's going on "under the hood" with the comparison, though?
     >>> 5 > 2
     True
-    
+
     >>> 5 < 2
     False
-	
+
 * A comparison like ``a > b`` is just an *expression*, like ``a + b``.
 * The difference is that the value it produces isn't an integer, it's either ``True`` or ``False``
 * This may seem like a subtle thing, but it's a big deal:
-    * An operator that takes 2 numbers and produces a number: 
+    * An operator that takes 2 numbers and produces a number:
         * `1 + 1 -> 2`
-    * An operator that takes 2 booleans and produces a boolean: 
+    * An operator that takes 2 booleans and produces a boolean:
         * `True and False -> False`
-    * An operator that athes 2 numbers and produces a boolean: 
+    * An operator that athes 2 numbers and produces a boolean:
         * `1 < 2 -> True`
-   
+
 
     >>> type(5 > 2)
     <class 'bool'>
@@ -199,7 +223,7 @@ The Boolean type
 
      .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/xrBzzvmLCvQ" frameborder="0" allowfullscreen></iframe>   
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/xrBzzvmLCvQ" frameborder="0" allowfullscreen></iframe>
 
 
 More about returns
@@ -217,10 +241,10 @@ More about returns
 
 .. admonition:: Activity
 
-    * What is the result of the function call ``divisible_by(4, 2)``? 
-    * How about ``divisible_by(4, 3)``? 
+    * What is the result of the function call ``divisible_by(4, 2)``?
+    * How about ``divisible_by(4, 3)``?
     * Now write a new function ``not_divisible_by(a, b)`` that returns ``True`` when ``a`` is *not* divisible by ``b`` and ``False`` otherwise.
     * Now write this function to do the same thing with only **1** return statement.
     * Now write it with only **1** line of code within the function (so, 2 lines including the function header).
-   
+
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
