@@ -166,6 +166,13 @@ More about returns
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
 
 
+Composing Operators and Values
+==============================
+
+
+
+
+
 
 For Next Class
 ==============
