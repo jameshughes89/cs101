@@ -241,11 +241,11 @@ Evaluating Example Expressions
 * With ``and``, if one of the operands are ``False``, the whole expression evaluated to ``False``
 
 
-* Note that the last two examples are quite contrived and are entirely unrealistic to use
+.. warning::
 
-    * If you find yourself writing long boolean expressions like this, you are doing something wrong
-
-
+    The last two examples are quite contrived and are entirely unrealistic to use. These were simply used here to
+    demonstrate the evaluation of the expressions. If you find yourself writing long boolean expressions like this, you
+    are likely doing something wrong.
 
 
 For Next Class
