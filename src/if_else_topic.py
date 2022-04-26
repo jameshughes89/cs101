@@ -11,3 +11,8 @@ def smush(a_number: float) -> float:
     if a_number > 0:
         return_value = return_value / 2
     return return_value
+
+
+assert 5 == smush(10)
+assert -10 == smush(-10)
+assert 0 == smush(0)
