@@ -6,7 +6,7 @@ If/Else
 
     Using only what we have learned so far, write a function ``smush(a_number)`` that checks if the number is
     positive or negative. If ``a_number`` is positive, the function will return half the value of ``a_number``. If
-    the number is not positive, simply return ``a_number``
+    the number is not positive, simply return ``a_number``.
 
 
 Conditional Statements
@@ -77,6 +77,7 @@ Conditional Statements
 
     * Since the expression evaluated to ``False``, the indented code is skipped
     * Return the value stored in ``return_value`` (``-10``)
+
 
 Conditional execution
 =====================
