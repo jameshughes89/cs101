@@ -9,8 +9,8 @@ If/Else
     the number is not positive, simply return ``a_number``.
 
 
-Conditional Statements
-======================
+Conditional Expressions
+=======================
 
 * Booleans were discussed in the previous topic
 
