@@ -2,20 +2,10 @@
 If/Else
 *******
 
-Conditionals
-============
-
-* We're pretty good at telling python *exactly what to do* now.
-* But there is no room for choice. It's just: *do these steps in this order*
-* That doesn't give us much flexibility (or computational power)
-
-
-
 .. admonition:: Activity
 
-    Using **only** the Python features/statements **we've seen so far**, can you write a program that will divide a number in half *only if* that number is a multiple of 2?
-   
-* We need to work towards *conditional execution*
+    Using only what we have learned so far, can you write a function ``is_negative(a_number)`` that returns ``True`` if
+    ``a_number`` is negative and returns ``False`` when it is not?
 
 
 Conditional execution
