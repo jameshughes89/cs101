@@ -13,6 +13,7 @@ def smush(a_number: float) -> float:
     return return_value
 
 
+# Tests for smush 
 assert 5 == smush(10)
 assert -10 == smush(-10)
 assert 0 == smush(0)
