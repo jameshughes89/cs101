@@ -4,8 +4,9 @@ If/Else
 
 .. admonition:: Activity
 
-    Using only what we have learned so far, can you write a function ``is_negative(a_number)`` that returns ``True`` if
-    ``a_number`` is negative and ``False`` when it is not?
+    Using only what we have learned so far, write a function ``smush(a_number)`` that checks if the number is
+    positive or negative. If ``a_number`` is positive, the function will return half the value of ``a_number``. If
+    the number is not positive, simply return ``a_number``
 
 
 Conditional Statements
@@ -18,7 +19,7 @@ Conditional Statements
     * How to use comparison operators
 
 * But Booleans allow us to do a lot more than just evaluate an expression to ``True``/``False``
-* Consider ``is_negative`` from the above activity
+* Consider ``smush`` from the above activity
 
 .. code-block:: python
     :linenos:
