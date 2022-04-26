@@ -77,6 +77,9 @@ Truth Table
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
+Boolean Operators
+=================
+
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
 * We need: logic.
 * Let's try some comparison:
