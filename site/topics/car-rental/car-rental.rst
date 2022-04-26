@@ -2,17 +2,17 @@
 Putting Things Together
 ***********************
 
-What have we seen so far?
+* What have we seen so far?
 
-* Values
-* Types
-* Variables
-* Print
-* Input
-* Functions
-* Booleans
-* Logic
-* If/Else
+    * Values
+    * Types
+    * Variables
+    * Print
+    * Input
+    * Functions
+    * Booleans
+    * Logic
+    * If/Else
 
 * Each of the individual topics may feel simple on their own
 * The difficult part tends to be when putting these topics together to solve complex problems
