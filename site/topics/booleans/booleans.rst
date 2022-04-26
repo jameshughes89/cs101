@@ -235,6 +235,12 @@ Evaluating Example Expressions
 ``False``
 
 
+* Note that the last two examples are quite contrived and are entirely unrealistic to use
+
+    * If you find yourself writing long boolean expressions like this, you are doing something wrong
+
+* Notice that once we evaluated ``(14 > 0)`` as ``True``, we really didn't need to finish evaluating the remainder of the expression
+* This is because, as long as one of the operands for an ``or`` is ``True``, we know the whole expression is ``True``
 
 
 
