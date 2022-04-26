@@ -205,6 +205,9 @@ Evaluating Example Expressions
 
 ``True``
 
+* Notice that once we evaluated ``(14 > 0)`` as ``True``, we really didn't need to finish evaluating the remainder of the expression
+* This is because, as long as one of the operands for an ``or`` is ``True``, we know the whole expression is ``True``
+
 
 **``(101 == 100) and ((((66 - 17) > 18) or ((19 - 22) < 0)) and (((4 + 17) < 20) or ((66 - 17) < 44)))``**
 
@@ -234,13 +237,14 @@ Evaluating Example Expressions
 
 ``False``
 
+* Similar with the ``or``, once we evaluated ``(101 == 100)`` as ``False``, we didn't need to evaluate the remainder of the expression
+* With ``and``, if one of the operands are ``False``, the whole expression evaluated to ``False``
+
 
 * Note that the last two examples are quite contrived and are entirely unrealistic to use
 
     * If you find yourself writing long boolean expressions like this, you are doing something wrong
 
-* Notice that once we evaluated ``(14 > 0)`` as ``True``, we really didn't need to finish evaluating the remainder of the expression
-* This is because, as long as one of the operands for an ``or`` is ``True``, we know the whole expression is ``True``
 
 
 
