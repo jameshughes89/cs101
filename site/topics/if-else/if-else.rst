@@ -5,7 +5,7 @@ If/Else
 .. admonition:: Activity
 
     Using only what we have learned so far, can you write a function ``is_negative(a_number)`` that returns ``True`` if
-    ``a_number`` is negative and returns ``False`` when it is not?
+    ``a_number`` is negative and ``False`` when it is not?
 
 
 Conditional Statements
