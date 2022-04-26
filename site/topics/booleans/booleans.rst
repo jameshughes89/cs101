@@ -68,8 +68,8 @@ Truth Table
 .. note::
 
     For ``or``, both statements being ``True`` produces ``True``. There is another operator called *exclusive or* that
-    is ``True`` only when one of the statements is ``True``. Exclusive or is not going to come up in this course. It is
-    only noted here since some people find ``or`` ambiguous at first.
+    is ``True`` only when one of the statements is ``True``. Exclusive or is not going to come up in this course and it
+    is only noted here since some people find ``or`` ambiguous at first.
 
 
 .. raw:: html
