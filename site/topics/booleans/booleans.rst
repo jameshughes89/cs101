@@ -164,3 +164,10 @@ More about returns
     * Now write it with only **1** line of code within the function (so, 2 lines including the function header).
    
 * Functions returning Boolean values are pretty handy. Why? Where do you see yourself using them?
+
+
+
+For Next Class
+==============
+
+* If you have not yet, read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
