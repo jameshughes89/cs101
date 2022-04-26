@@ -18,8 +18,10 @@ Conditional Statements
     * How to use comparison operators
 
 * But Booleans allow us to do a lot more than just evaluate an expression to ``True``/``False``
+* Consider ``is_negative`` from the above activity
 
-
+.. code-block:: python
+    :linenos:
 
 
 Conditional execution
