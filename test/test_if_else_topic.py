@@ -1,6 +1,6 @@
 import unittest
 
-from if_else_topic import is_negative, is_negative_version_2, smush
+from src.if_else_topic import is_negative, is_negative_version_2, smush
 
 
 class TestIfElseTopic(unittest.TestCase):
