@@ -80,6 +80,18 @@ Truth Table
 Boolean Type
 ============
 
+* `Booleans <http://en.wikipedia.org/wiki/George_Boole>`_ are a type in Python, like integers, strings, and floats
+
+    * ``type(True)`` gives us ``bool``
+
+* Unlike integers, strings, and floats however, booleans can only take on two values
+
+    * ``True``
+    * ``False``
+
+
+
+
 * To make parts of the program *conditionally* executed, we need a *formal* way to describe conditions.
 * We need: logic.
 * Let's try some comparison:
