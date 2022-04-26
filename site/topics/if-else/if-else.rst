@@ -79,6 +79,12 @@ Conditional Statements
     * Return the value stored in ``return_value`` (``-10``)
 
 
+.. admonition:: Activity
+
+    Write a function ``is_negative(a_number)`` that returns ``True`` if ``a_number`` is negative and ``False``
+    otherwise.
+
+
 Conditional execution
 =====================
 * Now we can test if a comparison statement is ``True`` or ``False``.
