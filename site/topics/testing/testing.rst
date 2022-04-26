@@ -336,7 +336,7 @@ What You Don't Get
 
 * In the above example, despite type hints being included, it would behave the same way as it did without type hints.   
     
-    * It would still cncatenate the strings
+    * It would still concatenate the strings
 
 	
 For Next Class

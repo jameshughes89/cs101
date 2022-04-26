@@ -22,7 +22,7 @@ Writing Bigger Programs
 =======================
 
 * There is no single correct way to write programs, but there are some strategies
-* For now I recomment a bottom up, incremental approach
+* For now I recommend a bottom up, incremental approach
 
     # Start with an empty function and have it return some arbitrary constant value (e.g., ``0``)
     # Run the function and verify that it does what you expect
@@ -31,7 +31,7 @@ Writing Bigger Programs
     # Repeat
 
 * This incremental strategy is great because a lot of the problem solving you will be doing will be incremental
-* Addditionally, it helps you make sure everything is working along the way
+* Additionally, it helps you make sure everything is working along the way
 
     * If everything *was* working and you added two lines of code and suddenly it stops working, perhaps the issue is with the two new lines you wrote
 
@@ -210,7 +210,7 @@ Now for the tough one... calculate the total cost. What do we know?
         :param age: Age of the driver.
         :param code: The classification code (B ord D).
         :param odometer_start: Odometer when the renter took the car.
-        :param odometer_finish: Odomoter when the renter returned the car.
+        :param odometer_finish: Odometer when the renter returned the car.
         :return: The amount to charge the renter.
         '''
 

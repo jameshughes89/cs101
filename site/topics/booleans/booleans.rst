@@ -8,7 +8,7 @@ Propositional Logic
     * This topic is titled "Not Logic" --- ``False``
 
 * This is rather intuitive since you use this type of simple logic in every day life to make decisions
-* Additionally, you are alreay familiar with some *operators* we can use on these ``True``/``False`` statements
+* Additionally, you are already familiar with some *operators* we can use on these ``True``/``False`` statements
 
     * ``and``
     * ``or``
@@ -53,10 +53,10 @@ Truth Table
 * To put it slightly different
 
     * Is *the sky blue* ``and`` is *water wet*? --- ``True``
-    * Is *the sky blue* ``and`` is it *over 100 degreed Celsius outside*? --- ``False``
-    * Is *the sky blue* ``or`` is it *over 100 degreed Celsius outside*? --- ``True``
-    * Is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
-    * Is *the sky blue* ``and`` is it ``not`` *over 100 degreed Celsius outside*? --- ``True``
+    * Is *the sky blue* ``and`` is it *over 100 degrees Celsius outside*? --- ``False``
+    * Is *the sky blue* ``or`` is it *over 100 degrees Celsius outside*? --- ``True``
+    * Is it ``not`` *over 100 degrees Celsius outside*? --- ``True``
+    * Is *the sky blue* ``and`` is it ``not`` *over 100 degrees Celsius outside*? --- ``True``
 
 
 * You may have observed that
