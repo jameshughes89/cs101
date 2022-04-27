@@ -122,6 +122,18 @@ Compound Conditions
     assert "Nope" == three_five_divisible(1)    # Divisible by neither
 
 
+.. note::
+
+    The modulo operator ``%`` (often called just "mod") effectively does division and returns the **remainder**. For
+    example, ``10 % 3`` is ``1`` since ``10/3`` is ``3`` remainder ``1``.
+
+    In the ``three_five_divisible`` example, we are checking if the remainder of the division is ``0``, which would mean
+    that the value can be evenly divided.
+
+    Another common use of ``%`` is checking if a value is even or not --- ``x % 2`` is ``0`` when ``x`` is even since
+    it would mean that ``x`` can be evenly divided by ``2``.
+
+
 * The above function ``three_five_divisible`` needs to check if a number is divisible by 3 ``and`` 5
 * This means that there are two conditions we need to check for being ``True``
 
