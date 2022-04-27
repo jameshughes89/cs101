@@ -137,6 +137,8 @@ Compound Conditions
 * The above function ``three_five_divisible`` needs to check if a number is divisible by 3 ``and`` 5
 * This means that there are two conditions we need to check for being ``True``
 
+    # Example of true
+    # example of false
 
 
 
