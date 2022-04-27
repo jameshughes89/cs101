@@ -75,5 +75,5 @@ def three_five_divisible(a_number: float) -> str:
 assert "It is!" == three_five_divisible(0)
 assert "It is!" == three_five_divisible(15)
 assert "It is!" == three_five_divisible(-30)
-assert "Nope" == three_five_divisible(1)
-assert "Nope" == three_five_divisible(-14)
+assert "Nope" == three_five_divisible(3)
+assert "Nope" == three_five_divisible(-50)

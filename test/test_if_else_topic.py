@@ -40,8 +40,8 @@ class TestIfElseTopic(unittest.TestCase):
     def test_three_five_divisible_negative_thirty_parameter_returns_correct_string(self):
         self.assertEqual("It is!", three_five_divisible(-30))
 
-    def test_three_five_divisible_one_parameter_returns_correct_string(self):
-        self.assertEqual("Nope", three_five_divisible(1))
+    def test_three_five_divisible_three_parameter_returns_correct_string(self):
+        self.assertEqual("Nope", three_five_divisible(3))
 
-    def test_three_five_divisible_negative_fourteen_parameter_returns_correct_string(self):
-        self.assertEqual("Nope", three_five_divisible(-14))
+    def test_three_five_divisible_negative_fifty_parameter_returns_correct_string(self):
+        self.assertEqual("Nope", three_five_divisible(-50))
