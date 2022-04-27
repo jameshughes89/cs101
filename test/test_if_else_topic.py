@@ -1,6 +1,11 @@
 import unittest
 
-from src.if_else_topic import is_negative, is_negative_version_2, smush, three_five_divisible
+from src.if_else_topic import (
+    is_negative,
+    is_negative_version_2,
+    smush,
+    three_five_divisible,
+)
 
 
 class TestIfElseTopic(unittest.TestCase):
@@ -45,3 +50,6 @@ class TestIfElseTopic(unittest.TestCase):
 
     def test_three_five_divisible_negative_fifty_parameter_returns_correct_string(self):
         self.assertEqual("Nope", three_five_divisible(-50))
+
+    def test_three_five_divisible_one_parameter_returns_correct_string(self):
+        self.assertEqual("Nope", three_five_divisible(1))
