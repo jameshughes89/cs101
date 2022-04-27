@@ -43,6 +43,12 @@ pip install --editable .
 format # just type this
 ```
 
+# Unit Tests
+
+```sh
+python -m unittest # May need python3
+```
+
 # Build
 
 ```sh
