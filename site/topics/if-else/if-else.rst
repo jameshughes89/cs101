@@ -85,9 +85,21 @@ Conditional Expressions
     otherwise.
 
    
-   
-Compound conditions
+Compound Conditions
 ===================
+
+* When we make use of an ``if`` statement, the value being checked needs to ultimately be evaluated to a Boolean
+* This means that we can make use of more complex compound Boolean expressions
+
+    * Comparison operators
+    * Arithmatic operators
+    * Boolean operators
+
+.. code-block:: python
+    :linenos:
+    :lines-emphasis: 11
+
+
 * We can use the logical operators ``and``, ``or`` and ``not`` to combine conditions.
 * The combinations can be arbitrarily complex::
 
