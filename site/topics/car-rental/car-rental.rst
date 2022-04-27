@@ -24,11 +24,11 @@ Writing Bigger Programs
 * There is no single correct way to write programs, but there are some strategies
 * For now I recommend a bottom up, incremental approach
 
-    # Start with an empty function and have it return some arbitrary constant value (e.g., ``0``)
-    # Run the function and verify that it does what you expect
-    # Add one or two lines of code
-    # Run the function and verify that it does what you expect
-    # Repeat
+    #. Start with an empty function and have it return some arbitrary constant value (e.g., ``0``)
+    #. Run the function and verify that it does what you expect
+    #. Add one or two lines of code
+    #. Run the function and verify that it does what you expect
+    #. Repeat
 
 * This incremental strategy is great because a lot of the problem solving you will be doing will be incremental
 * Additionally, it helps you make sure everything is working along the way
