@@ -97,7 +97,33 @@ Compound Conditions
 
 .. code-block:: python
     :linenos:
-    :lines-emphasis: 11
+    :lines-emphasis: 10
+
+    def three_five_divisible(a_number: float) -> str:
+        """
+        Checks if a number is divisible by both three and five. If it is, return
+        a string "It is!", otherwise "Nope".
+
+        :rtype: str
+        :param a_number: Some arbitrary number.
+        :return: String indicating if the number is divisible by three and five
+        """
+        if a_number % 3 == 0 and a_number % 5 == 0:
+            return "It is!"
+        return "Nope"
+
+
+    # Tests for three_five_divisible
+    assert "It is!" == three_five_divisible(0)
+    assert "It is!" == three_five_divisible(15)
+    assert "It is!" == three_five_divisible(-30)
+    assert "Nope" == three_five_divisible(1)
+    assert "Nope" == three_five_divisible(-14)
+
+
+* The above function ``three_five_divisible`` needs to check if a number is divisible by 3 ``and`` 5
+* This means that there are two conditions we need to check for being ``True``
+
 
 
 * We can use the logical operators ``and``, ``or`` and ``not`` to combine conditions.
