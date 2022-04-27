@@ -139,12 +139,6 @@ Compound Conditions
 
 
 
-* We can use the logical operators ``and``, ``or`` and ``not`` to combine conditions.
-* The combinations can be arbitrarily complex::
-
-    if (grade < 90 and personality_type == 'A' and desired_career == 'med school') or (grade < 100 and personality_type == 'AAA'):
-        print('Time to ask for extra credit!')
-
 
 .. raw:: html
 
