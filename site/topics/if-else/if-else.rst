@@ -137,9 +137,30 @@ Compound Conditions
 * The above function ``three_five_divisible`` needs to check if a number is divisible by 3 ``and`` 5
 * This means that there are two conditions we need to check for being ``True``
 
-    # Example of true
-    # example of false
+* If we follow the code within the function when ``a_number`` is ``15``, the execution is as follows
 
+    * Evaluate ``a_number % 3 == 0 and a_number % 5 == 0``
+
+        * ``15 % 3 == 0 and 15 % 5 == 0``
+        * ``0 == 0 and 0 == 0``
+        * ``True and True``
+        * ``True``
+
+
+    * Since the expression evaluated to ``True``, the indented code is run
+    * Return ``"It is!"``, function ends
+
+* If we follow the code within the function when ``a_number`` is ``9``, the execution is as follows
+
+    * Evaluate ``a_number % 3 == 0 and a_number % 5 == 0``
+
+        * ``9 % 3 == 0 and 9 % 5 == 0``
+        * ``0 == 0 and 4 == 0``
+        * ``True and False``
+        * ``False``
+
+    * Since the expression evaluated to ``False``, the indented code is skipped
+    * Return ``"Nope"``
 
 
 .. raw:: html
