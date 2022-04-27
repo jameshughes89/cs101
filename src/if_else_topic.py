@@ -53,3 +53,25 @@ def is_negative_version_2(a_number: float) -> bool:
 assert False == is_negative_version_2(10)
 assert True == is_negative_version_2(-10)
 assert False == is_negative_version_2(0)
+
+
+def three_five_divisible(a_number: float) -> str:
+    """
+    Checks if a number is divisible by both three and five. If it is, return
+    a string "It is!", otherwise "Nope".
+
+    :rtype: str
+    :param a_number: Some arbitrary number.
+    :return: String indicating if the number is divisible by three and five
+    """
+    if a_number % 3 == 0 and a_number % 5 == 0:
+        return "It is!"
+    return "Nope"
+
+
+# Tests for smush
+assert "It is!" == three_five_divisible(0)
+assert "It is!" == three_five_divisible(15)
+assert "It is!" == three_five_divisible(-30)
+assert "Nope" == three_five_divisible(1)
+assert "Nope" == three_five_divisible(-14)
