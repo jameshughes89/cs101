@@ -33,6 +33,7 @@ def is_negative(a_number: float) -> bool:
     return False
 
 
+# Tests for is_negative
 assert False == is_negative(10)
 assert True == is_negative(-10)
 assert False == is_negative(0)
@@ -50,6 +51,7 @@ def is_negative_version_2(a_number: float) -> bool:
     return a_number < 0
 
 
+# Tests for is_negative_version_2
 assert False == is_negative_version_2(10)
 assert True == is_negative_version_2(-10)
 assert False == is_negative_version_2(0)
@@ -69,7 +71,7 @@ def three_five_divisible(a_number: float) -> str:
     return "Nope"
 
 
-# Tests for smush
+# Tests for three_five_divisible
 assert "It is!" == three_five_divisible(0)
 assert "It is!" == three_five_divisible(15)
 assert "It is!" == three_five_divisible(-30)
