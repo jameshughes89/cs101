@@ -135,21 +135,18 @@ Alternative Execution
 
 .. admonition:: Activity
 
-    Write a Python function called ``hail`` that takes an integer as its argument. If the integer is even, return the value of the integer divided by 2. If it's odd, return the value of the integer multiplied by 3 and with 1 added. 
-
-    That is: ``n`` goes to ``2/n`` if even, ``3*n+1`` if odd. 
-
-    **HINT**: You may want to look up the Python modulus operator: ``%``.
+    Write a function called ``hail`` that takes an integer as an argument. If the integer is even, return the value of
+    that integer divided by 2. If it is odd, return the value multiplied by 3 and with one added. In other words,
+    given a number :math:`n`, return :math:`n/2` when it is even and :math:`3n + 1` when it is odd. **Hint:** Don't
+    forget about ``%``.
    
-   
+    .. raw:: html
 
-      .. raw:: html
-
-      	<iframe width="560" height="315" src="https://www.youtube.com/embed/k0LcSJzANgU" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k0LcSJzANgU" frameborder="0" allowfullscreen></iframe>
 		
-    `This is actually some neat math stuff <https://en.wikipedia.org/wiki/Collatz_conjecture>`_
+    `This is actually some neat math stuff <https://en.wikipedia.org/wiki/Collatz_conjecture>`_. Isn't it cool that
+    we're writing a Python function that's doing exactly what the math is saying?
 
-    Isn't it interesting that we're writing a function that's doing exactly what the math is saying?
 
    
 Chains of alternatives
