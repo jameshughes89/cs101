@@ -53,3 +53,24 @@ def is_negative_version_2(a_number: float) -> bool:
 assert False == is_negative_version_2(10)
 assert True == is_negative_version_2(-10)
 assert False == is_negative_version_2(0)
+
+
+def hail(n: float) -> float:
+    """
+    Hailstone Numbers. Return n/2 if n is even, otherwise return 3n+1.
+
+    :rtype: float
+    :param n: Some arbitrary number.
+    :return: n/2 if n is even, 3n+1 when n is odd.
+    """
+    if n % 2 == 0:
+        return n / 2
+    else:
+        return 3 * n + 1
+
+
+# Tests for hail
+assert 0 == hail(0)
+assert 4 == hail(1)
+assert 1 == hail(2)
+assert -14 == hail(-5)
