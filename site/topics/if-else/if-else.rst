@@ -201,9 +201,17 @@ Exclusive Alternatives
     * Assign ``letter_grade`` the value ``"A"``
     * ...
 
+* The trouble here is that we really only want one of these ``if`` code blocks to run
 
+    * We want them to be *mutually exclusive* alternatives
 
-* What if I want several, *mutually exclusive*, alternatives?::
+* There are a few ways one could fix this
+
+    * Have a ``return`` in each indented block since that would stop execution of the function once a ``return`` is reached
+    * Reverse the order of the ``if``\s
+
+* But arguably the better way to address this is with ``elif``\s
+
 
     if year < 1960:
         print('Jazz')
