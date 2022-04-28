@@ -117,3 +117,36 @@ assert 0 == hail(0)
 assert 4 == hail(1)
 assert 1 == hail(2)
 assert -14 == hail(-5)
+
+
+def letter_grade(percent_grade: float) -> str:
+    """
+    Calculate the letter grade associated with the provided percent grade.
+
+    :rtype: str
+    :param percent_grade: A grade as a percent
+    :return: Letter grade for the provided percentage
+    """
+    letter_grade = ""
+    if percent_grade >= 90:
+        letter_grade = "A+"
+    elif percent_grade >= 80:
+        letter_grade = "A"
+    elif percent_grade >= 70:
+        letter_grade = "B"
+    elif percent_grade >= 60:
+        letter_grade = "C"
+    elif percent_grade >= 50:
+        letter_grade = "D"
+    else:
+        letter_grade = "F"
+    return letter_grade
+
+
+# Test letter_grade
+assert "A+" == letter_grade(90)
+assert "A" == letter_grade(80)
+assert "B" == letter_grade(70)
+assert "C" == letter_grade(60)
+assert "D" == letter_grade(50)
+assert "F" == letter_grade(49)
