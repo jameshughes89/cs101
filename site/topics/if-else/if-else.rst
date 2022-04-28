@@ -144,7 +144,7 @@ Alternative execution
 Exclusive Alternatives
 ======================
 
-* Sometimes we need to check various conditions and a simple ``if``/``else`` isn't enough
+* Sometimes we need to check various conditions and a single ``if``/``else`` isn't enough
 * For example, what if I want a function to take a percentage grade and return a letter grade
 
 .. code-block:: python
