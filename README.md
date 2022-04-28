@@ -31,7 +31,7 @@ pip install --editable .
 ## Bash
 
 ```sh
-python3.8 -m venv --clear --prompt cs101 venv
+python3.10 -m venv --clear --prompt cs101 venv
 . venv/bin/activate
 pip install --upgrade pip setuptools wheel
 pip install --editable .
@@ -41,6 +41,12 @@ pip install --editable .
 
 ```sh
 format # just type this
+```
+
+# Unit Tests
+
+```sh
+python -m unittest # May need python3
 ```
 
 # Build

@@ -1,9 +1,12 @@
 import unittest
 
 from src.if_else_topic import (
+    hail,
     is_negative,
     is_negative_version_2,
     smush,
+    smush_version_2,
+    smush_version_3,
     three_five_divisible,
 )
 
@@ -17,6 +20,24 @@ class TestIfElseTopic(unittest.TestCase):
 
     def test_smush_zero_parameter_returns_zero(self):
         self.assertEqual(0, smush(0))
+
+    def test_smush_version_2_positive_parameter_returns_half(self):
+        self.assertEqual(5, smush_version_2(10))
+
+    def test_smush_version_2_negative_parameter_returns_parameter(self):
+        self.assertEqual(-10, smush_version_2(-10))
+
+    def test_smush_version_2_zero_parameter_returns_zero(self):
+        self.assertEqual(0, smush_version_2(0))
+
+    def test_smush_version_3_positive_parameter_returns_half(self):
+        self.assertEqual(5, smush_version_3(10))
+
+    def test_smush_version_3_negative_parameter_returns_parameter(self):
+        self.assertEqual(-10, smush_version_3(-10))
+
+    def test_smush_version_3_zero_parameter_returns_zero(self):
+        self.assertEqual(0, smush_version_3(0))
 
     def test_is_negative_positive_parameter_returns_False(self):
         self.assertFalse(is_negative(10))
@@ -53,3 +74,16 @@ class TestIfElseTopic(unittest.TestCase):
 
     def test_three_five_divisible_one_parameter_returns_correct_string(self):
         self.assertEqual("Nope", three_five_divisible(1))
+
+    def test_hail_zero_parameter_returns_zero(self):
+        self.assertEqual(0, hail(0))
+
+    def test_hail_even_parameter_returns_half(self):
+        self.assertEqual(1, hail(2))
+
+    def test_hail_odd_parameter_returns_times_three_plus_one(self):
+        self.assertEqual(4, hail(1))
+
+    def test_hail_negative_odd_parameter_returns_times_three_plus_one(self):
+        self.assertEqual(-14, hail(-5))
+
