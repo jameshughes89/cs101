@@ -4,11 +4,13 @@ from src.if_else_topic import (
     hail,
     is_negative,
     is_negative_version_2,
+    letter_grade,
     smush,
     smush_version_2,
     smush_version_3,
     three_five_divisible,
 )
+
 
 
 class TestIfElseTopic(unittest.TestCase):
@@ -86,4 +88,22 @@ class TestIfElseTopic(unittest.TestCase):
 
     def test_hail_negative_odd_parameter_returns_times_three_plus_one(self):
         self.assertEqual(-14, hail(-5))
+
+    def test_letter_grade_90_returns_A_plus(self):
+        self.assertEqual("A+", letter_grade(90))
+
+    def test_letter_grade_80_returns_A(self):
+        self.assertEqual("A", letter_grade(80))
+
+    def test_letter_grade_70_returns_B(self):
+        self.assertEqual("B", letter_grade(70))
+
+    def test_letter_grade_60_returns_C(self):
+        self.assertEqual("C", letter_grade(60))
+
+    def test_letter_grade_50_returns_D(self):
+        self.assertEqual("D", letter_grade(50))
+
+    def test_letter_grade_49_returns_F(self):
+        self.assertEqual("F", letter_grade(49))
 
