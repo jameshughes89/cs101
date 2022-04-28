@@ -193,9 +193,9 @@ Alternative Execution
             else:
                 return a_number
 
-    Another possibility is ``smush_version_3``. You will notice how similar it is to version 2, but here we simply
-    include the ``return``\s in the ``if`` and ``else`` blocks. Again, this is not *more correct* and it is only shown
-    here to demonstrate how the same functionality can be implemented differently. 
+    Another possibility is ``smush_version_3``. You will notice how similar it is to version 2, but here we use two
+    ``return``\s in the ``if`` and ``else`` blocks. Again, this is not *more correct* and it is only shown here to
+    demonstrate how the same functionality can be implemented differently.
 
    
 Chains of alternatives
