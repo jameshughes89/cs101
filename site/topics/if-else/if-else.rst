@@ -148,6 +148,55 @@ Alternative Execution
     we're writing a Python function that's doing exactly what the math is saying?
 
 
+.. note::
+
+    If we revisit ``smush``, we can rewrite the function in a few different ways that are all correct.
+
+    .. code-block:: python
+        :linenos:
+
+        def smush_version_2(a_number: float) -> float:
+            """
+            Returns half the value of the parameter a_number if the value is positive,
+            otherwise, return the value of a_number.
+
+            :rtype: float
+            :param a_number: Some arbitrary number.
+            :return: Half of a_number when it is positive, a_number when not positive.
+            """
+            if a_number > 0:
+                return_value = a_number / 2
+            else:
+                return_value = a_number
+            return return_value
+
+
+    In ``smush_version_2``, an ``else`` is used and the function has only one ``return``. The use of the ``else`` here
+    is not required (as seen in the original ``smush``), but the use of ``else`` in this situation may make the function
+    a little clearer. Additionally, some programmers prefer having their functions have only one ``return``, but this is
+    by no means *more correct*.
+
+    .. code-block:: python
+        :linenos:
+
+        def smush_version_3(a_number: float) -> float:
+            """
+            Returns half the value of the parameter a_number if the value is positive,
+            otherwise, return the value of a_number.
+
+            :rtype: float
+            :param a_number: Some arbitrary number.
+            :return: Half of a_number when it is positive, a_number when not positive.
+            """
+            if a_number > 0:
+                return a_number / 2
+            else:
+                return a_number
+
+    Another possibility is ``smush_version_3``. You will notice how similar it is to version 2, but here we simply
+    include the ``return``\s in the ``if`` and ``else`` blocks. Again, this is not *more correct* and it is only shown
+    here to demonstrate how the same functionality can be implemented differently. 
+
    
 Chains of alternatives
 ======================
