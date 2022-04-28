@@ -101,15 +101,36 @@ Compound conditions
 
    
    
-Alternative execution
+Alternative Execution
 =====================
-* This pattern is very common::
+
+* This pattern is very common
+
+.. code-block:: python
+    :linenos:2864
 
     if x > 10:
         do_something()
-	
     if not(x > 10):
         do_something_else()
+
+
+* When we have an either/or situation we make use of ``else``
+
+.. code-block:: python
+    :linenos:
+
+    if x > 10:
+        do_something()
+    else:
+        do_something_else()
+
+
+* The two examples above will effectively do the same thing, but the 2nd is nicer
+
+    * Write less
+    * Intuitive
+    * Eliminate potential bugs
 
 * Programmers are lazy and don't want to type the condition (here ``x > 10``) twice (this also introduces the chance for more bugs)
 * So ``if`` statements have a special ``else`` statement that can go with them::
