@@ -173,114 +173,47 @@ Chains of alternatives
       	<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpxIvRshzg" frameborder="0" allowfullscreen></iframe>  
    
    
-Nested conditionals
-===================
-
-* Computer scientists love "nesting" things: putting things inside other things.
+Nesting Conditionals
+====================
 
 .. image:: dolls.jpeg
 
-* You can "nest" a conditional inside another conditional::
+* You can "nest" conditionals inside other conditionals
 
+.. code-block:: python
+    :linenos:
+
+    # Find quadrant with 'nested If's
     if x > 0:
         if y > 0:
-            print('First Quadrant')
+            print("First Quadrant")
         else:
-            print('Fourth Quadrant')
+            print("Fourth Quadrant")
     else:
         if y > 0:
-            print('Second Quadrant')
+            print("Second Quadrant")
         else:
-            print('Third Quadrant')
-			
-* In the above example, we *could* have done it without nesting by using ``and`` and whatnot, but for fun we can nest it
+            print("Third Quadrant")
 
-* Again, no limit to how deep you nest... but mind the readability of your code!
-    * Actually, technically, Python has a limit of 20 nested statements, but other languages have much deeper limits
-    * In a more mathematical/theoreticaltical sense, there is no limit 
+* For simplicity, ignore point :math:`(0,0)` being in the third quadrant
+* In the above example, we *could* have done it without nesting by using ``and``\s
+* But some may find the nested version of the code more intuitive and readable
 
-* Do not go to anyone with this::
+.. code-block:: python
+    :linenos:
 
-	if a > 0:
-	   if b > 0:
-	      if c > 0:
-	         if d > 0:
-	            if e > 0:
-	               if f > 0:
-	                  if g > 0:
-	                     if h > 0:
-	                        if i > 0:
-	                           if j > 0:	
-	                              if k > 0:
-	                                 if l > 0:
-	                                    if m > 0:
-	                                       if n > 0:
-	                                          if o > 0:
-	                                             if p > 0:
-	                                                if q > 0:
-	                                                   if r > 0:
-	                                                      if s > 0:
-	                                                         if t > 0:
-	                                                            if u > 0:
-	                                                               if v > 0:	
-	                                                                  if w > 0:
-	                                                                     if x > 0:
-	                                                                        if y > 0:
-	                                                                           if z > 0:
-	                                                                              print('I want my TA to hate me')
-	else:
-	   print("I'm making a huge mistake")
+    # Find quadrant with 'and's
+    if x > 0 and y > 0:
+        print("First Quadrant")
+    elif x > 0 and y < 0
+        print("Fourth Quadrant")
+    elif x < 0 and y > 0:
+        print("Second Quadrant")
+    else:
+        print("Third Quadrant")
 
 
-Libraries
-=========
-* Most of you are here because you are pragmatic people who want to *get stuff done*
-* The fastest way to *get stuff done* is by leveraging stuff that other people have done.
-* Remember functions? Wouldn't it be awesome if there were huge collections of functions that already existed... and did a lot of the stuff you want to do? 
-* Python has a *huge* variety of existing **libraries**/**packages**.
-	   
-	   
-NumPy
-=====
-* The most important library for us is *Numerical Python* ("NumPy" for short).
-* For anyone working with real data in Python, NumPy is awesome
-* Because it isn't 'built in' to Python, we have to tell Python that we want to use NumPy:
-    >>> import numpy
-    
-
-NumPy Types
-===========
-* Recall that Python values have types.
-* NumPy defines a `whole bunch of new types <http://docs.scipy.org/doc/numpy/user/basics.types.html>`_.
-* When you call NumPy functions, Python will, as always, try it's best to guess at type conversions for you.
-* *but*... you can be explicit about it, too:
-    >>> x = numpy.float32(7.3)
-    >>> print x
-    7.3
-    
-    >>> type(x)
-    <class 'numpy.float32'>
-
-* Check this out:
-    >>> numpy.float128(3.33)
-    3.330000000000000071
-    >>> numpy.float64(3.33)
-    3.33
-
-
-* Floating point precision...
-* Let's think for a second about real numbers vs. computers. 	
-	
-
-* You can convert regular Python types, and NumPy types, back and forth as you need.
-* If you aren't sure what type a variable has, remember that you can always check with ``type()``
-
-.. admonition:: Activity
-
-    Write a Python function that takes two Python ``float`` s as inputs, converts them both into ``numpy.float32`` type and then returns the product.
-
-
-For next class
+For Next Class
 ==============
 
 * Read `chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
