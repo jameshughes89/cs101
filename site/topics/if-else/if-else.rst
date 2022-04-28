@@ -141,9 +141,68 @@ Alternative execution
     Isn't it interesting that we're writing a function that's doing exactly what the math is saying?
 
    
-Chains of alternatives
+Exclusive Alternatives
 ======================
-* Sometimes a binary ``if``/``else`` isn't enough.
+
+* Sometimes we need to check various conditions and a simple ``if``/``else`` isn't enough
+* For example, what if I want a function to take a percentage grade and return a letter grade
+
+.. code-block:: python
+    :linenos:
+
+    def letter_grade_broken(percent_grade: float) -> str:
+        """
+        Calculate the letter grade associated with the provided percent grade.
+
+        :rtype: str
+        :param percent_grade: A grade as a percent
+        :return: Letter grade for the provided percentage
+        """
+        letter_grade = ""
+        if percent_grade >= 90:
+            letter_grade = "A+"
+        if percent_grade >= 80:
+            letter_grade = "A"
+        if percent_grade >= 70:
+            letter_grade = "B"
+        if percent_grade >= 60:
+            letter_grade = "C"
+        if percent_grade >= 50:
+            letter_grade = "D"
+        else:
+            letter_grade = "F"
+        return letter_grade
+
+* The above example ``letter_grade_broken`` may be one of the first ideas you come up with, but unfortunately it has a problem
+* If we run ``assert "A+" == letter_grade_broken(99)``
+
+    * ``letter_grade_broken(99)`` would actually return ``"D"``
+
+* The trick to understanding the problem is to take our time and look at the code
+
+    * Call ``letter_grade_broken(99)``
+    * ``percent_grade`` is assigned the value ``99``
+    * Check if ``percent_grade >= 90``
+
+        * ``percent_grade >= 90``
+        * ``99 >= 90``
+        * ``True``
+
+    * Since the expression is evaluated to ``True``, the indented code is run
+    * Assign ``letter_grade`` the value ``"A+"``
+    * The execution continues
+    * Check if ``percent_grade >= 80``
+
+        * ``percent_grade >= 80``
+        * ``99 >= 80``
+        * ``True``
+
+    * Since the expression is evaluated to ``True``, the indented code is run
+    * Assign ``letter_grade`` the value ``"A"``
+    * ...
+
+
+
 * What if I want several, *mutually exclusive*, alternatives?::
 
     if year < 1960:
