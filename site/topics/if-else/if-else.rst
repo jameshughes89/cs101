@@ -173,27 +173,44 @@ Chains of alternatives
       	<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpxIvRshzg" frameborder="0" allowfullscreen></iframe>  
    
    
-Nested conditionals
-===================
-
-* Computer scientists love "nesting" things: putting things inside other things.
+Nesting Conditionals
+====================
 
 .. image:: dolls.jpeg
 
-* You can "nest" a conditional inside another conditional::
+* You can "nest" conditionals inside other conditionals
 
+.. code-block:: python
+    :linenos:
+
+    # Find quadrant with 'nested If's
     if x > 0:
         if y > 0:
-            print('First Quadrant')
+            print("First Quadrant")
         else:
-            print('Fourth Quadrant')
+            print("Fourth Quadrant")
     else:
         if y > 0:
-            print('Second Quadrant')
+            print("Second Quadrant")
         else:
-            print('Third Quadrant')
-			
-* In the above example, we *could* have done it without nesting by using ``and`` and whatnot, but for fun we can nest it
+            print("Third Quadrant")
+
+* For simplicity, ignore point :math:`(0,0)` being in the third quadrant
+* In the above example, we *could* have done it without nesting by using ``and``\s
+* But some may find the nested version of the code more intuitive and readable
+
+.. code-block:: python
+    :linenos:
+
+    # Find quadrant with 'and's
+    if x > 0 and y > 0:
+        print("First Quadrant")
+    elif x > 0 and y < 0
+        print("Fourth Quadrant")
+    elif x < 0 and y > 0:
+        print("Second Quadrant")
+    else:
+        print("Third Quadrant")
 
 * Again, no limit to how deep you nest... but mind the readability of your code!
     * Actually, technically, Python has a limit of 20 nested statements, but other languages have much deeper limits
