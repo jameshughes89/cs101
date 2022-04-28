@@ -1,6 +1,6 @@
 import unittest
 
-from src.if_else_topic import is_negative, is_negative_version_2, smush, hail
+from src.if_else_topic import is_negative, is_negative_version_2, smush, hail, smush_version_2, smush_version_3
 
 
 class TestIfElseTopic(unittest.TestCase):
@@ -12,6 +12,24 @@ class TestIfElseTopic(unittest.TestCase):
 
     def test_smush_zero_parameter_returns_zero(self):
         self.assertEqual(0, smush(0))
+
+    def test_smush_version_2_positive_parameter_returns_half(self):
+        self.assertEqual(5, smush_version_2(10))
+
+    def test_smush_version_2_negative_parameter_returns_parameter(self):
+        self.assertEqual(-10, smush_version_2(-10))
+
+    def test_smush_version_2_zero_parameter_returns_zero(self):
+        self.assertEqual(0, smush_version_2(0))
+
+    def test_smush_version_3_positive_parameter_returns_half(self):
+        self.assertEqual(5, smush_version_3(10))
+
+    def test_smush_version_3_negative_parameter_returns_parameter(self):
+        self.assertEqual(-10, smush_version_3(-10))
+
+    def test_smush_version_3_zero_parameter_returns_zero(self):
+        self.assertEqual(0, smush_version_3(0))
 
     def test_is_negative_positive_parameter_returns_False(self):
         self.assertFalse(is_negative(10))

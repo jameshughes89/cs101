@@ -19,6 +19,49 @@ assert -10 == smush(-10)
 assert 0 == smush(0)
 
 
+def smush_version_2(a_number: float) -> float:
+    """
+    Returns half the value of the parameter a_number if the value is positive,
+    otherwise, return the value of a_number.
+
+    :rtype: float
+    :param a_number: Some arbitrary number.
+    :return: Half of a_number when it is positive, a_number when not positive.
+    """
+    if a_number > 0:
+        return_value = a_number / 2
+    else:
+        return_value = a_number
+    return return_value
+
+
+# Tests for smush_version_2
+assert 5 == smush_version_2(10)
+assert -10 == smush_version_2(-10)
+assert 0 == smush_version_2(0)
+
+
+def smush_version_3(a_number: float) -> float:
+    """
+    Returns half the value of the parameter a_number if the value is positive,
+    otherwise, return the value of a_number.
+
+    :rtype: float
+    :param a_number: Some arbitrary number.
+    :return: Half of a_number when it is positive, a_number when not positive.
+    """
+    if a_number > 0:
+        return a_number / 2
+    else:
+        return a_number
+
+
+# Tests for smush_version_3
+assert 5 == smush_version_3(10)
+assert -10 == smush_version_3(-10)
+assert 0 == smush_version_3(0)
+
+
 def is_negative(a_number: float) -> bool:
     """
     Checks if the provided number is negative or not. Returns True if a_number
