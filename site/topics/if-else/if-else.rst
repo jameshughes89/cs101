@@ -101,44 +101,101 @@ Compound conditions
 
    
    
-Alternative execution
+Alternative Execution
 =====================
-* This pattern is very common::
+
+* This pattern is very common
+
+.. code-block:: python
+    :linenos:2864
 
     if x > 10:
         do_something()
-	
     if not(x > 10):
         do_something_else()
 
-* Programmers are lazy and don't want to type the condition (here ``x > 10``) twice (this also introduces the chance for more bugs)
-* So ``if`` statements have a special ``else`` statement that can go with them::
+
+* When we have an either/or situation we make use of ``else``
+
+.. code-block:: python
+    :linenos:
 
     if x > 10:
         do_something()
     else:
         do_something_else()
-		
-* Does exactly the same thing as the preceding code... but...
-* Involves less typing and is easier to read and understand. 
+
+
+* The two examples above will effectively do the same thing, but the 2nd is nicer
+
+    * Write less
+    * Intuitive and easy to read/understand
+    * Eliminate potential bugs
+
 
 .. admonition:: Activity
 
-    Write a Python function called ``hail`` that takes an integer as its argument. If the integer is even, return the value of the integer divided by 2. If it's odd, return the value of the integer multiplied by 3 and with 1 added. 
-
-    That is: ``n`` goes to ``2/n`` if even, ``3*n+1`` if odd. 
-
-    **HINT**: You may want to look up the Python modulus operator: ``%``.
+    Write a function called ``hail`` that takes an integer as an argument. If the integer is even, return the value of
+    that integer divided by 2. If it is odd, return the value multiplied by 3 and with one added. In other words,
+    given a number :math:`n`, return :math:`n/2` when it is even and :math:`3n + 1` when it is odd. **Hint:** Don't
+    forget about ``%``.
    
-   
+    .. raw:: html
 
-      .. raw:: html
-
-      	<iframe width="560" height="315" src="https://www.youtube.com/embed/k0LcSJzANgU" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k0LcSJzANgU" frameborder="0" allowfullscreen></iframe>
 		
-    `This is actually some neat math stuff <https://en.wikipedia.org/wiki/Collatz_conjecture>`_
+    `This is actually some neat math stuff <https://en.wikipedia.org/wiki/Collatz_conjecture>`_. Isn't it cool that
+    we're writing a Python function that's doing exactly what the math is saying?
 
-    Isn't it interesting that we're writing a function that's doing exactly what the math is saying?
+
+.. note::
+
+    If we revisit ``smush``, we can rewrite the function in a few different ways that are all correct.
+
+    .. code-block:: python
+        :linenos:
+
+        def smush_version_2(a_number: float) -> float:
+            """
+            Returns half the value of the parameter a_number if the value is positive,
+            otherwise, return the value of a_number.
+
+            :rtype: float
+            :param a_number: Some arbitrary number.
+            :return: Half of a_number when it is positive, a_number when not positive.
+            """
+            if a_number > 0:
+                return_value = a_number / 2
+            else:
+                return_value = a_number
+            return return_value
+
+
+    In ``smush_version_2``, an ``else`` is used and the function has only one ``return``. The use of the ``else`` here
+    is not required (as seen in the original ``smush``), but the use of ``else`` in this situation may make the function
+    a little clearer. Additionally, some programmers prefer having their functions have only one ``return``, but this is
+    by no means *more correct*.
+
+    .. code-block:: python
+        :linenos:
+
+        def smush_version_3(a_number: float) -> float:
+            """
+            Returns half the value of the parameter a_number if the value is positive,
+            otherwise, return the value of a_number.
+
+            :rtype: float
+            :param a_number: Some arbitrary number.
+            :return: Half of a_number when it is positive, a_number when not positive.
+            """
+            if a_number > 0:
+                return a_number / 2
+            else:
+                return a_number
+
+    Another possibility is ``smush_version_3``. You will notice how similar it is to version 2, but here we use two
+    ``return``\s in the ``if`` and ``else`` blocks. Again, this is not *more correct* and it is only shown here to
+    demonstrate how the same functionality can be implemented differently.
 
    
 Exclusive Alternatives
@@ -251,114 +308,47 @@ Exclusive Alternatives
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpxIvRshzg" frameborder="0" allowfullscreen></iframe>
    
    
-Nested conditionals
-===================
-
-* Computer scientists love "nesting" things: putting things inside other things.
+Nesting Conditionals
+====================
 
 .. image:: dolls.jpeg
 
-* You can "nest" a conditional inside another conditional::
+* You can "nest" conditionals inside other conditionals
 
+.. code-block:: python
+    :linenos:
+
+    # Find quadrant with 'nested If's
     if x > 0:
         if y > 0:
-            print('First Quadrant')
+            print("First Quadrant")
         else:
-            print('Fourth Quadrant')
+            print("Fourth Quadrant")
     else:
         if y > 0:
-            print('Second Quadrant')
+            print("Second Quadrant")
         else:
-            print('Third Quadrant')
-			
-* In the above example, we *could* have done it without nesting by using ``and`` and whatnot, but for fun we can nest it
+            print("Third Quadrant")
 
-* Again, no limit to how deep you nest... but mind the readability of your code!
-    * Actually, technically, Python has a limit of 20 nested statements, but other languages have much deeper limits
-    * In a more mathematical/theoreticaltical sense, there is no limit 
+* For simplicity, ignore point :math:`(0,0)` being in the third quadrant
+* In the above example, we *could* have done it without nesting by using ``and``\s
+* But some may find the nested version of the code more intuitive and readable
 
-* Do not go to anyone with this::
+.. code-block:: python
+    :linenos:
 
-	if a > 0:
-	   if b > 0:
-	      if c > 0:
-	         if d > 0:
-	            if e > 0:
-	               if f > 0:
-	                  if g > 0:
-	                     if h > 0:
-	                        if i > 0:
-	                           if j > 0:	
-	                              if k > 0:
-	                                 if l > 0:
-	                                    if m > 0:
-	                                       if n > 0:
-	                                          if o > 0:
-	                                             if p > 0:
-	                                                if q > 0:
-	                                                   if r > 0:
-	                                                      if s > 0:
-	                                                         if t > 0:
-	                                                            if u > 0:
-	                                                               if v > 0:	
-	                                                                  if w > 0:
-	                                                                     if x > 0:
-	                                                                        if y > 0:
-	                                                                           if z > 0:
-	                                                                              print('I want my TA to hate me')
-	else:
-	   print("I'm making a huge mistake")
+    # Find quadrant with 'and's
+    if x > 0 and y > 0:
+        print("First Quadrant")
+    elif x > 0 and y < 0
+        print("Fourth Quadrant")
+    elif x < 0 and y > 0:
+        print("Second Quadrant")
+    else:
+        print("Third Quadrant")
 
 
-Libraries
-=========
-* Most of you are here because you are pragmatic people who want to *get stuff done*
-* The fastest way to *get stuff done* is by leveraging stuff that other people have done.
-* Remember functions? Wouldn't it be awesome if there were huge collections of functions that already existed... and did a lot of the stuff you want to do? 
-* Python has a *huge* variety of existing **libraries**/**packages**.
-	   
-	   
-NumPy
-=====
-* The most important library for us is *Numerical Python* ("NumPy" for short).
-* For anyone working with real data in Python, NumPy is awesome
-* Because it isn't 'built in' to Python, we have to tell Python that we want to use NumPy:
-    >>> import numpy
-    
-
-NumPy Types
-===========
-* Recall that Python values have types.
-* NumPy defines a `whole bunch of new types <http://docs.scipy.org/doc/numpy/user/basics.types.html>`_.
-* When you call NumPy functions, Python will, as always, try it's best to guess at type conversions for you.
-* *but*... you can be explicit about it, too:
-    >>> x = numpy.float32(7.3)
-    >>> print x
-    7.3
-    
-    >>> type(x)
-    <class 'numpy.float32'>
-
-* Check this out:
-    >>> numpy.float128(3.33)
-    3.330000000000000071
-    >>> numpy.float64(3.33)
-    3.33
-
-
-* Floating point precision...
-* Let's think for a second about real numbers vs. computers. 	
-	
-
-* You can convert regular Python types, and NumPy types, back and forth as you need.
-* If you aren't sure what type a variable has, remember that you can always check with ``type()``
-
-.. admonition:: Activity
-
-    Write a Python function that takes two Python ``float`` s as inputs, converts them both into ``numpy.float32`` type and then returns the product.
-
-
-For next class
+For Next Class
 ==============
 
 * Read `chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
