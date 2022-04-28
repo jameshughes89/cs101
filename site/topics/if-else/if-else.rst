@@ -129,7 +129,7 @@ Alternative Execution
 * The two examples above will effectively do the same thing, but the 2nd is nicer
 
     * Write less
-    * Intuitive
+    * Intuitive and easy to read/understand
     * Eliminate potential bugs
 
 * Programmers are lazy and don't want to type the condition (here ``x > 10``) twice (this also introduces the chance for more bugs)
