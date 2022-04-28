@@ -101,44 +101,101 @@ Compound conditions
 
    
    
-Alternative execution
+Alternative Execution
 =====================
-* This pattern is very common::
+
+* This pattern is very common
+
+.. code-block:: python
+    :linenos:2864
 
     if x > 10:
         do_something()
-	
     if not(x > 10):
         do_something_else()
 
-* Programmers are lazy and don't want to type the condition (here ``x > 10``) twice (this also introduces the chance for more bugs)
-* So ``if`` statements have a special ``else`` statement that can go with them::
+
+* When we have an either/or situation we make use of ``else``
+
+.. code-block:: python
+    :linenos:
 
     if x > 10:
         do_something()
     else:
         do_something_else()
-		
-* Does exactly the same thing as the preceding code... but...
-* Involves less typing and is easier to read and understand. 
+
+
+* The two examples above will effectively do the same thing, but the 2nd is nicer
+
+    * Write less
+    * Intuitive and easy to read/understand
+    * Eliminate potential bugs
+
 
 .. admonition:: Activity
 
-    Write a Python function called ``hail`` that takes an integer as its argument. If the integer is even, return the value of the integer divided by 2. If it's odd, return the value of the integer multiplied by 3 and with 1 added. 
-
-    That is: ``n`` goes to ``2/n`` if even, ``3*n+1`` if odd. 
-
-    **HINT**: You may want to look up the Python modulus operator: ``%``.
+    Write a function called ``hail`` that takes an integer as an argument. If the integer is even, return the value of
+    that integer divided by 2. If it is odd, return the value multiplied by 3 and with one added. In other words,
+    given a number :math:`n`, return :math:`n/2` when it is even and :math:`3n + 1` when it is odd. **Hint:** Don't
+    forget about ``%``.
    
-   
+    .. raw:: html
 
-      .. raw:: html
-
-      	<iframe width="560" height="315" src="https://www.youtube.com/embed/k0LcSJzANgU" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k0LcSJzANgU" frameborder="0" allowfullscreen></iframe>
 		
-    `This is actually some neat math stuff <https://en.wikipedia.org/wiki/Collatz_conjecture>`_
+    `This is actually some neat math stuff <https://en.wikipedia.org/wiki/Collatz_conjecture>`_. Isn't it cool that
+    we're writing a Python function that's doing exactly what the math is saying?
 
-    Isn't it interesting that we're writing a function that's doing exactly what the math is saying?
+
+.. note::
+
+    If we revisit ``smush``, we can rewrite the function in a few different ways that are all correct.
+
+    .. code-block:: python
+        :linenos:
+
+        def smush_version_2(a_number: float) -> float:
+            """
+            Returns half the value of the parameter a_number if the value is positive,
+            otherwise, return the value of a_number.
+
+            :rtype: float
+            :param a_number: Some arbitrary number.
+            :return: Half of a_number when it is positive, a_number when not positive.
+            """
+            if a_number > 0:
+                return_value = a_number / 2
+            else:
+                return_value = a_number
+            return return_value
+
+
+    In ``smush_version_2``, an ``else`` is used and the function has only one ``return``. The use of the ``else`` here
+    is not required (as seen in the original ``smush``), but the use of ``else`` in this situation may make the function
+    a little clearer. Additionally, some programmers prefer having their functions have only one ``return``, but this is
+    by no means *more correct*.
+
+    .. code-block:: python
+        :linenos:
+
+        def smush_version_3(a_number: float) -> float:
+            """
+            Returns half the value of the parameter a_number if the value is positive,
+            otherwise, return the value of a_number.
+
+            :rtype: float
+            :param a_number: Some arbitrary number.
+            :return: Half of a_number when it is positive, a_number when not positive.
+            """
+            if a_number > 0:
+                return a_number / 2
+            else:
+                return a_number
+
+    Another possibility is ``smush_version_3``. You will notice how similar it is to version 2, but here we use two
+    ``return``\s in the ``if`` and ``else`` blocks. Again, this is not *more correct* and it is only shown here to
+    demonstrate how the same functionality can be implemented differently.
 
    
 Chains of alternatives
