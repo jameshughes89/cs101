@@ -86,19 +86,88 @@ Conditional Expressions
 
    
    
-Compound conditions
+Compound Conditions
 ===================
-* We can use the logical operators ``and``, ``or`` and ``not`` to combine conditions.
-* The combinations can be arbitrarily complex::
 
-    if (grade < 90 and personality_type == 'A' and desired_career == 'med school') or (grade < 100 and personality_type == 'AAA'):
-        print('Time to ask for extra credit!')
+* When we make use of an ``if`` statement, the value being checked needs to ultimately be evaluated to a Boolean
+* This means that we can make use of more complex compound Boolean expressions
+
+    * Comparison operators
+    * Arithmatic operators
+    * Boolean operators
+
+.. code-block:: python
+    :linenos:
+    :lines-emphasis: 10
+
+    def three_five_divisible(a_number: float) -> str:
+        """
+        Checks if a number is divisible by both three and five. If it is, return
+        a string "It is!", otherwise "Nope".
+
+        :rtype: str
+        :param a_number: Some arbitrary number.
+        :return: String indicating if the number is divisible by three and five
+        """
+        if a_number % 3 == 0 and a_number % 5 == 0:
+            return "It is!"
+        return "Nope"
+
+
+    # Tests for three_five_divisible
+    assert "It is!" == three_five_divisible(0)
+    assert "It is!" == three_five_divisible(15)
+    assert "It is!" == three_five_divisible(-30)
+    assert "Nope" == three_five_divisible(3)    # Divisible by 3 but not 5
+    assert "Nope" == three_five_divisible(-50)  # Divisible by 5 but not 3
+    assert "Nope" == three_five_divisible(1)    # Divisible by neither
+
+
+.. note::
+
+    The modulo operator ``%`` (often called just "mod") effectively does division and returns the **remainder**. For
+    example, ``10 % 3`` is ``1`` since ``10/3`` is ``3`` remainder ``1``.
+
+    In the ``three_five_divisible`` example, we are checking if the remainder of the division is ``0``, which would mean
+    that the value can be evenly divided.
+
+    Another common use of ``%`` is checking if a value is even or not --- ``x % 2`` is ``0`` when ``x`` is even since
+    it would mean that ``x`` can be evenly divided by ``2``.
+
+
+* The above function ``three_five_divisible`` needs to check if a number is divisible by 3 ``and`` 5
+* This means that there are two conditions we need to check for being ``True``
+
+* If we follow the code within the function when ``a_number`` is ``15``, the execution is as follows
+
+    * Evaluate ``a_number % 3 == 0 and a_number % 5 == 0``
+
+        * ``15 % 3 == 0 and 15 % 5 == 0``
+        * ``0 == 0 and 0 == 0``
+        * ``True and True``
+        * ``True``
+
+
+    * Since the expression evaluated to ``True``, the indented code is run
+    * Return ``"It is!"``, function ends
+
+* If we follow the code within the function when ``a_number`` is ``9``, the execution is as follows
+
+    * Evaluate ``a_number % 3 == 0 and a_number % 5 == 0``
+
+        * ``9 % 3 == 0 and 9 % 5 == 0``
+        * ``0 == 0 and 4 == 0``
+        * ``True and False``
+        * ``False``
+
+    * Since the expression evaluated to ``False``, the indented code is skipped
+    * Return ``"Nope"``
 
 
 .. raw:: html
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/8OAsHilB0jw" frameborder="0" allowfullscreen></iframe>
-
+   
    
    
 Alternative Execution
@@ -352,5 +421,4 @@ For Next Class
 ==============
 
 * Read `chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
-
 
