@@ -132,16 +132,6 @@ Alternative Execution
     * Intuitive and easy to read/understand
     * Eliminate potential bugs
 
-* Programmers are lazy and don't want to type the condition (here ``x > 10``) twice (this also introduces the chance for more bugs)
-* So ``if`` statements have a special ``else`` statement that can go with them::
-
-    if x > 10:
-        do_something()
-    else:
-        do_something_else()
-		
-* Does exactly the same thing as the preceding code... but...
-* Involves less typing and is easier to read and understand. 
 
 .. admonition:: Activity
 
