@@ -79,7 +79,7 @@ def letter_grade(percent_grade: float) -> str:
     return letter_grade
 
 
-assert "A+" == letter_grade(100)
+# Test letter_grade
 assert "A+" == letter_grade(90)
 assert "A" == letter_grade(80)
 assert "B" == letter_grade(70)
