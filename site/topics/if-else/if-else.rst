@@ -215,7 +215,7 @@ Exclusive Alternatives
 
     * Can be read as *else, if...*
 
-* These allow us to have only one of the code blocks in the chain of conditions to run
+* These allow us to have at most one of the code blocks in the chain of conditions to run
 * In other words, as soon as one of the ``if``\s is true, all other ``if``\s are skipped and the program continues running after the ``else``
 * When using ``elif``\s, always end with a final ``else``
 
