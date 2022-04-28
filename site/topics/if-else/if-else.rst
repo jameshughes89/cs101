@@ -209,35 +209,46 @@ Exclusive Alternatives
 
     * Have a ``return`` in each indented block since that would stop execution of the function once a ``return`` is reached
     * Reverse the order of the ``if``\s
+    * Check upper and lower bounds (e.g. ``percent_grade >= 80 and percent_grade < 90``)
 
 * But arguably the better way to address this is with ``elif``\s
 
+    * Can be read as *else, if...*
 
-    if year < 1960:
-        print('Jazz')
-    elif year < 1980:
-        print('Rock')
-    elif year < 1990:
-        print('Synthpop')
-    elif year < 2003:
-        print('Alternative')
-    else:
-        print('Music died when I got my first real job')
+* These allow us to have only one of the code blocks in the chain of conditions to run
+* In other words, as soon as one of the ``if``\s is true, all other ``if``\s are skipped and the program continues running after the ``else``
+* When using ``elif``\s, always end with a final ``else``
 
-* ``elif`` is a contraction of ``else if``
-* **NOTE**: Only *one* of the ``elifs`` gets executed, that's *it*. The remaining ones are completely ignored.
-* You can chain as many as you want
-    * If these were just ``if`` s, what would happen if ``year`` was ``1980``?
-        * Let's try it quick.
-* **Always** end with a plain ``else`` to catch any conditions not covered in the chain.
+.. code-block:: python
+    :linenos:
 
-.. admonition:: Activity
+    def letter_grade(percent_grade: float) -> str:
+        """
+        Calculate the letter grade associated with the provided percent grade.
 
-    Write a Python function that takes an integer from 0-100 representing a course grade and returns a string representing the letter grade: A,B,C,D or F. You can pick the cutoffs.
+        :rtype: str
+        :param percent_grade: A grade as a percent
+        :return: Letter grade for the provided percentage
+        """
+        letter_grade = ""
+        if percent_grade >= 90:
+            letter_grade = "A+"
+        elif percent_grade >= 80:
+            letter_grade = "A"
+        elif percent_grade >= 70:
+            letter_grade = "B"
+        elif percent_grade >= 60:
+            letter_grade = "C"
+        elif percent_grade >= 50:
+            letter_grade = "D"
+        else:
+            letter_grade = "F"
+        return letter_grade
 
-      .. raw:: html
 
-      	<iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpxIvRshzg" frameborder="0" allowfullscreen></iframe>  
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpxIvRshzg" frameborder="0" allowfullscreen></iframe>
    
    
 Nested conditionals
