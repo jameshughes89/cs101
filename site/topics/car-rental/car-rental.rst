@@ -70,47 +70,44 @@ rental agreement, age, how far they drove, and how long they had the car.
     
 * All renters under the age of 25 are charged an additional $10.00/day
 
-
    
 **Step 1**
 
-* Freak out
-   
-   
-**Step 2**
-   
-* Let's take a deep breath and break this problem down
+* Read the problem
+* Understand the problem
+
+    * This cannot be understated --- this is a big part of solving any problem
 
 * Half of the description is IO 
+
     * Let's save this for last because it's super easy
    
 * The only beefy part of this is the calculation
-    * Freak out again
-    * Then realize we can break it down into bits and pieces that we can solve
+
+    * But even then, we can break that down into smaller bits and pieces that we can solve
    
    
 **Let's look at the requirements:**
    
-* *If* the classification code is B
+* *If* the classification code is **B**
+
     * Base charge of $20.00/days
     * Plus $0.30 *for every km* driven
-* *If* the classification is D
+
+* *If* the classification is **D**
+
     * Base charge of $50.00/days
     * Plus $0.30 *for every km* driven *above* the 100km/day *average* allowance.
 
 
-**What do I see?**
+**What do we see?**
 
-* I see ``if`` statements there
-    * Well I know how to do that
-* I see that there is some math, which isn't too bad 
-    * I can do simple math
-* Looks like we need to know the total kms
-    * I can do that
-* Need to know the average number of kms driven
-    * Easy stuff
-* Need to know how many kms above 100 we are
-    * So just figure out if a number is greater than 100?
+* We see ``if``\s, which know how to do
+* We see that there is some math, which isn't too bad
+
+    * We need to know the total kms
+    * We need to know the average number of kms driven
+    * Need to know how many kms above 100 we are
 
 
 **Step 3:**
