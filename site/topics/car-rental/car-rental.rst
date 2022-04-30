@@ -74,6 +74,9 @@ rental agreement, age, how far they drove, and how long they had the car.
 **Step 1**
 
 * Read the problem
+
+**Step 2**
+
 * Understand the problem
 
     * This cannot be understated --- this is a big part of solving any problem
@@ -122,7 +125,7 @@ Based on this, I will write:
 .. note::
 
     Understand that the example below is only one possible implementation of a solution to this problem. There is
-    literally an infinite number of ways one could go about solving this problem. 
+    literally an infinite number of ways one could go about solving this problem.
 
    
 Function to calculate the total number of kms. What do we know? 
