@@ -70,6 +70,9 @@ rental agreement, age, how far they drove, and how long they had the car.
     
 * All renters under the age of 25 are charged an additional $10.00/day
 
+
+An Incremental Solution
+-----------------------
    
 **Step 1**
 
@@ -127,24 +130,43 @@ Based on this, I will write:
     Understand that the example below is only one possible implementation of a solution to this problem. There is
     literally an infinite number of ways one could go about solving this problem.
 
-   
-Function to calculate the total number of kms. What do we know? 
-    * Odometer readings!
+
+Total Kilometers
+^^^^^^^^^^^^^^^^
+
+* A function to calculate the total number of kms
+
+    * What do we know?
+    * Odometer readings
    
 .. code-block:: python
     :linenos:
    
-    def total_kms(odometer_start, odometer_finish):
-        '''
+    def total_kms(odometer_start: float, odometer_finish: float) -> float:
+        """
         This function calculates the total number of kilometers driven based
         on starting and ending odometer readings.
 
-        :param odometer_start: The number of kms the car had before renting
-        :param odometer_finish: The number of kms the car had after rending
-        :return: The total kms driven during the rental period
-        '''
-        
+        @rtype: float
+        @param odometer_start: The number of kms the car had before renting
+        @param odometer_finish: The number of kms the car had after rending
+        @return: The total kms driven
+        """
+
         return odometer_finish - odometer_start
+
+    assert 0 == total_kms(0, 0)
+    assert 100 == total_kms(0, 100)
+    assert -100 == total_kms(100, 0)
+    assert 100.5 == total_kms(100.5, 201)
+
+* You may be thinking that turning this simple sub-problem (calculating the total kilometers) into a function is overkill
+* Perhaps you are right
+* But, it's also really straightforward to confirm correctness of this function
+* It is solving an important sub-problem
+* It is facilitating our incremental development approach
+* Although the functionality and purpose of ``odometer_finish - odometer_start`` is by no means difficult to understand, ``total_kms`` is even clearer
+
 
 **Who thought that was too easy?**
 
