@@ -137,7 +137,8 @@ Total Kilometers
 * A function to calculate the total number of kms
 
     * What do we know?
-    * Odometer readings
+
+        * Odometer readings
    
 .. code-block:: python
     :linenos:
@@ -168,29 +169,39 @@ Total Kilometers
 * Although the functionality and purpose of ``odometer_finish - odometer_start`` is by no means difficult to understand, ``total_kms`` is even clearer
 
 
-**Who thought that was too easy?**
+Average Kilometers Per Day
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* A Function to calculate the daily average number of kms
 
-Function to calculate the daily average number of kms. What do we know? 
-    * We have a function to calculate the total kms 
-    * We also know the number of days the car was rented. 
+    * What do we know?
+
+        * We have a function to calculate the total kms
+        * We also know the number of days the car was rented.
 
 .. code-block:: python
     :linenos:
    
-    def average_kms_per_day(num_days, num_kms):
-        '''
+    def average_kms_per_day(num_days: float, num_kms: float) -> float:
+        """
         Calculate the average number of kilometers driven per day
         over the rental period
 
-        :param num_days: The total number of days the car was rented
-        :param num_kms: The total number of kilometers driven during the rental period
-        :return: The average number of kilometers driven per day
-        '''
-        
-        return num_kms/num_days
+        @rtype: float
+        @param num_days: The total number of days the car was rented
+        @param num_kms: The total number of kilometers driven during the rental period
+        @return: The average number of kilometers driven per day
+        """
 
-**Who thought that was also too easy?**
+        return num_kms / num_days
+
+
+    assert 0 == average_kms_per_day(1, 0)
+    assert 1 == average_kms_per_day(1, 1)
+    assert -1 == average_kms_per_day(-1, 1)
+    assert 0.5 == average_kms_per_day(3, 1.5)
+
+
 
 Ok. Now for something harder... Number of kms over the daily average allowance. What do we know?
     * Function to calculate the daily average 
