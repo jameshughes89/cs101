@@ -117,12 +117,13 @@ Based on this, I will write:
 * Function to calculate the kms
 * Function to calculate average kms
 * Function to calculate the number of kms above the 100 allowance
-* Function to calculate the total charge
+* And finally, a function putting it all together to calculate the total charge
 
-.. warning::
-   
-    THERE ARE LITERALLY INFINITE WAYS YOU COULD DO THIS. THIS IS JUST ONE!
-   
+.. note::
+
+    Understand that the example below is only one possible implementation of a solution to this problem. There is
+    literally an infinite number of ways one could go about solving this problem. 
+
    
 Function to calculate the total number of kms. What do we know? 
     * Odometer readings!
