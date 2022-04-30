@@ -43,11 +43,17 @@ Car Rental
 
 .. image:: carRental.png
 
-A car rental place needs our help. They want a simple program to calculate how much a customer is to be charged based on their rental agreement, age, how far they drove, and how long they had the car. 
+* Here we solve a bigger problem than we are used to, but we will follow the incremental approach
+* In fact, we will take it to another extreme
+* Instead of just writing a few lines of code, we will make each part a function we can test easily, regardless of how "simple" the part seems
 
-**Rules:**
+**Problem**
 
-* We will get the customer's:
+A car rental place needs our help. They want a program to calculate how much a customer is to be charged based on their
+rental agreement, age, how far they drove, and how long they had the car.
+
+* We will get and record the customer's:
+
     * Age
     * Rental agreement classification code (B or D)
     * Number of days rented
@@ -63,7 +69,7 @@ A car rental place needs our help. They want a simple program to calculate how m
     * Plus $0.30 for every km driven above the 100km/day average allowance 
     
 * All renters under the age of 25 are charged an additional $10.00/day
-* Print out the final total cost
+
 
    
 **Step 1**
