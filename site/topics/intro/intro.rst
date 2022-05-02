@@ -95,12 +95,12 @@ The quick answer is, it depends...
 .. admonition:: Quick Activity
     :class: activity
 
-   * Who here knows how to use a hammer?
-   * Who knows how to use a screwdriver?
-   * Who knows how to use a saw?
-   * ...
-   * ...
-   * Who here knows how to build a house?
+    * Who here knows how to use a hammer?
+    * Who knows how to use a screwdriver?
+    * Who knows how to use a saw?
+    * ...
+    * ...
+    * Who here knows how to build a house?
 
 
 * Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
