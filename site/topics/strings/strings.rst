@@ -2,6 +2,18 @@
 Strings & Objects
 *****************
 
+* Strings are a little different when compared to the other types we have seen (``int``, ``float``, ``bool``)
+* Classically speaking, a string is a collection of individual characters
+* In fact, we can *index* the string to access individual characters from it
+
+.. code-block:: python
+    :linenos:
+
+    some_string = "Hello, world!"
+    print(some_string[0])   # prints out 'H'
+    print(some_string[4])   # prints out 'o'
+
+
 The thing about strings
 =======================
 .. admonition:: Activity
