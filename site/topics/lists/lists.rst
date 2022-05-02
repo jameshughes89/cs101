@@ -10,6 +10,7 @@ Lists & References
 
 
 .. admonition:: Activity
+    :class: activity
 
     Run the following code:
 
