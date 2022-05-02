@@ -56,6 +56,7 @@ Reusing Variables
 
 * This and similar pattens are so common that many programming languages have shorthands for this
 
+
 .. code-block:: python
     :linenos:
 
