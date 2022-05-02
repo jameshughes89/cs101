@@ -25,7 +25,8 @@ Strings & Objects
 
     #. Write a single line command to print the first 4 characters of some string.
     #. How about the 2nd to 7th characters?
-    #. How about the last three characters? **Hint:** what does a *negative* index do?
+    #. Get the last three characters? **Hint:** what does a *negative* index do?
+    #. `Get the length of a string. <https://www.google.com/search?q=get+the+length+of+a+string+python>`_
 
     Bonus if you're reading ahead: what does ``print(a[0:4])`` do? This is called *slicing*.
 
