@@ -2,42 +2,78 @@
 Loops
 *****
 
-Reusing variables
+* ``if``/``else`` are great for having a block of code run when some condition is ``true``
+* Sometimes we need a block to repeatedly run *while* some condition is ``true``
+
+
+Reusing Variables
 =================
-* Consider this code fragment::
+
+* Before we look at loops, consider the following code
+
+.. code-block:: python
+    :linenos:
 
     a = 5
     print(a)
+
     b = 6
     print(a)
+
     a = a + b
     print(a)
+
     a = 3
     a = a + 1
     print(a)
 
+
 .. admonition:: Very Quick Activity
 
-    What is the value of the variable ``a`` at the various ``print`` function in the above code?
-   
-* A very common pattern we'll use is incrementing a variable used as a counter::
+    What is the value of ``a`` at each print statement? In other words, ``a`` is printed out four times --- what values
+    are printed out?
+
+
+* The point being emphasized is that there is nothing stopping us from reusing variables
+
+    * Assign a value to some variable
+    * Update/change the value stored in that variable
+
+
+* A very common pattern for incrementing the value of some variable in programming is as follows
+
+.. code-block:: python
+    :linenos:
 
     a = a + 1
 
-* This reminds me of the ``+1`` thing we used to do on calculators in elementary school.
+* The above example sill add one to whatever value is stored in ``a`` and then store that new value back to ``a``
+* For example
 
-* Try this a few times::
+    * If ``a`` starts with the value ``5``
+    * Calculate ``a + 1``, which is ``6`` in this example
+    * Store the newly calculated value of ``6`` in ``a``
 
-    a += 1
-   
-* What does this do?
+* This and similar pattens are so common that many programming languages have shorthands for this
+
+
+.. code-block:: python
+    :linenos:
+
+    a += 1      # Effectively the same as a = a + 1
+
+* The above example is effectively identical to the previous
+* It means, add ``1`` to ``a`` and put the newly calculated value back into ``a``
+
 
 .. admonition:: Activity
-    
-    * Write a function to add ``+1`` to some variable 5 times and return the value.
-    * Now do the same thing, but 10 times.
-    * Now do the same thing again, but 100 times.
-    * Now do the same thing again, but 736251442443 times.
+
+    Start with ``a = 5``.
+
+    #. Figure out what ``a += 2`` does.
+    #. See what happens when you use ``a *= 2``.
+    #. Try other operators to see what works.
+
 
 First loops
 ===========
