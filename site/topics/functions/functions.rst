@@ -68,6 +68,7 @@ Calling a Function
 
 
 .. admonition:: Quick Activity
+    :class: activity
 
     Write your own function to do something with math. Honestly, whatever you want. 
 
@@ -176,6 +177,7 @@ Return
 * ``None`` is a special type and value that means *nothing*
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``print_celsius_to_fahrenheit`` that is identical to ``celsius_to_fahrenheit``, except instead of
     ``return``\ing the final value, it just ``prints`` the value out within the function (just replace the final line
@@ -207,6 +209,7 @@ Return
 
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function called ``euclidean_distance(x1, y1, x2, y2)`` that calculates and returns the Euclidean distance
     between two points. Remember, Euclidean distance is defined as :math:`\sqrt{(x1 - x2)^{2} + (y1 - y2)^{2}}`
@@ -263,6 +266,7 @@ Abstraction
 ===========
 
 .. admonition:: Activity
+    :class: activity
 
     Write down a "program" to make spaghetti (not in python, like on paper). You can only use the following statements: 
 
@@ -276,6 +280,7 @@ Abstraction
 
 
 .. admonition:: Activity
+    :class: activity
 
     Write down a "program" to make spaghetti (not in python, like on paper). You can use plain English prose and assume
     you are addressing a human being who is familiar with a kitchen and making pasta.
@@ -347,6 +352,7 @@ Format of a Function
 
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``concatenate_strings`` that takes two strings as parameters and then returns the concatenation of
     the strings. For example, if I call ``concatenate_strings("Hello","World!")`` it will return ``HelloWorld!``. Do
@@ -358,6 +364,7 @@ Format of a Function
    
    
 .. admonition:: Activity
+    :class: activity
 
     **Warning:** This one is tricky. If you're still stuck after lecture, be sure to take your time to figure this out.
     There's a YouTube video to help.
@@ -400,6 +407,7 @@ Composition
     #. Keep going
 
 .. admonition:: Activity
+    :class: activity
 
     Figure out the value of ``square_of_sum(square_of_sum(1, 1), (square_of_sum(1, 1) + square_of_sum(0, 1)))`` using
     only pencil and paper --- no computers!
@@ -470,7 +478,7 @@ Import
 * Fortunately, in spite of this, there is a rather simple way to access the function
 * We ``import`` the math module, which is where the function is stored
 
-    * `Within the math module is many common mathematical functions you may want to use <<https://docs.python.org/3/library/math.html>`_
+    * `Within the math module is many common mathematical functions you may want to use <https://docs.python.org/3/library/math.html>`_
     * The ``math`` module is just one of many we can import
     * `Here is a link to Python's "Standard Library" <https://docs.python.org/3/library/>`_
 

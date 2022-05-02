@@ -20,6 +20,7 @@ Let's get some data
 ===================
 
 .. admonition:: Activity
+    :class: activity
 
     Download this :download:`Google Trends CSV<trends.csv>`.
     
@@ -56,12 +57,14 @@ Simple plots
 .. image:: simplePlot.png
 
 .. admonition:: Activity
+    :class: activity
 
     What did we just plot? How could you do a similar plot for the popularity of the search term 'zombie'? 
 
     Can you plot both the search volumes for 'vampire' and 'zombie' on the same graph?
    
 .. admonition:: Activity
+    :class: activity
 
     Experiment with the following commands. What do they do to your plot?
    
@@ -82,6 +85,7 @@ Simple plots
     plt.plot(data[2],'r--')     
         
 .. admonition:: Activity
+    :class: activity
 
     Plot search volume for 'flu' ( ``data[2]`` ) against 'ice cream' ( ``data[3]`` ).
     
@@ -112,6 +116,7 @@ Simple plots
 
    
 .. admonition:: Activity
+    :class: activity
 
     Build the correlation matrix for ``data``. Look at it. What does it tell you?
     
@@ -131,6 +136,7 @@ Simple plots
     >>> plt.colorbar()
     
 .. admonition:: Activity
+    :class: activity
 
    Start with a bigger array: ``r = numpy.random.rand(50,50)``. Plot this array,
    using ``matshow`` with a colour bar and no axis labels. 
@@ -197,6 +203,7 @@ Scatter plots
     
     
 .. admonition:: Activity
+    :class: activity
 
     Scatterplot ``d2`` against ``d1``. 
 
@@ -229,6 +236,7 @@ Onward
     * `Scipy cookbook <http://www.scipy.org/Cookbook>`_ (look under "Graphics")
 
 .. admonition:: Activity
+    :class: activity
 
     Pick an attractive looking plot from one of the galleries above. 
 

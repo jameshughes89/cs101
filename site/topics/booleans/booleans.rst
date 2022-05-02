@@ -145,6 +145,7 @@ Comparison Operators
     * Less than or equal ``<=``
 
 .. admonition:: Activity
+    :class: activity
 
     Play around with the above operators on different integers and see if you can find operands that produce
     ``True``/``False`` for each.

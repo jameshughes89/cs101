@@ -22,6 +22,7 @@ Strings & Objects
 
 
 .. admonition:: Activity
+    :class: activity
 
     #. Write a single line command to print the first 4 characters of some string.
     #. How about the 2nd to 7th characters?
@@ -43,6 +44,7 @@ More loops
 * Let's apply that...
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``vert_print`` that takes a string as an argument and then uses a ``while`` loop to print each character on its own line. (See sample output below)
    
@@ -108,6 +110,7 @@ in
 ==
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``char_is_in(char,string)`` that returns ``True`` if the character ``char`` appears in the string ``string``.
     
@@ -138,6 +141,7 @@ in
     * Try: `char_is_in('e', 'test')`
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``where_is(char,string)`` that returns the *index* of the first occurrence of ``char`` in ``string``.
 
@@ -281,6 +285,7 @@ Methods
     * ``char_is_in('a','bleh')``
 
 .. admonition:: Activity
+    :class: activity
 
     In Colab (or whatever IDE):
         1. Make a string
@@ -293,6 +298,7 @@ Methods
     .. image:: methods.png
 
 .. admonition:: Activity
+    :class: activity
 
     1. Try writing ``a_string.upper()`` and printing it out. 
     2. Try some other *methods*

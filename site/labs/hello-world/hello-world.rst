@@ -54,6 +54,7 @@ Kattis
 ======
 
 .. admonition:: Note
+    :class: note
 
     It will be a lot easier to build your solutions on Colab and then copy/paste them into Kattis. 
     

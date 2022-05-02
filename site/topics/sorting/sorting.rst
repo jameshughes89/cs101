@@ -16,6 +16,7 @@ Sorting
 * We're going to look at a few simple sorting algorithms now.
 
 .. admonition:: Activity
+    :class: activity
 
     1. Have you ever sorted things in your life?
     2. Take 2 mins to talk amongst yourselves about the *algorithm* you used to sort the things. 
@@ -37,6 +38,7 @@ Insertion sort
     * e.g., if I'm asked to insert ``5`` into the list ``[1,3,7]``, I should end up with: ``[1,3,5,7]``
 
 .. admonition:: Activity
+    :class: activity
 
     Do an insertion sort, with pencil and paper, on the list ``[3,7,15,9,4,11,1,5,2]``. Record the value of ``sorted_list`` at each step.   
    
@@ -52,12 +54,14 @@ Let's have a look at an insertion sort implementation in Python::
         return sorted_list
 
 .. admonition:: Activity
+    :class: activity
 
     Modify the ``insertion_sort()`` function above so that it prints out the value of ``sorted_list`` after each iteration of the `for` loop. Try sorting a few lists and following the output. Does it make sense to you?
 
 * Now that we've got the idea down, let's be computer science nerds about it.
 
 .. admonition:: Activity
+    :class: activity
 
     * How many times do I go around the `for` loop in ``insertion_sort()`` ? On each trip through the `for` loop, I also have to go through the inner `while` loop.
         * How many times do I go through the `while` loop, on average?
@@ -81,6 +85,7 @@ Selection Sort
 * Lather, rinse, repeat.
 
 .. admonition:: Activity
+    :class: activity
 
     Do a selection sort, with pencil and paper, on the list ``[3,7,15,9,4,11,1,5,2]``. Record the value of your list at each step.  
 
@@ -115,10 +120,12 @@ Let's see Selection sort in action::
         return in_list
     
 .. admonition:: Activity
+    :class: activity
 
     Modify the ``selection_sort()`` function above so that it prints out the value of ``in_list`` after each iteration of the outer `for` loop. Try sorting a few lists and following the output. 
 
 .. admonition:: Activity
+    :class: activity
 
     How many times do I go around the outer `for` loop in ``selection_sort()`` ? How about the inner `for` loop?
    
@@ -139,6 +146,7 @@ Bubble Sort
 * I keep doing that until the list is sorted.
 
 .. admonition:: Activity
+    :class: activity
 
     Do a bubble sort, with pencil and paper, on the list ``[3,7,15,9,4,11,1,5,2]``. Record the value of your list at each step.  
 
@@ -165,10 +173,12 @@ Let's see Bubble sort in Python::
 * Ugh... Wouldn't the above code be better if there were comments?
 
 .. admonition:: Activity
+    :class: activity
 
     Modify the ``bubble_sort()`` function above so that it prints out the value of ``in_list`` after each iteration of the outer `while` loop. Try sorting a few lists and following the output.   
    
 .. admonition:: Activity
+    :class: activity
 
     How many times do I go around the outer `while` loop ? How
    about the inner `for` loop?
@@ -201,10 +211,12 @@ Here's another attempt at a sorting algorithm::
         return in_list
 
 .. admonition:: Activity
+    :class: activity
 
     How does this sorting algorithm work? We're "working backwards" this time. Starting from the code, come up with an English explanation for how the algorithm works. You might want to add a ``print`` statement after the ``random.shuffle(in_list)`` line to get some intuition. If you aren't sure what ``random.shuffle()`` does... look it up, or just *try* it on some sample lists. Likewise, you'll have to figure out what ``is_sorted()`` is doing (though the name should help). 
    
 .. admonition:: Activity
+    :class: activity
    
     Is this a good sorting algorithm? How many times do I have to go through the ``while`` loop in ``bogo_sort``? How about the ``for`` loop in ``is_sorted()``?
 

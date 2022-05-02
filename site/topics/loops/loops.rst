@@ -67,12 +67,19 @@ Reusing Variables
 
 
 .. admonition:: Activity
+    :class: activity
+    
+    * Write a function to add ``+1`` to some variable 5 times and return the value.
+    * Now do the same thing, but 10 times.
+    * Now do the same thing again, but 100 times.
+    * Now do the same thing again, but 736251442443 times.
 
     Start with ``a = 5``.
 
     #. Figure out what ``a += 2`` does.
     #. See what happens when you use ``a *= 2``.
     #. Try other operators to see what works.
+
 
 
 First loops
@@ -103,6 +110,7 @@ First loops
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/I3wMZ5jkiyc" frameborder="0" allowfullscreen></iframe>
 
 .. admonition:: Activity --- Featuring LOOPS
+    :class: activity
 
     * Write a function to add ``+1`` to some variable 5 times and return the value.
     * Now do the same thing, but 10 times.
@@ -119,6 +127,7 @@ First loops
         return answer
 
 .. admonition:: Activity
+    :class: activity
 
     What does the code above do? Trace through it, using pen and paper, for a few example values of ``n!``
 
@@ -141,6 +150,7 @@ First loops
 +------------------------+---------------+ 
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``int_sum(n)`` that takes a single integer ``n`` as a parameter and returns the *sum* of all of the numbers between ``1`` and ``n``. 
 
@@ -151,6 +161,7 @@ First loops
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/sUNBswKrmJY" frameborder="0" allowfullscreen></iframe>
  
 .. admonition:: Activity
+    :class: activity
 
     Modify ``int_sum(n)`` so that it prints out a Trace table, like the one you did by hand, every time it runs.
 
@@ -175,6 +186,7 @@ OMG some actual *science*!
 * Okay, maybe not. But we're taking a step in that direction.
 
 .. admonition:: Activity
+    :class: activity
 
     Find the solution to the equation (for what value of ``x`` is this statement true?):
    
@@ -217,7 +229,8 @@ Algorithm
     * **DATA STRUCTURE**
 * So we're half done! (Just kidding)
 
-.. admonition:: Activity 
+.. admonition:: Activity
+    :class: activity 
 
     Write down (in English) an algorithm for printing out the sum of all the even numbers between 1 and ``n``. 
 

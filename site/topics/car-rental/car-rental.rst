@@ -295,6 +295,7 @@ Now just do the IO part, which we have done a bunch of times before
 Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGziwmxh9-PjaqsP91tRRkk?usp=sharing>`_.
 
 .. admonition:: Activity
+    :class: activity
 
     Think about how you would write this differently 
         * Would you use all the same functions?

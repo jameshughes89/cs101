@@ -43,6 +43,7 @@ Operators
 
 
 .. admonition:: Activity
+    :class: activity
 
     Generate expressions to:
 
@@ -53,6 +54,7 @@ Operators
 
 
 .. admonition:: Activity
+    :class: activity
 
     Now for a tougher one. Convert a temperature from Celsius to Fahrenheit.
 
@@ -70,6 +72,7 @@ Operators On Other Types
 * We will see many of these as we move through the course
 
 .. admonition:: Activity
+    :class: activity
    
     #. Experiment with the operators you know on *strings* (instead of just integers).
     #. Which ones work? What do they do?
@@ -97,6 +100,7 @@ Large Series of Statements
 
 
 .. admonition:: Activity
+    :class: activity
 
     Consider the sentence "I am taking CSCI 161". Write a program that stores each word of that sentence in it's own
     variable, and then prints the whole sentence to the screen, using only a single ``print``.

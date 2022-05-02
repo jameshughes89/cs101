@@ -17,6 +17,7 @@ What Will I Learn?
     * :doc:`Read the outline </outline/outline>`
 
 .. admonition:: Activity
+    :class: activity
 
     Where have you encountered computer programs before?
 
@@ -64,14 +65,15 @@ How Will This Class Work?
 
 
 .. admonition:: Activity
+    :class: activity
 
-   Have a chat with the people sitting around you: 
+    Have a chat with the people sitting around you: 
 
-   * What are their majors?    
-   * Why did you come to StFX?
-   * Why are they taking this class?   
-   * What do you hope to learn? 
-   * How do you think you will use what you learn in the future?
+    * What are their majors?    
+    * Why did you come to StFX?
+    * Why are they taking this class?   
+    * What do you hope to learn? 
+    * How do you think you will use what you learn in the future?
    
    
 What Should I Bring To Class
@@ -91,13 +93,14 @@ Is This Class Easy?
 The quick answer is, it depends...
 
 .. admonition:: Quick Activity
+    :class: activity
 
-   * Who here knows how to use a hammer?
-   * Who knows how to use a screwdriver?
-   * Who knows how to use a saw?
-   * ...
-   * ...
-   * Who here knows how to build a house?
+    * Who here knows how to use a hammer?
+    * Who knows how to use a screwdriver?
+    * Who knows how to use a saw?
+    * ...
+    * ...
+    * Who here knows how to build a house?
 
 
 * Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
