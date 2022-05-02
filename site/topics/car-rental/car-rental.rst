@@ -43,11 +43,17 @@ Car Rental
 
 .. image:: carRental.png
 
-A car rental place needs our help. They want a simple program to calculate how much a customer is to be charged based on their rental agreement, age, how far they drove, and how long they had the car. 
+* Here we solve a bigger problem than we are used to, but we will follow the incremental approach
+* In fact, we will take it to another extreme
+* Instead of just writing a few lines of code, we will make each part a function we can test easily, regardless of how "simple" the part seems
 
-**Rules:**
+**Problem**
 
-* We will get the customer's:
+A car rental place needs our help. They want a program to calculate how much a customer is to be charged based on their
+rental agreement, age, how far they drove, and how long they had the car.
+
+* We will get and record the customer's:
+
     * Age
     * Rental agreement classification code (B or D)
     * Number of days rented
@@ -63,48 +69,51 @@ A car rental place needs our help. They want a simple program to calculate how m
     * Plus $0.30 for every km driven above the 100km/day average allowance 
     
 * All renters under the age of 25 are charged an additional $10.00/day
-* Print out the final total cost
 
+
+An Incremental Solution
+-----------------------
    
 **Step 1**
 
-* Freak out
-   
-   
+* Read the problem
+
 **Step 2**
-   
-* Let's take a deep breath and break this problem down
+
+* Understand the problem
+
+    * This cannot be understated --- this is a big part of solving any problem
 
 * Half of the description is IO 
+
     * Let's save this for last because it's super easy
    
 * The only beefy part of this is the calculation
-    * Freak out again
-    * Then realize we can break it down into bits and pieces that we can solve
+
+    * But even then, we can break that down into smaller bits and pieces that we can solve
    
    
 **Let's look at the requirements:**
    
-* *If* the classification code is B
+* *If* the classification code is **B**
+
     * Base charge of $20.00/days
     * Plus $0.30 *for every km* driven
-* *If* the classification is D
+
+* *If* the classification is **D**
+
     * Base charge of $50.00/days
     * Plus $0.30 *for every km* driven *above* the 100km/day *average* allowance.
 
 
-**What do I see?**
+**What do we see?**
 
-* I see ``if`` statements there
-    * Well I know how to do that
-* I see that there is some math, which isn't too bad 
-    * I can do simple math
-* Looks like we need to know the total kms
-    * I can do that
-* Need to know the average number of kms driven
-    * Easy stuff
-* Need to know how many kms above 100 we are
-    * So just figure out if a number is greater than 100?
+* We see ``if``\s, which know how to do
+* We see that there is some math, which isn't too bad
+
+    * We need to know the total kms
+    * We need to know the average number of kms driven
+    * Need to know how many kms above 100 we are
 
 
 **Step 3:**
@@ -114,54 +123,85 @@ Based on this, I will write:
 * Function to calculate the kms
 * Function to calculate average kms
 * Function to calculate the number of kms above the 100 allowance
-* Function to calculate the total charge
+* And finally, a function putting it all together to calculate the total charge
 
-.. warning::
-   
-    THERE ARE LITERALLY INFINITE WAYS YOU COULD DO THIS. THIS IS JUST ONE!
-   
-   
-Function to calculate the total number of kms. What do we know? 
-    * Odometer readings!
+.. note::
+
+    Understand that the example below is only one possible implementation of a solution to this problem. There is
+    literally an infinite number of ways one could go about solving this problem.
+
+
+Total Kilometers
+^^^^^^^^^^^^^^^^
+
+* A function to calculate the total number of kms
+
+    * What do we know?
+
+        * Odometer readings
    
 .. code-block:: python
     :linenos:
    
-    def total_kms(odometer_start, odometer_finish):
-        '''
+    def total_kms(odometer_start: float, odometer_finish: float) -> float:
+        """
         This function calculates the total number of kilometers driven based
         on starting and ending odometer readings.
 
-        :param odometer_start: The number of kms the car had before renting
-        :param odometer_finish: The number of kms the car had after rending
-        :return: The total kms driven during the rental period
-        '''
-        
+        @rtype: float
+        @param odometer_start: The number of kms the car had before renting
+        @param odometer_finish: The number of kms the car had after rending
+        @return: The total kms driven
+        """
+
         return odometer_finish - odometer_start
 
-**Who thought that was too easy?**
+    assert 0 == total_kms(0, 0)
+    assert 100 == total_kms(0, 100)
+    assert -100 == total_kms(100, 0)
+    assert 100.5 == total_kms(100.5, 201)
+
+* You may be thinking that turning this simple sub-problem (calculating the total kilometers) into a function is overkill
+* Perhaps you are right
+* But, it's also really straightforward to confirm correctness of this function
+* It is solving an important sub-problem
+* It is facilitating our incremental development approach
+* Although the functionality and purpose of ``odometer_finish - odometer_start`` is by no means difficult to understand, ``total_kms`` is even clearer
 
 
-Function to calculate the daily average number of kms. What do we know? 
-    * We have a function to calculate the total kms 
-    * We also know the number of days the car was rented. 
+Average Kilometers Per Day
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* A Function to calculate the daily average number of kms
+
+    * What do we know?
+
+        * We have a function to calculate the total kms
+        * We also know the number of days the car was rented.
 
 .. code-block:: python
     :linenos:
    
-    def average_kms_per_day(num_days, num_kms):
-        '''
+    def average_kms_per_day(num_days: float, num_kms: float) -> float:
+        """
         Calculate the average number of kilometers driven per day
         over the rental period
 
-        :param num_days: The total number of days the car was rented
-        :param num_kms: The total number of kilometers driven during the rental period
-        :return: The average number of kilometers driven per day
-        '''
-        
-        return num_kms/num_days
+        @rtype: float
+        @param num_days: The total number of days the car was rented
+        @param num_kms: The total number of kilometers driven during the rental period
+        @return: The average number of kilometers driven per day
+        """
 
-**Who thought that was also too easy?**
+        return num_kms / num_days
+
+
+    assert 0 == average_kms_per_day(1, 0)
+    assert 1 == average_kms_per_day(1, 1)
+    assert -1 == average_kms_per_day(-1, 1)
+    assert 0.5 == average_kms_per_day(3, 1.5)
+
+
 
 Ok. Now for something harder... Number of kms over the daily average allowance. What do we know?
     * Function to calculate the daily average 
