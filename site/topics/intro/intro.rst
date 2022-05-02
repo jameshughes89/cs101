@@ -67,13 +67,13 @@ How Will This Class Work?
 .. admonition:: Activity
     :class: activity
 
-   Have a chat with the people sitting around you: 
+    Have a chat with the people sitting around you: 
 
-   * What are their majors?    
-   * Why did you come to StFX?
-   * Why are they taking this class?   
-   * What do you hope to learn? 
-   * How do you think you will use what you learn in the future?
+    * What are their majors?    
+    * Why did you come to StFX?
+    * Why are they taking this class?   
+    * What do you hope to learn? 
+    * How do you think you will use what you learn in the future?
    
    
 What Should I Bring To Class
