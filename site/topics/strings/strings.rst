@@ -27,13 +27,11 @@ Strings & Objects
     #. How about the 2nd to 7th characters?
     #. Get the last three characters? **Hint:** what does a *negative* index do?
     #. `Get the length of a string. <https://www.google.com/search?q=get+the+length+of+a+string+python>`_
+    #. What does ``print(a[0:4])`` do?
 
-    Bonus if you're reading ahead: what does ``print(a[0:4])`` do? This is called *slicing*.
+    .. raw:: html
 
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cxppFPrjcow" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cxppFPrjcow" frameborder="0" allowfullscreen></iframe>
 
 
 More loops
