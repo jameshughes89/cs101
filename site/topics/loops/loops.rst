@@ -2,7 +2,7 @@
 Loops
 *****
 
-* `if`/`else` are great for having a block of code run when some condition is ``true``
+* ``if``/``else`` are great for having a block of code run when some condition is ``true``
 * Sometimes we need a block to repeatedly run *while* some condition is ``true``
 
 
