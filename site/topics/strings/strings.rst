@@ -2,47 +2,38 @@
 Strings & Objects
 *****************
 
-The thing about strings
-=======================
-.. admonition:: Activity
+* Strings are a little different when compared to the other types we have seen (``int``, ``float``, ``bool``)
+* Classically speaking, a string is a collection of individual characters
+* In fact, we can *index* the string to access individual characters from it
 
-    How is a string different from the other data types we've seen (``int``, ``float``, ``numpy.float32``, ``bool``)?
-   
-* I can print individual *characters* of a string, by *indexing* the string:
+.. code-block:: python
+    :linenos:
 
-    >>> a='My little string'
-    >>> print(a[0])
-	M
-    
-	>>> print(a[1])
-	y
+    some_string = "Hello, world!"
+    print(some_string[0])   # prints out 'H'
+    print(some_string[4])   # prints out 'o'
 
-* A *string* is just a... string... of *characters*
-* In a *compound object*, indexing allows us to pick out individual components.
-* Note that in Python, the first index is ``0``, not ``1``!
-    * Whether to start at zero or one is an arbitrary decision made by programming language designers.
-    * Is the "first floor" of a building the same as le "premier étage"? Natural language problem, too!
-    * Python inherited the 0-based convention from C (this actually makes sense if/when you learn about memory pointers)
-    * MATLAB inherited 1-based indexing from Fortran
-    * This is a small gotcha for folks switching from one language to another; very easy to fix, but perplexing if you don't know to look for it!
+
+.. note::
+
+    In Python, and many other programming languages, the index for the beginning is actually ``0``, not ``1``. There are
+    some historical and engineering reasons for this, and there are plenty of programming languages that start at ``1``
+    too. This can feel tedious for new programmers, but it will become natural to you.
+
 
 .. admonition:: Activity
 
-    Write a single line command to print the first 4 characters of some string ``a``. 
-    
-    How about the 2nd to 7th characters? 
-    
-    How about the last three characters? 
-    
-    *Hint*: what does a *negative* index do?
-   
-* Bonus if you're reading ahead: what does ``print(a[0:4])`` do?
-* This is called *slicing* the string.
+    #. Write a single line command to print the first 4 characters of some string.
+    #. How about the 2nd to 7th characters?
+    #. Get the last three characters? **Hint:** what does a *negative* index do?
+    #. `Get the length of a string. <https://www.google.com/search?q=get+the+length+of+a+string+python>`_
+    #. What does ``print(a[0:4])`` do?
 
-  .. raw:: html
+    .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/cxppFPrjcow" frameborder="0" allowfullscreen></iframe>
-	
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cxppFPrjcow" frameborder="0" allowfullscreen></iframe>
+
+
 More loops
 ==========
 * I can get the *length* of string like this:
