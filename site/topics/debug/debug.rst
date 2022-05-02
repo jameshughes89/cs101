@@ -44,6 +44,7 @@ Syntax errors
 * Not much strategy: just look at the code or look at what python yells at you about
 
 .. admonition:: Activity
+    :class: activity
    
     Fix this Python function::
    
@@ -71,6 +72,7 @@ Type errors
 
 
 .. admonition:: Activity
+    :class: activity
    
     This following code fine and all, but, like... what are the types of ``n`` and ``m`` supposed to be? The result of calling ``concat(5,5)`` and ``concat('5','5')`` are very different.
    
@@ -112,6 +114,7 @@ Print
 * Compare your intuition/expectation with reality
 
 .. admonition:: Activity
+    :class: activity
 
     There is one problem with this function. It ALMOST works, but it's slightly off. Read the description, test it with a ``print``. Is it right or wrong? Move the ``print``. See what happens? etc. etc.
 

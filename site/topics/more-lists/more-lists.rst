@@ -9,10 +9,12 @@ Nested lists
 * If you can nest loops... can you nest lists?
 
 .. admonition:: Activity
+    :class: activity
 
     Figure out if Python supports nested lists. If it does: build a few. If it doesn't: how might you implement them yourself?
  
 .. admonition:: Activity
+    :class: activity
 
     Hack around with Python to find answers to these questions:
         1. Can you have a list in a list?
@@ -112,6 +114,7 @@ False
 
 
 .. admonition:: Activity
+    :class: activity
 
     Let's take a step back for a sec and think about the algorithms for a sec. 
    
@@ -123,6 +126,7 @@ False
     6. Write a function called ``my_sum`` that will sum up the contents of the list, but you're not allowed to use the internal ``sum`` function. 
    
 .. admonition:: Activity
+    :class: activity
 
     How long does it take for ``my_sum`` to run? 
    

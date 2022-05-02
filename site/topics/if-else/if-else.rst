@@ -3,6 +3,7 @@ If/Else
 *******
 
 .. admonition:: Activity
+    :class: activity
 
     Using only what we have learned so far, write a function ``smush(a_number)`` that checks if the number is
     positive or negative. If ``a_number`` is positive, the function will return half the value of ``a_number``. If
@@ -80,6 +81,7 @@ Conditional Expressions
 
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``is_negative(a_number)`` that returns ``True`` if ``a_number`` is negative and ``False``
     otherwise.
@@ -203,6 +205,7 @@ Alternative Execution
 
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function called ``hail`` that takes an integer as an argument. If the integer is even, return the value of
     that integer divided by 2. If it is odd, return the value multiplied by 3 and with one added. In other words,

@@ -134,6 +134,7 @@ Getters/Setters
         * Eg. Ensure all Student Numbers are 9 chars long. 
 
 .. admonition:: Activity
+    :class: activity
 
     * Try this example and see what happens when you change a private attribute without control on the modification.
 

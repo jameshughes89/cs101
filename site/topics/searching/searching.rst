@@ -47,6 +47,7 @@ Searching (again)
 * I know I've beaten this into you at this point, but... *linear* search...
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``find_element(element, list)`` that returns ``True`` if ``element`` is in ``list`` and ``False`` otherwise. 
 
@@ -55,6 +56,7 @@ Searching (again)
 * Nothing new here... you already know how to search an unordered list.
 
 .. admonition:: Activity
+    :class: activity
    
     Discuss this with your neighbours:
       
@@ -70,10 +72,12 @@ Searching (again)
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
 
 .. admonition:: Activity
+    :class: activity
 
     James will now guess a number between 0 and 1023 in less than 10 guesses. 
    
 .. admonition:: Activity++
+    :class: activity
 
     Think of how a function ``find_element(element,sorted_list)`` that returns ``True`` if ``element`` is in ``sorted_list``  and ``False`` otherwise would be written.
 

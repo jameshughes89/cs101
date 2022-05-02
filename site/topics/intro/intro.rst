@@ -17,6 +17,7 @@ What Will I Learn?
     * :doc:`Read the outline </outline/outline>`
 
 .. admonition:: Activity
+    :class: activity
 
     Where have you encountered computer programs before?
 
@@ -64,6 +65,7 @@ How Will This Class Work?
 
 
 .. admonition:: Activity
+    :class: activity
 
    Have a chat with the people sitting around you: 
 
@@ -91,6 +93,7 @@ Is This Class Easy?
 The quick answer is, it depends...
 
 .. admonition:: Quick Activity
+    :class: activity
 
    * Who here knows how to use a hammer?
    * Who knows how to use a screwdriver?

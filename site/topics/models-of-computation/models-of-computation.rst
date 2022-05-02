@@ -34,6 +34,7 @@ Finite State Machines/Automata (FSM/FSA)
 .. image:: FSM_regex.png
 
 .. admonition:: Activity
+    :class: activity
    
     What input strings can this machine accept? What I mean is, what strings will get this machine to it's final state.  
 
@@ -98,6 +99,7 @@ Pushdown Automata (PDA) and Context-Free Grammars
     (*epsilon* means empty string)
     
 .. admonition:: Activity
+    :class: activity
    
     What strings can this system create? Try to generate a few and see if you can see the big picture on what it's doing.   
 
@@ -112,6 +114,7 @@ Pushdown Automata (PDA) and Context-Free Grammars
     S --> *epsilon*/ ''
 
 .. admonition:: Activity
+    :class: activity
    
     What strings can this system create? Try to generate a few and see if you can see the big picture on what it's doing. 
 

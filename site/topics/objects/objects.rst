@@ -58,6 +58,7 @@ Remember Numpy Arrays?
 
 
 .. admonition:: Activity
+    :class: activity
 
     1. Open up Python and create some numpy array of something called ``a``
 
@@ -218,6 +219,7 @@ Let's Make a Simple Object/ADT
 
  
 .. admonition:: Activity
+    :class: activity
 
     Outside the class, type the following (if using an IDE with multiple files in the same project, open up a **new/different** python file in the same project):
    
@@ -272,6 +274,7 @@ Let's Make a Simple Object/ADT
                 pass	
             
 .. admonition:: Activity
+    :class: activity
 
     1. I have no idea what the code would look like in the ``work_too_hard_on_assignment`` function, so just make up your own. Make it do whatever. 
 
@@ -294,6 +297,7 @@ There are a lot of other special functions for classes that you don't *need*, bu
             return 'First Name: ' + self.first_name + '\nlast_name: ' + self.last_name + '\nStudent Number: ' + self.student_num + '\nCurrent Average: ' + str(self.current_avg)
 
 .. admonition:: Activity
+    :class: activity
 
     1. Add this function to your code. 
 
@@ -309,6 +313,7 @@ __eq__
 What does it mean for 2 ``EnthusiasticStudent`` objects to be *equal*?
 
 .. admonition:: Activity
+    :class: activity
 
     1. Create 2 instances of an ``EnthusiasticStudent`` object. Call them ``a`` and ``b``.
 

@@ -19,6 +19,7 @@ Tuples
 * If a tuple is exactly like a list, why would I use it? It must be different *somehow*
 
 .. admonition:: Activity
+    :class: activity
 
     Figure out how tuples differ from lists (other than using different types of brackets!). 
 
@@ -87,6 +88,7 @@ Dictionaries
     * ``dict[key] = value``
    
 .. admonition:: Activity
+    :class: activity
 
     Build the dictionary ``my_dict`` above. 
    
@@ -101,6 +103,7 @@ Dictionaries
     * A dictionary associates *arbitrary strings* with values.
 
 .. admonition:: Activity
+    :class: activity
 
     Now type ``my_dict.`` and hit the [Tab] key. Play around with the built-in functions for dictionaries. 
 
@@ -282,6 +285,7 @@ What makes them special other than just uniqueness and orderdness?
 
 
 .. admonition:: Activity
+    :class: activity
 
     Load up this code into Python:
    
@@ -303,6 +307,7 @@ What makes them special other than just uniqueness and orderdness?
    
   
 .. admonition:: Activity
+    :class: activity
 
     1. Imagine I gave you the text from a book that you could load up into Python. What's the easiest way to count the number of unique words?
    

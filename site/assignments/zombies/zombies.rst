@@ -107,6 +107,7 @@ To make your life easier, I've provided a function called ``set_up_cities`` that
    my_world = set_up_cities()
    
 .. admonition:: Note
+   :class: note
 
    If you don't like the (boring) default names for the cities, note that there is an optional ``name`` parameter
    for this function. This lets you pass in your own list of city names if you want to (it also allows you to

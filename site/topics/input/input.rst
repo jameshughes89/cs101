@@ -26,6 +26,7 @@ Input and Changing Types
     * If you do leave it blank, nothing will be displayed to the user (this is what we will want when using Kattis)
 
 .. admonition:: Activity
+    :class: activity
 
     #. Read in some value into the computer.
     #. Print out the value you inputted.
@@ -80,8 +81,10 @@ Changing Types
 
 
 .. admonition:: Activity
+    :class: activity
 
     Write a program to:
+    
     #. Ask the user to input their weight in pounds and save the value to variable
     #. Convert the inputted value to a float and save the result to a variable
     #. Calculate the mass of the individual in kilograms based on the inputted weight and save the result to a variable

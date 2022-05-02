@@ -34,6 +34,7 @@ Lists
 * Turns out: strings are really like lists in which the elements happen to be characters.
 
 .. admonition:: Activity
+    :class: activity
 
     Hack around with Python to find answers to these questions:
         1. What types (``int``, ``float``, etc.) are we allowed to put in lists?
@@ -59,6 +60,7 @@ Data Structures
 
 
 .. admonition:: Activity
+    :class: activity
 
     Let's apply what we've learned about loops to our newfound ``list`` data structure. Combining algorithms and data structures is what programming is all about!
    
@@ -95,6 +97,7 @@ Range
 	[5, 6, 7, 8, 9]
 	
 .. admonition:: Activity
+    :class: activity
 
     Generate the following lists, using ``range``:
         1. All integers from 0 to 17
@@ -127,6 +130,7 @@ Mutability
 * Unlike strings, lists are *mutable*.
 
 .. admonition:: Activity
+    :class: activity
 
     Consider the list ``l=list(range(0,10))``. Find single-line commands to do the following:
         1. Change the 5th element of the list to ``'X'``.
@@ -216,6 +220,7 @@ Aliasing
 
 
 .. admonition:: Activity
+    :class: activity
 
     Create a list named ``l``. Make an *alias* of the list named ``lalias``. Make a *copy* of the list named ``lcopy``. Prove to yourself that one is an alias and one is a copy.
 
@@ -325,6 +330,7 @@ Pointers
     * It effectively *points* to another chunk of RAM
 
 .. admonition:: Activity
+    :class: activity
 
     Take 1 min and look at this picture and see if you can explain why we start counting at 0 when indexing lists/arrays.
    
@@ -398,6 +404,7 @@ Lists and loops
 
 
 .. admonition:: Activity
+    :class: activity
 
     Write a function ``beer_on_wall`` that will print out "n bottles of beer on the wall" for all n from 99 down to 1.
    
@@ -444,6 +451,7 @@ Mind the rotating knives
     * ... or does the function just get an alias to the same list?
    
 .. admonition:: Activity
+    :class: activity
 
     Figure out the answer to this question empirically. Write a function that will prove to you which of the two options above is correct. 
   
@@ -462,6 +470,7 @@ Side effects
         return my_list + ['appended']
   
 .. admonition:: Activity
+    :class: activity
 
     What happens when you do this?
       
@@ -495,6 +504,7 @@ Pure functions
 * As you might guess from the ameliorative term "pure"... functions with side effects are considered... "not pure"... even downright dirty, by some folks.
 
 .. admonition:: Activity
+    :class: activity
 
     Think of three potential advantages to pure functions over functions with side effects.
   

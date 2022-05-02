@@ -3,11 +3,13 @@ Print, Values, Variables, Types
 *******************************
 
 .. admonition:: Activity
+    :class: activity
 
     What is *computation?* What is a *computer?* What is *programming?*
 
 
 .. admonition:: Activity
+    :class: activity
 
     `Who can name different kinds of computers? <https://en.wikipedia.org/wiki/Computer#Unconventional_computers>`_
 
@@ -16,6 +18,7 @@ What Is A Program/Algorithm?
 ============================
 
 .. admonition:: Activity
+    :class: activity
 
     Explain to a partner how you would go about making breakfast in the morning.
 
@@ -43,6 +46,7 @@ What Is debugging?
 
 
 .. admonition:: Quick Activity
+    :class: activity
 
     Have you seen any Python errors yet? 
 
@@ -60,6 +64,7 @@ Languages
 * Why is ambiguity deadly for a formal language?
 
 .. admonition:: Activity
+    :class: activity
 
     Do you think there is a limit to what I can describe with a formal language? 
 
@@ -87,6 +92,7 @@ Print
 * We already made use of ``print`` in the previous topic
 
 .. admonition:: Activity
+    :class: activity
 
     Write a (single-line) Python program that prints a witty message of your choice.
 
@@ -141,6 +147,7 @@ Values And Types
     * ``type``
 
 .. admonition:: Activity
+    :class: activity
 
     #. Write a single line program to print out the *integer* ``1``.
     #. Now write a single line program to print out the *string* ``"1"``.
@@ -196,6 +203,7 @@ Using Variables
 
    
 .. admonition:: Activity
+    :class: activity
 
     #. Assign various values of types string, integer and float to variables.
     #. Try adding variables of the same type. What happens?
