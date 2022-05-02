@@ -10,14 +10,12 @@ Lists & References
 
 
 .. admonition:: Activity
+    :class: activity
 
     Run the following code:
 
     .. code-block:: python
         :linenos:
-
-.. admonition:: Activity
-    :class: activity
 
         some_list = [5, 7, 9, 10]
         print(some_list)
