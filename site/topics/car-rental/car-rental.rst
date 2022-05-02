@@ -244,7 +244,8 @@ Kilometers Above Allowable Average
     good observation; however, having two vs. one is not any more or less correct --- it's simply different.
 
     Further, there is a good argument for making use of a constant instead of hard coding the ``100`` for the daily
-    average limit. Perhaps something like ``AVERAGE_DAILY_LIMIT``.
+    average limit. Perhaps something like ``AVERAGE_DAILY_LIMIT``. Or maybe have the function include another parameter
+    for the limit as that would make it far more general.
 
     Remember, with these small differences discussed, one is not more correct than the other. There is literally an
     infinite number of ways one could go about solving this problems.
