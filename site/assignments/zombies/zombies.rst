@@ -107,12 +107,12 @@ To make your life easier, I've provided a function called ``set_up_cities`` that
    my_world = set_up_cities()
    
 .. admonition:: Note
-   :class: note
+    :class: note
 
-   If you don't like the (boring) default names for the cities, note that there is an optional ``name`` parameter
-   for this function. This lets you pass in your own list of city names if you want to (it also allows you to
-   create a world with fewer, or more, cities). Apologies for the boring names, but I didn't want use real cities to avoid traumatizing any
-   class members who may have lost a loved one to a zombie outbreak in those cities).
+    If you don't like the (boring) default names for the cities, note that there is an optional ``name`` parameter
+    for this function. This lets you pass in your own list of city names if you want to (it also allows you to
+    create a world with fewer, or more, cities). Apologies for the boring names, but I didn't want use real cities to avoid traumatizing any
+    class members who may have lost a loved one to a zombie outbreak in those cities).
 
 You should probably load up the ``asn2.ipynb`` (or ``asn2.py``) file into Colab or your IDE and play around with the ``set_up_cities()`` function to get a feel for it. Have a look at the lists it generates (``print``) and make sure you understand their structure. I'm not being silly here. You should do this. Playing with the code is the best way to learn how it works.   
 
