@@ -71,7 +71,7 @@ Reusing Variables
 
     #. Figure out what ``a += 2`` does.
     #. See what happens when you use ``a *= 2``.
-    #. Try other options to see what works.
+    #. Try other operators to see what works.
 
 
 First loops
