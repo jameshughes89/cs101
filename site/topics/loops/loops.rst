@@ -2,8 +2,13 @@
 Loops
 *****
 
-Reusing variables
+* `if`/`else` are great for having a block of code run when some condition is ``true``
+* Sometimes we need a block to repeatedly run *while* some condition is ``true``
+
+
+Reusing Variables
 =================
+
 * Consider this code fragment::
 
     a = 5
