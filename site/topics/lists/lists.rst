@@ -16,9 +16,6 @@ Lists & References
     .. code-block:: python
         :linenos:
 
-.. admonition:: Activity
-    :class: activity
-
         some_list = [5, 7, 9, 10]
         print(some_list)
         print(some_list[0])
