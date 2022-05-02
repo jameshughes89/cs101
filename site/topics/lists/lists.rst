@@ -1,46 +1,33 @@
-****************
-Lists & Pointers
-****************
+******************
+Lists & References
+******************
 
-Lists
-=====
+* We saw that strings were a little different when compared to the other types we've seen (``int``, ``float``, ``bool``)
+* We can generalize the idea of strings to more types
 
-* Our values so far have been pretty simple. 
-* One thing at a time. One ``int``, one ``float``, one ``string``...
-* ... except, wait, strings were a bit different, weren't they?
-* How?
-* Can we *generalize* this idea of a container that stores multiple values?
-* Yes!
+    * A string is a collection of characters
+    * We can use lists to have a collection of other types
 
-    >>> a=[5,7,9,10]
-    >>> print(a)
-    [5, 7, 9, 10]
-
-* This is called a *list*.
-* I can grab individual *elements* of the list using *indices*, exactly like we did with strings
-
-    >>> print(a)
-    [5, 7, 9, 10]
-    
-    >>> print(a[0])
-    5
-    
-    >>> print(a[1])
-    7
-    
-    >>> print(a[1:3])
-    [7, 9]
-
-* Turns out: strings are really like lists in which the elements happen to be characters.
 
 .. admonition:: Activity
 
-    Hack around with Python to find answers to these questions:
-        1. What types (``int``, ``float``, etc.) are we allowed to put in lists?
-        2. Can we put *different* types together in the *same* list?
-        3. What ``type`` does a list have?
-        4. How do you select the last 3 items in a list?
-        5. Can you have a list with nothing in it? An *empty* list?
+    Run the following code:
+
+    .. code-block:: python
+        :linenos:
+
+        some_list = [5, 7, 9, 10]
+        print(some_list)
+        print(some_list[0])
+        print(some_list[1:3])
+        print(type(some_list))
+
+    #. Determine what types can be in a list.
+    #. Can a list contain things od different types at the same time?
+    #. How can you access the last element in a list?
+    #. Can we find the length of a list?
+    #. Is it possible to have a list of length 0? This would be an empty list, or a list with nothing in it.
+
 
 Data Structures
 ===============
