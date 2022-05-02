@@ -2,15 +2,13 @@
 Lists & References
 ******************
 
-Lists
-=====
+* We saw that strings were a little different when compared to the other types we've seen (``int``, ``float``, ``bool``)
+* We can generalize the idea of strings to more types
 
-* Our values so far have been pretty simple. 
-* One thing at a time. One ``int``, one ``float``, one ``string``...
-* ... except, wait, strings were a bit different, weren't they?
-* How?
-* Can we *generalize* this idea of a container that stores multiple values?
-* Yes!
+    * A string is a collection of characters
+    * We can use lists to have a collection of other types
+
+
 
     >>> a=[5,7,9,10]
     >>> print(a)
