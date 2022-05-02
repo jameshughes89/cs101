@@ -202,33 +202,54 @@ Average Kilometers Per Day
     assert 0.5 == average_kms_per_day(3, 1.5)
 
 
+Kilometers Above Allowable Average
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Ok. Now for something harder... Number of kms over the daily average allowance. What do we know?
-    * Function to calculate the daily average 
+* Now for something a little harder
+* Number of kms over the daily average allowance
+* What do we know?
+
+    * Function to calculate the daily average
    
 .. code-block:: python
     :linenos:
    
-    def num_kms_above_average(num_days, num_kms):
-        '''
+    def num_kms_above_average(avg_num_kms: float) -> float:
+        """
         Calculates the number of kms the renter went over of their daily allowance.
         We will use the customer's average daily kms.
 
-        :param num_days: Number of days the renter had the car
-        :param num_kms: Number of kms the renter drove in total
-        :return: The number of kms over 100 they went (return 0 if it's less than 100)
-        '''
-        
-        # Calculate the number of kms traveled per day.
-        kms_per_day = average_kms_per_day(num_days, num_kms)
-        
-        # If the average kms traveled is above 100, 
-        # return how much above
-        if kms_per_day  > 100:
-            return kms_per_day - 100
+        @rtype: float
+        @param avg_num_kms: average number of kms driven per day
+        @return: The number of kms over 100 they went (return 0 if it's less than 100)
+        """
+
+        # If the average kms traveled is above 100,
+        # return how much above, otherwise zero
+        if avg_num_kms > 100:
+            return avg_num_kms - 100
         else:
             return 0
-		 
+
+
+    assert 0 == num_kms_above_average(100)
+    assert 1 == num_kms_above_average(101)
+    assert 0 == num_kms_above_average(99)
+    assert 100 == num_kms_above_average(200)
+
+
+.. note::
+
+    If you were wondering why ``num_kms_above_average`` had the two ``return`` statements instead of having only one,
+    good observation; however, having two vs. one is not any more or less correct --- it's simply different.
+
+    Further, there is a good argument for making use of a constant instead of hard coding the ``100`` for the daily
+    average limit. Perhaps something like ``AVERAGE_DAILY_LIMIT``.
+
+    Remember, with these small differences discussed, one is not more correct than the other. There is literally an
+    infinite number of ways one could go about solving this problems.
+
+
 **Who thought that wasn't too bad?**
 		
 Now for the tough one... calculate the total cost. What do we know?
