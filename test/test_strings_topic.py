@@ -2,7 +2,7 @@ import io
 import unittest
 import unittest.mock
 
-from strings_topic import vertical_print_for, vertical_print_while
+from src.strings_topic import vertical_print_for, vertical_print_while
 
 
 class TestStringsTopic(unittest.TestCase):
