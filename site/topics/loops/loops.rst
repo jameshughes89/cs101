@@ -149,12 +149,13 @@ Tracing Through A Function By Hand
         return result
 
 
-* ``while`` loops can get complicated quickly. Much of the time, it is by no means obvious what they do (if only the coder wrote **comments**).
-* If you're faced with such a loop, *trace* through the execution of the loop by building a table of values.
-* Let's trace ``do_stuff(4)``. We'll look at the values of ``n`` and ``answer`` right after the ``while`` statement.
+* ``while`` loops can get complex quickly (if only there were comments)
+* When tracing through the code, don't try to do it all in your head
+* Create a table to keep track of the values
+* Below is an example with ``trace_through_me_by_hand(4)``
 
 +------------------------+---------------+
-|         n              | answer        | 
+|          n             | result        |
 +========================+===============+ 
 |          4             | 1 -> 4        |  
 +------------------------+---------------+ 
@@ -164,6 +165,7 @@ Tracing Through A Function By Hand
 +------------------------+---------------+ 
 |          1             | Stop          |  
 +------------------------+---------------+ 
+
 
 .. admonition:: Activity
     :class: activity
