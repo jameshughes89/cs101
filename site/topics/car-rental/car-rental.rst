@@ -94,6 +94,11 @@ An Incremental Solution
 
 * Chip away at the problem
 
+.. note::
+
+    Understand that the example below is only one possible implementation of a solution to this problem. There is
+    literally an infinite number of ways one could go about solving this problem.
+
 
 Input
 ^^^^^
@@ -195,10 +200,7 @@ Based on this, I will write:
 * Function to calculate the number of kms above the 100 allowance
 * And finally, a function putting it all together to calculate the total charge
 
-.. note::
 
-    Understand that the example below is only one possible implementation of a solution to this problem. There is
-    literally an infinite number of ways one could go about solving this problem.
 
 
 Total Kilometers
