@@ -90,8 +90,8 @@ More loops
     * Some are just more efficient, and easier to read, than others.
 
 
-Mutability
-==========
+Immutability
+============
 
 * Although we can access individual characters at a specified index
 
