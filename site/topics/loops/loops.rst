@@ -2,8 +2,8 @@
 Loops
 *****
 
-* ``if``/``else`` are great for having a block of code run when some condition is ``true``
-* Sometimes we need a block to repeatedly run *while* some condition is ``true``
+* ``if``/``else`` are great for having a block of code run when some condition is ``True``
+* Sometimes we need a block to repeatedly run *while* some condition is ``True``
 
 
 Reusing Variables
@@ -98,7 +98,7 @@ While loops
         * For example, what if I want to print ``n`` times where ``n`` is some parameter to a function
 
 * This is where the ``while`` statement comes in
-* It will repeat some code ``while`` some condition is ``true``
+* It will repeat some code ``while`` some condition is ``True``
 
 
 .. code-block:: python
@@ -207,7 +207,7 @@ OMG some actual *science*!
 .. admonition:: Activity
     :class: activity
 
-    Find the solution to the equation (for what value of ``x`` is this statement true?):
+    Find the solution to the equation (for what value of ``x`` is this statement ``True``?):
    
     * .. image:: cosx.png
    
