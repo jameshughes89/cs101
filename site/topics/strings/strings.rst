@@ -35,40 +35,38 @@ Strings & Objects
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cxppFPrjcow" frameborder="0" allowfullscreen></iframe>
 
 
-More loops
-==========
-* I can get the *length* of string like this:
-    >>> len(a)
-    15
-    
-* Let's apply that...
+For loops
+=========
+
+* We can find the length of a given string with ``len(some_string)``
+* And we know we can index individual characters from a string
+* Let's write a function ``vertical_print`` that prints a string vertically (one character per line)
+
+.. code-block:: python
+    :linenos:
+
+    def vertical_print(a_string: str):
+        """
+        Print out a string vertically. In other words, print out a single character on each line
+
+        :param a_string: Some string to print out
+        :type a_string String
+        """
+        character_index = 0
+        while character_index < len(a_string):
+            print(a_string[character_index])
+            character_index += 1
+
 
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``vert_print`` that takes a string as an argument and then uses a ``while`` loop to print each character on its own line. (See sample output below)
-   
-   >>> vert_print(a)
-   M
-   y
-   _
-   l
-   i
-   t
-   t
-   l
-   e
-   _
-   s
-   t
-   r
-   i
-   n
-   g
+    Write the ``vertical_print`` function yourself. Try not to just copy/paste the provided solution. Call the function
+    on a few different strings to see if it behaves the way you expect.
 
      .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/YS2TVVTIaPQ" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YS2TVVTIaPQ" frameborder="0" allowfullscreen></iframe>
 
 
 
