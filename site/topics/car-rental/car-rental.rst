@@ -88,7 +88,11 @@ An Incremental Solution
 
 * Half of the description is IO
 * We know how to do this, so we will start here
+* The other half of the description is the calculation
 
+**Step 3**
+
+* Chip away at the problem
 
 .. code-block:: python
     :linenos:
@@ -131,8 +135,6 @@ An Incremental Solution
     * The calculation may seem intimidating, but let's take the same approach as above
     * We will write the code we can and leave comments for the parts we still need to tackle
 
-
-**Step 3:**
 
 
    
