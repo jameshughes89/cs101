@@ -103,7 +103,7 @@ For loops
 
 * Both the``while`` and ``for`` loops are perfectly fine for this situation
 
-    * But you may fine the ``for`` loop has a little nicer syntax
+    * But you may find the ``for`` loop has a little nicer syntax
 
 .. note::
 
