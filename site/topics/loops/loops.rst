@@ -133,6 +133,8 @@ While loops
     <iframe width="560" height="315" src="https://www.youtube.com/embed/I3wMZ5jkiyc" frameborder="0" allowfullscreen></iframe>
 
 
+Tracing Through A Function By Hand
+----------------------------------
 
 * Consider this code::
 
