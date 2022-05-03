@@ -2,8 +2,8 @@
 Loops
 *****
 
-* ``if``/``else`` are great for having a block of code run when some condition is ``true``
-* Sometimes we need a block to repeatedly run *while* some condition is ``true``
+* ``if``/``else`` are great for having a block of code run when some condition is ``True``
+* Sometimes we need a block to repeatedly run *while* some condition is ``True``
 
 
 Reusing Variables
@@ -69,11 +69,6 @@ Reusing Variables
 .. admonition:: Activity
     :class: activity
     
-    * Write a function to add ``+1`` to some variable 5 times and return the value.
-    * Now do the same thing, but 10 times.
-    * Now do the same thing again, but 100 times.
-    * Now do the same thing again, but 736251442443 times.
-
     Start with ``a = 5``.
 
     #. Figure out what ``a += 2`` does.
@@ -81,64 +76,81 @@ Reusing Variables
     #. Try other operators to see what works.
 
 
-
-First loops
+While loops
 ===========
 
-* So far, if we want Python to do the same thing over and over, we have to tell it explicitly by repeating those instructions over and over.
-    * There has to be a better way!
+* So far, if we need to run the same code multiple times, we repeat the code as many times as we need
 
-* We want to automate the process of repeating things.
-* If I can put a block of instructions into a function and call that function...
-* ... why can't I put a block of instructions somewhere and say "Hey, do that block of
-  instructions until I tell you to stop"?
-* The ``while`` statement allows us to do exactly this.
-* *While* some condition is ``true``, keep doing the code in the indented block::
+    * For example, if I wanted to ``print("Hello, world!)`` five times, I need to write that print statement 5 times
 
-    a = 1
-    while a < 11:
-        print(a)
-        a = a + 1
+* The trouble with this is
 
-* That code will print the numbers from 1 to 10. Take a minute to note three things:
-    * Before the ``while`` statement, we *initialize* the loop variable ``a``
-    * The ``while`` statement is followed by a condition (which can be any boolean function/statement/expression!). If the condition is ``True``, the body of the loop gets executed, otherwise it gets skipped. (don't forget the ``:`` !)
-    * What would happen if we didn't have ``a = a + 1``?
+    * It's annoying
+    * It doesn't scale well
+    * It's prone to errors
+    * It will not work for some variable number of times
 
-  .. raw:: html
+        * For example, what if I want to print ``n`` times where ``n`` is some parameter to a function
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/I3wMZ5jkiyc" frameborder="0" allowfullscreen></iframe>
+* This is where the ``while`` statement comes in
+* It will repeat some code ``while`` some condition is ``True``
 
-.. admonition:: Activity --- Featuring LOOPS
-    :class: activity
+.. code-block:: python
+    :linenos:
 
-    * Write a function to add ``+1`` to some variable 5 times and return the value.
-    * Now do the same thing, but 10 times.
-    * Now do the same thing again, but 100 times.
-    * Now do the same thing again, but 1927462829873 times....
+    counter = 0
+    while counter < 10:
+        print(counter)
+        counter += 1
 
-* Consider this code::
 
-    def do_stuff(n):
-        answer = 1
-        while n > 1:
-            answer = answer * n
-            n = n - 1
-        return answer
+* The above example will print out the numbers ``0`` -- ``9``
+
+    * We initialized a ``counter`` variable outside the loop
+    * The ``while`` has a conditional expression that gets evaluated
+    * If it is evaluated to ``True``, the indented code runs
+
+        * ``print`` out the value of ``counter``
+        * Increment the value of ``counter``
+        * Repeat the loop until the condition is ``False``
+
 
 .. admonition:: Activity
     :class: activity
 
-    What does the code above do? Trace through it, using pen and paper, for a few example values of ``n!``
+    What would happen if ``counter += 1`` was not included in the loop? Try to answer based on what you know. Confirm
+    what happens by trying to run the code.
 
-* The pattern ``a = a + 1`` shows up *so often* that Python permits a shorthand for it: ``a += 1``. If you like the shorthand, use it. If you don't: don't. It's not mandatory; just saves some typing.
 
-* ``while`` loops can get complicated quickly. Much of the time, it is by no means obvious what they do (if only the coder wrote **comments**).
-* If you're faced with such a loop, *trace* through the execution of the loop by building a table of values.
-* Let's trace ``do_stuff(4)``. We'll look at the values of ``n`` and ``answer`` right after the ``while`` statement.
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/I3wMZ5jkiyc" frameborder="0" allowfullscreen></iframe>
+
+
+Tracing Through A Function By Hand
+----------------------------------
+
+* Trace through the below code by hand for a few values of ``n``
+* See if you can figure out what this function is doing
+
+.. code-block:: python
+    :linenos:
+
+    def trace_through_me_by_hand(n: int) -> int:
+        result = 1
+        while n > 1:
+            result = result * n
+            n -= 1
+        return result
+
+
+* ``while`` loops can get complex quickly (if only there were comments)
+* When tracing through the code, don't try to do it all in your head
+* Create a table to keep track of the values
+* Below is an example with ``trace_through_me_by_hand(4)``
 
 +------------------------+---------------+
-|         n              | answer        | 
+|          n             | result        |
 +========================+===============+ 
 |          4             | 1 -> 4        |  
 +------------------------+---------------+ 
@@ -148,6 +160,7 @@ First loops
 +------------------------+---------------+ 
 |          1             | Stop          |  
 +------------------------+---------------+ 
+
 
 .. admonition:: Activity
     :class: activity
@@ -188,7 +201,7 @@ OMG some actual *science*!
 .. admonition:: Activity
     :class: activity
 
-    Find the solution to the equation (for what value of ``x`` is this statement true?):
+    Find the solution to the equation (for what value of ``x`` is this statement ``True``?):
    
     * .. image:: cosx.png
    

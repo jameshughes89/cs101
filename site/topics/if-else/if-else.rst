@@ -423,5 +423,5 @@ Nesting Conditionals
 For Next Class
 ==============
 
-* Read `chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
+* Read `Chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
 

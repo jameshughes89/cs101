@@ -61,10 +61,12 @@ rental agreement, age, how far they drove, and how long they had the car.
     * Ending odometer reading
     
 * If the classification code is **B**
+
     * Base charge of $20.00/day
     * Plus $0.30 for every km driven
     
 * If the classification is **D**
+
     * Base charge of $50.00/day
     * Plus $0.30 for every km driven above the 100km/day average allowance 
     
@@ -84,51 +86,103 @@ An Incremental Solution
 
     * This cannot be understated --- this is a big part of solving any problem
 
-* Half of the description is IO 
+* Half of the description is IO
+* We know how to do this, so we will start here
+* The other half of the description is the calculation
 
-    * Let's save this for last because it's super easy
-   
-* The only beefy part of this is the calculation
+**Step 3**
 
-    * But even then, we can break that down into smaller bits and pieces that we can solve
-   
-   
-**Let's look at the requirements:**
-   
-* *If* the classification code is **B**
-
-    * Base charge of $20.00/days
-    * Plus $0.30 *for every km* driven
-
-* *If* the classification is **D**
-
-    * Base charge of $50.00/days
-    * Plus $0.30 *for every km* driven *above* the 100km/day *average* allowance.
-
-
-**What do we see?**
-
-* We see ``if``\s, which know how to do
-* We see that there is some math, which isn't too bad
-
-    * We need to know the total kms
-    * We need to know the average number of kms driven
-    * Need to know how many kms above 100 we are
-
-
-**Step 3:**
-
-Based on this, I will write:
-
-* Function to calculate the kms
-* Function to calculate average kms
-* Function to calculate the number of kms above the 100 allowance
-* And finally, a function putting it all together to calculate the total charge
+* Chip away at the problem
 
 .. note::
 
     Understand that the example below is only one possible implementation of a solution to this problem. There is
     literally an infinite number of ways one could go about solving this problem.
+
+
+Input
+^^^^^
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 7
+
+    age = int(input('Age: '))
+    classification = input('Classification Code: ')
+    number_of_days = int(input('Number of Days Rented: '))
+    starting_kms = float(input('Odometer reading at start: '))
+    ending_kms = float(input('Odometer reading at end: '))
+
+    total_charge = # Some function to do the total charge calculation
+
+    print('The total charge is: ' + str(total_charge))
+
+
+.. note::
+
+    In the above example, we would want to verify it is doing what we expect. Since user input is a little difficult to
+    test with ``assert``, we can simply ``print`` out the data and confirm that it is doing what we expect. For example,
+    the following code could be added to the above example.
+
+    .. code-block:: python
+        :linenos:
+
+        print(age, type(age))
+        print(classification, type(classification))
+        print(number_of_days, type(number_of_days))
+        print(starting_kms, type(starting_kms))
+        print(ending_kms, type(ending_kms))
+
+
+* The above example of reading user input seems to be sufficient for what we need; however, obviously we are far from solving the problem
+* Line 7 is currently non-functional; it is simply a placeholder for the actual ``total_charge`` calculation
+
+    * If you were to run the example code, it would not work since ``total_charge`` is currently not being assigned to anything
+
+* In other words, we need to actually write some function to do the actual calculation for us
+
+    * The calculation may seem intimidating, but let's take the same approach as above
+    * We will write the code we can and leave comments for the parts we still need to tackle
+
+
+Calculating The Total Charge
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+    :linenos:
+
+    def calculate_total_charge(some_number_of_parameters):
+
+        # Set up a variable for our total charge
+        total_charge = 0
+
+        # Calculate the number of kilometres traveled.
+        total_kms_traveled =
+
+        # Calculate the average number of kilometers travelled per day
+        average_kms =
+
+        # Calculate the charge based on rental code
+        if rental_code == 'B':
+            # Base charge of $20.00/days + $0.30 for every km driven
+        else:
+            # Base charge of $50.00/days + $0.30 for every km driven above the 100km/day average allowance
+            num_kms_above_allowance =
+
+        # if they're under 25, add additional charge
+        if something :
+
+        # Return the final total charge
+        return some_total_charge
+
+
+* Although it may feel like this is a rather silly function so far, it did help us outline what we need to know in order to solve the problem
+
+    * We need to know the total kilometers travelled
+    * We need to know the average kms/day
+    * We need to know the number of kms driven above the 100km/day average allowance
+    * We need to do the actual rental agreement classification calculation
+    * We need to add the extra charge for people under 25
 
 
 Total Kilometers
@@ -161,6 +215,7 @@ Total Kilometers
     assert -100 == total_kms(100, 0)
     assert 100.5 == total_kms(100.5, 201)
 
+
 * You may be thinking that turning this simple sub-problem (calculating the total kilometers) into a function is overkill
 * Perhaps you are right
 * But, it's also really straightforward to confirm correctness of this function
@@ -177,7 +232,7 @@ Average Kilometers Per Day
     * What do we know?
 
         * We have a function to calculate the total kms
-        * We also know the number of days the car was rented.
+        * We also know the number of days the car was rented
 
 .. code-block:: python
     :linenos:
@@ -209,7 +264,7 @@ Kilometers Above Allowable Average
 * Number of kms over the daily average allowance
 * What do we know?
 
-    * Function to calculate the daily average
+    * Average kms/day given the function ``average_kms_per_day`` we wrote
    
 .. code-block:: python
     :linenos:
@@ -251,91 +306,94 @@ Kilometers Above Allowable Average
     infinite number of ways one could go about solving this problems.
 
 
-**Who thought that wasn't too bad?**
-		
-Now for the tough one... calculate the total cost. What do we know?
-    * age
-    * class
-    * odometer readings
-    * number of days
-    * the above functions   
+Revisit Calculating the Total Charge
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* With the functions we wrote, solving the big ``calculate_total_charge`` becomes simpler
   
 .. code-block:: python
     :linenos:
    
-    def calculate_total_charge(num_days, age, code, odometer_start, odometer_finish):
-        '''
+    def calculate_total_charge(num_days: float, age: float, rental_code: str, odometer_start: float, odometer_finish: float) -> float:
+        """
         Calculate how much the renter needs to be charged based on the classification,
         the number of kms travelled and the age of the driver.
 
-        :param num_days: Number of days the car was rented.
-        :param age: Age of the driver.
-        :param code: The classification code (B ord D).
-        :param odometer_start: Odometer when the renter took the car.
-        :param odometer_finish: Odometer when the renter returned the car.
-        :return: The amount to charge the renter.
-        '''
-
-        # Setup a variable for our total charge
+        @rtype: float
+        @param num_days: Number of days the car was rented.
+        @param age: Age of the driver.
+        @param rental_code: The classification code (B ord D).
+        @param odometer_start: Odometer when the renter took the car.
+        @param odometer_finish: Odometer when the renter returned the car.
+        @return: The amount to charge the renter.
+        """
+        # Set up a variable for our total charge
         total_charge = 0
-        
+
         # Calculate the number of kilometres traveled.
         total_kms_traveled = total_kms(odometer_start, odometer_finish)
 
-        # If B, $20/day + km charge of 0.30/km
-        if code == 'B':
+        # Calculate the average number of kilometers travelled per day
+        average_kms = average_kms_per_day(num_days, total_kms_traveled)
+
+        if rental_code == "B":
             total_charge = 20.00 * num_days + 0.30 * total_kms_traveled
-        # If D, $50 base charge, + 0.30/km OVER 100km
         else:
-            total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(num_days, total_kms_traveled)
+            total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(average_kms)
 
-        # if they're young, add an additional $10/day charge.
+        # if they're under 25, add additional charge
         if age < 25:
-            total_charge += (10 * num_days)
+            total_charge += 10 * num_days
 
-        # return the result
+        # Return the final total charge
         return total_charge
 
-**Hmm, defo was tricker, but still not too bad at all!**
 
-Now just do the IO part, which we have done a bunch of times before
-
-.. code-block:: python
-    :linenos:
-   
-    age = int(input('Age: '))
-    classification = input('Classification Code: ')
-    number_of_days = int(input('Number of Days Rented: '))
-    starting_kms = float(input('Odometer reading at start: '))
-    ending_kms = float(input('Odometer reading at end: '))
-
-    total_charge = calculate_total_charge(number_of_days, age, classification, starting_kms, ending_kms)
-
-    print('The total charge is: ' + str(total_charge))
+    assert 20 == calculate_total_charge(1, 30, "B", 0, 0)
+    assert 50 == calculate_total_charge(1, 30, "D", 0, 0)
+    assert 30 == calculate_total_charge(1, 20, "B", 0, 0)
+    assert 60 == calculate_total_charge(1, 20, "D", 0, 0)
+    assert 50 == calculate_total_charge(1, 30, "B", 0, 100)
+    assert 50 == calculate_total_charge(1, 30, "D", 0, 100)
+    assert 60 == calculate_total_charge(1, 20, "B", 0, 100)
+    assert 60 == calculate_total_charge(1, 20, "D", 0, 100)
+    assert 190 == calculate_total_charge(2, 30, "B", 0, 500)
+    assert 145 == calculate_total_charge(2, 30, "D", 0, 500)
+    assert 210 == calculate_total_charge(2, 20, "B", 0, 500)
+    assert 165 == calculate_total_charge(2, 20, "D", 0, 500)
 
 
-Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGziwmxh9-PjaqsP91tRRkk?usp=sharing>`_.
+* Take the time to go over all the parts of this function
+* If any part feels intimidating, slow down
+
+    * The new functions were used to simplify much of the calculation
+    * The ``if`` for the rental classification simply evaluates the corresponding cost calculation
+    * The ``if`` for the age adds an additional $10/day
+
+* Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGziwmxh9-PjaqsP91tRRkk?usp=sharing>`_.
+
+.. note::
+
+    There was nothing stopping us from writing a function for the rental classification calculation or the age
+    calculation. If you feel that would be better, then I would encourage you to do that. Again, assuming your
+    implementation does what is required, it would not be any more or less correct than this implementation.
+
 
 .. admonition:: Activity
     :class: activity
 
-    Think about how you would write this differently 
+    Think about how you would write this differently
+
         * Would you use all the same functions?
         * Would you change how the functions worked?
         * Would you move where you called the functions?
         * Would you add additional functions?
-        * Would you use constants? (say yes)
+        * Would you use constants? Where?
 
-* So, why did I write it the way I did?
-* Honestly, just *because*
-* No other reason other than it was the way I wrote it
-* What matters here is that it worked
-* But I could write this so so so many other ways and still have it work 
-* This is NORMAL
       
-For next class
+For Next Class
 ==============
 
-* Read `chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
+* Read `Chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
 
 

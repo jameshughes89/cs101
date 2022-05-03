@@ -118,22 +118,31 @@ For loops
             print(terrible_variable_name)
 
 
-Mutability
-==========
-* So... if we can *access* an individual character in a string with an index...
-* ... you might be feeling tempted to try to *set* an individual character with an index, too.
-* Let's try::
-    >>> a[7]='X'
-    Traceback (most recent call last):
-        File "<stdin>", line 1, in <module>
-    TypeError: 'str' object does not support item assignment
-* Variables of some types (like ``int``) are *mutable*... that is: they can be changed.
-* Based on the above... do you think *strings* are mutable?
-* You can't change a string. You have to make a *new one* based on the old one. 
-    >>> new_a = a[:7] + 'X' + a[8:]
-    >>> print(new_a)
-    My littXe string
-   
+Immutability
+============
+
+* Although we can access individual characters at a specified index
+
+    * ``some_string[an_index]``
+
+* We cannot *change* the value at a specified index
+
+    * ``some_string[an_index] = "X"``
+    * If you try this, you will get ``TypeError: 'str' object does not support item assignment``
+
+* This is because strings are **not** mutable
+
+    * They're immutable
+    * Fancy way of saying, once they exist you cannot change them
+
+* However, there is nothing stopping us from making a new string based on the old
+
+.. admonition:: Activity
+    :class: activity
+
+    a_string = "Hello, world!"
+    b_string = a_string[:5] + "!" + a_string[6:]
+
 
 in
 ==
