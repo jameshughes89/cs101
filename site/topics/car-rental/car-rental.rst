@@ -164,15 +164,25 @@ Calculating The Total Charge
 
         # Calculate the charge based on rental code
         if rental_code == 'B':
-
+            # Base charge of $20.00/days + $0.30 for every km driven
         else:
-
+            # Base charge of $50.00/days + $0.30 for every km driven above the 100km/day average allowance
+            num_kms_above_allowance =
 
         # if they're under 25, add additional charge
         if something :
 
         # Return the final total charge
         return some_total_charge
+
+
+* Although it may feel like this is a rather silly function so far, it did help us outline what we need to know in order to solve the problem
+
+    * We need to know the total kilometers travelled
+    * We need to know the average kms/day
+    * We need to know the number of kms driven above the 100km/day average allowance
+    * We need to do the actual rental agreement classification calculation
+    * We need to add the extra charge for people under 25
 
 
 
