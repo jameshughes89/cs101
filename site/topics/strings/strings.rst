@@ -40,14 +40,14 @@ For loops
 
 * We can find the length of a given string with ``len(some_string)``
 * And we know we can index individual characters from a string
-* Let's write a function ``vertical_print`` that prints a string vertically (one character per line)
+* Let's write a function ``vertical_print_while`` that prints a string vertically (one character per line)
 
 .. code-block:: python
     :linenos:
 
-    def vertical_print(a_string: str):
+    def vertical_print_while(a_string: str):
         """
-        Print out a string vertically. In other words, print out a single character on each line
+        Print out a string vertically. In other words, print out a single character on each line.
 
         :param a_string: Some string to print out
         :type a_string String
@@ -61,32 +61,64 @@ For loops
 .. admonition:: Activity
     :class: activity
 
-    Write the ``vertical_print`` function yourself. Try not to just copy/paste the provided solution. Call the function
-    on a few different strings to see if it behaves the way you expect.
+    Write the ``vertical_print_while`` function yourself. Try not to just copy/paste the provided solution. Call the
+    function on a few different strings to see if it behaves the way you expect.
 
      .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YS2TVVTIaPQ" frameborder="0" allowfullscreen></iframe>
 
 
+* The ``while`` loop worked perfectly fine
+* But there is another type of loop called a ``for`` loop that may feel a little nicer to use in this scenario
+* These ``for`` loops are great for when we have a collection of *things* and we want to do something for each of those *things*
+
+.. code-block:: python
+    :linenos:
+
+    def vertical_print_for(a_string: str):
+        """
+        Print out a string vertically. In other words, print out a single character on each line.
+
+        :param a_string: Some string to print out
+        :type a_string String
+        """
+        for char in a_string:
+            print(char)
 
 
-* The ``while`` loop certainly worked OK there, but it was a bit awkward.
-* ``while`` loops are meant to continue until some logical condition is met.
-    * Which this technically is, buttttt...
-* Maybe there is another kind of loop that says "Do the indented code block once for each item in a compound object" rather than "Do the code block until an arbitrary condition is met".
-* Such a thing exists: the ``for`` loop::
+* The ``while`` loop will continue to run ``while`` the condition is ``True``
+* The ``for`` loop will run for each *thing*
+* In this example, the ``for`` loop will run for each character in the string
 
-    for char in a:
-        print(char)
-      
-* *for* each character in the string ``a``, we run the indented code block.
-* You don't *have* to use the ``for`` loop. A ``while`` loop can do exactly the same thing.
-* The ``for`` loop is just cleaner here (and less typing!).
-* But there is nothing wrong with the ``while``! There are just a lot of ways to solve a problem.
-* You can actually prove that there are a (countably) infinite number of programs to do any given task.
-    * Some are just more efficient, and easier to read, than others.
-   
+* If we were to call ``vertical_print_for("Hello")``
+
+    * The first time through the loop ``char`` would have the value ``"H"``
+    * The second time ``char`` would have the value ``"e"``
+    * The third time ``char`` would be ``"l"``
+    * Fourth time ``char`` is ``"l"`` again
+    * The fifth time ``char`` is ``"o"``
+    * The loop ends as there are no more characters in the string
+
+
+* Both the``while`` and ``for`` loops are perfectly fine for this situation
+
+    * But you may fine the ``for`` loop has a little nicer syntax
+
+.. note::
+
+    In the ``vertical_print_for`` example, the use of the variable name ``char`` in the ``for`` loop is arbitrary. It is
+    justa variable name and is not required to be ``char`` simply because the things in the string are characters. I
+    just chose ``char`` since it is an appropriate name for the variable. For example, the following code would work
+    just fine:
+
+    .. code-block:: python
+        :linenos:
+
+        for terrible_variable_name in a_string:
+            print(terrible_variable_name)
+
+
 Mutability
 ==========
 * So... if we can *access* an individual character in a string with an index...
