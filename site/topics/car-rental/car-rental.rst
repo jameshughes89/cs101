@@ -391,9 +391,9 @@ Revisit Calculating the Total Charge
         * Would you use constants? Where?
 
       
-For next class
+For Next Class
 ==============
 
-* Read `chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
+* Read `Chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
 
 
