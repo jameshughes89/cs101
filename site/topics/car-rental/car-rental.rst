@@ -153,6 +153,9 @@ Calculating The Total Charge
 
     def calculate_total_charge(some_number_of_parameters):
 
+        # Set up a variable for our total charge
+        total_charge = 0
+
         # Calculate the number of kilometres traveled.
         total_kms_traveled =
 
