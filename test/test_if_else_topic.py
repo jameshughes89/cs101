@@ -12,7 +12,6 @@ from src.if_else_topic import (
 )
 
 
-
 class TestIfElseTopic(unittest.TestCase):
     def test_smush_positive_parameter_returns_half(self):
         self.assertEqual(5, smush(10))
@@ -106,4 +105,3 @@ class TestIfElseTopic(unittest.TestCase):
 
     def test_letter_grade_49_returns_F(self):
         self.assertEqual("F", letter_grade(49))
-
