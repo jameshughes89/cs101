@@ -87,9 +87,6 @@ An Incremental Solution
     * This cannot be understated --- this is a big part of solving any problem
 
 * Half of the description is IO 
-
-    * Let's save this for last because it's super easy
-   
 * The only beefy part of this is the calculation
 
     * But even then, we can break that down into smaller bits and pieces that we can solve
