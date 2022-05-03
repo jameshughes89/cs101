@@ -13,7 +13,7 @@ class TestStringsTopic(unittest.TestCase):
         self.assertEqual(expected, mock_stdout.getvalue())
 
     @unittest.mock.patch("sys.stdout", new_callable=io.StringIO)
-    def test_vertical_print_while_hello_string_prints_nothing(self, mock_stdout):
+    def test_vertical_print_while_hello_string_prints_correctly(self, mock_stdout):
         vertical_print_while("Hello")
         expected = "H\ne\nl\nl\no\n"
         self.assertEqual(expected, mock_stdout.getvalue())
@@ -25,7 +25,7 @@ class TestStringsTopic(unittest.TestCase):
         self.assertEqual(expected, mock_stdout.getvalue())
 
     @unittest.mock.patch("sys.stdout", new_callable=io.StringIO)
-    def test_vertical_print_for_hello_string_prints_nothing(self, mock_stdout):
+    def test_vertical_print_for_hello_string_prints_correctly(self, mock_stdout):
         vertical_print_for("Hello")
         expected = "H\ne\nl\nl\no\n"
         self.assertEqual(expected, mock_stdout.getvalue())
