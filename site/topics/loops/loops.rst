@@ -113,13 +113,19 @@ While loops
 * The above example will print out the numbers ``0`` -- ``9``
 
     * We initialized a ``counter`` variable outside the loop
-    * The ``while`` has a conditional expression that gets evaluated --- if it is evaluated to ``True``, the indented code runs
+    * The ``while`` has a conditional expression that gets evaluated
+    * If it is evaluated to ``True``, the indented code runs
+
+        * ``print`` out the value of ``counter``
+        * Increment the value of ``counter``
+        * Repeat the loop until the condition is ``False``
+
 
 .. admonition:: Activity
     :class: activity
 
     What would happen if ``counter += 1`` was not included in the loop? Try to answer based on what you know. Confirm
-    what happens by trying to run the code. 
+    what happens by trying to run the code.
 
 
 * That code will print the numbers from 1 to 10. Take a minute to note three things:
