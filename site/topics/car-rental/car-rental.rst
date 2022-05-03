@@ -140,8 +140,31 @@ Input
     * We will write the code we can and leave comments for the parts we still need to tackle
 
 
+Calculating The Total Charge
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   
+.. code-block:: python
+    :linenos:
+
+    def calculate_total_charge(some_number_of_parameters):
+
+        # Calculate the number of kilometres traveled.
+        total_kms_traveled =
+
+        # Calculate the average number of kilometers travelled per day
+        average_kms =
+
+        # Calculate the charge based on rental code
+        charge =
+
+        # if they're under 25, add additional charge
+        if something :
+
+        # Return the final total charge
+        return some_total_charge
+
+
+
 * *If* the classification code is **B**
 
     * Base charge of $20.00/days
