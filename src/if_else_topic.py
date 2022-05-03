@@ -175,4 +175,3 @@ assert "B" == letter_grade(70)
 assert "C" == letter_grade(60)
 assert "D" == letter_grade(50)
 assert "F" == letter_grade(49)
-
