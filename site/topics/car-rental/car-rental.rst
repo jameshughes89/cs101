@@ -86,7 +86,43 @@ An Incremental Solution
 
     * This cannot be understated --- this is a big part of solving any problem
 
-* Half of the description is IO 
+* Half of the description is IO
+* We know how to do this, so we will start here
+
+
+.. code-block:: python
+    :linenos:
+
+    age = int(input('Age: '))
+    classification = input('Classification Code: ')
+    number_of_days = int(input('Number of Days Rented: '))
+    starting_kms = float(input('Odometer reading at start: '))
+    ending_kms = float(input('Odometer reading at end: '))
+
+    total_charge = # Some function to do the total charge calculation
+
+    print('The total charge is: ' + str(total_charge))
+
+
+.. note::
+
+    In the above example, we would want to verify it is doing what we expect. Since user input is a little difficult to
+    test with ``assert``, we can simply ``print`` out the data and confirm that it is doing what we expect. For example,
+    the following code could be added to the above example.
+
+    .. code-block:: python
+        :linenos:
+
+        print(age, type(age))
+        print(classification, type(classification))
+        print(number_of_days, type(number_of_days))
+        print(starting_kms, type(starting_kms))
+        print(ending_kms, type(ending_kms))
+
+* The above example
+
+
+
 * The only beefy part of this is the calculation
 
     * But even then, we can break that down into smaller bits and pieces that we can solve
