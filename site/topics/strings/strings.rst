@@ -108,7 +108,7 @@ For loops
 .. note::
 
     In the ``vertical_print_for`` example, the use of the variable name ``char`` in the ``for`` loop is arbitrary. It is
-    justa variable name and is not required to be ``char`` simply because the things in the string are characters. I
+    just a variable name and is not required to be ``char`` simply because the things in the string are characters. I
     just chose ``char`` since it is an appropriate name for the variable. For example, the following code would work
     just fine:
 
