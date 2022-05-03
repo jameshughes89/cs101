@@ -94,6 +94,10 @@ An Incremental Solution
 
 * Chip away at the problem
 
+
+Input
+^^^^^
+
 .. code-block:: python
     :linenos:
     :emphasize-lines: 7
