@@ -160,7 +160,10 @@ Calculating The Total Charge
         average_kms =
 
         # Calculate the charge based on rental code
-        charge =
+        if rental_code == 'B':
+
+        else:
+
 
         # if they're under 25, add additional charge
         if something :
