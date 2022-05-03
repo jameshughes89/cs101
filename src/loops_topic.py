@@ -15,6 +15,6 @@ def factorial(n: int) -> int:
 
 
 # Test trace_me_by_hand
-assert 1 == trace_me_by_hand(0)
-assert 1 == trace_me_by_hand(1)
-assert 3628800 == trace_me_by_hand(10)
+assert 1 == factorial(0)
+assert 1 == factorial(1)
+assert 3628800 == factorial(10)
