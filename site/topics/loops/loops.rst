@@ -69,11 +69,6 @@ Reusing Variables
 .. admonition:: Activity
     :class: activity
     
-    * Write a function to add ``+1`` to some variable 5 times and return the value.
-    * Now do the same thing, but 10 times.
-    * Now do the same thing again, but 100 times.
-    * Now do the same thing again, but 736251442443 times.
-
     Start with ``a = 5``.
 
     #. Figure out what ``a += 2`` does.
