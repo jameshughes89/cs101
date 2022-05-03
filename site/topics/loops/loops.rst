@@ -128,22 +128,11 @@ While loops
     what happens by trying to run the code.
 
 
-* That code will print the numbers from 1 to 10. Take a minute to note three things:
-    * Before the ``while`` statement, we *initialize* the loop variable ``a``
-    * The ``while`` statement is followed by a condition (which can be any boolean function/statement/expression!). If the condition is ``True``, the body of the loop gets executed, otherwise it gets skipped. (don't forget the ``:`` !)
-    * What would happen if we didn't have ``a = a + 1``?
+.. raw:: html
 
-  .. raw:: html
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/I3wMZ5jkiyc" frameborder="0" allowfullscreen></iframe>
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/I3wMZ5jkiyc" frameborder="0" allowfullscreen></iframe>
 
-.. admonition:: Activity --- Featuring LOOPS
-    :class: activity
-
-    * Write a function to add ``+1`` to some variable 5 times and return the value.
-    * Now do the same thing, but 10 times.
-    * Now do the same thing again, but 100 times.
-    * Now do the same thing again, but 1927462829873 times....
 
 * Consider this code::
 
