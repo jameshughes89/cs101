@@ -100,7 +100,6 @@ While loops
 * This is where the ``while`` statement comes in
 * It will repeat some code ``while`` some condition is ``True``
 
-
 .. code-block:: python
     :linenos:
 
@@ -136,21 +135,19 @@ While loops
 Tracing Through A Function By Hand
 ----------------------------------
 
-* Consider this code::
+* Trace through the below code by hand for a few values of ``n``
+* See if you can figure out what this function is doing
 
-    def do_stuff(n):
-        answer = 1
+.. code-block:: python
+    :linenos:
+
+    def trace_through_me_by_hand(n: int) -> int:
+        result = 1
         while n > 1:
-            answer = answer * n
-            n = n - 1
-        return answer
+            result = result * n
+            n -= 1
+        return result
 
-.. admonition:: Activity
-    :class: activity
-
-    What does the code above do? Trace through it, using pen and paper, for a few example values of ``n!``
-
-* The pattern ``a = a + 1`` shows up *so often* that Python permits a shorthand for it: ``a += 1``. If you like the shorthand, use it. If you don't: don't. It's not mandatory; just saves some typing.
 
 * ``while`` loops can get complicated quickly. Much of the time, it is by no means obvious what they do (if only the coder wrote **comments**).
 * If you're faced with such a loop, *trace* through the execution of the loop by building a table of values.
