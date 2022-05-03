@@ -97,23 +97,30 @@ While loops
 
         * For example, what if I want to print ``n`` times where ``n`` is some parameter to a function
 
+* This is where the ``while`` statement comes in
+* It will repeat some code ``while`` some condition is ``true``
 
 
+.. code-block:: python
+    :linenos:
 
-* So far, if we want Python to do the same thing over and over, we have to tell it explicitly by repeating those instructions over and over.
-    * There has to be a better way!
+    counter = 0
+    while counter < 10:
+        print(counter)
+        counter += 1
 
-* We want to automate the process of repeating things.
-* If I can put a block of instructions into a function and call that function...
-* ... why can't I put a block of instructions somewhere and say "Hey, do that block of
-  instructions until I tell you to stop"?
-* The ``while`` statement allows us to do exactly this.
-* *While* some condition is ``true``, keep doing the code in the indented block::
 
-    a = 1
-    while a < 11:
-        print(a)
-        a = a + 1
+* The above example will print out the numbers ``0`` -- ``9``
+
+    * We initialized a ``counter`` variable outside the loop
+    * The ``while`` has a conditional expression that gets evaluated --- if it is evaluated to ``True``, the indented code runs
+
+.. admonition:: Activity
+    :class: activity
+
+    What would happen if ``counter += 1`` was not included in the loop? Try to answer based on what you know. Confirm
+    what happens by trying to run the code. 
+
 
 * That code will print the numbers from 1 to 10. Take a minute to note three things:
     * Before the ``while`` statement, we *initialize* the loop variable ``a``
