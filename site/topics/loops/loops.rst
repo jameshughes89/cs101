@@ -81,9 +81,24 @@ Reusing Variables
     #. Try other operators to see what works.
 
 
-
-First loops
+While loops
 ===========
+
+* So far, if we need to run the same code multiple times, we repeat the code as many times as we need
+
+    * For example, if I wanted to ``print("Hello, world!)`` five times, I need to write that print statement 5 times
+
+* The trouble with this is
+
+    * It's annoying
+    * It doesn't scale well
+    * It's prone to errors
+    * It will not work for some variable number of times
+
+        * For example, what if I want to print ``n`` times where ``n`` is some parameter to a function
+
+
+
 
 * So far, if we want Python to do the same thing over and over, we have to tell it explicitly by repeating those instructions over and over.
     * There has to be a better way!
