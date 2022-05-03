@@ -92,6 +92,7 @@ An Incremental Solution
 
 .. code-block:: python
     :linenos:
+    :emphasize-lines: 7
 
     age = int(input('Age: '))
     classification = input('Classification Code: ')
@@ -119,16 +120,21 @@ An Incremental Solution
         print(starting_kms, type(starting_kms))
         print(ending_kms, type(ending_kms))
 
-* The above example
+
+* The above example of reading user input seems to be sufficient for what we need; however, obviously we are far from solving the problem
+* Line 7 is currently non-functional; it is simply a placeholder for the actual ``total_charge`` calculation
+
+    * If you were to run the example code, it would not work since ``total_charge`` is currently not being assigned to anything
+
+* In other words, we need to actually write some function to do the actual calculation for us
+
+    * The calculation may seem intimidating, but let's take the same approach as above
+    * We will write the code we can and leave comments for the parts we still need to tackle
 
 
+**Step 3:**
 
-* The only beefy part of this is the calculation
 
-    * But even then, we can break that down into smaller bits and pieces that we can solve
-   
-   
-**Let's look at the requirements:**
    
 * *If* the classification code is **B**
 
