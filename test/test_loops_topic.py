@@ -51,17 +51,19 @@ class TestLoopsTopic(unittest.TestCase):
     @unittest.mock.patch("sys.stdout", new_callable=io.StringIO)
     def test_int_sum_print_10_prints_correct_string(self, mock_stdout):
         int_sum_print(10)
-        expected = "0\t0 -> 0\n" \
-                   "1\t0 -> 1\n" \
-                   "2\t1 -> 3\n" \
-                   "3\t3 -> 6\n" \
-                   "4\t6 -> 10\n" \
-                   "5\t10 -> 15\n" \
-                   "6\t15 -> 21\n" \
-                   "7\t21 -> 28\n" \
-                   "8\t28 -> 36\n" \
-                   "9\t36 -> 45\n" \
-                   "10\t45 -> 55\n"
+        expected = (
+            "0\t0 -> 0\n"
+            "1\t0 -> 1\n"
+            "2\t1 -> 3\n"
+            "3\t3 -> 6\n"
+            "4\t6 -> 10\n"
+            "5\t10 -> 15\n"
+            "6\t15 -> 21\n"
+            "7\t21 -> 28\n"
+            "8\t28 -> 36\n"
+            "9\t36 -> 45\n"
+            "10\t45 -> 55\n"
+        )
         self.assertEqual(expected, mock_stdout.getvalue())
 
     def test_int_sum_print_negative_1_returns_0(self):
