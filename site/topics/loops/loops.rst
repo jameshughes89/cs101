@@ -185,68 +185,32 @@ Tracing Through A Function By Hand
     output.
 
 
-OMG some actual *science*!
-==========================
-* Okay, maybe not. But we're taking a step in that direction.
+Algorithm
+=========
+
+* The above functions are all examples of *algorithms*
+* An algorithm is a description of steps one could take to solve a given problem
+
+    * Driving directions and cookie recipes are algorithms
+
+* Although algorithms can be explained in a natural language like English, when programming we write our algorithms in code
+* Finding an algorithm to solve a problem is non-trivial
+
+    * You can make a career out of coming up with algorithms
+    * `There are certain open problems that, if you solve, will literally get you a million dollars and plenty of fame <https://en.wikipedia.org/wiki/Millennium_Prize_Problems>`_
+
 
 .. admonition:: Activity
     :class: activity
 
-    Find the solution to the equation (for what value of ``x`` is this statement ``True``?):
-   
-    * .. image:: cosx.png
-   
-    No need to worry about degrees/radians here. Just use ``cos`` and ``sin``.
-   
-* Okay, that's a tough one, so you get some help. How do we go about it?
-* Let's use something called `Newton's Method <http://en.wikipedia.org/wiki/Newton's_method>`_ .
-* Since I promised this is a no-prerequisite course...
-* Here's what you do:
-    * Pick a value ``x`` between 0 and 1. Any will do. Seriously.
-    * Compute: 
-        * .. image:: xminuscosxminusxqueu.png
-    * The answer to that equation is an *approximation* of the solution
-    * It's not a very *good* approximation yet. What to do?
-    * Set ``x`` equal to the new approximation and plug in to the formula again.
-    * Presto! New approximation.
-    * Still not good enough? Guess what?
-    * Set ``x`` equal to the new approximation and plug in to the formula again.
+    #. Write down (in English) an algorithm for calculating the sum of all the even numbers between ``0`` and ``n``.
+    #. Convert the algorithm into a Python function ``sum_even_numbers(n: int) -> int``.
+    #. Write some ``assert`` tests
 
-* What you want to do is:
-    * write a function ``approx_x`` that, given an approximation for x, computes the formula I gave you
-    * write another function, that calls this function ``while x != approx_x``
 
-  .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/9jrhr9rbwzc" frameborder="0" allowfullscreen></iframe>
-
-Algorithm
-=========
-
-* What you just saw, Newton's method, is an example of an **algorithm**.
-* An algorithm is a description of a series of steps to solve a problem.
-* Algorithms can be presented in natural language, but are easier to turn into a program when presented in a formal language.
-* Finding an algorithm to solve most problems is *very hard*. You can make a career, get tenure, make millions of dollars in patent licensing, etc., "just" by developing algorithms.
-* As programmers though, we usually leverage existing algorithms and other things to make our lives easier. We often won't be starting from scratch (although, right now you are...)
-* The two most important concepts you will learn in this course (or really, what a computer scientist spends years learning) are:
-    * **ALGORITHM**
-    * **DATA STRUCTURE**
-* So we're half done! (Just kidding)
-
-.. admonition:: Activity
-    :class: activity 
-
-    Write down (in English) an algorithm for printing out the sum of all the even numbers between 1 and ``n``. 
-
-    Now convert the algorithm into a Python function. 
-
-    Test it.
-   
-  
-
-For next class
+For Next Class
 ==============
 
-* Read `chapter 8 of the text <http://openbookproject.net/thinkcs/python/english3e/strings.html>`_
+* Read `Chapter 8 of the text <http://openbookproject.net/thinkcs/python/english3e/strings.html>`_
 
 

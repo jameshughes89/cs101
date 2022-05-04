@@ -2,7 +2,7 @@ import io
 import unittest
 import unittest.mock
 
-from src.loops_topic import factorial, int_sum, int_sum_print
+from src.loops_topic import factorial, int_sum, int_sum_print, sum_even_numbers
 
 
 class TestLoopsTopic(unittest.TestCase):
@@ -74,3 +74,15 @@ class TestLoopsTopic(unittest.TestCase):
         int_sum_print(-1)
         expected = ""
         self.assertEqual(expected, mock_stdout.getvalue())
+
+    def test_sum_even_numbers_0_returns_0(self):
+        self.assertEqual(0, sum_even_numbers(0))
+
+    def test_sum_even_numbers_1_returns_0(self):
+        self.assertEqual(0, sum_even_numbers(1))
+
+    def test_sum_even_numbers_10_returns_correct_number(self):
+        self.assertEqual(30, sum_even_numbers(10))
+
+    def test_sum_even_numbers_negative_1_returns_0(self):
+        self.assertEqual(0, sum_even_numbers(-1))
