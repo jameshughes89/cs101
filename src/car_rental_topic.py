@@ -63,7 +63,7 @@ assert 100 == num_kms_above_average(200)
 
 
 def calculate_total_charge(
-        num_days: float, age: float, rental_code: str, odometer_start: float, odometer_finish: float
+    num_days: float, age: float, rental_code: str, odometer_start: float, odometer_finish: float
 ) -> float:
     """
     Calculate how much the renter needs to be charged based on the classification,
