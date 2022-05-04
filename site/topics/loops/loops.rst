@@ -162,6 +162,9 @@ Tracing Through A Function By Hand
 +------------------------+---------------+ 
 
 
+Integer Summation
+=================
+
 .. admonition:: Activity
     :class: activity
 
