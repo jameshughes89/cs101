@@ -198,7 +198,23 @@ Linear Search
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``where_is(char,string)`` that returns the *index* of the first occurrence of ``char`` in ``string``.
+    Write a function ``character_is_at(needle: str, haystack: str) -> int`` that returns the *index* of the first
+    occurrence of the character ``needle`` within the string ``haystack``. If the character does not exist within the
+    string, return ``-1``.
+
+    Test your function with the following assertions:
+
+    .. code-block:: python
+        :linenos:
+
+        # character_is_at tests
+        assert -1 == character_is_at("a", "")
+        assert -1 == character_is_at("", "hello")
+        assert -1 == character_is_at("a", "hello")
+        assert 0 == character_is_at("h", "hello")
+        assert 4 == character_is_at("o", "hello")
+        assert 2 == character_is_at("l", "hello")
+
 
 String Trivia
 =============
