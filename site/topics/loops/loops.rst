@@ -185,20 +185,6 @@ Tracing Through A Function By Hand
     output.
 
 
-Encapsulation
-=============
-* Big word for a simple idea: take your code and "encapsulate" it in a function.
-* That's it.
-* Normal development process for scientific software:
-    * Screw around with Python for a while
-    * Get something that you like
-    * Get tired of typing those commands over and over
-    * *Encapsulate* that set of commands in a function
-    * Back to messing around at the interpreter prompt, but with your new function
-    * Get something you like
-    * Get tired of typing those commands over and over...
-    * ...
- 
 OMG some actual *science*!
 ==========================
 * Okay, maybe not. But we're taking a step in that direction.
