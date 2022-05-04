@@ -197,7 +197,7 @@ Algorithm
 * Finding an algorithm to solve a problem is non-trivial
 
     * You can make a career out of coming up with algorithms
-    * There are certain open problems that, if you solve, will literally get you a million dollars and plenty of fame
+    * `There are certain open problems that, if you solve, will literally get you a million dollars and plenty of fame <https://en.wikipedia.org/wiki/Millennium_Prize_Problems>`_
 
 
 .. admonition:: Activity
