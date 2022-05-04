@@ -137,8 +137,8 @@ Immutability
 
 * However, there is nothing stopping us from making a new string based on the old
 
-.. admonition:: Activity
-    :class: activity
+.. code-block:: python
+    :linenos:
 
     a_string = "Hello, world!"
     b_string = a_string[:5] + "!" + a_string[6:]
