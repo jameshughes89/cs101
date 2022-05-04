@@ -2,7 +2,7 @@ import io
 import unittest
 import unittest.mock
 
-from src.strings_topic import character_is_in, vertical_print_for, vertical_print_while
+from src.strings_topic import character_is_in, vertical_print_for, vertical_print_while, character_is_at
 
 
 class TestStringsTopic(unittest.TestCase):
@@ -47,3 +47,24 @@ class TestStringsTopic(unittest.TestCase):
 
     def test_character_is_in_last_character_match_returns_true(self):
         self.assertTrue(character_is_in("o", "hello"))
+
+    def test_character_is_at_a_in_empty_string_returns_negative_1(self):
+        self.assertEqual(-1, character_is_at("a", ""))
+
+    def test_character_is_at_empty_string_in_empty_string_returns_negative_1(self):
+        self.assertEqual(-1, character_is_at("", ""))
+
+    def test_character_is_at_empty_string_in_hello_returns_negative_1(self):
+        self.assertEqual(-1, character_is_at("", "hello"))
+
+    def test_character_is_at_no_matching_character_returns_negative_1(self):
+        self.assertEqual(-1, character_is_at("a", "hello"))
+
+    def test_character_is_at_first_character_matches_returns_0(self):
+        self.assertEqual(0, character_is_at("h", "hello"))
+
+    def test_character_is_at_last_character_matches_returns_last_index(self):
+        self.assertEqual(4, character_is_at("o", "hello"))
+
+    def test_character_is_at_duplicate_matching_characters_returns_index_of_first_occurrence(self):
+        self.assertEqual(2, character_is_at("l", "hello"))
