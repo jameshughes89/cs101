@@ -191,17 +191,27 @@ Iterative Methods
 * Below is an example of *Newton's Method*, which is a handy strategy for approximating roots
 * The point of this example is to see how we can use a loop to perform Newton's Method
 
-    * The point is **not** to learn Newton's Method
+    * The point is **not** to focus too much on the math or Newton's Method itself
 
 .. admonition:: Activity
     :class: activity
 
-    Find the solution to the equation :math:`3x^{2} + 2x = x + 10`. In other words, for what value of :math:`x` is this
-    true?
+    Find the solution to the equation :math:`3x^{3} + 2x^{2} = x + 10`. In other words, for what value of :math:`x` is
+    this true?
 
 
 Newton's Method
 ---------------
+
+* To start, since we want to know when the left-hand and right-hand sides are equal, we want to know when their difference is zero
+* We can re-arrange the equation
+
+    :math:`3x^{3} + 2x^{2} = x + 10`
+
+    :math:`3x^{3} + 2x^{2} - (x + 10) = 0`
+
+    :math:`3x^{3} + 2x^{2} - x - 10 = 0`
+
 
 * Turns out there is an iterative algorithm we can follow to find an approximation to this equation
 
