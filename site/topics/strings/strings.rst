@@ -144,28 +144,48 @@ Immutability
     b_string = a_string[:5] + "!" + a_string[6:]
 
 
-in
-==
+Linear Search
+=============
+
+* Searching through some collection of elements to see if something exists within it is a very common problem
+* This is something you have done in real life many times
+* However, when writing the algorithm to perform a linear search, many new programmers rush through it and make some common mistakes
 
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``char_is_in(char,string)`` that returns ``True`` if the character ``char`` appears in the string ``string``.
-    
-    * HINT: what does the ``in`` operator do in Python?
+    Write a function ``character_is_in(needle: str, haystack: str) -> bool`` that searches for a specific character
+    ``needle`` within a string ``haystack``. If it exists within the string, return ``True`` and ``False`` otherwise.
+
+    When you finish writing your function, be sure to test it with the following assertions:
+
+    .. code-block:: python
+        :linenos:
+
+        # character_is_in tests
+        assert False == character_is_in("a", "")
+        assert False == character_is_in("", "hello")
+        assert False == character_is_in("a", "hello")
+        assert True == character_is_in("h", "hello")
+        assert True == character_is_in("o", "hello")
+
 
      .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/sokPQLkrXjw" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sokPQLkrXjw" frameborder="0" allowfullscreen></iframe>
    
 
-* You can do the above exercise the hard way, with loops, or you can look up ``in``.
 
-.. admonition:: Tricky Activity
+.. admonition:: Activity
+    :class: activity
 
-    What's wrong with this?::
-   
-        def char_is_in(char, string):
+    What's wrong with the following function? Trace through the logic on each of tests cases for ``character_is_in``
+    above to help you find the issue.
+
+    .. code-block:: python
+        :linenos:
+
+        def broken_character_is_in(char, string):
             count = 0
             while count < len(string):
                 if string[count] == char:
@@ -174,14 +194,57 @@ in
                     return False
                 count = count + 1
 
-    * Try: `char_is_in('t', 'test')`
-    * Try: `char_is_in('z', 'test')`
-    * Try: `char_is_in('e', 'test')`
+
+Underlying Idea
+---------------
+
+* Generalizing beyond strings, we can do a linear search on many other things
+
+    * For example, a stack of exams, a lineup of people
+
+* It's important to note that, we can confirm that a given thing exists within a collection as soon as we find it
+* If I am looking for :math:`x` in a sequence, I can confirm its existence as soon as I see it
+* For example, consider looking for :math:`x`  in the following sequence of unknown elements
+
+    :math:`[?, ?, ?, ?, ?, ...]
+
+* When starting, we do not know any of the values in the sequence until we look at them
+* If I look at the beginning of this sequence and see that the value is :math:`x`, I am done
+
+    * It's there --- no need to keep looking
+
+    :math:`[x, ?, ?, ?, ?, ...]
+
+* However, if I was looking for some other value, like :math:`y`, I cannot confirm that it is or is not there just by looking at the beginning element and finding an :math:`x`
+
+    * I would need to keep going
+
+* I can only confirm that something is **not** in the sequence until I have looked at all elements in the sequence
+* If I had a sequence of length :math:`10`, I would need to look at all :math:`10` before I can guarantee that something is or is not within it
+* If it was length :math:`20`, I would need to look at all :math:`20`
+* If it was length :math:`n`, I would need to look at all :math:`n`
+
 
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``where_is(char,string)`` that returns the *index* of the first occurrence of ``char`` in ``string``.
+    Write a function ``character_is_at(needle: str, haystack: str) -> int`` that returns the *index* of the first
+    occurrence of the character ``needle`` within the string ``haystack``. If the character does not exist within the
+    string, return ``-1``.
+
+    Test your function with the following assertions:
+
+    .. code-block:: python
+        :linenos:
+
+        # character_is_at tests
+        assert -1 == character_is_at("a", "")
+        assert -1 == character_is_at("", "hello")
+        assert -1 == character_is_at("a", "hello")
+        assert 0 == character_is_at("h", "hello")
+        assert 4 == character_is_at("o", "hello")
+        assert 2 == character_is_at("l", "hello")
+
 
 String Trivia
 =============
