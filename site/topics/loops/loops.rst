@@ -179,9 +179,11 @@ Tracing Through A Function By Hand
 .. admonition:: Activity
     :class: activity
 
-    Modify ``int_sum(n)`` so that it prints out a Trace table, like the one you did by hand, every time it runs.
+    Create a new function called ``int_sum_print`` that is the same as ``int_sum``, however this function should
+    ``print`` out the values of all the variables each time in the loop. Ideally this should be formatted similar to the
+    table created with ``trace_through_me_by_hand``, but do not worry too much about how the ``print``\s format the
+    output.
 
-    Don't worry about formatting the table, just ``print`` out the values.
 
 Encapsulation
 =============
