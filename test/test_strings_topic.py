@@ -2,7 +2,7 @@ import io
 import unittest
 import unittest.mock
 
-from src.strings_topic import vertical_print_for, vertical_print_while, character_is_in
+from src.strings_topic import character_is_in, vertical_print_for, vertical_print_while
 
 
 class TestStringsTopic(unittest.TestCase):
@@ -47,5 +47,3 @@ class TestStringsTopic(unittest.TestCase):
 
     def test_character_is_in_last_character_match_returns_true(self):
         self.assertTrue(character_is_in("o", "hello"))
-
-        
