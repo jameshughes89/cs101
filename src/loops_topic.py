@@ -79,7 +79,7 @@ def sum_even_numbers(n: int) -> int:
     :rtype: Integer.
     """
     current_integer = 0
-    running_total = 0;
+    running_total = 0
     while current_integer <= n:
         if current_integer % 2 == 0:
             running_total += current_integer
