@@ -2,7 +2,12 @@ import io
 import unittest
 import unittest.mock
 
-from src.strings_topic import character_is_in, vertical_print_for, vertical_print_while, character_is_at
+from src.strings_topic import (
+    character_is_at,
+    character_is_in,
+    vertical_print_for,
+    vertical_print_while,
+)
 
 
 class TestStringsTopic(unittest.TestCase):
