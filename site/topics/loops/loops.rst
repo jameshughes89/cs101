@@ -213,11 +213,24 @@ Newton's Method
     :math:`3x^{3} + 2x^{2} - x - 10 = 0`
 
 
-* Turns out there is an iterative algorithm we can follow to find an approximation to this equation
+* Fortunately for us computer scientists, we can avoid a lot of the math
+* Turns out there is an iterative *algorithm* we can follow to find an approximation to this equation
 
-   
-* Okay, that's a tough one, so you get some help. How do we go about it?
-* Let's use something called `Newton's Method <http://en.wikipedia.org/wiki/Newton's_method>`_ .
+    * `Newton's Method <http://en.wikipedia.org/wiki/Newton's_method>`_
+
+* Start with a guess of what the correct answer is
+* This will be our starting approximate solution
+
+    * Don't worry, this can be a hilariously bad guess and it will still work
+
+* Take the division of the equation over the derivative of the equation and subtract that from our approximation to get a new approximation
+* Repeat this process again with the new approximation
+* Repeat again and again 
+
+    :math:`x_{n+1} = x_{n} - \frac{f{x_{n}}{f'{x_{n}}`
+
+
+* Let's use something called  .
 * Since I promised this is a no-prerequisite course...
 * Here's what you do:
     * Pick a value ``x`` between 0 and 1. Any will do. Seriously.
