@@ -140,8 +140,6 @@ Course Notes
     topics/sorting/sorting
     topics/models-of-computation/models-of-computation
     topics/recursion/recursion
-    topics/data-visualization/data-visualization
-    topics/machine-learning/machine-learning
    
    
 Labs
