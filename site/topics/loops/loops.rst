@@ -225,9 +225,14 @@ Newton's Method
 
 * Take the division of the equation over the derivative of the equation and subtract that from our approximation to get a new approximation
 * Repeat this process again with the new approximation
-* Repeat again and again 
+* Repeat again and again
 
     :math:`x_{n+1} = x_{n} - \frac{f{x_{n}}{f'{x_{n}}`
+
+* In other words, for our specific problem
+
+    :math:`x_{n+1} = x_{n} - \frac{3x^{3} + 2x^{2} - x - 10}{6x^{2} + 4x - 1}`
+
 
 
 * Let's use something called  .
