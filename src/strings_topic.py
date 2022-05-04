@@ -47,3 +47,34 @@ assert False == character_is_in("", "hello")
 assert False == character_is_in("a", "hello")
 assert True == character_is_in("h", "hello")
 assert True == character_is_in("o", "hello")
+
+
+def character_is_at(needle: str, haystack: str) -> int:
+    """
+    Search through a string to determine if a given character is contained within it. Returns the index of the first
+    occurence of the character if it exists, return -1 if the character does not exist in the string.
+
+    :param needle:  Character to look for
+    :type needle: String
+    :param haystack: String to search through
+    :type haystack: String
+    :return: Index of the first occurrence of the character, or -1 if the character does not exist within the string
+    :rtype: Integer
+    """
+    index = 0
+    while index < len(haystack):
+        if haystack[index] == needle:
+            return index
+        else:
+            index += 1
+    return -1
+
+
+# character_is_at tests
+assert -1 == character_is_at("a", "")
+assert -1 == character_is_at("", "")
+assert -1 == character_is_at("", "hello")
+assert -1 == character_is_at("a", "hello")
+assert 0 == character_is_at("h", "hello")
+assert 4 == character_is_at("o", "hello")
+assert 2 == character_is_at("l", "hello")
