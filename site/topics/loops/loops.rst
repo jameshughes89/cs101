@@ -185,18 +185,21 @@ Tracing Through A Function By Hand
     output.
 
 
-OMG some actual *science*!
-==========================
-* Okay, maybe not. But we're taking a step in that direction.
+Iterative Methods
+=================
+
+* Below is an example of *Newton's Method*, which is a handy strategy for approximating roots
+* The point of this example is to see how we can use a loop to perform Newton's Method
+
+    * The point is **not** to learn Newton's Method
 
 .. admonition:: Activity
     :class: activity
 
-    Find the solution to the equation (for what value of ``x`` is this statement ``True``?):
-   
-    * .. image:: cosx.png
-   
-    No need to worry about degrees/radians here. Just use ``cos`` and ``sin``.
+    Find the solution to the equation :math:`3x^{2} + 2x = x + 10`. In other words, for what value of :math:`x` is this
+    true?
+
+
    
 * Okay, that's a tough one, so you get some help. How do we go about it?
 * Let's use something called `Newton's Method <http://en.wikipedia.org/wiki/Newton's_method>`_ .
