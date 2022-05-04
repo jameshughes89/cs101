@@ -144,19 +144,35 @@ Immutability
     b_string = a_string[:5] + "!" + a_string[6:]
 
 
-in
-==
+Linear Search
+=============
+
+* Searching through some collection of elements to see if something exists within it is a very common problem
+* This is something you have done in real life many times
+* However, when writing the algorithm to perform a linear search, many new programmers rush through it and make some common mistakes
 
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``char_is_in(char,string)`` that returns ``True`` if the character ``char`` appears in the string ``string``.
-    
-    * HINT: what does the ``in`` operator do in Python?
+    Write a function ``character_is_in(needle: str, haystack: str) -> bool`` that searches for a specific character
+    ``needle`` within a string ``haystack``. If it exists within the string, return ``True`` and ``False`` otherwise.
+
+    When you finish writing your function, be sure to test it with the following assertions:
+
+    .. code-block:: python
+        :linenos:
+
+        # character_is_in tests
+        assert False == character_is_in("a", "")
+        assert False == character_is_in("", "hello")
+        assert False == character_is_in("a", "hello")
+        assert True == character_is_in("h", "hello")
+        assert True == character_is_in("o", "hello")
+
 
      .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/sokPQLkrXjw" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sokPQLkrXjw" frameborder="0" allowfullscreen></iframe>
    
 
 * You can do the above exercise the hard way, with loops, or you can look up ``in``.
