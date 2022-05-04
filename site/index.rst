@@ -129,7 +129,6 @@ Course Notes
     topics/strings/strings
     topics/lists/lists
     topics/more-lists/more-lists
-    topics/more-more-lists/more-more-lists
     topics/dictionaries-sets/dictionaries-sets
     topics/debug/debug
     topics/debugger/debugger
