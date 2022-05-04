@@ -235,19 +235,6 @@ Newton's Method
 
 
 
-* Let's use something called  .
-* Since I promised this is a no-prerequisite course...
-* Here's what you do:
-    * Pick a value ``x`` between 0 and 1. Any will do. Seriously.
-    * Compute: 
-        * .. image:: xminuscosxminusxqueu.png
-    * The answer to that equation is an *approximation* of the solution
-    * It's not a very *good* approximation yet. What to do?
-    * Set ``x`` equal to the new approximation and plug in to the formula again.
-    * Presto! New approximation.
-    * Still not good enough? Guess what?
-    * Set ``x`` equal to the new approximation and plug in to the formula again.
-
 * What you want to do is:
     * write a function ``approx_x`` that, given an approximation for x, computes the formula I gave you
     * write another function, that calls this function ``while x != approx_x``
