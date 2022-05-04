@@ -185,64 +185,6 @@ Tracing Through A Function By Hand
     output.
 
 
-Iterative Methods
-=================
-
-* Below is an example of *Newton's Method*, which is a handy strategy for approximating roots
-* The point of this example is to see how we can use a loop to perform Newton's Method
-
-    * The point is **not** to focus too much on the math or Newton's Method itself
-
-.. admonition:: Activity
-    :class: activity
-
-    Find the solution to the equation :math:`3x^{3} + 2x^{2} = x + 10`. In other words, for what value of :math:`x` is
-    this true?
-
-
-Newton's Method
----------------
-
-* To start, since we want to know when the left-hand and right-hand sides are equal, we want to know when their difference is zero
-* We can re-arrange the equation
-
-    :math:`3x^{3} + 2x^{2} = x + 10`
-
-    :math:`3x^{3} + 2x^{2} - (x + 10) = 0`
-
-    :math:`3x^{3} + 2x^{2} - x - 10 = 0`
-
-
-* Fortunately for us computer scientists, we can avoid a lot of the math
-* Turns out there is an iterative *algorithm* we can follow to find an approximation to this equation
-
-    * `Newton's Method <http://en.wikipedia.org/wiki/Newton's_method>`_
-
-* Start with a guess of what the correct answer is
-* This will be our starting approximate solution
-
-    * Don't worry, this can be a hilariously bad guess and it will still work
-
-* Take the division of the equation over the derivative of the equation and subtract that from our approximation to get a new approximation
-* Repeat this process again with the new approximation
-* Repeat again and again
-
-    :math:`x_{n+1} = x_{n} - \frac{f{x_{n}}{f'{x_{n}}`
-
-* In other words, for our specific problem
-
-    :math:`x_{n+1} = x_{n} - \frac{3x^{3} + 2x^{2} - x - 10}{6x^{2} + 4x - 1}`
-
-
-
-* What you want to do is:
-    * write a function ``approx_x`` that, given an approximation for x, computes the formula I gave you
-    * write another function, that calls this function ``while x != approx_x``
-
-  .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/9jrhr9rbwzc" frameborder="0" allowfullscreen></iframe>
-
 Algorithm
 =========
 
@@ -257,15 +199,15 @@ Algorithm
 * So we're half done! (Just kidding)
 
 .. admonition:: Activity
-    :class: activity 
+    :class: activity
 
-    Write down (in English) an algorithm for printing out the sum of all the even numbers between 1 and ``n``. 
+    Write down (in English) an algorithm for printing out the sum of all the even numbers between 1 and ``n``.
 
-    Now convert the algorithm into a Python function. 
+    Now convert the algorithm into a Python function.
 
     Test it.
-   
-  
+
+
 
 For next class
 ==============
