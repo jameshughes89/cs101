@@ -200,6 +200,11 @@ Iterative Methods
     true?
 
 
+Newton's Method
+---------------
+
+* Turns out there is an iterative algorithm we can follow to find an approximation to this equation
+
    
 * Okay, that's a tough one, so you get some help. How do we go about it?
 * Let's use something called `Newton's Method <http://en.wikipedia.org/wiki/Newton's_method>`_ .
