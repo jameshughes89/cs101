@@ -36,7 +36,9 @@ def character_is_in(needle: str, haystack: str) -> bool:
     """
     for char in haystack:
         if char == needle:
+            # As soon as the needle has been found, return True
             return True
+    # If the loop ever finishes, that means we never found needle
     return False
 
 
@@ -64,9 +66,12 @@ def character_is_at(needle: str, haystack: str) -> int:
     index = 0
     while index < len(haystack):
         if haystack[index] == needle:
+            # As soon as the needle has been found, return the index
             return index
         else:
+            # If we didn't find the needle, keep looking
             index += 1
+    # If the loop ever finishes, that means we never found needle
     return -1
 
 
