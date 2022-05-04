@@ -165,35 +165,26 @@ Tracing Through A Function By Hand
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``int_sum(n)`` that takes a single integer ``n`` as a parameter and returns the *sum* of all of the numbers between ``1`` and ``n``. 
+    Write a function called ``int_sum(n)`` that takes a single integer ``n`` as a parameter and returns the sum of all
+    the numbers between ``0`` and ``n`` inclusively (include ``n`` in the summation).
 
-    Trace through your function for the call ``int_sum(5)``
+    When you finish writing the function, do not run it right away --- trace through the program by hand like with the
+    ``trace_through_me_by_hand`` above.
 
-     .. raw:: html
+    .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/sUNBswKrmJY" frameborder="0" allowfullscreen></iframe>
- 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sUNBswKrmJY" frameborder="0" allowfullscreen></iframe>
+
+
 .. admonition:: Activity
     :class: activity
 
-    Modify ``int_sum(n)`` so that it prints out a Trace table, like the one you did by hand, every time it runs.
+    Create a new function called ``int_sum_print`` that is the same as ``int_sum``, however this function should
+    ``print`` out the values of all the variables each time in the loop. Ideally this should be formatted similar to the
+    table created with ``trace_through_me_by_hand``, but do not worry too much about how the ``print``\s format the
+    output.
 
-    Don't worry about formatting the table, just ``print`` out the values.
 
-Encapsulation
-=============
-* Big word for a simple idea: take your code and "encapsulate" it in a function.
-* That's it.
-* Normal development process for scientific software:
-    * Screw around with Python for a while
-    * Get something that you like
-    * Get tired of typing those commands over and over
-    * *Encapsulate* that set of commands in a function
-    * Back to messing around at the interpreter prompt, but with your new function
-    * Get something you like
-    * Get tired of typing those commands over and over...
-    * ...
- 
 OMG some actual *science*!
 ==========================
 * Okay, maybe not. But we're taking a step in that direction.
