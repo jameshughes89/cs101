@@ -67,3 +67,28 @@ assert 0 == int_sum_print(0)
 assert 1 == int_sum_print(1)
 assert 55 == int_sum_print(10)
 assert 0 == int_sum_print(-1)
+
+
+def sum_even_numbers(n: int) -> int:
+    """
+    Sums all the even numbers between 0 and n inclusively.
+
+    :param n: Number to sum to inclusively.
+    :type n: Integer
+    :return: Sum of all the even numbers between 0 and n inclusively.
+    :rtype: Integer.
+    """
+    current_integer = 0
+    running_total = 0;
+    while current_integer <= n:
+        if current_integer % 2 == 0:
+            running_total += current_integer
+        current_integer += 1
+    return running_total
+
+
+# test sum_even_numbers
+assert 0 == sum_even_numbers(0)
+assert 0 == sum_even_numbers(1)
+assert 30 == sum_even_numbers(10)
+assert 0 == sum_even_numbers(-1)
