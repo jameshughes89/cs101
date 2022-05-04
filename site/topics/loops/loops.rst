@@ -203,16 +203,14 @@ Algorithm
 .. admonition:: Activity
     :class: activity
 
-    Write down (in English) an algorithm for printing out the sum of all the even numbers between ``0`` and ``n``.
-
-    Now convert the algorithm into a Python function.
-
-
+    #. Write down (in English) an algorithm for printing out the sum of all the even numbers between ``0`` and ``n``.
+    #. Convert the algorithm into a Python function ``sum_even_numbers(n: int) -> int``.
+    #. Write some ``assert`` tests
 
 
-For next class
+For Next Class
 ==============
 
-* Read `chapter 8 of the text <http://openbookproject.net/thinkcs/python/english3e/strings.html>`_
+* Read `Chapter 8 of the text <http://openbookproject.net/thinkcs/python/english3e/strings.html>`_
 
 
