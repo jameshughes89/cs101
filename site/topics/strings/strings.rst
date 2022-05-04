@@ -195,6 +195,33 @@ Linear Search
                 count = count + 1
 
 
+Underlying Idea
+---------------
+
+* Generalizing beyond strings, we can do a linear search on many other things
+
+    * For example, a stack of exams, a lineup of people
+
+* It's important to note that, we can confirm that a given thing exists within a collection as soon as we find it
+* If I am looking for :math:`x` in a sequence, I can confirm its existence as soon as I see it
+* For example, consider looking for :math:`x`  in the following sequence of unknown elements
+
+    :math:`[?, ?, ?, ?, ?, ...]
+
+* When starting, we do not know any of the values in the sequence until we look at them
+* If I look at the beginning of this sequence and see that the value is :math:`x`, I am done
+
+    * It's there --- no need to keep looking
+
+    :math:`[x, ?, ?, ?, ?, ...]
+
+* However, if I was looking for some other value, like :math:`y`, I cannot confirm that it is or is not there just by looking at the beginning element and finding an :math:`x`
+
+    * I would need to keep going
+
+* I can only confirm that something is **not** in the sequence until I have looked at all elements in the sequence
+
+
 .. admonition:: Activity
     :class: activity
 
