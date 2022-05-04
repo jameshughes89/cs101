@@ -175,13 +175,16 @@ Linear Search
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sokPQLkrXjw" frameborder="0" allowfullscreen></iframe>
    
 
-* You can do the above exercise the hard way, with loops, or you can look up ``in``.
 
-.. admonition:: Tricky Activity
+.. admonition:: Activity
 
-    What's wrong with this?::
-   
-        def char_is_in(char, string):
+    What's wrong with the following function? Trace through the logic on each of tests cases for ``character_is_in``
+    above to help you find the issue.
+
+    .. code-block:: python
+        :linenos:
+
+        def broken_character_is_in(char, string):
             count = 0
             while count < len(string):
                 if string[count] == char:
@@ -190,9 +193,6 @@ Linear Search
                     return False
                 count = count + 1
 
-    * Try: `char_is_in('t', 'test')`
-    * Try: `char_is_in('z', 'test')`
-    * Try: `char_is_in('e', 'test')`
 
 .. admonition:: Activity
     :class: activity
