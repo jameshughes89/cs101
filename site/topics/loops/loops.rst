@@ -168,14 +168,17 @@ Integer Summation
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``int_sum(n)`` that takes a single integer ``n`` as a parameter and returns the *sum* of all of the numbers between ``1`` and ``n``. 
+    Write a function called ``int_sum(n)`` that takes a single integer ``n`` as a parameter and returns the sum of all
+    the numbers between ``0`` and ``n`` inclusively (include ``n`` in the summation).
 
-    Trace through your function for the call ``int_sum(5)``
+    When you finish writing the function, do not run it right away --- trace through the program by hand like with the
+    ``trace_through_me_by_hand`` above.
 
-     .. raw:: html
+    .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/sUNBswKrmJY" frameborder="0" allowfullscreen></iframe>
- 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sUNBswKrmJY" frameborder="0" allowfullscreen></iframe>
+
+
 .. admonition:: Activity
     :class: activity
 
