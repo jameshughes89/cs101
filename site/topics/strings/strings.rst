@@ -220,6 +220,9 @@ Underlying Idea
     * I would need to keep going
 
 * I can only confirm that something is **not** in the sequence until I have looked at all elements in the sequence
+* If I had a sequence of length :math:`10`, I would need to look at all :math:`10` before I can guarantee that something is or is not within it
+* If it was length :math:`20`, I would need to look at all :math:`20`
+* If it was length :math:`n`, I would need to look at all :math:`n`
 
 
 .. admonition:: Activity
