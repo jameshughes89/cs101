@@ -177,6 +177,7 @@ Linear Search
 
 
 .. admonition:: Activity
+    :class: activity
 
     What's wrong with the following function? Trace through the logic on each of tests cases for ``character_is_in``
     above to help you find the issue.
