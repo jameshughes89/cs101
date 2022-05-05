@@ -52,32 +52,38 @@ Hello World
     * If you are unsure of what this is, review :doc:`Topic 1 </topics/data-intro/intro>`
 
 
-
 Refreshing What We Learned
 ==========================
 
-10. Go back to Colab (or use whichever programming method you prefer)
-11. Enter the following into your code.
+#. Enter and run the following code
 
-    .. code-block:: python
-   
-        a = 5
-        a = a * 2
-        
-    Print out the type of ``a``.
-    
-12. Enter the following into your code 
+.. code-block:: python
+    :linenos:
 
-    .. code-block:: python
-   
-        a = 5
-        a = a * 2.5
-    
-    Print out the type of ``a``. 
-    
-    Is this what you expected?
+    a = 5
+    a = a * 2
 
-13. Make two variables and assign values. Then, add them together and save the result in another variable. THEN, print out the result from the third variable. 
+
+    * Have Python print out the type of ``a``
+
+#. Enter and run the following code
+
+.. code-block:: python
+    :linenos:
+
+    a = 5
+    a = a * 2.5
+
+
+    * Have Python print out the type of ``a``
+    * Is this what you expected?
+
+
+#. Complete the following
+
+    * Make two variables and assign arbitrary numerical values to them
+    * Add the variables together and assign the resulting value to a new, third variable
+    * Print out the value of the third variable
 
 
 Kattis
