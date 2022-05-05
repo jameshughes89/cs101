@@ -128,6 +128,7 @@ Course Notes
     topics/loops/loops
     topics/strings/strings
     topics/lists/lists
+    topics/references/references
     topics/more-lists/more-lists
     topics/dictionaries-sets/dictionaries-sets
     topics/debug/debug
