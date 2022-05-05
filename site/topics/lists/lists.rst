@@ -34,16 +34,13 @@ Lists & References
 Data Structures
 ===============
 
-* The ``list`` is your first real **data structure**.
-* The name "data *structure*" pretty much tells you everything you need to know.
-    * A data structure is a formal way to *structure* data.
-* Lists, although simple, are one of the most useful and powerful of all data structures.
-    * Sometimes they are a bit slower than more specialized alternatives.
-        * This isn't a big deal for us though.
+* The ``list`` is your first real **data structure**
+* As the name suggests, a data structure is some *structure* that holds *data*
+* Lists, although simple, are exceptionally useful and important
 
   .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/EcuTE0VEDl8" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EcuTE0VEDl8" frameborder="0" allowfullscreen></iframe>
 
 
 
