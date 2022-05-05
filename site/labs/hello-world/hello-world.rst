@@ -57,22 +57,22 @@ Refreshing What We Learned
 
 #. Enter and run the following code
 
-.. code-block:: python
-    :linenos:
+    .. code-block:: python
+        :linenos:
 
-    a = 5
-    a = a * 2
+        a = 5
+        a = a * 2
 
 
     * Have Python print out the type of ``a``
 
 #. Enter and run the following code
 
-.. code-block:: python
-    :linenos:
+    .. code-block:: python
+        :linenos:
 
-    a = 5
-    a = a * 2.5
+        a = 5
+        a = a * 2.5
 
 
     * Have Python print out the type of ``a``
