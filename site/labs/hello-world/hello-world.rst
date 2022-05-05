@@ -162,4 +162,6 @@ Kattis
 #. https://open.kattis.com/problems/ladder
 #. https://open.kattis.com/problems/planina
 
-**ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
+.. warning::
+
+    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
