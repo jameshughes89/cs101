@@ -39,24 +39,19 @@ Pre Lab Exercises
     * 5
 
 
-Getting Familiar 
-================
+Hello World
+===========
 
-1. Get logged in. 
-2. Log onto Colab
-3. Get Hello World working on Colab
+#. Log onto your computer
+#. Log into Colan
 
-(Steps 4 -- 9 cut due to COVID-19)
+    * If you do not have a Google account, you can make one for the purpose of this course
 
-.. 4. Open up Spyder
-.. 5. Get Hello World working on Spyder
-.. 6. Open up PyCharm (might take a while...)
-.. 7. Get Hello World working on PyCharm
-.. 8. Open up IPython (If using the lab computer, you can't do this one, but that's OK)
-.. 9. Get Hello World working in your interpreter
+#. Get *Hello World* working on Colab
 
-.. .. Warning::
-Do no panic. You do not need to remember how to use Colab, Spyder, PyCharm, and IPython at this stage. I'm simply just showing you so you have some familiarity. For now, I recommend sticking with Colab. Then, after a few days or weeks, start to get comfortable with IPython (my YouTube videos use this). Then, after a few more weeks, maybe go for one of the IDEs.
+    * If you are unsure of what this is, review :doc:`Topic 1 </topics/data-intro/intro>`
+
+
 
 Refreshing What We Learned
 ==========================
