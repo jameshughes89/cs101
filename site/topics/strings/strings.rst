@@ -248,64 +248,75 @@ Underlying Idea
 
 String Trivia
 =============
-* ``''`` or ``""`` will work for the quotes needed for strings
-    * But you can put ``''`` inside ``""`` s
-   
-    >>> a = "Hello, 'world'"
-    >>> print(a)
-    Hello, 'world'
-   
 
-* We can concatenate strings
-    >>> a = 'FuN' + ' ' + 'tImEs'
-    >>> print(a)
-    FuN tImEs
-   
-* We can make a string repeat
-    >>> a = 'FuN' * 3
-    >>> print(a)
-    FuNFuNFuN
-   
-* We can convert an ``int`` to a ``str``  
-    >>> print(type(1))
-    <class 'int'>
-  
-    >>> print(type(str(1)))
-    <class 'str'>
+* ``'`` or ``"`` will work for the quotes needed for strings
 
-* The string ``''`` is a string, but it's *empty*
-    * This is a weirdly important detail actually
+* We can concatenate strings with ``+``
 
-    >>> a = ''
-    >>> print(len(a))
-    0
+.. code-block:: python
+    :linenos:
+
+    a = "CSCI" + " " + "161"
+    print(a)    # results in "CSCI 161"
+
    
-    >>> print(type(a))
-    <class 'str'>
+* We can make a string repeat with ``*``
+
+.. code-block:: python
+    :linenos:
+
+    a = "CSCI" * 3
+    print(a)    # results in "CSCICSCICSCI"
+
+   
+* We can convert an ``int`` to a ``str``
+
+.. code-block:: python
+    :linenos:
+
+    print(type(1))      # <class 'int'>
+    print(type(str(1))) # <class 'str'>
+
+
+* The string ``""`` is a string, but it's *empty*
+
+.. code-block:: python
+    :linenos:
+
+    a = ""
+    print(len(a))   # results in 0
+    print(type(a))  # results in <class 'str'>
+
 
 * We have some special *characters* that we have no buttons for.
-    * '\\\n'
-    * '\\\t'
-    * '\\\\'
-    * There are a bunch 
-    
-    >>> a = 'hello\nWorld\tFUN\\!'
-    >>> print(a)
-    hello
-    World   FUN\!	# A weird string
-      
+
+    * ``'\n'``
+    * ``'\t'``
+    * There are many
+
+.. code-block:: python
+    :linenos:
+
+    a = 'hello\nWorld\tFUN\\!'
+    print(a)
+    # hello
+    # World   FUN\!
+
+
 * ASCII Table
     * Every *character* is a *number*
 
-    .. image:: ascii.gif
+.. image:: ascii.gif
+
+.. code-block:: python
+    :linenos:
+
+    wut = ord('a')	# get the num of "a"
+    print(wut)      # results in 97
    
-    >>> wut = ord('a')	# get the num of 'a'
-    >>> print(wut)
-    97
-   
-    >>> wut = chr(65)	# convert num to char
-    >>> print(wut)
-    A
+    wut = chr(65)	# convert num to char
+    print(wut)      # results in "A"
+
    
 Formatting output (the ol' trusty way)
 ======================================
