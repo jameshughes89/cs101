@@ -2,7 +2,23 @@
 Hello World
 ***********
 
-NOTE: I do not expect you to actually finish everything so don't worry. We'll aim to get up to step 16. 
+* Feel free to use your laptop if yo have it
+* Ensure I have recorded your completion --- failure to do so will result in a grade of 0
+* I strongly encourage you to work with others in the lab
+
+    * When you get stuck, do me a favour and ask those sitting around you for help
+    * I want people to get used to working together in the labs
+    * Peer teaching and peer learning is super effective
+
+.. note::
+
+    To obtain full marks for the lab, you must:
+
+        #. Have completed the pre-lab exercises
+        #. Have been working on the lab content
+        #. Demonstrate competency in the topics
+
+
 
 Getting Familiar 
 ================
@@ -20,8 +36,8 @@ Getting Familiar
 .. 8. Open up IPython (If using the lab computer, you can't do this one, but that's OK)
 .. 9. Get Hello World working in your interpreter
 
-.. .. Warning:: 
-    Do no panic. You do not need to remember how to use Colab, Spyder, PyCharm, and IPython at this stage. I'm simply just showing you so you have some familiarity. For now, I recommend sticking with Colab. Then, after a few days or weeks, start to get comfortable with IPython (my YouTube videos use this). Then, after a few more weeks, maybe go for one of the IDEs. 
+.. .. Warning::
+Do no panic. You do not need to remember how to use Colab, Spyder, PyCharm, and IPython at this stage. I'm simply just showing you so you have some familiarity. For now, I recommend sticking with Colab. Then, after a few days or weeks, start to get comfortable with IPython (my YouTube videos use this). Then, after a few more weeks, maybe go for one of the IDEs.
 
 Refreshing What We Learned
 ==========================
