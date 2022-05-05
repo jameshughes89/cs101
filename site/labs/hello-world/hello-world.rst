@@ -43,7 +43,7 @@ Hello World
 ===========
 
 #. Log onto your computer
-#. Log into Colan
+#. Log into Colab
 
     * If you do not have a Google account, you can make one for the purpose of this course
 
