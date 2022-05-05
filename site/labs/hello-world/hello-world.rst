@@ -19,6 +19,25 @@ Hello World
         #. Demonstrate competency in the topics
 
 
+Pre Lab Exercises
+=================
+
+.. warning::
+
+    You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
+    you will be asked to leave and you will obtain a grade of 0 for the lab.
+
+
+#. `Chapter 1 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html#exercises>`_
+
+    * 2
+    * 4
+
+#. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
+
+    * 1
+    * 5
+
 
 Getting Familiar 
 ================
