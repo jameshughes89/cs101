@@ -34,28 +34,26 @@ Lists & References
 Data Structures
 ===============
 
-* The ``list`` is your first real **data structure**.
-* The name "data *structure*" pretty much tells you everything you need to know.
-    * A data structure is a formal way to *structure* data.
-* Lists, although simple, are one of the most useful and powerful of all data structures.
-    * Sometimes they are a bit slower than more specialized alternatives.
-        * This isn't a big deal for us though.
+* The ``list`` is your first real **data structure**
+* As the name suggests, a data structure is some *structure* that holds *data*
+* Lists, although simple, are exceptionally useful and important
 
   .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/EcuTE0VEDl8" frameborder="0" allowfullscreen></iframe>
-
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EcuTE0VEDl8" frameborder="0" allowfullscreen></iframe>
 
 
 .. admonition:: Activity
     :class: activity
 
-    Let's apply what we've learned about loops to our newfound ``list`` data structure. Combining algorithms and data structures is what programming is all about!
+    Apply what you know about loops, strings, and lists to solve the following problems --- combining algorithms and
+    data structures is a big part of programming. **Hint:** You will probably find the linear searches from the strings
+    topic to be helpful.
    
-        1. Figure out how to find the number of elements in a list.
-        2. Write a function ``print_list(l)`` that takes a list ``l`` as its argument and prints out the elements of the list
-        3. Write a function ``even_print(l)`` that takes a list ``l`` as its argument and prints out only the even elements of the list.
-        4. Write a *single line* of Python code to test if a particular value appears in a list (e.g. test if ``5`` appears *in* ``[1,7,5,3]``.)
+    #. Write a function ``contains_while(needle, haystack) -> bool:`` that uses a ``while`` loop and returns ``True`` if needle is contained in the haystack and ``False`` otherwise.
+    #. Write a function ``index_of_for(needle, haystack) -> int:`` that uses a ``for`` loop and returns the index of needle within the haystack or ``-1`` if it is not found.
+    #. Write some ``assert`` tests for both functions to verify correctness.
+
 
 List operations
 ===============
