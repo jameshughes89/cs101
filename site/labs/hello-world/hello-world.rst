@@ -92,26 +92,38 @@ Kattis
 .. admonition:: Note
     :class: note
 
-    It will be a lot easier to build your solutions on Colab and then copy/paste them into Kattis. 
-    
+    You are not expected to complete all the Kattis problems. Just work on them until the time runs out. If you need
+    help, ask those around you for help. If you're still stuck, ask us for help.
 
-14. Kattis sign up (be sure to set affiliation) 
+.. admonition:: Note
+    :class: note
+
+    It will be a lot easier to build your solutions on Colab and then copy/paste them into Kattis. 
+
+
+#. Kattis sign up (be sure to set affiliation)
 
     * Go to settings to do this
-    * Also, you might want to set your default language to Python 3
+    * Also, I highly recommend setting your default language to Python 3
     
-15. https://open.kattis.com/problems/hello (Let's get that O in IO working)   
+#. https://open.kattis.com/problems/hello
 
-.. raw:: html
+    .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/k1PK3CGOskA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k1PK3CGOskA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-16. https://open.kattis.com/problems/carrots (Let's now get the I in IO working)
 
-    Although I give you a solution below, the actual task I want you to do for this step is to look at the code, read the comments, and try to figure out WTF is going on. Talk to each other. Make sure it makes sense. Take your time. Ask us questions. That's what this is all about.
+#. https://open.kattis.com/problems/carrots
 
-    * Here is a solution with an explanation::
+    * Although I provide a working solution below, the actual task I want you to do is to look at the code, read the comments, and try to figure out what is going on
+    * Talk to each other
+    * Make sure it makes sense
+    * Take your time
+    * Ask questions
+    * That's what this is all about.
+
+    .. code-block:: python
+        :linenos:
    
         # This loads in the first line (it's of type STRING!)
         # For example, if we take the first sample input of --- 2 1
@@ -136,38 +148,18 @@ Kattis
         print(carrots)
       
       
-      
-.. raw:: html
+    .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wWG9eOrEW3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wWG9eOrEW3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-.. raw:: html
+    .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/k1WWm-QiCZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-      
-Back to Not Kattis
-==================
-
-17. Seriously, look at the above code and take your time to understand it. 
-
-18. Go back to Colab and play around with the input function. Try different things with it. The best way to learn this stuff is to play around with the code and see what you can do with it. 
-
-19. To make sure you get ``input``, write some code to ask the user for their first name. Then after that, write the code to ask the user for their last name. Then, after the 2nd input, print out the first name and then the last name. **Hint:** you'll probably need variables here. 
-    
-
-More Kattis Problems
-====================
-Do not worry if you do not get this far. 
-
-Grab a scrap piece of paper to start scratching your ideas down on paper.
-
-20. https://open.kattis.com/problems/r2 (IO might be tricky, but should be similar to above so definitely try to re-use the code)
-21. https://open.kattis.com/problems/faktor (IO might be tricky, but should be similar to above)   
-22. https://open.kattis.com/problems/ladder (Hope you remember your Gr 10 math... if not, good thing Google exists)
-23. https://open.kattis.com/problems/planina (Looks like an INTEGER SEQUENCE (if only there was an *On-line encyclopedia*).
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k1WWm-QiCZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
+#. https://open.kattis.com/problems/r2
+#. https://open.kattis.com/problems/faktor
+#. https://open.kattis.com/problems/ladder
+#. https://open.kattis.com/problems/planina
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
