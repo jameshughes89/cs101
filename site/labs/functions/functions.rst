@@ -43,6 +43,7 @@ Before Kattis
 
 #. Write a function called ``add_five_print(some_integer)``
 
+    * The code you write must be within a function
     * The function will take one parameter ``some_integer``
     * The function adds five to the parameter and ``print``\s out the result
     * The function will not return anything
@@ -57,6 +58,7 @@ Before Kattis
 
 #. Write a function called ``add_two_numbers_print(some_integer, some_other_integer)``
 
+    * The code you write must be within a function
     * The function will take two parameters ``some_integer`` and  ``some_other_integer``
     * The function will calculate their sum and ``print`` out the result
     * The function will not return anything
@@ -71,6 +73,7 @@ Before Kattis
 
 #. Write a function called ``add_two_numbers_return(some_integer, some_other_integer)``
 
+    * The code you write must be within a function
     * The function will take two parameters ``some_integer`` and  ``some_other_integer``
     * The function will calculate their sum
     * The function will ``return`` the result
@@ -102,6 +105,7 @@ Before Kattis
 
 #. Write a function called ``this_is_tough(n1, n2, n3, n4)``
 
+    * The code you write must be within a function
     * This function will take four parameters ``n1``, ``n2``, ``n3``, and ``n4``
     * This function will sum all four numbers
     * The function will ``return`` the result
