@@ -27,25 +27,19 @@ Pre Lab Exercises
     You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
     you will be asked to leave and you will obtain a grade of 0 for the lab.
 
-
-#. `Chapter 1 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html#exercises>`_
-
-    * 2
-    * 4
-
 #. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
 
-    * 1
-    * 5
+    * 5 **but** have it in a function that returns the result
 
+#. `Chapter 4 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/functions.html#exercises>`_
+
+    * 8
 
 
 Before Kattis
 =============
 
-1. If you missed the first lab, go complete steps 10 -- 16 in lab 1. 
-
-**NOTE:**  :doc:`If you forget how to do the function stuff, go back to the class notes. </topics/functions/functions>`
+* :doc:`If you forget how to do the function related stuff, go back to the class notes </topics/functions/functions>`
 
 
 2. Write a **function** called ``add_five_print`` that takes one integer as a parameter, adds five to it, and then prints out the result. Call the function to verify its correctness. You **MUST** do this with a function. Below I have given you the code you need to start writing your function. 
