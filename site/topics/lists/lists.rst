@@ -58,17 +58,29 @@ Data Structures
 List Operators
 ==============
 
-* We can concatenate lists with the ``+`` operator:
-    >>> a=[5,7,9,10]
-    >>> b=['also','a','list']
-    >>> a+b
-    [5, 7, 9, 10, 'also', 'a', 'list']
+* Similar to strings, we can concatenate lists with the ``+`` operator
 
-* We can concatenate a list with itself, multiple times, using the ``*`` operator:
-    >>> a*3
-    [5, 7, 9, 10, 5, 7, 9, 10, 5, 7, 9, 10]
-* Can we do this with Strings?
-* As you've discovered for yourself, we can also *slice* lists (just like we did strings), find their size and check for membership.
+    .. code-block:: python
+        :linenos:
+
+        some_list = [5, 6, 7, 8, 9]
+        some_other_list = ["this", "is", "a", "list"]
+        bigger_list = some_list + some_other_list
+        print(bigger_list)
+        # Results in [5, 6, 7, 8, 9, 'this', 'is', 'a', 'list']
+
+
+* We can concatenate a list with itself multiple times using the ``*`` operator
+
+    .. code-block:: python
+        :linenos:
+
+        some_list = [5, 6, 7, 8, 9]
+        triple_list = some_list * 3
+        print(triple_list)
+        # Results in [5, 6, 7, 8, 9, 5, 6, 7, 8, 9, 5, 6, 7, 8, 9]
+
+* There are other operators
 
 Range
 =====
