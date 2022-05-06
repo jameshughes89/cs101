@@ -55,8 +55,8 @@ Data Structures
     #. Write some ``assert`` tests for both functions to verify correctness.
 
 
-List Operators
-==============
+List Operators and Methods
+==========================
 
 * Similar to strings, we can concatenate lists with the ``+`` operator
 
@@ -80,7 +80,18 @@ List Operators
         print(triple_list)
         # Results in [5, 6, 7, 8, 9, 5, 6, 7, 8, 9, 5, 6, 7, 8, 9]
 
-* There are other operators
+
+.. admonition:: Activity
+    :class: activity
+
+    #. Create some list and assign it to a variable ``some_list``
+    #. ``print`` out the list --- ``print(some_list)``
+    #. After running the code, type ``some_list.`` and wait
+
+        * Don't forget the dot ``.``
+
+    #. Play around with some of the methods you see
+
 
 Range
 =====
