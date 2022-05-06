@@ -55,8 +55,8 @@ Data Structures
     #. Write some ``assert`` tests for both functions to verify correctness.
 
 
-List operations
-===============
+List Operators
+==============
 
 * We can concatenate lists with the ``+`` operator:
     >>> a=[5,7,9,10]
