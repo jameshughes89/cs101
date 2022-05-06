@@ -448,17 +448,16 @@ Methods
     .. image:: methods2.png
 
 
+* The menu that popped up contains methods that can be run on a string
+* Other objects that we will see later in the course will have methods associated with them too
+
 .. admonition:: Activity
     :class: activity
 
-    1. Try writing ``a_string.upper()`` and printing it out. 
-    2. Try some other *methods*
-   
-* *Methods* are very very similar to *functions*
-* But we're telling a specific *object* to do something
-* Long story short:
-    * Sometimes we do things with functions
-    * Sometimes we do things with methods
+    #. Assign some string to a variable called ``a_string``
+    #. Add the line of code ``a_string.upper()`` and then ``print`` out ``a_string``
+    #. Try some of the other methods and see what they do
+
 
 BUT WAIT...
 -----------
