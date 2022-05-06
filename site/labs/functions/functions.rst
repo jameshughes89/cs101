@@ -117,31 +117,24 @@ Before Kattis
 Kattis Problems
 ===============
 
-The problems below are 
+* Do not forget the code we used last time to read input on Kattis
 
-Remember, here is *magic* code we needed last week::
-   
-    data = input()       # Read a WHOLE, SINGLE line of input
-    data = data.split()  # Split string into individual pieces
-    a_var = int(data[0]) # Take string from data[X], convert it to int...   
-    b_var = int(data[1]) # ... And store it in some variable
+.. code-block:: python
+        :linenos:
+
+        data = input()       # Read a WHOLE, SINGLE line of input
+        data = data.split()  # Split string into individual pieces
+        a_var = int(data[0]) # Take string from data[X], convert it to int...
+        b_var = int(data[1]) # ... And store it in some variable
+
 
 .. warning::
    
-    The above will only work for certain situations, so you will need to hack this to make it work for specific cases!!!!!!!!!!!!!
+    The above code will only work when the input is 2 integers on the same line. You may need to hack this code to make
+    it work for your particular problem.
 
-.. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wWG9eOrEW3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/k1WWm-QiCZw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
- 
-
-Grab a scrap piece of paper to start scratching your ideas down on paper. Paper and pencil is where a lot of **programming** happens. 
-
-Skip any of the following problems if you did them already. 
+* Skip any of the following problems if you did them already.
 
 8. https://open.kattis.com/problems/hello 
 9. https://open.kattis.com/problems/carrots 
