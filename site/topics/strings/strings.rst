@@ -344,57 +344,46 @@ f-Strings
     print(to_print)    # The following is an integer 123, and this is a float to 2 decimal places 456.79.
 
 
+* You can even specify align output nicely with f-Strings
+* For example, if you wanted to format some output of something like a bill and you wrote the following, it wouldn't look too nice
+
+.. code-block:: python
+    :linenos:
+
+    # Ugly
+    print(10.95)
+    print(1.10)
+    print(123.45)
+
+    # Output
+    # 10.95
+    # 1.1
+    # 123.45
+
+
+* Notice how the decimal place does not align well
+* If instead we used f-Strings like this, it would look much better
+
+.. code-block:: python
+    :linenos:
+
+    # Pretty
+    print(f"{10.95:8.2f}")
+    print(f"{1.10:8.2f}")
+    print(f"{123.45:8.2f}")
+
+    # Output
+    #   10.95
+    #    1.10
+    #  123.45
+
+
+* Literal values were included in the above example, but this would also work with variables
 
 
 
 
 
-
-
-
-**%.2f** (percent dot two eff)
-
-* f is for float
-* Right side of **.** is for decimal places
-
-    >>> a = 1.235
-    >>> print('Format to 2 decimal places: %.2f' %a) # it will round too!
-    Format to 2 decimal places: 1.24		
-  
-    >>> b = 4.39999
-    >>> print('a: %.2f b: %.4f' %(a, b))	# need parentheses if more than one value to be inserted
-    a: 1.24 b: 4.4000
-   
-* Left side of **.** is for specifying total string length
-   
-    >>> a = 1.311
-    >>> print('3 of the 5 chars: %5.1f' %(a))
-    3 of the 5 chars:   1.3	# len('1.3') = 3
-    
-    >>> print('4 of the 5 chars: %5.2f' %(a))
-    4 of the 5 chars:  1.31
-   
-    >>> print('5 of the 5 chars: %5.3f' %(a))
-    5 of the 5 chars: 1.311
-
-* Left justify 
-
-    >>> a = 1.311
-    >>> print('%-10.2f neato' % a)
-    1.31       neato
-    
-    >>> print("%-10s%10.2f" %('Total:', a))
-    Total:          1.31
-
-* Many old programming languages do it this way
-    * And there are a billion other options too
-* `There are new ways to format your strings in Python though <https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python>`_
-    * .format()
-        * Probably the best way to do it in Python these days
-    * f-strings
-    * Check them out if you care
-
-   
 Objects
 =======
 
