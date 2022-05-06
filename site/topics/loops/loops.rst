@@ -205,7 +205,7 @@ Algorithm
 
     #. Write down (in English) an algorithm for calculating the sum of all the even numbers between ``0`` and ``n``.
     #. Convert the algorithm into a Python function ``sum_even_numbers(n: int) -> int``.
-    #. Write some ``assert`` tests.
+    #. Write some ``assert`` tests to verify correctness.
 
 
 For Next Class
