@@ -206,14 +206,14 @@ Underlying Idea
 * If I am looking for :math:`x` in a sequence, I can confirm its existence as soon as I see it
 * For example, consider looking for :math:`x`  in the following sequence of unknown elements
 
-    :math:`[?, ?, ?, ?, ?, ...]`
+        :math:`[?, ?, ?, ?, ?, ...]`
 
 * When starting, we do not know any of the values in the sequence until we look at them
 * If I look at the beginning of this sequence and see that the value is :math:`x`, I am done
 
     * It's there --- no need to keep looking
 
-    :math:`[x, ?, ?, ?, ?, ...]`
+        :math:`[x, ?, ?, ?, ?, ...]`
 
 * However, if I was looking for some other value, like :math:`y`, I cannot confirm that it is or is not there just by looking at the beginning element and finding an :math:`x`
 
