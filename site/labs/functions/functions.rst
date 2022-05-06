@@ -99,14 +99,15 @@ Before Kattis
 
     * Take note of when and where ``print`` is called
 
-        
-7. Write a function called ``this_is_tough`` that takes four integers as parameters. This function will ultimately add up the four integers and *return* the result. **HOWEVER**, inside this function you are **not** allowed to use the addition operator (or any arithmetic trick to do addition, like, ``5 - (-1*6)``), you are required to use the ``add_two_nums_return`` written above. You may **not** use ``print`` inside this function (use ``return``). A big hint: You will likely want to call the ``add_two_nums_return`` function a total of 3 times. Test that it works with the following code. 
-  
-    .. code-block:: python
-        
-        c = this_is_tough(3, 4, 6, 7)
-        print(c)
 
+#. Write a function called ``this_is_tough(n1, n2, n3, n4)``
+
+    * This function will take four parameters ``n1``, ``n2``, ``n3``, and ``n4``
+    * This function will sum all four numbers
+    * The function will ``return`` the result
+    * You can **not** make use of the addition operator (``+``) directly within this function
+    * You **must** make use of ``add_two_numbers_return`` three times
+    * Verify correctness by running the function a few times
 
 
 Kattis Problems
