@@ -318,52 +318,79 @@ String Trivia
     print(wut)      # results in "A"
 
    
-Formatting output (the ol' trusty way)
-======================================
+f-Strings
+=========
 
-**%.2f** (percent dot two eff)
+* There are a number of ways to format strings in Python, but we will focus on f-Strings due to their simplicity and popularity
 
-* f is for float
-* Right side of **.** is for decimal places
+.. code-block:: python
+    :linenos:
 
-    >>> a = 1.235
-    >>> print('Format to 2 decimal places: %.2f' %a) # it will round too!
-    Format to 2 decimal places: 1.24		
-  
-    >>> b = 4.39999
-    >>> print('a: %.2f b: %.4f' %(a, b))	# need parentheses if more than one value to be inserted
-    a: 1.24 b: 4.4000
-   
-* Left side of **.** is for specifying total string length
-   
-    >>> a = 1.311
-    >>> print('3 of the 5 chars: %5.1f' %(a))
-    3 of the 5 chars:   1.3	# len('1.3') = 3
-    
-    >>> print('4 of the 5 chars: %5.2f' %(a))
-    4 of the 5 chars:  1.31
-   
-    >>> print('5 of the 5 chars: %5.3f' %(a))
-    5 of the 5 chars: 1.311
+    name = "John Doe"
+    course_code = "CSCI 161"
+    to_print = f"My name is {name} and I love {course_code}."
+    print(to_print)    # My name is John Doe and I love CSCI 161.
 
-* Left justify 
 
-    >>> a = 1.311
-    >>> print('%-10.2f neato' % a)
-    1.31       neato
-    
-    >>> print("%-10s%10.2f" %('Total:', a))
-    Total:          1.31
+* In the previous example, all the variables were of type string, but they don't have to be
+* We can even format the output of a floating point number to a specified decimal place
 
-* Many old programming languages do it this way
-    * And there are a billion other options too
-* `There are new ways to format your strings in Python though <https://realpython.com/python-f-strings/#f-strings-a-new-and-improved-way-to-format-strings-in-python>`_
-    * .format()
-        * Probably the best way to do it in Python these days
-    * f-strings
-    * Check them out if you care
+.. code-block:: python
+    :linenos:
 
-   
+    some_integer = 123
+    some_float = 456.789
+    to_print = f"The following is an integer {some_integer}, and this is a float to 2 decimal places {some_float:.2f}."
+    print(to_print)    # The following is an integer 123, and this is a float to 2 decimal places 456.79.
+
+
+* You can even specify align output nicely with f-Strings
+* For example, if you wanted to format some output of something like a bill and you wrote the following, it wouldn't look too nice
+
+.. code-block:: python
+    :linenos:
+
+    # Ugly
+    print(10.95)
+    print(1.10)
+    print(123.45)
+
+    # Output
+    # 10.95
+    # 1.1
+    # 123.45
+
+
+* Notice how the decimal place does not align well
+* If instead we used f-Strings like this, it would look much better
+
+.. code-block:: python
+    :linenos:
+
+    # Pretty
+    print(f"{10.95:8.2f}")
+    print(f"{1.10:8.2f}")
+    print(f"{123.45:8.2f}")
+
+    # Output
+    #   10.95
+    #    1.10
+    #  123.45
+
+
+* Literal values were included in the above example, but this would also work with variables
+
+
+.. warning::
+
+    This only scratches the surface of what you can do with f-Strings. Further, much of the same functionality can be
+    done without f-Strings, but f-Strings are very popular and simple.
+
+    If you are wondering "how am I supposed to remember all this?", don't worry --- you're not supposed to. All that you
+    really need to remember is that f-Strings are a thing and if you need to use them in the future, just do a quick
+    search on `Google <https://www.google.com/search?q=python+f+string>`_.
+
+
 Objects
 =======
 
