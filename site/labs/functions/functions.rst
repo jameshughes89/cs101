@@ -41,20 +41,32 @@ Before Kattis
 
 * :doc:`If you forget how to do the function related stuff, go back to the class notes </topics/functions/functions>`
 
+#. Write a function called ``add_five_print(some_integer)``
 
-2. Write a **function** called ``add_five_print`` that takes one integer as a parameter, adds five to it, and then prints out the result. Call the function to verify its correctness. You **MUST** do this with a function. Below I have given you the code you need to start writing your function. 
+    * The function will take one parameter ``some_integer``
+    * The function adds five to the parameter and ``print``\s out the result
+    * The function will not return anything
+    * Call the function a few times to verify that it works properly
 
     .. code-block:: python
-   
-        def add_five_print(aNum):
+        :linenos:
+
+        def add_five_print(some_integer):
             # stuff goes here
 
+#. Write a function called ``add_two_numbers_print(some_integer, some_other_integer)``
 
-3. Write a **function** called ``add_two_nums_print`` that takes two integers as parameters, adds them together, and then prints out the result. Call the function to verify its correctness. You **MUST** do this with a function. Below is the code you can use to call the function and test it after you have written/defined the function. 
+    * The function will take two parameters ``some_integer`` and  ``some_other_integer``
+    * The function will calculate their sum and ``print`` out the result
+    * The function will not return anything
+    * Call the function a few times to verify that it works properly
 
     .. code-block:: python
-    
-        add_two_nums_print(4, 5)
+        :linenos:
+
+        def add_two_numbers_print(some_integer, some_other_integer):
+            # stuff goes here
+
 
 
 4. Write a **function** called ``add_three_nums_print`` that takes three integers as parameters, adds them together, and then prints out the result. Call the function to verify its correctness. You **MUST** do this with a function.
