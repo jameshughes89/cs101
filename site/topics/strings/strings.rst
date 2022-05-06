@@ -251,71 +251,79 @@ String Trivia
 
 * ``'`` or ``"`` will work for the quotes needed for strings
 
+    .. code-block:: python
+        :linenos:
+
+        a = "This is a string"
+        b = 'this is also a string'
+
+
 * We can concatenate strings with ``+``
 
-.. code-block:: python
-    :linenos:
+    .. code-block:: python
+        :linenos:
 
-    a = "CSCI" + " " + "161"
-    print(a)    # results in "CSCI 161"
+        a = "CSCI" + " " + "161"
+        print(a)    # results in "CSCI 161"
 
    
 * We can make a string repeat with ``*``
 
-.. code-block:: python
-    :linenos:
+    .. code-block:: python
+        :linenos:
 
-    a = "CSCI" * 3
-    print(a)    # results in "CSCICSCICSCI"
+        a = "CSCI" * 3
+        print(a)    # results in "CSCICSCICSCI"
 
    
 * We can convert an ``int`` to a ``str``
 
-.. code-block:: python
-    :linenos:
+    .. code-block:: python
+        :linenos:
 
-    print(type(1))      # <class 'int'>
-    print(type(str(1))) # <class 'str'>
+        print(type(1))      # <class 'int'>
+        print(type(str(1))) # <class 'str'>
 
 
 * The string ``""`` is a string, but it's *empty*
 
-.. code-block:: python
-    :linenos:
+    .. code-block:: python
+        :linenos:
 
-    a = ""
-    print(len(a))   # results in 0
-    print(type(a))  # results in <class 'str'>
+        a = ""
+        print(len(a))   # results in 0
+        print(type(a))  # results in <class 'str'>
 
 
-* We have some special *characters* that we have no buttons for.
+* We have some special *characters* that we have no keys for on the keyboard, like a newline or an indent tab
 
     * ``'\n'``
     * ``'\t'``
     * There are many
 
-.. code-block:: python
-    :linenos:
+    .. code-block:: python
+        :linenos:
 
-    a = 'hello\nWorld\tFUN\\!'
-    print(a)
-    # hello
-    # World   FUN\!
+        a = 'hello\nWorld\tFUN\\!'
+        print(a)
+        # hello
+        # World   FUN\!
 
 
 * ASCII Table
     * Every *character* is a *number*
 
+    .. code-block:: python
+        :linenos:
+
+        wut = ord('a')	# get the num of "a"
+        print(wut)      # results in 97
+
+        wut = chr(65)	# convert num to char
+        print(wut)      # results in "A"
+
+
 .. image:: ascii.gif
-
-.. code-block:: python
-    :linenos:
-
-    wut = ord('a')	# get the num of "a"
-    print(wut)      # results in 97
-   
-    wut = chr(65)	# convert num to char
-    print(wut)      # results in "A"
 
    
 f-Strings
