@@ -136,13 +136,11 @@ Kattis Problems
 
 * Skip any of the following problems if you did them already.
 
-8. https://open.kattis.com/problems/hello 
-9. https://open.kattis.com/problems/carrots 
-10. https://open.kattis.com/problems/r2
-11. https://open.kattis.com/problems/faktor (This one is kinda' a brain teaser. It requires the simplest of math, but it's not trivial.)
-12. https://open.kattis.com/problems/ladder (Hope you remember your Gr 10 math... if not, good thing Google exists)
-13. https://open.kattis.com/problems/planina (Looks like an INTEGER SEQUENCE (if only there was an *On-line encyclopedia*).
-
-14. `Go to Kattis and sort the problems by difficulty <https://open.kattis.com/problems?order=problem_difficulty>`_. Read them, understand the problem, then see if you can figure any out. Most you can't yet, but still see what you can do and what you CAN'T.  Try to figure out *why* you can't.  
+#. https://open.kattis.com/problems/hello
+#. https://open.kattis.com/problems/carrots
+#. https://open.kattis.com/problems/r2
+#. https://open.kattis.com/problems/faktor
+#. https://open.kattis.com/problems/ladder
+#. https://open.kattis.com/problems/planina
 
 **ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
