@@ -332,6 +332,17 @@ f-Strings
     print(to_print)    # My name is John Doe and I love CSCI 161.
 
 
+* In the previous example, all the variables were of type string, but they don't have to be
+* We can even format the output of a floating point number to a specified decimal place
+
+.. code-block:: python
+    :linenos:
+
+    some_integer = 123
+    some_float = 456.789
+    to_print = f"The following is an integer {some_integer}, and this is a float to 2 decimal places {some_float:.2f}."
+    print(to_print)    # The following is an integer 123, and this is a float to 2 decimal places 456.79.
+
 
 
 
