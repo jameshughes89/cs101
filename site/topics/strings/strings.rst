@@ -409,20 +409,16 @@ Objects
     the course.
 
 
-* We have seen *primitive* types
-    * Int
-    * Float
-    * Booleans
-   
-* There are other *types*:
-    * Strings (actually kinda' a primitive type in Python, but let's ignore this ...)
-    * Numpy things 
+* We have seen a few types so far
+* Most of these are what we call *primitive types*
 
-* These are objects!
-* We can even make our own *objects* 
-    * stay tuned
-* These objects act a little differently inside the computer 
-    * For good reason too, but stay tuned. 
+    * Integers
+    * Floats
+    * Booleans
+
+* But we have also seen Strings and how they are a little different
+* Strings are *objects* and work a little different
+
 
 
 Methods
