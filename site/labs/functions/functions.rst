@@ -54,6 +54,7 @@ Before Kattis
         def add_five_print(some_integer):
             # stuff goes here
 
+
 #. Write a function called ``add_two_numbers_print(some_integer, some_other_integer)``
 
     * The function will take two parameters ``some_integer`` and  ``some_other_integer``
@@ -68,25 +69,36 @@ Before Kattis
             # stuff goes here
 
 
+#. Write a function called ``add_two_numbers_return(some_integer, some_other_integer)``
 
-4. Write a **function** called ``add_three_nums_print`` that takes three integers as parameters, adds them together, and then prints out the result. Call the function to verify its correctness. You **MUST** do this with a function.
-
-
-5. Write a **function** called ``add_two_nums_return`` that takes two integers as parameters, adds them together, and then *returns* the result. Effectively this will be identical to ``add_two_nums_print``, but replace the ``print`` inside the function (in addition to the one in the name of the function) with ``return``. Run the following code to verify its correctness. `What's return? <http://modsurski.com/csci161/topic3.html#function-values>`_
-
-    .. code-block:: python
-   
-        a = add_two_nums_return(4, 5)
-        print(a)
+    * The function will take two parameters ``some_integer`` and  ``some_other_integer``
+    * The function will calculate their sum
+    * The function will ``return`` the result
+    * Call the function a few times to verify that it works properly
 
 
-6. Call the function ``add_two_nums_print`` you wrote in step 3 with the below code. What do you notice? See if you can hack around a little to figure out the difference between ``print`` and ``return`` (there's a HUGE difference). Take your time on this one. 
+#. Run the following code and take note of the output
 
     .. code-block:: python
-        
-        b = add_two_nums_print(4, 5)
-        print(b)
-       
+        :linenos:
+
+        result = add_two_numbers_return(4, 5)
+        print(result)
+
+
+#. Run the following code and take note of the output
+
+    .. code-block:: python
+        :linenos:
+
+        result = add_two_numbers_print(4, 5)
+        print(result)
+
+
+#. Why do these two functions behave differently when called?
+
+    * Take note of when and where ``print`` is called
+
         
 7. Write a function called ``this_is_tough`` that takes four integers as parameters. This function will ultimately add up the four integers and *return* the result. **HOWEVER**, inside this function you are **not** allowed to use the addition operator (or any arithmetic trick to do addition, like, ``5 - (-1*6)``), you are required to use the ``add_two_nums_return`` written above. You may **not** use ``print`` inside this function (use ``return``). A big hint: You will likely want to call the ``add_two_nums_return`` function a total of 3 times. Test that it works with the following code. 
   
