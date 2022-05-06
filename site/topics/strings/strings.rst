@@ -381,7 +381,14 @@ f-Strings
 * Literal values were included in the above example, but this would also work with variables
 
 
+.. warning::
 
+    This only scratches the surface of what you can do with f-Strings. Further, much of the same functionality can be
+    done without f-Strings, but f-Strings are very popular and simple.
+
+    If you are wondering "how am I supposed to remember all this?", don't worry --- you're not supposed to. All that you
+    really need to remember is that f-Strings are a thing and if you need to use them in the future, just do a quick
+    search on `Google <https://www.google.com/search?q=python+f+string>`_.
 
 
 Objects
