@@ -318,8 +318,8 @@ String Trivia
     print(wut)      # results in "A"
 
    
-Formatting output (the ol' trusty way)
-======================================
+F Strings
+=========
 
 **%.2f** (percent dot two eff)
 
