@@ -444,15 +444,10 @@ Methods
         #. Press ``.`` (period)
         #. Wait (or press space, or tab, or ctrl-space
 
-
-    In Colab (or whatever IDE):
-        1. Make a string
-        2. Assign it to a variable (if using Colab, hit run too)
-        3. Type the name of the variable
-        4. Press dot (period)
-        5. Wait... (or space or press ctrl-space (depends on IDE))
+    You should see a menu pop up that looks like the following
 
     .. image:: methods2.png
+
 
 .. admonition:: Activity
     :class: activity
