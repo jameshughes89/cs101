@@ -459,6 +459,7 @@ Methods
     #. Try some of the other methods and see what they do
 
 
+Method vs. Function
 -------------------
 
 * Why do we have to do it with a method
@@ -484,11 +485,6 @@ How to Remember What's What
 * Things will stick once you get enough practice
 * `In the meantime, just look up what you need <https://www.google.com/search?q=make+a+string+uppercase+python>`_
 
-Heavy lifting with strings
-==========================
-* If the program you are writing needs to do a lot of string manipulation, you probably want to
-    >>> import string
-* ... and `read about all the nifty stuff it does <http://docs.python.org/library/string.html>`_ 
 
 For next class
 ==============
