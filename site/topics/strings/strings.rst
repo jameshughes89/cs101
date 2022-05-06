@@ -420,16 +420,30 @@ Objects
 * Strings are *objects* and work a little different
 
 
-
 Methods
-=======
-* We've seen built in functions 
+-------
+
+* We've seen built in functions
+
     * ``print('this is a function')``
+
 * We've written our own functions
-    * ``char_is_in('a','bleh')``
+
+    * ``character_is_in('a','bleh')``
+
+* However, there is also something called a *method* that is very similar to a function, but acts on a specific instance of an object
+
 
 .. admonition:: Activity
     :class: activity
+
+    In Colab:
+
+        #. Assign a string to some variable and print it out
+        #. After running the code, type the name of the variable
+        #. Press ``.`` (period)
+        #. Wait (or press space, or tab, or ctrl-space
+
 
     In Colab (or whatever IDE):
         1. Make a string
@@ -439,7 +453,6 @@ Methods
         5. Wait... (or space or press ctrl-space (depends on IDE))
 
     .. image:: methods2.png
-    .. image:: methods.png
 
 .. admonition:: Activity
     :class: activity
