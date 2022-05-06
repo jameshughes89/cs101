@@ -459,37 +459,30 @@ Methods
     #. Try some of the other methods and see what they do
 
 
-BUT WAIT...
------------
+-------------------
 
-* Why do we have to do it like this ``a_string.upper()``
-* As opposed to like this: ``upper(a_string)``
+* Why do we have to do it with a method
 
-Answer
-------
+    * ``a_string.upper()``
 
-1. Because... 
+* Instead of a function like this?
 
-2. ``upper(a_string)`` is not actually defined 
+    * ``upper(a_string)``
 
-    * unless we define it ourselves
 
-3. These methods were written by someone, and they wrote them to work a certain way
+* In reality, there is nothing stopping us from writing the function ``upper(a_string)``
+* But with the string, the sequence of characters that make up the string are stored in the object
 
-    * Not necessarily the best way, or a way you like
+    * The method ``a_string.upper()`` is modifying the data within the object
+    * The functionality that modifies the data in that object will belong to that object
 
-4. There's also a good bookkeeping argument too
 
-    * Put all the string methods with the strings
+How to Remember What's What
+---------------------------
 
-5. But really... because
-   
-
-How are you supposed to keep track of what's what?
---------------------------------------------------
-
-* Don't worry, you'll get it with practice
-* Do note though, **the key is practice** 
+* Don't
+* Things will stick once you get enough practice
+* `In the meantime, just look up what you need <https://www.google.com/search?q=make+a+string+uppercase+python>`_
 
 Heavy lifting with strings
 ==========================
