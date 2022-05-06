@@ -318,8 +318,28 @@ String Trivia
     print(wut)      # results in "A"
 
    
-F Strings
+f-Strings
 =========
+
+* There are a number of ways to format strings in Python, but we will focus on f-Strings due to their simplicity and popularity
+
+.. code-block:: python
+    :linenos:
+
+    name = "John Doe"
+    course_code = "CSCI 161"
+    to_print = f"My name is {name} and I love {course_code}."
+    print(to_print)    # My name is John Doe and I love CSCI 161.
+
+
+
+
+
+
+
+
+
+
 
 **%.2f** (percent dot two eff)
 
