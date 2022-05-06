@@ -403,10 +403,11 @@ Objects
 =======
 
 .. warning::
-   
-    Some of the following is not actually true for Python, but will be the case for many of the commonly used programming languages. 
-   
-    Also, we will be going into more detail on Objects later in the class.
+
+    Much of the following is going to be kept at a very high level and not quite accurate for Python. That said, the
+    underlying ideas being presented below are important. Additionally, more details on Objects are presented later in
+    the course.
+
 
 * We have seen *primitive* types
     * Int
