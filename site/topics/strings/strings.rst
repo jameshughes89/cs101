@@ -295,7 +295,7 @@ String Trivia
         print(type(a))  # results in <class 'str'>
 
 
-* We have some special *characters* that we have no buttons for.
+* We have some special *characters* that we have no keys for on the keyboard, like a newline or an indent tab
 
     * ``'\n'``
     * ``'\t'``
