@@ -403,99 +403,91 @@ Objects
 =======
 
 .. warning::
-   
-    Some of the following is not actually true for Python, but will be the case for many of the commonly used programming languages. 
-   
-    Also, we will be going into more detail on Objects later in the class.
 
-* We have seen *primitive* types
-    * Int
-    * Float
+    Much of the following is going to be kept at a very high level and not quite accurate for Python. That said, the
+    underlying ideas being presented below are important. Additionally, more details on Objects are presented later in
+    the course.
+
+
+* We have seen a few types so far
+* Most of these are what we call *primitive types*
+
+    * Integers
+    * Floats
     * Booleans
-   
-* There are other *types*:
-    * Strings (actually kinda' a primitive type in Python, but let's ignore this ...)
-    * Numpy things 
 
-* These are objects!
-* We can even make our own *objects* 
-    * stay tuned
-* These objects act a little differently inside the computer 
-    * For good reason too, but stay tuned. 
+* But we have also seen Strings and how they are a little different
+* Strings are *objects* and work a little different
 
 
 Methods
-=======
-* We've seen built in functions 
+-------
+
+* We've seen built in functions
+
     * ``print('this is a function')``
+
 * We've written our own functions
-    * ``char_is_in('a','bleh')``
+
+    * ``character_is_in('a','bleh')``
+
+* However, there is also something called a *method* that is very similar to a function, but acts on a specific instance of an object
+
 
 .. admonition:: Activity
     :class: activity
 
-    In Colab (or whatever IDE):
-        1. Make a string
-        2. Assign it to a variable (if using Colab, hit run too)
-        3. Type the name of the variable
-        4. Press dot (period)
-        5. Wait... (or space or press ctrl-space (depends on IDE))
+    In Colab:
+        #. Assign a string to some variable and print it out
+        #. After running the code, type the name of the variable
+        #. Press ``.`` (period)
+        #. Wait (or press space, or tab, or ctrl-space
+
+    You should see a menu pop up that looks like the following:
 
     .. image:: methods2.png
-    .. image:: methods.png
+
+
+* The menu that popped up contains methods that can be run on a string
+* Other objects that we will see later in the course will have methods associated with them too
 
 .. admonition:: Activity
     :class: activity
 
-    1. Try writing ``a_string.upper()`` and printing it out. 
-    2. Try some other *methods*
-   
-* *Methods* are very very similar to *functions*
-* But we're telling a specific *object* to do something
-* Long story short:
-    * Sometimes we do things with functions
-    * Sometimes we do things with methods
+    #. Assign some string to a variable called ``a_string``
+    #. Add the line of code ``a_string.upper()`` and then ``print`` out ``a_string``
+    #. Try some of the other methods and see what they do
 
-BUT WAIT...
------------
 
-* Why do we have to do it like this ``a_string.upper()``
-* As opposed to like this: ``upper(a_string)``
+Method vs. Function
+-------------------
 
-Answer
-------
+* Why do we have to do it with a method
 
-1. Because... 
+    * ``a_string.upper()``
 
-2. ``upper(a_string)`` is not actually defined 
+* Instead of a function like this?
 
-    * unless we define it ourselves
+    * ``upper(a_string)``
 
-3. These methods were written by someone, and they wrote them to work a certain way
 
-    * Not necessarily the best way, or a way you like
+* In reality, there is nothing stopping us from writing the function ``upper(a_string)``
+* But with the string, the sequence of characters that make up the string are stored in the object
 
-4. There's also a good bookkeeping argument too
+    * The method ``a_string.upper()`` is about with the data within the object
+    * The functionality that manages the data in that object will belong to that object
 
-    * Put all the string methods with the strings
 
-5. But really... because
-   
+How to Remember What's What
+---------------------------
 
-How are you supposed to keep track of what's what?
---------------------------------------------------
+* Don't
+* Things will stick once you get enough practice
+* `In the meantime, just look up what you need <https://www.google.com/search?q=make+a+string+uppercase+python>`_
 
-* Don't worry, you'll get it with practice
-* Do note though, **the key is practice** 
 
-Heavy lifting with strings
-==========================
-* If the program you are writing needs to do a lot of string manipulation, you probably want to
-    >>> import string
-* ... and `read about all the nifty stuff it does <http://docs.python.org/library/string.html>`_ 
-
-For next class
+For Next Class
 ==============
 
-* Read `chapter 11 of the text <http://openbookproject.net/thinkcs/python/english3e/lists.html>`_
+* Read `Chapter 11 of the text <http://openbookproject.net/thinkcs/python/english3e/lists.html>`_
 
