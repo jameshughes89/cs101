@@ -474,8 +474,8 @@ Method vs. Function
 * In reality, there is nothing stopping us from writing the function ``upper(a_string)``
 * But with the string, the sequence of characters that make up the string are stored in the object
 
-    * The method ``a_string.upper()`` is modifying the data within the object
-    * The functionality that modifies the data in that object will belong to that object
+    * The method ``a_string.upper()`` is about with the data within the object
+    * The functionality that manages the data in that object will belong to that object
 
 
 How to Remember What's What
