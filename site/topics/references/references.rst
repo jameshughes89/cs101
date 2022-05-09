@@ -16,10 +16,7 @@ References
     We actually typically think of RAM addresses in *hexadecimal* (we use symbols 0-F). I'm just using decimal numbers here for simplicity. 
    
     Check this out though. We can sometimes see where things are stored in RAM. 
-   
-    Note that the ``0x`` means that the number is in hexadecimal
 
-    .. image:: functionLocation.png
 
 Fixed Size Arrays
 -----------------
