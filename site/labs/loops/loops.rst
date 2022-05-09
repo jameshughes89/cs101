@@ -38,26 +38,15 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-**1**
+#. Write a function ``count_to_n_while(n: int):`` to print out each number from :math:`0 -- (n - 1)`
 
-Write a *function* called ``count_to_n_w(n)`` to print a count from 0 to ``n-1``. This function should use a *while* loop. 
+    * This function must use a ``while`` loop
+    * This function will not return anything
 
+#. Write a function ``count_to_n_for(n: int):`` to print out each number from :math:`0 -- (n - 1)`
 
-**2**
-
-Write a function called ``add_one_n_times_w(a, n)`` that will add **one** to a number ``a`` a total of ``n`` times. In the end, have this function ``return`` the value. This function **must** use a ``while`` loop. It should work such that:
-
->>> ans = add_one_n_times(7, 5)
->>> print(ans)
-12
-
-**3**
-
-Write a *function* called ``count_to_n_f(n)`` to print a count from 0 to ``n-1``. This function should use a *for* loop. **Hint:** `check out range. <https://www.google.ca/search?q=python+range+for+loop&rlz=1C1GCEA_enCA808CA808&oq=python+range+for+loop&aqs=chrome..69i57j0l5.2437j0j7&sourceid=chrome&ie=UTF-8>`_
-
-**4**
-
-Write another function called ``add_one_n_times_f(a, n)`` that will add **one** to a number ``a`` a total of ``n`` times, but this time with a ``for`` loop. 
+    * This function must use a ``for`` loop
+    * This function will not return anything
 
 
 Kattis Problems
