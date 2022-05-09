@@ -38,26 +38,26 @@ Pre Lab Exercises
 Before Kattis
 =============
 
+#. Write a function ``did_pass(grade: float) -> bool:`` that returns ``True`` if the grade is 50 or above, and ``False`` otherwise
 
-1. Write a **function** that will take a grade between 0 - 100 and have it ``return`` either 'FAIL' ``if`` the grade is < 50 or 'PASS' otherwise. 
+    * Be sure to write some ``assert`` tests to verify correctness
 
-2. Write some code to take ``input`` for a grade between 0 - 100. Store this in some variable. 
+#. Write some code to take ``input`` from the user and store the inputted value in a variable
 
-3. Call the function we wrote and give it the inputted value. 
+    * The inputted value will be a float representing some grade between :math:`0 -- 100`
 
-4. ``print`` out "A grade of *X* means *Y*", where *X* is the inputted grade between 0 - 100 and *Y* is the FAIL/PASS returned by the function. Ex. if 89 was inputted, "A grade of 89 means PASS".
+#. Call the function ``did_pass`` with the inputted value from the previous question as the argument for the function
 
-5. Run this code a few times for fun. See if you can break it. 
+#. Write a function called ``letter_grade(percent_grade: float) -> str:`` that takes a grade as a percentage and returns the appropriate letter grade
 
-6. Let's change our function a little. Make it so it can ``return`` the letter grade (0 - 50 -> F, 50 - 60 -> D, 60 - 70 -> C, 70 - 80 -> B, 80 - 90 -> A, 90 - 100 -> A+).
+    * 0 - 49 -> F, 50 - 59 -> D, 60 - 69 -> C, 70 - 79 -> B, 80 - 89 -> A, 90 - 100 -> A+
+    * Write ``assert`` tests to verify correctness
 
-7. Do you know what to expect when you run your code again? Run your code. Did it do what you expected?
+#. Rewrite ``letter_grade(percent_grade: float) -> str:`` such that you reverse the order you check the grade in
 
-8. Now dow 6 & 7 again, but this time, reverse the order of your ``if`` statements. For example, if you checked for a fail first, check for the A+ first now. 
+    * For example, if you checked ``if grade < 50:`` first, start with checking for an A+
+    * Run the ``assert`` tests from the previous question
 
-.. warning::
-   
-   If this scares you, go back and look at the lecture notes. All the info you need is in there. BUT, if you really do get stuck, ASK FOR HELP! Ask someone next to you, ask a TA, ask me. 
 
 Kattis Problems
 ===============
