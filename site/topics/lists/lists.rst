@@ -93,36 +93,6 @@ List Operators and Methods
     #. Play around with some of the methods you see
 
 
-Range
-=====
-
-* In real world programming applications, we very frequently need a list of integers.
-    * For example: ``[1,2,3,4,5,...]`` so that we can count things.
-* Python has a built in function ``range()`` that we can use to generate lists of integers for us:
-	>>> list(range(1,5))
-	[1, 2, 3, 4]
-    
-	>>> list(range(5,10))
-	[5, 6, 7, 8, 9]
-	
-.. admonition:: Activity
-    :class: activity
-
-    Generate the following lists, using ``range``:
-        1. All integers from 0 to 17
-        2. All integers from -10 to 0
-        3. All integers from 10 to 0 (that is: counting *down* instead of up)
-        4. All even integers from 0 to 20
-	 
-    If you're having trouble with the last two, look up the `docs for range <http://docs.python.org/library/functions.html#range>`_ .
-
-    **WARNING** This is a tad different in Python 2, so be mindful of that when watching the video.
-    
-     .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/izZEkV58Its" frameborder="0" allowfullscreen></iframe>
-
-
 Mutability 
 ==========
 
