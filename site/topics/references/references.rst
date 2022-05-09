@@ -2,8 +2,10 @@
 References
 **********
 
-Pointers (THIS IS ACTUALLY A BIG DEAL)
-======================================
+
+
+References
+==========
 
 * Here is an idealized view of RAM inside a computer
 
@@ -95,8 +97,8 @@ Primitive Types in Memory (RAM)
 
 * ... but... how do we keep track of this?
 
-Pointers
---------
+References
+----------
 
 * Let's see what happens when we say this (people always say how complicated this is, but it's really not when you understand the intuition): 
 
@@ -104,7 +106,7 @@ Pointers
 
 .. image:: array_pointer.png
 
-* ``z`` gets us to a memory location whose contents is another memory address (pointer)
+* ``z`` gets us to a memory location whose contents is another memory address
     * It effectively *points* to another chunk of RAM
 
 .. admonition:: Activity
@@ -138,7 +140,7 @@ Pointers
    * Copy over the contents of z to an open memory location
    * Give it the label ``w``
    
-* How many pointers do I now have that get me to the same memory location?
+* How many references do I now have that get me to the same memory location?
 
 * Now let's look at what happens if I do this
 
@@ -147,7 +149,7 @@ Pointers
 .. image:: array_pointer_copy_change.png
 
 * Did I change the contents at the memory location ``w``?
-   * No, I changed something that the pointer in the memory location ``w`` was pointing to!!
+   * No, I changed something that the reference in the memory location ``w`` was pointing to!!
 
 * Memory (typically) works like this for non-primitive types (objects)
    * Arrays
