@@ -19,6 +19,22 @@ Conditionals
         #. Demonstrate competency in the topics
 
 
+Pre Lab Exercises
+=================
+
+.. warning::
+
+    You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
+    you will be asked to leave and you will obtain a grade of 0 for the lab.
+
+#. `Chapter 5 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/conditionals.html#exercises>`_
+
+    * 1
+    * 2 (do not forget about ``%``)
+    * 10
+    * 11
+
+
 Before Kattis
 =============
 
