@@ -27,13 +27,14 @@ Pre Lab Exercises
     You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
     you will be asked to leave and you will obtain a grade of 0 for the lab.
 
-#. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
-
-    * 5 **but** have it in a function that returns the result
-
-#. `Chapter 4 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/functions.html#exercises>`_
+#. `Chapter 7 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/iteration.html#exercises>`_
 
     * 8
+    * 9
+    * 14 (use ``assert`` to test instead of their ``test`` function)
+    * 15 (use ``assert`` to test instead of their ``test`` function)
+
+
 Before Kattis
 =============
 
