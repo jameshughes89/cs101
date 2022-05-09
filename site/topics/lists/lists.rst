@@ -1,6 +1,6 @@
-******************
-Lists & References
-******************
+*****
+Lists
+*****
 
 * We saw that strings were a little different when compared to the other types we've seen (``int``, ``float``, ``bool``)
 * We can generalize the idea of strings to more types
