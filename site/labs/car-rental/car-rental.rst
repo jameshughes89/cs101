@@ -41,36 +41,34 @@ rental agreement, age, how far they drove, and how long they had the car.
 
 **Rules:**
 
-* We will get the customer's:
-   * Age
-   * Rental agreement classification code (B or D)
-   * Number of days rented
-   * Starting odometer reading
-   * Ending odometer reading
+
+* We will get and record the customer's:
+
+    * Age
+    * Rental agreement classification code (B or D)
+    * Number of days rented
+    * Starting odometer reading
+    * Ending odometer reading
+
 * If the classification code is **B**
-   * Base charge of $20.00/day
-   * Plus $0.30 for every km driven
+
+    * Base charge of $20.00/day
+    * Plus $0.30 for every km driven
+
 * If the classification is **D**
-   * Base charge of $50.00/day
-   * Plus $0.30 for every km driven above the 100km/day average allowance. 
-* All renters under the age of 25 are charged an additional $10.00/day 
-* Print out the final total cost
+
+    * Base charge of $50.00/day
+    * Plus $0.30 for every km driven above the 100km/day average allowance
+
+* All renters under the age of 25 are charged an additional $10.00/day
+
 
 Kattis Problems
 ===============
 
-If you finish the above task, go back and work on unsolved Kattis problems from previous labs. 
+* Work on the Kattis problems you have not solved from previous weeks
+* Remember, I encourage you to work with others to solve the problems
 
-If you're sick of Kattis, check out `LeetCode <https://leetcode.com/problemset/all/>`_. Leet code is amazing, but it's less *programming competition* prep and more *coding interview* prep. 
+.. warning::
 
-Remember, here is the *magic* code we needed last week::
-   
-   data = input()       # Read a WHOLE, SINGLE line of input
-   data = data.split()  # Split string into individual pieces
-   a_var = int(data[0]) # Take string from data[X], convert it to int...   
-   b_var = int(data[1]) # ... And store it in some variable
-
-If you are done everything, feel free to work on the assignment. Just note that Lab time is **not** office hours and I will likely not provide support for assignment 1. 
-
-
-**ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
+    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
