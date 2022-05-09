@@ -52,15 +52,19 @@ Before Kattis
 Kattis Problems
 ===============
 
-Grab a scrap piece of paper to start scratching your ideas down on paper. The problems are getting tricky enough where this really is becoming a requirement. 
+* You should be using a scrap piece of paper to work out the ideas for the following problems
 
-1. https://open.kattis.com/problems/timeloop
-2. https://open.kattis.com/problems/oddities
-3. https://open.kattis.com/problems/fizzbuzz
-4. https://open.kattis.com/problems/sibice (Think about how you would do this real life before you start coding)
-5. https://open.kattis.com/problems/bus
-6. https://open.kattis.com/problems/datum (more annoying than tough)
-7. https://open.kattis.com/problems/dicecup (tough -- grab that paper)
+    * The problems you are to solve are getting too complex to try to solve by just coding
+    * Trying to solve problems by just typing away will not yield success
 
+#. https://open.kattis.com/problems/timeloop
+#. https://open.kattis.com/problems/oddities
+#. https://open.kattis.com/problems/fizzbuzz
+#. https://open.kattis.com/problems/sibice
+#. https://open.kattis.com/problems/bus
+#. https://open.kattis.com/problems/datum
+#. https://open.kattis.com/problems/dicecup
 
-**ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
+.. warning::
+
+    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
