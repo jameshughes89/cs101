@@ -27,6 +27,7 @@ Pre Lab Exercises
     You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
     you will be asked to leave and you will obtain a grade of 0 for the lab.
 
+
 #. `Chapter 8 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/strings.html#exercises>`_
 
     * 3
@@ -41,24 +42,25 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-We're going to do a bunch of linear searchers to start. 
+#. Write a function ``character_is_in_while(needle: str, haystack:str) -> bool:``
 
-**1**
+    * The function will ``return`` ``True`` if ``needle`` exists within ``haystack`` and ``False`` otherwise
+    * This function must use a ``while`` loop
 
-Write a function ``char_is_in_while(character, phrase)`` that returns ``True`` if the letter ``character`` appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *while* loop. 
+#. Write a function ``character_is_in_for(needle: str, haystack:str) -> bool:``
 
-**2**
+    * The function will ``return`` ``True`` if ``needle`` exists within ``haystack`` and ``False`` otherwise
+    * This function must use a ``for`` loop
 
-Write a function ``char_is_in_for(character, phrase)`` that returns ``True`` if the letter ``character`` appears in the string ``phrase``, otherwise return ``False``. This function **must** use a *for* loop. 
+#. Write a function ``character_is_at_while(needle: str, haystack:str) -> int:``
 
-**3**
+    * The function will ``return`` the index of the first occurrence of ``needle`` within ``haystack`` and ``-1`` if it is not found
+    * This function must use a ``while`` loop
 
-Write a function ``where_is_while(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``, or return `-1` if it does not exist. This function **must** use a *while* loop. 
+#. Write a function ``character_is_at_for(needle: str, haystack:str) -> int:``
 
-
-**4**
-
-Write a function ``where_is_for(character, phrase)`` that returns the index of the first occurrence of ``character`` in ``phrase``, or return `-1` if it does not exist. This function **must** use a *for* loop.
+    * The function will ``return`` the index of the first occurrence of ``needle`` within ``haystack`` and ``-1`` if it is not found
+    * This function must use a ``for`` loop
 
 
 Kattis Problems
