@@ -29,11 +29,15 @@ Before Kattis
 
 .. image:: /topics/car-rental/carRental.png
 
-A car rental place needs our help. They want a simple program to calculate how much a customer is to be charged based on their rental agreement, age, how far they drove, and how long they had the car. 
+A car rental place needs our help. They want a program to calculate how much a customer is to be charged based on their
+rental agreement, age, how far they drove, and how long they had the car.
 
-.. warning::
+.. note::
    
-   I'm obviously aware that this is directly from class. Don't just copy/paste the solution. Take this as an opportunity to re-implement the solution. In fact, I will be very very happy if you have slightly different solutions than what I had. Use this as a place to work through what you understand in the course and figure out what you don't quite understand yet. Then, when you know what you don't know, ASK FOR HELP!!!!!!!!!!
+    Obviously this is directly from lecture. Do not just copy/paste the solution --- take this as an opportunity to
+    re-implement the solution from scratch while taking care to truly understand what is going on. In fact, I will be
+    very happy if you have slightly different solutions than what I provided in lecture. Use this lab to work out what
+    you understand in the course and what you don't quite understand yet.
 
 **Rules:**
 
