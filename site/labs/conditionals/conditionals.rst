@@ -62,26 +62,30 @@ Before Kattis
 Kattis Problems
 ===============
 
-Remember, here is the *magic* code we needed last week::
-   
-   data = input()       # Read a WHOLE, SINGLE line of input
-   data = data.split()  # Split string into individual pieces
-   a_var = int(data[0]) # Take string from data[X], convert it to int...   
-   b_var = int(data[1]) # ... And store it in some variable
+* Do not forget the code we used last time to read input on Kattis
+
+.. code-block:: python
+        :linenos:
+
+        data = input()       # Read a WHOLE, SINGLE line of input
+        data = data.split()  # Split string into individual pieces
+        a_var = int(data[0]) # Take string from data[X], convert it to int...
+        b_var = int(data[1]) # ... And store it in some variable
+
 
 .. warning::
-   
-   The above will only work for certain situations, so you will need to hack this to make it work for specific cases!!!!!!!!!!!!!
+
+    The above code will only work when the input is 2 integers on the same line. You may need to hack this code to make
+    it work for your particular problem.
 
 
-1. https://open.kattis.com/problems/quadrant 
-2. https://open.kattis.com/problems/judgingmoose
-3. https://open.kattis.com/problems/twostones (Slow down and THINK)
-4. https://open.kattis.com/problems/spavanac (kinda' tricky)
-5. https://open.kattis.com/problems/cetvrta (kinda' annoying)
+#. https://open.kattis.com/problems/quadrant
+#. https://open.kattis.com/problems/judgingmoose
+#. https://open.kattis.com/problems/twostones
+#. https://open.kattis.com/problems/spavanac
+#. https://open.kattis.com/problems/cetvrta
+#. https://open.kattis.com/problems/bus
 
-6. https://open.kattis.com/problems/bus (seems like a sequence again... can we figure this one out on our own?)
+.. warning::
 
-
-
-**ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
+    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
