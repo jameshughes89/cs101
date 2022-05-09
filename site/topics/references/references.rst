@@ -2,6 +2,20 @@
 References
 **********
 
+* It is important for us to have an idea of what exactly is stored in our variables
+
+.. warning::
+
+    The ideas below are presented at a very high level and are not quite entirely correct for Python and other similar
+    programming languages. The differences come up in the nuances, but the following is sufficient to cover the
+    important ideas that you need to know. In fact, where there are differences between the following and how Python
+    actually works is not overly important for us, especially in introductory computer science.
+
+
+.. note::
+
+    We typically use *hexadecimal* (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F) when referring to memory addresses,
+    but for simplicity, I will use decimal numbers throughout this topic.
 
 
 References
@@ -11,11 +25,6 @@ References
 
 .. image:: RAM.png
 
-.. warning::
-
-    We actually typically think of RAM addresses in *hexadecimal* (we use symbols 0-F). I'm just using decimal numbers here for simplicity. 
-   
-    Check this out though. We can sometimes see where things are stored in RAM. 
 
 
 Fixed Size Arrays
