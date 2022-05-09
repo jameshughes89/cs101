@@ -2,6 +2,23 @@
 Conditionals
 ************
 
+* Feel free to use your laptop if you have it
+* Ensure I have recorded your completion --- failure to do so will result in a grade of 0
+* I strongly encourage you to work with others in the lab
+
+    * When you get stuck, do me a favour and ask those sitting around you for help
+    * I want people to get used to working together in the labs
+    * Peer teaching and peer learning is super effective
+
+.. note::
+
+    To obtain full marks for the lab, you must:
+
+        #. Have completed the pre-lab exercises
+        #. Have been working on the lab content
+        #. Demonstrate competency in the topics
+
+
 Before Kattis
 =============
 
