@@ -93,68 +93,23 @@ List Operators and Methods
     #. Play around with some of the methods you see
 
 
-Range
-=====
-
-* In real world programming applications, we very frequently need a list of integers.
-    * For example: ``[1,2,3,4,5,...]`` so that we can count things.
-* Python has a built in function ``range()`` that we can use to generate lists of integers for us:
-	>>> list(range(1,5))
-	[1, 2, 3, 4]
-    
-	>>> list(range(5,10))
-	[5, 6, 7, 8, 9]
-	
-.. admonition:: Activity
-    :class: activity
-
-    Generate the following lists, using ``range``:
-        1. All integers from 0 to 17
-        2. All integers from -10 to 0
-        3. All integers from 10 to 0 (that is: counting *down* instead of up)
-        4. All even integers from 0 to 20
-	 
-    If you're having trouble with the last two, look up the `docs for range <http://docs.python.org/library/functions.html#range>`_ .
-
-    **WARNING** This is a tad different in Python 2, so be mindful of that when watching the video.
-    
-     .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/izZEkV58Its" frameborder="0" allowfullscreen></iframe>
-
-
 Mutability 
 ==========
 
-* Strings do kinda look like "list of characters" and, in many ways, they are.
-* *But not exactly*.
-* Strings, remember, are *immutable*. What about lists? Let's try:
-    >>> a=[5,7,9,10]
-    >>> print(a)
-    [5, 7, 9, 10]
-    
-    >>> a[2]='I changed!'
-    >>> print(a)
-    [5, 7, 'I changed!', 10]
-* Unlike strings, lists are *mutable*.
+* Although lists and strings have some things in common, one thing they do not have in common is *mutability*
 
-.. admonition:: Activity
-    :class: activity
+    * Remember, strings are *immutable*
 
-    Consider the list ``l=list(range(0,10))``. Find single-line commands to do the following:
-        1. Change the 5th element of the list to ``'X'``.
-        2. Replace the first two elements of the list with ``10`` and ``11``, respectively. Remember, single line only! (Hint: slicing)
-        3. Delete the two elements you just changed. (Hint: what does assigning the empty list to a slice do?)
+* We can index strings and lists the same way to access individual elements
+* But unlike strings, we can also change the elements at a specific index
 
-* A 'cleaner' way to delete an element from a list is with the ``del`` statement:
-   
-    >>> a=[5,7,9,10]
-    >>> a
-    [5, 7, 9, 10]
-   
-    >>> del a[2]
-    >>> a
-    [5, 7, 10]
+.. code-block:: python
+    :linenos:
+
+    another_list = ["a", "b", "c", "d", "e"]
+    another_list[2] = "X"
+    print(another_list)
+    # Results in ['a', 'b', 'X', 'd', 'e']
 
 
 .. _label-topic8-aliasing:
