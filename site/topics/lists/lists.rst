@@ -115,28 +115,33 @@ Mutability
 Lists & Loops
 =============
 
-* ``for`` loops can be used to execute a block of code for every element in a list::
+* Similar to how ``for`` loops made it easy to iterate over each character in a string
+* ``for`` loops can be used the same way on lists to iterate over each element in the list
 
-    for element in some_list:
-        do_something(element)
+    * ``for`` each *thing* in a collection of *things*
 
-* Just like the loop we did with Strings last class!
-* This is incredibly useful. In fact, you've already seen it in assignment 1. Let's try it::
+.. code-block:: python
+    :linenos:
 
-    def like_food(food_list):
-        for food in food_list:
-            if food not in ['McDonalds','Burger King']:
-                print('I like ' + food)
-            else:
-                print('I dont like ' + food + ' so much.')
+    collection_of_things = ["Hello", 10, True, 100.001]
 
-* And now we'll run our function:
+    for thing in collection_of_things:
+      print(thing)
 
-    >>> like_food(['curry','sushi','McDonalds','bison'])
-    I like curry
-    I like sushi
-    I dont like McDonalds so much.
-    I like bison
+    # Results in
+    #   Hello
+    #   10
+    #   True
+    #   100.001
+
+
+* Iterating over a *collection of things* is very common
+* Expect to start using ``for`` loops like this a lot
+* In fact, this was used in assignment 1 multiple times
+
+    * Iterating over the contents of the file being read
+    * Iterating over the list of ``(latitude, longitude)`` pairs
+
 
 
 .. admonition:: Activity
