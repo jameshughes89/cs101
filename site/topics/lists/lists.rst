@@ -143,17 +143,62 @@ Lists & Loops
     * Iterating over the list of ``(latitude, longitude)`` pairs
 
 
+Range
+-----
+
+* ``range`` is a very handy function that we often use with ``for`` loops
+* It provides an easy way to loop over a specific range of numbers
+
+.. code-block:: python
+    :linenos:
+
+    for i in range(5):
+      print(i)
+
+    # Results in
+    #   0
+    #   1
+    #   2
+    #   3
+    #   4
+
+
+* Notice that the integer ``5`` was specified in the ``range`` function, and the loop ran a total of ``5`` times
+
+    * But because of ``0`` based indexing, the the number ``5`` is not actually included
+
+* A big reason we like to use ``for`` loops this way is because the syntax is so simple and clean
+* The above functionality can be achieved with a ``while`` loop, but the code needed is a little more cumbersome
+
+.. code-block:: python
+    :linenos:
+
+    i = 0
+    while i < 5:
+      print(i)
+      i += 1
+
+    # Results in
+    #   0
+    #   1
+    #   2
+    #   3
+    #   4
+
 
 .. admonition:: Activity
     :class: activity
 
-    Write a function ``beer_on_wall`` that will print out "n bottles of beer on the wall" for all n from 99 down to 1.
+    Write a function ``beer_on_wall`` that prints out ``"n bottles of beer on the wall"`` for all ``n`` from ``99`` down
+    to ``0``. This function must use a ``for`` loop with the ``range`` function.
 
-    Remember: ``range`` returns a list (kinda)... and a ``for`` loop can *iterate* over every element of a list.
+    The difficulty here is the need to count backwards.
 
-     .. raw:: html
+    `Perhaps a read of the documentation can help. <https://docs.python.org/3/library/stdtypes.html#typesseq-range>`_
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/0AuMKIMiPMo" frameborder="0" allowfullscreen></iframe>
+    .. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0AuMKIMiPMo" frameborder="0" allowfullscreen></iframe>
 
 
 
