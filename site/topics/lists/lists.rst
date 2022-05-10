@@ -201,6 +201,36 @@ Range
         <iframe width="560" height="315" src="https://www.youtube.com/embed/0AuMKIMiPMo" frameborder="0" allowfullscreen></iframe>
 
 
+Looping Over Indices and Enumerate
+----------------------------------
+
+* Sometimes it is important to know the indices of each element being printed out
+* For example, if the goal is to do a linear search to find the index of a given element, the following would be problematic
+
+.. code-block:: python
+    :linenos:
+
+    def index_of_uhoh(needle, haystack):
+        for element in haystack:
+            if element == needle:
+                return ???? # How do I find the index?
+        return -1
+
+
+* Using the ``range`` function would help in this situation as we can use it to loop over each index in ``haystack``
+* The only catch is that we need to actually index ``haystack``
+
+.. code-block:: python
+    :linenos:
+
+    def index_of(needle, haystack):
+        haystack_length = len(haystack)
+        for i in range(haystack_length):
+            if haystack[i] == needle:
+                return i
+        return -1
+
+
 
 * Suppose I want to print out a list of strings, in order, with each element preceded by number indicating it's position in the list::
 
