@@ -231,32 +231,43 @@ Looping Over Indices and Enumerate
         return -1
 
 
+* To make what is going on a little clearer, consider the following example
 
-* Suppose I want to print out a list of strings, in order, with each element preceded by number indicating it's position in the list::
+.. code-block:: python
+    :linenos:
 
-    >>> list=['a','b','c','d']
+    another_list = ["a", "b", "c", "d", "e"]
+    for i in range(len(another_list)):
+        print(i, another_list[i])
 
-    >>> for index in range(len(list)):
-            print(index, list[index])
+    # Results in
+    #   0 a
+    #   1 b
+    #   2 c
+    #   3 d
+    #   4 e
 
-    0 a
-    1 b
-    2 c
-    3 d
 
-* What is going on in ``range(len(list))``? Break it down one step at a time.
-* This pattern is so common that Python has given us a built in function ``enumerate`` to enumerate lists in a loop::
+* This loop prints out the index (``i``) along with the element at the given index (``another_list[i]``)
+* This functionality is quite common and Python even provides a shorthand for achieving it --- ``enumerate``
 
-    for index, item in enumerate(list):
-        print(index, item)
+.. code-block:: python
+    :linenos:
 
-* Most of our ``for`` loops have only a single *loop variable*...
-* ... but.. notice how instead of a single loop variable, we now have *two* (``index`` *and* ``item``). They iterate together in lockstep.
+    another_list = ["a", "b", "c", "d", "e"]
+    for i, element in enumerate(another_list):
+        print(i, element)
 
-    * ``index`` gets the index of the item in the list
-    * ``item`` gets the actual item itself
+    # Results in
+    #   0 a
+    #   1 b
+    #   2 c
+    #   3 d
+    #   4 e
 
-* This is a special feature of the ``enumerate`` function.
+
+* Here there is no need to actually index the list since the ``element`` variable already has the value ``another_list[i]``
+
 
 .. _label-topic8-aliasing:
 
