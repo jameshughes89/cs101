@@ -26,23 +26,15 @@ References
 Primitive Types in Memory
 =========================
 
-* Let's say we have a single integer called ``x`` (so, not an array anymore)
-    * I know it's an ``x``, but let's pretend it's some value of type *int*
+* Let's say we have a single integer called ``x``
 * An integer is a primitive type
+* In many programming languages integers take up **32 bits** worth of memory
 
-.. warning::
+    * That means 32 0s and 1s
+    * E.g. ``00101010010010110101110100010100``, which is the number ``709582100``
 
-    Unlike many languages, ints are actually *objects* in Python, but we're still ignoring this for now to learn an important concept from the olden days that still applies to Python due to conventions
+* Since we know how much memory an integer takes up, we can easily put integers into nicely divvied up chunks of memory
 
-* We know how big an integer can be inside the computer (how much RAM an int takes up)
-    * And why do we know how big it is?
-        * Because some engineer said so
-    * Let's say an int can be *32-bits*
-    * That's 32 0s and 1s
-    * Ex: 00101010010010110101110100010100
-        * That's 709,582,100 if anyone cares
-
-* If we know how much RAM an int takes up, I can easily shove ints into nicely divvied up chunks of RAM, assuming each spot has 32 bits.
 
 * Let's say I type
 
