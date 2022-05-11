@@ -268,11 +268,6 @@ Looping Over Indices and Enumerate
 
 * Here there is no need to actually index the list since the ``element`` variable already has the value ``another_list[i]``
 
-.. note::
-
-    Some people love using ``enumerate``, others feel it is unnecessary since they do not see indexing the list as an
-    imposition. Neither is more correct than the other --- use what you are comfortable with.
-
 
 .. _label-topic8-aliasing:
 
