@@ -112,12 +112,167 @@ Mutability
     # Results in ['a', 'b', 'X', 'd', 'e']
 
 
+Lists & Loops
+=============
+
+* Similar to how ``for`` loops made it easy to iterate over each character in a string
+* ``for`` loops can be used the same way on lists to iterate over each element in the list
+
+    * ``for`` each *thing* in a collection of *things*
+
+.. code-block:: python
+    :linenos:
+
+    collection_of_things = ["Hello", 10, True, 100.001]
+
+    for thing in collection_of_things:
+      print(thing)
+
+    # Results in
+    #   Hello
+    #   10
+    #   True
+    #   100.001
+
+
+* Iterating over a *collection of things* is very common
+* Expect to start using ``for`` loops like this a lot
+* In fact, this was used in assignment 1 multiple times
+
+    * Iterating over the contents of the file being read
+    * Iterating over the list of ``(latitude, longitude)`` pairs
+
+
+Range
+-----
+
+* ``range`` is a very handy function that we often use with ``for`` loops
+* It provides an easy way to loop over a specific range of numbers
+
+.. code-block:: python
+    :linenos:
+
+    for i in range(5):
+      print(i)
+
+    # Results in
+    #   0
+    #   1
+    #   2
+    #   3
+    #   4
+
+
+* Notice that the integer ``5`` was specified in the ``range`` function, and the loop ran a total of ``5`` times
+
+    * But because of ``0`` based indexing, the the number ``5`` is not actually included
+
+* A big reason we like to use ``for`` loops this way is because the syntax is so simple and clean
+* The above functionality can be achieved with a ``while`` loop, but the code needed is a little more cumbersome
+
+.. code-block:: python
+    :linenos:
+
+    i = 0
+    while i < 5:
+      print(i)
+      i += 1
+
+    # Results in
+    #   0
+    #   1
+    #   2
+    #   3
+    #   4
+
+
+.. admonition:: Activity
+    :class: activity
+
+    Write a function ``beer_on_wall`` that prints out ``"n bottles of beer on the wall"`` for all ``n`` from ``99`` down
+    to ``0``. This function must use a ``for`` loop with the ``range`` function.
+
+    The difficulty here is the need to count backwards.
+
+    `Perhaps a read of the documentation can help. <https://docs.python.org/3/library/stdtypes.html#typesseq-range>`_
+
+    .. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0AuMKIMiPMo" frameborder="0" allowfullscreen></iframe>
+
+
+Looping Over Indices and Enumerate
+----------------------------------
+
+* Sometimes it is important to know the indices of each element being printed out
+* For example, if the goal is to do a linear search to find the index of a given element, the following would be problematic
+
+.. code-block:: python
+    :linenos:
+
+    def index_of_uhoh(needle, haystack):
+        for element in haystack:
+            if element == needle:
+                return ???? # How do I find the index?
+        return -1
+
+
+* Using the ``range`` function would help in this situation as we can use it to loop over each index in ``haystack``
+* The only catch is that we need to actually index ``haystack``
+
+.. code-block:: python
+    :linenos:
+
+    def index_of(needle, haystack):
+        haystack_length = len(haystack)
+        for i in range(haystack_length):
+            if haystack[i] == needle:
+                return i
+        return -1
+
+
+* To make what is going on a little clearer, consider the following example
+
+.. code-block:: python
+    :linenos:
+
+    another_list = ["a", "b", "c", "d", "e"]
+    for i in range(len(another_list)):
+        print(i, another_list[i])
+
+    # Results in
+    #   0 a
+    #   1 b
+    #   2 c
+    #   3 d
+    #   4 e
+
+
+* This loop prints out the index (``i``) along with the element at the given index (``another_list[i]``)
+* This functionality is quite common and Python even provides a shorthand for achieving it --- ``enumerate``
+
+.. code-block:: python
+    :linenos:
+
+    another_list = ["a", "b", "c", "d", "e"]
+    for i, element in enumerate(another_list):
+        print(i, element)
+
+    # Results in
+    #   0 a
+    #   1 b
+    #   2 c
+    #   3 d
+    #   4 e
+
+
+* Here there is no need to actually index the list since the ``element`` variable already has the value ``another_list[i]``
+
+
 .. _label-topic8-aliasing:
 
 Aliasing 
 ========
-
-
 
 * Pay attention here, because this is a *major* source of confusion for new programmers.
     * It's not actually that weird, but it does trip people up
@@ -188,71 +343,6 @@ Aliasing
 
     Create a list named ``l``. Make an *alias* of the list named ``lalias``. Make a *copy* of the list named ``lcopy``. Prove to yourself that one is an alias and one is a copy.
 
-
-Lists and loops 
-===============
-* ``for`` loops can be used to execute a block of code for every element in a list::
-
-    for element in some_list:
-        do_something(element)
-
-* Just like the loop we did with Strings last class!
-* This is incredibly useful. In fact, you've already seen it in assignment 1. Let's try it::
-
-    def like_food(food_list):
-        for food in food_list:
-            if food not in ['McDonalds','Burger King']:
-                print('I like ' + food)
-            else:
-                print('I dont like ' + food + ' so much.')
-
-* And now we'll run our function:
-
-    >>> like_food(['curry','sushi','McDonalds','bison'])
-    I like curry
-    I like sushi
-    I dont like McDonalds so much.
-    I like bison
-
-
-.. admonition:: Activity
-    :class: activity
-
-    Write a function ``beer_on_wall`` that will print out "n bottles of beer on the wall" for all n from 99 down to 1.
-   
-    Remember: ``range`` returns a list (kinda)... and a ``for`` loop can *iterate* over every element of a list.
-
-     .. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/0AuMKIMiPMo" frameborder="0" allowfullscreen></iframe>
-
-
-
-* Suppose I want to print out a list of strings, in order, with each element preceded by number indicating it's position in the list::
-
-    >>> list=['a','b','c','d']
-   
-    >>> for index in range(len(list)):
-            print(index, list[index])
-   
-    0 a
-    1 b
-    2 c
-    3 d
-
-* What is going on in ``range(len(list))``? Break it down one step at a time.
-* This pattern is so common that Python has given us a built in function ``enumerate`` to enumerate lists in a loop::
-
-    for index, item in enumerate(list):
-        print(index, item)
-      
-* Most of our ``for`` loops have only a single *loop variable*...
-* ... but.. notice how instead of a single loop variable, we now have *two* (``index`` *and* ``item``). They iterate together in lockstep. 
-  
-    * ``index`` gets the index of the item in the list
-    * ``item`` gets the actual item itself
-	 
-* This is a special feature of the ``enumerate`` function.
 
 Mind the rotating knives
 ========================
