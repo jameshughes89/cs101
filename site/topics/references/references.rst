@@ -23,15 +23,6 @@ References
 .. image:: RAM.png
 
 
-Idealized View of a List
-========================
-
-.. image:: array_1.png
-
-* Above is an array with length ``8``
-* The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
-
-
 Primitive Types in Memory
 =========================
 
@@ -41,17 +32,17 @@ Primitive Types in Memory
 
 .. warning::
 
-    Unlike many languages, ints are actually *objects* in Python, but we're still ignoring this for now to learn an important concept from the olden days that still applies to Python due to conventions 
-   
+    Unlike many languages, ints are actually *objects* in Python, but we're still ignoring this for now to learn an important concept from the olden days that still applies to Python due to conventions
+
 * We know how big an integer can be inside the computer (how much RAM an int takes up)
-    * And why do we know how big it is? 
+    * And why do we know how big it is?
         * Because some engineer said so
     * Let's say an int can be *32-bits*
     * That's 32 0s and 1s
     * Ex: 00101010010010110101110100010100
         * That's 709,582,100 if anyone cares
 
-* If we know how much RAM an int takes up, I can easily shove ints into nicely divvied up chunks of RAM, assuming each spot has 32 bits. 
+* If we know how much RAM an int takes up, I can easily shove ints into nicely divvied up chunks of RAM, assuming each spot has 32 bits.
 
 * Let's say I type
 
@@ -59,20 +50,20 @@ Primitive Types in Memory
 
 .. image:: Int_in_RAM.png
 
-* Something like this will happen. 
+* Something like this will happen.
     * The value 17 will go into one of the open divvied up chunks of RAM
     * We create a label for the value called ``x``
-   
+
 * If I say something like
 
 >>> y = x
 
 .. image:: copy_int_in_RAM.png
 
-* Something like this will happen. 
+* Something like this will happen.
     * Copy the contents in the location that the ``x`` refers to some other location
     * Create a label for the copied value called ``y``
-   
+
 * **I COPY OVER THE CONTENTS OF X AND PUT IT INTO Y**
 
 * So far this is fine and dandy
@@ -90,6 +81,17 @@ Primitive Types in Memory
 * We just need to know that our array starts at memory address 677 and goes to 684.
 
 * ... but... how do we keep track of this?
+
+Idealized View of a List
+========================
+
+.. image:: array_1.png
+
+* Above is an array with length ``8``
+* The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
+
+
+
 
 References
 ----------
