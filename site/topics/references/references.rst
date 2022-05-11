@@ -23,20 +23,13 @@ References
 .. image:: RAM.png
 
 
-Fixed Size Arrays
-=================
-
-* In many programming languages, lists aren't *free* like they are in Python
-* Instead, we have *arrays* --- fixed size collections of data
-* You can think of it as a list except arrays have a fixed size
-* For the discussion on references, we will focus on arrays, but the following is basically the same for lists
+Idealized View of a List
+========================
 
 .. image:: array_1.png
- 
- 
-* Above is an array with length ``8``
 
-* The contents are labeled ``a`` -- ``h``, but we will treat these as numbers
+* Above is an array with length ``8``
+* The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
 
 
 Primitive Types in Memory (RAM)
