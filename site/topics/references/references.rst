@@ -30,7 +30,7 @@ Primitive Types in Memory
 * An integer is a primitive type
 * In many programming languages integers take up **32 bits** worth of memory
 
-    * That means 32 0s and 1s
+    * That means 32 ``0``\s and ``1``\s
     * E.g. ``00101010010010110101110100010100``, which is the number ``709582100``
 
 * Since we know how much memory an integer takes up, we can easily put integers into nicely divvied up chunks of memory
