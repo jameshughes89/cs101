@@ -44,18 +44,19 @@ Primitive Types in Memory
 
 .. image:: int_in_RAM.png
 
+* If we wanted to copy the value of ``x`` into another variable, I could write something like ``y = x``
+* When this happens
 
-* If I say something like
+    * Copy the contents from the location with the label ``x``
+    * Place the copied value into another 32 bit section of memory
+    * Create a label ``y`` for the copied value's location
 
->>> y = x
+* **The contents of ``x`` are copied to ``y``**
 
 .. image:: copy_int_in_RAM.png
 
-* Something like this will happen.
-    * Copy the contents in the location that the ``x`` refers to some other location
-    * Create a label for the copied value called ``y``
 
-* **I COPY OVER THE CONTENTS OF X AND PUT IT INTO Y**
+
 
 * So far this is fine and dandy
 * But, what happens if we try to shove an array into one of those nicely divvied up chunks of RAM?
