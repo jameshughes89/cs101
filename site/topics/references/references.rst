@@ -32,8 +32,8 @@ Idealized View of a List
 * The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
 
 
-Primitive Types in Memory (RAM)
--------------------------------
+Primitive Types in Memory
+=========================
 
 * Let's say we have a single integer called ``x`` (so, not an array anymore)
     * I know it's an ``x``, but let's pretend it's some value of type *int*
