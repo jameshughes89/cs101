@@ -18,90 +18,80 @@ References
     but for simplicity, we will use decimal numbers throughout this topic.
 
 
-References
-==========
-
-* Here is an idealized view of RAM inside a computer
+* Here is an idealized view of memory inside a computer
 
 .. image:: RAM.png
 
 
+Primitive Types in Memory
+=========================
 
-Fixed Size Arrays
------------------
-   
-* Let's hit pause on lists for a sec and go back in time
-* In many programming languages, lists aren't *free* like they are in Python
-* Instead, we have *arrays*: Fixed size collections of data 
-    * Like a list, but fixed size, and no fancy methods
-        * BTW, the following is basically the same for lists too, but slightly easier to explain if we talk about arrays
- 
-.. image:: array_1.png
- 
- 
-* Above is an array with length **8**
-    * No making fun of my *Microsoft Paint* skills
-* The contents are labeled *a -- h*, but let's pretend they're numbers
-
-
-Primitive Types in Memory (RAM)
--------------------------------
-
-* Let's say we have a single integer called ``x`` (so, not an array anymore)
-    * I know it's an ``x``, but let's pretend it's some value of type *int*
+* Let's say we have a single integer called ``x``
 * An integer is a primitive type
+* In many programming languages integers take up **32 bits** worth of memory
 
-.. warning::
+    * That means 32 ``0``\s and ``1``\s
+    * E.g. ``00101010010010110101110100010100``, which is the number ``709582100``
 
-    Unlike many languages, ints are actually *objects* in Python, but we're still ignoring this for now to learn an important concept from the olden days that still applies to Python due to conventions 
-   
-* We know how big an integer can be inside the computer (how much RAM an int takes up)
-    * And why do we know how big it is? 
-        * Because some engineer said so
-    * Let's say an int can be *32-bits*
-    * That's 32 0s and 1s
-    * Ex: 00101010010010110101110100010100
-        * That's 709,582,100 if anyone cares
+* Since we know how much memory an integer takes up, we can easily put integers into nicely divvied up chunks of memory
 
-* If we know how much RAM an int takes up, I can easily shove ints into nicely divvied up chunks of RAM, assuming each spot has 32 bits. 
+* If we divided memory into blocks of 32 bits
+* And we create an integer variable ``x = 17``
+* Something like this will happen
 
-* Let's say I type
+    * The value ``17`` gets assigned to one of the 32 bit sections of memory
+    * A label ``x`` is created for that location
 
->>> x = 17
+.. image:: int_in_RAM.png
 
-.. image:: Int_in_RAM.png
+* If we wanted to copy the value of ``x`` into another variable, I could write something like ``y = x``
+* When this happens
 
-* Something like this will happen. 
-    * The value 17 will go into one of the open divvied up chunks of RAM
-    * We create a label for the value called ``x``
-   
-* If I say something like
+    * Copy the contents from the location with the label ``x``
+    * Place the copied value into another 32 bit section of memory
+    * Create a label ``y`` for the copied value's location
 
->>> y = x
+* **The contents of ``x`` are copied to ``y``**
 
 .. image:: copy_int_in_RAM.png
 
-* Something like this will happen. 
-    * Copy the contents in the location that the ``x`` refers to some other location
-    * Create a label for the copied value called ``y``
-   
-* **I COPY OVER THE CONTENTS OF X AND PUT IT INTO Y**
+* This strategy works great for types that have a nicely defined sizes
+* But what happens when we do not know beforehand how much memory something needs in order to store it?
 
-* So far this is fine and dandy
-* But, what happens if we try to shove an array into one of those nicely divvied up chunks of RAM?
-    * The RAM is divvied up to accept single ints
-    * But we have an array of 8 ints...
-    * PROBLEM!
 
-* Wait, there's actually a simple solution. What if we block off chunks of RAM to be the array?
-* So if I have the array ``[a, b, c, d, e, f, g, h]``, we get this...
+Lists in Memory
+===============
+
+.. image:: array_1.png
+
+* Above is a list with length ``8``
+* The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
+
+* In the examples so far, memory was divided into chunks of 32 bits which is perfect for integers
+* Unfortunately, we need to store a whole list that contains 8 integers
+
+    * This needs 256 bits
+
+* Fortunately we have a solution
+* Store each of the elements within the list in their own memory location
+
+    * Similar to how the integer ``17`` was stored above
+
+* Section off a large block of memory for the list to hold *references* to each of the elements of the list
+
+    * For simplicity, instead of storing references within the list, we will pretend that the contents of the list are stored within the block of memory sectioned off for the list
+
+* For example, the following image shows how we can think of storing the list ``[a, b, c, d, e, f, g, h]``
 
 .. image:: array_in_RAM.png
 
-* We're just putting each element into it's own RAM location
-* We just need to know that our array starts at memory address 677 and goes to 684.
+* Just put each integer into its own memory location
 
-* ... but... how do we keep track of this?
+    * Again, in reality we actually store a reference to the integers, but we are ignoring this for now
+
+* Keep track of the fact that our list starts at memory address 677 and goes to 684
+* The trick is in how this is managed
+
 
 References
 ----------
