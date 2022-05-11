@@ -72,13 +72,23 @@ Lists in Memory
 
     * This needs 256 bits
 
-* Fortunately we have a simple solution
-* Section off a large block of memory to store the contents of the list
-* For example, the following image shows how we could store the list ``[a, b, c, d, e, f, g, h]``
+* Fortunately we have a solution
+* Store each of the elements within the list in their own memory location
+
+    * Similar to how the integer ``17`` was stored above
+
+* Section off a large block of memory for the list to hold *references* to each of the elements of the list
+
+    * For simplicity, instead of storing references within the list, we will pretend that the contents of the list are stored within the block of memory sectioned off for the list
+
+* For example, the following image shows how we can think of storing the list ``[a, b, c, d, e, f, g, h]``
 
 .. image:: array_in_RAM.png
 
 * Just put each integer into its own memory location
+
+    * Again, in reality we actually store a reference to the integers, but we are ignoring this for now
+
 * Keep track of the fact that our list starts at memory address 677 and goes to 684
 * The trick is in how this is managed
 
