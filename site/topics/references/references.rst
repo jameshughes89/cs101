@@ -42,7 +42,7 @@ Primitive Types in Memory
     * The value ``17`` gets assigned to one of the 32 bit sections of memory
     * A label ``x`` is created for that location
 
-.. image:: Int_in_RAM.png
+.. image:: int_in_RAM.png
 
 
 * If I say something like
