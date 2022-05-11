@@ -35,16 +35,15 @@ Primitive Types in Memory
 
 * Since we know how much memory an integer takes up, we can easily put integers into nicely divvied up chunks of memory
 
+* If we divided memory into blocks of 32 bits
+* And we create an integer variable ``x = 17``
+* Something like this will happen
 
-* Let's say I type
-
->>> x = 17
+    * The value ``17`` gets assigned to one of the 32 bit sections of memory
+    * A label ``x`` is created for that location
 
 .. image:: Int_in_RAM.png
 
-* Something like this will happen.
-    * The value 17 will go into one of the open divvied up chunks of RAM
-    * We create a label for the value called ``x``
 
 * If I say something like
 
