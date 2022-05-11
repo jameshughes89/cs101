@@ -269,9 +269,9 @@ Looping Over Indices and Enumerate
 * Here there is no need to actually index the list since the ``element`` variable already has the value ``another_list[i]``
 
 
-For Next Class
+For next class
 ==============
-* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
-* Read `Chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
+* Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
+* Read `chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
 
 
