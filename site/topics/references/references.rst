@@ -55,14 +55,23 @@ Primitive Types in Memory
 
 .. image:: copy_int_in_RAM.png
 
+* This strategy works great for types that have a nicely defined sizes
+* But what happens when we do not know beforehand how much memory something needs in order to store it?
+
+Idealized View of a List
+========================
+
+.. image:: array_1.png
+
+* Above is an array with length ``8``
+* The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
 
 
 
-* So far this is fine and dandy
-* But, what happens if we try to shove an array into one of those nicely divvied up chunks of RAM?
-    * The RAM is divvied up to accept single ints
-    * But we have an array of 8 ints...
-    * PROBLEM!
+
+* The RAM is divvied up to accept single ints
+* But we have an array of 8 ints...
+* PROBLEM!
 
 * Wait, there's actually a simple solution. What if we block off chunks of RAM to be the array?
 * So if I have the array ``[a, b, c, d, e, f, g, h]``, we get this...
@@ -73,14 +82,6 @@ Primitive Types in Memory
 * We just need to know that our array starts at memory address 677 and goes to 684.
 
 * ... but... how do we keep track of this?
-
-Idealized View of a List
-========================
-
-.. image:: array_1.png
-
-* Above is an array with length ``8``
-* The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
 
 
 
