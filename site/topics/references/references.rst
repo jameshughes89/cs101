@@ -18,10 +18,9 @@ References
     but for simplicity, we will use decimal numbers throughout this topic.
 
 
-* Here is an idealized view of RAM inside a computer
+* Here is an idealized view of memory inside a computer
 
 .. image:: RAM.png
-
 
 
 Fixed Size Arrays
