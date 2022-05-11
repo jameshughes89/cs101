@@ -18,9 +18,6 @@ References
     but for simplicity, we will use decimal numbers throughout this topic.
 
 
-References
-==========
-
 * Here is an idealized view of RAM inside a computer
 
 .. image:: RAM.png
