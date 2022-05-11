@@ -58,32 +58,29 @@ Primitive Types in Memory
 * This strategy works great for types that have a nicely defined sizes
 * But what happens when we do not know beforehand how much memory something needs in order to store it?
 
-Idealized View of a List
-========================
+
+Lists in Memory
+===============
 
 .. image:: array_1.png
 
-* Above is an array with length ``8``
+* Above is a list with length ``8``
 * The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
 
+* In the examples so far, memory was divided into chunks of 32 bits which is perfect for integers
+* Unfortunately, we need to store a whole list that contains 8 integers
 
+    * This needs 256 bits
 
-
-* The RAM is divvied up to accept single ints
-* But we have an array of 8 ints...
-* PROBLEM!
-
-* Wait, there's actually a simple solution. What if we block off chunks of RAM to be the array?
-* So if I have the array ``[a, b, c, d, e, f, g, h]``, we get this...
+* Fortunately we have a simple solution
+* Section off a large block of memory to store the contents of the list
+* For example, the following image shows how we could store the list ``[a, b, c, d, e, f, g, h]``
 
 .. image:: array_in_RAM.png
 
-* We're just putting each element into it's own RAM location
-* We just need to know that our array starts at memory address 677 and goes to 684.
-
-* ... but... how do we keep track of this?
-
-
+* Just put each integer into its own memory location
+* Keep track of the fact that our list starts at memory address 677 and goes to 684
+* The trick is in how this is managed
 
 
 References
