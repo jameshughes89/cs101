@@ -96,19 +96,28 @@ Lists in Memory
 References
 ----------
 
-* Let's see what happens when we say this (people always say how complicated this is, but it's really not when you understand the intuition): 
+.. code-block:: python
+    :linenos:
 
->>> z = [a, b, c, d, e, f, g, h]
+    z = [a, b, c, d, e, f, g, h]
+
+
+* Given the above list creation, the computer finds a contiguous block of memory to store the contents of the list
+
+    * Each element in the list fits nicely into the divvied up sections
+
+* Then, the information needed to find and access the list contents is stored in a piece of memory labelled with the variable ``z``
+
+    * The list is **not** stored in ``z``\; the *location* of the list in memory is stored in ``z``
+
 
 .. image:: array_pointer.png
 
-* ``z`` gets us to a memory location whose contents is another memory address
-    * It effectively *points* to another chunk of RAM
 
 .. admonition:: Activity
     :class: activity
 
-    Take 1 min and look at this picture and see if you can explain why we start counting at 0 when indexing lists/arrays.
+    Take a moment to look at this image and see if you can explain why we start counting at 0 when indexing lists.
    
 
 * Earlier we saw that lists work a little differently when saying something like
