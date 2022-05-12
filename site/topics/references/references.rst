@@ -51,7 +51,7 @@ Primitive Types in Memory
     * Place the copied value into another 32 bit section of memory
     * Create a label ``y`` for the copied value's location
 
-* **The contents of ``x`` are copied to ``y``**
+* **The contents of** ``x`` **are copied to** ``y``
 
 .. image:: copy_int_in_RAM.png
 
