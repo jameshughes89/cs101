@@ -8,8 +8,7 @@ required.
 This course is devoted to learning problem solving and elementary programming skills. Topics include
 problem analysis, algorithm development, data representation, control structures, functions, lists, and objects.
 
-`The content used to generate the course can be found on GitHub <https://github.com/jameshughes89/cs101>`_ 
-
+`The content used to generate the course can be found on GitHub <https://github.com/jameshughes89/cs101>`_
 
 Professors
 ==========
