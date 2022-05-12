@@ -132,7 +132,6 @@ Course Notes
     topics/more-lists/more-lists
     topics/dictionaries-sets/dictionaries-sets
     topics/debug/debug
-    topics/debugger/debugger
     topics/fileIO/fileIO
     topics/exceptions/exceptions
     topics/objects/objects
