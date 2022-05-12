@@ -96,63 +96,60 @@ Lists in Memory
 References
 ----------
 
-* Let's see what happens when we say this (people always say how complicated this is, but it's really not when you understand the intuition): 
+.. code-block:: python
+    :linenos:
 
->>> z = [a, b, c, d, e, f, g, h]
+    z = [a, b, c, d, e, f, g, h]
+
+
+* Given the above list creation, the computer finds a contiguous block of memory to store the contents of the list
+
+    * Each element in the list fits nicely into the divvied up sections
+
+* Then, the information needed to find and access the list contents is stored in a piece of memory labelled with the variable ``z``
+
+    * The list is **not** stored in ``z``\; the *location* of the list in memory is stored in ``z``
 
 .. image:: array_pointer.png
 
-* ``z`` gets us to a memory location whose contents is another memory address
-    * It effectively *points* to another chunk of RAM
 
 .. admonition:: Activity
     :class: activity
 
-    Take 1 min and look at this picture and see if you can explain why we start counting at 0 when indexing lists/arrays.
+    Take a moment to look at this image and see if you can explain why we start counting at 0 when indexing lists.
    
 
-* Earlier we saw that lists work a little differently when saying something like
-
->>> my_list = [1,2,3]
->>> another_list = my_list
->>> another_list[1] = 99
->>> print(my_list)
-[1, 99, 3]
- 
-* We called this aliasing and took note that it's weird
-* However... actually... the way we copy over ``my_list`` to ``another_list`` works THE SAME WAY AS PRIMITIVE TYPES
-    * But... You just said.. and you clearly showed us that it's totally different!!!!!!!!
-
-* Strap yourselves in, because I'm about to blow your mind
-
-* Let's say I write
-
->>> w = z
+* If we wanted to make a copy of ``z`` like we did with the integers ``x`` and ``y``\, we could write something like ``w = z``
+* And just like with the integers, this copies the contents of the memory location of ``z`` and puts it into a new location labelled with a ``w``
+* However, the catch is that the contents of ``z`` is the memory address of the list
+* After making the copy into ``w``,  how many references do have that get me to the memory location of the list?
 
 .. image:: array_pointer_copy.png
 
-
-* Just follow the rules we followed for primitive types
-   * Copy over the contents of z to an open memory location
-   * Give it the label ``w``
-   
-* How many references do I now have that get me to the same memory location?
-
-* Now let's look at what happens if I do this
-
->>> w[4] = P
+* If I want to make a change to ``w`` and I write something like ``w[4] = P``, the computer goes to the list referenced by ``w`` and alters the value at index ``4``
 
 .. image:: array_pointer_copy_change.png
 
-* Did I change the contents at the memory location ``w``?
-   * No, I changed something that the reference in the memory location ``w`` was pointing to!!
+* This does not alter the contents of the memory location of ``w``\; this alters the data at the memory location that is referenced to by ``w``
+* In fact, this also alters the data at the memory location that is referenced by ``z``
 
-* Memory (typically) works like this for non-primitive types (objects)
-   * Arrays
-   * Lists
-   * etc. 
+    * What would happen if I wrote ``print(z[4])``\?
 
-	  	  
+* When we have two or more references referring to the same *thing* in memory, we call these aliases
+
+    * ``w`` is an alias for ``z``
+    * This is discussed further in the following topic
+
+
+.. note::
+
+    As mentioned earlier, in reality Python would not actually store the contents of the list within the block of memory
+    allocated for the list. Instead, Python stores the contents in their own memory locations and the list stores
+    references to the contents.
+
+    .. image:: array_pointer_pointers.png
+
+
 For Next Class
 ==============
 
