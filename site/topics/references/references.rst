@@ -144,10 +144,8 @@ References
 .. note::
 
     As mentioned earlier, in reality Python would not actually store the contents of the list within the block of memory
-    allocated for the list. Instead, Python actually stores the contents of the list in their own memory locations and
-    the memory location for the list stores references to the location of the respective contents. This detail is
-    important, but fortunately we could ignore this detail here for the purpose of learning about references. Further,
-    Python takes care of these details behind the scenes so we do not need to think about this too much.
+    allocated for the list. Instead, Python stores the contents in their own memory locations and the list stores
+    references to the contents.
 
     .. image:: array_pointer_pointers.png
 
