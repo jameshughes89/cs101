@@ -43,124 +43,29 @@ Pre Lab Exercises
 Before Kattis
 =============
 
+#. Write a function ``linear_search(needle, haystack) -> bool:``
 
-**Before you do ANYTHING, take out a scrap piece of paper.** 
+    * The function will ``return`` ``True`` if ``needle`` exists within the list ``haystack`` and ``False`` otherwise
+    * This can use either a ``for`` loop or a ``while`` loop
+    * Write ``assert`` tests to verify correctness
 
-**Note, do not work on the assignments during labs. If you do, you will be asked to leave and will be given a zero for the lab.**
+#. Write a function ``index_of(needle, haystack) -> int:``
 
-Let's say we have this code:
+    * The function will ``return`` the index of the first occurrence of ``needle`` within the list ``haystack`` and ``-1`` if it is not found
+    * This can use either a ``for`` loop or a ``while`` loop
+    * Write ``assert`` tests to verify correctness
 
-.. code-block:: python
-   
-   twoD = [['a', 'b', 'c'],
-           ['d', 'e', 'f'],
-           ['g', 'h', 'i']]
-		
+#. Write a function ``replace_all(the_list, find, replace):``
 
-.. warning::
-   
-   Above is a 3x3 matrix. YOUR CODE SHOULD WORK ON ANY SIZED MATRIX THOUGH. 4x4, 5x23, 23098x198272973!!! 
-   
-   Long story short, this is **bad**; do **not** do this:
-   
-   .. code-block:: python
-   
-      def printRow(mat, row):
-         print(mat[row][0])
-         print(mat[row][1])
-         print(mat[row][2])
-   
+    * This function will replace all occurrences of ``find`` within ``the_list`` and replace them with ``replace``
+    * This function must ``return`` the modified list
+    * For example, ``replace_all([1, 2, 2, 3], 2, 9)`` -> ``[1, 9, 9, 3]``
+    * Write ``assert`` tests to verify correctness
 
-   
-**1**
+#. Use the ``replace_all`` function to change the list ``[1, 2, 2, 1]`` -> ``[2, 1, 1, 2]``
 
-Write a function ``printRow(mat, row)`` that will print out all the contents in a 2D matrix ``mat`` from a given row ``row``.
-
-ex:
-
->>> printRow(twoD, 1)
-d
-e
-f
-
-.. image:: matRow.png
-
-**2**
-
-Write a function ``printCol(mat, col)`` that will print out all the contents in a 2D matrix ``mat`` from a given col ``col``.
-
-ex:
-
->>> printCol(twoD, 2)
-c
-f
-i
-
-.. image:: matCol.png
-
-**3**
-
-Write a function ``printDownRight(mat)`` that will print out all the contents in a 2D matrix ``mat`` along the diagonal starting at the top left and ending at the bottom right.
-
-ex:
-
->>> printDownRight(twoD)
-a
-e
-i
-
-.. image:: matDiag3.png
-
-**4**
-
-Write a function ``printUpRight(mat)`` that will print out all the contents in a 2D matrix ``mat`` along the diagonal starting at the bottom right and ending at the top right.
-
-ex:
-
->>> printUpRight(twoD)
-g
-e
-c
-
-.. image:: matDiag4.png
-
-**5**
-
-Write a function ``printDownLeft(mat)`` that will work similarly to above, but starting in the top right. 
-
-.. image:: matDiag5.png
-
-**6**
-
-Write a function ``printUpLeft(mat)`` that will work similarly to above, but starting in the bottom right.
-
-.. image:: matDiag6.png
-
-**7**
-
-What happens if you were to use this list now?
-
-.. code-block:: python
-
-   uhoh = [['a', 'b', 'c', 'w'],
-           ['d', 'e', 'f', 'x'],
-           ['g', 'h', 'i', 'y'],
-           ['j', 'k', 'l', 'z']]
-		   
-
-All of your functions should still work as expected (see example below). If they do not, FIX THEM!!!!
-
->>> printCol(uhoh, 2)
-c
-f
-i
-l
-
->>> printUpRight(uhoh)
-j
-h
-f
-w
+    * You will need to use ``replace_all`` multiple times
+    * Write ``assert`` tests to verify correctness
 
 
 Kattis Problems
