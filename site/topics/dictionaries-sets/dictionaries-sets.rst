@@ -34,8 +34,7 @@ Tuples
 
     * Once they are created, we cannot change them
 
-* When compared to lists, tuples are quite *light weight*
-* This makes them ideal for when we need to pack some data together
+* They're ideal for when we need to pack some data together
 
     * For example, a tuple would be great for storing cartesian coordinate ``(x, y)``
     * Tuples were also used in the Starbucks assignment to store the latitude and longitude pairs
@@ -46,11 +45,6 @@ Tuples
         for row in starbucks_file_reader:
             location_tuple = (float(row[0]), float(row[1]))
             starbucks_locations.append(location_tuple)
-
-
-* Although there is nothing stopping one from using a list to store coordinates or latitude/longitude pairs, the less resource heavy tuples are sufficient
-
-    * We like it if we can have our program use less memory and run faster
 
 
 Dictionaries
