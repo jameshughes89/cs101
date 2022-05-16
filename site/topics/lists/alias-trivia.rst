@@ -86,11 +86,20 @@ Functions and Aliasing
 
     * The parameter within the function will be an alias
 
+.. code-block:: python
+    :linenos:
 
-.. admonition:: Activity
-    :class: activity
+    def add_to_list(some_list, value):
+        some_list.append(value)
 
-    Figure out the answer to this question empirically. Write a function that will prove to you which of the two options above is correct.
+    a_list = ['a', 'b', 'c']
+    add_to_list(a_list, 99)
+    print(a_list)   # Results in ['a', 'b', 'c', 99]
+
+
+* In the above example, although never access through ``a_list``, the list ``a_list`` references is altered through the alias ``some_list`` within the function ``add_to_list``
+
+
 
 Side effects
 ============
