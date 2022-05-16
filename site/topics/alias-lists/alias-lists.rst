@@ -1,80 +1,82 @@
 *********************
-List & Pointer Trivia
+Aliases & List Trivia
 *********************
 
 .. _label-topic8-aliasing:
 
-Aliasing
-========
+* The following code should be simple to understand at this stage
 
-* Pay attention here, because this is a *major* source of confusion for new programmers.
-    * It's not actually that weird, but it does trip people up
+.. code-block:: python
+    :linenos:
 
-* This code should look normal
+    a = 5
+    b = a
+    print(a, b)     # Results in 5 5
 
-    >>> a = 5
-    >>> b = a
-    >>> print(a, b)
-    5 5
-
-    >>> b = 7
-    >>> print(a, b)	# a will be left unchanged
-    5 7
+    b = 7
+    print(a, b)     # Results in 5 7 --- a is left unchanged
 
 
-* Suppose you have a **list**, ``big_list`` with 500 billion entries in it.
-* That's a big list. Probably uses a lot of RAM.
-    * A lot of space inside the computer.
-* Now you type:
-    >>> new_list = big_list
-* What seems like a better idea:
-    * Copy all 500 billion entries into ``new_list``, using twice as much RAM to store the same data.
-    * Memorize the fact that ``new_list`` is just another name (*alias*) for ``big_list``. Copy nothing.
-* Pretty obvious when you think about it that way, but less obvious when your lists only have 5 items in them.
-* like this:
-    >>> a=[1,2,3,4]
-    >>> print(a)
-    [1, 2, 3, 4]
+* And similarly, the below example should not surprise you
 
-	>>> b=a
-	>>> b[2]='Z'
-	>>> print(a)	# OMG, a was NOT left unchanged!!!!!!!!!
-	[1, 2, 'Z', 4]
-* You should probably pay attention to this
-    * Probably one of the more annoying things new computer scientists have to deal with
-* If you expect ``b`` to be a *full copy* of ``a``, what just happened makes no sense.
-* If you expect ``b`` just to be another name for ``a``, it makes perfect sense.
+.. code-block:: python
+    :linenos:
+
+    a = [0, 1, 2]
+    b = a           # b is an "alias" for a
+    print(a, b)     # Results in [0, 1, 2] [0, 1, 2]
+
+    b = [5, 6, 7]   # Change what b references
+    print(a, b)     # Results in [0, 1, 2] [5, 6, 7] --- a is left unchanged
+
+
+* **However**, the following may throw you off
+
+.. code-block:: python
+    :linenos:
+
+    a = [0, 1, 2]
+    b = a           # b is an "alias" for a
+    print(a, b)     # Results in [0, 1, 2] [0, 1, 2]
+
+    b[1] = 99       # Change index 1 of the list b references
+    print(a, b)     # Results in [0, 99, 2] [0, 99, 2]
+
+
+* Remember, ``a`` and ``b`` are both referencing **the same list**
+
+    * They are aliases
+    * There is only one list, but we have two references to that one list
+
+* Regardless of the variable used to modify the single list, it's the list that is being altered
+* If you expected the line ``b = a`` to make a full copy of the list referenced by ``a``, then this will seem strange
+* But the line ``b = a`` does **not** make a copy of the list --- it makes a copy of the reference to the list
 
 .. warning::
 
-    In Python, when you "assign" a list, you **are not copying the list**. You are saying 'this is another name for the exact same list'. You are giving it an *alias*.
-
-* The reason this is so upsetting is that this behaviour is *different* from what happens with simple values like ``int``, ``float``, etc. You have to make an effort to remember that "=" means something different for lists than it does for other types. C'est la vie.
-* Suppose you *really want* to **copy** your list instead of just giving it another name. You can do that easily enough using slicing: ``new_list = big_list[:]``. Slicing always creates a *new* list.
-
-    >>> a=[1,2,3,4]
-    >>> print(a)
-    [1, 2, 3, 4]
-
-	>>> b=a[:]
-	>>> b[2]='Z'
-	>>> print(a)
-	[1, 2, 3, 4]
+    This idea of references and aliases goes well beyond lists and will come up more as we progress through the course.
+    It is something you will get used to with practice, but be aware that mixing up references is a very common error
+    even experienced programmers run into.
 
 
-  .. raw:: html
+* If you do actually want to make a copy of a list, there are a few ways to do it
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/2F_qnTYA6g4" frameborder="0" allowfullscreen></iframe>
+    * Lists have a copy method that returns a copy ``new_list = some_list.copy()``
+    * It is also possible to slice the list to produce a copy ``new_list = some_list[:]``
 
-* Spend some time getting used to this concept. I promise you, 100%, it will cause bugs in your code.
-    * Happens to me all the time :(
+.. raw:: html
 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2F_qnTYA6g4" frameborder="0" allowfullscreen></iframe>
 
 
 .. admonition:: Activity
     :class: activity
 
-    Create a list named ``l``. Make an *alias* of the list named ``lalias``. Make a *copy* of the list named ``lcopy``. Prove to yourself that one is an alias and one is a copy.
+    #. Create a list ``l`` with arbitrary contents.
+    #. Create an alias of ``l`` called ``l_alias``\.
+    #. Create a copy of ``l`` called ``l_copy``\.
+
+    Convince yourself that you did in fact make an alias with ``l_alias`` and a copy with ``l_copy``\,
 
 
 Mind the rotating knives
