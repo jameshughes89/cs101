@@ -100,70 +100,44 @@ Functions and Aliasing
 * In the above example, although never access through ``a_list``, the list ``a_list`` references is altered through the alias ``some_list`` within the function ``add_to_list``
 
 
+Side Effects & Pure Functions
+-----------------------------
 
-Side effects
-============
+* ``add_to_list`` is an example of a function that has a *side effect*
 
+    * The function modified the list that was passed by reference
+    * The term *side effect* comes from our mathematical expectation of a *function*
 
-* Consider the code::
+        * A function maps some parameters on to a value
+        * If I give you the function :math:`f(x,y,z)= x + y - z` and ask you to evaluate :math:`f(1,2,3)`, you don't expect the values of `x`, `y` and `z` to change
 
-    def add_to_list(my_list):
-        my_list.append('appended')
+* We can write a different version of the function that has no side effect
 
-* Now consider the code::
+    * Functions without side effects are called *pure* functions
 
-    def add_to_list_2(my_list):
-        return my_list + ['appended']
+.. code-block:: python
+    :linenos:
 
-.. admonition:: Activity
-    :class: activity
+    def add_to_list_pure(some_list, value):
+        new_list = some_list.copy()
+        new_list.append(value)
+        return new_list
 
-    What happens when you do this?
-
-        >>> a = [1,2,3,4]
-        >>> add_to_list(a)
-        >>> print(a)
-
-   How about this:
-
-        >>> a = [1,2,3,4]
-        >>> add_to_list_2(a)
-        >>> print(a)
-
-   Finally, how about this:
-
-        >>> a = [1,2,3,4]
-        >>> b = add_to_list_2(a)
-        >>> print(a)
-        >>> print(b)
-
-* The function ``add_to_list`` *modified* the parameter you passed in.
-* The function ``add_to_list_2`` kept a respectful distance from your parameter and, instead, created a *new* list and *returned* that as the answer.
-* If a function modifies a parameter it is said to have *side effects*.
-    * The term "side effect" comes from our mathematical expectation of a "function". A function maps some parameters on to a value. If I give you the function `f(x,y,z)=x+y-z` and ask you to evaluate `f(1,2,3)`, you don't expect the values of `x`, `y` and `z` to change!
-
-Pure functions
-==============
-* If a function has no side effects, we call it a *pure function*.
-* Some programming languages allow *only* pure functions (e.g., `Haskell <http://www.haskell.org/haskellwiki/Haskell>`_).
-    * There are some nice theoretical, and practical benefits to this.
-* As you might guess from the ameliorative term "pure"... functions with side effects are considered... "not pure"... even downright dirty, by some folks.
-
-.. admonition:: Activity
-    :class: activity
-
-    Think of three potential advantages to pure functions over functions with side effects.
+    a_list = ['a', 'b', 'c']
+    other_list = add_to_list_pure(a_list, 99)
+    print(a_list)           # Results in ['a', 'b', 'c']
+    print(other_list)       # Results in ['a', 'b', 'c', 99]
 
 
-Who wants to be pure?
-=====================
-* Anything you can possibly do with a computer *can* be done with pure functions...
-* ... but... some stuff is just plain easier to do with side effects.
-* This is a course for working scientists, so let's be pragmatic:
-    * Write pure functions when practical to do so. The advantages make it worthwhile.
-    * If it really is a lot easier to do the job with side effects... just do it and don't lose sleep over it.
+* In the new function ``add_to_list_pure``, the function makes a copy of the list passed by reference and made changes to the copy
+* The new list was returned
 
+    * In the end, the original list's data was left alone
 
+* There are nice theoretical and practical benefits to keeping functions pure
+* But that does not mean that non-pure functions are intrinsically bad
+
+    * Sometimes it's just a lot easier to achieve something with side effects
 
 
 Nested lists
