@@ -9,6 +9,48 @@ Tuples, Dictionaries, and Sets
 Tuples
 ======
 
+* A tuple looks and behaves similar to a list, but has slightly different syntax
+
+    * Tuples use parentheses ``(``\, ``)``)
+
+    .. code-block:: python
+        :linenos:
+
+        some_tuple = (10, 11)
+        print(some_tuple)   # Results in (10, 11)
+
+
+* They are both ordered sequences of data
+* They can be indexed like lists
+
+    .. code-block:: python
+        :linenos:
+
+        some_tuple = (10, 11)
+        print(some_tuple[0])   # Results in 10
+
+
+* But unlike lists, tuples are immutable
+
+    * Once they are created, we cannot change them
+
+* When compared to lists, tuples are quite *light weight*
+* This makes them ideal for when we need to pack some data together
+
+    * For example, a tuple would be great for storing cartesian coordinate ``(x, y)``
+    * Tuples were also used in the Starbucks assignment to store the latitude and longitude pairs
+
+    .. code-block:: python
+        :linenos:
+
+        for row in starbucks_file_reader:
+            location_tuple = (float(row[0]), float(row[1]))
+            starbucks_locations.append(location_tuple)
+
+
+* Although there is nothing stopping one from using a list to store coordinates or latitude/longitude pairs, the less resource heavy tuples are sufficient
+
+    * We like it if we can have our program use less memory and run faster
 
 
 
