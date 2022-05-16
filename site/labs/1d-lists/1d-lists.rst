@@ -37,7 +37,6 @@ Pre Lab Exercises
 
     * 5
     * 6
-    * 7
 
 
 Before Kattis
