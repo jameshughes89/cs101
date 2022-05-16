@@ -224,10 +224,10 @@ List Trivia
     #. What if your list was length :math:`10,000`?
 
 	  	  
-For next class
+For Next Class
 ==============
-* Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
-* Read `chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
-* Read `chapter 9 of the text <http://openbookproject.net/thinkcs/python/english3e/tuples.html>`_
-* Read `chapter 20 of the text <http://openbookproject.net/thinkcs/python/english3e/dictionaries.html>`_
+* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
+* Read `Chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
+* Read `Chapter 9 of the text <http://openbookproject.net/thinkcs/python/english3e/tuples.html>`_
+* Read `Chapter 20 of the text <http://openbookproject.net/thinkcs/python/english3e/dictionaries.html>`_
 
