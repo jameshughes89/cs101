@@ -129,8 +129,7 @@ Course Notes
     topics/strings/strings
     topics/lists/lists
     topics/references/references
-    topics/more-lists/more-lists
-    topics/tuples-dictionaries-sets/tuples-dictionaries-sets
+    topics/alias-lists/alias-lists
     topics/debug/debug
     topics/fileIO/fileIO
     topics/exceptions/exceptions
