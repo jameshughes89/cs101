@@ -2,12 +2,16 @@
 Tuples, Dictionaries, and Sets
 ******************************
 
-* So far we have seen *lists* and *numpy arrays*. 
+* In addition to lists, there are a few other noteworthy datastructures we will look at in this course
+* Although they will not be used as much as lists, it's important to be aware of the tools you have at your disposal
 
-* Let's have a look at a few more. 
 
 Tuples
 ======
+
+
+
+
 * A tuple looks a lot like a list, but with ``()`` instead of ``[]``:
 
     >>> tup = (5,3)
