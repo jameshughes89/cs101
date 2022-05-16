@@ -79,13 +79,13 @@ Aliases & List Trivia
     Convince yourself that you did in fact make an alias with ``l_alias`` and a copy with ``l_copy``\,
 
 
-Mind the rotating knives
-========================
+Functions and Aliasing
+======================
 
-* Remember how assigning lists wasn't really *copying* them, but just creating a new name?
-* I wonder what happens when you pass a list to a function as an argument?
-    * Does the function get it's own copy?
-    * ... or does the function just get an alias to the same list?
+* When a list is given to a function, the parameter will get a reference to the list and not a copy of the list
+
+    * The parameter within the function will be an alias
+
 
 .. admonition:: Activity
     :class: activity
