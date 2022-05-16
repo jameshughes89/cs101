@@ -1,5 +1,5 @@
 *********************
-List & Pointer Trivia
+Aliases & List Trivia
 *********************
 
 .. _label-topic8-aliasing:
