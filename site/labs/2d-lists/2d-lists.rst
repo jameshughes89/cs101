@@ -42,123 +42,107 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-**Before you do ANYTHING, take out a scrap piece of paper.** 
+.. note::
 
-**Note, do not work on the assignments during labs. If you do, you will be asked to leave and will be given a zero for the lab.**
+    Although the below example is a 3x3 matrix (list of lists), your functions should work on any sized matrix. For
+    example, 4x4, 5x23, 230x19973.
 
-Let's say we have this code:
+    In other words, the following is not correct as it will only ever work for a 3x3 matrix.
 
-.. code-block:: python
-   
-   twoD = [['a', 'b', 'c'],
-           ['d', 'e', 'f'],
-           ['g', 'h', 'i']]
-		
+        .. code-block:: python
 
-.. warning::
-   
-   Above is a 3x3 matrix. YOUR CODE SHOULD WORK ON ANY SIZED MATRIX THOUGH. 4x4, 5x23, 23098x198272973!!! 
-   
-   Long story short, this is **bad**; do **not** do this:
-   
-   .. code-block:: python
-   
-      def printRow(mat, row):
-         print(mat[row][0])
-         print(mat[row][1])
-         print(mat[row][2])
-   
+            def printRow(mat, row):
+                print(mat[row][0])
+                print(mat[row][1])
+                print(mat[row][2])
 
-   
-**1**
 
-Write a function ``printRow(mat, row)`` that will print out all the contents in a 2D matrix ``mat`` from a given row ``row``.
+Given the following code:
 
-ex:
+    .. code-block:: python
 
->>> printRow(twoD, 1)
-d
-e
-f
+        twoD = [['a', 'b', 'c'],
+                ['d', 'e', 'f'],
+                ['g', 'h', 'i']]
+
+
+#. Write a function ``print_row(matrix, row: int):``
+
+    * ``matrix`` is a list of lists (2D list)
+    * ``row`` is the specified row to print
+    * The function will print out the values from the specified row
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matRow.png
 
-**2**
 
-Write a function ``printCol(mat, col)`` that will print out all the contents in a 2D matrix ``mat`` from a given col ``col``.
+#. Write a function ``print_column(matrix, column: int):``
 
-ex:
-
->>> printCol(twoD, 2)
-c
-f
-i
+    * ``matrix`` is a list of lists (2D list)
+    * ``column`` is the specified column to print
+    * The function will print out the values from the specified column
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matCol.png
 
-**3**
 
-Write a function ``printDownRight(mat)`` that will print out all the contents in a 2D matrix ``mat`` along the diagonal starting at the top left and ending at the bottom right.
+#. Write a function ``print_down_right(matrix):``
 
-ex:
-
->>> printDownRight(twoD)
-a
-e
-i
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the top left moving down to the right
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matDiag3.png
 
-**4**
 
-Write a function ``printUpRight(mat)`` that will print out all the contents in a 2D matrix ``mat`` along the diagonal starting at the bottom right and ending at the top right.
+#. Write a function ``print_up_right(matrix):``
 
-ex:
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the bottom left moving up to the right
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
->>> printUpRight(twoD)
-g
-e
-c
 
 .. image:: matDiag4.png
 
-**5**
 
-Write a function ``printDownLeft(mat)`` that will work similarly to above, but starting in the top right. 
+#. Write a function ``print_down_left(matrix):``
+
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the top right moving down to the left
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matDiag5.png
 
-**6**
 
-Write a function ``printUpLeft(mat)`` that will work similarly to above, but starting in the bottom right.
+#. Write a function ``print_up_left(matrix):``
+
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the bottom right moving up to the left
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matDiag6.png
 
-**7**
 
-What happens if you were to use this list now?
+#. What happens if you run your functions with the following matrix? Ensure each function works as expected.
 
-.. code-block:: python
+    .. code-block:: python
 
-   uhoh = [['a', 'b', 'c', 'w'],
-           ['d', 'e', 'f', 'x'],
-           ['g', 'h', 'i', 'y'],
-           ['j', 'k', 'l', 'z']]
-		   
-
-All of your functions should still work as expected (see example below). If they do not, FIX THEM!!!!
-
->>> printCol(uhoh, 2)
-c
-f
-i
-l
-
->>> printUpRight(uhoh)
-j
-h
-f
-w
+       fourXfour = [['a', 'b', 'c', 'w'],
+                    ['d', 'e', 'f', 'x'],
+                    ['g', 'h', 'i', 'y'],
+                    ['j', 'k', 'l', 'z']]
 
 
 Kattis Problems
