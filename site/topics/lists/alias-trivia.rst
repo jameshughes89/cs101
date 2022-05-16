@@ -109,7 +109,7 @@ Side Effects & Pure Functions
     * The term *side effect* comes from our mathematical expectation of a *function*
 
         * A function maps some parameters on to a value
-        * If I give you the function :math:`f(x,y,z)= x + y - z` and ask you to evaluate :math:`f(1,2,3)`, you don't expect the values of `x`, `y` and `z` to change
+        * If I give you the function :math:`f(x, y, z)= x + y - z` and ask you to evaluate :math:`f(1, 2, 3)`, you don't expect the values of :math:`x`, :math:`y` and :math:`z` to change
 
 * We can write a different version of the function that has no side effect
 
