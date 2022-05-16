@@ -53,57 +53,6 @@ Tuples
     * We like it if we can have our program use less memory and run faster
 
 
-
-* A tuple looks a lot like a list, but with ``()`` instead of ``[]``:
-
-    >>> tup = (5,3)
-    >>> print(tup)
-    (5, 3)
-
-* Handy for storing something like an (x,y) co-ordinate pair.   
-
-* If a tuple is exactly like a list, why would I use it? It must be different *somehow*
-
-.. admonition:: Activity
-    :class: activity
-
-    Figure out how tuples differ from lists (other than using different types of brackets!). 
-
-    Some questions you might ask: Are tuples *mutable*? Do tuples have *built in functions*? (e.g., something like ``tup.max()``?)
-   
-* So why would you ever use a tuple instead of a list?
-
-* Well, you don't have to. Anything you can do with tuples, you can do with lists. But, because they are immutable:
-    * Tuples are *faster*
-    * Tuples prevent you from overwriting something that shouldn't be overwritten
-   
-**Here is a pretty cool use of numpy arrays and tuples**
-
-    >>> a = numpy.arange(25).reshape(5,5)
-    >>> print(a)
-    [[ 0  1  2  3  4]
-     [ 5  6  7  8  9]
-     [10 11 12 13 14]
-     [15 16 17 18 19]
-     [20 21 22 23 24]]
-     
-    >>> print(a[1,2])
-    7
-   
-* Ok, so far the above is not really anything special. 
-* But let's say I was asking someone to give me like a ``(x,y)`` coordinate. 
-
-    >>> coord = (1, 2)
-
-* So above we're storing it as a tuple. Nothing special so far here either.
-
-    >>> print(a[coord])
-    7
-   
-* Woah! We just indexed a numpy array wit a tuple!
-    * Note that the origin in this situation is top left, not bottom left.   
-        * When I say origin, I mean like (0,0) on a `Cartesian plane <https://en.wikipedia.org/wiki/Cartesian_coordinate_system>`_
-
 Dictionaries
 ============
 * Python Dictionaries are a more complex data structure than what we've seen so far.
