@@ -2,61 +2,50 @@
 Tuples, Dictionaries, and Sets
 ******************************
 
-* So far we have seen *lists* and *numpy arrays*. 
+* In addition to lists, there are a few other noteworthy datastructures we will look at in this course
+* Although they will not be used as much as lists, it's important to be aware of the tools you have at your disposal
 
-* Let's have a look at a few more. 
 
 Tuples
 ======
-* A tuple looks a lot like a list, but with ``()`` instead of ``[]``:
 
-    >>> tup = (5,3)
-    >>> print(tup)
-    (5, 3)
+* A tuple looks and behaves similar to a list, but has slightly different syntax
 
-* Handy for storing something like an (x,y) co-ordinate pair.   
+    * Tuples use parentheses ``(``\, ``)``)
 
-* If a tuple is exactly like a list, why would I use it? It must be different *somehow*
+    .. code-block:: python
+        :linenos:
 
-.. admonition:: Activity
-    :class: activity
+        some_tuple = (10, 11)
+        print(some_tuple)   # Results in (10, 11)
 
-    Figure out how tuples differ from lists (other than using different types of brackets!). 
 
-    Some questions you might ask: Are tuples *mutable*? Do tuples have *built in functions*? (e.g., something like ``tup.max()``?)
-   
-* So why would you ever use a tuple instead of a list?
+* They are both ordered sequences of data
+* They can be indexed like lists
 
-* Well, you don't have to. Anything you can do with tuples, you can do with lists. But, because they are immutable:
-    * Tuples are *faster*
-    * Tuples prevent you from overwriting something that shouldn't be overwritten
-   
-**Here is a pretty cool use of numpy arrays and tuples**
+    .. code-block:: python
+        :linenos:
 
-    >>> a = numpy.arange(25).reshape(5,5)
-    >>> print(a)
-    [[ 0  1  2  3  4]
-     [ 5  6  7  8  9]
-     [10 11 12 13 14]
-     [15 16 17 18 19]
-     [20 21 22 23 24]]
-     
-    >>> print(a[1,2])
-    7
-   
-* Ok, so far the above is not really anything special. 
-* But let's say I was asking someone to give me like a ``(x,y)`` coordinate. 
+        some_tuple = (10, 11)
+        print(some_tuple[0])   # Results in 10
 
-    >>> coord = (1, 2)
 
-* So above we're storing it as a tuple. Nothing special so far here either.
+* But unlike lists, tuples are immutable
 
-    >>> print(a[coord])
-    7
-   
-* Woah! We just indexed a numpy array wit a tuple!
-    * Note that the origin in this situation is top left, not bottom left.   
-        * When I say origin, I mean like (0,0) on a `Cartesian plane <https://en.wikipedia.org/wiki/Cartesian_coordinate_system>`_
+    * Once they are created, we cannot change them
+
+* They're ideal for when we need to pack some data together
+
+    * For example, a tuple would be great for storing cartesian coordinate ``(x, y)``
+    * Tuples were also used in the Starbucks assignment to store the latitude and longitude pairs
+
+    .. code-block:: python
+        :linenos:
+
+        for row in starbucks_file_reader:
+            location_tuple = (float(row[0]), float(row[1]))
+            starbucks_locations.append(location_tuple)
+
 
 Dictionaries
 ============
