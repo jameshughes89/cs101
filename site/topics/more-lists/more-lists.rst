@@ -4,22 +4,17 @@ Aliases & List Trivia
 
 .. _label-topic8-aliasing:
 
-Aliasing
-========
+* The following code should be simple to understand at this stage
 
-* Pay attention here, because this is a *major* source of confusion for new programmers.
-    * It's not actually that weird, but it does trip people up
+.. code-block:: python
+    :linenos:
 
-* This code should look normal
+    a = 5
+    b = a
+    print(a, b)     # Results in 5 5
 
-    >>> a = 5
-    >>> b = a
-    >>> print(a, b)
-    5 5
-
-    >>> b = 7
-    >>> print(a, b)	# a will be left unchanged
-    5 7
+    b = 7
+    print(a, b)     # Results in 5 7 --- a is left unchanged
 
 
 * Suppose you have a **list**, ``big_list`` with 500 billion entries in it.
