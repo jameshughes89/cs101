@@ -35,9 +35,8 @@ Pre Lab Exercises
 
 #. `Chapter 11 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/lists.html#exercises>`_
 
-    * 5
-    * 6
     * 7
+    * 8
 
 
 Before Kattis
