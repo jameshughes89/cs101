@@ -2,151 +2,174 @@
 2D Lists
 ********
 
+* Feel free to use your laptop if you have it
+* Ensure I have recorded your completion --- failure to do so will result in a grade of 0
+* I strongly encourage you to work with others in the lab
+
+    * When you get stuck, do me a favour and ask those sitting around you for help
+    * I want people to get used to working together in the labs
+    * Peer teaching and peer learning is super effective
+
+.. note::
+
+    To obtain full marks for the lab, you must:
+
+        #. Have completed the pre-lab exercises
+        #. Have been working on the lab content
+        #. Demonstrate competency in the topics
+
+
+Pre Lab Exercises
+=================
+
+.. warning::
+
+    You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
+    you will be asked to leave and you will obtain a grade of 0 for the lab.
+
+
+* For all exercises
+
+    * Do **not** make a ``vector.py`` file, just use Colab like you have been
+    * Use ``assert`` to test instead of their ``test`` function
+
+#. `Chapter 11 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/lists.html#exercises>`_
+
+    * 7
+    * 8
+
+
 Before Kattis
 =============
 
-**Before you do ANYTHING, take out a scrap piece of paper.** 
+.. note::
 
-**Note, do not work on the assignments during labs. If you do, you will be asked to leave and will be given a zero for the lab.**
+    Although the below example is a 3x3 matrix (list of lists), your functions should work on any sized matrix. For
+    example, 4x4, 5x23, 230x19973.
 
-Let's say we have this code:
+    In other words, the following is not correct as it will only ever work for a 3x3 matrix.
 
-.. code-block:: python
-   
-   twoD = [['a', 'b', 'c'],
-           ['d', 'e', 'f'],
-           ['g', 'h', 'i']]
-		
+        .. code-block:: python
 
-.. warning::
-   
-   Above is a 3x3 matrix. YOUR CODE SHOULD WORK ON ANY SIZED MATRIX THOUGH. 4x4, 5x23, 23098x198272973!!! 
-   
-   Long story short, this is **bad**; do **not** do this:
-   
-   .. code-block:: python
-   
-      def printRow(mat, row):
-         print(mat[row][0])
-         print(mat[row][1])
-         print(mat[row][2])
-   
+            def printRow(mat, row):
+                print(mat[row][0])
+                print(mat[row][1])
+                print(mat[row][2])
 
-   
-**1**
 
-Write a function ``printRow(mat, row)`` that will print out all the contents in a 2D matrix ``mat`` from a given row ``row``.
+Given the following code:
 
-ex:
+    .. code-block:: python
 
->>> printRow(twoD, 1)
-d
-e
-f
+        twoD = [['a', 'b', 'c'],
+                ['d', 'e', 'f'],
+                ['g', 'h', 'i']]
+
+
+#. Write a function ``print_row(matrix, row: int):``
+
+    * ``matrix`` is a list of lists (2D list)
+    * ``row`` is the specified row to print
+    * The function will print out the values from the specified row
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matRow.png
 
-**2**
 
-Write a function ``printCol(mat, col)`` that will print out all the contents in a 2D matrix ``mat`` from a given col ``col``.
+#. Write a function ``print_column(matrix, column: int):``
 
-ex:
-
->>> printCol(twoD, 2)
-c
-f
-i
+    * ``matrix`` is a list of lists (2D list)
+    * ``column`` is the specified column to print
+    * The function will print out the values from the specified column
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matCol.png
 
-**3**
 
-Write a function ``printDownRight(mat)`` that will print out all the contents in a 2D matrix ``mat`` along the diagonal starting at the top left and ending at the bottom right.
+#. Write a function ``print_down_right(matrix):``
 
-ex:
-
->>> printDownRight(twoD)
-a
-e
-i
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the top left moving down to the right
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matDiag3.png
 
-**4**
 
-Write a function ``printUpRight(mat)`` that will print out all the contents in a 2D matrix ``mat`` along the diagonal starting at the bottom right and ending at the top right.
+#. Write a function ``print_up_right(matrix):``
 
-ex:
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the bottom left moving up to the right
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
->>> printUpRight(twoD)
-g
-e
-c
 
 .. image:: matDiag4.png
 
-**5**
 
-Write a function ``printDownLeft(mat)`` that will work similarly to above, but starting in the top right. 
+#. Write a function ``print_down_left(matrix):``
+
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the top right moving down to the left
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matDiag5.png
 
-**6**
 
-Write a function ``printUpLeft(mat)`` that will work similarly to above, but starting in the bottom right.
+#. Write a function ``print_up_left(matrix):``
+
+    * ``matrix`` is a list of lists (2D list)
+    * The function will print out the values of the matrix diagonal starting in the bottom right moving up to the left
+    * Each value can be on its own line
+    * The function will not return anything
+    * Verify correctness by running the function on multiple 2D lists
 
 .. image:: matDiag6.png
 
-**7**
 
-What happens if you were to use this list now?
+#. To verify that your functions work on arbitrary sized 2D lists, what happens if you run your functions with the following matrix?
 
-.. code-block:: python
+        * Ensure each function works as expected
+        * If the functions are only printing out three values, there is something wrong
 
-   uhoh = [['a', 'b', 'c', 'w'],
-           ['d', 'e', 'f', 'x'],
-           ['g', 'h', 'i', 'y'],
-           ['j', 'k', 'l', 'z']]
-		   
+    .. code-block:: python
 
-All of your functions should still work as expected (see example below). If they do not, FIX THEM!!!!
-
->>> printCol(uhoh, 2)
-c
-f
-i
-l
-
->>> printUpRight(uhoh)
-j
-h
-f
-w
+       fourXfour = [['a', 'b', 'c', 'w'],
+                    ['d', 'e', 'f', 'x'],
+                    ['g', 'h', 'i', 'y'],
+                    ['j', 'k', 'l', 'z']]
 
 
 Kattis Problems
 ===============
 
-Grab a scrap piece of paper to start scratching your ideas down on paper. The problems are getting tricky enough where this really is becoming a requirement. 
+* You should be using a scrap piece of paper to work out the ideas for the following problems
 
-1. https://open.kattis.com/problems/bijele
-2. https://open.kattis.com/problems/cold
-3. https://open.kattis.com/problems/nastyhacks
-4. https://open.kattis.com/problems/grassseed
-5. https://open.kattis.com/problems/pet
-6. https://open.kattis.com/problems/batterup
-7. https://open.kattis.com/problems/aboveaverage
-8. https://open.kattis.com/problems/icpcawards
-9. https://open.kattis.com/problems/quickbrownfox
-10. https://open.kattis.com/problems/nodup
-11. https://open.kattis.com/problems/conundrum
-12. https://open.kattis.com/problems/bela
-13. https://open.kattis.com/problems/kornislav
+    * The problems you are to solve are getting too complex to try to solve by just coding
+    * Trying to solve problems by just typing away will not yield success
 
+#. https://open.kattis.com/problems/bijele
+#. https://open.kattis.com/problems/cold
+#. https://open.kattis.com/problems/nastyhacks
+#. https://open.kattis.com/problems/grassseed
+#. https://open.kattis.com/problems/pet
+#. https://open.kattis.com/problems/batterup
+#. https://open.kattis.com/problems/aboveaverage
+#. https://open.kattis.com/problems/icpcawards
+#. https://open.kattis.com/problems/quickbrownfox
+#. https://open.kattis.com/problems/nodup
+#. https://open.kattis.com/problems/conundrum
+#. https://open.kattis.com/problems/bela
+#. https://open.kattis.com/problems/kornislav
 
+.. warning::
 
-If you finish the lab, go back and work on incomplete problems from previous labs. 
-
-If you have somehow finished everything so far, go check out `LeetCode <https://leetcode.com/problemset/all/>`_. Sort the problems by *Acceptance* (click the table header) and start seeing if you can solve some of these problems. 
-
-**ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
+    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
