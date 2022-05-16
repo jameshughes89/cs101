@@ -17,6 +17,21 @@ Aliases & List Trivia
     print(a, b)     # Results in 5 7 --- a is left unchanged
 
 
+
+* And similarly, the below example should not surprise you
+
+.. code-block:: python
+    :linenos:
+
+    a = [0, 1, 2]
+    b = a           # b is an "alias" for a
+    print(a, b)     # Results in [0, 1, 2] [0, 1, 2]
+
+    b = [5, 6, 7]
+    print(a, b)     # Results in [0, 1, 2] [5, 6, 7] --- a is left unchanged
+
+
+
 * Suppose you have a **list**, ``big_list`` with 500 billion entries in it.
 * That's a big list. Probably uses a lot of RAM.
     * A lot of space inside the computer.
