@@ -17,7 +17,6 @@ Aliases & List Trivia
     print(a, b)     # Results in 5 7 --- a is left unchanged
 
 
-
 * And similarly, the below example should not surprise you
 
 .. code-block:: python
@@ -29,7 +28,6 @@ Aliases & List Trivia
 
     b = [5, 6, 7]   # Change what b references
     print(a, b)     # Results in [0, 1, 2] [5, 6, 7] --- a is left unchanged
-
 
 
 * **However**, the following may throw you off
