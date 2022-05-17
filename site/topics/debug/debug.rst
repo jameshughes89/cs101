@@ -16,26 +16,17 @@ Debugging
 .. image:: hi.jpg
 
 
-The importance of debugging
+The Importance of Debugging
 ===========================
 
-* The more complex your programs get, the more time you'll spend debugging.
-* No matte how *good* you are as a programmer, you still spend **a lot** of time debugging.
-* The number one thing my friends in industry tell me that they wish more CS graduates knew more of is **debugging**!
+* As our programs get more and more complex, the types of errors we come across can increase in complexity
+* No matter how *good* of a programmer you are, you will still spend much of your time debugging
+* Beyond the obvious benefit of fixing your code, debugging helps us improve many important skills:
 
-* Beyond being an immediately useful skill for fixing broken programs, the ability to effectively debug demonstrates:
-  
-    * Knowledge of algorithms and programming in general
+    * Knowledge of algorithms
     * Knowledge of the programming language
     * The ability to reason logically
     * The ability to reason about flow of execution in code
-	 
-* That's why we've waited so long to formally discuss debugging. There are a lot of prerequisites.
-	
-
-.. Warning::
-
-    Debugging (especially more rigorous approaches) may seem hard and/or boring at first. Hang in there. The ability to logically debug can, literally, save you *days* of time when there is a problem in your code.	
 
    
 Syntax errors
