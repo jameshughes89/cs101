@@ -2,20 +2,22 @@
 Debugging
 *********
 
-It's broke, I give up!
-======================
+* At this stage we have written quite a few algorithms
+* We have also gotten comfortable writing assertion tests for our algorithms
+* However, at this stage we've likely had more bugs than working code
 
-* By now, you'll have experienced code that doesn't do what you want it to.
-* You may have developed some coping strategies to help you fix things.
-* You were probably frustrated.
-* You may have just randomly changed stuff until it worked.
-* We're sophisticated enough now that we can start looking for more formal processes 
-  for tackling these kind of problems.
+    * Having bugs in your code is normal --- programmers spend more time debugging than actually writing code
+    * It would be weird if you didn't have bugs
+    * Remember, your code will be wrong every time you run it until it's correct
+
+* You have probably come up with a system for debugging
+* In this topic, we will discuss a few popular and accessible debugging strategies
+
+.. image:: hi.jpg
+
 
 The importance of debugging
 ===========================
-
-.. image:: hi.jpg
 
 * The more complex your programs get, the more time you'll spend debugging.
 * No matte how *good* you are as a programmer, you still spend **a lot** of time debugging.
