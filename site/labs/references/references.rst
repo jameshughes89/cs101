@@ -105,28 +105,28 @@ Before Kattis
 Kattis Problems
 ===============
 
-These are the same problems from last week. They're good problems. Keep going. Start where you left off. 
+Kattis Problems
+===============
 
-Grab a scrap piece of paper to start scratching your ideas down on paper. The problems are getting tricky enough where this really is becoming a requirement. 
+* You should be using a scrap piece of paper to work out the ideas for the following problems
 
-1. https://open.kattis.com/problems/bijele
-2. https://open.kattis.com/problems/cold
-3. https://open.kattis.com/problems/nastyhacks
-4. https://open.kattis.com/problems/grassseed
-5. https://open.kattis.com/problems/pet
-6. https://open.kattis.com/problems/batterup
-7. https://open.kattis.com/problems/aboveaverage
-8. https://open.kattis.com/problems/icpcawards
-9. https://open.kattis.com/problems/quickbrownfox
-10. https://open.kattis.com/problems/nodup
-11. https://open.kattis.com/problems/conundrum
-12. https://open.kattis.com/problems/bela
-13. https://open.kattis.com/problems/kornislav
+    * The problems you are to solve are getting too complex to try to solve by just coding
+    * Trying to solve problems by just typing away will not yield success
 
+#. https://open.kattis.com/problems/bijele
+#. https://open.kattis.com/problems/cold
+#. https://open.kattis.com/problems/nastyhacks
+#. https://open.kattis.com/problems/grassseed
+#. https://open.kattis.com/problems/pet
+#. https://open.kattis.com/problems/batterup
+#. https://open.kattis.com/problems/aboveaverage
+#. https://open.kattis.com/problems/icpcawards
+#. https://open.kattis.com/problems/quickbrownfox
+#. https://open.kattis.com/problems/nodup
+#. https://open.kattis.com/problems/conundrum
+#. https://open.kattis.com/problems/bela
+#. https://open.kattis.com/problems/kornislav
 
-LeetCode Problems
-=================
+.. warning::
 
-If you have somehow finished everything so far, go check out `LeetCode <https://leetcode.com/problemset/all/>`_. Sort the problems by *Acceptance* (click the table header) and start seeing if you can solve some of these problems. 
-
-**ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
+    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
