@@ -40,13 +40,15 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-.. Warning::
-   Before you do ANYTHING, take out a scrap piece of paper. If I do not see your paper at the end of the lab, you will get **0** on this lab. 
+#. Run the following code and figure out what what it does and how it does it
 
+    * I want to see everyone with paper here working through the logic
+    * If you can't figure it out, hack around with the code
 
-**1**
+        * Comment out bits
+        * Print out values
+        * Do whatever you need to do to figure it out
 
-Run the below code and **figure out what exactly is going on**. I want to see everyone with paper here working through the logic. If you can't figure it out, hack around with the code. Comment out bits. Print out bits. Do whatever you need to do to figure it out. 
 
 .. code-block:: python
     :linenos:
@@ -62,42 +64,42 @@ Run the below code and **figure out what exactly is going on**. I want to see ev
         print(toPrint)
 
 
+#. Add ``b[1][1] = 1`` to line 3 and run it again and see what happens
 
-**2**
+    * Is this what you expected?
 
-Add ``b[1][1] = 1`` to line 3 and run it again. Is this what you wanted? (no, it's not). Fix this code such that the output will be what's below. **Hint:** Change the list setup part, not the loops.  
 
+#. Alter the code such that the output will be what's below.
+
+    * Change the list setup/creation part, not the loops
 
 .. code-block:: python
 
-    0 0 0 
-    0 1 0 
+    0 0 0
+    0 1 0
     0 0 0
 
-**2.5**
 
-Change line 3 ``b[0][1] = 1`` and hit run. Did it do what you expected?
+#. Add ``b[0][1] = 1`` to line 3 and run it again and see what happens
 
+    * Is this what you expected?
 
-**3**
+#. Given a list of integers, return, in a list, indices of two numbers such that they add up to a specific target
 
-Given a list of integers, return indices of the two numbers such that they add up to a specific target.
+    * You may assume that each input would have exactly one solution
+    * You may not use the same element twice
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+    * For example, given ``nums = [2, 7, 11, 15]``, target = ``9``
 
-EXAMPLE
-
-Given ``nums = [2, 7, 11, 15]``, target = ``9``,
-
-Because ``nums[0]`` + ``nums[1]`` = ``2`` + ``7`` = ``9``,
-
-return ``[0, 1]``.
+        * Since ``nums[0]`` + ``nums[1]`` = ``2`` + ``7`` = ``9``
+        * Return ``[0, 1]``
 
 
+#. Think about how much work your algorithm for the previous question had to do in terms of :math:`n`, where :math:`n` is the length of the list
 
-**4**
-
-Think about how much work your algorithm for **3** had to do in terms of *n*, where *n* is the length of the list. Can you somehow think of a better algorithm that would do less work? Don't spend too much time on this if you can't come up with a solution. Just give yourself a fair chance. **Hint:** Dictionaries...  
+    * Can you somehow think of a better algorithm that would do less work?
+    * Don't spend too much time on this if you can't come up with a solution
+    * **Hint:** Dictionaries
  
 
 Kattis Problems
