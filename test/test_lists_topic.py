@@ -1,6 +1,6 @@
 import unittest
 
-from src.lists_topic import contains_while, index_of_for
+from src.lists_topic import contains_while, index_of_for, my_sum
 
 
 class TestListsTopic(unittest.TestCase):
@@ -36,3 +36,15 @@ class TestListsTopic(unittest.TestCase):
 
     def test_index_of_for_search_for_duplicate_matching_elements_returns_index_of_first_occurrence(self):
         self.assertEqual(1, index_of_for(1, ["a", 1, 1, 2.0, False]))
+
+    def test_my_sum_empty_list_returns_0(self):
+        self.assertEqual(0, my_sum([]))
+
+    def test_my_sum_single_element_returns_value_of_element(self):
+        self.assertEqual(1, my_sum([1]))
+
+    def test_my_sum_positive_and_negative_values_returns_correct_sum(self):
+        self.assertEqual(0, my_sum([1, -1]))
+
+    def test_my_sum_arbitrary_list_returns_correct_sum(self):
+        self.assertEqual(15, my_sum([0, 1, 2, 3, 4, 5]))

@@ -57,3 +57,26 @@ assert -1 == index_of_for("b", ["a", 1, 2.0, False])
 assert 0 == index_of_for("a", ["a", 1, 2.0, False])
 assert 3 == index_of_for(False, ["a", 1, 2.0, False])
 assert 1 == index_of_for(1, ["a", 1, 1, 2.0, False])
+
+
+def my_sum(a_list) -> float:
+    """
+    Calculates and returns the sum of the contents of the provided list.
+
+    :param a_list:  Some list of numbers to be added together
+    :type a_list: A list of some type that can be added together
+    :return: The sum of the contents of the list
+    :rtype: Float
+    """
+    sum = 0
+    for value in a_list:
+        sum += value
+    return sum
+
+
+# my_sum tests
+assert 0 == my_sum([])
+assert 0 == my_sum([0, 0])
+assert 1 == my_sum([1])
+assert 0 == my_sum([1, -1])
+assert 15 == my_sum([0, 1, 2, 3, 4, 5])
