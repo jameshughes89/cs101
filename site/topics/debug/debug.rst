@@ -2,38 +2,31 @@
 Debugging
 *********
 
-It's broke, I give up!
-======================
+* At this stage we have written quite a few algorithms
+* We have also gotten comfortable writing assertion tests for our algorithms
+* However, at this stage we've likely had more bugs than working code
 
-* By now, you'll have experienced code that doesn't do what you want it to.
-* You may have developed some coping strategies to help you fix things.
-* You were probably frustrated.
-* You may have just randomly changed stuff until it worked.
-* We're sophisticated enough now that we can start looking for more formal processes 
-  for tackling these kind of problems.
+    * Having bugs in your code is normal --- programmers spend more time debugging than actually writing code
+    * It would be weird if you didn't have bugs
+    * Remember, your code will be wrong every time you run it until it's correct
 
-The importance of debugging
-===========================
+* You have probably come up with a system for debugging
+* In this topic, we will discuss a few popular and accessible debugging strategies
 
 .. image:: hi.jpg
 
-* The more complex your programs get, the more time you'll spend debugging.
-* No matte how *good* you are as a programmer, you still spend **a lot** of time debugging.
-* The number one thing my friends in industry tell me that they wish more CS graduates knew more of is **debugging**!
 
-* Beyond being an immediately useful skill for fixing broken programs, the ability to effectively debug demonstrates:
-  
-    * Knowledge of algorithms and programming in general
+The Importance of Debugging
+===========================
+
+* As our programs get more and more complex, the types of errors we come across can increase in complexity
+* No matter how *good* of a programmer you are, you will still spend much of your time debugging
+* Beyond the obvious benefit of fixing your code, debugging helps us improve many important skills:
+
+    * Knowledge of algorithms
     * Knowledge of the programming language
     * The ability to reason logically
     * The ability to reason about flow of execution in code
-	 
-* That's why we've waited so long to formally discuss debugging. There are a lot of prerequisites.
-	
-
-.. Warning::
-
-    Debugging (especially more rigorous approaches) may seem hard and/or boring at first. Hang in there. The ability to logically debug can, literally, save you *days* of time when there is a problem in your code.	
 
    
 Syntax errors
