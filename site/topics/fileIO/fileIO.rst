@@ -1,6 +1,6 @@
-**********************
-File IO and Exceptions
-**********************
+*******
+File IO
+*******
 
 Getting data into Python
 ========================
