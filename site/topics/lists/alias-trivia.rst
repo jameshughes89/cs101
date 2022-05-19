@@ -2,8 +2,6 @@
 Aliases & List Trivia
 *********************
 
-.. _label-topic8-aliasing:
-
 * The following code should be simple to understand at this stage
 
 .. code-block:: python
