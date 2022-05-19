@@ -29,7 +29,7 @@ Conditional Expressions
 
 .. code-block:: python
     :linenos:
-    :lines-emphasis: 11
+    :emphasize-lines: 11
 
     def smush(a_number: float) -> float:
         """
@@ -100,7 +100,7 @@ Compound Conditions
 
 .. code-block:: python
     :linenos:
-    :lines-emphasis: 10
+    :emphasize-lines: 10
 
     def three_five_divisible(a_number: float) -> str:
         """
@@ -178,7 +178,7 @@ Alternative Execution
 * This pattern is very common
 
 .. code-block:: python
-    :linenos:2864
+    :linenos:
 
     if x > 10:
         do_something()
