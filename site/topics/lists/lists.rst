@@ -213,7 +213,7 @@ Looping Over Indices and Enumerate
     def index_of_uhoh(needle, haystack):
         for element in haystack:
             if element == needle:
-                return ???? # How do I find the index?
+                return "????" # How do I find the index?
         return -1
 
 

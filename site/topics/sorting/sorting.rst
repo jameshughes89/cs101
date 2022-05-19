@@ -181,7 +181,7 @@ Let's see Bubble sort in Python::
     :class: activity
 
     How many times do I go around the outer `while` loop ? How
-   about the inner `for` loop?
+    about the inner `for` loop?
 
 .. raw:: html
 
