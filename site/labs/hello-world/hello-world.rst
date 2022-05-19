@@ -49,7 +49,7 @@ Hello World
 
 #. Get *Hello World* working on Colab
 
-    * If you are unsure of what this is, review :doc:`Topic 1 </topics/data-intro/intro>`
+    * If you are unsure of what this is, review :doc:`Topic 1 </topics/intro/intro>`
 
 
 Refreshing What We Learned

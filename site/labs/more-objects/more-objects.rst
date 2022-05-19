@@ -79,7 +79,7 @@ To do this, we'll add some file IO to this constructor. Remember, a constructor 
         
 
 
-* We'll use the ``fileName`` parameter to open up a file. :doc:`If you forget how to do this, good news, it's in some of the lecture material </topics/fileIO-exceptions/fileIO-exceptions>`.
+* We'll use the ``fileName`` parameter to open up a file. :doc:`If you forget how to do this, good news, it's in some of the lecture material </topics/fileIO/fileIO>`.
 
 There are a bunch of ways we can go about the next bit, but let's do it this way. Instead of just searching through the file, let's just load all the information into a list. Then after it's in the list, we'll just search the list. 
 
