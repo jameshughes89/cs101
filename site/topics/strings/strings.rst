@@ -170,10 +170,10 @@ Linear Search
         assert True == character_is_in("o", "hello")
 
 
-     .. raw:: html
+    .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/sokPQLkrXjw" frameborder="0" allowfullscreen></iframe>
-   
+
 
 
 .. admonition:: Activity
