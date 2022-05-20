@@ -103,29 +103,42 @@ Dictionaries
 Why They Are Great
 ------------------
 
-* Imagine we have a 2D list like this:
+* Instead of using a dictionary to store the grades, imagine using a 2D list
+
 
 .. code-block:: python
-   :linenos:
+    :linenos:
 
-    # Creates some lookup table list thing
-    grades = [['James', 98], ['Bob', 86], ['Janice', 86], ['Greg', 59]]
+    my_grades = []
+    my_grades.append(["Billy", 74])
+    my_grades.append(["Sally", 88])
+    my_grades.append(["Jimmy-Bob", 99])
+    print(my_grades)                        # Results in [['Billy', 74], ['Sally', 88], ['Jimmy-Bob', 99]]
 
-* How would we get the grade for any given student?
-    * Linear search, right!
-    * So there is nothing *wrong* with this, but... there's a better way!
 
-* With a dictionary, we can simply do this!
+* How would I obtain the grade for a specific student?
 
-.. code-block:: python
-   :linenos:
+    * I would need to do a linear search for the student's name before I could access the grade
+    * Assuming I have some ``linear_search`` function
 
-    # Creates some lookup table list thing
-    grades = {'James':98, 'Bob':86, 'Janice':86, 'Greg':59}
+    .. code-block:: python
+        :linenos:
 
-* How would we get the grade for any given student?
-    * Just index the dictionary!
-    * Way better!
+        the_student = linear_search(my_grades, "Sally")
+        grade = the_student[1]
+        print(grade)                        # Results in 88
+
+
+* Alternatively, with a dictionary, it's much simpler --- just index the dictionary on the student's name
+
+    * Assuming ``my_grades`` was a dictionary like ``some_dictionary`` instead of a list of lists
+
+        .. code-block:: python
+        :linenos:
+
+        grade = my_grades["Sally"]
+        print(grade)                        # Results in 88
+
 
 Are They Actually Better?
 -------------------------
