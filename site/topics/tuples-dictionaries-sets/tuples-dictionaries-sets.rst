@@ -85,7 +85,7 @@ Dictionaries
 .. code-block:: python
     :linenos:
 
-    print(some_dictionary["Jimmy-bob"])     # Results in 99
+    print(some_dictionary["Jimmy-Bob"])     # Results in 99
     print(some_dictionary["Sally"])         # Results in 88
 
 
@@ -100,9 +100,8 @@ Dictionaries
     print(some_dictionary["Sally"])         # Results in 90
 
 
-
-So Why Are They Great?
-----------------------
+Why They Are Great
+------------------
 
 * Imagine we have a 2D list like this:
 
