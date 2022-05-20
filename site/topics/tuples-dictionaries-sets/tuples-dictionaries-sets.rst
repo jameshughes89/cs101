@@ -11,7 +11,7 @@ Tuples
 
 * A tuple looks and behaves similar to a list, but has slightly different syntax
 
-    * Tuples use parentheses ``(``\, ``)``)
+    * Tuples use parentheses ``(``\, ``)``
 
     .. code-block:: python
         :linenos:
