@@ -140,6 +140,12 @@ Why They Are Great
         print(grade)                        # Results in 88
 
 
+* In addition to being simpler syntax, the dictionary eliminates the need for the linear search
+
+    * Remember, the amount of work needed for a linear search grows as the number in the collection grows
+    * If we don't need to do the linear search, we eliminate all that extra work
+
+
 Are They Actually Better?
 -------------------------
 
