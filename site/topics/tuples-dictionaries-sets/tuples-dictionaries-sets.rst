@@ -205,6 +205,7 @@ Sets
 
     * Iterating over the contents with a ``for`` loop
     * Remove elements from the set
+    * Check is sets are equal 
     * Turn the set into a list (and you can turn a list into a set)
     * ...
 
