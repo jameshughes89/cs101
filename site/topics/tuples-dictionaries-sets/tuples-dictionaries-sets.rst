@@ -156,184 +156,130 @@ Why They Are Great
     using and taking advantage of the dictionary's benefits.
 
 
+
 Sets
 ====
 
-* A set is kinda' like a list, but it only holds *unique* things.
-* Also, sets typically do not have any ordering to them.
-    * Lists start at index 0, then go to 1, 2, ... 
-    * Sets start... wherever
-   
-    >>> a = set([])	# `[]' not actually needed for empty one
-    >>> print(a)
-    set()
-    
-    >>> print(type(a))
-    <class 'set'>
-    
-    >>> b = set([1, 2, 3, 4])
-    >>>print(b)   
-    {1, 2, 3, 4}
+* Another common data structure is sets
 
-* Cool. But you said something about *uniqueness* and *orderdness*
+    * You may already be familiar with the idea of sets from math
 
-    >>> c = set([3, 4, 2, 2, 1, 5, 5, 5, 5])
-    >>> print(c)
-    {1, 2, 3, 4, 5}
-   
-* Hmmm... Looks ordered to me
-    * Not really though, there is no actual intrinsic ordering enforced here
-* We can totally see the uniqueness though, so that's cool
+* When comparing to lists, sets are a little different
 
-* ``in`` totally works
+    * Elements in the set are unique, but lists can have multiple copies of the same value
+    * Sets have no intrinsic ordering, but lists do (starting at index ``0``)
 
-    >>> print(3 in c)
-    True
-    
-    >>> print('a' in c)
-    False
-   
-* Iterating over a set
+* Consider the below example of students in a course
 
-    >>> for thing in c:
-    >>>   print(thing)
-    1
-    2
-    3
-    4
-    5
-   
-* Add things to a set
+.. code-block:: python
+    :linenos:
 
-    >>> c.add('hello')
-    >>> print(c)
-    {1, 2, 3, 4, 5, 'hello'}
-    
-    >>> c.add('hello')
-    >>> print(c)
-    {1, 2, 3, 4, 5, 'hello'}
-   
-* *discard* things
- 
-    >>> c.discard('hello')
-    >>> print(c)
-    {1, 2, 3, 4, 5}
-    
-    >>> c.discard('hello')
-    >>> print(c)
-    {1, 2, 3, 4, 5}
-   
-* *remove* things
-    * Almost the same as discard, but will throw an *exception* if we try to remove something that's not there
-   
-    >>> print(c)
-    {1, 2, 3, 4, 5}
-    
-    >>> c.remove(5)
-    >>> print(c)
-    {1, 2, 3, 4}
-   
-    >>> c.remove(5)
-    KeyError              Traceback (most recent call last)
-    <ipython-input-91-0733df1dbd33> in <module>()
-    ----> 1 c.remove(5)
-    KeyError: 5
+    csci_161 = set({"Greg", "Anna", "Sally", "Frank", "Frank"})
+    print(csci_161)                     # Results in {'Frank', 'Sally', 'Greg', 'Anna'}
 
-* Clearing out a set
 
-    >>> c.clear()
-    >>> print(c)
-    set()
+* Notice that, although ``"Frank"`` was included twice, it only exists once in the set
+* Also notice that the order of the elements is not the order they appear when the set was created
 
-* Check equality
+* Below is another example of a set, but this time an additional name was added to the set after creation
 
-    >>> c = set([1, 2, 3])
-    >>> d = set([3, 2, 1])
-    >>> print(c == d)
-    True
-   
-What makes them special other than just uniqueness and orderdness?
-------------------------------------------------------------------
+.. code-block:: python
+    :linenos:
 
-* So far they might not seem that special when compared to lists
-* But they are very very very special in many ways
-* One of which is: ``in``. 
-* Remember how when we used ``in`` for a list, but at the end of the day, the computer still have to do a linear search
-    * Remember what a liner search is?
-* Turns out, for a set, ``in`` can tell us if something is in the set **without** having to do a linear search!
+    math_106 = set({"Frank", "Ryan", "Sally", "Francis", "Xavier", "Linda"})
+    math_106.add("Lynn")
+    print(math_106)                     # Results in {'Ryan', 'Xavier', 'Frank', 'Sally', 'Francis', 'Lynn', 'Linda'}
+
+
+* One can check if a given thing exists within a set with the ``in`` operator
+* Like a dictionary, checking if something is ``in`` the set does not require a linear search
+
+.. code-block:: python
+    :linenos:
+
+    print("Ryan" in csci_161)           # Results in False
+    print("Ryan" in math_106)           # Results in True
+
+
+* There are many other things you could do with a set, such as
+
+    * Iterating over the contents with a ``for`` loop
+    * Remove elements from the set
+    * Check is sets are equal
+    * Check if something is a subset of another set
+    * Turn the set into a list (and you can turn a list into a set)
+    * ...
+
+
+* Three operations of note for sets are *union*, *intersection*, and *difference*
+
+.. image:: union.png
+   :width: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Union_(set_theory)
+
+
+* Union allows us to combine all elements from two sets into one set
+* For example, getting all the students from two courses
+
+.. code-block:: python
+    :linenos:
+
+    all_students = csci_161.union(math_106)
+    print(all_students)     # Results in {'Ryan', 'Greg', 'Frank', 'Sally', 'Anna', 'Linda', 'Xavier', 'Francis', 'Lynn'}
+
+
+.. image:: intersection.png
+   :width: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Intersection_(set_theory)
+
+
+* Intersection allows us to find elements that are common to both sets
+* For example, which students are in both CSCI 161 and MATH 106
+
+.. code-block:: python
+    :linenos:
+
+    taking_both_courses = csci_161.intersection(math_106)
+    print(taking_both_courses)  # Results in {'Frank', 'Sally'}
+
+
+.. image:: difference.png
+   :width: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Complement_(set_theory)
+
+
+* Set difference allows us to ask which elements are in one set but not in the other
+* For example, which students are taking CSCI 161 and not taking MATH 106
+
+.. code-block:: python
+    :linenos:
+
+    only_taking_csci = csci_161.difference(math_106)
+    print(only_taking_csci)     # Results in {'Greg', 'Anna'}
+
+
+* Unlike union and intersection, the order of the operands for set difference matter
+
+.. code-block:: python
+    :linenos:
+
+    only_taking_math = math_106.difference(csci_161)
+    print(only_taking_math)     # Results in {'Ryan', 'Linda', 'Xavier', 'Francis', 'Lynn'}
 
 
 .. admonition:: Activity
     :class: activity
 
-    Load up this code into Python:
-   
-    .. code-block:: python
-   
-        set_a = set([0, 1])
-        set_b = set([0, 1, 2])
-        set_c = set([2, 3])
-
-    * Figure out if there is an easy way to determine if set ``set_a`` ``isubset`` of ``set_b``
-    * Figure out if thre is an easy way to get the ``union`` of two sets
-    * Figure out if there is an easy way to get the ``intersection`` of two sets
-    * Figure out if there is an easy way to get the ``difference`` between ``set_b`` and ``set_a`` 
-    * Do the previous one again but try the ``difference`` between ``set_a`` and ``set_b``
-   
-    **HINT:** hit tab.
-
-.. image:: sets.png
-   
-  
-.. admonition:: Activity
-    :class: activity
-
-    1. Imagine I gave you the text from a book that you could load up into Python. What's the easiest way to count the number of unique words?
-   
-    2. What would you do if I gave you another book and asked you which words do they have in common?
-   
-    3. What if I wanted to know the number of unique words that exist between the two books?
-   
-    4. What If I wanted to know which words were in one book, but not the other?
+    #. Imagine I gave you the text from a book that you could load up into Python. What's the easiest way to count the number of unique words?
+    #. What would you do if I gave you another book and asked you which words do they have in common?
+    #. What if I wanted to know the number of unique words that exist between the two books?
+    #. What If I wanted to know which words were in one book, but not the other?
 
 
-The Bad News...
-===============
-
-* The above data structures are pretty awesome
-* Unfortunately... they're not *free*
-    * Although Python really makes it look like they are
-* With dictionaries, sets, tuples, and even lists, someone actually had to write a lot of nifty algorithms to do all the amazing things they do
-* I briefly discussed fixed length arrays before, and those, classically speaking, we get for free, in addition to the *primitive types*
-* Most of the cool data structures we've seen so far are actually built on top of the fixed length arrays
-* In the same way that we're not actually sure how ``print`` actually works, we don't know how these data structures really work under the hood. 
-
-
-The Good News...
-================
-
-* This does not really matter for us right now. 
-* As of now, we don't really need to know all this to get the computer to do fun things. 
-* Just like how you don't really need to know all the ins and outs of an internal combustion engine in order to drive a car, we don't need to know all the ins and outs of the data structures to use them. 
-* Buuuuutttttttttttt... at the same time, if I was a race car driver, maybe knowing how things work under the hood could help me tweak and tune the car for the best performance. 
-
-The Good/Bad News...
-====================
-
-* The under the hood stuff here is outside the scope of this course. 
-* If you're thinking **Thank F@-%!#& GAWD**, lucky you
-* If you're thinking *awhhhhhhhhhhhhhhhh, I wanna' know*, sorry
-
-* Either way, we will look at *some* of these data structures in CSCI 162!
-    * Trust me, it's actually a lot of fun!!
-
-
-
-
- 
-   
-For next class
+For Next Class
 ==============
-* `Get PyCharm installed! <https://www.jetbrains.com/pycharm/download>`_
 
-* Read `appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_   
+* Read `Appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_
