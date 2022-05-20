@@ -191,6 +191,26 @@ Sets
     print(math_106)                     # Results in {'Ryan', 'Xavier', 'Frank', 'Sally', 'Francis', 'Lynn', 'Linda'}
 
 
+* One can check if a given thing exists within a set with the ``in`` operator
+* Like a dictionary, checking if something is ``in`` the set does not require a linear search
+
+.. code-block:: python
+    :linenos:
+
+    print("Ryan" in csci_161)           # Results in False
+    print("Ryan" in math_106)           # Results in True
+
+
+* There are many other things you could do with a set, such as
+
+    * Iterating over the contents with a ``for`` loop
+    * Remove elements from the set
+    * Turn the set into a list (and you can turn a list into a set)
+    * ...
+
+
+* Three operations of note for sets are *union*, *intersection*, and *difference*
+
    
     >>> a = set([])	# `[]' not actually needed for empty one
     >>> print(a)
