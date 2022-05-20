@@ -261,7 +261,7 @@ Sets
     print(only_taking_csci)     # Results in {'Greg', 'Anna'}
 
 
-* Unlike union and intersection, the order of the operands matter
+* Unlike union and intersection, the order of the operands for set difference matter
 
 .. code-block:: python
     :linenos:
