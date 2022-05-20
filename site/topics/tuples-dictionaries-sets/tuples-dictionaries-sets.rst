@@ -146,29 +146,15 @@ Why They Are Great
     * If we don't need to do the linear search, we eliminate all that extra work
 
 
-Are They Actually Better?
--------------------------
+.. note::
 
-* Remember how the ``in`` keyword allowed us to do a linear search really easily. 
-* It wasn't really *better* than coding a linear search yourself, but it did save some typing. 
-* Is the dictionary not just doing the linear search work for us like how ``in`` was?
-    * **NO** (asterisk) 
-    * But I won't teach you this yet because it's well beyond the scope of this class. 
-        * Sorry :(   
-   
-.. admonition:: `Activity++ <https://leetcode.com/problems/two-sum/description/>`_
+    Remember how the ``sum`` function still requires the computer to look at each value in a list, but that
+    functionality was hidden from us. Dictionaries are **not** simply hiding the linear search from us; its actual
+    underlying functionality does not need to do a linear search (although, there are some exceptions to this).
 
-    Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+    We will not be going into more details on how dictionaries work in this course, but that does not stop us from
+    using and taking advantage of the dictionary's benefits.
 
-    You may assume that each input would have exactly one solution, and you may not use the same element twice.
-   
-    **EXAMPLE**
-
-    Given nums = [2, 7, 11, 15], target = 9,
-
-    Because nums[0] + nums[1] = 2 + 7 = 9,
-
-    return [0, 1].
 
 Sets
 ====
