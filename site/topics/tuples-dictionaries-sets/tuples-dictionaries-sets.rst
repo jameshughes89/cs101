@@ -80,68 +80,26 @@ Dictionaries
 * The keys in the example are ``"Billy"``, ``"Sally"``, and ``"Jimmy-Bob"``
 * Each of the keys have an associated value --- ``74``, ``88``, and ``99`` respectively
 
+* Accessing a value from a specific key from the dictionary is done with indexing
+
+.. code-block:: python
+    :linenos:
+
+    print(some_dictionary["Jimmy-bob"])     # Results in 99
+    print(some_dictionary["Sally"])         # Results in 88
 
 
+* And updating a value associated with a key is done just like the original assignment
 
-    >>> my_dict = {}
+    * Keys are unique, so using an existing key would overwrite the value and not make a new entry
 
-* Looks like an empty list, but using ``{}`` instead of ``[]``.
-* How do I add something?
+.. code-block:: python
+    :linenos:
 
-    >>> my_dict['James']=50
-    >>> print(my_dict)
-    {'James': 50}
+    some_dictionary["Sally"] = 90
+    print(some_dictionary["Sally"])         # Results in 90
 
-* The dictionary has associated the *key* ``James`` with the *value* ``50``.
-* Maybe this is a dictionary of grades? I need to work harder.
-* Let's add more:
 
-    >>> my_dict['Suzy'] = 95
-    >>> my_dict['Johnny'] = 85
-    >>> print(my_dict)
-    {'James': 50, 'Suzy': 95, 'Johnny': 85}
-
-* Dictionaries always associate a *key* with a *value*.
-    * ``dict[key] = value``
-   
-.. admonition:: Activity
-    :class: activity
-
-    Build the dictionary ``my_dict`` above. 
-   
-    Figure out how to access the value associated with a particular key, without printing out the whole dictionary (e.g., how would I print just Suzy's grade?). 
-
-    *Hint*: it's a lot like indexing a list or array or tuple...
-   
-    What happens if I try to index the dictionary with a key that doesn't exist?
-   
-* Dictionaries are a *generalization* of lists:
-    * A list associates *fixed indices* from 0 up to ``n`` with values.
-    * A dictionary associates *arbitrary strings* with values.
-
-.. admonition:: Activity
-    :class: activity
-
-    Now type ``my_dict.`` and hit the [Tab] key. Play around with the built-in functions for dictionaries. 
-
-    Take special care to look at: 
-
-        * ``my_dict.keys()``
-        * ``my_dict.values()``
-
-    I wonder if there is an easy way to iterate over the contents of a dictionary?
-   
-   
-* This is *really useful* for humans because it's much easier for us to assign names to things than to try to remember arbitrary numberings.
-  
-* Many programming languages have nothing like dictionaries. In some others you'll see them called "associative arrays" or "associative memories".
-    * In some, we have to *make* them ourselves
-
-* We've just scratched the surface of what you can do with dictionaries here, but it's enough for our purposes right now.
-
-.. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/e8nhfwlsBl0" frameborder="0" allowfullscreen></iframe>
 
 So Why Are They Great?
 ----------------------
