@@ -218,6 +218,7 @@ Sets
    :align: center
    :target: https://en.wikipedia.org/wiki/Union_(set_theory)
 
+
 * Union allows us to combine all elements from two sets into one set
 * For example, getting all the students from two courses
 
