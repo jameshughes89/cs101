@@ -169,6 +169,27 @@ Sets
     * Elements in the set are unique, but lists can have multiple copies of the same value
     * Sets have no intrinsic ordering, but lists do (starting at index ``0``)
 
+* Consider the below example of students in a course
+
+.. code-block:: python
+    :linenos:
+
+    csci_161 = set({"Greg", "Anna", "Sally", "Frank", "Frank"})
+    print(csci_161)                     # Results in {'Frank', 'Sally', 'Greg', 'Anna'}
+
+
+* Notice that, although ``"Frank"`` was included twice, it only exists once in the set
+* Also notice that the order of the elements is not the order they appear when the set was created
+
+* Below is another example of a set, but this time an additional name was added to the set after creation
+
+.. code-block:: python
+    :linenos:
+
+    math_106 = set({"Frank", "Ryan", "Sally", "Francis", "Xavier", "Linda"})
+    math_106.add("Lynn")
+    print(math_106)                     # Results in {'Ryan', 'Xavier', 'Frank', 'Sally', 'Francis', 'Lynn', 'Linda'}
+
 
    
     >>> a = set([])	# `[]' not actually needed for empty one
