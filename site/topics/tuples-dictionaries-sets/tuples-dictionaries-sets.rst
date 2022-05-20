@@ -156,13 +156,20 @@ Why They Are Great
     using and taking advantage of the dictionary's benefits.
 
 
+
 Sets
 ====
 
-* A set is kinda' like a list, but it only holds *unique* things.
-* Also, sets typically do not have any ordering to them.
-    * Lists start at index 0, then go to 1, 2, ... 
-    * Sets start... wherever
+* Another common data structure is sets
+
+    * You may already be familiar with the idea of sets from math
+
+* When comparing to lists, sets are a little different
+
+    * Elements in the set are unique, but lists can have multiple copies of the same value
+    * Sets have no intrinsic ordering, but lists do (starting at index ``0``)
+
+
    
     >>> a = set([])	# `[]' not actually needed for empty one
     >>> print(a)
