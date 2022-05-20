@@ -68,6 +68,9 @@ Dictionaries
     some_dictionary["Sally"] = 88
     some_dictionary["Jimmy-Bob"] = 99
 
+    # Print out the dictionary
+    print(some_dictionary)      # Results in {'Billy': 74, 'Sally': 88, 'Jimmy-Bob': 99}
+
 
 * In the example, a dictionary was created and three values were added to the dictionary
 * But values are associated with unique *keys*
@@ -76,6 +79,7 @@ Dictionaries
 
 * The keys in the example are ``"Billy"``, ``"Sally"``, and ``"Jimmy-Bob"``
 * Each of the keys have an associated value --- ``74``, ``88``, and ``99`` respectively
+
 
 
 
