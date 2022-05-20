@@ -212,9 +212,63 @@ Sets
 
 * Three operations of note for sets are *union*, *intersection*, and *difference*
 
+.. image:: union.png
+   :width: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Union_(set_theory)
+
+* Union allows us to combine all elements from two sets into one set
+* For example, getting all the students from two courses
+
+.. code-block:: python
+    :linenos:
+
+    all_students = csci_161.union(math_106)
+    print(all_students)     # Results in {'Ryan', 'Greg', 'Frank', 'Sally', 'Anna', 'Linda', 'Xavier', 'Francis', 'Lynn'}
 
 
-   
+.. image:: intersection.png
+   :width: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Intersection_(set_theory)
+
+
+* Intersection allows us to find elements that are common to both sets
+* For example, which students are in both CSCI 161 and MATH 106
+
+.. code-block:: python
+    :linenos:
+
+    taking_both_courses = csci_161.intersection(math_106)
+    print(taking_both_courses)  # Results in {'Frank', 'Sally'}
+
+
+.. image:: difference.png
+   :width: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Complement_(set_theory)
+
+
+* Set difference allows us to ask which elements are in one set but not in the other
+* For example, which students are taking CSCI 161 and not taking MATH 106
+
+.. code-block:: python
+    :linenos:
+
+    only_taking_csci = csci_161.difference(math_106)
+    print(only_taking_csci)     # Results in {'Greg', 'Anna'}
+
+
+* Unlike union and intersection, the order of the operands matter
+
+.. code-block:: python
+    :linenos:
+
+    only_taking_math = math_106.difference(csci_161)
+    print(only_taking_math)     # Results in {'Ryan', 'Linda', 'Xavier', 'Francis', 'Lynn'}
+
+
+
     >>> a = set([])	# `[]' not actually needed for empty one
     >>> print(a)
     set()
