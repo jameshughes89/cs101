@@ -49,11 +49,35 @@ Tuples
 
 Dictionaries
 ============
-* Python Dictionaries are a more complex data structure than what we've seen so far.
-* But... they are *very very very very very very very very useful*.
-* Imagine a list which you can index with *strings* instead of *numbers*.
-* That's a dictionary.
-* Let's create an empty dictionary:
+
+* Dictionaries are amazing data structures that are a little more complex than lists and tuples
+
+    * Much of their complexity is hidden from us so we will not worry about it here
+
+* Simply, they are like list that you could index with *strings*, or various other types, instead of just integers
+* Consider the following example of storing grades for students
+
+.. code-block:: python
+    :linenos:
+
+    # Create a new, empty dictionary
+    some_dictionary = {}
+
+    # Add a few things to the dictionary
+    some_dictionary["Billy"] = 74
+    some_dictionary["Sally"] = 88
+    some_dictionary["Jimmy-Bob"] = 99
+
+
+* In the example, a dictionary was created and three values were added to the dictionary
+* But values are associated with unique *keys*
+
+    * The keys must be unique, but the values do not need to be
+
+* The keys in the example are ``"Billy"``, ``"Sally"``, and ``"Jimmy-Bob"``
+* Each of the keys have an associated value --- ``74``, ``88``, and ``99`` respectively
+
+
 
     >>> my_dict = {}
 
