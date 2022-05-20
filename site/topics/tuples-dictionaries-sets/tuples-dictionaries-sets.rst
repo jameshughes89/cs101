@@ -11,7 +11,7 @@ Tuples
 
 * A tuple looks and behaves similar to a list, but has slightly different syntax
 
-    * Tuples use parentheses ``(``\, ``)``)
+    * Tuples use parentheses ``(``\, ``)``
 
     .. code-block:: python
         :linenos:
@@ -49,122 +49,112 @@ Tuples
 
 Dictionaries
 ============
-* Python Dictionaries are a more complex data structure than what we've seen so far.
-* But... they are *very very very very very very very very useful*.
-* Imagine a list which you can index with *strings* instead of *numbers*.
-* That's a dictionary.
-* Let's create an empty dictionary:
 
-    >>> my_dict = {}
+* Dictionaries are amazing data structures that are a little more complex than lists and tuples
 
-* Looks like an empty list, but using ``{}`` instead of ``[]``.
-* How do I add something?
+    * Much of their complexity is hidden from us so we will not worry about it here
 
-    >>> my_dict['James']=50
-    >>> print(my_dict)
-    {'James': 50}
-
-* The dictionary has associated the *key* ``James`` with the *value* ``50``.
-* Maybe this is a dictionary of grades? I need to work harder.
-* Let's add more:
-
-    >>> my_dict['Suzy'] = 95
-    >>> my_dict['Johnny'] = 85
-    >>> print(my_dict)
-    {'James': 50, 'Suzy': 95, 'Johnny': 85}
-
-* Dictionaries always associate a *key* with a *value*.
-    * ``dict[key] = value``
-   
-.. admonition:: Activity
-    :class: activity
-
-    Build the dictionary ``my_dict`` above. 
-   
-    Figure out how to access the value associated with a particular key, without printing out the whole dictionary (e.g., how would I print just Suzy's grade?). 
-
-    *Hint*: it's a lot like indexing a list or array or tuple...
-   
-    What happens if I try to index the dictionary with a key that doesn't exist?
-   
-* Dictionaries are a *generalization* of lists:
-    * A list associates *fixed indices* from 0 up to ``n`` with values.
-    * A dictionary associates *arbitrary strings* with values.
-
-.. admonition:: Activity
-    :class: activity
-
-    Now type ``my_dict.`` and hit the [Tab] key. Play around with the built-in functions for dictionaries. 
-
-    Take special care to look at: 
-
-        * ``my_dict.keys()``
-        * ``my_dict.values()``
-
-    I wonder if there is an easy way to iterate over the contents of a dictionary?
-   
-   
-* This is *really useful* for humans because it's much easier for us to assign names to things than to try to remember arbitrary numberings.
-  
-* Many programming languages have nothing like dictionaries. In some others you'll see them called "associative arrays" or "associative memories".
-    * In some, we have to *make* them ourselves
-
-* We've just scratched the surface of what you can do with dictionaries here, but it's enough for our purposes right now.
-
-.. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/e8nhfwlsBl0" frameborder="0" allowfullscreen></iframe>
-
-So Why Are They Great?
-----------------------
-
-* Imagine we have a 2D list like this:
+* Simply, they are like list that you could index with *strings*, or various other types, instead of just integers
+* Consider the following example of storing grades for students
 
 .. code-block:: python
-   :linenos:
+    :linenos:
 
-    # Creates some lookup table list thing
-    grades = [['James', 98], ['Bob', 86], ['Janice', 86], ['Greg', 59]]
+    # Create a new, empty dictionary
+    some_dictionary = {}
 
-* How would we get the grade for any given student?
-    * Linear search, right!
-    * So there is nothing *wrong* with this, but... there's a better way!
+    # Add a few things to the dictionary
+    some_dictionary["Billy"] = 74
+    some_dictionary["Sally"] = 88
+    some_dictionary["Jimmy-Bob"] = 99
 
-* With a dictionary, we can simply do this!
+    # Print out the dictionary
+    print(some_dictionary)      # Results in {'Billy': 74, 'Sally': 88, 'Jimmy-Bob': 99}
+
+
+* In the example, a dictionary was created and three values were added to the dictionary
+* But values are associated with unique *keys*
+
+    * The keys must be unique, but the values do not need to be
+
+* The keys in the example are ``"Billy"``, ``"Sally"``, and ``"Jimmy-Bob"``
+* Each of the keys have an associated value --- ``74``, ``88``, and ``99`` respectively
+
+* Accessing a value from a specific key from the dictionary is done with indexing
 
 .. code-block:: python
-   :linenos:
+    :linenos:
 
-    # Creates some lookup table list thing
-    grades = {'James':98, 'Bob':86, 'Janice':86, 'Greg':59}
+    print(some_dictionary["Jimmy-Bob"])     # Results in 99
+    print(some_dictionary["Sally"])         # Results in 88
 
-* How would we get the grade for any given student?
-    * Just index the dictionary!
-    * Way better!
 
-Are They Actually Better?
--------------------------
+* And updating a value associated with a key is done just like the original assignment
 
-* Remember how the ``in`` keyword allowed us to do a linear search really easily. 
-* It wasn't really *better* than coding a linear search yourself, but it did save some typing. 
-* Is the dictionary not just doing the linear search work for us like how ``in`` was?
-    * **NO** (asterisk) 
-    * But I won't teach you this yet because it's well beyond the scope of this class. 
-        * Sorry :(   
-   
-.. admonition:: `Activity++ <https://leetcode.com/problems/two-sum/description/>`_
+    * Keys are unique, so using an existing key would overwrite the value and not make a new entry
 
-    Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+.. code-block:: python
+    :linenos:
 
-    You may assume that each input would have exactly one solution, and you may not use the same element twice.
-   
-    **EXAMPLE**
+    some_dictionary["Sally"] = 90
+    print(some_dictionary["Sally"])         # Results in 90
 
-    Given nums = [2, 7, 11, 15], target = 9,
 
-    Because nums[0] + nums[1] = 2 + 7 = 9,
+Why They Are Great
+------------------
 
-    return [0, 1].
+* Instead of using a dictionary to store the grades, imagine using a 2D list
+
+
+.. code-block:: python
+    :linenos:
+
+    my_grades = []
+    my_grades.append(["Billy", 74])
+    my_grades.append(["Sally", 88])
+    my_grades.append(["Jimmy-Bob", 99])
+    print(my_grades)                        # Results in [['Billy', 74], ['Sally', 88], ['Jimmy-Bob', 99]]
+
+
+* How would I obtain the grade for a specific student?
+
+    * I would need to do a linear search for the student's name before I could access the grade
+    * Assuming I have some ``linear_search`` function
+
+    .. code-block:: python
+        :linenos:
+
+        the_student = linear_search(my_grades, "Sally")
+        grade = the_student[1]
+        print(grade)                        # Results in 88
+
+
+* Alternatively, with a dictionary, it's much simpler --- just index the dictionary on the student's name
+
+    * Assuming ``my_grades`` was a dictionary like ``some_dictionary`` instead of a list of lists
+
+        .. code-block:: python
+        :linenos:
+
+        grade = my_grades["Sally"]
+        print(grade)                        # Results in 88
+
+
+* In addition to being simpler syntax, the dictionary eliminates the need for the linear search
+
+    * Remember, the amount of work needed for a linear search grows as the number in the collection grows
+    * If we don't need to do the linear search, we eliminate all that extra work
+
+
+.. note::
+
+    Remember how the ``sum`` function still requires the computer to look at each value in a list, but that
+    functionality was hidden from us. Dictionaries are **not** simply hiding the linear search from us; its actual
+    underlying functionality does not need to do a linear search (although, there are some exceptions to this).
+
+    We will not be going into more details on how dictionaries work in this course, but that does not stop us from
+    using and taking advantage of the dictionary's benefits.
+
 
 Sets
 ====
