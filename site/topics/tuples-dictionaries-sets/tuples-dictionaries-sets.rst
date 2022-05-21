@@ -133,7 +133,7 @@ Why They Are Great
 
     * Assuming ``my_grades`` was a dictionary like ``some_dictionary`` instead of a list of lists
 
-        .. code-block:: python
+    .. code-block:: python
         :linenos:
 
         grade = my_grades["Sally"]
