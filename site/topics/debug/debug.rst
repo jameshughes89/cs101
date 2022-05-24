@@ -28,7 +28,25 @@ The Importance of Debugging
     * The ability to reason logically
     * The ability to reason about flow of execution in code
 
-   
+
+Error Messages
+==============
+
+* In many cases, Python will generate an error message giving you an idea of what went wrong
+* Sometimes these error messages are very helpful
+
+    .. code-block:: python
+
+        line 17
+        print(5 + 5 +)
+                    ^
+        SyntaxError: invalid syntax
+
+
+* Other times the error messages are quite cryptic
+* Fortunately, you can often copy/paste the error into Google and find an explanation
+
+
 Syntax errors
 =============
 * These are easy to fix. 
