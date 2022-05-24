@@ -86,8 +86,8 @@ Type Errors
 
 * As we have seen, Python is pretty good about figuring out types
 
-.. admonition:: Activity
-    :class: activity
+.. code-block:: python
+    :linenos:
 
     a = 5           # It's an integer
     b = 5.5         # Float since there is a decimal
@@ -101,8 +101,8 @@ Type Errors
     * Think about it this way, what would you say if I asked you what "Hello" divided by 32 means?
 
 
-.. admonition:: Activity
-    :class: activity
+.. code-block:: python
+    :linenos:
 
     print(99 + "bottles of beer on the wall")
     TypeError: unsupported operand type(s) for +: 'int' and 'str'
@@ -112,8 +112,8 @@ Type Errors
 * However, sometimes we can have an issue caused by types that does not generate an error message
 * Consider the ``inconsistent`` function defined in the following example
 
-    .. admonition:: Activity
-        :class: activity
+    .. code-block:: python
+        :linenos:
 
         def inconsistent(a, b):
             return a + b
@@ -161,7 +161,7 @@ Print
     There is one problem with this function. It ALMOST works, but it's slightly off. Read the description, test it with a ``print``. Is it right or wrong? Move the ``print``. See what happens? etc. etc.
 
     .. code-block:: python
-   
+
         def count_numbers_up_to(n):
             '''
             This function adds up all the numbers from 0 - n exclusively.
@@ -179,7 +179,7 @@ Print
             return total
 	  
 
-	print(count_numbers_up_to(5))  
+	print(count_numbers_up_to(5))
    
    
 * Good thing we made sure the function was working perfectly before using it somewhere else and assuming it worked!  
