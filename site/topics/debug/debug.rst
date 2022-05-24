@@ -89,44 +89,51 @@ Other simple errors
 * If you don't understand the error message... cut and paste it into Google.
     * This is literally what I do. 
 
+
 Logic errors
 ============
 
-* These are pretty much everything else...
-* *Much* harder to track down than simple errors
-* Might be obvious (e.g. infinite loop)
-* Might be "silent" (your code *looks* like it works, but gives subtly wrong answers in certain conditions)
-    * `These can literally be deadly! <https://en.wikipedia.org/wiki/List_of_software_bugs>`_
-* We'll look at a few strategies for tackling these...   
-	
-	
+* Logic errors can be quite difficult to debug
+* Everything may seem like it's working, but at the end of the day, something is off
+* Sometimes the errors may be obvious, like an infinite loop
+* And sometimes they can be quite sneaky --- the errors can be in *edge cases*, so things work *most of the time*
+
+    * Here's hoping you tested your code thoroughly
+
+* There are a few strategies for distilling these bugs
+* A few accessible strategies for debugging are discussed below
+* Most people develop their own strategies as they gain experience
+* But just like everything else, you will get better at debugging the more you practice
+
+
 Print
-=====
+-----
 
-* By far the simplest method I use every day that works a lot of the time. 
-* If your code isn't doing what you expect it to, one way to figure what is happening is to insert ``print`` statements into your code.
-    * Just be careful with the obscenities.
-	
-    >>> print('work you piece of s***!')
+* Probably the simplest method for debugging is to call ``print`` in your code
 
-* By printing the values of variables at various points, you can double-check that the variables really do have the values you expect
-* Compare your intuition/expectation with reality
+    * Print out the value of some variable
+    * Add a print to see if Python actually executed a specific code block
+
+* Prints are great since they allow for a quick investigation into what we expect vs. what is actually happening
 
 .. admonition:: Activity
     :class: activity
 
-    There is one problem with this function. It ALMOST works, but it's slightly off. Read the description, test it with a ``print``. Is it right or wrong? Move the ``print``. See what happens? etc. etc.
+    There is a problem with the following function. It almost works, but it's slightly off. Read the description, see if
+    you can identify the issue, and then make use of ``print``\s to print out the values and hopefully pinpoint and fix
+    the issue.
 
     .. code-block:: python
-   
-        def count_numbers_up_to(n):
-            '''
+        :linenos:
+
+        def sum_numbers_up_to(n: int) -> int:
+            """
             This function adds up all the numbers from 0 - n exclusively.
             Eg. 5 -> 0 + 1 + 2 + 3 + 4 -> 10
 
-            :param n: The number we are counting to. Note we do not count n
+            :param n: The number we are summing to. Note we do not count n
             :return: The sum of the numbers
-            '''
+            """
 
             total = 0
             c = 0
@@ -134,32 +141,27 @@ Print
                 c += 1
                 total += c
             return total
-	  
 
-	print(count_numbers_up_to(5))  
-   
-   
-* Good thing we made sure the function was working perfectly before using it somewhere else and assuming it worked!  
+        assert 0 == sum_numbers_up_to(0)
+        assert 10 == sum_numbers_up_to(5)
 
 
-It is that easy!
-----------------
+* The process of debugging with ``print`` typically follows a pattern
 
-* This is a very easy, obvious way to debug.
-* It's also quite effective.
-* The process is always the same:
-    * Generate a hypothesis about values a variable should have at a particular place in your program
-    * Put a print statement at that place
-    * Compare reality to your hypothesis
-    * If they match, your problem is elsewhere
-    * If they don't... now you have something to investigate
-* You will rarely solve a complex problem with a single ``print``.
-* Instead, each ``print`` will lead you to form a new hypothesis... and then test it with another ``print``. 
-   
-  .. raw:: html
+    * Form a hypothesis about the value of a variable at a specific place in your program
+    * Add a ``print`` to print out the variable's value
+    * Compare your expectation with reality
+    * If they matched, perhaps the problem is elsewhere
+    * If they do not match, investigate why they differ
 
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/EnJhV2j8YR0" frameborder="0" allowfullscreen></iframe>
-   
+* Each ``print`` enables us to form a new hypothesis and continue debugging
+* Depending on the complexity of the problem, you may find that you need multiple ``print``\s in order to make any progress
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/EnJhV2j8YR0" frameborder="0" allowfullscreen></iframe>
+
+
    
 Pencil & Paper (or better, a whiteboard)
 ========================================
