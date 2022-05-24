@@ -35,12 +35,12 @@ Error Messages
 * In many cases, Python will generate an error message giving you an idea of what went wrong
 * Sometimes these error messages are very helpful
 
-    .. code-block:: python
+.. code-block:: python
 
-        line 17
-        print(5 + 5 +)
-                    ^
-        SyntaxError: invalid syntax
+    line 17
+    print(5 + 5 +)
+                ^
+    SyntaxError: invalid syntax
 
 
 * Other times the error messages are quite cryptic
@@ -80,6 +80,7 @@ Syntax Errors
         broken(5)
 
 
+
 Type Errors
 -----------
 
@@ -105,6 +106,7 @@ Type Errors
 
     print(99 + "bottles of beer on the wall")
     TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
 
 
 * However, sometimes we can have an issue caused by types that does not generate an error message
