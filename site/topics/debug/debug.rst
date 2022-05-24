@@ -80,33 +80,55 @@ Syntax Errors
         broken(5)
 
 
-Type errors
-===========
+Type Errors
+-----------
 
-* As we've seen many times, Python is pretty good at transparently guessing how to change types when you ask it do something that involves multiple types::
-  
-    >>> 2.03 + 4
-    6.0299999999999994
-     
-* **But** sometimes you might ask the impossible:
+* As we have seen, Python is pretty good about figuring out types
 
-     >>> 2.03 + 'octopus'
-     TypeError: unsupported operand type(s) for +: 'float' and 'str'
+.. admonition:: Activity
+    :class: activity
 
-* Again, this is a simple error where you get a message telling you exactly what is wrong.
+    a = 5           # It's an integer
+    b = 5.5         # Float since there is a decimal
+    c = a + b       # Mixing types in the expression (int and float), but no big deal
+    print(c)        # Results in 10.5
+
+
+* But Python can only do so much
+* For example, Python cannot suddenly figure out what it means to add an integer and a string together
+
+    * Think about it this way, what would you say if I asked you what "Hello" divided by 32 means?
 
 
 .. admonition:: Activity
     :class: activity
-   
-    This following code fine and all, but, like... what are the types of ``n`` and ``m`` supposed to be? The result of calling ``concat(5,5)`` and ``concat('5','5')`` are very different.
-   
-    .. code-block:: python
 
-        def concat(n,m):
-            return n + m
-		 
-         
+    print(99 + "bottles of beer on the wall")
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+* However, sometimes we can have an issue caused by types that does not generate an error message
+* Consider the ``inconsistent`` function defined in the following example
+
+    .. admonition:: Activity
+        :class: activity
+
+        def inconsistent(a, b):
+            return a + b
+
+
+* There is nothing wrong with this function, but what would happen if you called the function with the following two sets of arguments
+
+    * ``inconsistent(1, 1)`` returns ``2``
+    * ``inconsistent("1", "1")`` returns ``"11"``
+
+
+* It may seem obvious that one should just not call the function with the wrong argument types
+* But also consider reading input from the user, and how Python's ``input`` returns a string, even if the inputs are numbers
+
+    * How many times have you made the mistake in assuming the input were numbers when in fact they were strings?
+
+
 Other simple errors
 ===================
 
