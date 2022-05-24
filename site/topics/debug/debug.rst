@@ -83,17 +83,23 @@ Other simple errors
 * If you don't understand the error message... cut and paste it into Google.
     * This is literally what I do. 
 
+
 Logic errors
 ============
 
-* These are pretty much everything else...
-* *Much* harder to track down than simple errors
-* Might be obvious (e.g. infinite loop)
-* Might be "silent" (your code *looks* like it works, but gives subtly wrong answers in certain conditions)
-    * `These can literally be deadly! <https://en.wikipedia.org/wiki/List_of_software_bugs>`_
-* We'll look at a few strategies for tackling these...   
-	
-	
+* Logic errors can be quite difficult to debug
+* Everything may seem like it's working, but at the end of the day, something is off
+* Sometimes the errors may be obvious, like an infinite loop
+* And sometimes they can be quite sneaky --- the errors can be in *edge cases*, so things work *most of the time*
+
+    * Here's hoping you tested your code thoroughly
+
+* There are a few strategies for distilling these bugs
+* A few accessible strategies for debugging are discussed below
+* Most people develop their own strategies as they gain experience
+* But just like everything else, you will get better at debugging the more you practice
+
+
 Print
 =====
 
