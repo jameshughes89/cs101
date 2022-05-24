@@ -47,17 +47,21 @@ Error Messages
 * Fortunately, you can often copy/paste the error into Google and find an explanation
 
 
-Syntax errors
-=============
-* These are easy to fix. 
-* You make a typo and Python tells you the problem, and where it is, straight away.
-* You fix the syntax and... problem solved.
-* Not much strategy: just look at the code or look at what python yells at you about
+Syntax Errors
+-------------
+
+* Syntax errors will cause error messages that are often quite helpful
+* These messages typically tell you where the error is, as seen in the above example
+* There is not much of a debugging strategy with these errors as you just look at what Python tells you
 
 .. admonition:: Activity
     :class: activity
    
-    Fix this Python function::
+    See if you can find all the errors in the following example. You may be able to find them all just by looking at the
+    code, but feel free to copy/paste the code into Colab to see if the error messages help.
+
+    .. code-block:: python
+        :linenos:
    
         deff borken(a(
             a = a + * 3
@@ -65,7 +69,8 @@ Syntax errors
             return a + 2   
 		 
         broken(5)
-   
+
+
 Type errors
 ===========
 
