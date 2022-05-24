@@ -13,6 +13,12 @@ Debugging
 * You have probably come up with a system for debugging
 * In this topic, we will discuss a few popular and accessible debugging strategies
 
+* Before getting started however, it is important to emphasize what this is all about
+
+    * It's not just about getting your program to work
+    * It's about understanding your program and understanding why it is behaving the way it is
+
+
 .. image:: hi.jpg
 
 
