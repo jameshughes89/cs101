@@ -129,13 +129,6 @@ Type Errors
     * How many times have you made the mistake in assuming the input were numbers when in fact they were strings?
 
 
-Other simple errors
-===================
-
-* If an error is "simple", it generates a message from Python.
-* This tells you *what* is wrong and *where* it's wrong.
-* If you don't understand the error message... cut and paste it into Google.
-    * This is literally what I do. 
 
 Logic errors
 ============
