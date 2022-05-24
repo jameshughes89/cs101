@@ -34,18 +34,49 @@ The Importance of Debugging
     * The ability to reason logically
     * The ability to reason about flow of execution in code
 
-   
-Syntax errors
-=============
-* These are easy to fix. 
-* You make a typo and Python tells you the problem, and where it is, straight away.
-* You fix the syntax and... problem solved.
-* Not much strategy: just look at the code or look at what python yells at you about
+
+Error Messages
+==============
+
+* In many cases, Python will generate an error message giving you an idea of what went wrong
+* Sometimes these error messages are very helpful
+
+.. code-block:: python
+
+    line 17
+    print(5 + 5 +)
+                ^
+    SyntaxError: invalid syntax
+
+
+* Other times the error messages are quite cryptic
+
+    * Fortunately, you can often copy/paste the error into Google and find an explanation
+
+* Common error messages that you will come across (if you have not already) are
+
+    * Syntax errors
+    * Indentation Errors
+    * Name Errors
+    * Type Error
+    * Index Error
+
+
+Syntax Errors
+-------------
+
+* Syntax errors will cause error messages that are often quite helpful
+* These messages typically tell you where the error is, as seen in the above example
+* There is not much of a debugging strategy with these errors as you just look at what Python tells you
 
 .. admonition:: Activity
     :class: activity
    
-    Fix this Python function::
+    See if you can find all the errors in the following example. You may be able to find them all just by looking at the
+    code, but feel free to copy/paste the code into Colab to see if the error messages help.
+
+    .. code-block:: python
+        :linenos:
    
         deff borken(a(
             a = a + * 3
@@ -53,41 +84,59 @@ Syntax errors
             return a + 2   
 		 
         broken(5)
-   
-Type errors
-===========
-
-* As we've seen many times, Python is pretty good at transparently guessing how to change types when you ask it do something that involves multiple types::
-  
-    >>> 2.03 + 4
-    6.0299999999999994
-     
-* **But** sometimes you might ask the impossible:
-
-     >>> 2.03 + 'octopus'
-     TypeError: unsupported operand type(s) for +: 'float' and 'str'
-
-* Again, this is a simple error where you get a message telling you exactly what is wrong.
 
 
-.. admonition:: Activity
-    :class: activity
-   
-    This following code fine and all, but, like... what are the types of ``n`` and ``m`` supposed to be? The result of calling ``concat(5,5)`` and ``concat('5','5')`` are very different.
-   
+
+Type Errors
+-----------
+
+* As we have seen, Python is pretty good about figuring out types
+
+.. code-block:: python
+    :linenos:
+
+    a = 5           # It's an integer
+    b = 5.5         # Float since there is a decimal
+    c = a + b       # Mixing types in the expression (int and float), but no big deal
+    print(c)        # Results in 10.5
+
+
+* But Python can only do so much
+* For example, Python cannot suddenly figure out what it means to add an integer and a string together
+
+    * Think about it this way, what would you say if I asked you what "Hello" divided by 32 means?
+
+
+.. code-block:: python
+    :linenos:
+
+    print(99 + "bottles of beer on the wall")
+    TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+
+* However, sometimes we can have an issue caused by types that does not generate an error message
+* Consider the ``inconsistent`` function defined in the following example
+
     .. code-block:: python
+        :linenos:
 
-        def concat(n,m):
-            return n + m
-		 
-         
-Other simple errors
-===================
+        def inconsistent(a, b):
+            return a + b
 
-* If an error is "simple", it generates a message from Python.
-* This tells you *what* is wrong and *where* it's wrong.
-* If you don't understand the error message... cut and paste it into Google.
-    * This is literally what I do. 
+
+* There is nothing wrong with this function, but what would happen if you called the function with the following two sets of arguments
+
+    * ``inconsistent(1, 1)`` returns ``2``
+    * ``inconsistent("1", "1")`` returns ``"11"``
+
+
+* It may seem obvious that one should just not call the function with the wrong argument types
+* But also consider reading input from the user, and how Python's ``input`` returns a string, even if the inputs are numbers
+
+    * How many times have you made the mistake in assuming the input were numbers when in fact they were strings?
+
+
 
 
 Logic errors
@@ -144,6 +193,7 @@ Print
 
         assert 0 == sum_numbers_up_to(0)
         assert 10 == sum_numbers_up_to(5)
+
 
 
 * The process of debugging with ``print`` typically follows a pattern
