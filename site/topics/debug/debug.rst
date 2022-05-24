@@ -44,7 +44,16 @@ Error Messages
 
 
 * Other times the error messages are quite cryptic
-* Fortunately, you can often copy/paste the error into Google and find an explanation
+
+    * Fortunately, you can often copy/paste the error into Google and find an explanation
+
+* Common error messages that you will come across (if you have not already) are
+
+    * Syntax errors
+    * Indentation Errors
+    * Name Errors
+    * Type Error
+    * Index Error
 
 
 Syntax Errors
