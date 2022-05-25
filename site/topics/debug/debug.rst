@@ -249,22 +249,6 @@ Pencil & Paper
     solve the problem caused by your incorrect assumptions.
 
 
-* Slows you down
-* Can be easier to not make assumptions
-
-* Sometimes you end up chasing your tail with ``print`` statements.
-* The function you are debugging is so borked that you can't make heads or tails of it.
-* Time for a more holistic approach:
-    * Write down a grid with a column for every variable in your function.
-    * "Execute" your function, by hand, one line at a time.
-    * When your function changes variables, change them in your written grid.
-    * No, seriously, **one line at a time**. If you skip a few lines and write down what you *think* they did, you might as well not bother doing this at all.
-        * Remember, you're here in the first place because what *is* happening is *different* than what you *think* is happening.
-	  
-* This seems painful, and it can be.
-* If you do it right though, you can *very often* find the problem with your program.
-* A lot of the best programmers advocate this method when you're stumped. There's a reason for that.   
-
 Rubber Duck Debugging
 =====================
 
