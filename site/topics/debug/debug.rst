@@ -250,7 +250,7 @@ Pencil & Paper
 
 
 Delta debugging
-===============
+---------------
 
 * Still stuck? (or don't want to try Pencil & Paper debug?)
 * Here's another approach:
@@ -268,7 +268,7 @@ Delta debugging
 
 
 Rubber Duck Debugging
-=====================
+---------------------
 
 * `Rubber Duck Debugging <https://en.wikipedia.org/wiki/Rubber_duck_debugging>`_
 * A shockingly effectively form of debugging
