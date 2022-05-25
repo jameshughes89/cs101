@@ -213,21 +213,41 @@ Print
 
 
    
-Pencil & Paper (or better, a whiteboard)
-========================================
+Pencil & Paper
+--------------
 
-* Sometimes you end up chasing your tail with ``print`` statements.
-* The function you are debugging is so borked that you can't make heads or tails of it.
-* Time for a more holistic approach:
-    * Write down a grid with a column for every variable in your function.
-    * "Execute" your function, by hand, one line at a time.
-    * When your function changes variables, change them in your written grid.
-    * No, seriously, **one line at a time**. If you skip a few lines and write down what you *think* they did, you might as well not bother doing this at all.
-        * Remember, you're here in the first place because what *is* happening is *different* than what you *think* is happening.
-	  
-* This seems painful, and it can be.
-* If you do it right though, you can *very often* find the problem with your program.
-* A lot of the best programmers advocate this method when you're stumped. There's a reason for that.   
+* One of the tricks about debugging logic errors is to not make any assumptions about your code
+
+    * Do not assume a variable has a specific value
+    * Do not assume any specific functionality of a block of code
+
+* However, this is easier said than done, especially when depending on running your code repeatedly for debugging
+
+    * Like in the case of using ``print``
+
+* A workaround is to not actually run your program *on the computer*
+* Instead, execute the program on paper
+
+    * Create a table to keep track of each variable and the current value
+    * *Execute* the program on paper one line at a time, keeping track of the values of the variables
+
+* Big benefits of this approach are
+
+    * It slows you down
+    * It becomes easier to *not* make assumptions
+    * Requires you to be very deliberate and thoughtful
+
+* This may sound tedious, and it can be, but if you do this right you can very often find the problem
+
+.. note::
+
+    The point here is to take your time and think about every line of code. Rushing through and making assumptions will
+    inevitably cause this strategy to fail.
+
+    Remember, you are here in the first place because what your program is actually doing is different from what you
+    expected --- it would be rather silly to use your incorrect assumptions about what is going on in your program to
+    solve the problem caused by your incorrect assumptions.
+
 
 Rubber Duck Debugging
 =====================
