@@ -249,22 +249,29 @@ Pencil & Paper
     solve the problem caused by your incorrect assumptions.
 
 
-Delta debugging
+Delta Debugging
 ---------------
 
-* Still stuck? (or don't want to try Pencil & Paper debug?)
-* Here's another approach:
-    * Comment out your whole function (by preceding every line with ``#`` )
-    * Run it.
-    * (of course, nothing happens)
-    * Now uncomment a single "semantic unit". No more than a line or two.
-    * Maybe add a ``print`` after the uncommented lines
-    * Run it.
-    * Did it do what you expect?
-        * No? You've found at least one problem
-        * Yes? Repeat the above process: uncomment a tiny bit of the function, run it, and check that it's doing what you think it is.
+* Another strategy is *Delta Debugging*
+* Delta Debugging is a relatively sophisticated debugging strategy, but we can use it in a simple way
+* The main goal is to try to isolate, systematically, where the issue is arising
+* The strategy we can use is
 
-* You should code like this in the first place, but if you were bad and didn't here is a way to kinda' go back and address it. 		
+    * Comment out every line of code and run it (obviously it will do nothing)
+    * *Un*-comment out a logical unit of code and run it
+
+        * This should only be a line or two of code
+        * Maybe add a ``print``
+
+    * Did it do what you expected?
+
+        * No? You found at least part of the problem
+        * Yes? Keep looking
+
+
+* You may have realized that this is effectively the recommended coding strategy from earlier in the course
+
+    * Write only a few lines at a time and validate that it is working correctly with tests
 
 
 Rubber Duck Debugging
