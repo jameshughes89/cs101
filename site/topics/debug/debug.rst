@@ -239,6 +239,15 @@ Pencil & Paper
 
 * This may sound tedious, and it can be, but if you do this right you can very often find the problem
 
+.. note::
+
+    The point here is to take your time and think about every line of code. Rushing through and making assumptions will
+    inevitably cause this strategy to fail.
+
+    Remember, you are here in the first place because what your program is actually doing is different from what you
+    expected --- it would be rather silly to use your incorrect assumptions about what is going on in your program to
+    solve the problem caused by your incorrect assumptions.
+
 
 * Slows you down
 * Can be easier to not make assumptions
