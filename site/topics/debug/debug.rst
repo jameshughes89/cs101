@@ -249,14 +249,6 @@ Pencil & Paper
     solve the problem caused by your incorrect assumptions.
 
 
-Rubber Duck Debugging
-=====================
-
-* `Rubber Duck Debugging. <https://en.wikipedia.org/wiki/Rubber_duck_debugging>`_	
-* A shockingly effectively form of debugging
-* `If you don't have your own rubber duck, don't worry.  <https://play.google.com/store/apps/details?id=com.jameshughes89.dougtheduck>`_ 
-
-
 Delta debugging
 ===============
 
@@ -273,6 +265,18 @@ Delta debugging
         * Yes? Repeat the above process: uncomment a tiny bit of the function, run it, and check that it's doing what you think it is.
 
 * You should code like this in the first place, but if you were bad and didn't here is a way to kinda' go back and address it. 		
+
+
+Rubber Duck Debugging
+=====================
+
+* `Rubber Duck Debugging <https://en.wikipedia.org/wiki/Rubber_duck_debugging>`_
+* A shockingly effectively form of debugging
+* This is not a joke --- one of the best debugging strategy is to explain your code to *something*
+* Sometimes you have a friend
+* Sometimes you have your mom
+* Sometimes you have a pet
+* And sometimes you have a rubber duck
 
    
 For next class
