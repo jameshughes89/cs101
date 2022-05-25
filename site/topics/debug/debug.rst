@@ -213,8 +213,35 @@ Print
 
 
    
-Pencil & Paper (or better, a whiteboard)
-========================================
+Pencil & Paper
+--------------
+
+* One of the tricks about debugging logic errors is to not make any assumptions about your code
+
+    * Do not assume a variable has a specific value
+    * Do not assume any specific functionality of a block of code
+
+* However, this is easier said than done, especially when depending on running your code repeatedly for debugging
+
+    * Like in the case of using ``print``
+
+* A workaround is to not actually run your program *on the computer*
+* Instead, execute the program on paper
+
+    * Create a table to keep track of each variable and the current value
+    * *Execute* the program on paper one line at a time, keeping track of the values of the variables
+
+* Big benefits of this approach are
+
+    * It slows you down
+    * It becomes easier to *not* make assumptions
+    * Requires you to be very deliberate and thoughtful
+
+* This may sound tedious, and it can be, but if you do this right you can very often find the problem
+
+
+* Slows you down
+* Can be easier to not make assumptions
 
 * Sometimes you end up chasing your tail with ``print`` statements.
 * The function you are debugging is so borked that you can't make heads or tails of it.
