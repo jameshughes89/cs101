@@ -279,8 +279,7 @@ Rubber Duck Debugging
 * And sometimes you have a rubber duck
 
    
-For next class
+For Next Class
 ==============
-* `Seriously, get PyCharm installed! <https://www.jetbrains.com/pycharm/download>`_
 
-* Read `appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_  
+* Read `Appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_
