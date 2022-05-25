@@ -2,6 +2,13 @@
 File IO
 *******
 
+* We know how to read input from a user
+* We know how to store data in variables and lists
+* We know how to manipulate data
+* The trouble is, if we have large amounts of data, inputting data with ``input`` is not workable
+* Fortunately an easy way to address this is reading data from a file
+
+
 Getting data into Python
 ========================
 
