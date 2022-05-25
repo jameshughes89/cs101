@@ -8,35 +8,43 @@ File IO
 * The trouble is, if we have large amounts of data, inputting data with ``input`` is not workable
 * Fortunately an easy way to address this is reading data from a file
 
+Text Files
+==========
 
-Getting data into Python
-========================
+* Test files are great way to store textual data
+* They typically have the file extension ".txt", but the actual extension doesn't really matter
+* Most of what we are about to see will work on many different file types too (not just text files)
 
-* You now know a lot about how to *manipulate* data.
-* But you probably want to manipulate *specific* data. *Your* data. Not toy examples.
-* We need to learn about **File I/O**.
-* I wont lie to you: file I/O is boring, painful, detail-oriented work.
-* Fortunately, Python makes it less painful than just about any other language I've ever used.
 
-Read/Write to a text file
-=========================
+Reading From a Text File
+------------------------
 
-* There are a bunch of ways to do it, but here's one.
+* There are a few ways to open and read from a file, but the easiest is as follows
 
->>> my_file = open('aFileName.txt', 'r')
+.. code-block:: python
+    :linenos:
 
-* Done (many programming languages do NOT make it this easy)
-* This assumes the file is in the working directory
-* Take a wild guess what 'r' means
+    my_file = open("someFileName.txt", "r")
+
+
+* The above example opens up a file named ``"someFileName.txt"`` in read only mode (``"r"``)
+
+    * This assumes that the file being opened is in the current working directory
+
+* A reference to the file is stored in the variable ``my_file``
 
 .. admonition:: Activity
     :class: activity
 
-    1. Create a text in the working directory. If using Colab, you'll have to get one there. 
-    2. Open it like the above
-    3. Try using the methods ``.readline()`` and ``.read()``
-   
-* There are a lot of methods, these are just two.
+    #. Create a text file somewhere on your computer (perhaps Desktop for ease).
+    #. Upload the file to Colab.
+    #. Open your file like in the above example, but with your proper file name.
+    #. Try using the methods ``.readline()`` and ``.read()``.
+    #. See if you can figure out how to re-read from the file after you already read the full contents.
+
+
+* Note that there are many more methods available beyond ``.readline()`` and ``.read()``
+* It is also good to ``.close()`` the file once you are done using it in Python
 
 * How about writing to a file? 
 
