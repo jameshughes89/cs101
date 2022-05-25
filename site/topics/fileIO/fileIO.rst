@@ -16,7 +16,7 @@ Text Files
 * Most of what we are about to see will work on many different file types too (not just text files)
 
 
-Reading From a Text File
+Reading from a Text File
 ------------------------
 
 * There are a few ways to open and read from a file, but the easiest is as follows
@@ -46,26 +46,37 @@ Reading From a Text File
 * Note that there are many more methods available beyond ``.readline()`` and ``.read()``
 * It is also good to ``.close()`` the file once you are done using it in Python
 
-* How about writing to a file? 
 
->>> my_other_file = open('anotherFileName.txt', 'w')
+Writing to a Text File
+----------------------
+
+* Writing to a text file is similarly simple
+
+.. code-block:: python
+    :linenos:
+
+    my_other_file = open("anotherFileName.txt", "w")
+
+
+* Unlike reading however, the file does not need to exist
+* Python will create a new file with the name ``"anotherFileName.txt"``
 
 .. admonition:: Activity
     :class: activity
 
-    Try to figure out how to ``write`` to this file. 
+    #. Open some file in write only mode (``"w"``) in Python with a name of your choice.
+    #. Use the ``.write()`` method to write contents to the file.
+    #. Once you are done writing to the file, use the ``.close()`` method to close the file.
+    #. Open the file you just created in some text editor and confirm that it matches what you wrote.
 
 
-* When done with files...
-* Listen up, this is a very very important thing
-* Pay attention
-* **We must close them!**
-* Failing to do this can cause serious issues!!
-    * Seriously, I've spent longer than I would like to admit in my life looking for bugs that were just a result of me not closing my files. 
-   
-* Fortunately it's easy to close them
+.. warning::
 
->>> my_other_file.close()
+    It is very important to ``.close()`` your files when you are done with them, especially when writing to a file.
+    Based on how Python writes to files, the contents you write are not sent to the file right away. Instead, it goes to
+    something called a *buffer* that periodically writes to the file. If you fail to ``.close()`` your file, there is a
+    chance that the buffer never finished writing to the file before the program terminated. When you ``.close()`` the
+    file, it *flushes the buffer*, meaning that anything left in the buffer will be written to the file.
 
 
 Loading a CSV file
