@@ -188,10 +188,9 @@ Writing to a CSV File
 * In the above example, notice that all the data for the row is contained within a list
 
 
-
-For next class
+For Next Class
 ==============
 
-* Read `chapter 15 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_  
-* Read `chapter 16 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html>`_  
+* Read `Chapter 19 of the text <http://openbookproject.net/thinkcs/python/english3e/exceptions.html>`_
+
 
