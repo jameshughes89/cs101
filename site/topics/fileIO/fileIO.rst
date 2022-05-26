@@ -223,6 +223,13 @@ Writing to a CSV File
 
 * In the above example, notice that all the data for the row is contained within a list
 
+    * This is similar to how the data is read in as a list
+
+* With a csv writer, there are two important methods for us to know
+
+    * ``writerow``, which was discussed above
+    * ``writerows``, which takes a list of lists to write a large block of data
+
 
 For Next Class
 ==============
