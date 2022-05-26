@@ -167,18 +167,26 @@ Reading a CSV File
     .. raw:: html
 	
         <iframe width="560" height="315" src="https://www.youtube.com/embed/9wunG22ivJ0" frameborder="0" allowfullscreen></iframe>
-   
-* Suppose you have some tabular data in Python that you want to save back in to a CSV
 
-    >>> csv_out = csv.writer(open('yourFileName', 'w'))
-    >>> csv_out.writerow(['First cell','Second cell', 'Third cell'])
-    write as many rows as you need to... maybe in a loop?
-   
 
-* CSV files are popular because they're simple.
-* You can, e.g., export any Excel spreadsheet as a CSV.
-* If you have tabular data, this is a decent choice of format.
-* If you don't have tabular data... this is an awful choice.
+Writing to a CSV File
+---------------------
+
+* If we have large amounts of tabular data in our program we want to save to a file, we can write to a CSV file
+
+.. code-block:: python
+    :linenos:
+
+    # Create a file to write to
+    out_file = open("nameOfOutputFile.csv", "w")
+    csv_out_file = csv.writer(out_file)
+
+    # Write a row to the file
+    csv_out_file.writerow(['First cell','Second cell', 'Third cell'])
+
+
+* In the above example, notice that all the data for the row is contained within a list
+
 
 
 For next class
