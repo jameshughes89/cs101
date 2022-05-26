@@ -44,7 +44,7 @@ Reading from a Text File
 
 
 * Note that there are many more methods available beyond ``.readline()`` and ``.read()``
-* It is also good to ``.close()`` the file once you are done using it in Python
+* It is also important to ``.close()`` the file once you are done using it in Python
 
 
 Writing to a Text File
