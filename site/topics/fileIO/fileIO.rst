@@ -79,90 +79,161 @@ Writing to a Text File
     file, it *flushes the buffer*, meaning that anything left in the buffer will be written to the file.
 
 
-Loading a CSV file
-==================
+Comma Seperated Values (CSV)
+============================
 
-* Regular text files are cool, but CSVs are a great way to format data. 
+* CSV files are are a popular file format for tabular data
 
-* CSV stands for "Comma Separated Values".
-* The file is stored in plain text (you can read it with a text editor)
-* Delivers what it promises.
-* Each line of the file is one item.
-* Within the line, each value associated with that item is in a comma-delimited field.
-    * Some people will use tabs or other things, but commas are best. 
-* For example, suppose I have recorded height, weight and IQ for 3 subjects::
+    * Data that can be stored in a table
+    * Think of rows and columns of data, like in a spreadsheet
+
+* CSV files are stored in plain text, but values are seperated with commas
+
+    * You may come across CSV files that use tabs or spaces to separate data
+
+* They can be read in a simple text editor, or even in a spreadsheet program where it will format the data nicely
+
+    * In fact, you can typically save data from a spreadsheet into a CSV file
+
+* An example of data in a CSV is as follows
+
+.. code-block:: python
+    :linenos:
 
     name, height, weight, IQ
     Subject 1, 170, 68, 100
     Subject 2, 182, 80, 110
     Subject 3, 155, 54, 105
-   
-* The first line is a *header*, explaining the values in each field. 
-* Headers are *not* mandatory. Some CSVs have 'em, some don't.
-* Good news: Python has a built-in library to read CSV files for you!
-* In fact, we've seen this before::
 
-    def load_asn1_data():
-        """
-        This function loads the file `starbucks.csv` and returns a LIST of
-        latitudes and longitudes for North American Starbucks'.
-        We'll talk about lists formally in class in a few lectures, but maybe
-        you can start guessing how they work based on what you see here...
-        """
-	
+
+* The above example can be represented in a table as follows
+
+.. list-table:: CSV Viewed as a Table
+   :widths: 50 25 25 25
+   :header-rows: 1
+
+    * - name
+      - height
+      - weight
+      - IQ
+    * - Subject 1
+      - 170
+      - 68
+      - 100
+    * - Subject 2
+      - 182
+      - 80
+      - 110
+    * - Subject 3
+      - 155
+      - 54
+      - 105
+
+
+* The first line in the example CSV is a *header*, which explains the values in each column
+
+    * You do not need these, some CSV files have them, some don't
+
+
+Reading a CSV File
+------------------
+
+* Python has a built-in library to help make reading CSV files simple
+* In fact, you have already seen this in the Starbucks Density assignment
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 13
+
+    def load_starbucks_data(file_name: str) -> list:
+
         import csv
-	
-        reader = csv.reader(open('starbucks.csv', 'r'))
-        locations = []
-	
-        for r in reader:
-            locations.append( (r[0],r[1]))
-		
-        return locations
 
-* How does the ``csv.reader`` work?
+        # Open the Starbucks file specified by file_name
+        starbucks_file = open(file_name, "r")
+        starbucks_file_reader = csv.reader(starbucks_file)
+
+        # Create an empty list that the Starbucks location tuples will be added to
+        starbucks_locations = []
+
+        # For each row in the file, create a tuple of the lat/lon pair and add it to the list
+        for row in starbucks_file_reader:
+            location_tuple = (float(row[0]), float(row[1]))
+            starbucks_locations.append(location_tuple)
+
+        starbucks_file.close()
+        return starbucks_locations
+
+
+* The emphasized line with the ``for`` loop is the trick to reading data from the csv reader
+* When using the ``for`` loop, we read one row at a time from the file
+
+    * The file is like a collection of rows
+    * So, for each *row* in the *collection of rows*
+
+* Here, the variable ``row`` will store a reference to the row's data in the form of a list, where each element in the list is from a different column
+
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/HUHqBtNWJo8" frameborder="0" allowfullscreen></iframe>
-	
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HUHqBtNWJo8" frameborder="0" allowfullscreen></iframe>
+
+
 .. admonition:: Activity+
     :class: activity
-	
-    Figure out how it works. Download :download:`this csv file <airports.csv>` to your computer. **NOTE:** If using Colab, you'll have to upload it.
-   
-    Now write a function called ``load_airports()`` that loads this CSV file into a list. 
 
-    Play with this list a bit and get a feel for how the data is organized.
+    #. Download :download:`this csv file <airports.csv>` to your computer and then upload it to Colab.
+    #. Write a function called ``load_airports()`` that loads this CSV file into a list and returns the list.
 
-.. admonition:: Activity+++
+        * Use ``load_starbucks_data`` as a reference
+
+    #. Play around with the data a little to get a feel for how the information is stored in the list.
+
+
+.. admonition:: Activity
     :class: activity
 
-    Now write a function ``get_name_from_code(airport_code, airport_list)`` that will return a string containing the full name of the airport with the code ``airport_code``. 
+    Write a function ``get_name_from_code(airport_code, airport_list)`` that will return a string containing the full
+    name of the airport with the corresponding ``airport_code``. The parameter ``airport_list`` should be the list you
+    loaded using ``load_airports()``.
 
-    The parameter ``airport_list`` should be the list you loaded using ``load_airports()``.
+    If your function made use of a linear search, can you think of a way to alter ``get_name_from_code`` and
+    ``load_airports`` such that you do not need a linear search?
 
-
-      .. raw:: html
+    .. raw:: html
 	
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/9wunG22ivJ0" frameborder="0" allowfullscreen></iframe>
-   
-* Suppose you have some tabular data in Python that you want to save back in to a CSV
-
-    >>> csv_out = csv.writer(open('yourFileName', 'w'))
-    >>> csv_out.writerow(['First cell','Second cell', 'Third cell'])
-    write as many rows as you need to... maybe in a loop?
-   
-
-* CSV files are popular because they're simple.
-* You can, e.g., export any Excel spreadsheet as a CSV.
-* If you have tabular data, this is a decent choice of format.
-* If you don't have tabular data... this is an awful choice.
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9wunG22ivJ0" frameborder="0" allowfullscreen></iframe>
 
 
-For next class
+Writing to a CSV File
+---------------------
+
+* If we have large amounts of tabular data in our program we want to save to a file, we can write to a CSV file
+
+.. code-block:: python
+    :linenos:
+
+    # Create a file to write to
+    out_file = open("nameOfOutputFile.csv", "w")
+    csv_out_file = csv.writer(out_file)
+
+    # Write a row to the file
+    csv_out_file.writerow(['First cell','Second cell', 'Third cell'])
+
+
+* In the above example, notice that all the data for the row is contained within a list
+
+    * This is similar to how the data is read in as a list
+
+* With a csv writer, there are two important methods for us to know
+
+    * ``writerow``, which was discussed above
+    * ``writerows``, which takes a list of lists to write a large block of data
+
+
+For Next Class
 ==============
 
-* Read `chapter 15 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_  
-* Read `chapter 16 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html>`_  
+* Read `Chapter 19 of the text <http://openbookproject.net/thinkcs/python/english3e/exceptions.html>`_
+
 
