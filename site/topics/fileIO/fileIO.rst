@@ -2,55 +2,81 @@
 File IO
 *******
 
-Getting data into Python
-========================
+* We know how to read input from a user
+* We know how to store data in variables and lists
+* We know how to manipulate data
+* The trouble is, if we have large amounts of data, inputting data with ``input`` is not workable
+* Fortunately an easy way to address this is reading data from a file
 
-* You now know a lot about how to *manipulate* data.
-* But you probably want to manipulate *specific* data. *Your* data. Not toy examples.
-* We need to learn about **File I/O**.
-* I wont lie to you: file I/O is boring, painful, detail-oriented work.
-* Fortunately, Python makes it less painful than just about any other language I've ever used.
+Text Files
+==========
 
-Read/Write to a text file
-=========================
+* Test files are great way to store textual data
+* They typically have the file extension ".txt", but the actual extension doesn't really matter
+* Most of what we are about to see will work on many different file types too (not just text files)
 
-* There are a bunch of ways to do it, but here's one.
 
->>> my_file = open('aFileName.txt', 'r')
+Reading from a Text File
+------------------------
 
-* Done (many programming languages do NOT make it this easy)
-* This assumes the file is in the working directory
-* Take a wild guess what 'r' means
+* There are a few ways to open and read from a file, but the easiest is as follows
 
-.. admonition:: Activity
-    :class: activity
+.. code-block:: python
+    :linenos:
 
-    1. Create a text in the working directory. If using Colab, you'll have to get one there. 
-    2. Open it like the above
-    3. Try using the methods ``.readline()`` and ``.read()``
-   
-* There are a lot of methods, these are just two.
+    my_file = open("someFileName.txt", "r")
 
-* How about writing to a file? 
 
->>> my_other_file = open('anotherFileName.txt', 'w')
+* The above example opens up a file named ``"someFileName.txt"`` in read only mode (``"r"``)
+
+    * This assumes that the file being opened is in the current working directory
+
+* A reference to the file is stored in the variable ``my_file``
 
 .. admonition:: Activity
     :class: activity
 
-    Try to figure out how to ``write`` to this file. 
+    #. Create a text file somewhere on your computer (perhaps Desktop for ease).
+    #. Upload the file to Colab.
+    #. Open your file like in the above example, but with your proper file name.
+    #. Try using the methods ``.readline()`` and ``.read()``.
+    #. See if you can figure out how to re-read from the file after you already read the full contents.
 
 
-* When done with files...
-* Listen up, this is a very very important thing
-* Pay attention
-* **We must close them!**
-* Failing to do this can cause serious issues!!
-    * Seriously, I've spent longer than I would like to admit in my life looking for bugs that were just a result of me not closing my files. 
-   
-* Fortunately it's easy to close them
+* Note that there are many more methods available beyond ``.readline()`` and ``.read()``
+* It is also important to ``.close()`` the file once you are done using it in Python
 
->>> my_other_file.close()
+
+Writing to a Text File
+----------------------
+
+* Writing to a text file is similarly simple
+
+.. code-block:: python
+    :linenos:
+
+    my_other_file = open("anotherFileName.txt", "w")
+
+
+* Unlike reading however, the file does not need to exist
+* Python will create a new file with the name ``"anotherFileName.txt"``
+
+.. admonition:: Activity
+    :class: activity
+
+    #. Open some file in write only mode (``"w"``) in Python with a name of your choice.
+    #. Use the ``.write()`` method to write contents to the file.
+    #. Once you are done writing to the file, use the ``.close()`` method to close the file.
+    #. Open the file you just created in some text editor and confirm that it matches what you wrote.
+
+
+.. warning::
+
+    It is very important to ``.close()`` your files when you are done with them, especially when writing to a file.
+    Based on how Python writes to files, the contents you write are not sent to the file right away. Instead, it goes to
+    something called a *buffer* that periodically writes to the file. If you fail to ``.close()`` your file, there is a
+    chance that the buffer never finished writing to the file before the program terminated. When you ``.close()`` the
+    file, it *flushes the buffer*, meaning that anything left in the buffer will be written to the file.
 
 
 Comma Seperated Values (CSV)
