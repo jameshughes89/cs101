@@ -143,6 +143,7 @@ Reading a CSV File
 
 .. code-block:: python
     :linenos:
+    :emphasize-lines: 13
 
     def load_starbucks_data(file_name: str) -> list:
 
@@ -162,6 +163,15 @@ Reading a CSV File
 
         starbucks_file.close()
         return starbucks_locations
+
+
+* The emphasized line with the ``for`` loop is the trick to reading data from the csv reader
+* When using the ``for`` loop, we read one row at a time from the file
+
+    * The file is like a collection of rows
+    * So, for each *row* in the *collection of rows*
+
+* Here, the variable ``row`` will store a reference to the row's data in the form of a list, where each element in the list is from a different column
 
 
 .. raw:: html
