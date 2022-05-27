@@ -61,6 +61,9 @@ Writing to a Text File
 * Unlike reading however, the file does not need to exist
 * Python will create a new file with the name ``"anotherFileName.txt"``
 
+* The most commonly used methods you will likely use when writing to a file will be ``.write(text)`` and ``.writeline(listOfText)``
+
+
 .. admonition:: Activity
     :class: activity
 
