@@ -43,7 +43,11 @@ Reading from a Text File
     #. See if you can figure out how to re-read from the file after you already read the full contents.
 
 
-* Note that there are many more methods available beyond ``.readline()`` and ``.read()``
+* Note that there are many more methods available beyond ``.readline()`` and ``.read()``, but these will likely be the ones you use the most
+
+    * ``read`` reads the entire contents of the file
+    * ``readline`` reads a single line from the file
+
 * It is also important to ``.close()`` the file once you are done using it in Python
 
 
@@ -60,6 +64,12 @@ Writing to a Text File
 
 * Unlike reading however, the file does not need to exist
 * Python will create a new file with the name ``"anotherFileName.txt"``
+
+* The most commonly used methods you will likely use when writing to a file will be ``.write(text)`` and ``.writelines(listOfText)``
+
+    * ``write`` will write the provided text to the file
+    * ``writelines`` will write multiple lines of text to a file based on a list of strings --- each string in the list will be its own line
+
 
 .. admonition:: Activity
     :class: activity
@@ -109,8 +119,8 @@ Comma Seperated Values (CSV)
 * The above example can be represented in a table as follows
 
 .. list-table:: CSV Viewed as a Table
-   :widths: 50 25 25 25
-   :header-rows: 1
+    :widths: 50 25 25 25
+    :header-rows: 1
 
     * - name
       - height
