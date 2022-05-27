@@ -109,8 +109,8 @@ Comma Seperated Values (CSV)
 * The above example can be represented in a table as follows
 
 .. list-table:: CSV Viewed as a Table
-   :widths: 50 25 25 25
-   :header-rows: 1
+    :widths: 50 25 25 25
+    :header-rows: 1
 
     * - name
       - height
