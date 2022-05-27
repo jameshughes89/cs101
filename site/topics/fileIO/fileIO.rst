@@ -43,7 +43,7 @@ Reading from a Text File
     #. See if you can figure out how to re-read from the file after you already read the full contents.
 
 
-* Note that there are many more methods available beyond ``.readline()`` and ``.read()``
+* Note that there are many more methods available beyond ``.readline()`` and ``.read()``, but these will likely be the ones you use the most
 * It is also important to ``.close()`` the file once you are done using it in Python
 
 
