@@ -189,7 +189,7 @@ Reading a CSV File
     <iframe width="560" height="315" src="https://www.youtube.com/embed/HUHqBtNWJo8" frameborder="0" allowfullscreen></iframe>
 
 
-.. admonition:: Activity+
+.. admonition:: Activity
     :class: activity
 
     #. Download :download:`this csv file <airports.csv>` to your computer and then upload it to Colab.
