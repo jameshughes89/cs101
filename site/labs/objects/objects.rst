@@ -5,7 +5,7 @@ Objects
 Before Kattis
 =============
 
-This lab relates to topics discussed in :doc:`class 13 </topics/objects/objects>` and :doc:`class 13b </topics/more-objects/more-objects>`.
+This lab relates to topics discussed in :doc:`class 13 </topics/objects/objects>` and :doc:`class 13b </topics/objects/collections>`.
 
 Let's make a small program with classes. We'll make a program that will store a contact list of people. 
 
@@ -84,7 +84,7 @@ That's all I think we'll need for now.
         1 Smith, Greg:	gsmith@xfts.ca
 
 
-If you are stuck on any of this, :doc:`you should have a look here </topics/more-objects/more-objects>`.
+If you are stuck on any of this, :doc:`you should have a look here </topics/objects/collections>`.
 		
 Using Them Together
 ===================
