@@ -2,59 +2,60 @@
 Exceptions
 **********
 
-
-* I'm not gonna' go into too much detail on *exceptions*, but I want you to be aware of them and what they are
-* You've all seen these
-
->>> int('hello')
-ValueError: invalid literal for int() with base 10: 'hello'
-
->>> a = ['a', 'e', 'i', 'o', 'u']
->>> print(a[11])
-IndexError: list index out of range
-
-* ``ValueError`` and ``indexError`` are exceptions. 
-    * There are a bajillion more
-
-* When we tried to convert the string 'hello' to an integer, the code *raised* an exception
-* When we tried to access the 11th thing from the list of only 5 things, the code *raised* an exception
-* Why?
-* Well, whoever wrote the code you're trying to use for converting strings to ints and accessing lists had to have a way to deal with *exceptional* situations. 
-* It's kinda' like the programmer of the code you're trying to use is saying:
-    * You're trying to ask me to convert 'hello' to an int? Nope... Can't do it... But that's not *my* problem, that's **your** problem
-* So they told their code to ``raise`` an exception. 
-* When this exception is raised, it's now **YOUR** problem!
-
-
-* Here is a super contrived example of writing our own code to ``raise`` an exception...
-    * A lot of other programming languages call this ``throw``
+* You have all seen various exceptions in Python
 
 .. code-block:: python
 
-    def do_not_give_me_five(n):
-        if n == 5:
-            raise ValueError('I TOLD YOU NOT TO GIVE ME 5!!!')
-        else:
-            print(n)
-   
->>> do_not_give_me_five(4)
-4
+    int('hello')
+    ValueError: invalid literal for int() with base 10: 'hello'
 
->>> do_not_give_me_five(5)
-ValueError: I TOLD YOU NOT TO GIVE ME 5!!!
 
-* You may be wondering what the point is then
-* Well, here is perhaps a better example
+* In the above example, when we tried to convert the string ``hello"`` to an integer, Python *raised* an exception
 
 .. code-block:: python
+
+    a = ['a', 'e', 'i', 'o', 'u']
+    print(a[11])
+    IndexError: list index out of range
+
+* In the above example, when we tried to access the 11th thing in the list containing only 5 things, Python *raised* an exception
+
+* Both ``ValueError`` and ``indexError`` are exceptions, but there are many more kinds of exceptions
+
+* Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and indexing elements form a list
+* If I am the one writing the code for converting strings to integers, what should I make my code do if someone asks my code to convert the string ``"hello"`` to an integer?
+
+    * Obviously there is no single obvious and natural way to convert the string ``"hello"`` to an integer
+    * Should my code simply ignore the request and carry on like nothing ever happened?
+    * Should my code crash the whole program?
+    * Maybe some user entered some input wrong?
+    * Maybe the issue is with some text file that was read?
+    * ...
+
+* The trouble is, if I am writing the code for converting strings to integers, I cannot possibly know what you --- the individual trying to use my code at some point in the future --- want to do in these exceptional situations
+* What I can do however is *raise* an exception, which then communicates to the programmer using my code that *they* have to specify what *they* want to do when the exceptional situation arises
+
+* Consider the example below on dividing by zero
+
+.. code-block:: python
+    :linenos:
 
     def divide(a,b):
         if b == 0:
-            raise ZeroDivisionError('Nooooo!')
+            raise ZeroDivisionError("Wait, that's illegal")
         else:
             return a/b
 
-* This function I just wrote will first check if ``b`` is ``0``. If it is, it will ``raise`` an exception.
+
+* Obviously we're going to have an issue if we try to divide a number by zero
+* But what should happen if someone tries to?
+* That's entirely up to the programmer making use of the ``divide`` function
+* All I need to do is communicate to them that something exceptional happened by ``rais``\int an exception
+
+    * The function first checks if ``b`` is ``0``
+    * If ``b`` is ``0``, then the exception is ``raise``\ed
+    * If it is not, then the function carries on as it should
+
 
 Catching Exceptions
 ===================
