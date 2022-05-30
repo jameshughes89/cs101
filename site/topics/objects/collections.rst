@@ -1,6 +1,6 @@
-******************
-More About Objects
-******************
+***********
+Collections
+***********
 
 More complexity
 ===============
@@ -235,4 +235,4 @@ Putting it Together
 For next class (is anyone actually reading these? You really should!)
 =====================================================================
 
-* Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_  
+* Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
