@@ -11,7 +11,7 @@ File IO
 Text Files
 ==========
 
-* Test files are great way to store textual data
+* Text files are great way to store textual data
 * They typically have the file extension ".txt", but the actual extension doesn't really matter
 * Most of what we are about to see will work on many different file types too (not just text files)
 
