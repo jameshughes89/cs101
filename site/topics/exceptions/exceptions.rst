@@ -2,19 +2,22 @@
 Exceptions
 **********
 
+* You have all seen exceptions in Python
 
-* I'm not gonna' go into too much detail on *exceptions*, but I want you to be aware of them and what they are
-* You've all seen these
+    .. code-block:: python
 
->>> int('hello')
-ValueError: invalid literal for int() with base 10: 'hello'
+        int('hello')
+        ValueError: invalid literal for int() with base 10: 'hello'
 
->>> a = ['a', 'e', 'i', 'o', 'u']
->>> print(a[11])
-IndexError: list index out of range
 
-* ``ValueError`` and ``indexError`` are exceptions. 
-    * There are a bajillion more
+    .. code-block:: python
+
+        a = ['a', 'e', 'i', 'o', 'u']
+        print(a[11])
+        IndexError: list index out of range
+
+* Both ``ValueError`` and ``indexError`` are exceptions
+
 
 * When we tried to convert the string 'hello' to an integer, the code *raised* an exception
 * When we tried to access the 11th thing from the list of only 5 things, the code *raised* an exception
