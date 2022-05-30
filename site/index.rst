@@ -135,7 +135,7 @@ Course Notes
     topics/fileIO/fileIO
     topics/exceptions/exceptions
     topics/objects/objects
-    topics/more-objects/more-objects
+    topics/objects/collections
     topics/searching/searching
     topics/sorting/sorting
     topics/models-of-computation/models-of-computation
