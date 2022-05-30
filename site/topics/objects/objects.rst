@@ -342,7 +342,7 @@ What does it mean for 2 ``EnthusiasticStudent`` objects to be *equal*?
 The above code may also make it somewhat obvious why the ``self`` reference is important. Which instance of the object do we want the ``student_num`` attribute from?
 
 			
-For next class (is anyone actually reading these? You really should!)
-=====================================================================
+For Next Class
+==============
 
-* Read `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_  
+* Read `Chapter 16 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html>`_
