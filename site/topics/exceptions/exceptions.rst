@@ -128,7 +128,8 @@ Jane example
     * Then, either way, we print out ``rez``
 
    
-Bob example
+Example 2
+---------
 
 * Bob just wants to have his program keep asking the user for input until it can divide the numbers
 
