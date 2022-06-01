@@ -163,18 +163,24 @@ Tim example
         print('I am going to give you radiation therapy now.')
 
 
-Sally example
+Example 4
+---------
 
-* `Sally is writing code for a helicopter. If the calculation does not work, we still want the program to run and keep us in the air <https://en.wikipedia.org/wiki/1994_Scotland_RAF_Chinook_crash>`_.
+* Sometimes the exception may be inconsequential for the program's functionality
+
+    * Perhaps your program is rapidly reading input from some sensors for calculations and a ``ZeroDivisionError`` is likely caused by sensor precision
+    * Given this, it may be the case that periodic ``ZeroDivisionError`` are meaningless, so they can be ignored
+
 
 .. code-block:: python
+    :linenos:
 
-    def sally_code(a,b):
-        try: 
-            rez = divide(a,b)
+    def this_is_fine(a,b) -> float:
+        try:
+            quotient = divide(a,b)
         except ZeroDivisionError:
-            print('Error in calc. I will stay in the air though. ')
-        print('Keep Flying')
+            pass
+        return quotient
 
 
 Exception Types
