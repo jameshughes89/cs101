@@ -75,31 +75,34 @@ Catching Exceptions
     * Read input again?
     * Carry on as if nothing happened?
 
-   
-So here's the rule, let's say I'm going to use a function that might throw an exception.
 
-1. I will ``try`` to run the code that may or may not ``raise`` an exception
-2. The code will run normally ``except`` if the exception is raised. 
+* If you are using a function that may result in an exception, you can write your code such that
+
+    * You ``try`` to run the code that may or may not ``raise`` an exception
+    * The code will run normally ``except`` when the exceptional situation arises
+    * If the exceptional situation arises, special instructions will be specified
+
+* Below is a generalized idea of how one can do this
 
 .. code-block:: python
 
     def my_code():
-        try: 
-            function_that_can_raise_exception()
+        try:
+            might
+            cause
+            exception
         except SomeError:
-            code
-            that
             will
-            handle 
-            situation
-        code
-        that
+            handle
+            exception
         runs
         regardless
-	  
-* The code in the ``except`` area only runs if an exception happens
-* If no exception happens, then the code is skipped
-* It's kinda' like ``if`` statements, but for exceptions
+
+
+* In the above example, the code in the ``try`` would be something that may cause an exception we want to deal with
+* If it turns out that the code does ``raise`` an exception, the code within the ``except`` block runs
+* If no exception arises, then the ``except`` block is skipped
+
 
 Divide Example
 --------------
