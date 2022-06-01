@@ -166,6 +166,19 @@ Example 3
         return quotient
 
 
+* Alternatively, a simpler and better implementation would be to just let the exception propagate up and have the program eventually stop as a result
+
+.. code-block:: python
+    :linenos:
+
+    def stop_running_immediately(a,b) -> float:
+        quotient = divide(a,b)
+        return quotient
+
+
+* In the above example, if ``divide`` causes an exception, the exception would keep being handed to the calling function until it is dealt with or ultimately crashes the program
+
+
 Sally example
 
 * `Sally is writing code for a helicopter. If the calculation does not work, we still want the program to run and keep us in the air <https://en.wikipedia.org/wiki/1994_Scotland_RAF_Chinook_crash>`_.
