@@ -131,7 +131,8 @@ Jane example
 Example 2
 ---------
 
-* Bob just wants to have his program keep asking the user for input until it can divide the numbers
+* Consider a program requiring a user to input some values
+* If this is the case, it may be ideal to have the program ask for input again if the input was inadmissible
 
 .. code-block:: python
 
