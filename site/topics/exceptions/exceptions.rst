@@ -104,30 +104,29 @@ So here's the rule, let's say I'm going to use a function that might throw an ex
 * If no exception happens, then the code is skipped
 * It's kinda' like ``if`` statements, but for exceptions
 
-Divide Example
---------------
 
-* Let's look at a couple of examples of people using ``divide``
-   
-Jane example
+Example 1
+---------
 
-* Jane wants us to set the result to NaN (not a number) if we try to divide by zero.
+* There exists a special value for floating point numbers in Python called ``NaN``, which means *not a number*
+* A reasonable way to manage a ``ZeroDivisionError`` is to use a ``NaN`` value
 
 .. code-block:: python
+    :linenos:
 
-    def jane_code(a,b):
-        try: 
-            rez = divide(a,b)
+    def not_a_number_example(a: float, b: float) -> float:
+        try:
+            quotient = divide(a, b)
         except ZeroDivisionError:
-            rez = float('NaN')
-        print(rez)
+            quotient = float("NaN")
+        return quotient
 
-* What's happening?
-    * If we call ``divide`` and nothing funny happens ``rez`` becomes the result
-    * If an exception is thrown, ``divide`` never finishes doing its thing and we set ``rez`` to ``NaN``. 
-    * Then, either way, we print out ``rez``
 
-   
+* If ``divide`` is called and there is no ``ZeroDivisionError``, then the division occurs and the ``quotient`` is returned
+* On the other hand, if a ``ZeroDivisionError`` happens, we assign ``NaN`` to ``quotient`` and return it
+* Either way, the ``quotient`` is returned
+
+
 Bob example
 
 * Bob just wants to have his program keep asking the user for input until it can divide the numbers
