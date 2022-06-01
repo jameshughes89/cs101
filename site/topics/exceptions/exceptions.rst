@@ -104,32 +104,32 @@ Catching Exceptions
 * If no exception arises, then the ``except`` block is skipped
 
 
-Divide Example
---------------
 
-* Let's look at a couple of examples of people using ``divide``
-   
-Jane example
+Example 1
+---------
 
-* Jane wants us to set the result to NaN (not a number) if we try to divide by zero.
+* There exists a special value for floating point numbers in Python called ``NaN``, which means *not a number*
+* A reasonable way to manage a ``ZeroDivisionError`` is to use a ``NaN`` value
 
 .. code-block:: python
+    :linenos:
 
-    def jane_code(a,b):
-        try: 
-            rez = divide(a,b)
+    def not_a_number_example(a: float, b: float) -> float:
+        try:
+            quotient = divide(a, b)
         except ZeroDivisionError:
-            rez = float('NaN')
-        print(rez)
+            quotient = float("NaN")
+        return quotient
 
-* What's happening?
-    * If we call ``divide`` and nothing funny happens ``rez`` becomes the result
-    * If an exception is thrown, ``divide`` never finishes doing its thing and we set ``rez`` to ``NaN``. 
-    * Then, either way, we print out ``rez``
 
-   
+* If ``divide`` is called and there is no ``ZeroDivisionError``, then the division occurs and the ``quotient`` is returned
+* On the other hand, if a ``ZeroDivisionError`` happens, we assign ``NaN`` to ``quotient`` and return it
+* Either way, the ``quotient`` is returned
+
+
 Example 2
 ---------
+
 
 * Consider a program requiring a user to input some values
 * If this is the case, it may be ideal to have the program ask for input again if the input was inadmissible
