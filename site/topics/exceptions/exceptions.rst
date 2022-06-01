@@ -154,18 +154,34 @@ Example 2
 	  
 	  
 	  
-Tim example
+Example 3
+---------
 
-* `Tim is programming a piece of medical equipment that gives radiation therapy to people, and if the calculation goes wrong, we need the equipment to stop immediately otherwise we might give someone radiation poisoning <https://en.wikipedia.org/wiki/Therac-25>`_.
+* It may be the case that if the function causes an exception, our program should stop running immediately
+* If this is the case, we can make use of the ``exit()`` function to halt the program
 
 .. code-block:: python
+    :linenos:
 
-    def tim_code(a,b):
-        try: 
-            rez = divide(a,b)
+    def stop_running_immediately(a,b) -> float:
+        try:
+            quotient = divide(a,b)
         except ZeroDivisionError:
             exit()	# Immediately stop!
-        print('I am going to give you radiation therapy now.')
+        return quotient
+
+
+* Alternatively, a simpler and better implementation would be to just let the exception propagate up and have the program eventually stop as a result
+
+.. code-block:: python
+    :linenos:
+
+    def stop_running_immediately(a,b) -> float:
+        quotient = divide(a,b)
+        return quotient
+
+
+* In the above example, if ``divide`` causes an exception, the exception would keep being handed to the calling function until it is dealt with or ultimately crashes the program
 
 
 Sally example
