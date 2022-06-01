@@ -31,7 +31,7 @@ if __name__ == "__main__":
         install_requires=[
             "black[jupyter]==22.3.0",
             "flake8==4.0.1",
-            "flake8-black==0.3.2",
+            "flake8-black==0.3.3",
             "flake8-isort==4.1.1",
             "isort==5.10.1",
             "mdformat==0.7.14",
