@@ -60,24 +60,21 @@ Exceptions
 Catching Exceptions
 ===================
 
-* Exceptions are not necessarily errors. They are *exceptional situations*.
-* Let's consider ``divide`` above
-    * Although you could think about any other thing you've tried to do before that returned an exception, like converting 'hello' to an int, or indexing something that does not exist.
+* Pretend the above function ``divide`` was written in 1991 and you want to use it today
+* When you are using it today, you end up calling ``divide(9,0)``, which is problematic
 
-* Pretend I wrote this divide function in 1999 and now everyone today is using my super awesome function. 
-* You come along today and call ``divide(9,0)``
+    * One cannot divide 9 by 0
+    * What should the original programmer in 1991 do about it?
+    * Well... not much considering you are the one trying to use the function today
+    * How could the programmer know what to do to handle your specific situation today?
 
-1. I can't divide 9 by 0. That's a no-no.
-2. What should *I* do about it in 1999?
-3. Well... you're writing a program right now trying to use this function to do something
-4. How could I know how to handle this situation in YOUR program?
-5. How about this... How about I write some code in my 1999 code that says "SOMETHING EXCEPTIONAL HAPPENED" that lets YOU know that something is off.
-6. Then YOU can handle these exceptional situations however YOU want. 
+* What the original programmer can do, however, is to add some special code that says *something exceptional happened* that lets you know that something is off
+* This then allows you, the individual trying to use ``divide`` today, to deal with the situation the way you need
 
     * Crash?
-    * Carry on?
-    * Try again?
-    * Call the user a moron?
+    * Read input again?
+    * Carry on as if nothing happened?
+
    
 So here's the rule, let's say I'm going to use a function that might throw an exception.
 
