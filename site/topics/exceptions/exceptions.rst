@@ -175,12 +175,11 @@ Example 4
 .. code-block:: python
     :linenos:
 
-    def this_is_fine(a,b) -> float:
         try:
             quotient = divide(a,b)
         except ZeroDivisionError:
             pass
-        return quotient
+
 
 
 Exception Types
