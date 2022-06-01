@@ -177,26 +177,7 @@ Sally example
         print('Keep Flying')
 
 
-Exception Types
-===============
 
-* There are A LOT of types of exceptions/errors out there
-* We can even make our own (outside the scope of this class though)
-* There is even a hierarchy 
-    * `I stole this pic from here <https://o7planning.org/en/11421/python-exception-handling-tutorial>`_ 
-
-.. image:: exceptions.png
-
-
-Exceptional vs Error
-==================== 
-	
-* I'm not gonna' get too far into this, but long story short, there are some exceptions that are exceptional situations, and some that are just plane errors on the programmer's part. 
-* Things like ``IndexError: list index out of range`` are probably errors you made
-* Things like ``FileNotFoundError:`` are probably issues with the how the code was used (trying to open a file that does not exist), and not really an *error*
-
-
-	
 Why do we care about exceptions?
 ================================
 
