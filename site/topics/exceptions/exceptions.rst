@@ -135,19 +135,22 @@ Example 2
 * If this is the case, it may be ideal to have the program ask for input again if the input was inadmissible
 
 .. code-block:: python
+    :linenos:
 
-    def bob_code():
+    def continue_asking_for_input() -> float:
         while True:
-            data = input().split()
-            a = int(data[0])
-            b = int(data[1])
-            try: 
-                rez = divide(a,b)
+            data = input("Provide operands for division: ").split()
+            a = float(data[0])
+            b = float(data[1])
+            try:
+                quotient = divide(a, b)
                 break
             except ZeroDivisionError:
-                print('Bad input for divide (divided by 0), try again')
-			
-        print('Im outside the loop')
+                print("Cannot Divide By Zero --- Try Again")
+
+        return quotient
+
+
 	  
 	  
 	  
