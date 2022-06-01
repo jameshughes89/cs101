@@ -178,13 +178,18 @@ Sally example
 
 
 
-Why do we care about exceptions?
-================================
+Why Care?
+=========
 
-* It allows programmers to pass info around and communicate through TiMe
-* It allows us to deal with exceptional situations effectively
-* It gives us a nice logical division between normal code and exceptional code
+* Which of the above examples is the *correct* one?
+* The trouble is, that depends on your situation
+* The point is, how can the programmer in 1991 know what you want to do with your situation today?
 
+# Exceptions are fantastic because
+
+    * They allow programmers to pass info around and communicate through Time
+    * They allow us to deal with exceptional situations effectively
+    * They provide a nice logical division between normal code and exceptional code
 
 
 For Next Class
