@@ -2,16 +2,44 @@ import math
 
 
 class Circle:
-    def __init__(self, radius):
+    """
+    A class for representing circle based on its radius.
+    """
+
+    def __init__(self, radius: float):
+        """
+        Creates a Circle object with the specified radius.
+
+        :param radius: The radius of the Circle
+        :type radius: float
+        """
         self.radius = radius
 
     def diameter(self) -> float:
+        """
+        Calculate and return the diameter of the Circle based on its radius.
+
+        :return: diameter of the Circle
+        :rtype: float
+        """
         return 2 * self.radius
 
     def area(self) -> float:
+        """
+        Calculate and return the area of the Circle based on its radius.
+
+        :return: Area of the Circle
+        :rtype: float
+        """
         return math.pi * self.radius**2
 
     def circumference(self) -> float:
+        """
+        Calculate and return the circumference of the Circle based on its radius.
+
+        :return: Circumference of the Circle
+        :rtype: float
+        """
         return 2 * math.pi * self.radius
 
 
