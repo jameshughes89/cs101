@@ -43,10 +43,29 @@ class Point:
         midpoint_y = (self.y - point.y)/2 + point.y
         return Point(midpoint_x, midpoint_y)
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
+        """
+        Check if the self Point is equal to the Point passed as a parameter. Points are considered equal if they have
+        the same x and y values.
+
+        This is a "magic method" that can be used with `==`.
+
+        :param other: A Point to compare to the Self point
+        :type other: Point
+        :return: A boolean indicating if the two points are equivenent.
+        :rtype: boolean
+        """
         return self.x == other.x and self.y == other.y
 
-    def __repr__(self):
+    def __repr__(self) -> str:
+        """
+        Generate and return a string representation of the Point object.
+
+        This os a "magic method" that can be used with `str(some_point)` or for printing.e
+
+        :return: A string representation of the Point
+        :rtype: string
+        """
         return f"Point({self.x}, {self.y})"
 
 
