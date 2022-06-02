@@ -8,7 +8,7 @@ class Point:
         self.y = y
 
     def distance_from_origin(self) -> float:
-        pass
+        return math.sqrt(self.x**2 + self.y**2)
 
     def distance_from_point(self, point) -> float:
         pass
