@@ -49,3 +49,22 @@ class Point:
     def __repr__(self):
         return f"Point({self.x}, {self.y})"
 
+
+point_origin = Point(0, 0)
+assert 0 == point_origin.x
+assert 0 == point_origin.y
+assert 0 == point_origin.distance_from_origin()
+assert 0 == point_origin.distance_from_point(Point(0, 0))
+assert 0.001 > abs(point_origin.distance_from_point(Point(1, 1)) - 1.4142135)
+assert 0.001 > abs(point_origin.distance_from_point(Point(-1, -1)) - 1.4142135)
+assert Point(1, 1) == point_origin.find_midpoint(Point(2, 2))
+assert Point(-1, -1) == point_origin.find_midpoint(Point(-2, -2))
+assert Point(0, 0) == point_origin.find_midpoint(Point(0, 0))
+assert "Point(0, 0)" == str(point_origin)
+
+point = Point(-2, 7)
+assert 0.001 > abs(point.distance_from_origin() - 7.2801099)
+assert 0.001 > abs(point.distance_from_point(Point(0, 0)) - 7.2801099)
+assert 0.001 > abs(point.distance_from_point(Point(6, 3)) - 8.94427)
+assert Point(5, 5.5) == point.find_midpoint(Point(12, 4))
+assert "Point(-2, 7)"
