@@ -11,13 +11,16 @@ class Point:
         return math.sqrt(self.x**2 + self.y**2)
 
     def distance_from_point(self, point) -> float:
-        pass
+        return math.sqrt((self.x - point.x)**2 + (self.y - point.y)**2)
 
     def find_midpoint(self, point):
-        pass
+        midpoint_x = (self.x - point.x)/2 + point.x
+        midpoint_y = (self.y - point.y)/2 + point.y
+        return Point(midpoint_x, midpoint_y)
 
     def __eq__(self, other):
-        pass
+        return self.x == other.x and self.y == other.y
 
     def __repr__(self):
-        pass
+        return f"Point({self.x}, {self.y})"
+
