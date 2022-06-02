@@ -16,11 +16,11 @@ class Circle:
         return 2 * math.pi * self.radius
 
 
-circle_zero = Circle(0)
-assert 0 == circle_zero.radius
-assert 0 == circle_zero.diameter()
-assert 0 == circle_zero.area()
-assert 0 == circle_zero.circumference()
+circle_0 = Circle(0)
+assert 0 == circle_0.radius
+assert 0 == circle_0.diameter()
+assert 0 == circle_0.area()
+assert 0 == circle_0.circumference()
 
 circle_10 = Circle(10)
 assert 10 == circle_10.radius
