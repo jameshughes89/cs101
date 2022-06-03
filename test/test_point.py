@@ -68,6 +68,11 @@ class TestCircle(unittest.TestCase):
         point_to = Point(-2, -2)
         self.assertEqual(Point(-0.5, -0.5), point_from.find_midpoint(point_to))
 
+    def test_find_midpoint_between_arbitrary_point_and_equal_point_returns_equal_point(self):
+        point_from = Point(1, -1)
+        point_to = Point(1, -1)
+        self.assertEqual(Point(1, -1), point_from.find_midpoint(point_to))
+
     def test_equals_on_equal_points_returns_true(self):
         point_a = Point(1, 1)
         point_b = Point(1, 1)
