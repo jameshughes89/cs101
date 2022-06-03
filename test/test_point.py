@@ -13,16 +13,6 @@ class TestCircle(unittest.TestCase):
         point = Point(0, 0)
         self.assertEqual(0, point.y)
 
-    def test_equals_on_equal_points_returns_true(self):
-        point_a = Point(1, 1)
-        point_b = Point(1, 1)
-        self.assertTrue(point_a == point_b)
-
-    def test_equals_on_not_equal_points_returns_false(self):
-        point_a = Point(1, 1)
-        point_b = Point(-1, -1)
-        self.assertFalse(point_a == point_b)
-
     def test_update_point_x_has_updated_x(self):
         point = Point(0, 0)
         point.x = -1
@@ -77,6 +67,16 @@ class TestCircle(unittest.TestCase):
         point_from = Point(1, 1)
         point_to = Point(-2, -2)
         self.assertEqual(Point(-0.5, -0.5), point_from.find_midpoint(point_to))
+
+    def test_equals_on_equal_points_returns_true(self):
+        point_a = Point(1, 1)
+        point_b = Point(1, 1)
+        self.assertTrue(point_a == point_b)
+
+    def test_equals_on_not_equal_points_returns_false(self):
+        point_a = Point(1, 1)
+        point_b = Point(-1, -1)
+        self.assertFalse(point_a == point_b)
 
     def test_repr_arbitrary_point_returns_correct_string(self):
         point = Point(1, -1)
