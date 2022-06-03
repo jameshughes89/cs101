@@ -58,12 +58,12 @@ class TestCircle(unittest.TestCase):
         point_to = Point(-1, -1)
         self.assertAlmostEqual(2.82842712475, point_from.distance_from_point(point_to))
 
-    def test_find_midpoint_between_arbitrary_point_and_arbitrary_point_same_quadrant_returns_correct_distance(self):
+    def test_find_midpoint_between_arbitrary_point_and_arbitrary_point_same_quadrant_returns_correct_point(self):
         point_from = Point(1, 1)
         point_to = Point(3, 3)
         self.assertEqual(Point(2, 2), point_from.find_midpoint(point_to))
 
-    def test_find_midpoint_between_arbitrary_point_and_arbitrary_point_across_quadrants_returns_correct_distance(self):
+    def test_find_midpoint_between_arbitrary_point_and_arbitrary_point_across_quadrants_returns_correct_point(self):
         point_from = Point(1, 1)
         point_to = Point(-2, -2)
         self.assertEqual(Point(-0.5, -0.5), point_from.find_midpoint(point_to))
