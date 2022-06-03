@@ -19,28 +19,28 @@ class Point:
         """
         return math.sqrt(self.x**2 + self.y**2)
 
-    def distance_from_point(self, point) -> float:
+    def distance_from_point(self, other) -> float:
         """
         Calculate the Euclidean distance from this Point (self) and the Point passed as a parameter.
 
-        :param point: A Point to find the the Euclidean distance to from the self Point
-        :type point: Point
-        :return: The Euclidean distance between the self Point and the parameter Point
+        :param other: A Point to find the the Euclidean distance to from the self Point
+        :type other: Point
+        :return: The Euclidean distance between the self Point and the parameter Point other
         :rtype: float
         """
-        return math.sqrt((self.x - point.x) ** 2 + (self.y - point.y) ** 2)
+        return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2)
 
-    def find_midpoint(self, point):
+    def find_midpoint(self, other):
         """
         Return a new Point that is the midpoint between this Point (self) and the Point passed as a parameter.
 
-        :param point: A Point to find the the midpoint to from the self Point
-        :type point: Point
-        :return: A Point at the midpoint between the self Point and the parameter Point
+        :param other: A Point to find the the midpoint to from the self Point
+        :type other: Point
+        :return: A Point at the midpoint between the self Point and the parameter Point other
         :rtype: Point
         """
-        midpoint_x = (self.x - point.x) / 2 + point.x
-        midpoint_y = (self.y - point.y) / 2 + point.y
+        midpoint_x = (self.x - other.x) / 2 + other.x
+        midpoint_y = (self.y - other.y) / 2 + other.y
         return Point(midpoint_x, midpoint_y)
 
     def __eq__(self, other) -> bool:
@@ -52,7 +52,7 @@ class Point:
 
         :param other: A Point to compare to the Self point
         :type other: Point
-        :return: A boolean indicating if the two points are equivenent.
+        :return: A boolean indicating if the two points are equivalent.
         :rtype: boolean
         """
         if isinstance(other, Point):
