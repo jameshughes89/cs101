@@ -24,4 +24,4 @@ class Student:
         return False
 
     def __repr__(self) -> str:
-        return f"{self.last_name}, {self.first_name}\t {self.student_number}"
+        return f"{self.last_name}, {self.first_name}\t{self.student_number}"
