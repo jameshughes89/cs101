@@ -4,7 +4,6 @@ from src.point import Point
 
 
 class TestCircle(unittest.TestCase):
-
     def test_point_0_0_has_x_0(self):
         point = Point(0, 0)
         self.assertEqual(0, point.x)
@@ -90,4 +89,3 @@ class TestCircle(unittest.TestCase):
     def test_repr_arbitrary_point_returns_correct_string(self):
         point = Point(1, -1)
         self.assertEqual("Point(1, -1)", str(point))
-
