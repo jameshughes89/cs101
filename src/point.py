@@ -89,3 +89,5 @@ assert 0.001 > abs(point.distance_from_point(Point(0, 0)) - 7.2801099)
 assert 0.001 > abs(point.distance_from_point(Point(6, 3)) - 8.94427)
 assert Point(5, 5.5) == point.find_midpoint(Point(12, 4))
 assert "Point(-2, 7)"
+
+assert point != point_origin
