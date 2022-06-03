@@ -85,7 +85,7 @@ class TestCircle(unittest.TestCase):
 
     def test_equal_on_point_and_string_returns_false(self):
         point = Point(1, -1)
-        self.assertFalse("Point(1, -1)", point)
+        self.assertFalse("Point(1, -1)" == point)
 
     def test_repr_arbitrary_point_returns_correct_string(self):
         point = Point(1, -1)
