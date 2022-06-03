@@ -47,3 +47,21 @@ class TestCircle(unittest.TestCase):
     def test_setting_radius_to_20_returns_correct_circumference(self):
         self.circle_0.radius = 20
         self.assertAlmostEqual(125.6637061, self.circle_0.circumference(), 5)
+
+    def test_equals_on_equal_circles_returns_true(self):
+        circle_a = Circle(1)
+        circle_b = Circle(1)
+        self.assertTrue(circle_a == circle_b)
+
+    def test_equals_on_not_equal_circles_returns_false(self):
+        circle_a = Circle(1)
+        circle_b = Circle(2)
+        self.assertFalse(circle_a == circle_b)
+
+    def test_equal_on_circle_and_string_returns_false(self):
+        circle = Circle(1)
+        self.assertFalse("Circle(1)" == circle)
+
+    def test_repr_arbitrary_circle_returns_correct_string(self):
+        circle = Circle(1)
+        self.assertFalse("Circle(1)" == str(circle))
