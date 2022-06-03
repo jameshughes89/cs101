@@ -17,7 +17,7 @@ class Point:
         :return: The Euclidean distance from the self Point and the origin
         :rtype: float
         """
-        return math.sqrt(self.x**2 + self.y**2)
+        return self.distance_from_point(Point(0, 0))
 
     def distance_from_point(self, other) -> float:
         """
