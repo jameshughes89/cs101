@@ -91,3 +91,4 @@ assert Point(5, 5.5) == point.find_midpoint(Point(12, 4))
 assert "Point(-2, 7)"
 
 assert point != point_origin
+assert point_origin == Point(0, 0)
