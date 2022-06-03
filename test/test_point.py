@@ -22,25 +22,12 @@ class TestPoint(unittest.TestCase):
         point.y = -1
         self.assertEqual(-1, point.y)
 
-    def test_distance_from_origin_point_0_0_returns_0(self):
-        point = Point(0, 0)
-        self.assertEqual(0, point.distance_from_origin())
-
-    def test_distance_from_origin_arbitrary_q1_point_returns_correct_distance(self):
-        point = Point(1, 1)
-        self.assertAlmostEqual(1.41421356237, point.distance_from_origin())
-
-    def test_distance_from_origin_arbitrary_q2_point_returns_correct_distance(self):
-        point = Point(-1, 1)
-        self.assertAlmostEqual(1.41421356237, point.distance_from_origin())
-
-    def test_distance_from_origin_arbitrary_q3_point_returns_correct_distance(self):
-        point = Point(-1, -1)
-        self.assertAlmostEqual(1.41421356237, point.distance_from_origin())
-
-    def test_distance_from_origin_arbitrary_q4_point_returns_correct_distance(self):
-        point = Point(1, -1)
-        self.assertAlmostEqual(1.41421356237, point.distance_from_origin())
+    def test_distance_from_origin_returns_correct_distance(self):
+        cases = [Point(0, 0), Point(1, 1), Point(-1, 2), Point(-1, -3), Point(-1, -4)]
+        expected = [0, 1.41421, 2.23607, 3.16228, 4.12311]
+        for (case, expect) in zip(cases, expected):
+            with self.subTest(case=case, expect=expect):
+                self.assertAlmostEqual(expect, case.distance_from_origin(), 5)
 
     def test_distance_from_arbitrary_point_point_to_equal_point_returns_0(self):
         point_from = Point(1, 1)
