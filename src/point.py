@@ -63,7 +63,7 @@ class Point:
         """
         Generate and return a string representation of the Point object.
 
-        This os a "magic method" that can be used with `str(some_point)` or for printing.e
+        This os a "magic method" that can be used with `str(some_point)` or for printing.
 
         :return: A string representation of the Point
         :rtype: string
