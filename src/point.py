@@ -55,7 +55,9 @@ class Point:
         :return: A boolean indicating if the two points are equivenent.
         :rtype: boolean
         """
-        return self.x == other.x and self.y == other.y
+        if isinstance(other, Point):
+            return self.x == other.x and self.y == other.y
+        return False
 
     def __repr__(self) -> str:
         """
