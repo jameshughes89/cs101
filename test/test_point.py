@@ -3,7 +3,7 @@ import unittest
 from src.point import Point
 
 
-class TestCircle(unittest.TestCase):
+class TestPoint(unittest.TestCase):
     def test_point_0_0_has_x_0(self):
         point = Point(0, 0)
         self.assertEqual(0, point.x)
