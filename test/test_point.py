@@ -43,7 +43,7 @@ class TestCircle(unittest.TestCase):
         point = Point(1, -1)
         self.assertAlmostEqual(1.41421356237, point.distance_from_origin())
 
-    def test_distance_from_arbitrary_point_point_to_same_point_returns_0(self):
+    def test_distance_from_arbitrary_point_point_to_equal_point_returns_0(self):
         point_from = Point(1, 1)
         point_to = Point(1, 1)
         self.assertEqual(0, point_from.distance_from_point(point_to))
