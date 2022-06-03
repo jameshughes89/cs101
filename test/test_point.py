@@ -24,48 +24,34 @@ class TestPoint(unittest.TestCase):
 
     def test_distance_from_origin_various_points_returns_correct_distance(self):
         cases = [Point(0, 0), Point(1, 1), Point(-1, 2), Point(-1, -3), Point(-1, -4)]
-        expected = [0, 1.41421, 2.23607, 3.16228, 4.12311]
-        for (case, expect) in zip(cases, expected):
+        expecteds = [0, 1.41421, 2.23607, 3.16228, 4.12311]
+        for (case, expect) in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case.distance_from_origin(), 5)
 
-    def test_distance_from_origin_returns_correct_distance(self):
-        cases = [Point(0, 0), Point(1, 1), Point(-1, 2), Point(-1, -3), Point(-1, -4)]
-        expected = [0, 1.41421, 2.23607, 3.16228, 4.12311]
-        for (case, expect) in zip(cases, expected):
+    def test_distance_from_point_various_points_returns_correct_distance(self):
+        cases = [
+            (Point(1, 1), Point(1, 1)),
+            (Point(1, 1), Point(2, 2)),
+            (Point(1, 1), Point(-2, -2)),
+            (Point(-1, 1), Point(2, -3)),
+        ]
+        expecteds = [0, 1.41421, 4.24264, 5]
+        for (case, expect) in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
-                self.assertAlmostEqual(expect, case.distance_from_origin(), 5)
+                self.assertAlmostEqual(expect, case[0].distance_from_point(case[1]), 5)
 
-
-    def test_distance_from_arbitrary_point_point_to_equal_point_returns_0(self):
-        point_from = Point(1, 1)
-        point_to = Point(1, 1)
-        self.assertEqual(0, point_from.distance_from_point(point_to))
-
-    def test_distance_from_point_arbitrary_point_to_arbitrary_point_same_quadrant_returns_correct_distance(self):
-        point_from = Point(1, 1)
-        point_to = Point(3, 3)
-        self.assertAlmostEqual(2.82842712475, point_from.distance_from_point(point_to))
-
-    def test_distance_from_point_arbitrary_point_to_arbitrary_point_across_quadrants_returns_correct_distance(self):
-        point_from = Point(1, 1)
-        point_to = Point(-1, -1)
-        self.assertAlmostEqual(2.82842712475, point_from.distance_from_point(point_to))
-
-    def test_find_midpoint_between_arbitrary_point_and_arbitrary_point_same_quadrant_returns_correct_point(self):
-        point_from = Point(1, 1)
-        point_to = Point(3, 3)
-        self.assertEqual(Point(2, 2), point_from.find_midpoint(point_to))
-
-    def test_find_midpoint_between_arbitrary_point_and_arbitrary_point_across_quadrants_returns_correct_point(self):
-        point_from = Point(1, 1)
-        point_to = Point(-2, -2)
-        self.assertEqual(Point(-0.5, -0.5), point_from.find_midpoint(point_to))
-
-    def test_find_midpoint_between_arbitrary_point_and_equal_point_returns_equal_point(self):
-        point_from = Point(1, -1)
-        point_to = Point(1, -1)
-        self.assertEqual(Point(1, -1), point_from.find_midpoint(point_to))
+    def test_find_midpoint_various_points_returns_correct_point(self):
+        cases = [
+            (Point(1, 1), Point(1, 1)),
+            (Point(1, 1), Point(2, 2)),
+            (Point(1, 1), Point(-2, -2)),
+            (Point(-1, 1), Point(2, -3)),
+        ]
+        expecteds = [Point(1, 1), Point(1.5, 1.5), Point(-0.5, -0.5), Point(0.5, -1)]
+        for (case, expect) in zip(cases, expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertEqual(expect, case[0].find_midpoint(case[1]))
 
     def test_equals_on_equal_points_returns_true(self):
         point_a = Point(1, 1)
