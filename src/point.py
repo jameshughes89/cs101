@@ -28,7 +28,7 @@ class Point:
         :return: The Euclidean distance between the self Point and the parameter Point
         :rtype: float
         """
-        return math.sqrt((self.x - point.x)**2 + (self.y - point.y)**2)
+        return math.sqrt((self.x - point.x) ** 2 + (self.y - point.y) ** 2)
 
     def find_midpoint(self, point):
         """
@@ -39,8 +39,8 @@ class Point:
         :return: A Point at the midpoint between the self Point and the parameter Point
         :rtype: Point
         """
-        midpoint_x = (self.x - point.x)/2 + point.x
-        midpoint_y = (self.y - point.y)/2 + point.y
+        midpoint_x = (self.x - point.x) / 2 + point.x
+        midpoint_y = (self.y - point.y) / 2 + point.y
         return Point(midpoint_x, midpoint_y)
 
     def __eq__(self, other) -> bool:
