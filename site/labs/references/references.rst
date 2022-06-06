@@ -105,9 +105,6 @@ Before Kattis
 Kattis Problems
 ===============
 
-Kattis Problems
-===============
-
 * You should be using a scrap piece of paper to work out the ideas for the following problems
 
     * The problems you are to solve are getting too complex to try to solve by just coding
