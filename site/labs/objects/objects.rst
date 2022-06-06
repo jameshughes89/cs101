@@ -30,6 +30,9 @@ Pre Lab Exercises
 
 * Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/objects1>`
 
+    * Yes, this week's pre-lab exercise is intended to be simple
+    * It will provide a nice template for all the classes you will make in this lab
+
 
 Before Kattis
 =============
