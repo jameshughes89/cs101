@@ -44,12 +44,12 @@ Before Kattis
     * Make instances of the class and write ``assert`` tests to verify correctness
 
 
-# Write a ``ContactList`` class that will manage a collection of ``Person`` objects
+# Write a ``Contacts`` class that will manage a collection of ``Person`` objects
 
     * The class will keep track of many instances of ``Person`` objects
-    * A method for getting the ``size()`` of the ``ContactList``
+    * A method for getting the ``size()`` of the ``Contacts``
     * No duplicate/equivalent ``Person`` objects are allowed to be in the collection
-    * A method for adding a ``Person`` to the ``ContactList`` called ``add`` that takes a ``Person`` as a parameter
+    * A method for adding a ``Person`` to the ``Contacts`` called ``add`` that takes a ``Person`` as a parameter
 
         * If someone tries to ``add`` a duplicate/equivalent ``Person``, the method should ``raise`` a ``ValueError``
 
