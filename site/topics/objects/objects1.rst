@@ -36,44 +36,6 @@ Classes & Objects
     * You can think of the class as the blueprints for making objects
 
 
-
-
-Remember Numpy Arrays?
-----------------------
-
-* Numpy arrays are Objects/Abstract Data Types
-* Sure, *you* didn't define them, but someone did
-* You looked up how to use the numpy arrays, but we didn't care about how they worked on the back end
-* These ADTs came with a bunch of attributes and a bunch of methods too
-
-
-.. admonition:: Activity
-    :class: activity
-
-    1. Open up Python and create some numpy array of something called ``a``
-
-    2. Now type ``a.`` (the **a** followed by a period) (sometimes you have to hit *tab* too). You should see a list of things like this:
-
-        .. image:: ehDot.png
-            :height: 250px
-
-    3. These are either **attributes/properties** or **methods**
-
-    4. ``a.dtype`` is an example of an attribute. It will tell you something about the object
-
-    5. ``a.sum()`` is an example of a method. It went through the array and summed up the contents (mind the parentheses btw) 
-   
-* Look how easy it is to sum the contents of the array
-* You *could* have written the code to do it, but... why?
-* Chances are if you used this method, you would be using it to solve bigger problems
-* Later, you may use the solutions to the bigger problems to solve even BIGGER problems
-
-**The point is**
-
-* You *could* learn how an internal combustion engine works before turning on the car
-* But... why? That seems like a big waste of time
-* Why not use the implementation someone else created to use the car to solve *your* bigger problems!?   
-   
    
 Implementing Objects/ADTs
 -------------------------
