@@ -35,7 +35,7 @@ Classes vs Objects
 
     * You can think of the class as the blueprints for making objects
 
-* Another example would be ``List``\s
+* Going back to ``List``\s
 
     * There exists a class definition (blueprints) for ``List``\s
     * With the one class, I can then create as many instances of ``List``\s as I want
