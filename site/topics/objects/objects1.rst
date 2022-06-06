@@ -1,6 +1,6 @@
-*******
-Objects
-*******
+*********
+Objects I
+*********
 
 * Like it or not, you've already been using objects for a while now
 * But you may be wondering what the point is
