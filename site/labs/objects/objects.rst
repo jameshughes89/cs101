@@ -22,14 +22,9 @@ Objects
 Pre Lab Exercises
 =================
 
-.. warning::
-
-    You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
-    you will be asked to leave and you will obtain a grade of 0 for the lab.
-
-
 * Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/objects1>`
 
+    * You can obtain the source code from :download:`here </src/circle.py>`
     * Yes, this week's pre-lab exercise is intended to be simple
     * It will provide a nice template for all the classes you will make in this lab
 
