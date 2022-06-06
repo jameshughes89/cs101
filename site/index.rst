@@ -135,6 +135,7 @@ Course Notes
     topics/fileIO/fileIO
     topics/exceptions/exceptions
     topics/objects/introduction
+    topics/objects/methods
     topics/objects/collections
     topics/searching/searching
     topics/sorting/sorting
