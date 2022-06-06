@@ -41,6 +41,7 @@ Before Kattis
 
     * A reasonable ``__repr__`` method --- you can decide what the string looks like
     * A reasonable ``__eq__`` method --- you can decide what it means for two ``Person`` objects to be equivalent
+    * Make instances of the class and write ``assert`` tests to verify correctness
 
 
 # Write a ``ContactList`` class that will manage a collection of ``Person`` objects
@@ -59,6 +60,8 @@ Before Kattis
     * A ``__repr__`` that returns a string containing the details of all ``Person`` objects
 
         * Be sure to make use of the ``Person`` class' ``__repr__`` method
+
+    * Make an instance of the class, add/remove ``Person`` objects to it, and write ``assert`` tests to verify correctness
 
 
 Kattis Problems
