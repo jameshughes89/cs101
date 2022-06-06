@@ -155,9 +155,10 @@ Labs
     labs/car-rental/car-rental
     labs/loops/loops
     labs/linear-search/linear-search
-    labs/1d-lists/1d-lists
-    labs/2d-lists/2d-lists
-    labs/references/references
+    labs/lists/1d-lists
+    labs/lists/2d-lists
+    labs/lists/references
+    labs/debug/debug
     labs/objects/objects
     labs/more-objects/more-objects
     labs/recursion/recursion
