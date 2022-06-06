@@ -25,25 +25,17 @@ Objects I
 * In this topic, the basics of how to define your own objects will be covered
 
 	  
-Objects and Abstract Data Structures (ADT)
-==========================================
+Classes & Objects
+=================
 
-* You get to make this up now; what kinds of data do you want?
-    * Do you want *car* data structures?
-    * *Human* data structures?
-    * *Cookies*?
-* **You** get to say what the data is and looks like
-* **You** get to say how the data will act
-* **You** get to define what you will do with it
+* We are going to make ``Circle`` objects
+* However, in order to start making our own objects, we first must define a *class*
+* A class is simply the code that defines what it means for something to be an object of the class
+* For example, we will define a ``Circle`` class, which contains all the information needed for Python to start making instances of ``Circle``\s
 
-* These ADTs can be simple
-    * cars
-    * humans
-    * cookies
-* Or complex
-    * lists
-    * dictionaries
-    * sets
+    * You can think of the class as the blueprints for making objects
+
+
 
 
 Remember Numpy Arrays?
