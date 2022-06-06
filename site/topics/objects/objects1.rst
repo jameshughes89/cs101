@@ -2,29 +2,22 @@
 Objects I
 *********
 
-* Like it or not, you've already been using objects for a while now
-* But you may be wondering what the point is
-    * Or you may even hate them and find them confusing
-        * Function vs Method? 
-        * Variable vs Property/Attributes?
 
-* For better or worse, you will have to get used to them. So start loving them. 
-* Big reasons Computer Scientists like objects is because of *abstraction* and the logical *encapsulation* of stuff. 
+* Objects are a way to combine data and functionality together within our programs
+* Motivation for this is, it may help with abstraction and encapsulation
+* Further, you may find it a little more natural and analogous to how you think of the world
 
-* We get to focus on *what* as opposed to *how* (and sometimes ignoring the *why* altogether)
-    * Using functions without worrying about *how* it works, but just that it works
-* Eg: Do you know how to turn on a car? Do you need to know *how* the car works to turn it on?
-    * Answering *how* really depends on the level of **abstraction** we're talking about
+* Consider the ``List``\s you have been using --- these are objects
 
+    * They have some data associated with them,
 
-.. image:: engine.gif
-   :height: 250px
+        * Their size
+        * the information stored in the list
 
-.. image:: ignitCar.jpg
-   :height: 250px
+    * But they also have functionality associated with them too
 
-.. image:: carKey.jpg
-   :height: 250px
+        * ``append``
+        * ``remove``
 
 	  
 Objects and Abstract Data Structures (ADT)
