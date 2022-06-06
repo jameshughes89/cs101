@@ -158,7 +158,6 @@ Labs
     labs/1d-lists/1d-lists
     labs/2d-lists/2d-lists
     labs/references/references
-    labs/debug/debug
     labs/objects/objects
     labs/more-objects/more-objects
     labs/recursion/recursion
