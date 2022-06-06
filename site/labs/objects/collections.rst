@@ -43,13 +43,31 @@ Before Kattis
     * A reasonable ``__eq__`` method --- you can decide what it means for two ``Person`` objects to be equivalent
 
 
+# Write a ``ContactList`` class that will manage a collection of ``Person`` objects
+
+    * The class will keep track of many instances of ``Person`` objects
+    * A method for getting the ``size()`` of the ``ContactList``
+    * No duplicate/equivalent ``Person`` objects are allowed to be in the collection
+    * A method for adding a ``Person`` to the ``ContactList`` called ``add`` that takes a ``Person`` as a parameter
+
+        * If someone tries to ``add`` a duplicate/equivalent ``Person``, the method should ``raise`` a ``ValueError``
+
+    * A method to remove a ``Person`` called ``remove`` that takes a ``Person`` as a parameter (the one to be removed)
+
+        * If someone tries to ``remove`` a nonexistent ``Person``, the method should ``raise`` a ``ValueError``
+
+    * A ``__repr__`` that returns a string containing the details of all ``Person`` objects
+
+        * Be sure to make use of the ``Person`` class' ``__repr__`` method
+
+
 Kattis Problems
 ===============
 
-Go back and work on Kattis problems you have yet to solve. I'm betting there are **A LOT** of the early ones you got stuck on that you could not demolish. 
+Go back and work on Kattis problems from previous labs that you have yet to solve. I'm betting there are several of the
+earlier ones you can revisit and solve. Remember, the Kattis problems are great for practice, and practice is the only
+way to get better at programming.
 
-Remember, the Kattis problems are great for practice, and practice is the only way to get good at programming. 
+.. warning::
 
-At this point, many of the not-so-difficult problems are totally doable by you now. If you're looking for more problems, or want more practice for tests, etc. sort the Kattis problems by difficulty and have fun. 
-
-**ENSURE WE HAVE RECORDED YOUR COMPLETION. FAILURE TO DO SO WILL RESULT IN A GRADE OF 0!**
+    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
