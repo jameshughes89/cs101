@@ -78,14 +78,6 @@ Starting the Class
     * The example above is not particularly helpful, but we can add more detail later
 
 
-Implementing Objects/ADTs
--------------------------
-    
-* So that gives us some motivation for why objects/ADTs are cool.    
-* Despite me just saying that we won't worry about how they work... well, we are now going to worry about how they work.
-* The point is, we are now going to learn how we can build some so other people (or you) can not worry how they work
-   
-* Just like the rest of this class, we will learn by doing, so let's start doing. 
 
 Let's Make a Simple Object/ADT
 ==============================
