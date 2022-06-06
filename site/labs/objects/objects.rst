@@ -70,7 +70,7 @@ Before Kattis
     * Attribute for ``last_name``
     * Attribute for ``email_address``
     * The constructor will take three parameters for specifying the values of the attributes
-    * A method returning a string of their ``full_name()``
+    * A method returning a string of their ``full_name()`` --- e.g. ```Bob Smith``
     * Make instances of the class and write ``assert`` tests to verify correctness
 
 
