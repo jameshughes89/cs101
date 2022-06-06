@@ -30,5 +30,5 @@ class Course:
     def __repr__(self):
         s = ""
         for student in self._students:
-            s += str(student)
+            s += str(student) + "\n"
         return s
