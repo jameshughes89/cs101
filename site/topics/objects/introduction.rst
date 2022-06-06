@@ -1,6 +1,6 @@
-*********
-Objects I
-*********
+**************************
+Objects I --- Introduction
+**************************
 
 
 * Objects are a way to combine data and functionality together within our programs
