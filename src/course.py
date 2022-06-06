@@ -32,4 +32,3 @@ class Course:
         for student in self._students:
             s += str(student)
         return s
-    
