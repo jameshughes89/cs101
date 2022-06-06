@@ -19,6 +19,11 @@ Objects I
         * ``append``
         * ``remove``
 
+
+* You are already used to working with some objects (e.g., ``List``)
+* But you have not defined your own objects
+* In this topic, the basics of how to define your own objects will be covered
+
 	  
 Objects and Abstract Data Structures (ADT)
 ==========================================
