@@ -41,6 +41,43 @@ Classes vs Objects
     * With the one class, I can then create as many instances of ``List``\s as I want
 
 
+Circle Class
+============
+
+* Just like the rest of the class, we will lean by doing
+* In other words, we will define the ``Circle`` class and then make a few instances of ``Circle`` objects
+
+* However, there is one big question --- what is a circle; what data and functionality should it have?
+
+    * Turns out, we get to invent this
+    * We decide what data will be stored
+    * We decide what functionality it will have
+
+
+Starting the Class
+------------------
+
+* To start writing our ``Circle`` class, we use the ``class`` keyword
+
+.. code-block:: python
+    :linenos:
+
+    class Circle:
+        """
+        A simple class for representing circle.
+        """
+
+* The above example contains the start of the class
+* The ``class Circle:`` starts the class
+
+    * Anything indented is part of the ``Circle`` class definition
+    * Like how anything indented under an ``if`` is part of the ``if`` block
+
+* The docstring comment is a simple description of the class
+
+    * The example above is not particularly helpful, but we can add more detail later
+
+
 Implementing Objects/ADTs
 -------------------------
     
