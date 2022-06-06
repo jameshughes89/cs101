@@ -4,7 +4,7 @@ class Course:
     enrollment details.
     """
 
-    def __int__(self, course_name):
+    def __init__(self, course_name):
         self.course_name = course_name
         self._students = []
 
