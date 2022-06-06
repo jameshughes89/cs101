@@ -1,6 +1,6 @@
-************
-More Objects
-************
+***********
+Collections
+***********
 
 Before Kattis
 =============
