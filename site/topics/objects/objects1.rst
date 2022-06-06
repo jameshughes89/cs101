@@ -25,8 +25,8 @@ Objects I
 * In this topic, the basics of how to define your own objects will be covered
 
 	  
-Classes & Objects
-=================
+Classes vs Objects
+==================
 
 * We are going to make ``Circle`` objects
 * However, in order to start making our own objects, we first must define a *class*
@@ -35,8 +35,12 @@ Classes & Objects
 
     * You can think of the class as the blueprints for making objects
 
+* Another example would be ``List``\s
 
-   
+    * There exists a class definition (blueprints) for ``List``\s
+    * With the one class, I can then create as many instances of ``List``\s as I want
+
+
 Implementing Objects/ADTs
 -------------------------
     
