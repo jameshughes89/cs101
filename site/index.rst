@@ -134,7 +134,7 @@ Course Notes
     topics/debug/debug
     topics/fileIO/fileIO
     topics/exceptions/exceptions
-    topics/objects/objects
+    topics/objects/introduction
     topics/objects/collections
     topics/searching/searching
     topics/sorting/sorting

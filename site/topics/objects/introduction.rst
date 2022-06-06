@@ -1,98 +1,83 @@
-*******
-Objects
-*******
-
-* Like it or not, you've already been using objects for a while now
-* But you may be wondering what the point is
-    * Or you may even hate them and find them confusing
-        * Function vs Method? 
-        * Variable vs Property/Attributes?
-
-* For better or worse, you will have to get used to them. So start loving them. 
-* Big reasons Computer Scientists like objects is because of *abstraction* and the logical *encapsulation* of stuff. 
-
-* We get to focus on *what* as opposed to *how* (and sometimes ignoring the *why* altogether)
-    * Using functions without worrying about *how* it works, but just that it works
-* Eg: Do you know how to turn on a car? Do you need to know *how* the car works to turn it on?
-    * Answering *how* really depends on the level of **abstraction** we're talking about
+*********
+Objects I
+*********
 
 
-.. image:: engine.gif
-   :height: 250px
+* Objects are a way to combine data and functionality together within our programs
+* Motivation for this is, it may help with abstraction and encapsulation
+* Further, you may find it a little more natural and analogous to how you think of the world
 
-.. image:: ignitCar.jpg
-   :height: 250px
+* Consider the ``List``\s you have been using --- these are objects
 
-.. image:: carKey.jpg
-   :height: 250px
+    * They have some data associated with them,
+
+        * Their size
+        * the information stored in the list
+
+    * But they also have functionality associated with them too
+
+        * ``append``
+        * ``remove``
+
+
+* You are already used to working with some objects (e.g., ``List``)
+* But you have not defined your own objects
+* In this topic, the basics of how to define your own objects will be covered
 
 	  
-Objects and Abstract Data Structures (ADT)
-==========================================
+Classes vs Objects
+==================
 
-* You get to make this up now; what kinds of data do you want?
-    * Do you want *car* data structures?
-    * *Human* data structures?
-    * *Cookies*?
-* **You** get to say what the data is and looks like
-* **You** get to say how the data will act
-* **You** get to define what you will do with it
+* We are going to make ``Circle`` objects
+* However, in order to start making our own objects, we first must define a *class*
+* A class is simply the code that defines what it means for something to be an object of the class
+* For example, we will define a ``Circle`` class, which contains all the information needed for Python to start making instances of ``Circle``\s
 
-* These ADTs can be simple
-    * cars
-    * humans
-    * cookies
-* Or complex
-    * lists
-    * dictionaries
-    * sets
+    * You can think of the class as the blueprints for making objects
+
+* Going back to ``List``\s
+
+    * There exists a class definition (blueprints) for ``List``\s
+    * With the one class, I can then create as many instances of ``List``\s as I want
 
 
-Remember Numpy Arrays?
-----------------------
+Circle Class
+============
 
-* Numpy arrays are Objects/Abstract Data Types
-* Sure, *you* didn't define them, but someone did
-* You looked up how to use the numpy arrays, but we didn't care about how they worked on the back end
-* These ADTs came with a bunch of attributes and a bunch of methods too
+* Just like the rest of the class, we will lean by doing
+* In other words, we will define the ``Circle`` class and then make a few instances of ``Circle`` objects
+
+* However, there is one big question --- what is a circle; what data and functionality should it have?
+
+    * Turns out, we get to invent this
+    * We decide what data will be stored
+    * We decide what functionality it will have
 
 
-.. admonition:: Activity
-    :class: activity
+Starting the Class
+------------------
 
-    1. Open up Python and create some numpy array of something called ``a``
+* To start writing our ``Circle`` class, we use the ``class`` keyword
 
-    2. Now type ``a.`` (the **a** followed by a period) (sometimes you have to hit *tab* too). You should see a list of things like this:
+.. code-block:: python
+    :linenos:
 
-        .. image:: ehDot.png
-            :height: 250px
+    class Circle:
+        """
+        A simple class for representing circle.
+        """
 
-    3. These are either **attributes/properties** or **methods**
+* The above example contains the start of the class
+* The ``class Circle:`` starts the class
 
-    4. ``a.dtype`` is an example of an attribute. It will tell you something about the object
+    * Anything indented is part of the ``Circle`` class definition
+    * Like how anything indented under an ``if`` is part of the ``if`` block
 
-    5. ``a.sum()`` is an example of a method. It went through the array and summed up the contents (mind the parentheses btw) 
-   
-* Look how easy it is to sum the contents of the array
-* You *could* have written the code to do it, but... why?
-* Chances are if you used this method, you would be using it to solve bigger problems
-* Later, you may use the solutions to the bigger problems to solve even BIGGER problems
+* The docstring comment is a simple description of the class
 
-**The point is**
+    * The example above is not particularly helpful, but we can add more detail later
 
-* You *could* learn how an internal combustion engine works before turning on the car
-* But... why? That seems like a big waste of time
-* Why not use the implementation someone else created to use the car to solve *your* bigger problems!?   
-   
-   
-Implementing Objects/ADTs
--------------------------
-    
-* So that gives us some motivation for why objects/ADTs are cool.    
-* Despite me just saying that we won't worry about how they work... well, we are now going to worry about how they work.
-* The point is, we are now going to learn how we can build some so other people (or you) can not worry how they work
-   
-* Just like the rest of this class, we will learn by doing, so let's start doing. 
+
 
 Let's Make a Simple Object/ADT
 ==============================
