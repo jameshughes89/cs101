@@ -161,7 +161,7 @@ Labs
     labs/lists/references
     labs/debug/debug
     labs/objects/objects
-    labs/more-objects/more-objects
+    labs/objects/collections
     labs/recursion/recursion
     
     
