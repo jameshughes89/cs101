@@ -34,7 +34,7 @@ class Sphere:
         """
         return self.centre_point.distance_from_point(other.centre_point)
 
-    def distance_between_edges(self, other: Point3D) -> float:
+    def distance_between_edges(self, other: "Sphere") -> float:
         """
         Calculate and return the distance between the edges of two Spheres. If the value is negative, the two Spheres
         overlap.
@@ -46,7 +46,7 @@ class Sphere:
         """
         return self.distance_between_centres(other) - self.radius - other.radius
 
-    def overlaps(self, other: Point3D) -> bool:
+    def overlaps(self, other: "Sphere") -> bool:
         """
         Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
         between edges) are considered overlapping.
@@ -58,7 +58,7 @@ class Sphere:
         """
         return self.distance_between_edges(other) <= 0
 
-    def __eq__(self, other: Point3D) -> bool:
+    def __eq__(self, other: "Sphere") -> bool:
         if isinstance(other, Sphere):
             return self.radius == other.radius and self.centre_point == other.centre_point
         return False
