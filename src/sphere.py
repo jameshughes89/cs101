@@ -6,8 +6,8 @@ class Sphere:
     Class for managing Spheres within a 3D space.
     """
 
-    def __init__(self, point, radius):
-        self.point = point
+    def __init__(self, centre_point, radius):
+        self.centre_point = centre_point
         self.radius = radius
 
     def diameter(self) -> float:
@@ -28,7 +28,7 @@ class Sphere:
         :return: Distance between the Sphere centres.
         :rtype: float
         """
-        return self.point.distance_from_point(other.point)
+        return self.centre_point.distance_from_point(other.centre_point)
 
     def distance_between_edges(self, other) -> float:
         """
@@ -55,8 +55,9 @@ class Sphere:
 
     def __eq__(self, other):
         if isinstance(other, Sphere):
-            return self.radius == other.radius == self.point == other.point
+            return self.radius == other.radius and self.centre_point == other.centre_point
+        return False
 
     def __repr__(self):
-        return f"Sphere({self.point}, {self.radius})"
+        return f"Sphere({self.centre_point}, {self.radius})"
 
