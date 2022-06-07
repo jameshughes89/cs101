@@ -82,255 +82,220 @@ Starting the Class
 * The docstring comment is a simple description of the class
 
 
-Let's Make a Simple Object/ADT
-==============================
-
-* All objects/ADTs, regardless of how simple or complex they are, are all build with the same basic things. 
-
-* But we're going to start really simple.
-
-* I want to make an ``EnthusiasticStudent`` **object**
-    * What I mean is, someone had to write what a numpy array was... we're going to write what it means to be an ``EnthusiasticStudent``
-
-* To create our own object, all we really need are 3 things:
-    * A *constructor*
-    * *Attributes/properties*
-    * *Methods* (and the constructor is actually a method too)
-   
-* **Attributes** --- Properties about the object.
-
-* **Methods** --- Things we want our object to do.
-
-* To determine which attributes/properties we want our object to have... well, **we** have to think about it... what do **we** want the object to have?
-    * First name
-    * Last name
-    * Student number
-    * Currently average
-    * ... (whatever else we want really)
-   
-* **We** get to make it up!
-   
-* Same goes for methods. What *methods* do **we** want this object to have?
-    * Ask for a higher mark
-    * Show off in class how smart they are
-    * Work painfully hard on assignments
-    * ... (again... whatever else we want   
-
-* Cool.. but how do we tell python all this?   
-
-.. Warning::
-    Follow along (for real, having a copy of this on your comp will make your life easier)!!!
-
-1. Write this at the top of some cell in Colab ``class EnthusiasticStudent:``. 
-
-    .. Warning::
-        If using PyCharm or Spyder, you can put everything in the same script, or alternatively, you could do the *better* thing and put all classes in their own files. I'd recommend this. 
-
-    * This tells python *Hey, everything that follows is gonna be about the EnthusiasticStudent*
-    * Classes do **not** need to be in their own files, but it's often a good call
-
-    .. code-block:: python
-        :linenos:
-      
-        class EnthusiasticStudent:
-            '''
-            Obv we'll include a nice comment at the top of the class to explain what it's for... right?!
-
-            This EnthusiasticStudent is being used to demonstrate how we can create our own Objects.
-		  
-            It's going to have a few attributes and some simple functions.
-            '''
-
-            # this is it so far :/ 
-
-2. Let's write a constructor
-
-    * It's a special method that tells the computer to *make*, or *initialize* the object.
-    * Classes don't have to have constructors, but to use objects the way we want to here we need one
-    * It will tell the computer to go create the object somewhere in memory along with running some setup code for us
-        * What setup code? Good questions. The answer is... whatever you need!
-
-    .. code-block:: python
-        :linenos:
-      
-        class EnthusiasticStudent:
-            '''
-            Obv we'll include a nice comment at the top of the class to explain what it's for... right?!
-
-            This EnthusiasticStudent is being used to demonstrate how we can create our own Objects.
-		  
-            It's going to have a few attributes and some simple functions.
-            '''
-
-            def __init__(self):
-                '''
-                So the above line of code is the special words for python that means CONSTRUCTOR
-                Notice that it has parentheses, and a parameter called *self*
-                Self is a special variable thing that is a reference to... itself... 
-                '''
-
-    * ``def __init__(self, x1, x2, x3, x4, x5,..., xn):`` is how we start our constructor
-    * Notice how it can take any number of parameters we want
-        * Just like a function/method... because it *is* a method
-	  
-    * It actually has to take at least one parameter; it has to get a parameter that'll be a reference to itself
-        * It doesn't *need* to be called ``self``, however if you don't call if ``self`` the world will hate you
-	  
-    * ...
-    * Wait... 
-    * ``self`` is a reference to... itself? ... wut?
-    * This is kinda' weird, but totally makes sense
-    * It'll become more obvious as we go. 		  
-
-3. Let's keep writing our constructor by adding some meaningful code (setting attributes):
-
-    .. code-block:: python
-        :linenos:
-      
-        class EnthusiasticStudent:
-            '''
-            Obv we'll include a nice comment at the top of the class to explain what it's for... right?!
+Constructor/Initialization and Attributes
+----------------------------------------
 
-            This EnthusiasticStudent is being used to demonstrate how we can create our own Objects.
-		  
-            It's going to have a few attributes and some simple functions.
-            '''
+* With just the ``class Circle``, we can actually start making instances of the class
 
-            def __init__(self, first_name='John', last_name='Doe', student_num='000000000', current_avg=0):
-                # Let's just set attributes for now
-                self.first_name = first_name 
-                self.last_name = last_name
-                self.student_num = student_num
-                self.current_avg = current_avg
+.. code-block:: python
+    :linenos:
 
-``first_name``, ``last_name``, ``student_num``, and ``current_avg`` are attributes I am giving the object. Each *instance* of a ``EnthusiasticStudent`` will have these attributes, but their values will differ between instances. Think about humans. We all have a name attribute, but our individual names will differ. 
+    some_circle = Circle()
+    print(type(some_circle))    # Results in something like <class '__main__.Circle'>
 
- 
-.. admonition:: Activity
-    :class: activity
 
-    Outside the class, type the following (if using an IDE with multiple files in the same project, open up a **new/different** python file in the same project):
-   
-    .. code-block:: python
-        :linenos:
-	  
-        #from EnthusiasticStudent import *    # Only need this if using multiple files in IDE
-        a_student = EnthusiasticStudent()
-   
-    1. Figure out how to get the first name from ``a_student``
+* However, this is not particularly useful as we have yet to really describe the ``Circle`` class
 
-    2. What is the ``type`` of ``a_student``? The ``type`` of ``EnthusiasticStudent``? How about ``EnthusiasticStudent()``?
 
-    3. Create a new, different student, but this time set the first name to something else. Check its attributes. 
+Constructor
+^^^^^^^^^^^
 
-    4. Add a print statement saying "im running from inside a constructor" to your constructor right below where we assigned the attributes. Re-run the code above. What happened? Why?
+* To start making the class useful, we will write a special function that tells Python how to setup the class for our needs
 
-* We can put whatever code we want in the constructor. Just in our case, setting the attributes is enough to get what we want done.
-* **NOTE** ``self`` is pretty important here. If you forget the self, would you be creating an attribute for the object, or a local variable for the constructor?   
+.. code-block:: python
+    :linenos:
 
+    class Circle:
+        """
+        A class for representing circle based on its radius. The class provides functionality to perform basic geometry
+        calculations (diameter, area, circumference).
+        """
 
-3. Let's add some functions/methods to this class.
+        def __init__(self):
+            """
+            Creates a Circle object with a radius of 0.
+            """
+            self.radius = 0
 
-    .. code-block:: python
-        :linenos:
-      
-        class EnthusiasticStudent:
-            '''
-            Obv we'll include a nice comment at the top of the class to explain what it's for... right?!
 
-            This EnthusiasticStudent is being used to demonstrate how we can create our own Objects.
-		  
-            It's going to have a few attributes and some simple functions.
-            '''
+* In the above example, we see the use of the special function called ``__init__``, which describes how to initialize an instance of the class
 
-            def __init__(self, first_name='John', last_name='Doe', student_num='000000000', current_avg=0):
-                self.first_name = first_name 
-                self.last_name = last_name
-                self.student_num = student_num
-                self.current_avg = current_avg
+    * The ``__init__`` method is called the *constructor*, or the *initialization* method
 
-            def ask_for_higher_mark(self, howHigh):
-                print('Hello Professor,\n\nMy name is ' + self.first_name + ' and I am in your CSCI 161 class. I would really like it if you could just give me a ' + str(howHigh) + '%. \n\nThanks,\n' + self.first_name + ' ' + self.last_name)
+* We can also see that we are creating an *attribute* called ``radius`` that will have the value ``0`` upon the creation of a ``Circle`` object
 
-            def show_off(self):
-                print('I got 100 on my last assignment everyone. I\'m a wizard')
-                self.first_name = 'Wizard'
+* You will notice a special variable called ``self`` in the parameter list and before the attribute ``radius``
 
+    * ``self`` is a reference variable to *this*, the current instance of the class (itself)
+    * All methods within the class require that the first parameter is the ``self`` reference variable
+    * Additionally, accessing any attributes or methods within the class require the use of the ``self`` reference variable
+    * The ``self`` variable can feel a little weird at first, but it is something that will start to make sense as we go
 
-            def work_too_hard_on_assignment(self):
-                # I left it blank. Add whatever code you want here. Be sure to delete the pass keyword when you do though
-                pass	
-            
-.. admonition:: Activity
-    :class: activity
 
-    1. I have no idea what the code would look like in the ``work_too_hard_on_assignment`` function, so just make up your own. Make it do whatever. 
+* With ``__init__`` written with the setup of the attribute ``radius``, we can now start to assign values
 
-    2. Create an instance of an ``EnthusiasticStudent`` and figure out how to call the functions. Is there an easy way to see all available?
+.. code-block:: python
+    :linenos:
 
-    3. What happens to the attributes of the object after calling ``show_off``?
+    circle_a = Circle()
+    circle_b = Circle()
 
-__repr__
-========
+    circle_a.radius = 1
+    circle_b.radius = 5
 
-There are a lot of other special functions for classes that you don't *need*, but are super handy. Here are 2 cool ones. 
+    print(circle_a.radius)      # Results in 1
+    print(circle_b.radius)      # Results in 5
 
-    .. code-block:: python
-        :linenos:
-      
-        def __repr__(self):
-            '''
-            A method which will return some string representation of the object. This will he handy for debugging and stuff.
-            '''
-            return 'First Name: ' + self.first_name + '\nlast_name: ' + self.last_name + '\nStudent Number: ' + self.student_num + '\nCurrent Average: ' + str(self.current_avg)
 
-.. admonition:: Activity
-    :class: activity
+* In the above example, we created two ``Circle`` objects and then assigned a value to their respective ``radius`` attributes
+* Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, but they are two separate instances of the class with two separate ``radius`` attributes
 
-    1. Add this function to your code. 
 
-    2. Now in your other script call the ``__repr__() `` method on the ``a_student`` object.
+Constructor Parameters
+^^^^^^^^^^^^^^^^^^^^^^
 
-    3. Call ``print(a_student)``. What happens?
-   
-    4. Run this ``a = str(a_student)``, and then check out the ``type`` of ``a``. 
+* We can also include parameters for the ``__init__`` method, as seen below
 
-__eq__
-======
+.. code-block:: python
+    :linenos:
 
-What does it mean for 2 ``EnthusiasticStudent`` objects to be *equal*?
+    class Circle:
+        """
+        A class for representing circle based on its radius. The class provides functionality to perform basic geometry
+        calculations (diameter, area, circumference).
+        """
 
-.. admonition:: Activity
-    :class: activity
+        def __init__(self, radius: float):
+            """
+            Creates a Circle object with the specified radius.
 
-    1. Create 2 instances of an ``EnthusiasticStudent`` object. Call them ``a`` and ``b``.
+            :param radius: The radius of the Circle
+            :type radius: float
+            """
+            self.radius = radius
 
-    2. Call ``a == b``. What happened? How would python know what it means for two ``EnthusiasticStudent`` objects to be equal?
 
-    3. Copy the below code and re-run. 
+* In the above example, we include a parameter for the ``radius``, which will be used to set the attribute when a ``Circle`` object is created
+* This way we do not need to set the values ourselves after they are created, as seen in the following example
 
+.. code-block:: python
+    :linenos:
 
-    .. code-block:: python
-        :linenos:
-      
-        def __eq__(self, anotherThing):
-            '''
-            A method to check if 2 EnthusiasticStudent are the same. What does it mean for 2 things to be the same? 
-            Well, WE get to make that up!
-            (Although, we should pick something that makes sense...)
-            '''
-            return self.student_num == anotherThing.student_num
+    circle_a = Circle(1)
+    circle_b = Circle(5)
 
+    print(circle_a.radius)      # Results in 1
+    print(circle_b.radius)      # Results in 5
 
-    4. Now call ``a.__eq__(b)``. What happens?
 
-    5. Now call ``a == b``. What happens?
+Functionality and Methods
+-------------------------
 
+* The ``Circle`` class has the attribute ``radius``. but as of now, that's all it can do --- store a radius value
+* Further, there are other features of a circle  we may want to capture
 
-The above code may also make it somewhat obvious why the ``self`` reference is important. Which instance of the object do we want the ``student_num`` attribute from?
+    * Diameter of a circle
+    * Area of a circle
+    * Circumference of a circle
 
-			
+* Fortunately, although these values are not stored within the ``Circle`` class as attributes, they can be calculated based on the ``Circle``\'s ``radius``
+* Consider the ``diameter`` method below that we could add to the ``Circle`` class below ``__init__``
+
+.. code-block:: python
+    :linenos:
+
+        def diameter(self) -> float:
+            """
+            Calculate and return the diameter of the Circle based on its radius.
+
+            :return: diameter of the Circle
+            :rtype: float
+            """
+            return 2 * self.radius
+
+
+* The method itself is not overly sophisticated --- the diameter of a circle is twice its radius
+* But you will notice, once again, the use of ``self``
+
+    * Every method that belongs to the class must start with ``self`` in the parameter list
+    * Since we are accessing the specific ``Circle`` object's ``radius``, we make use of the reference variable ``self``
+
+* The following two methods follow the same pattern, but perform their respective calculations
+
+.. code-block:: python
+    :linenos:
+
+        def area(self) -> float:
+            """
+            Calculate and return the area of the Circle based on its radius.
+
+            :return: Area of the Circle
+            :rtype: float
+            """
+            return math.pi * self.radius**2
+
+        def circumference(self) -> float:
+            """
+            Calculate and return the circumference of the Circle based on its radius.
+
+            :return: Circumference of the Circle
+            :rtype: float
+            """
+            return 2 * math.pi * self.radius
+
+
+* To make use of these methods, we call the method on the specific ``Circle`` object we want
+
+.. code-block:: python
+    :linenos:
+
+    circle_a = Circle(1)
+    circle_b = Circle(5)
+
+    print(circle_a.area())              # Results in 3.141592653589793
+    print(circle_b.circumference())     # Results in 31.41592653589793
+
+
+* In the above example, notice how the methods are called with parentheses
+
+    * Also notice that, although the methods in the ``Circle`` class have the ``self`` variable specified in its parameter list, no actual value is explicitly passed as an argument
+
+* When calling ``circle_a.area()``, I am asking the ``Circle`` object referenced by ``circle_a`` to calculate and return its area
+* Similarly, when calling ``circle_b.circumference()``, I am asking the instance ``circle_b`` to calculate and return its circumference
+
+.. note::
+
+    Consider ``circle_a.area()``. The variable ``circle_a`` is a reference to some ``Circle`` object, and I am asking
+    for that instance to calculate and return its ``area``. Here, ``circle_a`` and the ``self`` variable from within the
+    ``Circle`` class are referencing the same ``Circle`` object. When looking at the ``area`` method's code, it makes
+    use of its attribute ``radius``, which is accessed via a reference variable to the instance of the ``Circle`` object
+    the method was invoked on --- ``self``.
+
+
+Testing the Class
+-----------------
+
+* As always, we want to ensure our programs are correct, so we will write some tests
+* Unlike the ``assert`` tests we have done so far, we need to create instances of the objects first before we can test them
+
+.. code-block:: python
+    :linenos:
+
+    circle_0 = Circle(0)
+    assert 0 == circle_0.radius
+    assert 0 == circle_0.diameter()
+    assert 0 == circle_0.area()
+    assert 0 == circle_0.circumference()
+
+    circle_10 = Circle(10)
+    assert 10 == circle_10.radius
+    assert 20 == circle_10.diameter()
+    assert 0.001 > abs(circle_10.area() - 314.1592)
+    assert 0.001 > abs(circle_10.circumference() - 62.8319)
+
+
 For Next Class
 ==============
 
+* Download and look through the :download:`Circle class <../../../src/circle.py>`
 * Read `Chapter 16 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html>`_
