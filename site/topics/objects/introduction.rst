@@ -69,7 +69,8 @@ Starting the Class
 
     class Circle:
         """
-        A simple class for representing circle.
+        A class for representing circle based on its radius. The class provides functionality to perform basic geometry
+        calculations (diameter, area, circumference).
         """
 
 * The above example contains the start of the class
