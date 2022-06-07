@@ -82,7 +82,7 @@ Starting the Class
 * The docstring comment is a simple description of the class
 
 
-Constructor/Instantiation and Attributes
+Constructor/Initialization and Attributes
 ----------------------------------------
 
 * With just the ``class Circle``, we can actually start making instances of the class
@@ -120,7 +120,7 @@ Constructor
 
 * In the above example, we see the use of the special function called ``__init__``, which describes how to initialize an instance of the class
 
-    * The ``__init__`` method is called the *constructor*, or the *instantiation* method
+    * The ``__init__`` method is called the *constructor*, or the *initialization* method
 
 * We can also see that we are creating an *attribute* called ``radius`` that will have the value ``0`` upon the creation of a ``Circle`` object
 
@@ -175,7 +175,7 @@ Constructor Parameters
             self.radius = radius
 
 
-* In the above example, we include a parameter for the ``radius``, which will be used to set the attribute on instantiation
+* In the above example, we include a parameter for the ``radius``, which will be used to set the attribute when a ``Circle`` object is created
 * This way we do not need to set the values ourselves after they are created, as seen in the following example
 
 .. code-block:: python
