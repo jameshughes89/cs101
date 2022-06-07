@@ -115,7 +115,7 @@ Constructor/Instantiation and Attributes
 
 * In the above example, we see the use of the special function called ``__init__``, which describes how to initialize an instance of the class
 
-    * The ``__init__`` method is called the *instantiation* method, but is commonly referred to as the *constructor*
+    * The ``__init__`` method is called the *constructor*, or the *instantiation* method
 
 * We can also see that we are creating an *attribute* called ``radius`` that will have the value ``0`` upon the creation of a ``Circle`` object
 
