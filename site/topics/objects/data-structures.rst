@@ -1,6 +1,6 @@
-***********
-Collections
-***********
+***************
+Data Structures
+***************
 
 More complexity
 ===============

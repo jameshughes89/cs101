@@ -137,7 +137,7 @@ Course Notes
     topics/objects/introduction
     topics/objects/methods
     topics/testing/unittest
-    topics/objects/collections
+    topics/objects/data-structures
     topics/searching/searching
     topics/sorting/sorting
     topics/models-of-computation/models-of-computation
@@ -162,7 +162,7 @@ Labs
     labs/lists/references
     labs/debug/debug
     labs/objects/objects
-    labs/objects/collections
+    labs/objects/data-structures
     labs/recursion/recursion
     
     
