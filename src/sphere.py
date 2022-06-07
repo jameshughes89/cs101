@@ -1,6 +1,7 @@
 import math
+
 from src.point3d import Point3D
-from typing import Type
+
 
 class Sphere:
     """
@@ -9,7 +10,7 @@ class Sphere:
     overlap.
     """
 
-    def __init__(self, centre_point: Type[Point3D], radius: float):
+    def __init__(self, centre_point: Point3D, radius: float):
         self.centre_point = centre_point
         self.radius = radius
 
@@ -22,7 +23,7 @@ class Sphere:
     def volume(self) -> float:
         return (4 / 3) * math.pi * self.radius**3
 
-    def distance_between_centres(self, other: Type[Point3D]) -> float:
+    def distance_between_centres(self, other: Point3D) -> float:
         """
         Calculate and return the distance between the centres of two Spheres.
 
@@ -33,7 +34,7 @@ class Sphere:
         """
         return self.centre_point.distance_from_point(other.centre_point)
 
-    def distance_between_edges(self, other: Type[Point3D]) -> float:
+    def distance_between_edges(self, other: Point3D) -> float:
         """
         Calculate and return the distance between the edges of two Spheres. If the value is negative, the two Spheres
         overlap.
@@ -45,7 +46,7 @@ class Sphere:
         """
         return self.distance_between_centres(other) - self.radius - other.radius
 
-    def overlaps(self, other: Type[Point3D]) -> bool:
+    def overlaps(self, other: Point3D) -> bool:
         """
         Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
         between edges) are considered overlapping.
@@ -57,7 +58,7 @@ class Sphere:
         """
         return self.distance_between_edges(other) <= 0
 
-    def __eq__(self, other: Type[Point3D]) -> bool:
+    def __eq__(self, other: Point3D) -> bool:
         if isinstance(other, Sphere):
             return self.radius == other.radius and self.centre_point == other.centre_point
         return False
