@@ -45,7 +45,7 @@ class Point3D:
         midpoint_z = (self.z - other.z) / 2 + other.z
         return Point3D(midpoint_x, midpoint_y, midpoint_z)
 
-    def __eq__(self, other: "Point3D") -> bool:
+    def __eq__(self, other) -> bool:
         """
         Check if the self Point3D is equal to the Point3D passed as a parameter. Points3D are considered equal if they
         have the same x, y, and z values.

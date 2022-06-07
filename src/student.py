@@ -9,7 +9,7 @@ class Student:
         self.last_name = last_name
         self.student_number = student_number
 
-    def __eq__(self, other: "Student") -> bool:
+    def __eq__(self, other) -> bool:
         """
         Two students are considered equal if their student numbers are the same. This assumes student numbers are unique
         among students.
