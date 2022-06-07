@@ -107,15 +107,17 @@ Constructor and Attributes
         self.radius = 0
 
 
+
+
 * In the above example, we see the use of the special function called ``__init__``, which describes how to initialize an instance of the class
 * We can also see that we are creating an *attribute* called ``radius`` that will have the value ``0`` upon the creation of a ``Circle`` object
 
 * You will notice a special variable called ``self`` in the parameter list and before the attribute ``radius``
-* ``self`` is a reference variable to an instance of the class
 
+    * ``self`` is a reference variable to an instance of the class
+    * The ``self`` variable can feel a little weird at first, but it is something that will start to make sense as we go
 
-
-* All objects/ADTs, regardless of how simple or complex they are, are all build with the same basic things. 
+* All objects/ADTs, regardless of how simple or complex they are, are all build with the same basic things.
 
 * But we're going to start really simple.
 
