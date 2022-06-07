@@ -82,8 +82,8 @@ Starting the Class
 * The docstring comment is a simple description of the class
 
 
-Constructor and Attributes
-==========================
+Constructor/Instantiation and Attributes
+========================================
 
 * With just the ``class Circle``, we can actually start making instances of the class
 
@@ -100,22 +100,57 @@ Constructor and Attributes
 .. code-block:: python
     :linenos:
 
-    def __init__(self):
+    class Circle:
         """
-        Creates a Circle object with a radius of 0.
+        A class for representing circle based on its radius. The class provides functionality to perform basic geometry
+        calculations (diameter, area, circumference).
         """
-        self.radius = 0
 
-
+        def __init__(self):
+            """
+            Creates a Circle object with a radius of 0.
+            """
+            self.radius = 0
 
 
 * In the above example, we see the use of the special function called ``__init__``, which describes how to initialize an instance of the class
+
+    * The ``__init__`` method is called the *instantiation* method, but is commonly referred to as the *constructor*
+
 * We can also see that we are creating an *attribute* called ``radius`` that will have the value ``0`` upon the creation of a ``Circle`` object
 
 * You will notice a special variable called ``self`` in the parameter list and before the attribute ``radius``
 
     * ``self`` is a reference variable to an instance of the class
     * The ``self`` variable can feel a little weird at first, but it is something that will start to make sense as we go
+
+
+* With ``__init__`` written with the attribute ``radius``, we can now start to assign values
+
+.. code-block:: python
+    :linenos:
+
+    circle_a = Circle(0)
+    circle_b = Circle(0)
+
+    circle_a.radius = 1
+    circle_b.radius = 5
+
+    print(circle_a.radius)      # Results in 1
+    print(circle_b.radius)      # Results in 5
+
+
+* In the above example, we created two ``Circle`` objects and then assigned each their own ``radius`` value
+* Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, they are two separate instances of the class
+
+.. note::
+
+    Consider the line ``circle_a.radius = 1``. The variable ``circle_a`` is a reference to some ``Circle`` object, and
+    from that object I am assigning the value of ``1`` to that object's ``radius`` attribute. On this line of code, the
+    ``self`` reference variable within the ``Circle`` class is an alias for the object referenced by ``circle_b``.
+    However, on the following line, ``circle_b.radius = 5``, the ``self`` within the ``Circle`` class will be an alias
+    for the object referenced to by ``circle_b``.
+
 
 __repr__
 ========
