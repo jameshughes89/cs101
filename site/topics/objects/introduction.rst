@@ -218,6 +218,46 @@ Functionality and Methods
     * Every method that belongs to the class must start with ``self`` in the parameter list
     * Since we are accessing the specific ``Circle`` object's ``radius``, we make use of the reference variable ``self``
 
+* The following two methods follow the same pattern, but perform their respective calculations
+
+.. code-block:: python
+    :linenos:
+
+        def area(self) -> float:
+            """
+            Calculate and return the area of the Circle based on its radius.
+
+            :return: Area of the Circle
+            :rtype: float
+            """
+            return math.pi * self.radius**2
+
+        def circumference(self) -> float:
+            """
+            Calculate and return the circumference of the Circle based on its radius.
+
+            :return: Circumference of the Circle
+            :rtype: float
+            """
+            return 2 * math.pi * self.radius
+
+
+* To make use of these methods, we call the method on the specific ``Circle`` object we want
+
+.. code-block:: python
+    :linenos:
+
+    circle_a = Circle(1)
+    circle_b = Circle(5)
+
+    print(circle_a.area())              # Results in 3.141592653589793
+    print(circle_b.circumference())     # Results in 31.41592653589793
+
+
+* In the above example, notice how the methods are called with parentheses
+* When calling ``circle_a.area()``, I am asking the ``Circle`` object referenced by ``circle_a`` to calculate and return its area
+* Similarly, when calling ``circle_b.circumference()``, I am asking the instance ``circle_b`` to calculate and return its circumference
+
 
 For Next Class
 ==============
