@@ -1,6 +1,6 @@
 class Student:
     """
-    Class for storing basic student information. The class serves as a mechanism for storing and returning  information
+    Class for storing basic student information. The class serves as a mechanism for storing and returning information
     and checking equality.
     """
 
