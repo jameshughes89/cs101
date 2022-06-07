@@ -53,6 +53,11 @@ Circle Class
     * We decide what data will be stored
     * We decide what functionality it will have
 
+* For our needs, we will have a ``Circle``
+
+    * Know its radius --- this is an *attribute*, the data
+    * Be able to perform basic geometry calculations --- these are *methods*, the functionality
+
 
 Starting the Class
 ------------------
