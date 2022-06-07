@@ -82,8 +82,38 @@ Starting the Class
 * The docstring comment is a simple description of the class
 
 
-Let's Make a Simple Object/ADT
-==============================
+Constructor and Attributes
+==========================
+
+* With just the ``class Circle``, we can actually start making instances of the class
+
+.. code-block:: python
+    :linenos:
+
+    some_circle = Circle()
+    print(type(some_circle))    # Results in something like <class '__main__.Circle'>
+
+
+* However, this is not particularly useful as we have yet to really describe the ``Circle`` class
+* To start making the class useful, we will write a special function that tells Python how to setup the class for our needs
+
+.. code-block:: python
+    :linenos:
+
+    def __init__(self):
+        """
+        Creates a Circle object with a radius of 0.
+        """
+        self.radius = 0
+
+
+* In the above example, we see the use of the special function called ``__init__``, which describes how to initialize an instance of the class
+* We can also see that we are creating an *attribute* called ``radius`` that will have the value ``0`` upon the creation of a ``Circle`` object
+
+* You will notice a special variable called ``self`` in the parameter list and before the attribute ``radius``
+* ``self`` is a reference variable to an instance of the class
+
+
 
 * All objects/ADTs, regardless of how simple or complex they are, are all build with the same basic things. 
 
