@@ -42,7 +42,7 @@ class Circle:
         """
         return 2 * math.pi * self.radius
 
-    def __eq__(self, other) -> bool:
+    def __eq__(self, other: "Circle") -> bool:
         """
         Check if the Circle (self) is equal to the parameter Circle other. Circles are equal if they have the same
         radius.
