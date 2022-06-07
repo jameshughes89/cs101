@@ -48,3 +48,41 @@ class TestSphere(unittest.TestCase):
         for (case, expect) in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case.volume(), 5)
+
+    def test_distance_between_centres_various_spheres_returns_correct_distance(self):
+        cases = [
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(0, 0, 0), 1)),
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(1, 1, 1), 1)),
+            (Sphere(Point3D(1, 1, 1), 1), Sphere(Point3D(1, 1, 1), 10)),
+            (Sphere(Point3D(-1, -1, -1), 1), Sphere(Point3D(1, 1, 1), 10)),
+        ]
+        expecteds = [0, 1.732051, 0, 3.464102]
+        for (case, expect) in zip(cases, expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertAlmostEqual(expect, case[0].distance_between_centres(case[1]), 5)
+
+    def test_distance_between_edges_various_spheres_returns_correct_distance(self):
+        cases = [
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(0, 0, 0), 1)),
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(1, 1, 1), 1)),
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(10, 10, 10), 1)),
+            (Sphere(Point3D(-1, -1, -1), 1), Sphere(Point3D(10, 10, 10), 10)),
+        ]
+        expecteds = [-2, -0.267949, 15.320508, 8.052559]
+        for (case, expect) in zip(cases, expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertAlmostEqual(expect, case[0].distance_between_edges(case[1]), 5)
+
+    def test_overlaps_various_spheres_returns_correct_boolean(self):
+        cases = [
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(0, 0, 0), 1)),
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(1, 1, 1), 1)),
+            (Sphere(Point3D(0, 0, 0), 1), Sphere(Point3D(10, 10, 10), 1)),
+            (Sphere(Point3D(-1, -1, -1), 10), Sphere(Point3D(10, 10, 10), 10)),
+            (Sphere(Point3D(-1, 1, 4), 5), Sphere(Point3D(-2, -3, -4), 4)),
+        ]
+        expecteds = [True, True, False, True, True]
+        for (case, expect) in zip(cases, expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertEqual(expect, case[0].overlaps(case[1]))
+
