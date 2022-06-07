@@ -130,8 +130,8 @@ Constructor/Instantiation and Attributes
 .. code-block:: python
     :linenos:
 
-    circle_a = Circle(0)
-    circle_b = Circle(0)
+    circle_a = Circle()
+    circle_b = Circle()
 
     circle_a.radius = 1
     circle_b.radius = 5
@@ -150,6 +150,41 @@ Constructor/Instantiation and Attributes
     ``self`` reference variable within the ``Circle`` class is an alias for the object referenced by ``circle_b``.
     However, on the following line, ``circle_b.radius = 5``, the ``self`` within the ``Circle`` class will be an alias
     for the object referenced to by ``circle_b``.
+
+
+* We can also include parameters for the ``__init__`` method, as seen below
+
+.. code-block:: python
+    :linenos:
+
+    class Circle:
+        """
+        A class for representing circle based on its radius. The class provides functionality to perform basic geometry
+        calculations (diameter, area, circumference).
+        """
+
+        def __init__(self, radius: float):
+            """
+            Creates a Circle object with the specified radius.
+
+            :param radius: The radius of the Circle
+            :type radius: float
+            """
+            self.radius = radius
+
+
+* In the above example, we include a parameter for the ``radius``, which will be used to set the attribute on instantiation
+* This way we do not need to set the values ourselves after they are created, as seen in the following example
+
+.. code-block:: python
+    :linenos:
+
+    circle_a = Circle(1)
+    circle_b = Circle(5)
+
+    print(circle_a.radius)      # Results in 1
+    print(circle_b.radius)      # Results in 5
+
 
 
 __repr__
