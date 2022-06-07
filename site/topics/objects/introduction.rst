@@ -143,15 +143,6 @@ Constructor/Instantiation and Attributes
 * In the above example, we created two ``Circle`` objects and then assigned a value to their respective ``radius`` attributes
 * Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, but they are two separate instances of the class with two separate ``radius`` attributes
 
-.. note::
-
-    Consider the line ``circle_a.radius = 1``. The variable ``circle_a`` is a reference to some ``Circle`` object, and
-    from that object I am assigning the value of ``1`` to that object's ``radius`` attribute. On this line of code, the
-    ``self`` reference variable within the ``Circle`` class is an alias for the object referenced by ``circle_b``.
-    However, on the following line, ``circle_b.radius = 5``, the ``self`` within the ``Circle`` class will be an alias
-    for the object referenced to by ``circle_b``.
-
-
 * We can also include parameters for the ``__init__`` method, as seen below
 
 .. code-block:: python
@@ -257,6 +248,12 @@ Functionality and Methods
 * In the above example, notice how the methods are called with parentheses
 * When calling ``circle_a.area()``, I am asking the ``Circle`` object referenced by ``circle_a`` to calculate and return its area
 * Similarly, when calling ``circle_b.circumference()``, I am asking the instance ``circle_b`` to calculate and return its circumference
+
+.. note::
+
+    Consider ``circle_a.area()``. The variable ``circle_a`` is a reference to some ``Circle`` object, and I am asking
+    for that instance to calculate and return its ``area``. Here, ``circle_a`` and the ``self`` variable from within the
+    ``Circle`` class are referencing the same ``Circle`` object.
 
 
 Testing the Class
