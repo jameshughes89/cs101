@@ -125,7 +125,7 @@ Constructor/Instantiation and Attributes
     * The ``self`` variable can feel a little weird at first, but it is something that will start to make sense as we go
 
 
-* With ``__init__`` written with the attribute ``radius``, we can now start to assign values
+* With ``__init__`` written with the setup of the attribute ``radius``, we can now start to assign values
 
 .. code-block:: python
     :linenos:
