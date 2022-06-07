@@ -52,6 +52,7 @@ Before Kattis
 
 
 #. Create a ``RectangularPrism`` class
+
     * Attributes for ``length``, ``width``, and ``height``
     * The constructor will take three parameters for specifying the size
     * A method for calculating ``surface_area()``
