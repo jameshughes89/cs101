@@ -3,7 +3,8 @@ import math
 
 class Circle:
     """
-    A class for representing circle based on its radius.
+    A class for representing circle based on its radius. The class provides functionality to perform basic geometry
+    calculations (diameter, area, circumference).
     """
 
     def __init__(self, radius: float):

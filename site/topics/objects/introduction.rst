@@ -53,6 +53,11 @@ Circle Class
     * We decide what data will be stored
     * We decide what functionality it will have
 
+* For our needs, we will have a ``Circle``:
+
+    * Know its radius --- this is an *attribute*, the data
+    * Be able to perform basic geometry calculations --- these are *methods*, the functionality
+
 
 Starting the Class
 ------------------
@@ -64,7 +69,8 @@ Starting the Class
 
     class Circle:
         """
-        A simple class for representing circle.
+        A class for representing circle based on its radius. The class provides functionality to perform basic geometry
+        calculations (diameter, area, circumference).
         """
 
 * The above example contains the start of the class
@@ -74,9 +80,6 @@ Starting the Class
     * Like how anything indented under an ``if`` is part of the ``if`` block
 
 * The docstring comment is a simple description of the class
-
-    * The example above is not particularly helpful, but we can add more detail later
-
 
 
 Let's Make a Simple Object/ADT
