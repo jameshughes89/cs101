@@ -5,10 +5,10 @@ class Sphere:
     """
     Class for managing Spheres within a 3D space. This includes tracking it's centre point and radius. Additionally, it
     allows for some basic geometry calculations, distance measurements between Spheres, and checking if two Spheres
-    overlap.  
+    overlap.
     """
 
-    def __init__(self, centre_point, radius):
+    def __init__(self, centre_point, radius: float):
         self.centre_point = centre_point
         self.radius = radius
 
@@ -56,10 +56,10 @@ class Sphere:
         """
         return self.distance_between_edges(other) <= 0
 
-    def __eq__(self, other):
+    def __eq__(self, other) -> bool:
         if isinstance(other, Sphere):
             return self.radius == other.radius and self.centre_point == other.centre_point
         return False
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Sphere({self.centre_point}, {self.radius})"
