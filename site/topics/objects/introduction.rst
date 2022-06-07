@@ -189,7 +189,36 @@ Constructor/Instantiation and Attributes
 Functionality and Methods
 -------------------------
 
-			
+* The ``Circle`` class has the attribute ``radius``. but as of now, that's all it can do --- store a radius value
+* Further, there are other features of a circle  we may want to capture
+
+    * Diameter of a circle
+    * Area of a circle
+    * Circumference of a circle
+
+* Fortunately, although these values are not stored within the ``Circle`` class as attributes, they can be calculated based on the ``Circle``\'s ``radius``
+* Consider the ``diameter`` method below that we could add to the ``Circle`` class below ``__init__``
+
+.. code-block:: python
+    :linenos:
+
+        def diameter(self) -> float:
+            """
+            Calculate and return the diameter of the Circle based on its radius.
+
+            :return: diameter of the Circle
+            :rtype: float
+            """
+            return 2 * self.radius
+
+
+* The method itself is not overly sophisticated --- the diameter of a circle is twice its radius
+* But you will notice, once again, the use of ``self``
+
+    * Every method that belongs to the class must start with ``self`` in the parameter list
+    * Since we are accessing the specific ``Circle`` object's ``radius``, we make use of the reference variable ``self``
+
+
 For Next Class
 ==============
 
