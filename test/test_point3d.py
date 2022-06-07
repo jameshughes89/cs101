@@ -3,7 +3,7 @@ import unittest
 from src.point3d import Point3D
 
 
-class TestPoint(unittest.TestCase):
+class TestPoint3D(unittest.TestCase):
     def test_point_0_0_0_has_x_0(self):
         point = Point3D(0, 0, 0)
         self.assertEqual(0, point.x)
@@ -15,21 +15,6 @@ class TestPoint(unittest.TestCase):
     def test_point_0_0_0_has_z_0(self):
         point = Point3D(0, 0, 0)
         self.assertEqual(0, point.z)
-
-    def test_update_point_x_has_updated_x(self):
-        point = Point3D(0, 0, 0)
-        point.x = -1
-        self.assertEqual(-1, point.x)
-
-    def test_update_point_y_has_updated_y(self):
-        point = Point3D(0, 0, 0)
-        point.y = -1
-        self.assertEqual(-1, point.y)
-
-    def test_update_point_z_has_updated_y(self):
-        point = Point3D(0, 0, 0)
-        point.z = -1
-        self.assertEqual(-1, point.z)
 
     def test_distance_from_origin_various_points_returns_correct_distance(self):
         cases = [Point3D(0, 0, 0), Point3D(1, 1, 1), Point3D(-1, 2, 1), Point3D(-1, -3, -1), Point3D(-1, -4, 2)]
@@ -74,8 +59,8 @@ class TestPoint(unittest.TestCase):
 
     def test_equal_on_point_and_string_returns_false(self):
         point = Point3D(1, -1, 1)
-        self.assertFalse("Point(1, -1, 1)" == point)
+        self.assertFalse("Point3D(1, -1, 1)" == point)
 
     def test_repr_arbitrary_point_returns_correct_string(self):
         point = Point3D(1, -1, 1)
-        self.assertEqual("Point(1, -1, 1)", str(point))
+        self.assertEqual("Point3D(1, -1, 1)", str(point))
