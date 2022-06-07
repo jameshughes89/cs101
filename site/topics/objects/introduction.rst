@@ -253,7 +253,9 @@ Functionality and Methods
 
     Consider ``circle_a.area()``. The variable ``circle_a`` is a reference to some ``Circle`` object, and I am asking
     for that instance to calculate and return its ``area``. Here, ``circle_a`` and the ``self`` variable from within the
-    ``Circle`` class are referencing the same ``Circle`` object.
+    ``Circle`` class are referencing the same ``Circle`` object. When looking at the ``area`` method's code, it makes
+    use of its attribute ``radius``, which is accessed via a reference variable to the instance of the ``Circle`` object
+    the method was invoked on --- ``self``.
 
 
 Testing the Class
