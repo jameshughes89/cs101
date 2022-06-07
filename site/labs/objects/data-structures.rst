@@ -1,6 +1,6 @@
-***********
-Collections
-***********
+***************
+Data Structures
+***************
 
 * Feel free to use your laptop if you have it
 * Ensure I have recorded your completion --- failure to do so will result in a grade of 0
