@@ -22,9 +22,9 @@ Objects
 Pre Lab Exercises
 =================
 
-* Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/objects1>`
+* Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/introduction>`
 
-    * You can obtain the source code from :download:`here </src/circle.py>`
+    * You can obtain the source code from :download:`here <../../../src/circle.py>`
     * Yes, this week's pre-lab exercise is intended to be simple
     * It will provide a nice template for all the classes you will make in this lab
 
@@ -52,6 +52,7 @@ Before Kattis
 
 
 #. Create a ``RectangularPrism`` class
+
     * Attributes for ``length``, ``width``, and ``height``
     * The constructor will take three parameters for specifying the size
     * A method for calculating ``surface_area()``
