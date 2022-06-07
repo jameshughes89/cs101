@@ -44,14 +44,15 @@ class Sphere:
 
     def overlaps(self, other) -> bool:
         """
-        Determine if two Sphere objects overlap within the 3D space.
+        Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
+        between edges) are considered overlapping. 
 
         :param other: Sphere to check if it overlaps the self Sphere overlaps
         :type other: Sphere
         :return: Boolean indicating if the two Spheres overlap
         :rtype: bool
         """
-        return self.distance_between_edges(other) < 0
+        return self.distance_between_edges(other) <= 0
 
     def __eq__(self, other):
         if isinstance(other, Sphere):
