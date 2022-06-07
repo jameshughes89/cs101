@@ -140,8 +140,8 @@ Constructor/Instantiation and Attributes
     print(circle_b.radius)      # Results in 5
 
 
-* In the above example, we created two ``Circle`` objects and then assigned each their own ``radius`` value
-* Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, but they are two separate instances of the class
+* In the above example, we created two ``Circle`` objects and then assigned a value to their respective ``radius`` attributes
+* Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, but they are two separate instances of the class with two separate ``radius`` attributes
 
 .. note::
 
