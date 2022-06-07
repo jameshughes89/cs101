@@ -95,6 +95,11 @@ Constructor/Instantiation and Attributes
 
 
 * However, this is not particularly useful as we have yet to really describe the ``Circle`` class
+
+
+Constructor
+^^^^^^^^^^^
+
 * To start making the class useful, we will write a special function that tells Python how to setup the class for our needs
 
 .. code-block:: python
@@ -142,6 +147,10 @@ Constructor/Instantiation and Attributes
 
 * In the above example, we created two ``Circle`` objects and then assigned a value to their respective ``radius`` attributes
 * Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, but they are two separate instances of the class with two separate ``radius`` attributes
+
+
+Constructor Parameters
+^^^^^^^^^^^^^^^^^^^^^^
 
 * We can also include parameters for the ``__init__`` method, as seen below
 
