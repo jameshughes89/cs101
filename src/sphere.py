@@ -3,7 +3,9 @@ import math
 
 class Sphere:
     """
-    Class for managing Spheres within a 3D space.
+    Class for managing Spheres within a 3D space. This includes tracking it's centre point and radius. Additionally, it
+    allows for some basic geometry calculations, distance measurements between Spheres, and checking if two Spheres
+    overlap.  
     """
 
     def __init__(self, centre_point, radius):
