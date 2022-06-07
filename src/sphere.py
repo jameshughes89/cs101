@@ -14,10 +14,10 @@ class Sphere:
         return 2 * self.radius
 
     def surface_area(self) -> float:
-        return 4 * math.pi * self.radius ** 2
+        return 4 * math.pi * self.radius**2
 
     def volume(self) -> float:
-        return (4/3) * math.pi * self.radius ** 3
+        return (4 / 3) * math.pi * self.radius**3
 
     def distance_between_centres(self, other) -> float:
         """
@@ -60,4 +60,3 @@ class Sphere:
 
     def __repr__(self):
         return f"Sphere({self.centre_point}, {self.radius})"
-
