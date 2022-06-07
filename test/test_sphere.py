@@ -24,3 +24,27 @@ class TestSphere(unittest.TestCase):
         for (case, expect) in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case.diameter(), 5)
+
+    def test_surface_area_various_spheres_returns_correct_surface_area(self):
+        cases = [
+            Sphere(Point3D(0, 0, 0), 0),
+            Sphere(Point3D(0, 0, 0), 1),
+            Sphere(Point3D(1, 1, 1), 0),
+            Sphere(Point3D(10, 11, 12), 10),
+        ]
+        expecteds = [0, 12.56637, 0, 1256.63706]
+        for (case, expect) in zip(cases, expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertAlmostEqual(expect, case.diameter(), 5)
+
+    def test_volume_various_spheres_returns_correct_volume(self):
+        cases = [
+            Sphere(Point3D(0, 0, 0), 0),
+            Sphere(Point3D(0, 0, 0), 1),
+            Sphere(Point3D(1, 1, 1), 0),
+            Sphere(Point3D(10, 11, 12), 10),
+        ]
+        expecteds = [0, 4.18879, 0, 4188.7902]
+        for (case, expect) in zip(cases, expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertAlmostEqual(expect, case.diameter(), 5)
