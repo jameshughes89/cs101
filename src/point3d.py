@@ -6,7 +6,7 @@ class Point3D:
     A class for representing points in a three dimensional (3D) space.
     """
 
-    def __init__(self, x, y, z):
+    def __init__(self, x: float, y: float, z: float):
         self.x = x
         self.y = y
         self.z = z
@@ -20,7 +20,7 @@ class Point3D:
         """
         return self.distance_from_point(Point3D(0, 0, 0))
 
-    def distance_from_point(self, other) -> float:
+    def distance_from_point(self, other: "Point3D") -> float:
         """
         Calculate the Euclidean distance from this Point3D (self) and the Point3D passed as a parameter.
 
@@ -31,7 +31,7 @@ class Point3D:
         """
         return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
-    def find_midpoint(self, other):
+    def find_midpoint(self, other: "Point3D") -> "Point3D":
         """
         Return a new Point3D that is the midpoint between this Point3D (self) and the Point3D passed as a parameter.
 

@@ -1,20 +1,23 @@
+from src.student import Student
+
+
 class Course:
     """
     A collection of students enrolled in a course. This class manages the individual Students and provides simple
     enrollment details.
     """
 
-    def __init__(self, course_name):
+    def __init__(self, course_name: str):
         self.course_name = course_name
         self._students = []
 
     def size(self) -> int:
         return len(self._students)
 
-    def add(self, student):
+    def add(self, student: Student):
         self._students.append(student)
 
-    def find(self, student) -> int:
+    def find(self, student: Student) -> int:
         """
         Returns the index of the first occurrence of a given Student if it exists. If it does not exist, return a
         sentinel value of -1.
@@ -29,7 +32,7 @@ class Course:
                 return i
         return -1
 
-    def remove(self, student):
+    def remove(self, student: Student):
         """
         Remove the first occurence of the specified student from the collection. If the student does not exist, raise
         an exception.

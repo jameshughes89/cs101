@@ -58,7 +58,7 @@ class Sphere:
         """
         return self.distance_between_edges(other) <= 0
 
-    def __eq__(self, other: "Sphere") -> bool:
+    def __eq__(self, other) -> bool:
         if isinstance(other, Sphere):
             return self.radius == other.radius and self.centre_point == other.centre_point
         return False
