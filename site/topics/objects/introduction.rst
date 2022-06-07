@@ -141,7 +141,7 @@ Constructor/Instantiation and Attributes
 
 
 * In the above example, we created two ``Circle`` objects and then assigned each their own ``radius`` value
-* Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, they are two separate instances of the class
+* Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, but they are two separate instances of the class
 
 .. note::
 
