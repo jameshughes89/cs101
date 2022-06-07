@@ -186,65 +186,8 @@ Constructor/Instantiation and Attributes
     print(circle_b.radius)      # Results in 5
 
 
-
-__repr__
-========
-
-There are a lot of other special functions for classes that you don't *need*, but are super handy. Here are 2 cool ones. 
-
-    .. code-block:: python
-        :linenos:
-      
-        def __repr__(self):
-            '''
-            A method which will return some string representation of the object. This will he handy for debugging and stuff.
-            '''
-            return 'First Name: ' + self.first_name + '\nlast_name: ' + self.last_name + '\nStudent Number: ' + self.student_num + '\nCurrent Average: ' + str(self.current_avg)
-
-.. admonition:: Activity
-    :class: activity
-
-    1. Add this function to your code. 
-
-    2. Now in your other script call the ``__repr__() `` method on the ``a_student`` object.
-
-    3. Call ``print(a_student)``. What happens?
-   
-    4. Run this ``a = str(a_student)``, and then check out the ``type`` of ``a``. 
-
-__eq__
-======
-
-What does it mean for 2 ``EnthusiasticStudent`` objects to be *equal*?
-
-.. admonition:: Activity
-    :class: activity
-
-    1. Create 2 instances of an ``EnthusiasticStudent`` object. Call them ``a`` and ``b``.
-
-    2. Call ``a == b``. What happened? How would python know what it means for two ``EnthusiasticStudent`` objects to be equal?
-
-    3. Copy the below code and re-run. 
-
-
-    .. code-block:: python
-        :linenos:
-      
-        def __eq__(self, anotherThing):
-            '''
-            A method to check if 2 EnthusiasticStudent are the same. What does it mean for 2 things to be the same? 
-            Well, WE get to make that up!
-            (Although, we should pick something that makes sense...)
-            '''
-            return self.student_num == anotherThing.student_num
-
-
-    4. Now call ``a.__eq__(b)``. What happens?
-
-    5. Now call ``a == b``. What happens?
-
-
-The above code may also make it somewhat obvious why the ``self`` reference is important. Which instance of the object do we want the ``student_num`` attribute from?
+Functionality and Methods
+-------------------------
 
 			
 For Next Class
