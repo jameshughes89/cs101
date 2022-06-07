@@ -86,3 +86,22 @@ class TestSphere(unittest.TestCase):
             with self.subTest(case=case, expect=expect):
                 self.assertEqual(expect, case[0].overlaps(case[1]))
 
+
+    def test_equals_on_equal_spheres_returns_true(self):
+        sphere_a = Sphere(Point3D(1, 2, 3), 1)
+        sphere_b = Sphere(Point3D(1, 2, 3), 1)
+        self.assertTrue(sphere_a == sphere_b)
+
+    def test_equals_on_not_equal_spheres_returns_false(self):
+        sphere_a = Sphere(Point3D(1, 2, 3), 1)
+        sphere_b = Sphere(Point3D(1, 2, 3), 2)
+        self.assertFalse(sphere_a == sphere_b)
+
+    def test_equal_on_sphere_and_string_returns_false(self):
+        sphere = Sphere(Point3D(1, 2, 3), 4)
+        self.assertFalse("Sphere(Point3D(1, 2, 3), 4)" == sphere)
+
+    def test_repr_arbitrary_sphere_returns_correct_string(self):
+        sphere = Sphere(Point3D(1, 2, 3), 4)
+        self.assertEqual("Sphere(Point3D(1, 2, 3), 4)", str(sphere))
+
