@@ -246,6 +246,9 @@ Functionality and Methods
 
 
 * In the above example, notice how the methods are called with parentheses
+
+    * Also notice that, although the methods in the ``Circle`` class have the ``self`` variable specified in its parameter list, no actual value is explicitly passed as an argument
+
 * When calling ``circle_a.area()``, I am asking the ``Circle`` object referenced by ``circle_a`` to calculate and return its area
 * Similarly, when calling ``circle_b.circumference()``, I am asking the instance ``circle_b`` to calculate and return its circumference
 
