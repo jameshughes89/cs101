@@ -121,7 +121,7 @@ Constructor/Instantiation and Attributes
 
 * You will notice a special variable called ``self`` in the parameter list and before the attribute ``radius``
 
-    * ``self`` is a reference variable to an instance of the class
+    * ``self`` is a reference variable to *this*, the current instance of the class (itself)
     * The ``self`` variable can feel a little weird at first, but it is something that will start to make sense as we go
 
 
