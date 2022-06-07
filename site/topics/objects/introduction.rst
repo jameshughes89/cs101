@@ -81,9 +81,6 @@ Starting the Class
 
 * The docstring comment is a simple description of the class
 
-    * The example above is not particularly helpful, but we can add more detail later
-
-
 
 Let's Make a Simple Object/ADT
 ==============================
