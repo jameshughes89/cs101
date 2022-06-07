@@ -127,6 +127,8 @@ Constructor
 * You will notice a special variable called ``self`` in the parameter list and before the attribute ``radius``
 
     * ``self`` is a reference variable to *this*, the current instance of the class (itself)
+    * All methods within the class require that the first parameter is the ``self`` reference variable
+    * Additionally, accessing any attributes or methods within the class require the use of the ``self`` reference variable
     * The ``self`` variable can feel a little weird at first, but it is something that will start to make sense as we go
 
 
