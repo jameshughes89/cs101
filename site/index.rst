@@ -147,7 +147,6 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
     labs/lists/1d-lists
     labs/lists/2d-lists
     labs/lists/references
-    labs/debug/debug
     labs/objects/objects
     labs/objects/data-structures
     labs/recursion/recursion
