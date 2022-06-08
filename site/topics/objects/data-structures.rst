@@ -2,6 +2,19 @@
 Objects III --- Data Structures
 *******************************
 
+* We have spent much of the course learning how to write algorithms
+* But we also saw a few data structures
+
+    * Lists
+    * Tuples
+    * Sets
+    * Dictionaries
+
+* Although these data structures had clear functionality associated with them, we use them as a mechanism for storing and managing data
+
+
+
+
 Student Class
 =============
 
