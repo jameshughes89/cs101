@@ -126,6 +126,16 @@ Methods
 
     * In this case, the method would produce the same result if one called ``point_b.distance_from_point(point_a)`` instead
 
+* If we take a moment to analyze the code within the function, we may get a better sense of the ``self`` reference variable
+
+    * Below is the relevant code from the ``distance_from_point`` method
+
+.. code-block:: python
+    :linenos:
+
+    return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+
+
 
 
 Magic Methods
