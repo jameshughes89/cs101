@@ -20,7 +20,7 @@ Objects III --- Data Structures
     * Managing duplicates
     * ...
 
-* Consider the ``List``\s`` we have been using
+* Consider the ``List``\s we have been using
 
     * They can be indexed
     * The lists have a beginning and end
