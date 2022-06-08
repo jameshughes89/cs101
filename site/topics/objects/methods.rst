@@ -112,6 +112,31 @@ Methods
     * In this context, ``point_a`` would be the ``self`` ``Point3D`` object reference
     * ``point_b`` would be the ``other`` reference
 
+.. code-block:: python
+    :linenos:
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def distance_from_origin(self) -> float:
+            """
+            Calculate the Euclidean distance from this Point3D (self) and the origin (0, 0, 0).
+
+            :return: The Euclidean distance from the self Point3D and the origin
+            :rtype: float
+            """
+            return self.distance_from_point(Point3D(0, 0, 0))
+
+
+* Above is the ``distance_from_origin`` method
+* What's interesting here is the method makes use of one of the class' existing methods --- ```distance_from_point```
+
+    * Here, it's just that the point we want to calculate the distance to is the origin
+
+* What is important to notice here is the use of ``self`` before the method call
+* Again, in order to access any of the object's methods, we must access the object through a reference variable
+
 
 Magic Methods
 ^^^^^^^^^^^^^
