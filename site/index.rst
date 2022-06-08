@@ -100,16 +100,6 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
    * TBD
 
 
-Getting Started
-===============
-
-.. toctree::
-    :caption: Getting Started
-    :maxdepth: 1
-   
-    getting-set/getting-set
-
-
 Course Notes
 ============
 
@@ -181,8 +171,18 @@ Assignments
     assignments/zombies/zombies
     assignments/tic-tac-toe/tic-tac-toe
     assignments/objects/objects
-   
-   
+
+
+Getting Started
+===============
+
+.. toctree::
+    :caption: Getting Started
+    :maxdepth: 1
+
+    getting-set/getting-set
+
+
 Course Outline
 ==============
 
@@ -191,3 +191,5 @@ Course Outline
     :maxdepth: 1
  
     /outline/outline
+
+
