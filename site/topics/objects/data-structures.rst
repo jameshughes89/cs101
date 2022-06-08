@@ -15,7 +15,7 @@ Objects III --- Data Structures
 
     * Ability to index
     * Efficient lookups
-    * Easy tp search
+    * Easy to search
     * Ordering the data
     * Managing duplicates
     * ...
