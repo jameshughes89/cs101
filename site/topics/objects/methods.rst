@@ -104,6 +104,15 @@ Methods
 
 * This code is simply calculating the Euclidean distance between points in three dimensional space
 * But notice that we are making use of two reference variables --- ``self`` and ``other``
+
+    * This may be where ``self`` starts to make a little more sense
+
+* Again, consider ``point_a.distance_from_point(point_b)``
+
+    * In this context, ``point_a`` would be the ``self`` ``Point3D`` object reference
+    * ``point_b`` would be the ``other`` reference
+
+
 Magic Methods
 ^^^^^^^^^^^^^
 
