@@ -204,6 +204,10 @@ Functionality and Methods
 .. code-block:: python
     :linenos:
 
+    class Circle:
+
+        # init and/or other methods not shown for brevity
+
         def diameter(self) -> float:
             """
             Calculate and return the diameter of the Circle based on its radius.
@@ -224,6 +228,10 @@ Functionality and Methods
 
 .. code-block:: python
     :linenos:
+
+    class Circle:
+
+        # init and/or other methods not shown for brevity
 
         def area(self) -> float:
             """
