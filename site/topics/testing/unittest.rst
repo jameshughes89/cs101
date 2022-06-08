@@ -53,7 +53,7 @@ Starting a Unit Test Class
 
 * You will also notice the ``unittest.TestCase`` within parentheses next to the class name
 
-    * The nuance of what this means is outside the scope of this course, but in short, we need it in order to make use of the ``unitttest`` framework
+    * The nuance of what this means is outside the scope of this course, but in short, we need it in order to make use of the ``unittest`` framework
 
 
 Writing Unit Tests
