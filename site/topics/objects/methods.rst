@@ -105,7 +105,7 @@ Methods
     * It has ``self`` as the first parameter in the method's parameter list
     * It uses ``self`` as a reference variable to access the instance's attributes
 
-* What you may find odd is that the method takes another parameter, ``other``, that should be of type ``Point3D`` --- the class we are writing
+* What you may find odd is that the method takes a parameter, ``other``, that should be of type ``Point3D`` --- the class we are writing
 * But this does not break any rules --- we are writing a method that can be invoked on an instance of the ``Point3D`` class that takes an instance of a ``Point3D`` as a parameter
 * This makes sense since the method's functionality is to find the distance between two points
 
