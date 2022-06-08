@@ -100,19 +100,8 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
    * TBD
 
 
-Getting Started
-===============
-
 .. toctree::
-    :maxdepth: 1
-   
-    getting-set/getting-set
-
-
-Course Notes
-============
-
-.. toctree::
+    :caption: Course Notes
     :maxdepth: 1
     :numbered:
    
@@ -143,11 +132,9 @@ Course Notes
     topics/models-of-computation/models-of-computation
     topics/recursion/recursion
    
-   
-Labs
-====
 
 .. toctree::
+    :caption: Labs
     :maxdepth: 1
     :numbered:
    
@@ -165,11 +152,9 @@ Labs
     labs/objects/data-structures
     labs/recursion/recursion
     
-    
-Assignments
-===========
 
 .. toctree::
+    :caption: Assignments
     :maxdepth: 1
     :numbered:
    
@@ -177,12 +162,19 @@ Assignments
     assignments/zombies/zombies
     assignments/tic-tac-toe/tic-tac-toe
     assignments/objects/objects
-   
-   
-Course Outline
-==============
+
 
 .. toctree::
+    :caption: Getting Started
+    :maxdepth: 1
+
+    getting-set/getting-set
+
+
+.. toctree::
+    :caption: Outline
     :maxdepth: 1
  
     /outline/outline
+
+
