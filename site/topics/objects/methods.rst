@@ -133,10 +133,12 @@ Methods
 .. code-block:: python
     :linenos:
 
-    return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+    def distance_from_point(self, other: "Point3D") -> float:
+        math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
-
+* This code is simply calculating the Euclidean distance between points in three dimensional space
+* But notice that we are making use of two reference variables --- ``self`` and ``other`` 
 
 Magic Methods
 ^^^^^^^^^^^^^
