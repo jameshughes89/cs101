@@ -29,6 +29,32 @@ Unittest
 Starting a Unit Test Class
 ==========================
 
+* The first thing we need to do to start writing our unit tests with ``unittest`` is to import it
+* Then we need to start defining a class
+
+    * Our tests are actually going to be written within a class
+
+.. code-block:: python
+    :linenos:
+
+    import unittest
+
+    class Point3DTest(unittest.TestCase):
+        # Tests go here
+
+
+* In the above example, you will see the import and the start of the class
+
+    * Although it is not needed on Colab, depending on how we have our tests setup, we may need to import the class being tested
+
+* As a convention, we call our test classes ``SomeClassTest``, where ``SomeClass`` is the name of the class we are testing
+
+    * Since the tests will be fore the ``Point3D`` class, we call it ``Point3DTest``
+
+* You will also notice the ``unittest.TestCase`` within parentheses next to the class name
+
+    * The nuance of what this means is outside the scope of this course, but in short, we need it in order to make use of the ``unitttest`` framework
+
 
 Writing Unit Tests
 ==================
