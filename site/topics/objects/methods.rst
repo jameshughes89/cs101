@@ -112,6 +112,14 @@ Methods
     * In this context, ``point_a`` would be the ``self`` ``Point3D`` object reference
     * ``point_b`` would be the ``other`` reference
 
+.. note::
+
+    You may have also noticed how the type hint for ``other`` is the *string* ``"Point3D"``, as opposed to just
+    ``Point3D``, like how the function's return type hint is just ``float`` instead of the string ``"float"``.  This is
+    because the ``Point3D`` class, as far as Python is concerned, is not defined yet. This is because the method
+    ``distance_from_point`` is being defined within the class ``Point3D`` that you are currently defining.
+
+
 .. code-block:: python
     :linenos:
 
