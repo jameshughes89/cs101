@@ -107,7 +107,7 @@ Methods
 
 * What you may find odd is that the method takes a parameter, ``other``, that should be of type ``Point3D`` --- the class we are writing
 * But this does not break any rules --- we are writing a method that can be invoked on an instance of the ``Point3D`` class that takes an instance of a ``Point3D`` as a parameter
-* This makes sense since the method's functionality is to find the distance between two points
+* This makes sense since the method's intended functionality is to find the distance between two points
 
     * The distance from the ``Point3D`` the method was invoked on to the ``Point3D`` that was passed as a parameter
 
@@ -118,7 +118,13 @@ Methods
 
     point_a = Point3D(1, 1, 1)
     point_b = Point3D(2, 2, 2)
-    point_a.distance_from_point(point_b)        # Results in 1.732051
+    distance = point_a.distance_from_point(point_b)
+    print(distance)                                     # Results in 1.732051
+
+
+* In the above example, I invoked the method ``distance_from_point`` on ``point_a`` and passed ``point_b`` as the parameter
+
+    * In this case, the method would produce the same result if one called ``point_b.distance_from_point(point_a)`` instead
 
 
 
