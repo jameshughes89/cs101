@@ -3,7 +3,7 @@ import unittest
 from src.lists_topic import contains_while, index_of_for, my_sum
 
 
-class TestListsTopic(unittest.TestCase):
+class ListsTopicTest(unittest.TestCase):
     def test_contains_while_search_in_empty_list_returns_false(self):
         self.assertFalse(contains_while("a", []))
 

@@ -5,7 +5,7 @@ import unittest.mock
 from src.loops_topic import factorial, int_sum, int_sum_print, sum_even_numbers
 
 
-class TestLoopsTopic(unittest.TestCase):
+class LoopsTopicTest(unittest.TestCase):
     def test_factorial_0_returns_1(self):
         self.assertEqual(1, factorial(0))
 

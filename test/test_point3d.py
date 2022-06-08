@@ -3,7 +3,7 @@ import unittest
 from src.point3d import Point3D
 
 
-class TestPoint3D(unittest.TestCase):
+class Point3DTest(unittest.TestCase):
     def test_point_0_0_0_has_x_0(self):
         point = Point3D(0, 0, 0)
         self.assertEqual(0, point.x)

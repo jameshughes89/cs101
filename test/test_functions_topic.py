@@ -8,7 +8,7 @@ from src.functions_topic import (
 )
 
 
-class TestFunctionsTopic(unittest.TestCase):
+class FunctionsTopicTest(unittest.TestCase):
     def test_celsius_to_fahrenheit_positive_celsius_values_returns_correct_fahrenheit_value(self):
         self.assertEqual(104, celsius_to_fahrenheit(40))
 
