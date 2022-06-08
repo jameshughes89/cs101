@@ -145,6 +145,30 @@ Methods
 * What is important to notice here is the use of ``self`` before the method call
 * Again, in order to access any of the object's methods, we must access the object through a reference variable
 
+.. code-block:: python
+    :linenos:
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def find_midpoint(self, other: "Point3D") -> "Point3D":
+            """
+            Return a new Point3D that is the midpoint between this Point3D (self) and the Point3D passed as a parameter.
+
+            :param other: A Point3D to find the the midpoint to from the self Point3D
+            :type other: Point3D
+            :return: A Point3D at the midpoint between the self Point3D and the parameter Point3D other
+            :rtype: Point3D
+            """
+            midpoint_x = (self.x - other.x) / 2 + other.x
+            midpoint_y = (self.y - other.y) / 2 + other.y
+            midpoint_z = (self.z - other.z) / 2 + other.z
+            return Point3D(midpoint_x, midpoint_y, midpoint_z)
+
+
+* In ``find_midpoint`` above, a new ``Point3D`` object is being created and then returned by the function
+
 
 Magic Methods
 ^^^^^^^^^^^^^
