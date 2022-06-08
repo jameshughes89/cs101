@@ -13,7 +13,47 @@ Objects II --- More on Methods
 * In this topic, we will make more classes containing more complex functionality
 * Additionally, we will see objects interacting with one another and how objects can provide a nice level of abstraction
 
-			
+
+Point3D Class
+=============
+
+
+Constructor and Attributes
+--------------------------
+
+
+Methods
+-------
+
+
+Magic Methods
+^^^^^^^^^^^^^
+
+
+
+Testing
+-------
+
+
+
+Sphere Class
+============
+
+
+Constructor and Attributes
+--------------------------
+
+
+Methods
+-------
+
+
+
+Testing
+-------
+
+
+
 For Next Class
 ==============
 
