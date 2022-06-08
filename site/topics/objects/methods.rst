@@ -100,7 +100,7 @@ Methods
             return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
-* In the above example of ``distance_from_point``, like before, follows the same pattern as before for writing a method for a class
+* The above example of ``distance_from_point``, like before, follows the same pattern as before for writing a method for a class
 
     * It has ``self`` as the first parameter in the method's parameter list
     * It uses ``self`` as a reference variable to access the instance's attributes
