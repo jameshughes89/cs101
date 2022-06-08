@@ -104,6 +104,7 @@ Getting Started
 ===============
 
 .. toctree::
+    :caption: Getting Started
     :maxdepth: 1
    
     getting-set/getting-set
@@ -113,6 +114,7 @@ Course Notes
 ============
 
 .. toctree::
+    :caption: Course Notes
     :maxdepth: 1
     :numbered:
    
@@ -148,6 +150,7 @@ Labs
 ====
 
 .. toctree::
+    :caption: Labs
     :maxdepth: 1
     :numbered:
    
@@ -170,6 +173,7 @@ Assignments
 ===========
 
 .. toctree::
+    :caption: Assignments
     :maxdepth: 1
     :numbered:
    
@@ -183,6 +187,7 @@ Course Outline
 ==============
 
 .. toctree::
+    :caption: Outline
     :maxdepth: 1
  
     /outline/outline
