@@ -11,8 +11,14 @@ Objects III --- Data Structures
     * Dictionaries
 
 * Although these data structures had clear functionality associated with them, we use them as a mechanism for storing and managing data
+* They may also provide some other benefits
 
-
+    * Ability to index
+    * Efficient lookups
+    * Easy tp search
+    * Ordering the data
+    * Managing duplicates
+    * ...
 
 
 Student Class
