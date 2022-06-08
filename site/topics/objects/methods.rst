@@ -74,6 +74,53 @@ Constructor and Attributes
 Methods
 -------
 
+* The three methods we want are
+
+    * A way to measure the distance from the origin --- ``distance_from_origin``
+    * A way to measure the distance from another point  --- ``distance_from_point``
+    * A way to find the midpoint between two points --- ``find_midpoint``
+
+
+.. code-block:: python
+    :linenos:
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def distance_from_point(self, other: "Point3D") -> float:
+            """
+            Calculate the Euclidean distance from this Point3D (self) and the Point3D passed as a parameter.
+
+            :param other: A Point3D to find the the Euclidean distance to from the self Point3D
+            :type other: Point3D
+            :return: The Euclidean distance between the self Point3D and the parameter Point3D other
+            :rtype: float
+            """
+            return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+
+
+* In the above example of ``distance_from_point``, like before, follows the same pattern as before for writing a method for a class
+
+    * It has ``self`` as the first parameter in the method's parameter list
+    * It uses ``self`` as a reference variable to access the instance's attributes
+
+* What you may find odd is that the method takes another parameter, ``other``, that should be of type ``Point3D`` --- the class we are writing
+* But this does not break any rules --- we are writing a method that can be invoked on an instance of the ``Point3D`` class that takes an instance of a ``Point3D`` as a parameter
+* This makes sense since the method's functionality is to find the distance between two points
+
+    * The distance from the ``Point3D`` the method was invoked on to the ``Point3D`` that was passed as a parameter
+
+* If this still makes you uneasy, consider how we would use this method
+
+.. code-block:: python
+    :linenos:
+
+    point_a = Point3D(1, 1, 1)
+    point_b = Point3D(2, 2, 2)
+    point_a.distance_from_point(point_b)        # Results in 1.732051
+
+
 
 Magic Methods
 ^^^^^^^^^^^^^
