@@ -10,7 +10,7 @@ Objects II --- More on Methods
     * How to write and use methods
     * How to make instances of the class
 
-* In this topic, we will make more classes containing more complex functionality
+* In this topic, we will create more classes containing more complex functionality
 * Additionally, we will see objects interacting with one another and how objects can provide a nice level of abstraction
 
 
