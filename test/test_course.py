@@ -4,7 +4,7 @@ from src.course import Course
 from src.student import Student
 
 
-class TestCourse(TestCase):
+class CourseTest(TestCase):
     def test_course_name_returns_correct_name(self):
         course = Course("CS101")
         self.assertEqual("CS101", course.course_name)

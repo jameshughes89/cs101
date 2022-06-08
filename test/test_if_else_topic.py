@@ -12,7 +12,7 @@ from src.if_else_topic import (
 )
 
 
-class TestIfElseTopic(unittest.TestCase):
+class IfElseTopicTest(unittest.TestCase):
     def test_smush_positive_parameter_returns_half(self):
         self.assertEqual(5, smush(10))
 

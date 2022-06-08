@@ -3,7 +3,7 @@ import unittest
 from src.circle import Circle
 
 
-class TestCircle(unittest.TestCase):
+class CircleTest(unittest.TestCase):
     def setUp(self):
         self.circle_0 = Circle(0)
         self.circle_10 = Circle(10)

@@ -10,7 +10,7 @@ from src.strings_topic import (
 )
 
 
-class TestStringsTopic(unittest.TestCase):
+class StringsTopicTest(unittest.TestCase):
     @unittest.mock.patch("sys.stdout", new_callable=io.StringIO)
     def test_vertical_print_while_empty_string_prints_nothing(self, mock_stdout):
         vertical_print_while("")

@@ -3,7 +3,7 @@ import unittest
 from src.student import Student
 
 
-class TestStudent(unittest.TestCase):
+class StudentTest(unittest.TestCase):
     def test_student_first_name_returns_correct_first_name(self):
         student = Student("Bob", "Smith", 123456789)
         self.assertEqual("Bob", student.first_name)
