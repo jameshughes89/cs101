@@ -39,6 +39,37 @@ Point3D Class
 Constructor and Attributes
 --------------------------
 
+* Below is the start of the ``Point3D`` class, including the constructor and assignment of the attributes
+* You will find it follows the same pattern as the ``Circle`` class already discussed
+* The only real differences are trivial
+
+    * The ``import math``, which will help with some geometry calculations
+    * The name of the class is different
+    * The parameters the ``__init__`` method has
+    * The attributes
+
+
+.. code-block:: python
+    :linenos:
+
+    import math
+
+
+    class Point3D:
+        """
+        A class for representing points in a three dimensional (3D) space.
+        """
+
+        def __init__(self, x: float, y: float, z: float):
+            self.x = x
+            self.y = y
+            self.z = z
+
+
+* That's it --- that's all we need to get started with the ``Point3D`` class
+* Like before, we can even start making instances of the ``Point3D`` class
+* Though, also like before, the class is not particularly helpful without the required methods
+
 
 Methods
 -------
