@@ -95,9 +95,49 @@ Magic Methods
     * ``point_a.__eq__(point_b)``
 
 * Although this will work, it is a little clunky
-* Instead, we will invoke the equality method by using ``==`` like we have used for every other equality check
+* Instead, we will indirectly invoke the equality method by using ``==`` like we have used for every other equality check
 
     * ``point_a == point_b``
+
+* There is, however, one problem with the way we wrote our equality method
+* Consider the below example
+
+.. code-block:: python
+    :linenos:
+
+    some_point = Point3D(1, 2, 3)
+    some_circle = Circle(10)
+
+    print(some_point == some_circle)
+
+
+* Running this code results in ``AttributeError: 'Circle' object has no attribute 'x'``
+* The trouble is that the ``Circle`` instance, which would be ``other`` in the ``Point3D``\'s equality method, does not have an ``x``, ``y``, or ``z`` attribute
+* A simple way to fix this is to check if the ``other`` reference variable is even referencing something that can be properly compared to
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 17
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            """
+            Check if the self Point3D is equal to the Point3D passed as a parameter. Points3D are considered equal if they
+            have the same x, y, and z values.
+
+            This is a "magic method" that can be used with `==`.
+
+            :param other: A Point3D to compare to the self point3D
+            :type other: Point3D
+            :return: A boolean indicating if the two Point3Ds are equivalent.
+            :rtype: boolean
+            """
+            if isinstance(other, Point3D):
+                return self.x == other.x and self.y == other.y and self.z == other.z
+            return False
 
 
 Testing
