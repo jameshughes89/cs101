@@ -14,6 +14,20 @@ Objects II --- More on Methods
 * Additionally, we will see objects interacting with one another and how objects can provide a nice level of abstraction
 
 
+* The goal is to define a ``Sphere`` class
+
+    * Like the ``Circle`` class, it will know its radius
+    * It will also know its position within some three dimensional space
+    * It will provide functionality to measure distances between ``Sphere`` objects and check if they overlap/collide
+
+* The catch is, we also need a way to specify the point in the three dimensional space
+* To address this, we will define a ``Point3D`` class
+
+    * It will know its position in the three dimensional space based on a three dimensional coordinate system
+    * Provide some simple geometry functionality
+    * Provide a way to measure distance between ``Point3D`` objects, which will help with implementing the ``Sphere`` class' functionality
+
+
 Point3D Class
 =============
 
