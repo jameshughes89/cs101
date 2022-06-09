@@ -43,6 +43,23 @@ Methods
 Magic Methods
 ^^^^^^^^^^^^^
 
+* There exist a number of special, or *magic* methods within Python
+* What makes these methods *magic* is that you do not call them directly; you call them indirectly through some other syntax
+* In fact, the ``__init__`` method, the constructor, is a magic method
+
+    * You never actually directly call ``__init__`` in your code
+    * Instead, the constructor gets invoked when instantiating an instance of the class
+
+        * ``some_point = Point3D(1, 2, 3)``
+
+* `There are many of these special methods <https://docs.python.org/3/reference/datamodel.html#specialnames>`_ , but, in addition to the constructor, we will focus on two important ones
+
+    * ``__eq__``
+    * ``__repr__``
+
+
+
+
 
 
 Testing
