@@ -54,7 +54,7 @@ Magic Methods
 
 * `There are many of these special methods <https://docs.python.org/3/reference/datamodel.html#specialnames>`_ , but, in addition to the constructor, we will focus on two important ones
 
-    * ``__eq__`` --- a method foc checking object equality
+    * ``__eq__`` --- a method for checking object equality
     * ``__repr__`` --- a method for generating a human readable string representation of the object
 
 
