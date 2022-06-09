@@ -63,11 +63,10 @@ eq
 
 * It is common to want to check if two things are equal
 * For example, like numbers --- ``if some_number == 10:``
-* With numbers, Python already knows what equality is
-* Similarly with strings and booleans
+* With numbers, strings, booleans, and other types, Python already knows what equality is
 * However, with custom classes, Python will not know what it means for instances of that class to be equal, unless you tell it
 
-* In the context of the ``Point3D`` class, you may have a good idea of what it means for two instances of this object to be
+* In the context of the ``Point3D`` class, you may have a good idea of what it means for two instances of this object to be equal
 * But Python cannot read your mind; you need to tell Python what it means for two ``Point3D`` objects to be equal
 * By default, Python will try to be helpful if you ask it if two objects of a custom class are equal
 
@@ -76,7 +75,6 @@ eq
 * A more reasonable equality check for ``Point3D`` objects would be if they exist in the same location within the three dimensional space
 
     * That is, if the ``x``, ``y``, and ``z`` attributes, representing the coordinates, are equal
-    * If two ``Point3D`` objects have the same ``x``, ``y``, and ``z`` values, they are equal, otherwise they are not
 
 .. code-block:: python
     :linenos:
@@ -91,13 +89,13 @@ eq
 
 * The above code showing the ``__eq__`` method is how we define our equals magic method
 
-    * Check if the ``self`` and ``other`` have all their attributes being the same
+    * Check if ``self`` and ``other`` have all their attributes being the same
 
-* You may be tempted to check equality by calling the ``__eq__`` method explicitly
+* You may be tempted to then check equality by calling the ``__eq__`` method explicitly
 
     * ``point_a.__eq__(point_b)``
 
-* Although this will work, it is a little clunky
+* Although this will work, it is a little clunky and bad style
 * Instead, we will indirectly invoke the equality method by using ``==`` like we have used for every other equality check
 
     * ``point_a == point_b``
