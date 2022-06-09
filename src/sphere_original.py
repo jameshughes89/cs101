@@ -3,7 +3,7 @@ import math
 from src.point3d import Point3D
 
 
-class SphereOriginal:
+class Sphere:
     """
     Class for managing Spheres within a 3D space. This includes tracking it's location in three dimensional space and
     radius. Additionally, it allows for some basic geometry calculations, distance measurements between Spheres, and
@@ -25,7 +25,7 @@ class SphereOriginal:
     def volume(self) -> float:
         return (4 / 3) * math.pi * self.radius**3
 
-    def distance_between_centres(self, other: Point3D) -> float:
+    def distance_between_centres(self, other: "Sphere") -> float:
         """
         Calculate and return the distance between the centres of two Spheres.
 
@@ -34,7 +34,7 @@ class SphereOriginal:
         :return: Distance between the Sphere centres.
         :rtype: float
         """
-        return self.centre_point.distance_from_point(other.centre_point)
+        return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2 + (self.z - other.z)**2)
 
     def distance_between_edges(self, other: "Sphere") -> float:
         """
@@ -62,8 +62,8 @@ class SphereOriginal:
 
     def __eq__(self, other) -> bool:
         if isinstance(other, Sphere):
-            return self.radius == other.radius and self.centre_point == other.centre_point
+            return self.x == other.x and self.y == other.y and self.z == other.z and self.radius == other.radius
         return False
 
     def __repr__(self) -> str:
-        return f"Sphere({self.centre_point}, {self.radius})"
+        return f"Sphere({self.x}, {self.y}, {self.z}, {self.radius})"
