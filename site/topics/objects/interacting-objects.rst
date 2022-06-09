@@ -31,8 +31,6 @@ Methods
 -------
 
 
-Magic Methods
-^^^^^^^^^^^^^
 
 * There exist a number of special, or *magic* methods within Python
 * What makes these methods *magic* is that you do not call them directly; you call them indirectly through some other syntax
