@@ -75,9 +75,29 @@ Magic Methods
     * That is, if the ``x``, ``y``, and ``z`` attributes, representing the coordinates, are equal
     * If two ``Point3D`` objects have the same ``x``, ``y``, and ``z`` values, they are equal, otherwise they are not
 
+.. code-block:: python
+    :linenos:
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            return self.x == other.x and self.y == other.y and self.z == other.z
 
 
+* The above code showing the ``__eq__`` method is how we define our equals magic method
 
+    * Check if the ``self`` and ``other`` have all their attributes being the same
+
+* You may be tempted to check equality by calling the ``__eq__`` method explicitly
+
+    * ``point_a.__eq__(point_b)``
+
+* Although this will work, it is a little clunky
+* Instead, we will invoke the equality method by using ``==`` like we have used for every other equality check
+
+    * ``point_a == point_b``
 
 
 Testing
