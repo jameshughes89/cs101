@@ -1,6 +1,6 @@
-*******************************
-Objects III --- Data Structures
-*******************************
+******************************
+Objects IV --- Data Structures
+******************************
 
 * We have spent much of the course learning how to write algorithms
 * But we also saw a few data structures
