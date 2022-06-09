@@ -83,7 +83,7 @@ Starting the Class
 
 
 Constructor/Initialization and Attributes
-----------------------------------------
+-----------------------------------------
 
 * With just the ``class Circle``, we can actually start making instances of the class
 
