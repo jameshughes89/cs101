@@ -58,6 +58,9 @@ Magic Methods
     * ``__repr__`` --- a method for generating a human readable string representation of the object
 
 
+eq
+""
+
 * It is common to want to check if two things are equal
 * For example, like numbers --- ``if some_number == 10:``
 * With numbers, Python already knows what equality is
