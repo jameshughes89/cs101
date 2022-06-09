@@ -125,6 +125,7 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
     topics/exceptions/exceptions
     topics/objects/introduction
     topics/objects/methods
+    topics/objects/interacting-objects
     topics/testing/unittest
     topics/objects/data-structures
     topics/searching/searching
