@@ -32,82 +32,8 @@ Methods
 
 
 
-* There exist a number of special, or *magic* methods within Python
-* What makes these methods *magic* is that you do not call them directly; you call them indirectly through some other syntax
-* In fact, the ``__init__`` method, the constructor, is a magic method
-
-    * You never actually directly call ``__init__`` in your code
-    * Instead, the constructor gets invoked when instantiating an instance of the class
-
-        * ``some_point = Point3D(1, 2, 3)``
-
-* `There are many of these special methods <https://docs.python.org/3/reference/datamodel.html#specialnames>`_ , but, in addition to the constructor, we will focus on two important ones
-
-    * ``__eq__`` --- a method for checking object equality
-    * ``__repr__`` --- a method for generating a human readable string representation of the object
-
-
-eq
-""
-
-* It is common to want to check if two things are equal
-* For example, like numbers --- ``if some_number == 10:``
-* With numbers, strings, booleans, and other types, Python already knows what equality is
-* However, with custom classes, Python will not know what it means for instances of that class to be equal, unless you tell it
-
-* In the context of the ``Point3D`` class, you may have a good idea of what it means for two instances of this object to be equal
-* But Python cannot read your mind; you need to tell Python what it means for two ``Point3D`` objects to be equal
-* By default, Python will try to be helpful if you ask it if two objects of a custom class are equal
-
-    * The default equality check is checking if two reference variables are referencing literally the exact same object in memory
-
-* A more reasonable equality check for ``Point3D`` objects would be if they exist in the same location within the three dimensional space
-
-    * That is, if the ``x``, ``y``, and ``z`` attributes, representing the coordinates, are equal
-
 .. code-block:: python
     :linenos:
-
-    class Point3D:
-
-        # init and/or other methods not shown for brevity
-
-        def __eq__(self, other) -> bool:
-            return self.x == other.x and self.y == other.y and self.z == other.z
-
-
-* The above code showing the ``__eq__`` method is how we define our equals magic method
-
-    * Check if ``self`` and ``other`` have all their attributes being the same
-
-* You may be tempted to then check equality by calling the ``__eq__`` method explicitly
-
-    * ``point_a.__eq__(point_b)``
-
-* Although this will work, it is a little clunky and bad style
-* Instead, we will indirectly invoke the equality method by using ``==`` like we have used for every other equality check
-
-    * ``point_a == point_b``
-
-* There is, however, one problem with the way we wrote our equality method
-* Consider the below example
-
-.. code-block:: python
-    :linenos:
-
-    some_point = Point3D(1, 2, 3)
-    some_circle = Circle(10)
-
-    print(some_point == some_circle)
-
-
-* Running this code results in ``AttributeError: 'Circle' object has no attribute 'x'``
-* The trouble is that the ``Circle`` instance, which would be ``other`` in the ``Point3D``\'s equality method, does not have an ``x``, ``y``, or ``z`` attribute
-* A simple way to fix this is to check if the ``other`` reference variable is even referencing something that can be properly compared to
-
-.. code-block:: python
-    :linenos:
-    :emphasize-lines: 17
 
     class Point3D:
 
@@ -130,23 +56,21 @@ eq
             return False
 
 
-.. note::
+        def __repr__(self) -> str:
+            """
+            Generate and return a string representation of the Point3D object.
 
-    There was nothing stopping us from defining ``__eq__`` for our ``Circle`` class. In fact, it is arguably something
-    we should do. Below is an example of an equality check for the ``Circle`` class.
+            This os a "magic method" that can be used with `str(some_point3d)` or for printing.
 
-    .. code-block:: python
-        :linenos:
-        :emphasize-lines: 17
+            :return: A string representation of the Point3D
+            :rtype: string
+            """
+            return f"Point3D({self.x}, {self.y}, {self.z})"
 
-        class Circle:
 
-            # init and/or other methods not shown for brevity
+* In the above ``__eq__`` method, equality for ``Point3D`` objects will be if all their attributes match
+* The ``__repr__`` will follow the same pattern as the ``Sphere`` --- class name with the relevant attributes
 
-            def __eq__(self, other) -> bool:
-                if isinstance(other, Circle):
-                    return self.radius == other.radius
-                return False
 
 Testing
 -------
