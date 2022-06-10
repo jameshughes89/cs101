@@ -34,7 +34,7 @@ class Sphere:
         :return: Distance between the Sphere centres.
         :rtype: float
         """
-        return math.sqrt((self.x - other.x)**2 + (self.y - other.y)**2 + (self.z - other.z)**2)
+        return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
     def distance_between_edges(self, other: "Sphere") -> float:
         """
