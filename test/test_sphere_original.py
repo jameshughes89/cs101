@@ -1,6 +1,5 @@
 import unittest
 
-from src.point3d import Point3D
 from src.sphere_original import Sphere
 
 
