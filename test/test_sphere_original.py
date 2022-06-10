@@ -59,10 +59,10 @@ class SphereOriginalTest(unittest.TestCase):
 
     def test_distance_between_centres_various_spheres_returns_correct_distance(self):
         cases = [
-            (Sphere(0, 0, 0, 1), Sphere(Point3D(0, 0, 0), 1)),
-            (Sphere(0, 0, 0, 1), Sphere(Point3D(1, 1, 1), 1)),
-            (Sphere(1, 1, 1, 1), Sphere(Point3D(1, 1, 1), 10)),
-            (Sphere(-1, -1, -1, 1), Sphere(Point3D(1, 1, 1), 10)),
+            (Sphere(0, 0, 0, 1), Sphere(0, 0, 0, 1)),
+            (Sphere(0, 0, 0, 1), Sphere(1, 1, 1, 1)),
+            (Sphere(1, 1, 1, 1), Sphere(1, 1, 1, 10)),
+            (Sphere(-1, -1, -1, 1), Sphere(1, 1, 1, 10)),
         ]
         expecteds = [0, 1.732051, 0, 3.464102]
         for (case, expect) in zip(cases, expecteds):
@@ -71,10 +71,10 @@ class SphereOriginalTest(unittest.TestCase):
 
     def test_distance_between_edges_various_spheres_returns_correct_distance(self):
         cases = [
-            (Sphere(0, 0, 0, 1), Sphere(Point3D(0, 0, 0), 1)),
-            (Sphere(0, 0, 0, 1), Sphere(Point3D(1, 1, 1), 1)),
-            (Sphere(0, 0, 0, 1), Sphere(Point3D(10, 10, 10), 1)),
-            (Sphere(-1, -1, -1, 1), Sphere(Point3D(10, 10, 10), 10)),
+            (Sphere(0, 0, 0, 1), Sphere(0, 0, 0, 1)),
+            (Sphere(0, 0, 0, 1), Sphere(1, 1, 1, 1)),
+            (Sphere(0, 0, 0, 1), Sphere(10, 10, 10, 1)),
+            (Sphere(-1, -1, -1, 1), Sphere(10, 10, 10, 10)),
         ]
         expecteds = [-2, -0.267949, 15.320508, 8.052559]
         for (case, expect) in zip(cases, expecteds):
@@ -83,11 +83,11 @@ class SphereOriginalTest(unittest.TestCase):
 
     def test_overlaps_various_spheres_returns_correct_boolean(self):
         cases = [
-            (Sphere(0, 0, 0), 1, Sphere(Point3D(0, 0, 0), 1)),
-            (Sphere(0, 0, 0), 1, Sphere(Point3D(1, 1, 1), 1)),
-            (Sphere(0, 0, 0), 1, Sphere(Point3D(10, 10, 10), 1)),
-            (Sphere(-1, -1, -1, 10), Sphere(Point3D(10, 10, 10), 10)),
-            (Sphere(-1, 1, 4, 5), Sphere(Point3D(-2, -3, -4), 4)),
+            (Sphere(0, 0, 0, 1), Sphere(0, 0, 0, 1)),
+            (Sphere(0, 0, 0, 1), Sphere(1, 1, 1, 1)),
+            (Sphere(0, 0, 0, 1), Sphere(10, 10, 10, 1)),
+            (Sphere(-1, -1, -1, 10), Sphere(10, 10, 10, 10)),
+            (Sphere(-1, 1, 4, 5), Sphere(-2, -3, -4, 4)),
         ]
         expecteds = [True, True, False, True, True]
         for (case, expect) in zip(cases, expecteds):
@@ -110,4 +110,4 @@ class SphereOriginalTest(unittest.TestCase):
 
     def test_repr_arbitrary_sphere_returns_correct_string(self):
         sphere = Sphere(1, 2, 3, 4)
-        self.assertEqual("Sphere(, 2, 3, 4)", str(sphere))
+        self.assertEqual("Sphere(1, 2, 3, 4)", str(sphere))
