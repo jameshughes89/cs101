@@ -2,6 +2,17 @@
 Models of Computation
 *********************
 
+* As we have progressed through the course, we have gained an intuition of how everything works
+* However, at the end of the day, how much thought has been given to
+
+    * *What is computation?*
+    * *What is a computer?*
+    * *What enables a computer to do what it does?*
+    * *What can a computer compute?*
+
+* These ideas are a big part of what computer science is
+
+
 
 Finite State Machines/Automata (FSM/FSA)
 ========================================
