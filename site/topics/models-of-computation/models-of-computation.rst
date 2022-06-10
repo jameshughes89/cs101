@@ -148,13 +148,13 @@ Pushdown Automata (PDA) and Context-Free Grammars
 
 * Another one   
 
-    :math:`S --> SS`
+    :math:`S \rightarrow SS`
     
-    :math:`S --> (S)`
+    :math:`S \rightarrow (S)`
 
-    :math:`S --> ()`
+    :math:`S \rightarrow ()`
 
-    :math:`S --> \epsilon`
+    :math:`S \rightarrow \epsilon`
 
 
 .. admonition:: Activity
@@ -167,38 +167,53 @@ Pushdown Automata (PDA) and Context-Free Grammars
 Context-Sensitive Grammars
 ==========================
 
-* Context matters now
+* If we have context matter, we can get more interesting resulting strings than we could with CFGs
+* With CFGs, the rule (left hand side) can only be applied if the correct *context* exists
 
-    S --> abc
+    * For example, in the below set of rules, the :math:`Ab` rule can only be applied if the string contains :math:`Ab`
+
+
+    :math:`S \rightarrow abc`
     
-    S --> aAbc
+    :math:`S \rightarrow aAbc`
     
-    Ab --> bA
+    :math:`Ab \rightarrow bA`
     
-    Ac --> Bbcc
+    :math:`Ac \rightarrow Bbcc`
     
-    bB -> Bb
+    :math:`bB \rightarrow Bb`
     
-    aB --> aa
+    :math:`aB \rightarrow aa`
     
-    aB --> aaA
+    :math:`aB \rightarrow aaA`
+
+
+.. admonition:: Activity
+    :class: activity
+
+    What strings can this system create? Try to generate a few strings and see if you can generalize and see the big
+    picture of what it's doing exactly.
 
     
 Turing Machines 
 ===============
 
 .. image:: TuringMachine.jpg
+    :target: https://en.wikipedia.org/wiki/Turing_machine
 
 * Turing Machines are even more powerful models of computation
-* *Basically*, the computers we use today are kinda' like these
-    * They're not built like these, but they are as powerful
-    * Can solve the same problems. 
-    
-* Also, we often say that our brains are *at least* as powerful as a Turing Machine. 
-    * *At least*?
+* The computers we use today are computationally equivalent to  these
 
+    * They're not built like these, but they are as powerful
+    * Can solve the same problems
+
+* Given the relative complexity of Turing Machines, their details will not be discussed here
+
+    * Don't worry, you will learn all about them later in your computer science degree
+
+* Although Turing Machines are more complex than the other models of computation the takeaway is that these still remarkably simple models of computation are sufficient for implementing any computer program
     
-For next class
+For Next Class
 ==============
 
 * `Read Chapter 18 <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_
