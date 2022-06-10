@@ -13,45 +13,52 @@ Models of Computation
 * These ideas are a big part of what computer science is
 
 
-
 Finite State Machines/Automata (FSM/FSA)
 ========================================
 
-* Simple models of computation. 
 * We can define a very very very very simple computer in terms of 
     * Input 
     * Output
     * States
     
-* And then we can geek out over how much work this little computer can do
-    * Like, what types of problems this computer can solve. 
+* With this, we can spend time thinking about what exactly a simple little computer like this can do
 
-* FSM's are **VERY** simple computers. 
+    * What types of problems this computer can solve
+
+* FSMs are **VERY** simple computers
 * But, just because they're simple, doesn't mean we can't use them
-* In fact, these little guys are powerful enough to solve A LOT problems we deal with every day. 
+* In fact, these extraordinarily simple computers are used to solve many problems we deal with every day
+
     * Vending Machines
     * Traffic Lights
     * Elevators
     * Locks/Safe
     * Regular Expressions 
 
-* Let's say we want a lock that has the combination **7, 7, 3**. 
-* Here's a FSM for that lock
+* Let's say we want a lock that has the combination **7, 7, 3**
+* Below is a representation of a FSM for that lock
 
 .. image:: FSM_lock.png
 
-* Or, we can go the other way and say, given this machine, what input can it accept. 
+* The FSM receives input, and depending on the input the FSM's state may change
+* If the FSM receives input such that the machine halts on the accepting state (double circled state), then, in this context, the lock would open
+* For example, if the machine receives the input **7, 7, 3**, the final state would be the accepting state
+
+* The above lock example started with what the correct sequence is, and then a FSM was designed for it
+* But we can also start from a FSM and ask, *what kinds of inputs does this machine accept?*
 
 .. image:: FSM_regex.png
 
 .. admonition:: Activity
     :class: activity
-   
-    What input strings can this machine accept? What I mean is, what strings will get this machine to it's final state.  
 
-* Think about it this way. Think of how simple the computational system is that is powerful enough to unlock a lock
+    Consider how the lock example hits the accepting state after seeing **7, 7, 3**.
 
-* Computer Scientists like to think about *what else can a computer this powerful do?*  
+    What input strings can this machine accept? What I mean is, what strings will get this machine to it's final state?
+
+
+* Think of how simple this computational system is, while also considering how powerful it is in terms of the problems it could solve
+* Computer Scientists like to think about *what else can a computer this powerful do?*
     
 
 Pushdown Automata (PDA) and Context-Free Grammars 
