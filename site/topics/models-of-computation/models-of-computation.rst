@@ -64,77 +64,104 @@ Finite State Machines/Automata (FSM/FSA)
 Pushdown Automata (PDA) and Context-Free Grammars 
 =================================================
 
-* FSM's are cool and all, but they can only solve certain types of problems. If we want to solve more *complex* problems (for lack of a better term), we need a more powerful machine. 
+* FSMs, although powerful, are very limited in the types of problems they can be used for
+* If we want to solve more *complex* problems, we need a more powerful machine
 
-* PDA's are more *powerful* computational models
-* They can solve **strictly** more problems than FSMs. 
+    * But what exactly is a more complex problem?
+
+* Pushdown Automatas (PDAs) are strictly more powerful when compared to FSMs
+
+    * They can solve more problems than FSMs
     * Anything a FSM can do, a PDA can do
-    * There are a lot of things a PDA can do, that a FSM cannot
-    
-* PDA's accept what we call Context-Free Grammars. 
+    * But there are many things a PDA can do that a FSM cannot
 
-* Here's an example of doing the same thing as the 2nd FSM. 
+* PDAs have a mechanism for memory, which is what gives them an edge over FSMs
 
-    S --> aA
+    * A pushdown is an old name for a stack
+    * The memory is the informatioon stored in the stack
 
-    S --> bB
+* Getting into the theoretical construction of a PDA is beyond what we will consider here, but we can discuss what we can do with them
+* PDAs recognize what we call Context-Free Grammars
+* Here's an example of doing the same thing as the 2nd FSM
 
-    A --> aA
+    :math:`S \rightarrow aA`
 
-    A --> b
+    :math:`S \rightarrow bB`
 
-    B --> bB
+    :math:`A \rightarrow aA`
 
-    B --> a
+    :math:`A \rightarrow b`
 
-* Here, the upper case letters are like special symbols that mean you can replace them in a string with whatever is on the right hand side. 
-* The lower case letters are just letters. 
+    :math:`B \rightarrow bB`
+
+    :math:`B \rightarrow a`
+
+* Here, the upper case letters are special symbols that mean you can replace them in a string with whatever is on the right hand side
+* The lower case letters are just letters
 
 * Start with S
-    * String: 'S'
+
+    * String: :math:`S`
+
 * We have two options, let's go with the first
-    * String: 'aA'
+
+    * String: :math:`aA`
+
 * We now have an A, so let's go with the first options
-    * String: 'aaA'
+
+    * String: :math:`aaA`
+
 * Let's do it again
-    * String: 'aaaA'
+
+    * String: :math:`aaaA`
+
 * Let's do it 4 more times
-    * String: 'aaaaaaaA'
+
+    * String: :math:`aaaaaaaA`
+
 * Now let's go with the second option
-    * String: 'aaaaaaab'
-* No more upper case letters, so we're done. 
-    * String: 'aaaaaaab'
+
+    * String: :math:`aaaaaaab`
+
+* No more upper case letters, so we're done.
+
+    * String: :math:`aaaaaaab`
 
     
 * Here's another one
 
-    S --> aSa
+    :math:`S \rightarrow aSa`
     
-    S --> bSb
+    :math:`S \rightarrow bSb`
     
-    S --> *epsilon*/ ''
+    :math:`S \rightarrow \epsilon`
     
-    (*epsilon* means empty string)
-    
+    (:math:`\epsilon` means empty string)
+
+
 .. admonition:: Activity
     :class: activity
    
-    What strings can this system create? Try to generate a few and see if you can see the big picture on what it's doing.   
+    What strings can this system create? Try to generate a few strings and see if you can generalize and see the big
+    picture of what it's doing exactly.
+
 
 * Another one   
 
-    S --> SS
+    :math:`S --> SS`
     
-    S --> (S)
+    :math:`S --> (S)`
 
-    S --> ()
+    :math:`S --> ()`
 
-    S --> *epsilon*/ ''
+    :math:`S --> \epsilon`
+
 
 .. admonition:: Activity
     :class: activity
    
-    What strings can this system create? Try to generate a few and see if you can see the big picture on what it's doing. 
+    What strings can this system create? Try to generate a few strings and see if you can generalize and see the big
+    picture of what it's doing exactly.
 
 
 Context-Sensitive Grammars
