@@ -67,3 +67,34 @@ class Sphere:
 
     def __repr__(self) -> str:
         return f"Sphere({self.x}, {self.y}, {self.z}, {self.radius})"
+
+
+sphere_origin_0 = Sphere(0, 0, 0, 0)
+assert 0 == sphere_origin_0.x
+assert 0 == sphere_origin_0.y
+assert 0 == sphere_origin_0.z
+assert 0 == sphere_origin_0.radius
+assert 0 == sphere_origin_0.diameter()
+assert 0 == sphere_origin_0.surface_area()
+assert 0 == sphere_origin_0.volume()
+assert 0 == sphere_origin_0.distance_between_centres(Sphere(0, 0, 0, 0))
+assert 0 == sphere_origin_0.distance_between_edges(Sphere(0, 0, 0, 0))
+assert True == sphere_origin_0.overlaps(Sphere(0, 0, 0, 0))
+assert True == (sphere_origin_0 == Sphere(0, 0, 0, 0))
+assert False == (sphere_origin_0 == Sphere(0, 0, 0, 1))
+assert "Sphere(0, 0, 0, 0)" == str(sphere_origin_0)
+
+sphere = Sphere(1, 2, 3, 4)
+assert 1 == sphere.x
+assert 2 == sphere.y
+assert 3 == sphere.z
+assert 4 == sphere.radius
+assert 8 == sphere.diameter()
+assert 0.01 > abs(sphere.surface_area() - 201.06)
+assert 0.01 > abs(sphere.volume() - 268.08)
+assert 0.01 > abs(sphere.distance_between_centres(Sphere(0, 0, 0, 0)) - 3.74)
+assert 0.01 > abs(sphere.distance_between_edges(Sphere(0, 0, 0, 0)) - (-0.26))
+assert True == sphere.overlaps(Sphere(0, 0, 0, 0))
+assert False == (sphere == Sphere(0, 0, 0, 0))
+assert True == (sphere == Sphere(1, 2, 3, 4))
+assert "Sphere(1, 2, 3, 4)" == str(sphere)
