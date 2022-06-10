@@ -8,11 +8,11 @@ class SphereOriginalTest(unittest.TestCase):
         sphere = Sphere(0, 1, 2, 1)
         self.assertEqual(0, sphere.x)
 
-    def test_sphere_y_returns_correct_x(self):
+    def test_sphere_y_returns_correct_y(self):
         sphere = Sphere(0, 1, 2, 1)
         self.assertEqual(1, sphere.y)
 
-    def test_sphere_z_returns_correct_x(self):
+    def test_sphere_z_returns_correct_z(self):
         sphere = Sphere(0, 1, 2, 1)
         self.assertEqual(2, sphere.z)
 
