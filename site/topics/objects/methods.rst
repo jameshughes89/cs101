@@ -113,6 +113,23 @@ Methods
         return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
+* This code calculates the Euclidean distance between the centres in three dimensional space
+* But notice that we are making use of two reference variables --- ``self`` and ``other``
+
+    * This may be where ``self`` starts to make a little more sense
+
+* Again, consider ``sphere_a.distance_between_centres(sphere_b)``
+
+    * In this context, ``sphere_a`` would be the ``self`` ``Sphere`` object reference
+    * And ``sphere_b`` would be the ``other`` reference
+
+.. note::
+
+    You may have also noticed how the type hint for ``other`` is the *string* ``"Sphere"``, as opposed to just
+    ``Sphere``, like how the function's return type hint is just ``float`` instead of the string ``"float"``.  This is
+    because the ``Sphere`` class, as far as Python is concerned, is not defined yet as the method
+    ``distance_from_point`` is being defined within the class ``Sphere`` that is currently being defined.
+
 
 ``__eq__``
 ^^^^^^^^^^
