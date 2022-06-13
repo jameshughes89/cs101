@@ -90,8 +90,8 @@ Pushdown Automata (PDA) and Context-Free Grammars
     * The memory is the informatioon stored in the stack
 
 * Getting into the theoretical construction of a PDA is beyond what we will consider here, but we can discuss what we can do with them
-* PDAs recognize what we call Context-Free Grammars
-* Here's an example of doing the same thing as the 2nd FSM
+* PDAs recognize what we call Context-Free Grammars (CFG)
+* Here's an example of doing the same thing as the 2nd FSM with a CFG
 
     :math:`S \rightarrow aA`
 
@@ -137,7 +137,7 @@ Pushdown Automata (PDA) and Context-Free Grammars
     * String: :math:`aaaaaaab`
 
     
-* Here's another one
+* Here's another CFG
 
     :math:`S \rightarrow aSa`
     
@@ -148,7 +148,7 @@ Pushdown Automata (PDA) and Context-Free Grammars
     :math:`\epsilon` --- empty string
 
 
-
+* An interesting note about this one is, no matter how hard you try, it is provably impossible to create a FSM that accepts the same set of strings
 
 
 .. admonition:: Activity
@@ -180,7 +180,7 @@ Context-Sensitive Grammars
 ==========================
 
 * If we have context matter, we can get more interesting resulting strings than we could with CFGs
-* With CFGs, the rule (left hand side) can only be applied if the correct *context* exists
+* With Context-Sensitive Grammars (CSGs), the rule (left hand side) can only be applied if the correct *context* exists
 
     * For example, in the below set of rules, the :math:`Ab` rule can only be applied if the string contains :math:`Ab`
 
@@ -198,6 +198,9 @@ Context-Sensitive Grammars
     :math:`aB \rightarrow aa`
     
     :math:`aB \rightarrow aaA`
+
+
+* The strings that this CSG can generate are rather interesting, and it is impossible to create a FSM or use CFGs to accept/generate the same set of strings
 
 
 .. admonition:: Activity
