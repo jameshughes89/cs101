@@ -343,6 +343,38 @@ Magic Methods
 ``__repr__``
 """"""""""""
 
+* It is nice to have a good, human readable representation of the values within our program
+* For example, think of the number of times you have printed the values of variables when doing some quick tests of your code
+
+.. code-block:: python
+    :linenos:
+
+    some_list = ["a", "b", "c"]
+    if condition:
+        some_list.append("x")
+    print(some_list)
+
+
+* If you were to try this with our newly created ``Sphere`` class, we would get something not overly helpful
+
+.. code-block:: python
+    :linenos:
+
+    sphere = Sphere(1, 2, 3, 4)
+    print(sphere)                   # Results in <__main__.Sphere object at 0x7f99a2edac10>
+
+
+* The default behaviour will be the name of the class along with the memory address of where the object is
+* Chances are, this is not overly helpful to you
+* To address this, we write another magic method --- ``__repr__``
+
+* ``__repr__`` is the representation function, which is for getting a nice string representation of the instance of the class
+* This ``__repr__`` method is called automatically whenever we need a string representation of our object
+
+    * ``print(some_sphere)`` will automatically call it
+    * ``str(some_sphere)`` will call it
+    * ``repr(some_sphere)`` will call it too
+
 
 Testing
 -------
