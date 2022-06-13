@@ -131,6 +131,46 @@ Methods
     ``distance_from_point`` is being defined within the class ``Sphere`` that is currently being defined.
 
 
+.. code-block:: python
+    :linenos:
+
+    def distance_between_edges(self, other: "Sphere") -> float:
+        """
+        Calculate and return the distance between the edges of two Spheres. If the value is negative, the two Spheres
+        overlap.
+
+        :param other: Sphere whose edge to find the distance to from the self Sphere.
+        :type other: Sphere
+        :return: Distance between the Sphere edges.
+        :rtype: float
+        """
+        return self.distance_between_centres(other) - self.radius - other.radius
+
+
+* In ``distance_between_edges`` above, notice how the method makes a call to the method ``distance_between_centres``
+* Since the ``distance_between_edges`` needs the distance between centres in order to complete it's calculation, there is no need to re-write that code --- just call ``distance_between_centres``
+* But, like the attributes, if we want to access the instance's methods, we must access them via the reference variable ``self``
+
+
+.. code-block:: python
+    :linenos:
+
+    def overlaps(self, other: "Sphere") -> bool:
+        """
+        Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
+        between edges) are considered overlapping.
+
+        :param other: Sphere to check if it overlaps the self Sphere overlaps
+        :type other: Sphere
+        :return: Boolean indicating if the two Spheres overlap
+        :rtype: bool
+        """
+        return self.distance_between_edges(other) <= 0
+
+
+* Similarly, the ``overlaps`` method can be written by making use of the already existing method ``distance_between_edges``
+
+
 ``__eq__``
 ^^^^^^^^^^
 
