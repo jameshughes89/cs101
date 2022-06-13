@@ -1,7 +1,5 @@
 import math
 
-from src.point3d import Point3D
-
 
 class Sphere:
     """
