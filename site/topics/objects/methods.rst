@@ -101,6 +101,17 @@ Methods
     print(distance)                                         # Results in 1.732051
 
 
+* In the above example, I invoked the method ``distance_between_centres`` on ``sphere_a`` and passed ``sphere_b`` as the argument
+* If we take a moment to analyze the code within the function, we may get a better sense of the ``self`` reference variable
+
+    * Below is the relevant code from the ``distance_between_centres`` method
+
+.. code-block:: python
+    :linenos:
+
+    def distance_between_centres(self, other: "Sphere") -> float:
+        return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+
 
 
 ``__eq__``
