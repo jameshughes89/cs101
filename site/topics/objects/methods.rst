@@ -44,6 +44,39 @@ Sphere Class
 Constructor and Attributes
 --------------------------
 
+* Below is the start of the ``Sphere`` class, including the constructor and the assignment of attributes
+* It follows the same pattern as the ``Circle`` class discussed in the previous topic
+* The only differences here with the ``Sphere`` are trivial
+
+    * An ``import`` to help with math calculations
+    * The name of the class is different
+    * The parameters and attributes are for a ``Sphere``
+
+
+.. code-block:: python
+    :linenos:
+
+    import math
+
+
+    class Sphere:
+        """
+        Class for managing Spheres within a 3D space. This includes tracking it's location in three dimensional space and
+        radius. Additionally, it allows for some basic geometry calculations, distance measurements between Spheres, and
+        checking if two Spheres overlap.
+        """
+
+        def __init__(self, x: float, y: float, z: float, radius: float):
+            self.x = x
+            self.y = y
+            self.z = z
+            self.radius = radius
+
+
+* That's it --- that is all we need to get started with the ``Point3D`` class
+* Like before, we can even start making instances of a ``Sphere``
+* However, like before, the class will not be particularly useful here without the needed functionality
+
 
 Methods
 -------
