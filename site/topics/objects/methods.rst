@@ -13,184 +13,334 @@ Objects II --- More on Methods
 * In this topic, we will create more classes containing more complex functionality
 * Additionally, we will see objects interacting with one another and how objects can provide a nice level of abstraction
 
-
 * The goal is to define a ``Sphere`` class
 
     * Like the ``Circle`` class, it will know its radius
     * It will also know its position within some three dimensional space
     * It will provide functionality to measure distances between ``Sphere`` objects and check if they overlap/collide
 
-* The catch is, we also need a way to specify the point in the three dimensional space
-* To address this, we will define a ``Point3D`` class
 
-    * It will know its position in the three dimensional space based on a three dimensional coordinate system
-    * Provide some simple geometry functionality
-    * Provide a way to measure distance between ``Point3D`` objects, which will help with implementing the ``Sphere`` class' functionality
+Sphere Class
+============
 
+* In order to define a ``Sphere``, all we really need is a ``radius``
+* With a ``radius``, can calculate some values about the ``Sphere``
 
-Point3D Class
-=============
+    * Diameter
+    * Surface Area
+    * Volume
+
+* But we have an extra requirement --- we need to know *where* the ``Sphere`` is in a three dimensional coordinate space
+* Therefore, in addition to a ``radius``, we need to keep track of ``x``, ``y``, and ``z`` coordinates
+* With this information, we can start to perform some more sophisticated calculations
+
+    * How far away are two ``Sphere`` objects from one another?
+    * Do two ``Sphere`` objects overlap/collide?
+
+* There is nothing stopping us from adding more functionality to our ``Sphere`` class, but we will keep it simple for now
 
 
 Constructor and Attributes
 --------------------------
 
+* Below is the start of the ``Sphere`` class, including the constructor and the assignment of attributes
+* It follows the same pattern as the ``Circle`` class discussed in the previous topic
+* The only differences here with the ``Sphere`` are trivial
 
-Methods
--------
-
-* The three methods we want are
-
-    * A way to measure the distance from the origin --- ``distance_from_origin``
-    * A way to measure the distance from another point  --- ``distance_from_point``
-    * A way to find the midpoint between two points --- ``find_midpoint``
+    * An ``import`` to help with math calculations
+    * The name of the class is different
+    * The parameters and attributes are for a ``Sphere``
 
 
 .. code-block:: python
     :linenos:
 
-    class Point3D:
+    import math
+
+
+    class Sphere:
+        """
+        Class for managing Spheres within a 3D space. This includes tracking it's location in three dimensional space and
+        radius. Additionally, it allows for some basic geometry calculations, distance measurements between Spheres, and
+        checking if two Spheres overlap.
+        """
+
+        def __init__(self, x: float, y: float, z: float, radius: float):
+            self.x = x
+            self.y = y
+            self.z = z
+            self.radius = radius
+
+
+* That's it --- that is all we need to get started with the ``Sphere`` class
+* Like before, we can even start making instances of a ``Sphere``
+* However, like before, the class will not be particularly useful here without the needed functionality
+
+
+Methods
+-------
+
+* The methods we want are
+
+    * Calculate the ``diameter``, ``surface_area`` and ``volume``
+    * Measure the ``distance_between_centres`` of two ``Sphere`` objects
+    * Measure the ``distance_between_edges`` of two ``Sphere`` objects
+    * Check if a ``Sphere`` ``overlaps`` another in the three dimensional space
+    * A way to check if two ``Sphere`` objects are equivalent (``__eq__``)
+    * A way to generate a human readable string representation of a ``Sphere`` (``__repr__``)
+
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
 
         # init and/or other methods not shown for brevity
 
-        def distance_from_point(self, other: "Point3D") -> float:
-            """
-            Calculate the Euclidean distance from this Point3D (self) and the Point3D passed as a parameter.
+        def diameter(self) -> float:
+            return 2 * self.radius
 
-            :param other: A Point3D to find the the Euclidean distance to from the self Point3D
-            :type other: Point3D
-            :return: The Euclidean distance between the self Point3D and the parameter Point3D other
+        def surface_area(self) -> float:
+            return 4 * math.pi * self.radius**2
+
+        def volume(self) -> float:
+            return (4 / 3) * math.pi * self.radius**3
+
+
+* The above three methods follow the same pattern we saw with the ``Circle``
+* These look like regular functions, but the difference is
+
+    * They are associated with an instance of a ``Sphere``
+    * They have a ``self`` parameter, which is a reference variable to the ``Sphere`` instance
+    * Accessing any of the object's attributes are done through the use of the ``self`` reference variable
+
+
+* Below is the ``distance_between_centres`` method, where we see some things that may feel odd
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def distance_between_centres(self, other: "Sphere") -> float:
+            """
+            Calculate and return the distance between the centres of two Spheres.
+
+            :param other: Sphere whose centre to find the distance to from the self Sphere.
+            :type other: Sphere
+            :return: Distance between the Sphere centres.
             :rtype: float
             """
             return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
-* The above example of ``distance_from_point``, like before, follows the same pattern as before for writing a method for a class
+* The method takes a parameter, ``other``, that should be of type ``Sphere`` --- the class we are writing
+* But this does not break any rules --- we are writing a method that can be invoked on an instance of the ``Sphere`` class that takes an instance of a ``Sphere`` as a parameter
+* This is OK since the intended functionality is to find the distance between two ``Sphere`` objects
 
-    * It has ``self`` as the first parameter in the method's parameter list
-    * It uses ``self`` as a reference variable to access the instance's attributes
-
-* What you may find odd is that the method takes a parameter, ``other``, that should be of type ``Point3D`` --- the class we are writing
-* But this does not break any rules --- we are writing a method that can be invoked on an instance of the ``Point3D`` class that takes an instance of a ``Point3D`` as a parameter
-* This makes sense since the method's intended functionality is to find the distance between two points
-
-    * The distance from the ``Point3D`` the method was invoked on to the ``Point3D`` that was passed as a parameter
+    * The distance from the ``Sphere`` the method was invoked on to the ``Sphere`` that was passed as a parameter
 
 * If this still makes you uneasy, consider how we would use this method
 
 .. code-block:: python
     :linenos:
 
-    point_a = Point3D(1, 1, 1)
-    point_b = Point3D(2, 2, 2)
-    distance = point_a.distance_from_point(point_b)
-    print(distance)                                     # Results in 1.732051
+    sphere_a = Sphere(1, 1, 1, 10)
+    sphere_b = Sphere(2, 2, 2, 15)
+    distance = sphere_a.distance_between_centres(sphere_b)
+    print(distance)                                         # Results in 1.732051
 
 
-* In the above example, I invoked the method ``distance_from_point`` on ``point_a`` and passed ``point_b`` as the parameter
-
-    * In this case, the method would produce the same result if one called ``point_b.distance_from_point(point_a)`` instead
-
+* In the above example, I invoked the method ``distance_between_centres`` on ``sphere_a`` and passed ``sphere_b`` as the argument
 * If we take a moment to analyze the code within the function, we may get a better sense of the ``self`` reference variable
 
-    * Below is the relevant code from the ``distance_from_point`` method
+    * Below is the relevant code from the ``distance_between_centres`` method
 
 .. code-block:: python
     :linenos:
 
-    def distance_from_point(self, other: "Point3D") -> float:
-        math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+    def distance_between_centres(self, other: "Sphere") -> float:
+        return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
-* This code is simply calculating the Euclidean distance between points in three dimensional space
+* This code calculates the Euclidean distance between the centres in three dimensional space
 * But notice that we are making use of two reference variables --- ``self`` and ``other``
 
     * This may be where ``self`` starts to make a little more sense
 
-* Again, consider ``point_a.distance_from_point(point_b)``
+* Again, consider ``sphere_a.distance_between_centres(sphere_b)``
 
-    * In this context, ``point_a`` would be the ``self`` ``Point3D`` object reference
-    * ``point_b`` would be the ``other`` reference
+    * In this context, ``sphere_a`` would be the ``self`` ``Sphere`` object reference
+    * And ``sphere_b`` would be the ``other`` reference
 
 .. note::
 
-    You may have also noticed how the type hint for ``other`` is the *string* ``"Point3D"``, as opposed to just
-    ``Point3D``, like how the function's return type hint is just ``float`` instead of the string ``"float"``.  This is
-    because the ``Point3D`` class, as far as Python is concerned, is not defined yet. This is because the method
-    ``distance_from_point`` is being defined within the class ``Point3D`` that you are currently defining.
+    You may have also noticed how the type hint for ``other`` is the *string* ``"Sphere"``, as opposed to just
+    ``Sphere``, like how the function's return type hint is just ``float`` instead of the string ``"float"``.  This is
+    because the ``Sphere`` class, as far as Python is concerned, is not defined yet as the method
+    ``distance_between_centres`` is being defined within the class ``Sphere`` that is currently being defined.
 
 
 .. code-block:: python
     :linenos:
 
-    class Point3D:
+    class Sphere:
 
         # init and/or other methods not shown for brevity
 
-        def distance_from_origin(self) -> float:
+        def distance_between_edges(self, other: "Sphere") -> float:
             """
-            Calculate the Euclidean distance from this Point3D (self) and the origin (0, 0, 0).
+            Calculate and return the distance between the edges of two Spheres. If the value is negative, the two Spheres
+            overlap.
 
-            :return: The Euclidean distance from the self Point3D and the origin
+            :param other: Sphere whose edge to find the distance to from the self Sphere.
+            :type other: Sphere
+            :return: Distance between the Sphere edges.
             :rtype: float
             """
-            return self.distance_from_point(Point3D(0, 0, 0))
+            return self.distance_between_centres(other) - self.radius - other.radius
 
 
-* Above is the ``distance_from_origin`` method
-* What's interesting here is the method makes use of one of the class' existing methods --- ```distance_from_point```
+* In ``distance_between_edges`` above, notice how the method makes a call to the method ``distance_between_centres``
+* Since the ``distance_between_edges`` needs the distance between centres in order to complete it's calculation, there is no need to re-write that code --- just call ``distance_between_centres``
+* But, like the attributes, if we want to access the instance's methods, we must access them via the reference variable ``self``
 
-    * Here, it's just that the point we want to calculate the distance to is the origin
-
-* What is important to notice here is the use of ``self`` before the method call
-* Again, in order to access any of the object's methods, we must access the object through a reference variable
 
 .. code-block:: python
     :linenos:
 
-    class Point3D:
+    class Sphere:
 
         # init and/or other methods not shown for brevity
 
-        def find_midpoint(self, other: "Point3D") -> "Point3D":
+        def overlaps(self, other: "Sphere") -> bool:
             """
-            Return a new Point3D that is the midpoint between this Point3D (self) and the Point3D passed as a parameter.
+            Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
+            between edges) are considered overlapping.
 
-            :param other: A Point3D to find the the midpoint to from the self Point3D
-            :type other: Point3D
-            :return: A Point3D at the midpoint between the self Point3D and the parameter Point3D other
-            :rtype: Point3D
+            :param other: Sphere to check if it overlaps the self Sphere overlaps
+            :type other: Sphere
+            :return: Boolean indicating if the two Spheres overlap
+            :rtype: bool
             """
-            midpoint_x = (self.x - other.x) / 2 + other.x
-            midpoint_y = (self.y - other.y) / 2 + other.y
-            midpoint_z = (self.z - other.z) / 2 + other.z
-            return Point3D(midpoint_x, midpoint_y, midpoint_z)
+            return self.distance_between_edges(other) <= 0
 
 
-* In ``find_midpoint`` above, a new ``Point3D`` object is being created and then returned by the function
-
+* Similarly, the ``overlaps`` method can be written by making use of the already existing method ``distance_between_edges``
 
 Magic Methods
 ^^^^^^^^^^^^^
 
+* There exist a number of special, or *magic* methods within Python
+* What makes these methods *magic* is that you do not call them directly; you call them indirectly through some other syntax
+* In fact, the ``__init__`` method, the constructor, is a magic method
+
+    * You never actually directly call ``__init__`` in your code
+    * Instead, the constructor gets invoked when instantiating an instance of the class
+
+        * ``some_sphere = Sphere(1, 2, 3, 4)``
+
+* `There are many of these special methods <https://docs.python.org/3/reference/datamodel.html#specialnames>`_
+* In addition to the constructor, we will focus on two very important ones here
+
+    * ``__eq__`` --- a method for checking object equality
+    * ``__repr__`` --- a method for generating a human readable string representation of the object
 
 
-Testing
--------
+``__eq__``
+""""""""""
+
+* It is common to want to check if two things are equal
+* For example, like numbers --- ``if some_number == 10:``
+* With numbers, strings, booleans, and other types, Python already knows what equality is
+* However, with custom classes, Python will not know what it means for instances of that class to be equal, unless you tell it
+
+* In the context of the ``Sphere`` class, you may have a good idea of what it means for two instances of this object to be equal
+* But Python cannot read your mind; you need to tell Python what it means for two ``Sphere`` objects to be equal
+* By default, Python will try to be helpful if you ask it if two objects of a custom class are equal
+
+    * The default equality check is checking if two reference variables are referencing literally the exact same object in memory (aliases)
+
+* A more reasonable equality check for ``Sphere`` objects would be if they are the same size and  exist in the same location within the three dimensional space
+
+    * That is, if the ``radius``, ``x``, ``y``, and ``z`` attributes are equal
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            return self.x == other.x and self.y == other.y and self.z == other.z and self.radius == other.radius
 
 
+* The above code showing the ``__eq__`` method is how we define our equals magic method
 
-Sphere Class
-============
+    * For our needs, check if ``self`` and ``other`` have all their attributes being the same
+
+* You may be tempted to then check equality by calling the ``__eq__`` method explicitly
+
+    * ``sphere_a.__eq__(sphere_b)``
+
+* Although this will work, it is a little clunky and bad style
+* Instead, we will indirectly invoke the equality method by using ``==`` like we have used for every other equality check
+
+    * ``sphere_a == sphere_b``
+
+* There is, however, one problem with the way we wrote our equality method
+* Consider the below example
+
+.. code-block:: python
+    :linenos:
+
+    some_sphere = Sphere(1, 2, 3, 4)
+    some_circle = Circle(10)
+
+    print(some_sphere == some_circle)
 
 
-Constructor and Attributes
---------------------------
+* Running this code results in ``AttributeError: 'Circle' object has no attribute 'x'``
+* The trouble is that the ``Circle`` instance, which would be ``other`` in the ``Sphere``\'s equality method, does not have an ``x``, ``y``, or ``z`` attribute
+* A simple way to fix this is to check if the ``other`` reference variable is even referencing something that can be properly compared to
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 5
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            if isinstance(other, Sphere):
+                return self.x == other.x and self.y == other.y and self.z == other.z and self.radius == other.radius
+            return False
 
 
-Methods
--------
+.. note::
 
+    There was nothing stopping us from defining ``__eq__`` for our ``Circle`` class. In fact, it is arguably something
+    we should do. Below is an example of an equality check for the ``Circle`` class.
+
+    .. code-block:: python
+        :linenos:
+
+        class Circle:
+
+            # init and/or other methods not shown for brevity
+
+            def __eq__(self, other) -> bool:
+                if isinstance(other, Circle):
+                    return self.radius == other.radius
+                return False
+
+
+``__repr__``
+""""""""""""
 
 
 Testing

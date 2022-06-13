@@ -23,7 +23,7 @@ class Sphere:
     def volume(self) -> float:
         return (4 / 3) * math.pi * self.radius**3
 
-    def distance_between_centres(self, other: Point3D) -> float:
+    def distance_between_centres(self, other: "Sphere") -> float:
         """
         Calculate and return the distance between the centres of two Spheres.
 
