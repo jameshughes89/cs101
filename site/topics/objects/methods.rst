@@ -380,7 +380,7 @@ Magic Methods
     * For example, the ``List`` class' ``__repr__`` returns a string of the form ``["a", "b", "c", "d"]``
 
 * But sometimes, like with a ``Sphere``, it may not be obvious and we just want to get enough information about the ``Sphere`` to be helpful for us
-* If this is the case, a common representation is ``Sphere(1, 2, 3, 4)`` -- class name, and then relevant attribute values within parentheses
+* If this is the case, a common representation is ``Sphere(x=1, y=2, z=3, radius=4)`` -- class name, and then relevant attribute values within parentheses
 
 .. code-block:: python
     :linenos:
@@ -390,7 +390,7 @@ Magic Methods
         # init and/or other methods not shown for brevity
 
         def __repr__(self) -> str:
-            return f"Sphere({self.x}, {self.y}, {self.z}, {self.radius})"
+            return f"Sphere(x={self.x}, y={self.y}, z={self.z}, radius={self.radius})"
 
 
 * With the ``__repr__`` written, if I were to call ``print``, ``str``, or ``repr`` on an instance of the class, I would see the values specified
