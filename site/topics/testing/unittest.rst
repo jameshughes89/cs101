@@ -86,6 +86,7 @@ Writing Unit Tests
     * We make use of ``assertEqual``, which is a method referenced by the ``self`` reference variable
 
         * Although we did not write this method, we inherit it from ``unittest.TestCase``
+        * We used ``assertEqual`` here, but there are many other methods for various types of tests
 
     * The method provides a simple mechanism for setup code to be grouped with the test itself
 
