@@ -369,11 +369,45 @@ Magic Methods
 * To address this, we write another magic method --- ``__repr__``
 
 * ``__repr__`` is the representation function, which is for getting a nice string representation of the instance of the class
-* This ``__repr__`` method is called automatically whenever we need a string representation of our object
+* This ``__repr__`` method is called whenever we need a string representation of our object
 
     * ``print(some_sphere)`` will automatically call it
     * ``str(some_sphere)`` will call it
     * ``repr(some_sphere)`` will call it too
+
+* Based on what the object is, there may be a very natural way one would want to represent the object as a string
+
+    * For example, the ``List`` class' ``__repr__`` returns a string of the form ``["a", "b", "c", "d"]``
+
+* But sometimes, like with a ``Sphere``, it may not be obvious and we just want to get enough information about the ``Sphere`` to be helpful for us
+* If this is the case, a common representation is ``Sphere(1, 2, 3, 4)`` -- class name, and then relevant attribute values within parentheses
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __repr__(self) -> str:
+            return f"Sphere({self.x}, {self.y}, {self.z}, {self.radius})"
+
+
+* With the ``__repr__`` written, if I were to call ``print``, ``str``, or ``repr`` on an instance of the class, I would see the values specified
+
+.. note::
+
+    Like with the ``__eq__`` method, we could go back and write a ``__repr__`` for the ``Circle`` class.
+
+    .. code-block:: python
+        :linenos:
+
+        class Circle:
+
+            # init and/or other methods not shown for brevity
+
+            def __repr__(self) -> str:
+                return f"Circle(radius={self.radius})"
 
 
 Testing
