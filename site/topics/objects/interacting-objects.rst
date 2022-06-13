@@ -67,9 +67,45 @@ Methods
 -------
 
 
-Magic Methods
-^^^^^^^^^^^^^
 
+.. code-block:: python
+    :linenos:
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            """
+            Check if the self Point3D is equal to the Point3D passed as a parameter. Points3D are considered equal if they
+            have the same x, y, and z values.
+
+            This is a "magic method" that can be used with `==`.
+
+            :param other: A Point3D to compare to the self point3D
+            :type other: Point3D
+            :return: A boolean indicating if the two Point3Ds are equivalent.
+            :rtype: boolean
+            """
+            if isinstance(other, Point3D):
+                return self.x == other.x and self.y == other.y and self.z == other.z
+            return False
+
+
+        def __repr__(self) -> str:
+            """
+            Generate and return a string representation of the Point3D object.
+
+            This os a "magic method" that can be used with `str(some_point3d)` or for printing.
+
+            :return: A string representation of the Point3D
+            :rtype: string
+            """
+            return f"Point3D({self.x}, {self.y}, {self.z})"
+
+
+* In the above ``__eq__`` method, equality for ``Point3D`` objects will be if all their attributes match
+* The ``__repr__`` will follow the same pattern as the ``Sphere`` --- class name with the relevant attributes
 
 
 Testing
