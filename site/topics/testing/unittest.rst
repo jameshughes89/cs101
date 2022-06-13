@@ -144,7 +144,9 @@ Running Unit Tests
     * Just because a test failed, all other tests still ran
 
 
-
+* Writing and running these tests may feel like a lot of work
+* But writing code is only part of your job when programming
+* Demonstrating that your code is correct, to yourself or anyone else that may use your code, is another big part of writing code
 
 
 For Next Class
