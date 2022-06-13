@@ -253,6 +253,22 @@ Magic Methods
 ``__eq__``
 """"""""""
 
+* It is common to want to check if two things are equal
+* For example, like numbers --- ``if some_number == 10:``
+* With numbers, strings, booleans, and other types, Python already knows what equality is
+* However, with custom classes, Python will not know what it means for instances of that class to be equal, unless you tell it
+
+* In the context of the ``Sphere`` class, you may have a good idea of what it means for two instances of this object to be equal
+* But Python cannot read your mind; you need to tell Python what it means for two ``Sphere`` objects to be equal
+* By default, Python will try to be helpful if you ask it if two objects of a custom class are equal
+
+    * The default equality check is checking if two reference variables are referencing literally the exact same object in memory (aliases)
+
+* A more reasonable equality check for ``Sphere`` objects would be if they are the same size and  exist in the same location within the three dimensional space
+
+    * That is, if the ``radius``, ``x``, ``y``, and ``z`` attributes are equal
+
+
 
 ``__repr__``
 """"""""""""
