@@ -322,6 +322,24 @@ Magic Methods
             return False
 
 
+.. note::
+
+    There was nothing stopping us from defining ``__eq__`` for our ``Circle`` class. In fact, it is arguably something
+    we should do. Below is an example of an equality check for the ``Circle`` class.
+
+    .. code-block:: python
+        :linenos:
+
+        class Circle:
+
+            # init and/or other methods not shown for brevity
+
+            def __eq__(self, other) -> bool:
+                if isinstance(other, Circle):
+                    return self.radius == other.radius
+                return False
+
+
 ``__repr__``
 """"""""""""
 
