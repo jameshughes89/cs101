@@ -17,6 +17,9 @@ Models of Computation
 * These ideas are a very big part of what computer science is
 * Since this is an introductory course preparing you for computer science degrees, it would be prudent to take time to become aware of the foundational ideas
 * Further, it provides an opportunity to consider the underlying mathematics of everything we have done so far
+
+    * The mathematics provides a formal and precise way to demonstrate what problems can or cannot be solved with a given computational system
+
 * As you progress through your computer science degrees, these ideas will pop up now and then
 * Due to the requisite knowledge required to really get into these ideas, this topic presents a high-level introduction of the underlying ideas
 * Although kept at a high-level, it should be sufficient to contextualize computational systems
@@ -229,6 +232,7 @@ Turing Machines
     :target: https://en.wikipedia.org/wiki/Turing_machine
 
 * Turing Machines are even more powerful models of computation
+* The types of languages/strings that Turing Machines work with are called *Recursively Enumerable Languages*
 * The computers we use today are computationally equivalent to  these
 
     * They're not built like these, but they are as powerful
