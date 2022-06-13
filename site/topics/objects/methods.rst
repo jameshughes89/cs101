@@ -45,7 +45,7 @@ Methods
 .. code-block:: python
     :linenos:
 
-    class Point3D:
+    class Sphere:
 
         # init and/or other methods not shown for brevity
 
@@ -128,7 +128,7 @@ Methods
     You may have also noticed how the type hint for ``other`` is the *string* ``"Sphere"``, as opposed to just
     ``Sphere``, like how the function's return type hint is just ``float`` instead of the string ``"float"``.  This is
     because the ``Sphere`` class, as far as Python is concerned, is not defined yet as the method
-    ``distance_from_point`` is being defined within the class ``Sphere`` that is currently being defined.
+    ``distance_between_centres`` is being defined within the class ``Sphere`` that is currently being defined.
 
 
 .. code-block:: python
