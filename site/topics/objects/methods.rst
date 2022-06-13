@@ -72,16 +72,20 @@ Methods
 .. code-block:: python
     :linenos:
 
-    def distance_between_centres(self, other: "Sphere") -> float:
-        """
-        Calculate and return the distance between the centres of two Spheres.
+    class Sphere:
 
-        :param other: Sphere whose centre to find the distance to from the self Sphere.
-        :type other: Sphere
-        :return: Distance between the Sphere centres.
-        :rtype: float
-        """
-        return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+        # init and/or other methods not shown for brevity
+
+        def distance_between_centres(self, other: "Sphere") -> float:
+            """
+            Calculate and return the distance between the centres of two Spheres.
+
+            :param other: Sphere whose centre to find the distance to from the self Sphere.
+            :type other: Sphere
+            :return: Distance between the Sphere centres.
+            :rtype: float
+            """
+            return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
 * The method takes a parameter, ``other``, that should be of type ``Sphere`` --- the class we are writing
@@ -134,17 +138,21 @@ Methods
 .. code-block:: python
     :linenos:
 
-    def distance_between_edges(self, other: "Sphere") -> float:
-        """
-        Calculate and return the distance between the edges of two Spheres. If the value is negative, the two Spheres
-        overlap.
+    class Sphere:
 
-        :param other: Sphere whose edge to find the distance to from the self Sphere.
-        :type other: Sphere
-        :return: Distance between the Sphere edges.
-        :rtype: float
-        """
-        return self.distance_between_centres(other) - self.radius - other.radius
+        # init and/or other methods not shown for brevity
+
+        def distance_between_edges(self, other: "Sphere") -> float:
+            """
+            Calculate and return the distance between the edges of two Spheres. If the value is negative, the two Spheres
+            overlap.
+
+            :param other: Sphere whose edge to find the distance to from the self Sphere.
+            :type other: Sphere
+            :return: Distance between the Sphere edges.
+            :rtype: float
+            """
+            return self.distance_between_centres(other) - self.radius - other.radius
 
 
 * In ``distance_between_edges`` above, notice how the method makes a call to the method ``distance_between_centres``
@@ -155,17 +163,21 @@ Methods
 .. code-block:: python
     :linenos:
 
-    def overlaps(self, other: "Sphere") -> bool:
-        """
-        Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
-        between edges) are considered overlapping.
+    class Sphere:
 
-        :param other: Sphere to check if it overlaps the self Sphere overlaps
-        :type other: Sphere
-        :return: Boolean indicating if the two Spheres overlap
-        :rtype: bool
-        """
-        return self.distance_between_edges(other) <= 0
+        # init and/or other methods not shown for brevity
+
+        def overlaps(self, other: "Sphere") -> bool:
+            """
+            Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
+            between edges) are considered overlapping.
+
+            :param other: Sphere to check if it overlaps the self Sphere overlaps
+            :type other: Sphere
+            :return: Boolean indicating if the two Spheres overlap
+            :rtype: bool
+            """
+            return self.distance_between_edges(other) <= 0
 
 
 * Similarly, the ``overlaps`` method can be written by making use of the already existing method ``distance_between_edges``
