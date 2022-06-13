@@ -4,16 +4,22 @@ Models of Computation
 
 * As we have progressed through the course, we have gained an intuition of how everything works
 * Everything we have done up until this point is *Computer Science*
+* However, computer science is a very broad field with many subfields, and programming is only a part of it
+* Although all these subfields are different from one another, most, if not all, have the same core underlying fundamentals
 
-* However, at the end of the day, how much thought has been given to
+* Up until this point in the course, how much thought has been given to
 
     * *What is computation?*
     * *What is a computer?*
     * *What enables a computer to do what it does?*
     * *What can a computer compute?*
 
-* These ideas are also a very big part of what computer science is
+* These ideas are a very big part of what computer science is
+* Since this is an introductory computer science course, and not strictly a programming course, it would be prudent to take time to become aware of the foundational ideas
+* Further, it provides an opportunity to consider the underlying mathematics of everything we have done so far
+* As you progress through your computer science degrees, these ideas will pop up now and then
 * Due to the requisite knowledge required to really get into these ideas, this topic presents a high-level introduction of the underlying ideas
+* Although kept at a high-level, it should be sufficient to contextualize computational systems
 
 
 Finite State Machines/Automata (FSM/FSA)
