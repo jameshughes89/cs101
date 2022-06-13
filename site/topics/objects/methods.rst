@@ -73,7 +73,7 @@ Constructor and Attributes
             self.radius = radius
 
 
-* That's it --- that is all we need to get started with the ``Point3D`` class
+* That's it --- that is all we need to get started with the ``Sphere`` class
 * Like before, we can even start making instances of a ``Sphere``
 * However, like before, the class will not be particularly useful here without the needed functionality
 
