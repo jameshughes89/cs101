@@ -210,9 +210,18 @@ Turing Machines
     * They're not built like these, but they are as powerful
     * Can solve the same problems
 
-* Given the relative complexity of Turing Machines, their details will not be discussed here
+* Given the relative complexity of Turing Machines, it is difficult to cover them here
 
     * Don't worry, you will learn all about them later in your computer science degree
+
+* Turing machines are made up of
+
+    * An infinitely long (sufficiently long) linear *tape* that can have symbols written to it --- the tape is memory
+    * A *read/write head* that can more left and right, and read symbols from and write symbols to the tape
+    * A *state register* to keep track of some internal state
+    * A finite *table of instructions* that instructs how to operate the read/write head given the current state --- the table is a program
+
+
 
 * Although Turing Machines are more complex than the other models of computation, the takeaway is that these still remarkably simple models of computation are sufficient for implementing any computer program
 
