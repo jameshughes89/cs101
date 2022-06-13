@@ -59,6 +59,32 @@ Starting a Unit Test Class
 Writing Unit Tests
 ==================
 
+.. code-block:: python
+    :linenos:
+
+    import unittest
+
+    class SphereTest(unittest.TestCase):
+
+        def test_sphere_centre_point_returns_correct_point3D(self):
+            sphere = Sphere(Point3D(0, 0, 0), 1)
+            self.assertEqual(Point3D(0, 0, 0), sphere.centre_point)
+
+        def test_sphere_radius_returns_correct_radius(self):
+            sphere = Sphere(Point3D(0, 0, 0), 1)
+            self.assertEqual(1, sphere.radius)
+
+
+* Above are two tests confirming the correctness of the constructor and the assigning of the ``Sphere`` class' attributes
+* Key things to note here are
+
+    * The tests are methods that belong to the class
+    * Each method starts with the name ``test_``
+    * We make use of ``assertEqual``, which is a method referenced by the ``self`` reference variable
+
+        * Although we did not write this method, we inherit it from ``unittest.TestCase``
+
+
 
 Subtests
 --------
