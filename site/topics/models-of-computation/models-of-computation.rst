@@ -176,6 +176,11 @@ Pushdown Automata (PDA) and Context-Free Grammars
     picture of what it's doing exactly.
 
 
+* Although the PDAs are more *powerful* than FSMs, they are still limited in what they can do
+* But the point is, despite their limitations, they can still do quite a bit
+* And the PDAs are, by definition, computers capable of processing information
+
+
 Context-Sensitive Grammars
 ==========================
 
@@ -209,7 +214,12 @@ Context-Sensitive Grammars
     What strings can this system create? Try to generate a few strings and see if you can generalize and see the big
     picture of what it's doing exactly.
 
-    
+
+* Like the CFGs, CSGs have limitations
+* But like before, that does not mean they are not capable of solving/addressing many problems
+* Again, these are *computers*, by definition
+
+
 Turing Machines 
 ===============
 
