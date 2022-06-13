@@ -348,7 +348,7 @@ Testing
 -------
 
 * Below is a collection of ``assert`` tests for the ``Sphere`` class
-* Though, you may feel that at this stage it's getting harder to get a feel for how complete your tests are 
+* Though, you may feel that at this stage it's getting harder to get a feel for how complete your tests are
 
 .. code-block:: python
     :linenos:
