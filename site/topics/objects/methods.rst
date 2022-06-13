@@ -231,13 +231,31 @@ Methods
 
 * Similarly, the ``overlaps`` method can be written by making use of the already existing method ``distance_between_edges``
 
+Magic Methods
+^^^^^^^^^^^^^
+
+* There exist a number of special, or *magic* methods within Python
+* What makes these methods *magic* is that you do not call them directly; you call them indirectly through some other syntax
+* In fact, the ``__init__`` method, the constructor, is a magic method
+
+    * You never actually directly call ``__init__`` in your code
+    * Instead, the constructor gets invoked when instantiating an instance of the class
+
+        * ``some_sphere = Sphere(1, 2, 3, 4)``
+
+* `There are many of these special methods <https://docs.python.org/3/reference/datamodel.html#specialnames>`_
+* In addition to the constructor, we will focus on two very important ones here
+
+    * ``__eq__`` --- a method for checking object equality
+    * ``__repr__`` --- a method for generating a human readable string representation of the object
+
 
 ``__eq__``
-^^^^^^^^^^
+""""""""""
 
 
 ``__repr__``
-^^^^^^^^^^^^
+""""""""""""
 
 
 Testing
