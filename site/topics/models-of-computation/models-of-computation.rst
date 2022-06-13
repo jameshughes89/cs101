@@ -25,6 +25,8 @@ Models of Computation
 Finite State Machines/Automata (FSM/FSA)
 ========================================
 
+* The computers you use, like those that sit on your desks, are only one type of computer within one class of computational systems
+
 * We can define a very very very very simple computer in terms of 
     * Input 
     * Output
