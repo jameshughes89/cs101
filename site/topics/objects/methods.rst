@@ -32,6 +32,15 @@ Constructor and Attributes
 Methods
 -------
 
+* The methods we want are
+
+    * Calculate the ``diameter``, ``surface_area`` and ``volume``
+    * Measure the ``distance_between_centres`` of two ``Sphere`` objects
+    * Measure the ``distance_between_edges`` of two ``Sphere`` objects
+    * Check if a ``Sphere`` ``overlaps`` another in the three dimensional space
+    * A way to check if two ``Sphere`` objects are equivalent (``__eq__``)
+    * A way to generate a human readable string representation of a ``Sphere`` (``__repr__``)
+
 
 ``__eq__``
 ^^^^^^^^^^
