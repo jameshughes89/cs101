@@ -98,6 +98,11 @@ Writing Unit Tests
         * This makes it easier to isolate what exactly went wrong
 
 
+* Other than those points, so far there is not much more to point out here since we have been writing tests for a while
+* The basic idea of how we write the tests is the same
+* The only difference is the syntax of writing the tests with ``unittest``
+
+
 .. code-block:: python
     :linenos:
 
