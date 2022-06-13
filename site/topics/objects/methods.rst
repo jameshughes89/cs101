@@ -268,6 +268,29 @@ Magic Methods
 
     * That is, if the ``radius``, ``x``, ``y``, and ``z`` attributes are equal
 
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            return self.x == other.x and self.y == other.y and self.z == other.z and self.radius == other.radius
+
+
+* The above code showing the ``__eq__`` method is how we define our equals magic method
+
+    * For our needs, check if ``self`` and ``other`` have all their attributes being the same
+
+* You may be tempted to then check equality by calling the ``__eq__`` method explicitly
+
+    * ``sphere_a.__eq__(sphere_b)``
+
+* Although this will work, it is a little clunky and bad style
+* Instead, we will indirectly invoke the equality method by using ``==`` like we have used for every other equality check
+
+    * ``sphere_a == sphere_b``
 
 
 ``__repr__``
