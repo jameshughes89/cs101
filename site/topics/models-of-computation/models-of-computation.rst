@@ -255,6 +255,12 @@ Turing Machines
 * But ultimately, all that is possible because of the levels of abstraction that came before Python
 
 
+.. admonition:: Activity
+    :class: activity
+
+    Can you define another class of computational system strictly more powerful than a Turing Machine?
+
+
 For Next Class
 ==============
 
