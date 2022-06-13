@@ -24,6 +24,22 @@ Objects II --- More on Methods
 Sphere Class
 ============
 
+* In order to define a ``Sphere``, all we really need is a ``radius``
+* With a ``radius``, can calculate some values about the ``Sphere``
+
+    * Diameter
+    * Surface Area
+    * Volume
+
+* But we have an extra requirement --- we need to know *where* the ``Sphere`` is in a three dimensional coordinate space
+* Therefore, in addition to a ``radius``, we need to keep track of ``x``, ``y``, and ``z`` coordinates
+* With this information, we can start to perform some more sophisticated calculations
+
+    * How far away are two ``Sphere`` objects from one another?
+    * Do two ``Sphere`` objects overlap/collide?
+
+* There is nothing stopping us from adding more functionality to our ``Sphere`` class, but we will keep it simple for now
+
 
 Constructor and Attributes
 --------------------------
