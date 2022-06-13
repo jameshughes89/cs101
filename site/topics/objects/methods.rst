@@ -41,6 +41,30 @@ Methods
     * A way to check if two ``Sphere`` objects are equivalent (``__eq__``)
     * A way to generate a human readable string representation of a ``Sphere`` (``__repr__``)
 
+.. code-block:: python
+    :linenos:
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def diameter(self) -> float:
+            return 2 * self.radius
+
+        def surface_area(self) -> float:
+            return 4 * math.pi * self.radius**2
+
+        def volume(self) -> float:
+            return (4 / 3) * math.pi * self.radius**3
+
+
+* The above three methods follow the same pattern we saw with the ``Circle``
+* These look like regular functions, but the difference is
+
+    * They are associated with an instance of a ``Sphere``
+    * They have a ``self`` parameter, which is a reference variable to the ``Sphere`` instance
+    * Accessing any of the object's attributes are done through the use of the ``self`` reference variable
+
 
 ``__eq__``
 ^^^^^^^^^^
