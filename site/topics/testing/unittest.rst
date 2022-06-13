@@ -95,6 +95,8 @@ Writing Unit Tests
 
     * Each test should test one thing
 
+        * This makes it easier to isolate what exactly went wrong
+
 
 * The value of the ``unittest`` framework may not be obvious at this stage, but as we continue you will start to see how convenient it is
 
