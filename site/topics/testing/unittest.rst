@@ -84,6 +84,11 @@ Writing Unit Tests
 
         * Although we did not write this method, we inherit it from ``unittest.TestCase``
 
+    * The method provides a simple mechanism for setup code to be grouped with the test itself
+
+        * Create a ``Sphere`` object
+        * Test something about the object
+
 
 
 Subtests
