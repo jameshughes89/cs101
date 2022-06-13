@@ -15,7 +15,7 @@ Models of Computation
     * *What can a computer compute?*
 
 * These ideas are a very big part of what computer science is
-* Since this is an introductory computer science course, and not strictly a programming course, it would be prudent to take time to become aware of the foundational ideas
+* Since this is an introductory course preparing you for computer science degrees, it would be prudent to take time to become aware of the foundational ideas
 * Further, it provides an opportunity to consider the underlying mathematics of everything we have done so far
 * As you progress through your computer science degrees, these ideas will pop up now and then
 * Due to the requisite knowledge required to really get into these ideas, this topic presents a high-level introduction of the underlying ideas
