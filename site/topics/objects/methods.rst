@@ -292,6 +292,35 @@ Magic Methods
 
     * ``sphere_a == sphere_b``
 
+* There is, however, one problem with the way we wrote our equality method
+* Consider the below example
+
+.. code-block:: python
+    :linenos:
+
+    some_sphere = Sphere(1, 2, 3, 4)
+    some_circle = Circle(10)
+
+    print(some_sphere == some_circle)
+
+
+* Running this code results in ``AttributeError: 'Circle' object has no attribute 'x'``
+* The trouble is that the ``Circle`` instance, which would be ``other`` in the ``Sphere``\'s equality method, does not have an ``x``, ``y``, or ``z`` attribute
+* A simple way to fix this is to check if the ``other`` reference variable is even referencing something that can be properly compared to
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 5
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            if isinstance(other, Sphere):
+                return self.x == other.x and self.y == other.y and self.z == other.z and self.radius == other.radius
+            return False
+
 
 ``__repr__``
 """"""""""""
