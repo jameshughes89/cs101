@@ -79,9 +79,11 @@ Writing Unit Tests
 * Key things to note here are
 
     * The tests are methods that belong to the class
+    * Each method's parameter list is just ``self``
     * Each method starts with the name ``test_``
 
         * The method names are descriptive so it's easy to know what it tests
+        * The ``test_`` prefix is required, but after ``test_``, the name does not matter
 
     * We make use of ``assertEqual``, which is a method referenced by the ``self`` reference variable
 
