@@ -214,8 +214,9 @@ Turing Machines
 
     * Don't worry, you will learn all about them later in your computer science degree
 
-* Although Turing Machines are more complex than the other models of computation the takeaway is that these still remarkably simple models of computation are sufficient for implementing any computer program
-    
+* Although Turing Machines are more complex than the other models of computation, the takeaway is that these still remarkably simple models of computation are sufficient for implementing any computer program
+
+
 For Next Class
 ==============
 
