@@ -41,6 +41,7 @@ Methods
     * A way to check if two ``Sphere`` objects are equivalent (``__eq__``)
     * A way to generate a human readable string representation of a ``Sphere`` (``__repr__``)
 
+
 .. code-block:: python
     :linenos:
 
@@ -64,6 +65,42 @@ Methods
     * They are associated with an instance of a ``Sphere``
     * They have a ``self`` parameter, which is a reference variable to the ``Sphere`` instance
     * Accessing any of the object's attributes are done through the use of the ``self`` reference variable
+
+
+* Below is the ``distance_between_centres`` method, where we see some things that may feel odd
+
+.. code-block:: python
+    :linenos:
+
+    def distance_between_centres(self, other: "Sphere") -> float:
+        """
+        Calculate and return the distance between the centres of two Spheres.
+
+        :param other: Sphere whose centre to find the distance to from the self Sphere.
+        :type other: Sphere
+        :return: Distance between the Sphere centres.
+        :rtype: float
+        """
+        return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+
+
+* The method takes a parameter, ``other``, that should be of type ``Sphere`` --- the class we are writing
+* But this does not break any rules --- we are writing a method that can be invoked on an instance of the ``Sphere`` class that takes an instance of a ``Sphere`` as a parameter
+* This is OK since the intended functionality is to find the distance between two ``Sphere`` objects
+
+    * The distance from the ``Sphere`` the method was invoked on to the ``Sphere`` that was passed as a parameter
+
+* If this still makes you uneasy, consider how we would use this method
+
+.. code-block:: python
+    :linenos:
+
+    sphere_a = Sphere(1, 1, 1, 10)
+    sphere_b = Sphere(2, 2, 2, 15)
+    distance = sphere_a.distance_between_centres(sphere_b)
+    print(distance)                                         # Results in 1.732051
+
+
 
 
 ``__eq__``
