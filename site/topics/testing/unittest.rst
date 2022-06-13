@@ -80,6 +80,9 @@ Writing Unit Tests
 
     * The tests are methods that belong to the class
     * Each method starts with the name ``test_``
+
+        * The method names are descriptive so it's easy to know what it tests
+
     * We make use of ``assertEqual``, which is a method referenced by the ``self`` reference variable
 
         * Although we did not write this method, we inherit it from ``unittest.TestCase``
@@ -88,7 +91,6 @@ Writing Unit Tests
 
         * Create a ``Sphere`` object
         * Test something about the object
-
 
 
 Subtests
