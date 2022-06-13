@@ -64,4 +64,4 @@ class Sphere:
         return False
 
     def __repr__(self) -> str:
-        return f"Sphere({self.centre_point}, {self.radius})"
+        return f"Sphere(centre_point={self.centre_point}, radius={self.radius})"

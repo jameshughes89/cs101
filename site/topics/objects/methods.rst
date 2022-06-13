@@ -342,6 +342,72 @@ Magic Methods
 ``__repr__``
 """"""""""""
 
+* It is nice to have a good, human readable representation of the values within our program
+* For example, think of the number of times you have printed the values of variables when doing some quick tests of your code
+
+.. code-block:: python
+    :linenos:
+
+    some_list = ["a", "b", "c"]
+    if condition:
+        some_list.append("x")
+    print(some_list)
+
+
+* If you were to try this with our newly created ``Sphere`` class, we would get something not overly helpful
+
+.. code-block:: python
+    :linenos:
+
+    sphere = Sphere(1, 2, 3, 4)
+    print(sphere)                   # Results in <__main__.Sphere object at 0x7f99a2edac10>
+
+
+* The default behaviour will be the name of the class along with the memory address of where the object is
+* Chances are, this is not overly helpful to you
+* To address this, we write another magic method --- ``__repr__``
+
+* ``__repr__`` is the representation function, which is for getting a nice string representation of the instance of the class
+* This ``__repr__`` method is called whenever we need a string representation of our object
+
+    * ``print(some_sphere)`` will automatically call it
+    * ``str(some_sphere)`` will call it
+    * ``repr(some_sphere)`` will call it too
+
+* Based on what the object is, there may be a very natural way one would want to represent the object as a string
+
+    * For example, the ``List`` class' ``__repr__`` returns a string of the form ``["a", "b", "c", "d"]``
+
+* But sometimes, like with a ``Sphere``, it may not be obvious and we just want to get enough information about the ``Sphere`` to be helpful for us
+* If this is the case, a common representation is ``Sphere(x=1, y=2, z=3, radius=4)`` -- class name, and then relevant attribute values within parentheses
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __repr__(self) -> str:
+            return f"Sphere(x={self.x}, y={self.y}, z={self.z}, radius={self.radius})"
+
+
+* With the ``__repr__`` written, if I were to call ``print``, ``str``, or ``repr`` on an instance of the class, I would see the values specified
+
+.. note::
+
+    Like with the ``__eq__`` method, we could go back and write a ``__repr__`` for the ``Circle`` class.
+
+    .. code-block:: python
+        :linenos:
+
+        class Circle:
+
+            # init and/or other methods not shown for brevity
+
+            def __repr__(self) -> str:
+                return f"Circle(radius={self.radius})"
+
 
 Testing
 -------
