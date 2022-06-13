@@ -145,7 +145,10 @@ Pushdown Automata (PDA) and Context-Free Grammars
     
     :math:`S \rightarrow \epsilon`
     
-    (:math:`\epsilon` means empty string)
+    :math:`\epsilon` --- empty string
+
+
+
 
 
 .. admonition:: Activity
