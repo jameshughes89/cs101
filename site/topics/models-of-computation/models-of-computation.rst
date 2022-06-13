@@ -221,9 +221,14 @@ Turing Machines
     * A *state register* to keep track of some internal state
     * A finite *table of instructions* that instructs how to operate the read/write head given the current state --- the table is a program
 
-
-
 * Although Turing Machines are more complex than the other models of computation, the takeaway is that these still remarkably simple models of computation are sufficient for implementing any computer program
+* Computers we use today, although built differently, are computationally equivalent to Turing Machines
+
+* The point is, Turing Machines were formalized in 1936
+* Everything we do on a computer is built upon these simple ideas
+* Every program you have written so far is built on these ideas
+* Fortunately, we were able to program our computers with Python at a much higher level of abstraction
+* But ultimately, all that is possible because of the levels of abstraction that came before Python
 
 
 For Next Class
