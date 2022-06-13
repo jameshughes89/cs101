@@ -20,9 +20,9 @@ Models of Computation
 
     * The mathematics provides a formal and precise way to demonstrate what problems can or cannot be solved with a given computational system
 
-* As you progress through your computer science degrees, these ideas will pop up now and then
 * Due to the requisite knowledge required to really get into these ideas, this topic presents a high-level introduction of the underlying ideas
 * Although kept at a high-level, it should be sufficient to contextualize computational systems
+* Further, it will help you gain an appreciation of the levels of abstraction between you, a programmer, and the fundamental truths of our universe that enable computation
 
 
 Finite State Machines/Automata (FSM/FSA)
