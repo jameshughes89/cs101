@@ -20,7 +20,6 @@ Objects II --- More on Methods
     * It will provide functionality to measure distances between ``Sphere`` objects and check if they overlap/collide
 
 
-
 Sphere Class
 ============
 

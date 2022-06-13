@@ -22,9 +22,45 @@ Objects III --- Interacting Objects
 Point3D Class
 =============
 
+* The purpose of the ``Point3D`` class is to replace all the coordinate details from the ``Sphere`` class
+* The class will have three attributes that represent a position within some three dimensional space with a Cartesian coordinate system
+
+    * ``x``
+    * ``y``
+    * ``z``
+
+* The class will also have a few methods, including some that will replace functionality within the ``Sphere`` class
+
+    * A method for measuring the ``Point3D``\s distance from the origin
+    * A method for measuring the distance from another ``Point3D`` object
+    * A method for finding the midpoint between two points
+    * A method for checking if two ``Point3D`` objects are *equal*
+    * A method for generating a nice, human readable string representation of the object
+
 
 Constructor and Attributes
 --------------------------
+
+* Below is the start of the ``Point3D`` class, including the constructor and assignment of the attributes
+
+.. code-block:: python
+    :linenos:
+
+    import math
+
+
+    class Point3D:
+        """
+        A class for representing points in a three dimensional (3D) space.
+        """
+
+        def __init__(self, x: float, y: float, z: float):
+            self.x = x
+            self.y = y
+            self.z = z
+
+
+* That's it --- that's all we need to get started with the ``Point3D`` class
 
 
 Methods
