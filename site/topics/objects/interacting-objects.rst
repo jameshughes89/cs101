@@ -66,6 +66,34 @@ Constructor and Attributes
 Methods
 -------
 
+* The methods we want are
+
+    * A way to measure the distance from another point  --- ``distance_from_point``
+    * An ``__eq__`` method for equality
+    * A ``__repr__`` for generating a string representation of the object
+
+.. code-block:: python
+    :linenos:
+
+    class Point3D:
+
+        # init and/or other methods not shown for brevity
+
+        def distance_from_point(self, other: "Point3D") -> float:
+            """
+            Calculate the Euclidean distance from this Point3D (self) and the Point3D passed as a parameter.
+
+            :param other: A Point3D to find the the Euclidean distance to from the self Point3D
+            :type other: Point3D
+            :return: The Euclidean distance between the self Point3D and the parameter Point3D other
+            :rtype: float
+            """
+            return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
+
+
+* The above method is following the same pattern as before
+* Like within the ``Sphere`` class, we have a method making use of another class method
+
 
 
 .. code-block:: python
