@@ -105,7 +105,7 @@ class SphereOriginalTest(unittest.TestCase):
 
     def test_equal_on_sphere_and_string_returns_false(self):
         sphere = Sphere(1, 2, 3, 4)
-        self.assertFalse("Sphere(x=1, y=2, z=3, radius=4)" == sphere)
+        self.assertNotEqual("Sphere(x=1, y=2, z=3, radius=4)", sphere)
 
     def test_repr_arbitrary_sphere_returns_correct_string(self):
         sphere = Sphere(1, 2, 3, 4)
