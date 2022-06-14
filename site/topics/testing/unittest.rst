@@ -224,8 +224,7 @@ Subtests
 * In the above example, each test input and expected output were stored in lists
 
     * I used two separate lists, but there is nothing stopping you from using one list of tuples
-
-* The variable names for the lists, ``cases`` and ``expecteds``, were arbitrary and by no means required
+    * The variable names for the lists, ``cases`` and ``expecteds``, were arbitrary and by no means required
 
 * First notice the loop --- there is nothing particularly important for the ``subTest`` here, but the ``zip`` function has not been seen yet
 
