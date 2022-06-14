@@ -16,13 +16,6 @@ class Point3DTest(unittest.TestCase):
         point = Point3D(0, 0, 0)
         self.assertEqual(0, point.z)
 
-    def test_distance_from_origin_various_points_returns_correct_distance(self):
-        cases = [Point3D(0, 0, 0), Point3D(1, 1, 1), Point3D(-1, 2, 1), Point3D(-1, -3, -1), Point3D(-1, -4, 2)]
-        expecteds = [0, 1.732051, 2.44949, 3.316625, 4.582576]
-        for (case, expect) in zip(cases, expecteds):
-            with self.subTest(case=case, expect=expect):
-                self.assertAlmostEqual(expect, case.distance_from_origin(), 5)
-
     def test_distance_from_point_various_points_returns_correct_distance(self):
         cases = [
             (Point3D(1, 1, 1), Point3D(1, 1, 1)),
@@ -34,18 +27,6 @@ class Point3DTest(unittest.TestCase):
         for (case, expect) in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case[0].distance_from_point(case[1]), 5)
-
-    def test_find_midpoint_various_points_returns_correct_point(self):
-        cases = [
-            (Point3D(1, 1, 1), Point3D(1, 1, 1)),
-            (Point3D(1, 1, 1), Point3D(2, 2, 2)),
-            (Point3D(1, 1, 1), Point3D(-2, -2, -2)),
-            (Point3D(-1, 1, 4), Point3D(-2, -3, -4)),
-        ]
-        expecteds = [Point3D(1, 1, 1), Point3D(1.5, 1.5, 1.5), Point3D(-0.5, -0.5, -0.5), Point3D(-1.5, -1, 0)]
-        for (case, expect) in zip(cases, expecteds):
-            with self.subTest(case=case, expect=expect):
-                self.assertEqual(expect, case[0].find_midpoint(case[1]))
 
     def test_equals_on_equal_points_returns_true(self):
         point_a = Point3D(1, 1, 1)
