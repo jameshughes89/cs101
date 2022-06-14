@@ -217,7 +217,7 @@ Subtests
             ]
             expecteds = [0, 2, 0, 20.2]
             for (case, expect) in zip(cases, expecteds):
-                with self.subTest(case=case, expect=expect):
+                with self.subTest():
                     self.assertAlmostEqual(expect, case.diameter(), 5)
 
 
@@ -226,7 +226,7 @@ Subtests
     * I used two separate lists, but there is nothing stopping you from using one list of tuples
     * The variable names for the lists, ``cases`` and ``expecteds``, were arbitrary and by no means required
 
-* First notice the loop --- there is nothing particularly important for the ``subTest`` here, but the ``zip`` function has not been seen yet
+* Notice the loop --- there is nothing particularly important for the ``subTest`` here, but the ``zip`` function has not been seen yet
 
     * This just provides an easy way to loop over data within two lists at the same time
     * This whole portion could be re-written as follows
@@ -237,36 +237,14 @@ Subtests
             cases = [...]
             expecteds = [...]
             for i in range(len(cases)):
-                with self.subTest(case=cases[i], expect=expecteds[i]):
-                    ...
-
-
-* Next, notice ``with self.subTest(case=case, expect=expect)``
-* There is a lot going on here, and much of it we will leave as *important code we need*
-
-* What is important is the assignment of the arguments
-
-    * ``case=case, expect=expect``
-
-* Up until now we have always specified the names and number of parameters a function/method takes
-* However, Python actually provides a way to provide an arbitrary number of arbitrarily named arguments
-* What is important is the name of the parameter we choose in these parentheses as they will be how we refer to the values
-
-    * ``self.assertAlmostEqual(expect, case.diameter(), 5)``
-    * This whole portion could be re-written as follows
-
-        .. code-block:: python
-            :linenos:
-
-            ...
-            with self.subTest(abc=case, xyz=expect):
-                self.assertAlmostEqual(abc, xyz.diameter(), 5)
+                with self.subTest():
+                    self.assertAlmostEqual(cases[i], expecteds[i].diameter(), 5)
 
 
 * It is possible to do multiple tests within a single test by just using a loop without the use of ``subTest``
 * However, without ``subTest``, if one of the tests fail, execution of the rest of the tests would stop and I would not know which subtest failed
 
-* Lastly, notice the use of ``self.assertAlmostEqual``
+* Also notice the use of ``self.assertAlmostEqual``
 * Almost equal is a nice way to manage floating point precision issues, and in the above example we specified the precision we care about --- ``5``
 
 
