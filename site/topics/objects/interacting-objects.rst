@@ -32,9 +32,7 @@ Methods
 
 * The methods we want are
 
-    * A way to measure the distance from the origin --- ``distance_from_origin``
     * A way to measure the distance from another point  --- ``distance_from_point``
-    * A way to find the midpoint between two points --- ``find_midpoint``
     * An ``__eq__`` method for equality
     * A ``__repr__`` for generating a string representation of the object
 
@@ -57,39 +55,8 @@ Methods
             return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
-        def distance_from_origin(self) -> float:
-            """
-            Calculate the Euclidean distance from this Point3D (self) and the origin (0, 0, 0).
-
-            :return: The Euclidean distance from the self Point3D and the origin
-            :rtype: float
-            """
-            return self.distance_from_point(Point3D(0, 0, 0))
-
-
-        def find_midpoint(self, other: "Point3D") -> "Point3D":
-            """
-            Return a new Point3D that is the midpoint between this Point3D (self) and the Point3D passed as a parameter.
-
-            :param other: A Point3D to find the the midpoint to from the self Point3D
-            :type other: Point3D
-            :return: A Point3D at the midpoint between the self Point3D and the parameter Point3D other
-            :rtype: Point3D
-            """
-            midpoint_x = (self.x - other.x) / 2 + other.x
-            midpoint_y = (self.y - other.y) / 2 + other.y
-            midpoint_z = (self.z - other.z) / 2 + other.z
-            return Point3D(midpoint_x, midpoint_y, midpoint_z)
-
-
-* The above three methods are following the same pattern as before
+* The above method is following the same pattern as before
 * Like within the ``Sphere`` class, we have a method making use of another class method
-
-    * The ``distance_from_origin`` method simply calls ``distance_from_point``, where the argument provided is a ``Point3D`` of the origin
-
-* Another interesting observation is, within the method ``find_midpoint``, a new ``Point3D`` object is being created and then returned by the function
-
-    * In other words, a ``Point3D`` object has the ability to create and return a new instance of a ``Point3D`` object
 
 
 Magic Methods
