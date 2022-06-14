@@ -226,7 +226,7 @@ Subtests
     * I used two separate lists, but there is nothing stopping you from using one list of tuples
 
 * The variable names for the lists, ``cases`` and ``expecteds``, were arbitrary and by no means required
-* Then, the test method loops over the cases independently with ``subTest``
+
 
 
 
