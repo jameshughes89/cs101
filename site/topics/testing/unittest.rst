@@ -152,6 +152,56 @@ Writing Unit Tests
 Subtests
 --------
 
+* Often we have functionality we would like to test on various cases
+* But it feels rather silly writing a whole new test for each case
+
+* Consider the ``diameter`` method
+* What cases should be tested?
+* We want to check our edge cases and general cases
+
+    * Test a ``Sphere`` at the origin that has zero ``radius``
+    * Test a ``Sphere`` at the origin with non-zero ``radius``
+
+* But we may want to confirm that the ``centre_point`` has no impact on the ``diameter`` of the ``Sphere``
+
+    * Test a ``Sphere`` that exists in an arbitrary location with zero ``radius``
+    * Test a ``Sphere`` that exists in an arbitrary location with non-zero ``radius``
+
+* To test all four example cases the same way as the above tests, we would need four separate tests that are nearly identical
+
+.. code-block:: python
+    :linenos:
+
+    import unittest
+
+    class SphereTest(unittest.TestCase):
+
+        # Other test methods not shown for brevity
+
+        def test_diameter_radius_zero_origin_returns_zero(self):
+            sphere = Sphere(Point3D(0, 0, 0), 0)
+            self.assertEqual(0, sphere.diameter())
+
+        def test_diameter_radius_one_origin_returns_two(self):
+            sphere = Sphere(Point3D(0, 0, 0), 1)
+            self.assertEqual(2, sphere.diameter())
+
+        def test_diameter_radius_zero_arbitrary_centre_returns_zero(self):
+            sphere = Sphere(Point3D(1, 1, 1), 0)
+            self.assertEqual(0, sphere.diameter())
+
+        def test_diameter_radius_ten_arbitrary_centre_returns_twenty(self):
+            sphere = Sphere(Point3D(10, 11, 12), 10)
+            self.assertEqual(20, sphere.diameter())
+
+
+* Although there is nothing wrong with the above tests, we can instead, we can make use of ``subTest`` in this scenario
+
+
+
+
+
+
 
 Running Unit Tests
 ==================
