@@ -208,6 +208,124 @@ Constructor and Attributes
 Methods
 -------
 
+* The below methods for calculating the ``diameter``, ``surface_area``, and ``volume`` do not change since they only make use of the ``Sphere`` object's ``radius`` attribute
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def diameter(self) -> float:
+            return 2 * self.radius
+
+        def surface_area(self) -> float:
+            return 4 * math.pi * self.radius**2
+
+        def volume(self) -> float:
+            return (4 / 3) * math.pi * self.radius**3
+
+
+* The method ``distance_between_centres`` is one that ends up being changed by offloading the Euclidean distance calculation to the ``Point3D`` object
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def distance_between_centres(self, other: "Sphere") -> float:
+            """
+            Calculate and return the distance between the centres of two Spheres.
+
+            :param other: Sphere whose centre to find the distance to from the self Sphere.
+            :type other: Sphere
+            :return: Distance between the Sphere centres.
+            :rtype: float
+            """
+            return self.centre_point.distance_from_point(other.centre_point)
+
+
+* Notice how this updated method has no responsibility over calculating the distance
+* Instead, we simply ask the ``Point3D`` object how far away it is from another ``Point3D`` object
+
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def distance_between_edges(self, other: "Sphere") -> float:
+            """
+            Calculate and return the distance between the edges of two Spheres. If the value is negative, the two Spheres
+            overlap.
+
+            :param other: Sphere whose edge to find the distance to from the self Sphere.
+            :type other: Sphere
+            :return: Distance between the Sphere edges.
+            :rtype: float
+            """
+            return self.distance_between_centres(other) - self.radius - other.radius
+
+        def overlaps(self, other: "Sphere") -> bool:
+            """
+            Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
+            between edges) are considered overlapping.
+
+            :param other: Sphere to check if it overlaps the self Sphere overlaps
+            :type other: Sphere
+            :return: Boolean indicating if the two Spheres overlap
+            :rtype: bool
+            """
+            return self.distance_between_edges(other) <= 0
+
+
+* The above ``distance_between_edges`` and ``overlaps`` methods remain unchanged from the original implementation of the ``Sphere``
+
+    * They had already offloaded the Euclidean distance calculations to the ``distance_between_centres`` method
+
+
+* And finally, the magic methods end up getting updated slightly
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            if isinstance(other, Sphere):
+                return self.radius == other.radius and self.centre_point == other.centre_point
+            return False
+
+* The above updated ``__eq__`` now checks if the ``centre_point`` attributes are the same instead of checking the ``x``, ``y``, and ``z`` explicitly
+
+    * Remember, we defined the ``__eq__`` within the ``Point3D`` class
+
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __repr__(self) -> str:
+            return f"Sphere(centre_point={self.centre_point}, radius={self.radius})"
+
+
+* And lastly, instead of having our ``__repr__`` extract the ``x``, ``y``, and ``z`` attributes, we simply get the string version of the ``Point3D``
+
+    * With f-strings, Python will automatically convert the ``Point3D`` object to a string
+
+* The final string representation of the ``Sphere`` class will not be slightly different from before
+* Before, we would see something like ``Sphere(x=1, y=2, z=3, radius=4)``
+* Now we would see something like ``Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)``
 
 
 Testing
