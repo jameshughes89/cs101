@@ -198,7 +198,35 @@ Subtests
 * Although there is nothing wrong with the above tests, we can instead, we can make use of ``subTest`` in this scenario
 
 
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 15, 16
 
+    import unittest
+
+    class SphereTest(unittest.TestCase):
+
+        # Other test methods not shown for brevity
+
+        def test_diameter_various_spheres_returns_correct_diameter(self):
+            cases = [
+                Sphere(Point3D(0, 0, 0), 0),
+                Sphere(Point3D(0, 0, 0), 1),
+                Sphere(Point3D(1, 1, 1), 0),
+                Sphere(Point3D(10, 11, 12), 10),
+            ]
+            expecteds = [0, 2, 0, 20]
+            for (case, expect) in zip(cases, expecteds):
+                with self.subTest(case=case, expect=expect):
+                    self.assertAlmostEqual(expect, case.diameter(), 5)
+
+
+* In the above example, each test input and expected output were stored in lists
+
+    * I used two separate lists, but there is nothing stopping you from using one list of tuples
+
+* The variable names for the lists, ``cases`` and ``expecteds``, were arbitrary and by no means required
+* Then, the test method loops over the cases independently with ``subTest``
 
 
 
