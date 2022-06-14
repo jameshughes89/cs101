@@ -181,6 +181,29 @@ Sphere Class
 Constructor and Attributes
 --------------------------
 
+.. code-block:: python
+    :linenos:
+
+    import math
+
+
+    class Sphere:
+        """
+        Class for managing Spheres within a 3D space. This includes tracking it's centre point and radius. Additionally, it
+        allows for some basic geometry calculations, distance measurements between Spheres, and checking if two Spheres
+        overlap.
+        """
+
+        def __init__(self, centre_point: Point3D, radius: float):
+            self.centre_point = centre_point
+            self.radius = radius
+
+
+* From looking at the above code, we see that we have removed the ``x``, ``y``, and ``z`` coordinates as explicit attributes for the ``Sphere``
+* Instead, we make use of a ``Point3D`` object
+* And, as we know, those coordinate attributes exist within the ``Point3D`` class, which are entirely accessible from within the ``Sphere`` class
+
+
 
 Methods
 -------
