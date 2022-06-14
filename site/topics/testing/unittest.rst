@@ -265,6 +265,9 @@ Subtests
 * It is possible to do multiple tests within a single test by just using a loop without the use of ``subTest``
 * However, without ``subTest``, if one of the tests fail, execution of the rest of the tests would stop and I would not know which subtest failed
 
+* Lastly, notice the use of ``self.assertAlmostEqual``
+* Almost equal is a nice way to manage floating point precision issues, and in the above example we specified the precision we care about --- ``5``
+
 
 Running Unit Tests
 ==================
