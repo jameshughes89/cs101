@@ -171,6 +171,12 @@ Testing
 Sphere Class
 ============
 
+* With our ``Point3D`` class, we can now make use of it in the ``Sphere`` class to offload the relevant work
+
+    * Keeping track of the location of the centre of the ``Sphere`` within the three dimensional space
+    * Measuring distances between points
+    * Checking equality between centre points in the space
+
 
 Constructor and Attributes
 --------------------------
