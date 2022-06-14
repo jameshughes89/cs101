@@ -234,7 +234,8 @@ Subtests
         .. code-block:: python
             :linenos:
 
-            ...
+            cases = [...]
+            expecteds = [...]
             for i in range(len(cases)):
                 with self.subTest(case=cases[i], expect=expecteds[i]):
                     ...
