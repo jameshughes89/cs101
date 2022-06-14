@@ -59,6 +59,95 @@ Starting a Unit Test Class
 Writing Unit Tests
 ==================
 
+.. code-block:: python
+    :linenos:
+
+    import unittest
+
+    class SphereTest(unittest.TestCase):
+
+        def test_sphere_centre_point_returns_correct_point3D(self):
+            sphere = Sphere(Point3D(0, 0, 0), 1)
+            self.assertEqual(Point3D(0, 0, 0), sphere.centre_point)
+
+        def test_sphere_radius_returns_correct_radius(self):
+            sphere = Sphere(Point3D(0, 0, 0), 1)
+            self.assertEqual(1, sphere.radius)
+
+
+* Above are two tests confirming the correctness of the constructor and the assigning of the ``Sphere`` class' attributes
+* Key things to note here are
+
+    * The tests are methods that belong to the class
+    * Each method's parameter list is just ``self``
+    * Each method starts with the name ``test_``
+
+        * The method names are descriptive so it's easy to know what it tests
+        * The ``test_`` prefix is required, but after ``test_``, the name does not matter
+
+    * We make use of ``assertEqual``, which is a method referenced by the ``self`` reference variable
+
+        * Although we did not write this method, we inherit it from ``unittest.TestCase``
+        * We used ``assertEqual`` here, but there are many other methods for various types of tests, some of which will be covered here
+
+    * The method provides a simple mechanism for setup code to be grouped with the test itself
+
+        * Create a ``Sphere`` object
+        * Test something about the object
+
+    * Each test should test one thing
+
+        * This makes it easier to isolate what exactly went wrong
+
+
+* Other than those points, so far there is not much more to point out here since we have been writing tests for a while
+* The basic idea of how we write the tests is the same
+* The only difference is the syntax of writing the tests with ``unittest``
+
+
+.. code-block:: python
+    :linenos:
+
+    import unittest
+
+    class SphereTest(unittest.TestCase):
+
+        # Other test methods not shown for brevity
+
+        def test_equals_on_equal_spheres_returns_true(self):
+            sphere_a = Sphere(Point3D(1, 2, 3), 1)
+            sphere_b = Sphere(Point3D(1, 2, 3), 1)
+            self.assertEqual(sphere_a, sphere_b)
+
+        def test_equals_on_not_equal_spheres_returns_false(self):
+            sphere_a = Sphere(Point3D(1, 2, 3), 1)
+            sphere_b = Sphere(Point3D(1, 2, 3), 2)
+            self.assertNotEqual(sphere_a, sphere_b)
+
+        def test_equal_on_sphere_and_string_returns_false(self):
+            sphere = Sphere(Point3D(1, 2, 3), 4)
+            self.assertNotEqual("Sphere(Point3D(1, 2, 3), 4)", sphere)
+
+        def test_repr_arbitrary_sphere_returns_correct_string(self):
+            sphere = Sphere(Point3D(1, 2, 3), 4)
+            self.assertEqual("Sphere(Point3D(1, 2, 3), 4)", str(sphere))
+
+
+* Above are additional tests for the magic methods ``__eq__`` and ``__repr__``
+* For two of the ``__eq__`` methods, you will see the setup is a little more involved as we need two ``Sphere`` objects for the test
+* You will also notice the use of ``assertNotEqual``, which is just another type of test
+
+* Although all test methods must start with ``test_``, as a convention for consistency and readability, method names will follow a pattern
+
+    * ``test_method_condition_expected``
+
+* One of the above examples is  ``test_equals_on_equal_spheres_returns_true``
+
+    * ``equals`` is the method being tested
+    * ``on_equal_spheres`` is the condition
+    * ``returns_true`` is what is expected
+
+
 
 Subtests
 --------

@@ -96,16 +96,16 @@ class SphereOriginalTest(unittest.TestCase):
     def test_equals_on_equal_spheres_returns_true(self):
         sphere_a = Sphere(1, 2, 3, 1)
         sphere_b = Sphere(1, 2, 3, 1)
-        self.assertTrue(sphere_a == sphere_b)
+        self.assertEqual(sphere_a, sphere_b)
 
     def test_equals_on_not_equal_spheres_returns_false(self):
         sphere_a = Sphere(1, 2, 3, 1)
         sphere_b = Sphere(1, 2, 3, 2)
-        self.assertFalse(sphere_a == sphere_b)
+        self.assertNotEqual(sphere_a, sphere_b)
 
     def test_equal_on_sphere_and_string_returns_false(self):
         sphere = Sphere(1, 2, 3, 4)
-        self.assertFalse("Sphere(x=1, y=2, z=3, radius=4)" == sphere)
+        self.assertNotEqual("Sphere(x=1, y=2, z=3, radius=4)", sphere)
 
     def test_repr_arbitrary_sphere_returns_correct_string(self):
         sphere = Sphere(1, 2, 3, 4)
