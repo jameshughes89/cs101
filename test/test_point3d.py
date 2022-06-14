@@ -59,8 +59,8 @@ class Point3DTest(unittest.TestCase):
 
     def test_equal_on_point_and_string_returns_false(self):
         point = Point3D(1, -1, 1)
-        self.assertFalse("Point3D(1, -1, 1)" == point)
+        self.assertFalse("Point3D(x=1, y=-1, z=1)" == point)
 
     def test_repr_arbitrary_point_returns_correct_string(self):
         point = Point3D(1, -1, 1)
-        self.assertEqual("Point3D(1, -1, 1)", str(point))
+        self.assertEqual("Point3D(x=1, y=-1, z=1)", str(point))
