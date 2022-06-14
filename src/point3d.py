@@ -47,7 +47,7 @@ class Point3D:
         :return: A string representation of the Point3D
         :rtype: string
         """
-        return f"Point3D({self.x}, {self.y}, {self.z})"
+        return f"Point3D(x={self.x}, y={self.y}, z={self.z})"
 
 
 point_origin = Point3D(0, 0, 0)
