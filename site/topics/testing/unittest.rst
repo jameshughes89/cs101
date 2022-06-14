@@ -117,16 +117,16 @@ Writing Unit Tests
         def test_equals_on_equal_spheres_returns_true(self):
             sphere_a = Sphere(Point3D(1, 2, 3), 1)
             sphere_b = Sphere(Point3D(1, 2, 3), 1)
-            self.assertTrue(sphere_a == sphere_b)
+            self.assertEqual(sphere_a, sphere_b)
 
         def test_equals_on_not_equal_spheres_returns_false(self):
             sphere_a = Sphere(Point3D(1, 2, 3), 1)
             sphere_b = Sphere(Point3D(1, 2, 3), 2)
-            self.assertFalse(sphere_a == sphere_b)
+            self.assertNotEqual(sphere_a, sphere_b)
 
         def test_equal_on_sphere_and_string_returns_false(self):
             sphere = Sphere(Point3D(1, 2, 3), 4)
-            self.assertFalse("Sphere(Point3D(1, 2, 3), 4)" == sphere)
+            self.assertNotEqual("Sphere(Point3D(1, 2, 3), 4)", sphere)
 
         def test_repr_arbitrary_sphere_returns_correct_string(self):
             sphere = Sphere(Point3D(1, 2, 3), 4)
@@ -135,7 +135,7 @@ Writing Unit Tests
 
 * Above are additional tests for the magic methods ``__eq__`` and ``__repr__``
 * For two of the ``__eq__`` methods, you will see the setup is a little more involved as we need two ``Sphere`` objects for the test
-* You will also notice the use of ``assertTrue`` and ``assertFalse``
+* You will also notice the use of ``assertNotEqual``, which is just another type of test
 
 * Although all test methods must start with ``test_``, as a convention for consistency and readability, method names will follow a pattern
 
