@@ -198,6 +198,34 @@ Methods
             return (4 / 3) * math.pi * self.radius**3
 
 
+* The method ``distance_between_centres`` is one that ends up being changed by offloading the Euclidean distance calculation to the ``Point3D`` object
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def distance_between_centres(self, other: "Sphere") -> float:
+            """
+            Calculate and return the distance between the centres of two Spheres.
+
+            :param other: Sphere whose centre to find the distance to from the self Sphere.
+            :type other: Sphere
+            :return: Distance between the Sphere centres.
+            :rtype: float
+            """
+            return self.centre_point.distance_from_point(other.centre_point)
+
+
+* Notice how this updated method has no responsibility over calculating the distance
+* Instead, we simply ask the ``Point3D`` object how far away it is from another ``Point3D`` object
+
+
+
+
+
 Testing
 -------
 
