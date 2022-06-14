@@ -179,6 +179,23 @@ Constructor and Attributes
 Methods
 -------
 
+* The below methods for calculating the ``diameter``, ``surface_area``, and ``volume`` do not change since they only make use of the ``Sphere`` object's ``radius`` attribute
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def diameter(self) -> float:
+            return 2 * self.radius
+
+        def surface_area(self) -> float:
+            return 4 * math.pi * self.radius**2
+
+        def volume(self) -> float:
+            return (4 / 3) * math.pi * self.radius**3
 
 
 Testing
