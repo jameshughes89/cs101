@@ -65,3 +65,7 @@ class Sphere:
 
     def __repr__(self) -> str:
         return f"Sphere(centre_point={self.centre_point}, radius={self.radius})"
+
+sphere = Sphere(Point3D(1, 2, 3), 4)
+
+print(sphere)

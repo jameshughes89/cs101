@@ -260,6 +260,44 @@ Methods
     * They had already offloaded the Euclidean distance calculations to the ``distance_between_centres`` method
 
 
+* And finally, the magic methods end up getting updated slightly
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __eq__(self, other) -> bool:
+            if isinstance(other, Sphere):
+                return self.radius == other.radius and self.centre_point == other.centre_point
+            return False
+
+* The above updated ``__eq__`` now checks if the ``centre_point`` attributes are the same instead of checking the ``x``, ``y``, and ``z`` explicitly
+
+    * Remember, we defined the ``__eq__`` within the ``Point3D`` class
+
+
+.. code-block:: python
+    :linenos:
+
+    class Sphere:
+
+        # init and/or other methods not shown for brevity
+
+        def __repr__(self) -> str:
+            return f"Sphere(centre_point={self.centre_point}, radius={self.radius})"
+
+
+* And lastly, instead of having our ``__repr__`` extract the ``x``, ``y``, and ``z`` attributes, we simply get the string version of the ``Point3D``
+
+    * With f-strings, Python will automatically convert the ``Point3D`` object to a string
+
+* The final string representation of the ``Sphere`` class will not be slightly different from before
+* Before, we would see something like ``Sphere(x=1, y=2, z=3, radius=4)``
+* Now we would see something like ``Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)``
+
 
 Testing
 -------
