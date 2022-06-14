@@ -184,6 +184,25 @@ Methods
 Testing
 -------
 
+* Although we could adapt our simple ``assert`` tests from the original ``Sphere`` implementation, those tests are becoming hard to manage
+* Our tests are now needing more setup before they can be run
+
+    * For example, we now may need to make instances of ``Point3D`` objects and ``Sphere`` objects before we can test anything
+
+* It's also difficult to tell the tests apart as they feel a little jumbled together
+* It's not easy to know what a test is doing just by looking at it anymore
+
+    * For example, ``assert 0.01 > abs(sphere.distance_between_edges(Sphere(0, 0, 0, 0)) - (-0.26))``
+    * We can piece it together, but it's not immediately clear
+
+* It's also hard to get a sense of how thorough the tests are
+
+    * Sure we have tested the distance between ``Sphere`` objects, but maybe we should test the distance if the ``Sphere`` objects are in different octants (3D equivalent of quadrants)
+
+* Further, if we want to be more thorough in the distance tests, there is going to be a lot of duplicate code
+
+* Fortunately, Python provides us with a tool to help us manage our tests --- ``unittest``
+* The next topic will cover details on how to start transitioning our tests to the ``unittest`` framework for improved tests
 
 
 For Next Class
