@@ -83,6 +83,8 @@ class Student:
     * The ``first_name`` and ``last_name`` values may change for a ``Student``
     * However, the ``student_number`` of each ``Student`` should be unique and not change
 
+* Also notice how the ``__repr__`` is not following the ``ClassName(attributes)`` format
+* For the purpose of this program, a more specialized format is more appropriate
 
 
 Course Class
