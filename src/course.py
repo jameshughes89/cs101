@@ -52,11 +52,11 @@ class Course:
         :param student: The student to be removed
         :type student: Student
         """
-        index = self._find(student)
-        if index == -1:
+
+        if not self.contains(student):
             raise ValueError("No such student to remove")
         else:
-            self._students.pop(index)
+            self._students.pop(self._find(student))
 
     def __repr__(self) -> str:
         s = ""
