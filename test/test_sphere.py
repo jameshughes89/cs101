@@ -18,9 +18,9 @@ class SphereTest(unittest.TestCase):
             Sphere(Point3D(0, 0, 0), 0),
             Sphere(Point3D(0, 0, 0), 1),
             Sphere(Point3D(1, 1, 1), 0),
-            Sphere(Point3D(10, 11, 12), 10),
+            Sphere(Point3D(10, 11, 12), 10.1),
         ]
-        expecteds = [0, 2, 0, 20]
+        expecteds = [0, 2, 0, 20.2]
         for (case, expect) in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case.diameter(), 5)

@@ -152,6 +152,101 @@ Writing Unit Tests
 Subtests
 --------
 
+* Often we have functionality we would like to test on various cases
+* But it feels rather silly writing a whole new test for each case
+
+* Consider the ``diameter`` method
+* What cases should be tested?
+* We want to check our edge cases and general cases
+
+    * Test a ``Sphere`` at the origin that has zero ``radius``
+    * Test a ``Sphere`` at the origin with non-zero ``radius``
+
+* But we may want to confirm that the ``centre_point`` has no impact on the ``diameter`` of the ``Sphere``
+
+    * Test a ``Sphere`` that exists in an arbitrary location with zero ``radius``
+    * Test a ``Sphere`` that exists in an arbitrary location with non-zero ``radius``
+
+* To test all four example cases the same way as the above tests, we would need four separate tests that are nearly identical
+
+.. code-block:: python
+    :linenos:
+
+    import unittest
+
+    class SphereTest(unittest.TestCase):
+
+        # Other test methods not shown for brevity
+
+        def test_diameter_radius_zero_origin_returns_zero(self):
+            sphere = Sphere(Point3D(0, 0, 0), 0)
+            self.assertEqual(0, sphere.diameter())
+
+        def test_diameter_radius_one_origin_returns_two(self):
+            sphere = Sphere(Point3D(0, 0, 0), 1)
+            self.assertEqual(2, sphere.diameter())
+
+        def test_diameter_radius_zero_arbitrary_centre_returns_zero(self):
+            sphere = Sphere(Point3D(1, 1, 1), 0)
+            self.assertEqual(0, sphere.diameter())
+
+        def test_diameter_radius_ten_arbitrary_centre_returns_twenty(self):
+            sphere = Sphere(Point3D(10, 11, 12), 10)
+            self.assertEqual(20, sphere.diameter())
+
+
+* Although there is nothing wrong with the above tests, we can instead, we can make use of ``subTest`` in this scenario
+
+
+.. code-block:: python
+    :linenos:
+    :emphasize-lines: 15, 16
+
+    import unittest
+
+    class SphereTest(unittest.TestCase):
+
+        # Other test methods not shown for brevity
+
+        def test_diameter_various_spheres_returns_correct_diameter(self):
+            cases = [
+                Sphere(Point3D(0, 0, 0), 0),
+                Sphere(Point3D(0, 0, 0), 1),
+                Sphere(Point3D(1, 1, 1), 0),
+                Sphere(Point3D(10, 11, 12), 10.1),
+            ]
+            expecteds = [0, 2, 0, 20.2]
+            for (case, expect) in zip(cases, expecteds):
+                with self.subTest():
+                    self.assertAlmostEqual(expect, case.diameter(), 5)
+
+
+* In the above example, each test input and expected output were stored in lists
+
+    * I used two separate lists, but there is nothing stopping you from using one list of tuples
+    * The variable names for the lists, ``cases`` and ``expecteds``, were arbitrary and by no means required
+
+* Notice the loop --- there is nothing particularly important for the ``subTest`` here, but the ``zip`` function has not been seen yet
+
+    * This just provides an easy way to loop over data within two lists at the same time
+    * This whole portion could be re-written as follows
+
+        .. code-block:: python
+            :linenos:
+
+            cases = [...]
+            expecteds = [...]
+            for i in range(len(cases)):
+                with self.subTest():
+                    self.assertAlmostEqual(cases[i], expecteds[i].diameter(), 5)
+
+
+* It is possible to do multiple tests within a single test by just using a loop without the use of ``subTest``
+* However, without ``subTest``, if one of the tests fail, execution of the rest of the tests would stop and I would not know which subtest failed
+
+* Also notice the use of ``self.assertAlmostEqual``
+* Almost equal is a nice way to manage floating point precision issues, and in the above example we specified the precision we care about --- ``5``
+
 
 Running Unit Tests
 ==================
