@@ -38,6 +38,19 @@ Objects IV --- Data Structures
 Student Class
 =============
 
+* The ``Student`` objects are the objects we care about
+* But the problem is, we will have many of them and we want a nice way to manage all instances
+
+    * This is where the ``Course`` class comes in
+
+* For now, we will focus on the ``Student`` class --- a simple class to keep track of important student information
+* We will also define an ``__eq__`` and ``__repr__`` for the class as they are often handy for testing purposes
+
+
+
+
+
+
 Course Class
 ============
 
