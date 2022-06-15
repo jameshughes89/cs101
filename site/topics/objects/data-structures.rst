@@ -213,6 +213,27 @@ Course Class
 
     * Note that if the ``Student`` is not found, an exception is raised by the method
 
+* The last method we will add to the ``Course`` class is the ``__repr__`` magic method
+* Since we wrote the ``__repr__`` method for the ``Student`` class, we know how to format the string for an individual ``Student`` object
+* However, the ``Course`` class is a collection of ``Student`` objects
+
+.. code-block:: python
+    :linenos:
+
+    class Course:
+
+        # init and/or other methods not shown for brevity
+
+        def __repr__(self) -> str:
+            s = ""
+            for student in self._students:
+                s += str(student) + "\n"
+            return s
+
+
+* Since we wrote the ``__repr__`` method for the ``Student`` class, we know how to format the string for an individual ``Student`` object
+* However, the ``Course`` class is a collection of ``Student`` objects
+
 
 For Next Class
 ==============
