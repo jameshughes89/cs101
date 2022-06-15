@@ -62,3 +62,11 @@ class Course:
         for student in self._students:
             s += str(student) + "\n"
         return s
+
+
+my_course = Course("CS101")
+my_course.add(Student("Bob", "Smith", 123456789))
+my_course.add(Student("Jane", "Doe", 987654321))
+my_course.add(Student("Niles", "MacDonald", 192837465))
+my_course.add(Student("Jane", "Doe", 987654321))
+print(my_course)

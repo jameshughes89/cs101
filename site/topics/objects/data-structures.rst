@@ -231,8 +231,33 @@ Course Class
             return s
 
 
-* Since we wrote the ``__repr__`` method for the ``Student`` class, we know how to format the string for an individual ``Student`` object
-* However, the ``Course`` class is a collection of ``Student`` objects
+* In the above example, we start with an empty string ``s``
+* Then, we loop over all ``Student`` objects within the ``_students`` list, and for each ``Student``
+
+    * Convert them to a string ``str``, which automatically calls the ``Student`` ``__repr__`` magic method on the individual instance
+    * Appends a newline to the end of the string
+    * And then appends the whole new string to tne end of the string ``s``
+
+* What's interesting here is how the ``Course`` class' ``__repr__`` makes use of the ``Student`` class' ``__repr__``
+* Below is an example of a ``Course`` object and it's string representation
+
+.. code-block:: python
+    :linenos:
+
+    my_course = Course("CS101")
+    my_course.add(Student("Bob", "Smith", 123456789))
+    my_course.add(Student("Jane", "Doe", 987654321))
+    my_course.add(Student("Niles", "MacDonald", 192837465))
+    my_course.add(Student("Jane", "Doe", 987654321))
+    print(my_course)
+
+    # Results in
+    # Smith, Bob    123456789
+    # Doe, Jane 987654321
+    # MacDonald, Niles  192837465
+    # Doe, Jane 987654321
+
+* The string printed out is one single string that spans multiple lines
 
 
 For Next Class
