@@ -93,6 +93,15 @@ Course Class
 * The ``Course`` class will be a collection of ``Student`` objects
 * Ultimately, the ``Student`` objects will be stored in a ``List``, but we want to make use of a class to add specific functionality we care about
 
+* We will have the ``Course`` class control access to the list of ``Students`` through methods
+
+    * A method to add a ``Student`` to the list
+    * A method to remove a ``Student`` from the list
+    * A method to get the size of the course --- the number of ``Student`` objects in the list
+    * A method to find the index of a given ``Student``, if it exists
+    * ``__eq__`` and ``__repr__`` methods
+
+
 .. code-block:: python
     :linenos:
 
