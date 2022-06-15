@@ -227,15 +227,14 @@ Course Class
         def __repr__(self) -> str:
             s = ""
             for student in self._students:
-                s += str(student) + "\n"
+                s += f"{student}\n"
             return s
 
 
 * In the above example, we start with an empty string ``s``
 * Then, we loop over all ``Student`` objects within the ``_students`` list, and for each ``Student``
 
-    * Convert them to a string ``str``, which automatically calls the ``Student`` ``__repr__`` magic method on the individual instance
-    * Appends a newline to the end of the string
+    * Convert them to a string (which the f-string will do automatically) with a newline character
     * And then appends the whole new string to tne end of the string ``s``
 
 * What's interesting here is how the ``Course`` class' ``__repr__`` makes use of the ``Student`` class' ``__repr__``
