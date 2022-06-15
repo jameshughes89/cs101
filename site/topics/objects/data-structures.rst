@@ -125,8 +125,25 @@ Course Class
 
     * ``some_course._students``
 
-* But as a convention, to let yourself and other programmers know, all attributes that are *not* to be accessed directly start with an underscore
+* But as a convention, to let yourself and other programmers know, all attributes and methods that are *not* to be accessed directly start with an underscore
 
+
+.. code-block:: python
+    :linenos:
+
+    class Course:
+
+        # init and/or other methods not shown for brevity
+
+        def size(self) -> int:
+            return len(self._students)
+
+        def add(self, student: Student):
+            self._students.append(student)
+
+
+* For ``size``, we just hijack the ``len`` of the ``_students`` list and return that value
+* Similarly for ``add``, we can make use of the list's ``append`` method
 
 
 For Next Class
