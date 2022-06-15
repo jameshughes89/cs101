@@ -52,7 +52,6 @@ class Course:
         :param student: The student to be removed
         :type student: Student
         """
-
         if not self.contains(student):
             raise ValueError("No such student to remove")
         else:
@@ -61,5 +60,5 @@ class Course:
     def __repr__(self) -> str:
         s = ""
         for student in self._students:
-            s += str(student) + "\n"
+            s += f"{student}\n"
         return s
