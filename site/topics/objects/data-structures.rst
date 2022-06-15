@@ -93,6 +93,30 @@ Course Class
 * The ``Course`` class will be a collection of ``Student`` objects
 * Ultimately, the ``Student`` objects will be stored in a ``List``, but we want to make use of a class to add specific functionality we care about
 
+.. code-block:: python
+    :linenos:
+
+    class Course:
+        """
+        A collection of students enrolled in a course. This class manages the individual Students and provides simple
+        enrollment details.
+        """
+
+        def __init__(self, course_name: str):
+            self.course_name = course_name
+            self._students = []
+
+
+* Above is the constructor for the class
+* The only two attrivutes the class has are ``course_name`` and ``_students``
+* Notice how the ``Students`` attribute starts with an underscore ``_``
+* We don't really want to access the list of ``Student`` objects directly
+* Instead, to give us more control over how the list is used, we want to add and remove ``Students`` through the methods we write in the class
+* Nothing will actually stop us from accessing the list directly
+
+    * ``some_course._students``
+
+* But as a convention, to let yourself and other programmers know, all attributes that are *not* to be accessed directly start with an underscore
 
 
 
