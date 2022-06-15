@@ -145,6 +145,65 @@ Course Class
 * For ``size``, we just hijack the ``len`` of the ``_students`` list and return that value
 * Similarly for ``add``, we can make use of the list's ``append`` method
 
+* The methods to ``remove`` a ``Student`` and check if the ``Course`` ``contains`` a specific ``Student`` both need a linear search
+
+    * Find the ``Student`` to be removed, if it exists
+    * Check if the ``Student`` is actually in the ``Course``
+
+* To eliminate any duplicate code, we can write a helper method --- ``_find``
+
+    * Like the attribute ``_students``, the method ``_find`` is not really indented to be used outside the class, thus, by convention, it starts with an underscore
+
+* ``_find`` will me a method that performs the linear search on the list
+
+    * If the specified ``Student`` is found within the ``_students`` list, return the index of where it is
+    * If the ``Student`` is *not* found, return a sentinel value --- ``-1``
+    * The ``-1`` sentinel value is a special value with meaning within the context of the algorithm --- *not found*
+
+
+.. code-block:: python
+    :linenos:
+
+    class Course:
+
+        # init and/or other methods not shown for brevity
+
+        def _find(self, student: Student) -> int:
+            """
+            Returns the index of the first occurrence of a given Student if it exists. If it does not exist, return a
+            sentinel value of -1.
+
+            :param student: The student to search for
+            :type student: Student
+            :return: Index of the student, or -1 if it is not found
+            :rtype: int
+            """
+            for i, s in enumerate(self._students):
+                if s == student:
+                    return i
+            return -1
+
+
+* With ``_find`` written, the ``remove`` and ``contains`` methods are simple to write
+
+
+.. code-block:: python
+    :linenos:
+
+    class Course:
+
+        # init and/or other methods not shown for brevity
+
+        def contains(self, student: Student) -> bool:
+            return -1 != self._find(student)
+
+        def remove(self, student: Student):
+            if not self.contains(student):
+                raise ValueError("No such student to remove")
+            else:
+                self._students.pop(self._find(student))
+
+
 
 For Next Class
 ==============
