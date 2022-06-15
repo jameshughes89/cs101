@@ -90,6 +90,9 @@ Student Class
 Course Class
 ============
 
+* The ``Course`` class will be a collection of ``Student`` objects
+* Ultimately, the ``Student`` objects will be stored in a ``List``, but we want to make use of a class to add specific functionality we care about
+
 
 
 
