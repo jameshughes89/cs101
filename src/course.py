@@ -32,6 +32,17 @@ class Course:
                 return i
         return -1
 
+    def contains(self, student: Student) -> bool:
+        """
+        Checks if a given student exists within the Course.
+
+        :param student: The Student object to be checked if it exists within the Course
+        :type student: Student
+        :return: True if the Student exists, False otherwise
+        :rtype: bool
+        """
+        return -1 != self.find(student)
+
     def remove(self, student: Student):
         """
         Remove the first occurence of the specified student from the collection. If the student does not exist, raise
