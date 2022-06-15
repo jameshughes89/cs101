@@ -52,7 +52,6 @@ class Course:
         :param student: The student to be removed
         :type student: Student
         """
-
         if not self.contains(student):
             raise ValueError("No such student to remove")
         else:
