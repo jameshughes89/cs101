@@ -17,7 +17,7 @@ class Course:
     def add(self, student: Student):
         self._students.append(student)
 
-    def find(self, student: Student) -> int:
+    def _find(self, student: Student) -> int:
         """
         Returns the index of the first occurrence of a given Student if it exists. If it does not exist, return a
         sentinel value of -1.
@@ -32,6 +32,17 @@ class Course:
                 return i
         return -1
 
+    def contains(self, student: Student) -> bool:
+        """
+        Checks if a given student exists within the Course.
+
+        :param student: The Student object to be checked if it exists within the Course
+        :type student: Student
+        :return: True if the Student exists, False otherwise
+        :rtype: bool
+        """
+        return -1 != self._find(student)
+
     def remove(self, student: Student):
         """
         Remove the first occurence of the specified student from the collection. If the student does not exist, raise
@@ -41,11 +52,11 @@ class Course:
         :param student: The student to be removed
         :type student: Student
         """
-        index = self.find(student)
-        if index == -1:
+
+        if not self.contains(student):
             raise ValueError("No such student to remove")
         else:
-            self._students.pop(index)
+            self._students.pop(self._find(student))
 
     def __repr__(self) -> str:
         s = ""
