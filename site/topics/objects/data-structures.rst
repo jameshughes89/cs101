@@ -160,9 +160,9 @@ Course Class
     * If the ``Student`` is *not* found, return a sentinel value --- ``-1``
     * The ``-1`` sentinel value is a special value with meaning within the context of the algorithm --- *not found*
 
-
 .. code-block:: python
     :linenos:
+    :emphasize-lines: 16
 
     class Course:
 
@@ -184,8 +184,12 @@ Course Class
             return -1
 
 
-* With ``_find`` written, the ``remove`` and ``contains`` methods are simple to write
+* In the above ``_find`` method, we actually make use of the ``Student`` class' ``__eq__`` method
 
+    * ``s == student`` calls the ``__eq__`` magic method from the ``Student`` class
+
+* Overall, the ``_find`` method is not particularly remarkable --- it's a linear search
+* With ``_find`` written, the ``remove`` and ``contains`` methods are simple to write
 
 .. code-block:: python
     :linenos:
@@ -207,7 +211,7 @@ Course Class
 * ``contains`` just calls ``_find`` and checks if the sentinel value was returned
 * ``remove`` checks if the ``Student`` exists, and if it does, it removes it
 
-    * Note that if the ``Student`` is not found, an exception is raised by the method 
+    * Note that if the ``Student`` is not found, an exception is raised by the method
 
 
 For Next Class
