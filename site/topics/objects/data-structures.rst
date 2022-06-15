@@ -74,7 +74,14 @@ class Student:
         return f"{self.last_name}, {self.first_name}\t{self.student_number}"
 
 
+* Above is the entire ``Student`` class
+* The only functionality is defined in the magic methods
+* The main purpose of the ``Student`` class is to store data
 
+* Notice the ``__eq__`` defines equality for the ``Student`` class strictly on the ``student_number`` attribute
+
+    * The ``first_name`` and ``last_name`` values may change for a ``Student``
+    * However, the ``student_number`` of each ``Student`` should be unique and not change
 
 
 
