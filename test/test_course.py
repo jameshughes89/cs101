@@ -48,6 +48,20 @@ class CourseTest(TestCase):
         student_there = Student("Bob", "Smith", 123456789)
         self.assertEqual(0, course.find(student_there))
 
+    def test_contains_singleton_student_does_not_exist_returns_false(self):
+        course = Course("CS101")
+        student = Student("Bob", "Smith", 123456789)
+        course.add(student)
+        student_not_there = Student("Not", "Bob", 987654321)
+        self.assertFalse(course.contains(student_not_there))
+
+    def test_contains_singleton_student_exists_returns_true(self):
+        course = Course("CS101")
+        student = Student("Bob", "Smith", 123456789)
+        course.add(student)
+        student_there = Student("Bob", "Smith", 123456789)
+        self.assertTrue(course.contains(student_there))
+
     def test_remove_singleton_student_does_not_exist_raises_value_error(self):
         course = Course("CS101")
         student = Student("Bob", "Smith", 123456789)
@@ -101,6 +115,31 @@ class CourseTest(TestCase):
         course.add(Student("Jane", "Doe", 987654321))
         student_there = Student("Jane", "Doe", 987654321)
         self.assertEqual(1, course.find(student_there))
+
+    def test_contains_many_students_student_does_not_exist_returns_false(self):
+        course = Course("CS101")
+        course.add(Student("Bob", "Smith", 123456789))
+        course.add(Student("Jane", "Doe", 987654321))
+        course.add(Student("Niles", "MacDonald", 192837465))
+        student_not_there = Student("Not", "There", 918273645)
+        self.assertFalse(course.contains(student_not_there))
+
+    def test_contains_many_students_student_exists_returns_true(self):
+        course = Course("CS101")
+        course.add(Student("Bob", "Smith", 123456789))
+        course.add(Student("Jane", "Doe", 987654321))
+        course.add(Student("Niles", "MacDonald", 192837465))
+        student_there = Student("Jane", "Doe", 987654321)
+        self.assertTrue(course.contains(student_there))
+
+    def test_contains_many_students_duplicate_students_returns_true(self):
+        course = Course("CS101")
+        course.add(Student("Bob", "Smith", 123456789))
+        course.add(Student("Jane", "Doe", 987654321))
+        course.add(Student("Niles", "MacDonald", 192837465))
+        course.add(Student("Jane", "Doe", 987654321))
+        student_there = Student("Jane", "Doe", 987654321)
+        self.assertTrue(course.contains(student_there))
 
     def test_remove_many_students_student_does_not_exist_raises_value_error(self):
         course = Course("CS101")
