@@ -263,4 +263,5 @@ Course Class
 For Next Class
 ==============
 
-* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
+* `Check out the tests for the Student class <https://github.com/jameshughes89/cs101/blob/main/test/test_student.py>`_
+* `Check out the tests for the Course class <https://github.com/jameshughes89/cs101/blob/main/test/test_course.py>`_
