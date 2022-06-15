@@ -99,7 +99,7 @@ Course Class
     * A method to remove a ``Student`` from the list
     * A method to get the size of the course --- the number of ``Student`` objects in the list
     * A method to check if a given ``Student`` exists in the ``Course``
-    * ``__eq__`` and ``__repr__`` methods
+    * ``__repr__`` method
 
 
 .. code-block:: python
