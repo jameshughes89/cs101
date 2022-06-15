@@ -204,6 +204,11 @@ Course Class
                 self._students.pop(self._find(student))
 
 
+* ``contains`` just calls ``_find`` and checks if the sentinel value was returned
+* ``remove`` checks if the ``Student`` exists, and if it does, it removes it
+
+    * Note that if the ``Student`` is not found, an exception is raised by the method 
+
 
 For Next Class
 ==============
