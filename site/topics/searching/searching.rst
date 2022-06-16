@@ -211,9 +211,9 @@ Haskell
    
   
 			
-For next class 
+For Next Class
 ==============
 
-* Keep reading `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_  
+* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 
 
