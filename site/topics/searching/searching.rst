@@ -110,41 +110,76 @@ Python
 .. code-block:: python
     :linenos:
 	
-    def linear_search(a_list, thing):
-        for i in range(len(a_list)):
-            if a_list[i] == thing:
+    def linear_search(haystack, needle):
+        for i in range(len(haystack)):
+            if haystack[i] == needle:
                 return True
         return False
 
-C++
----
-		
-.. code-block:: cpp
-    :linenos:	
-	
-    bool linear_search(int a_list[], int n, int thing){
-        for(int i = 0 ; i < n ; i++){
-            if(a_list[i] == thing){
-                return true;
-            }
-        }
-        return false;
-    }
 
 Java
 ----
 
 .. code-block:: java
-    :linenos:	
-	
-    public boolean linear_search(int[] a_list, int thing){
-        for(int i = 0 ; i < a_list.length ; i++){
-            if(a_list[i] == thing){
+    :linenos:
+
+    public static boolean linearSearch(int[] haystack, int needle){
+        for(int i = 0 ; i < haystack.length ; i++){
+            if(haystack[i] == needle){
                 return true;
             }
         }
         return false;
     }
+
+
+C#
+--
+
+.. code-block:: c#
+    :linenos:
+
+    public static boolean linearSearch(int[] haystack, int needle){
+        for(int i = 0 ; i < haystack.length ; i++){
+            if(haystack[i] == needle){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+C++
+---
+
+.. code-block:: cpp
+    :linenos:
+
+    bool linear_search(std::vector<int> haystack,  int needle){
+        for(int i = 0 ; i < haystack.size() ; i++){
+            if(haystack[i] == needle){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+C
+-
+
+.. code-block:: c
+    :linenos:
+
+    bool linear_search(int haystack[], int n, int needle){
+        for(int i = 0 ; i < n ; i++){
+            if(haystack[i] == needle){
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 Haskell
 -------
