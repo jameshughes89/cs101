@@ -106,7 +106,7 @@ Linear Search in Other Programming Languages
 * However, there are many other programming languages
 * Learning a new programming language may feel intimidating, but you may be surprised at how similar many of them are
 
-    * First, the underlying algorithms are the same, regardless of the language --- an iterative linear search is an iterative linear search
+    * First, the underlying algorithms are the same, regardless of the language --- a linear search is a linear search
     * Second, even the syntax between many languages are remarkably similar
 
 * Below is a collection of linear search algorithms in various popular programming languages
