@@ -99,10 +99,19 @@ Searching (again)
     * The more you know about the *structure* of your problem (e.g., "the list is always sorted"), the more opportunities you have to use that knowledge to make the solution faster.
 
 
-Quick look at different programming languages
-=============================================
+Linear Search in Other Programming Languages
+============================================
 
-Here are a few linear searchers in different programming languages. 
+* At this stage we have been programming exclusively in Python
+* However, there are many other programming languages
+* Learning a new programming language may feel intimidating, but you may be surprised at how similar many of them are
+
+    * First, the underlying algorithms are the same, regardless of the language --- an iterative linear search is an iterative linear search
+    * Second, even the syntax between many languages are remarkably similar
+
+* Below is a collection of linear search algorithms in various popular programming languages
+* Despite never learning the various languages, chances are you can still understand the code completely
+
 
 Python
 ------
