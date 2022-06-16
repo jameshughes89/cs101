@@ -193,6 +193,12 @@ C
 Haskell
 -------
 
+* Below you will see a linear search that looks quite different from the previous
+* Haskell is an entirely different kind of programming language --- it is a *functional* programming language
+
+    * It is, for better or worse, not nearly as popular as the languages seen in the above examples
+
+
 .. code-block:: haskell
     :linenos:
 	
