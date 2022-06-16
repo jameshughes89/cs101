@@ -99,10 +99,22 @@ Searching (again)
     * The more you know about the *structure* of your problem (e.g., "the list is always sorted"), the more opportunities you have to use that knowledge to make the solution faster.
 
 
-Quick look at different programming languages
-=============================================
+Linear Search in Other Programming Languages
+============================================
 
-Here are a few linear searchers in different programming languages. 
+* At this stage we have been programming exclusively in Python
+* However, there are many other programming languages
+* Learning a new programming language may feel intimidating, but you may be surprised at how similar many of them are
+
+    * First, the underlying algorithms are the same, regardless of the language --- a linear search is a linear search
+    * Second, even the syntax between many languages are remarkably similar
+
+* Below is a collection of linear search algorithms in various popular programming languages
+
+    * The purpose of their inclusion here is to get a sense of how similar and dissimilar programing languages can be
+
+* Despite never learning the various languages, chances are you can still understand much of the code completely
+
 
 Python
 ------
@@ -110,44 +122,85 @@ Python
 .. code-block:: python
     :linenos:
 	
-    def linear_search(a_list, thing):
-        for i in range(len(a_list)):
-            if a_list[i] == thing:
+    def linear_search(haystack, needle):
+        for i in range(len(haystack)):
+            if haystack[i] == needle:
                 return True
         return False
 
-C++
----
-		
-.. code-block:: cpp
-    :linenos:	
-	
-    bool linear_search(int a_list[], int n, int thing){
-        for(int i = 0 ; i < n ; i++){
-            if(a_list[i] == thing){
-                return true;
-            }
-        }
-        return false;
-    }
 
 Java
 ----
 
 .. code-block:: java
-    :linenos:	
-	
-    public boolean linear_search(int[] a_list, int thing){
-        for(int i = 0 ; i < a_list.length ; i++){
-            if(a_list[i] == thing){
+    :linenos:
+
+    public static boolean linearSearch(int[] haystack, int needle){
+        for(int i = 0 ; i < haystack.length ; i++){
+            if(haystack[i] == needle){
                 return true;
             }
         }
         return false;
     }
 
+
+C#
+--
+
+.. code-block:: c#
+    :linenos:
+
+    public static boolean linearSearch(int[] haystack, int needle){
+        for(int i = 0 ; i < haystack.length ; i++){
+            if(haystack[i] == needle){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+C++
+---
+
+.. code-block:: cpp
+    :linenos:
+
+    bool linear_search(std::vector<int> haystack,  int needle){
+        for(int i = 0 ; i < haystack.size() ; i++){
+            if(haystack[i] == needle){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+C
+-
+
+.. code-block:: c
+    :linenos:
+
+    bool linear_search(int haystack[], int n, int needle){
+        for(int i = 0 ; i < n ; i++){
+            if(haystack[i] == needle){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
 Haskell
 -------
+
+* Below you will see a linear search that looks quite different from the previous
+* Haskell is an entirely different kind of programming language --- it is a *functional* programming language
+
+    * It is, for better or worse, not nearly as popular as the languages seen in the above examples
+
 
 .. code-block:: haskell
     :linenos:
@@ -158,9 +211,9 @@ Haskell
    
   
 			
-For next class 
+For Next Class
 ==============
 
-* Keep reading `chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_  
+* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 
 
