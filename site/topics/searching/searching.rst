@@ -41,19 +41,23 @@ Back to fundamentals
 * We'll look at *bad* ways too. 
 
 
-Searching (again)
-=================
+Linear Search
+=============
 
-* I know I've beaten this into you at this point, but... *linear* search...
+* By now we have seen linear search multiple times
+* Given our familiarity of the problem and the linear search algorithm, we will use it as a starting point to begin thinking a little deeper into our algorithms
 
-.. admonition:: Activity
-    :class: activity
+.. code-block:: python
+    :linenos:
 
-    Write a function ``find_element(element, list)`` that returns ``True`` if ``element`` is in ``list`` and ``False`` otherwise. 
+    def linear_search(haystack, needle):
+        for element in haystack:
+            if element == needle:
+                return True
+        return False
 
-    You may *not* use the ``in`` operator (that's cheating!)
 
-* Nothing new here... you already know how to search an unordered list.
+
 
 .. admonition:: Activity
     :class: activity
