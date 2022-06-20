@@ -138,28 +138,10 @@ Complexity Analysis
 * But, there is no such thing as a free lunch
 * With binary search, we have the catch that the data must be sorted
 
-
-.. admonition:: Activity++
-    :class: activity
-
-    Think of how a function ``find_element(element,sorted_list)`` that returns ``True`` if ``element`` is in ``sorted_list``  and ``False`` otherwise would be written.
-
-    You may *not* use the ``in`` operator (that's still cheating!). 
-
-    This time, I *promise* you that I will only call your function on a list which is *already sorted*. Do this in a group. It's not an easy one. 
-   
-    If you can, code up the solution. 
-   
-
-* Now we need to ask the same questions as before:
-    * On average, how many iterations through your loop does your function make?
-    * How about in the worst case?
-    * Is your solution the best possible?
-    * Might there exist some super clever algorithm that is somehow better (faster) than yours?	
-			
 * This is a *very* common pattern in developing algorithms:
-    * The more *general* your problem is, the slower the solution is.
-    * The more you know about the *structure* of your problem (e.g., "the list is always sorted"), the more opportunities you have to use that knowledge to make the solution faster.
+
+    * The more *general* your algorithm is, the worse the solution
+    * The more you know about the *structure* of your problem, the more opportunities you have to use that knowledge to improve your algorithm
 
 
 Linear Search in Other Programming Languages
