@@ -1,6 +1,6 @@
-*********
-Searching
-*********
+************************
+Searching and Complexity
+************************
 
 * Before continuing, we should take a moment and reflect on what we have learned so far
 
@@ -24,35 +24,70 @@ Searching
 * Further, we will take some time to think about the amount of work the algorithm does and what makes an algorithm *good*
 
 
-Searching (again)
-=================
+Linear Search
+=============
 
-* I know I've beaten this into you at this point, but... *linear* search...
+* By now we have seen linear search multiple times
+* Given our familiarity of the problem and the linear search algorithm, we will use it as a starting point to begin thinking a little deeper into our algorithms
 
-.. admonition:: Activity
-    :class: activity
+.. code-block:: python
+    :linenos:
 
-    Write a function ``find_element(element, list)`` that returns ``True`` if ``element`` is in ``list`` and ``False`` otherwise. 
+    def linear_search(haystack, needle):
+        for element in haystack:
+            if element == needle:
+                return True
+        return False
 
-    You may *not* use the ``in`` operator (that's cheating!)
 
-* Nothing new here... you already know how to search an unordered list.
+* Having a correct algorithm for a problem is clearly important
+* But we also want to make sure we have a *good* algorithm
+* However, what does it mean for an algorithm to be *good*?
 
 .. admonition:: Activity
     :class: activity
    
     Discuss this with your neighbours:
       
-        * On average, how many iterations through your loop does your function make?
-        * How about in the worst case?
+        * On average, how many iterations of the loop does ``linear_search`` need before it finds the ``needle``?
+        * If the element you are looking for is *not* in the list, how many times will the loop run?
+        * What would be the situation to cause the loop to only need to run one iteration?
+        * How much *space* does your algorithm require?
         * Is your solution the best possible?
         * Might there exist some super clever algorithm that is somehow better (faster) than yours?   
 	  
-* These kinds of questions are getting you closer to computer *science* and further from straight "programming".	  
 
   .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
+
+
+Complexity Analysis
+-------------------
+
+* The above activity highlights the major ideas used to discuss the *goodness* of an algorithm
+* More precisely, we analyze the *Computational Complexity* of an algorithm
+
+    * The amount of resources the algorithm needs to run
+
+* The main focus is the *time complexity* and the *space* complexity
+
+    * Time complexity is the number of basic operations the algorithm requires
+    * Space complexity is the amount of memory the algorithm requires
+
+* To keep things simple, it is common to think about the worst case scenario for the complexity analysis
+* We also like to consider the amount of work required based on the size of the input
+* For example, the worst case scenario for ``linear_search`` is if the ``needle`` does not exist within ``haystack``
+
+    * If ``haystack`` has length of 10, the loop will run 10 times before we conclude that ``needle`` is not there
+    * If ``haystack`` has length of 100, the loop will run 100 times
+    * If ``haystack`` has length of 10,000,000, the loop will run 10,000,000 times
+    * If ``haystack`` has length of :math:`n`, the loop will run :math:`n` times
+
+* As for space complexity, this ``linear_search`` only requires space for storing ``haystack``
+
+    * Assuming ``haystack`` has length :math:`n`, then we require :math:`n` amount of space
+
 
 .. admonition:: Activity
     :class: activity
