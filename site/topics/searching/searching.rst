@@ -78,7 +78,7 @@ Binary Search
 .. admonition:: Activity
     :class: activity
 
-    I will guess a number between 0 -- 1023 in 10 or less guesses.
+    I will guess a number between :math:`0 -- 1023` in :math:`10` or less guesses.
 
     There is a catch however --- you have to tell me if the number is *higher* or *lower* than my guess before I guess
     again.
@@ -86,7 +86,7 @@ Binary Search
 
 * This is an example of a *binary search*
 * Like a linear search, binary search is used to find an element within some collection
-* However, if I was doing a linear search for a number between 0 -- 1023, I could only guarantee that I would find the element in 1024 guesses
+* However, if I was doing a linear search for a number between :math:`0 -- 1023`, I could only guarantee that I would find the element in :math:`1024` guesses
 * But with binary search, I was able to do it in 10 or less guesses
 * Though, this required the higher/lower condition --- the data was sorted
 
@@ -98,7 +98,7 @@ Complexity Analysis
 
 * The magic with binary search is that, with every guess I made, I was able to eliminate half of the remaining numbers
 
-    * My first guess was 512 --- if you said *lower* I know the number is between 0 -- 511, if you said *higher* I know it's between 513 -- 1023
+    * My first guess was :math:`512` --- if you said *lower* I know the number is between :math:`0 -- 511`, if you said *higher* I know it's between :math:`513 -- 1023`
 
 * To generalize the idea, if I had :math:`n` numbers, and I guess the number :math:`\frac{n}{2}`
 
