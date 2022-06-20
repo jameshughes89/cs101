@@ -57,23 +57,30 @@ Linear Search
         return False
 
 
-
+* Having a correct algorithm for a problem is clearly important
+* But we also want to make sure we have a *good* algorithm
+* However, what does it mean for an algorithm to be *good*?
 
 .. admonition:: Activity
     :class: activity
    
     Discuss this with your neighbours:
       
-        * On average, how many iterations through your loop does your function make?
-        * How about in the worst case?
+        * On average, how many iterations of the loop does ``linear_search`` need before it finds the ``needle``?
+        * If the element you are looking for is *not* in the list, how many times will the loop run?
+        * What would be the situation to cause the loop to only need to run one iteration?
+        * How much *space* does your algorithm require?
         * Is your solution the best possible?
         * Might there exist some super clever algorithm that is somehow better (faster) than yours?   
 	  
-* These kinds of questions are getting you closer to computer *science* and further from straight "programming".	  
 
   .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
+
+
+
+
 
 .. admonition:: Activity
     :class: activity
