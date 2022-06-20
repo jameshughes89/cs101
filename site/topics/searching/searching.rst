@@ -71,10 +71,18 @@ Searching (again)
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
 
+
+Binary Search
+=============
+
 .. admonition:: Activity
     :class: activity
 
-    James will now guess a number between 0 and 1023 in less than 10 guesses. 
+    I will guess a number between 0 -- 1023 in 10 or less guesses.
+
+    There is a catch however --- you have to tell me if the number is *higher* or *lower* than my guess before I guess
+    again. 
+
    
 .. admonition:: Activity++
     :class: activity
