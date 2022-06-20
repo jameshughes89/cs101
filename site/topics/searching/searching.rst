@@ -2,31 +2,22 @@
 Searching
 *********
 
+* Before continuing, we should take a moment and reflect on what we have learned so far
 
-You are *here*
-==============
-
-* At this point in the course you should feel like:
     * The Python programming environment is a relatively familiar sight (Colab, IPython, PyCharm, Spyder)
-    * You're growing more comfortable using Python to accomplish small tasks
-    * If you saw a simple Python program, you could figure out, more or less, what it does without having to run it
-    * You know what a variable is
-    * You know what a data *type* is (particularly: strings, integers, booleans and floating point numbers)
-    * You know that strings are *special*
-    * You know that you have to be *very careful* with floating point values
-    * You know what lists, arrays, tuples and dictionaries are and how they differ
-    * You know about mutability and aliasing in data structures
-    * You know how to use ``if`` statements to *conditionally* execute code
-    * You know how to write, and call, functions
-    * You know what a "pure" function is and what "side effect" means.
-    * You know how (and when) to use both ``for`` loops and ``while`` loops
-    * You know how to develop your own code, one small step at a time, testing along the way.
-    * You know how to debug and use a debugger
-    * You know how to comment your code so you can read it next week.
-    * You know how to get data into and out of python with files. 
-    * You know that exceptions are a thing
-    * You know how to use objects
-    * You know how to make your own objects
+    * You know how to ``print`` and ``input`` information
+    * You know about types, values, and variables
+    * You have been making use of functions
+    * You have learned about basic logic and know how to use``if`` and ``else``
+    * ``for`` and ``while`` loops are tools you have used
+    * You learned how to use objects
+    * Linear data structures, like a ``List``, are familiar and you are used to working with reference variables
+    * You know how to read and write data from/to files
+    * You have learned how to write classes and define your own objects
+    * You can look at Python code and have a reasonable understanding of what it is doing
+    * You know how to write your own code, one step at a time
+    * You know the importance of testing your code and how to write tests
+
 
 Back to fundamentals
 ====================
