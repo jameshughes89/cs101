@@ -79,6 +79,7 @@ Linear Search
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
 
 
+
 * The above activity highlights the major ideas used to discuss the *goodness* of an algorithm
 * More precisely, we analyze the *Computational Complexity* of an algorithm
 
@@ -89,6 +90,14 @@ Linear Search
     * Time complexity is the number of basic operations the algorithm requires
     * Space complexity is the amount of memory the algorithm requires
 
+* To keep things simple, it is common to think about the worst case scenario for the complexity analysis
+* We also like to consider the amount of work required based on the size of the input
+* For example, the worst case scenario for ``linear_search`` is if the ``needle`` does not exist within ``haystack``
+
+    * If ``haystack`` has length of 10, the loop will run 10 times before we conclude that ``needle`` is not there
+    * If ``haystack`` has length of 100, the loop will run 100 times
+    * If ``haystack`` has length of 10,000, the loop will run 10,000 times
+    * If ``haystack`` has length of :math:`n`, the loop will run :math:`n` times
 
 
 .. admonition:: Activity
