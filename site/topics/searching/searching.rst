@@ -18,17 +18,10 @@ Searching
     * You know how to write your own code, one step at a time
     * You know the importance of testing your code and how to write tests
 
-
-Back to fundamentals
-====================
-
-* We've actually gone pretty deep into topics, so it's time to go back to some basic CS.
-* We have a lot of tools in our tool belt 
-* We have a solid understanding of some *data structures*
-* We're kinda' missing out on the *algorithms* at this point
-* We'll actually look at some real, but challenging problems
-* We will look at some *good* ways to solve these problems  
-* We'll look at *bad* ways too. 
+* The last few topics of the course have been heavy on data and data structures
+* At this stage of the course, we have actually equipped ourselves with the majority of tools programmers use on a daily basis
+* Here, we will start to focus more on algorithms and how we can use all the tools we have learned to solve more interesting problems
+* Further, we will take some time to think about the amount of work the algorithm does and what makes an algorithm *good*
 
 
 Searching (again)
