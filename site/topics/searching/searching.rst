@@ -79,6 +79,8 @@ Linear Search
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
 
 
+Complexity Analysis
+-------------------
 
 * The above activity highlights the major ideas used to discuss the *goodness* of an algorithm
 * More precisely, we analyze the *Computational Complexity* of an algorithm
