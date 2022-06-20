@@ -124,7 +124,7 @@ Complexity Analysis
 * Originally, with linear search, the relationship between the input :math:`n` and the amount of work is :math:`n`
 
     * If there are :math:`n` things in the ``haystack``, I have to look at all :math:`n`
-    * If we doubled the size to :math`2n`, the amount of things needed to be looked at also doubles to :math:`2n`
+    * If we doubled the size to :math:`2n`, the amount of things needed to be looked at also doubles to :math:`2n`
 
 * With binary search however, the relationship between the size of the input :math:`n` and the amount of work is :math:`log_{2}(n)`
 
@@ -134,11 +134,11 @@ Complexity Analysis
         * :math:`log_{2}(n) + log_{2}(2)`
         * :math:`log_{2}(n) + 1`
 
-* Given that binary search requires :math:`log{2}(n)` basic operations vs linear search's :math:`n`, binary search is the clear winner
+* Given that binary search requires :math:`log{2}(n)` basic operations vs. linear search's :math:`n`, binary search is the clear winner
 * But, there is no such thing as a free lunch
 * With binary search, we have the catch that the data must be sorted
 
-* This is a *very* common pattern in developing algorithms:
+* This is a *very* common pattern in developing algorithms
 
     * The more *general* your algorithm is, the worse the solution
     * The more you know about the *structure* of your problem, the more opportunities you have to use that knowledge to improve your algorithm
