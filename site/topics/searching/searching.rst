@@ -79,6 +79,15 @@ Linear Search
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
 
 
+* The above activity highlights the major ideas used to discuss the *goodness* of an algorithm
+* More precisely, we analyze the *Computational Complexity* of an algorithm
+
+    * The amount of resources the algorithm needs to run
+
+* The main focus is the *time complexity* and the *space* complexity
+
+    * Time complexity is the number of basic operations the algorithm requires
+    * Space complexity is the amount of memory the algorithm requires
 
 
 
