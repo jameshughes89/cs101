@@ -103,7 +103,7 @@ Complexity Analysis
 * To generalize the idea, if I had :math:`n` numbers, and I guess the number :math:`\frac{n}{2}`
 
     * If you say lower, then the number must be between :math:`0 -- \frac{n}{2} - 1`
-    * If you said higher, then the number must be between :math:`\frac{n}{2} - 1 -- (n - 1)`
+    * If you said higher, then the number must be between :math:`\frac{n}{2} + 1 -- (n - 1)`
 
 
 
