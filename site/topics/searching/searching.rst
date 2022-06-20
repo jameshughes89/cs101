@@ -1,6 +1,6 @@
-*********
-Searching
-*********
+************************
+Searching and Complexity
+************************
 
 .. image:: you_are_here.jpeg
 
