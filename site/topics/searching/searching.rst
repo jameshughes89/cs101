@@ -105,6 +105,24 @@ Complexity Analysis
     * If you say lower, then the number must be between :math:`0 -- \frac{n}{2} - 1`
     * If you said higher, then the number must be between :math:`\frac{n}{2} + 1 -- (n - 1)`
 
+* With linear search, every guess only eliminated one number
+
+* Once again, let's consider the worse case scenario --- the ``needle`` is not within the ``haystack`` of size :math:`1024`
+
+    * One guess gets me to :math:`512` numbers
+    * Two guesses gets me to :math:`256` numbers
+    * Three guesses get me to :math:`128`
+    * Four gets me to :math:`64`
+    * Five gets me to :math:`32`
+    * Six gets me :math:`16`
+    * Seven :math:`8`
+    * Eight :math:`4`
+    * Nine :math:`2`
+    * Ten :math:`1`
+
+
+
+
 
 
 .. admonition:: Activity++
