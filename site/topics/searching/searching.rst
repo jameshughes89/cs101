@@ -87,7 +87,7 @@ Binary Search
 * This is an example of a *binary search*
 * Like linear search, binary search is used to find an element within some collection
 * However, if I was doing a linear search for a number between :math:`0 -- 1023`, I could only guarantee that I would find the element in :math:`1024` guesses
-* But with binary search, I was able to do it in 10 or less guesses
+* But with binary search, I was able to do it in :math:`10` or less guesses
 * Though, this required the higher/lower condition --- the data was sorted
 
     * A linear search has no such requirement
