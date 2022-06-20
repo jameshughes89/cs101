@@ -99,6 +99,10 @@ Linear Search
     * If ``haystack`` has length of 10,000, the loop will run 10,000 times
     * If ``haystack`` has length of :math:`n`, the loop will run :math:`n` times
 
+* As for space complexity, this ``linear_search`` only requires space for storing ``haystack``
+
+    * Assuming ``haystack`` has length :math:`n`, then we require :math:`n` amount of space
+
 
 .. admonition:: Activity
     :class: activity
