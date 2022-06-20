@@ -2,7 +2,6 @@
 Searching
 *********
 
-.. image:: you_are_here.jpeg
 
 You are *here*
 ==============
