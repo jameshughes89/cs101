@@ -126,7 +126,7 @@ Complexity Analysis
     * If there are :math:`n` things in the ``haystack``, I have to look at all :math:`n`
     * If we doubled the size to :math`2n`, the amount of things needed to be looked at also doubles to :math:`2n`
 
-* With binary search, the relationship between the size of the input :math:`n` and the amount of work is :math:`log_{2}(n)`
+* With binary search however, the relationship between the size of the input :math:`n` and the amount of work is :math:`log_{2}(n)`
 
     * Doubling the size to :math:`2n` only adds one more guess
 
