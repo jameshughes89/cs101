@@ -81,9 +81,21 @@ Binary Search
     I will guess a number between 0 -- 1023 in 10 or less guesses.
 
     There is a catch however --- you have to tell me if the number is *higher* or *lower* than my guess before I guess
-    again. 
+    again.
 
-   
+
+* This is an example of a *binary search*
+* Like a linear search, binary search is used to find an element within some collection
+* However, if I was doing a linear search for a number between 0 -- 1023, I could only guarantee that I would find the element in 1024 guesses
+* But with binary search, I was able to do it in 10 or less guesses
+* Though, this required the higher/lower condition --- the data was sorted
+
+    * A linear search has no such requirement
+
+
+
+
+
 .. admonition:: Activity++
     :class: activity
 
