@@ -32,13 +32,12 @@ Sorting Algorithms
     You can keep your discussion high-level, but try to explain it such that the person you are explaining it to could
     follow your instructions to sort things.
 
+.. note::
 
+    Each of the following algorithms have many possible implementations. What makes the algorithm the *algorithm* is the
+    high-level idea, not the actual, literal implementations. This idea will be emphasized as we discuss the individual
+    sorting algorithms below.
 
-
-
-.. Warning::
-
-    Each of the following algorithms have many implementations. What makes the algorithm the algorithm is the *high-level* idea, not the actual, literal implementations.
    
 Insertion sort
 ==============
