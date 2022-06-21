@@ -4,7 +4,15 @@ Sorting Algorithms
 
 .. Warning::
 
-    We are into the domain of *nontrivial* algorithms. You should **not** expect to look at these algorithms and immediately understand how they work. (In fact, if you can do that, you should immediately enroll in grad school in Computer Science). These algorithms require *careful study* to make sense of. The best tool you have for understanding how they work is to *carefully trace their operation, step by step*. Trying to understand complex algorithms "all in one go" is a recipe for frustration. Take your time, and step through the algorithm (with pen and paper) on a small input to get a feel for what it's doing. I know you know about the debugger, but pen and paper is still #1. 
+    At this stage of the course we are starting to see nontrivial algorithms. Although you may have been able to quickly
+    understand the previous algorithms, going forward you should not expect to observe an algorithm and immediately
+    understand how it works.
+
+    Although you are all equipped with the requisite skills to understand these algorithms, they require *careful study*
+    to understand. The best strategy for approaching these algorithms is to carefully trace through their operation,
+    step by step, making no assumptions of the code.
+
+
    
 Sorting
 =======
