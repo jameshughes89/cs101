@@ -57,7 +57,7 @@ Linear Search
         * Might there exist some super clever algorithm that is somehow better (faster) than yours?   
 	  
 
-  .. raw:: html
+.. raw:: html
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8unA_a5xcCU" frameborder="0" allowfullscreen></iframe>
 
