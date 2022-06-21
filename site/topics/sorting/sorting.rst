@@ -13,22 +13,28 @@ Sorting Algorithms
     step by step, making no assumptions of the code.
 
 
-   
-Sorting
-=======
+* Similar to searching, sorting is a problem you are all familiar with
+* Unlike searching, we have not investigated any sorting algorithms
+* Believe it or not, there are many ways one could sort a list
 
-* Believe it or not, there are a *lot* of ways to sort a list!
-* Some algorithms are just plain bad.
-* Some are usually pretty good.
-* There is no *best* algorithm for *any* list. Just trade offs.
-* We're going to look at a few simple sorting algorithms now.
+    * Some are better than others
+    * Some are better than others under certain conditions
+    * Some are just plain terrible
 
 .. admonition:: Activity
     :class: activity
 
-    1. Have you ever sorted things in your life?
-    2. Take 2 mins to talk amongst yourselves about the *algorithm* you used to sort the things. 
-    3. What did you do?
+    #. Have you ever sorted things in your life?
+    #. Take a moment to talk amongst yourselves about *how* you you sorted things.
+
+        * What was the step-by-step *algorithm*?
+
+    You can keep your discussion high-level, but try to explain it such that the person you are explaining it to could
+    follow your instructions to sort things.
+
+
+
+
 
 .. Warning::
 
