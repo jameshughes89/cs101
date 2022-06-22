@@ -38,7 +38,36 @@ Sorting Algorithms
     high-level idea, not the actual, literal implementations. This idea will be emphasized as we discuss the individual
     sorting algorithms below.
 
-   
+
+Selection Sort
+==============
+
+.. image:: selection_sort.gif
+   :height: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Selection_sort
+
+
+* It is fairly accessible, and chances are you have sorted things in real life using this algorithm
+* Selection sort works by repeatedly selecting the smallest element from the collection
+* The high-level algorithm is as follows
+
+    * Start with the unsorted list and an empty list for the sorted elements
+    * For each element in the collection
+
+        * Perform a linear on the unsorted list for the current smallest element
+        * Remove the current smallest element from the unsorted list and append it to the sorted list
+
+
+
+
+
+
+
+
+
+
+
 Insertion sort
 ==============
 
