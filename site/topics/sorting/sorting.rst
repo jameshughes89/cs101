@@ -66,11 +66,11 @@ Selection Sort
 
         * It cannot come *before* anything in the sorted collection since we know it must be greater than (or equal to) all elements in the sorted collection
 
+.. admonition:: Activity
+    :class: activity
 
-
-
-
-
+    Perform a selection sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
+    and sorted list at each step of the algorithm.
 
 
 
