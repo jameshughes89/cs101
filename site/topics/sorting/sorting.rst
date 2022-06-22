@@ -89,6 +89,10 @@ Selection Sort
         * We need to do :math:`n` work :math:`n` times
         * This would be a total of :math:`n^{2}` work for an unsorted list of size :math:`n`
 
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ADD6jsSS9HI" frameborder="0" allowfullscreen></iframe>
+
 
 Insertion sort
 ==============
