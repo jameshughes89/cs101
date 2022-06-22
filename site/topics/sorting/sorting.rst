@@ -59,6 +59,12 @@ Selection Sort
         * Remove the current smallest element from the unsorted list and append it to the sorted list
 
 
+* To reason about how and it works, consider
+
+    * The first time the linear search finds the smallest element, that element must be the first element in the sorted collection
+    * Every other subsequent linear search finds the remaining smallest element and appends it to the sorted collection
+
+        * It cannot come *before* anything in the sorted collection since we know it must be greater than (or equal to) all elements in the sorted collection
 
 
 
