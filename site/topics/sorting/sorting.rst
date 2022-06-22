@@ -1,30 +1,43 @@
-************
-Some Sorting
-************
+******************
+Sorting Algorithms
+******************
 
 .. Warning::
 
-    We are into the domain of *nontrivial* algorithms. You should **not** expect to look at these algorithms and immediately understand how they work. (In fact, if you can do that, you should immediately enroll in grad school in Computer Science). These algorithms require *careful study* to make sense of. The best tool you have for understanding how they work is to *carefully trace their operation, step by step*. Trying to understand complex algorithms "all in one go" is a recipe for frustration. Take your time, and step through the algorithm (with pen and paper) on a small input to get a feel for what it's doing. I know you know about the debugger, but pen and paper is still #1. 
-   
-Sorting
-=======
+    At this stage of the course we are starting to see nontrivial algorithms. Although you may have been able to quickly
+    understand the previous algorithms, going forward you should not expect to observe an algorithm and immediately
+    understand how it works.
 
-* Believe it or not, there are a *lot* of ways to sort a list!
-* Some algorithms are just plain bad.
-* Some are usually pretty good.
-* There is no *best* algorithm for *any* list. Just trade offs.
-* We're going to look at a few simple sorting algorithms now.
+    Although you are all equipped with the requisite skills to understand these algorithms, they require *careful study*
+    to understand. The best strategy for approaching these algorithms is to carefully trace through their operation,
+    step by step, making no assumptions of the code.
+
+
+* Similar to searching, sorting is a problem you are all familiar with
+* Unlike searching, we have not investigated any sorting algorithms
+* Believe it or not, there are many ways one could sort a list
+
+    * Some are better than others
+    * Some are better than others under certain conditions
+    * Some are just plain terrible
 
 .. admonition:: Activity
     :class: activity
 
-    1. Have you ever sorted things in your life?
-    2. Take 2 mins to talk amongst yourselves about the *algorithm* you used to sort the things. 
-    3. What did you do?
+    #. Have you ever sorted things in your life?
+    #. Take a moment to talk amongst yourselves about *how* you you sorted things.
 
-.. Warning::
+        * What was the step-by-step *algorithm*?
 
-    Each of the following algorithms have many implementations. What makes the algorithm the algorithm is the *high-level* idea, not the actual, literal implementations.
+    You can keep your discussion high-level, but try to explain it such that the person you are explaining it to could
+    follow your instructions to sort things.
+
+.. note::
+
+    Each of the following algorithms have many possible implementations. What makes the algorithm the *algorithm* is the
+    high-level idea, not the actual, literal implementations. This idea will be emphasized as we discuss the individual
+    sorting algorithms below.
+
    
 Insertion sort
 ==============
