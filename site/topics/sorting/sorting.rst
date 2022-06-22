@@ -66,12 +66,28 @@ Selection Sort
 
         * It cannot come *before* anything in the sorted collection since we know it must be greater than (or equal to) all elements in the sorted collection
 
+
 .. admonition:: Activity
     :class: activity
 
     Perform a selection sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
     and sorted list at each step of the algorithm.
 
+
+* Now that we know a little bit about how to analyze algorithms, let's figure out how much work this algorithm needs in order to solve the problem
+
+    * Selection sort requires a linear search to find the current smallest element in the collection
+
+        * We know that linear search takes :math:`n` amount of work for a list of size :math:`n`
+
+    * But, selection sort needs to perform a linear search for each element in the collection
+
+        * If our unsorted list is of size :math:`n`, that means the linear search must be run :math:`n` times
+
+    * If we put it together, we need to run linear search, which takes :math:`n` amount of work, a total of :math:`n` times
+
+        * We need to do :math:`n` work :math:`n` times
+        * This would be a total of :math:`n^{2}` work for an unsorted list of size :math:`n`
 
 
 Insertion sort
