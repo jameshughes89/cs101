@@ -1,6 +1,6 @@
 def selection_sort(collection):
     sorted_collection = []
-    for _ in collection:
+    for _ in range(len(collection)):
         current_smallest = collection[0]
         for element in collection:
             if element < current_smallest:
