@@ -8,5 +8,3 @@ def selection_sort(collection):
         collection.remove(current_smallest)
         sorted_collection.append(current_smallest)
     return sorted_collection
-
-
