@@ -55,7 +55,7 @@ Selection Sort
     * Start with the unsorted list and an empty list for the sorted elements
     * For each element in the collection
 
-        * Perform a linear on the unsorted list for the current smallest element
+        * Perform a linear search on the unsorted list for the current smallest element
         * Remove the current smallest element from the unsorted list and append it to the sorted list
 
 
