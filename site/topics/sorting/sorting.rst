@@ -48,7 +48,7 @@ Selection Sort
    :target: https://en.wikipedia.org/wiki/Selection_sort
 
 
-* It is fairly accessible, and chances are you have sorted things in real life using this algorithm
+* Selection sort is fairly accessible, and chances are you have sorted things in real life using this algorithm
 * Selection sort works by repeatedly selecting the smallest element from the collection
 * The high-level algorithm is as follows
 
@@ -88,6 +88,22 @@ Selection Sort
 
         * We need to do :math:`n` work :math:`n` times
         * This would be a total of :math:`n^{2}` work for an unsorted list of size :math:`n`
+
+
+.. code-block:: python
+    :linenos:
+
+    def selection_sort(collection):
+        sorted_collection = []
+        for _ in range(len(collection)):
+            current_smallest = collection[0]
+            for element in collection:
+                if element < current_smallest:
+                    current_smallest = element
+            collection.remove(current_smallest)
+            sorted_collection.append(current_smallest)
+        return sorted_collection
+
 
 .. raw:: html
 
