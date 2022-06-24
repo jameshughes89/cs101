@@ -38,7 +38,78 @@ Sorting Algorithms
     high-level idea, not the actual, literal implementations. This idea will be emphasized as we discuss the individual
     sorting algorithms below.
 
-   
+
+Selection Sort
+==============
+
+.. image:: selection_sort.gif
+   :height: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Selection_sort
+
+
+* Selection sort is fairly accessible, and chances are you have sorted things in real life using this algorithm
+* Selection sort works by repeatedly selecting the smallest element from the collection
+* The high-level algorithm is as follows
+
+    * Start with the unsorted list and an empty list for the sorted elements
+    * For each element in the collection
+
+        * Perform a linear search on the unsorted list for the current smallest element
+        * Remove the current smallest element from the unsorted list and append it to the sorted list
+
+
+* To reason about how and it works, consider
+
+    * The first time the linear search finds the smallest element, that element must be the first element in the sorted collection
+    * Every other subsequent linear search finds the remaining smallest element and appends it to the sorted collection
+
+        * It cannot come *before* anything in the sorted collection since we know it must be greater than (or equal to) all elements in the sorted collection
+
+
+.. admonition:: Activity
+    :class: activity
+
+    Perform a selection sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
+    and sorted list at each step of the algorithm.
+
+
+* Now that we know a little bit about how to analyze algorithms, let's figure out how much work this algorithm needs in order to solve the problem
+
+    * Selection sort requires a linear search to find the current smallest element in the collection
+
+        * We know that linear search takes :math:`n` amount of work for a list of size :math:`n`
+
+    * But, selection sort needs to perform a linear search for each element in the collection
+
+        * If our unsorted list is of size :math:`n`, that means the linear search must be run :math:`n` times
+
+    * If we put it together, we need to run linear search, which takes :math:`n` amount of work, a total of :math:`n` times
+
+        * We need to do :math:`n` work :math:`n` times
+        * This would be a total of :math:`n^{2}` work for an unsorted list of size :math:`n`
+
+
+.. code-block:: python
+    :linenos:
+
+    def selection_sort(collection):
+        sorted_collection = []
+        for _ in range(len(collection)):
+            current_smallest = collection[0]
+            for element in collection:
+                if element < current_smallest:
+                    current_smallest = element
+            collection.remove(current_smallest)
+            sorted_collection.append(current_smallest)
+        return sorted_collection
+
+
+.. raw:: html
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ADD6jsSS9HI" frameborder="0" allowfullscreen></iframe>
+
+
 Insertion sort
 ==============
 
@@ -85,66 +156,6 @@ Let's have a look at an insertion sort implementation in Python::
 .. raw:: html
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/ofZ5ygghj9g" frameborder="0" allowfullscreen></iframe>
-	
-Selection Sort
-==============
-
-	.. image:: selection.gif
-
-* You give me a list called ``in_list``
-* I scan through the whole list to find the smallest element
-* I swap the smallest element with the first element in the list
-* I repeat the above process for the remainder of the list (excluding the first element)
-* Lather, rinse, repeat.
-
-.. admonition:: Activity
-    :class: activity
-
-    Do a selection sort, with pencil and paper, on the list ``[3,7,15,9,4,11,1,5,2]``. Record the value of your list at each step.  
-
-* Different idea than Insertion sort, but still gets the job done!
-* This is a very important thing to understand:
-    * *Sorting* is a *problem*, not an algorithm
-    * There are (infinitely) *many* algorithms to solve any (solvable) problem
-    * Some algorithms will always solve the problem more efficiently than others
-    * Some will solve the problem more efficiently only for certain conditions
-    * For some problems we can *prove* that a particular algorithm is the best (in the sense that any other algorithm can, at best, be equally efficient)
-    * For many problems, we *still don't know* how to do this!
-   
-* Fortunately, for sorting we *do* know how to do this analysis... and both Insertion Sort and Selection Sort suck.
- 
-Let's see Selection sort in action::
-
-    def selection_sort(in_list):
-        for i in range(len(in_list)):
-      
-            # Find the smallest remaining element
-            min_index = i
-            min_val = in_list[i]
-            for j in range(i+1,len(in_list)):
-                if in_list[j] < min_val:
-                    min_val = in_list[j]
-                    min_index = j
-                   
-            # Swap it to the left side of the list
-            in_list[min_index] = in_list[i]
-            in_list[i] = min_val
-         
-        return in_list
-    
-.. admonition:: Activity
-    :class: activity
-
-    Modify the ``selection_sort()`` function above so that it prints out the value of ``in_list`` after each iteration of the outer `for` loop. Try sorting a few lists and following the output. 
-
-.. admonition:: Activity
-    :class: activity
-
-    How many times do I go around the outer `for` loop in ``selection_sort()`` ? How about the inner `for` loop?
-   
-.. raw:: html
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/ADD6jsSS9HI" frameborder="0" allowfullscreen></iframe> 
 
 Bubble Sort
 ===========
