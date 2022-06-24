@@ -1,6 +1,11 @@
 import unittest
 
-from src.sorting_topic import selection_sort
+from src.sorting_topic import (
+    bubble_sort,
+    bubble_sort_improved,
+    insertion_sort,
+    selection_sort,
+)
 
 
 class SortingTopicTest(unittest.TestCase):
@@ -26,3 +31,18 @@ class SortingTopicTest(unittest.TestCase):
         for case, expect in zip(self.cases, self.expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertEqual(expect, selection_sort(case))
+
+    def test_insertion_sort_multiple_cases_returns_sorted_list(self):
+        for case, expect in zip(self.cases, self.expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertEqual(expect, insertion_sort(case))
+
+    def test_bubble_sort_multiple_cases_returns_sorted_list(self):
+        for case, expect in zip(self.cases, self.expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertEqual(expect, bubble_sort(case))
+
+    def test_bubble_sort_improved_multiple_cases_returns_sorted_list(self):
+        for case, expect in zip(self.cases, self.expecteds):
+            with self.subTest(case=case, expect=expect):
+                self.assertEqual(expect, bubble_sort_improved(case))
