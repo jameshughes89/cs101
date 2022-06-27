@@ -22,6 +22,7 @@ def insertion_sort(collection):
 
 
 def bubble_sort(collection):
+    collection = collection[:]
     for j in range(len(collection)):
         for i in range(len(collection) - 1 - j):
             if collection[i] > collection[i + 1]:
@@ -30,6 +31,7 @@ def bubble_sort(collection):
 
 
 def bubble_sort_improved(collection):
+    collection = collection[:]
     has_swapped = True
     complete_cells = 0
     while has_swapped:
