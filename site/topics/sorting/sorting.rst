@@ -273,6 +273,28 @@ Bubble Sort
                     collection[i], collection[i + 1] = collection[i + 1], collection[i]
         return collection
 
+* We could improve the algorithm slightly
+* Consider being asked to sort an already sorted list with bubble sort
+* It would be rather silly doing :math:`n` passes on the list to sort it if we know it's already sorted
+* Instead, we can repeatedly do passes on the list until we complete a full scan without any swapps
+
+    * If there was no swaps, it means nothing was out of order, which means the list os sorted
+
+.. code-block:: python
+    :linenos:
+
+    def bubble_sort_improved(collection):
+        collection = collection[:]
+        has_swapped = True
+        complete_cells = 0
+        while has_swapped:
+            has_swapped = False
+            for i in range(len(collection) - 1 - complete_cells):
+                if collection[i] > collection[i + 1]:
+                    collection[i], collection[i + 1] = collection[i + 1], collection[i]
+                    has_swapped = True
+            complete_cells += 1
+        return collection
 
 .. raw:: html
 
