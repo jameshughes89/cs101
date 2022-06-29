@@ -110,7 +110,6 @@ Selection Sort
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ADD6jsSS9HI" frameborder="0" allowfullscreen></iframe>
 
 
-
 Insertion Sort
 ==============
 
@@ -120,47 +119,55 @@ Insertion Sort
    :target: https://en.wikipedia.org/wiki/Insertion_sort
 
 
-* You give me a list called ``in_list``
-* I create a new, empty, list called ``sorted_list``
-* For each element in ``in_list``
-    * I *insert* that element into ``sorted_list`` in the correct spot.
-    * e.g., if I'm asked to insert ``5`` into the list ``[1,3,7]``, I should end up with: ``[1,3,5,7]``
+* Insertion sort works by repeatedly inserting elements into their proper location within a collection
+* The high-level algorithm is as follows
+
+    * Start with the unsorted list and an empty list for the sorted elements
+    * For each element in the collection
+
+        * Remove the element from the unsorted list
+        * Perform a linear search on the sorted list to find where the new element should be inserted
+        * Insert the new element into the sorted list
+
+
+* To reason about how and it works, consider
+
+    * Elements are inserted into their proper relative location to the elements already within the sorted collection
+    * Any subsequent insertion cannot disrupt the ordering of the whole list if it is being inserted in its proper location
+
 
 .. admonition:: Activity
     :class: activity
 
-    Do an insertion sort, with pencil and paper, on the list ``[3,7,15,9,4,11,1,5,2]``. Record the value of ``sorted_list`` at each step.   
-   
-Let's have a look at an insertion sort implementation in Python::
+    Perform a selection sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
+    and sorted list at each step of the algorithm.
 
-    def insertion_sort(in_list):
-        sorted_list = []
-        for element in in_list:
+
+* The analysis of the algorithm is very similar to that of selection sort
+
+    * We need to perform a linear search for each of the :math:`n` elements in the unsorted list
+    * We know linear search takes :math:`n` amount of work for a list of size :math:`n`
+    * Therefore, we need to do :math:`n` work :math:`n` times --- a total of :math:`n^{2}` work for an unsorted list of size :math:`n`
+
+
+.. code-block:: python
+    :linenos:
+
+    def insertion_sort(collection):
+        sorted_collection = []
+        for element in collection:
             i = 0
-            while i < len(sorted_list) and (element > sorted_list[i]):
-                i = i + 1
-            sorted_list.insert(i, element)
-        return sorted_list
+            # Scan sorted collection to find insertion spot
+            while i < len(sorted_collection) and sorted_collection[i] < element:
+                i += 1
+            sorted_collection.insert(i, element)
+        return sorted_collection
 
-.. admonition:: Activity
-    :class: activity
-
-    Modify the ``insertion_sort()`` function above so that it prints out the value of ``sorted_list`` after each iteration of the `for` loop. Try sorting a few lists and following the output. Does it make sense to you?
-
-* Now that we've got the idea down, let's be computer science nerds about it.
-
-.. admonition:: Activity
-    :class: activity
-
-    * How many times do I go around the `for` loop in ``insertion_sort()`` ? On each trip through the `for` loop, I also have to go through the inner `while` loop.
-        * How many times do I go through the `while` loop, on average?
-        * In the worst case?
-	  
-    * Is Insertion sort the best possible sort? Can we do better?
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/ofZ5ygghj9g" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ofZ5ygghj9g" frameborder="0" allowfullscreen></iframe>
+
 
 Bubble Sort
 ===========
