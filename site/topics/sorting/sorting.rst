@@ -193,6 +193,28 @@ Bubble Sort
 
 * Consider the below unsorted list
 
+    :math:`4, 3, 2, 1`
+
+    * Four is greater than three, so they swap
+
+    :math:`3, 4, 2, 1`
+
+    * Four is greater than two, so they swap
+
+    :math:`3, 2, 4, 1`
+
+    * Four is greater than one, so they swap
+
+    :math:`3, 2, 1, 4`
+
+
+* There are two important things to notice at the end of a pass
+
+    * A single pass is not enough to guarantee the list is sorted
+    * After the first pass, the largest element in the unsorted list will be in its correct location
+
+* If we repeat this process by doing another pass
+
     :math:`3, 2, 1, 4`
 
     * Three is greater than two, so they swap
@@ -208,10 +230,17 @@ Bubble Sort
     :math:`2, 1, 3, 4`
 
 
-* There are two important things to notice at the end of a pass
+* Notice that the second largest element in the unsorted list is now in its correct location
 
-    * A single pass is not enough to guarantee the list is sorted
-    * After the first pass, the largest element in the unsorted list will be in its correct location 
+* To generalize this idea
+* If after the :math:`i^{th}` pass the :math:`i^{th}` largest element is in its correct location, how many passes do we need?
+
+    * Assuming an unsorted list of size :math:`n`, we need :math:`n` passes to guarantee the list is sorted
+    * First pass has the largest in its correct location
+    * Second has the second largest in its correct location
+    * Third has the third largest in the correct location
+    * ...
+    * :math:`n^{th}` pass has the :math:`n^{th}` largest in its correct location  
 
 
 
