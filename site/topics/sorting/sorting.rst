@@ -238,5 +238,5 @@ Sorting Algorithm Visualizations
 For Next Class
 ==============
 
-* Read `chapter 18 of the text <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_  
+* Read `Chapter 18 of the text <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_
 
