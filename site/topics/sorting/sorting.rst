@@ -182,6 +182,58 @@ Bubble Sort
    :align: center
    :target: https://en.wikipedia.org/wiki/Bubble_sort
 
+
+
+* Bubble sort works a little differently than selection or insertion sort
+* The general idea is to perform multiple scans of the unsorted list comparing each adjacent pair of emements
+
+    * If the elements are out of order, swap them, otherwise, leave them alone
+    * Move to the next adjacent pair of elements
+    * Repeat
+
+* Consider the below unsorted list
+
+    :math:`3, 2, 1, 4`
+
+    * Three is greater than two, so they swap
+
+    :math:`2, 3, 1, 4`
+
+    * Three is greater than 1, so they swap
+
+    :math:`2, 1, 3, 4`
+
+    *  Three is less than four, so they do not swap
+
+    :math:`2, 1, 3, 4`
+
+
+* There are two important things to notice at the end of a pass
+
+    * A single pass is not enough to guarantee the list is sorted
+    * After the first pass, the largest element in the unsorted list will be in its correct location 
+
+
+
+* The high-level algorithm is as follows
+
+    * Perform a scan on the unsorted list comparing each adjacent pair of elements
+
+        * If the elements are out of order, swap them
+        * Move to the next adjacent pair of elements
+        * Repeat
+
+    * Repeat the scan :math:`n` times, where :math:`n` is the number of elements in the list
+
+
+
+    * Start with the unsorted list and an empty list for the sorted elements
+    * For each element in the collection
+
+        * Remove the element from the unsorted list
+        * Perform a linear search on the sorted list to find the index where the new element should be inserted
+        * Insert the new element into the sorted list at the index where it belongs
+
 * Maybe you find Insertion sort or Selection sort ugly or offensive?
 * No problem. Remember: there are *many* algorithms to solve any one problem.
 * You give me a list called ``in_list``
