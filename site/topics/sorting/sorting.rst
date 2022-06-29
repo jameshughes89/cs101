@@ -235,7 +235,7 @@ Sorting Algorithm Visualizations
 * http://www.sorting-algorithms.com/
 
    
-For next class 
+For Next Class
 ==============
 
 * Read `chapter 18 of the text <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_  
