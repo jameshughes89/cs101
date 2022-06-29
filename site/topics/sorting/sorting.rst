@@ -182,10 +182,8 @@ Bubble Sort
    :align: center
    :target: https://en.wikipedia.org/wiki/Bubble_sort
 
-
-
 * Bubble sort works a little differently than selection or insertion sort
-* The general idea is to perform multiple scans of the unsorted list comparing each adjacent pair of emements
+* The general idea is to perform multiple scans of the unsorted list comparing each adjacent pair of elements
 
     * If the elements are out of order, swap them, otherwise, leave them alone
     * Move to the next adjacent pair of elements
@@ -207,8 +205,7 @@ Bubble Sort
 
     :math:`3, 2, 1, 4`
 
-
-* There are two important things to notice at the end of a pass
+* There are two important things to notice at the end of the first pass
 
     * A single pass is not enough to guarantee the list is sorted
     * After the first pass, the largest element in the unsorted list will be in its correct location
@@ -240,77 +237,46 @@ Bubble Sort
     * Second has the second largest in its correct location
     * Third has the third largest in the correct location
     * ...
-    * :math:`n^{th}` pass has the :math:`n^{th}` largest in its correct location  
-
-
+    * :math:`n^{th}` pass has the :math:`n^{th}` largest in its correct location
 
 * The high-level algorithm is as follows
 
-    * Perform a scan on the unsorted list comparing each adjacent pair of elements
+    * Repeat the following `n` times
 
-        * If the elements are out of order, swap them
-        * Move to the next adjacent pair of elements
-        * Repeat
+        * Perform a scan on the unsorted list comparing each adjacent pair of elements
 
-    * Repeat the scan :math:`n` times, where :math:`n` is the number of elements in the list
+            * If the elements are out of order, swap them
+            * Move to the next adjacent pair of elements
+            * Repeat
 
-
-
-    * Start with the unsorted list and an empty list for the sorted elements
-    * For each element in the collection
-
-        * Remove the element from the unsorted list
-        * Perform a linear search on the sorted list to find the index where the new element should be inserted
-        * Insert the new element into the sorted list at the index where it belongs
-
-* Maybe you find Insertion sort or Selection sort ugly or offensive?
-* No problem. Remember: there are *many* algorithms to solve any one problem.
-* You give me a list called ``in_list``
-* I scan through the list, looking at adjacent pairs of values.
-* If I see a pair that is "out of order" (e.g., ``[17, 9]`` ), I swap the two values to be in order ( ``[9,17]`` ).
-* I keep doing that until the list is sorted.
 
 .. admonition:: Activity
     :class: activity
 
-    Do a bubble sort, with pencil and paper, on the list ``[3,7,15,9,4,11,1,5,2]``. Record the value of your list at each step.  
+    Perform a bubble sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
+    and sorted list at each step of the algorithm.
 
-* It's called "bubble sort" because the smaller values seem to "bubble up to the top".
-* Kinda cool because:
-    * We end up effecting a *global* change on the list (it goes from unsorted to sorted)...
-    * ... but we only use *local* information about the elements (we only ever compare neighbours in the list)
-   
-Let's see Bubble sort in Python::
 
-    def bubble_sort(in_list):
-        swapped_something = True
-        while swapped_something:
-            swapped_something = False
-         
-            for i in range(len(in_list)-1):
-                if in_list[i] > in_list[i+1]:
-                    tmp = in_list[i]
-                    in_list[i]=in_list[i+1]
-                    in_list[i+1]=tmp
-                    swapped_something = True
-        return in_list
+* The analysis of the algorithm should feel familiar at this point
 
-* Ugh... Wouldn't the above code be better if there were comments?
+    * We need to do a scan of :math:`n` elements a total of :math:`n` times
+    * therefore, we need to do :math:`n` work :math:`n` times --- a total of :math:`n^{2}` work for an unsorted list of size :math:`n`
 
-.. admonition:: Activity
-    :class: activity
+.. code-block:: python
+    :linenos:
 
-    Modify the ``bubble_sort()`` function above so that it prints out the value of ``in_list`` after each iteration of the outer `while` loop. Try sorting a few lists and following the output.   
-   
-.. admonition:: Activity
-    :class: activity
+    def bubble_sort(collection):
+        collection = collection[:]
+        for j in range(len(collection)):
+            for i in range(len(collection) - 1 - j):
+                if collection[i] > collection[i + 1]:
+                    collection[i], collection[i + 1] = collection[i + 1], collection[i]
+        return collection
 
-    How many times do I go around the outer `while` loop ? How
-    about the inner `for` loop?
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/NfmAFOlM5Jw" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NfmAFOlM5Jw" frameborder="0" allowfullscreen></iframe>
 	
 
 Sorting Algorithm Visualizations
