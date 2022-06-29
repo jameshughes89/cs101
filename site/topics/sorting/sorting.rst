@@ -126,8 +126,8 @@ Insertion Sort
     * For each element in the collection
 
         * Remove the element from the unsorted list
-        * Perform a linear search on the sorted list to find where the new element should be inserted
-        * Insert the new element into the sorted list
+        * Perform a linear search on the sorted list to find the index where the new element should be inserted
+        * Insert the new element into the sorted list at the index where it belongs
 
 
 * To reason about how and it works, consider
