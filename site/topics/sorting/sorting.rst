@@ -228,42 +228,9 @@ Let's see Bubble sort in Python::
 
 	<iframe width="560" height="315" src="https://www.youtube.com/embed/NfmAFOlM5Jw" frameborder="0" allowfullscreen></iframe>
 	
-	
-Bogosort
-========
 
-Here's another attempt at a sorting algorithm::
-
-    import random
-   
-    def is_sorted(in_list):
-        last = in_list[0]
-        for element in in_list[1:]:
-            if last > element:
-                return False
-            last = element
-        return True
-     
-     
-    def bogo_sort(in_list):
-        while not is_sorted(in_list):
-            random.shuffle(in_list)
-
-        return in_list
-
-.. admonition:: Activity
-    :class: activity
-
-    How does this sorting algorithm work? We're "working backwards" this time. Starting from the code, come up with an English explanation for how the algorithm works. You might want to add a ``print`` statement after the ``random.shuffle(in_list)`` line to get some intuition. If you aren't sure what ``random.shuffle()`` does... look it up, or just *try* it on some sample lists. Likewise, you'll have to figure out what ``is_sorted()`` is doing (though the name should help). 
-   
-.. admonition:: Activity
-    :class: activity
-   
-    Is this a good sorting algorithm? How many times do I have to go through the ``while`` loop in ``bogo_sort``? How about the ``for`` loop in ``is_sorted()``?
-
-
-Let's see some sorting in action!
-=================================
+Sorting Algorithm Visualizations
+================================
 
 * http://www.sorting-algorithms.com/
 
