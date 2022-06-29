@@ -210,6 +210,9 @@ Bubble Sort
     * A single pass is not enough to guarantee the list is sorted
     * After the first pass, the largest element in the unsorted list will be in its correct location
 
+        * The largest element will always *win* the swap
+        * If that element wins the swap, it will be considered in the next comparison of adjacent elements
+
 * If we repeat this process by doing another pass
 
     :math:`3, 2, 1, 4`
