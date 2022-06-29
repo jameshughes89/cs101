@@ -281,7 +281,7 @@ Bubble Sort
 * It would be rather silly doing :math:`n` passes on the list to sort it if we know it's already sorted
 * Instead, we can repeatedly do passes on the list until we complete a full scan without any swaps
 
-    * If there was no swaps, it means nothing was out of order, which means the list os sorted
+    * If there was no swaps, it means nothing was out of order, which means the list is sorted
 
 .. code-block:: python
     :linenos:
