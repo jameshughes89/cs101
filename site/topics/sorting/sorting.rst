@@ -261,37 +261,6 @@ Here's another attempt at a sorting algorithm::
    
     Is this a good sorting algorithm? How many times do I have to go through the ``while`` loop in ``bogo_sort``? How about the ``for`` loop in ``is_sorted()``?
 
-WTF!?
-=====
-
-* Searching a list is *way* faster when we have a sorted list. 
-* Why would someone want to sort a list in order to search it slightly faster when sorting is so slow?
-* Well, we might want to search the same list many times.
-    * We only need to sort it once.
-* We might want to sort something without the end goal of searching.
-* BUT, also, there are better sorting algorithms...
-
-Why are we doing this again?
-============================
-
-* In your day-to-day life as a programmer, you won't write your own sorting routines. You'll rely on routines written by others, like Python's built-in ``sort()`` (which, by the way, uses the `Timsort algorithm <http://en.wikipedia.org/wiki/Timsort>`_ )
-* BUT... even if you don't build the tools yourself, you should understand how they work
-* More importantly: you **WILL** need to develop your own algorithms for some task that is much less well-studied than sorting.
-* You're learning fundamentals of algorithm development here... not just the details of sorting.
-* Let me say that again... **THE POINT OF THIS IS TO LEARN THE ALGORITHM FUNDAMENTALS**
-
-
-
-The horrible truth
-==================
-
-* Insertion, Selection, and Bubble sort generally suck as sorting algorithms.
-* BUT... they are within our current means.
-* Once we've studied *recursion*, we will revisit sorting and see two *very good* sorting algorithms (Quicksort and Mergesort).
-* If you want to geek out on sorting *right now*:
-    * `The relevant Wikipedia page is very good <http://en.wikipedia.org/wiki/Sorting_algorithm>`_
-    * Knuth's `The Art of Computer Programming Volume 3: Sorting and Searching <http://www.amazon.com/Art-Computer-Programming-Volume-Searching/dp/0201896850>`_ .
-        * It would be nearly impossible to overstate the importance of Donald Knuth's contributions to Computer Science.
 
 Let's see some sorting in action!
 =================================
