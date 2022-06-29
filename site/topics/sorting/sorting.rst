@@ -177,7 +177,10 @@ Insertion Sort
 Bubble Sort
 ===========
 
-	.. image:: bubble.gif
+.. image:: bubble_sort.gif
+   :height: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Bubble_sort
 
 * Maybe you find Insertion sort or Selection sort ugly or offensive?
 * No problem. Remember: there are *many* algorithms to solve any one problem.
