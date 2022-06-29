@@ -110,10 +110,15 @@ Selection Sort
     <iframe width="560" height="315" src="https://www.youtube.com/embed/ADD6jsSS9HI" frameborder="0" allowfullscreen></iframe>
 
 
-Insertion sort
+
+Insertion Sort
 ==============
 
-	.. image:: insertion.gif
+.. image:: insertion_sort.gif
+   :height: 333 px
+   :align: center
+   :target: https://en.wikipedia.org/wiki/Insertion_sort
+
 
 * You give me a list called ``in_list``
 * I create a new, empty, list called ``sorted_list``
