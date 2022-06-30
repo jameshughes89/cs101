@@ -191,21 +191,13 @@ Bubble Sort
 
 * Consider the below unsorted list
 
-    :math:`4, 3, 2, 1`
+    :math:`4, 3, 2, 1` --- Four is greater than three, so they swap
 
-    * Four is greater than three, so they swap
+    :math:`3, 4, 2, 1` --- Four is greater than two, so they swap
 
-    :math:`3, 4, 2, 1`
+    :math:`3, 2, 4, 1` --- Four is greater than one, so they swap
 
-    * Four is greater than two, so they swap
-
-    :math:`3, 2, 4, 1`
-
-    * Four is greater than one, so they swap
-
-    :math:`3, 2, 1, 4`
-
-* There are two important things to notice at the end of the first pass
+    :math:`3, 2, 1, 4` --- There are two important things to notice at the end of the first pass
 
     * A single pass is not enough to guarantee the list is sorted
     * After the first pass, the largest element in the unsorted list will be in its correct location
@@ -215,17 +207,11 @@ Bubble Sort
 
 * If we repeat this process by doing another pass
 
-    :math:`3, 2, 1, 4`
+    :math:`3, 2, 1, 4` --- Three is greater than two, so they swap
 
-    * Three is greater than two, so they swap
+    :math:`2, 3, 1, 4` --- Three is greater than 1, so they swap
 
-    :math:`2, 3, 1, 4`
-
-    * Three is greater than 1, so they swap
-
-    :math:`2, 1, 3, 4`
-
-    *  Three is less than four, so they do not swap
+    :math:`2, 1, 3, 4` ---  Three is less than four, so they do not swap
 
     :math:`2, 1, 3, 4`
 
