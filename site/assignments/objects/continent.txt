@@ -1,0 +1,15 @@
+Country,Continent
+China,Asia
+United States of America,North America
+Brazil,South America
+Japan,Asia
+Canada,North America
+Indonesia,Asia
+Nigeria,Africa
+Mexico,North America
+Egypt,Africa
+France,Europe
+Italy,Europe
+South Africa,Africa
+South Korea,Asia
+Colombia,South America
