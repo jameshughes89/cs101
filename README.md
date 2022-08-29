@@ -25,7 +25,7 @@ Have administrative privileges and run from cmd
 python -m venv --clear --prompt cs101 venv
 venv\Scripts\activate.bat
 pip install --upgrade pip setuptools wheel
-pip install --editable .
+SETUPTOOLS_ENABLE_FEATURES="legacy-editable" pip install --editable .
 ```
 
 ## Bash
@@ -34,7 +34,7 @@ pip install --editable .
 python3.10 -m venv --clear --prompt cs101 venv
 . venv/bin/activate
 pip install --upgrade pip setuptools wheel
-pip install --editable .
+SETUPTOOLS_ENABLE_FEATURES="legacy-editable" pip install --editable .
 ```
 
 # Formatter
