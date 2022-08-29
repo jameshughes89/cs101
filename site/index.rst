@@ -27,9 +27,9 @@ Dr. James Hughes (Section 11)
 Lecture Section 11
 ^^^^^^^^^^^^^^^^^^
 
-* Tue 11:15 - 12:05 (K4), TBD
-* Wed 13:15 - 14:05 (K5), TBD
-* Fri 12:15 - 13:05 (K6), TBD
+* Tue 11:15 - 12:05 (K4), MULH 2070
+* Wed 13:15 - 14:05 (K5), MULH 2070
+* Fri 12:15 - 13:05 (K6), MULH 2070
 
 
 Lab Sections 11 & 12
@@ -44,7 +44,6 @@ Lab Sections 11 & 12
 
 * Tue, 10:00 -- 11:00
 * Wed, 10:00 -- 11:00
-* Thr, 10:00 -- 11:00
 * Fri, 10:00 -- 11:00
 
 
@@ -59,9 +58,9 @@ Dr. Jean-Alexis Delamer (Section 12)
 Lecture Section 12
 ^^^^^^^^^^^^^^^^^^
 
-* Mon 10:15 - 11:05 (C1), TBD
-* Wed 09:15 - 10:05 (C2), TBD
-* Fri 08:15 - 09:05 (C3), TBD
+* Mon 10:15 - 11:05 (C1), SCHW 110
+* Wed 09:15 - 10:05 (C2), SCHW 110
+* Fri 08:15 - 09:05 (C3), SCHW 110
 
 
 Lab Sections 13 & 14
