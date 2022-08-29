@@ -73,10 +73,10 @@ Lab Sections 13 & 14
 Office Hours
 ^^^^^^^^^^^^
 
-* Mon, 9:00 -- 10:00
-* Wed, 10:30 -- 11:30
-* Thr, 9:00 -- 10:00
-* Fri, 11:00 -- 12:00
+* Mon: 9:00am -- 10:00am
+* Tue: 10:30am -- 11:30am
+* Wed: 10:30am -- 11:30am and 1:00pm -- 2:00pm
+* Thu: 10:30am -- 11:30am
 
 
 YouTube
