@@ -352,8 +352,8 @@ To book an appointment please use the following:
 Academic Accommodation for Medical Illness
 ==========================================
 
-Those unable to attend class, submit an assignment, or write a test, should refer to sections 3.7 and 3.9 of the academic
-calendar.
+Those unable to attend class, submit an assignment, or write a test, should refer to sections 3.7 and 3.9 of the
+academic calendar.
 
 
 Scent Policy
