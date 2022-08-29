@@ -171,25 +171,38 @@ Student Evaluation (Tentative Dates)
 Assignment Submission
 =====================
 
-* Instructions for the submission of assignments will be posted on the course website. It is each student's responsibility to read and follow the instructions. Failure to follow the submission instructions may result in the assignment receiving a mark of zero.
-* You will be required to submit each programming assignment electronically. Details will be given in the assignment descriptions. We reserve the right to use similarity detection software to detect possible cheating cases.
+Instructions for the submission of assignments will be posted on the course website. It is each student's responsibility
+to read and follow the instructions. Failure to follow the submission instructions may result in the assignment
+receiving a mark of zero.
+
+You will be required to submit each programming assignment electronically. Details will be given in the assignment
+descriptions. We reserve the right to use similarity detection software to detect possible cheating cases.
 
 
 Assignment Due Dates
 ====================
 
-* The date and exact time assignments are due will be given in the assignment specifications.
-* No submissions will be taken after the due date; there are no late submissions.
-* No extensions will be given for assignments.
+The date and exact time assignments are due will be given in the assignment specifications. No submissions will be taken
+after the due date; there are no late submissions. No extensions will be given for assignments.
 
 
 
 Assignment Marking
 ==================
 
-* Assignments are marked by the Teaching Assistants, who follow marking schemes provided by instructors. 
-* A request for adjustment in an assignment mark must be made within 2 weeks of the date on which it was first available after marking. (Beyond that date, regrading will not be considered, regardless of whether you retrieved your assignment.) Such a request must be submitted to the course instructor in writing, and must include specific reasons why you believe you deserve more marks. The request must be accompanied by all materials that were originally handed in, as well as the original marker's grade summary sheet. The instructor will inform you by email when the reevaluation process is complete. 
-* It is each student's responsibility to keep up-to-date backups of assignment disk files in case of system crashes or inadvertently erased files. Students must keep disk copies of all material submitted, as well as the actual graded assignment, to guard against the possibility of errors in recording marks. It is not safe to discard these materials until you are satisfied that your final mark for the course has been computed properly.
+Assignments are marked by the Teaching Assistants, who follow marking schemes provided by instructors.
+
+A request for adjustment in an assignment mark must be made within 2 weeks of the date on which it was first available
+after marking. (Beyond that date, regrading will not be considered, regardless of whether you retrieved your
+assignment). Such a request must be submitted to the course instructor in writing, and must include specific reasons why
+you believe you deserve more marks. The request must be accompanied by all materials that were originally handed in, as
+well as the original marker's grade summary sheet. The instructor will inform you by email when the reevaluation process
+is complete.
+
+It is each student's responsibility to keep up-to-date backups of assignment disk files in case of system crashes or
+inadvertently erased files. Students must keep disk copies of all material submitted, as well as the actual graded
+assignment, to guard against the possibility of errors in recording marks. It is not safe to discard these materials
+until you are satisfied that your final mark for the course has been computed properly.
 
 
 Tests
