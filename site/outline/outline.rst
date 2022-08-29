@@ -229,13 +229,13 @@ The purpose of the weekly labs is to give students hands-on experience. Labs wil
 Email Contact
 =============
 
-I may need to send email messages to the whole class or to students individually. Email will be sent to the StFX email address assigned to students. It is the responsibility of the student to read this email on a regular basis. You may wish to have mail forwarded to an alternative email address. 
+**Email etiquette** --- Emails should be addressed to Dr./Prof. Hughes or Delamer.
+
+I may need to send email messages to the whole class or to students individually. Email will be sent to the StFX email address assigned to students. It is the responsibility of the student to read this email on a regular basis. You may wish to have mail forwarded to an alternative email address.
 
 Note that StFX and most other email providers establish quotas or limits on the amount of space available to you. If you let your email accumulate there, your mailbox may fill up and you may lose important email from your instructors. Losing email is not an acceptable excuse for not knowing about the information that was sent. 
 
 Students are encouraged to contact their course instructor via email with brief, email appropriate questions regarding lecture materials or clarification of assignments. However, before sending email to an instructor, the student should check the course website to see if the requested information is already there. Students must send email from their StFX account and include CSCI 161 in the subject line of the email. Lengthy and in-depth questions are to be asked during office hours.
-
-**Email etiquette** --- Emails should be addressed to Dr./Prof. Hughes or Delamer.
 
 
 Attendance
