@@ -207,7 +207,8 @@ Labs
 The purpose of the weekly labs is to give students hands-on experience. Labs will have required assigned work and will revolve around `Kattis <https://open.kattis.com/>`_. 
 
 
-* Labs begin on the 1st week of class. 
+* Labs begin on the 1st week of class.
+* Pre lab exercises must be completed before the start of the lab. Students who have not completed the pre-lab exercises will be asked to leave.
 * Lab exercises must be completed for marks; attendance and lab completion is mandatory. Each completed lab is worth 1% of your final grade (to a maximum of 10%). It is your responsibility to ensure your attendance and exercise completion is recorded. 
 * There is a total of 10 labs, however there is potential for additional labs. In the case where there are more than 10 labs, the marks for your best 10 will be recorded. 
 * You may only attend the lab session for which you are registered.
