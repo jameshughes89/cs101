@@ -164,7 +164,6 @@ Student Evaluation (Tentative Dates)
 | Final Exam             | 30%        | TBA                 |
 +------------------------+------------+---------------------+
 
-.. *IMPORTANT NOTE: To be eligible to receive a passing grade in the course, your mark on the final exam must be at least 40%, and your weighted average on the assignments must be at least 40%. Otherwise, the maximum overall mark you can receive is 45%. To be eligible to receive a grade of 60% or higher, your mark on the final exam must be at least 50%, and your weighted average on the assignments must be at least 50%. Otherwise, the maximum overall mark you can receive is 58%.*
 
 
 Assignment Submission
