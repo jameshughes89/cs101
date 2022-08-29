@@ -8,9 +8,12 @@ Fall 2022
 Course Description
 ==================
 
-An introduction to computers, algorithms, and programming. No previous knowledge of algorithms or programming is required.
+An introduction to computers, algorithms, and programming. No previous knowledge of algorithms or programming is
+required.
 
-This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include problem analysis, algorithm development, data representation, control structures, lists, functions, and file manipulation.
+This course is devoted to learning proper problem solving techniques and basic programming skills. Topics include
+problem analysis, algorithm development, data representation, control structures, lists, functions, testing, and file
+manipulation.
 
 This class will use the programming language python.
 
