@@ -2,7 +2,7 @@
 Computer Science 161 Sections 11 & 12 --- Introduction to Programming
 =====================================================================
 
-Fall 2021
+Fall 2022
 =========
 
 Course Description
