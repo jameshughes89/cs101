@@ -216,17 +216,6 @@ revolve around `Kattis <https://open.kattis.com/>`_.
 * Students must bring their student identification to all labs. 
 
 
-
-.. Lecture Activities
-.. ===================
-
-.. Lecture activities will take place at some point during certain lectures. Each completed activity is worth 1% of your final grade (to a maximum of 10%). If less than 10 lecture activities are given to the class, the activity weightings will be adjusted to make up 10% of the final grade. There will be no make-up activities.
-
-.. These activities require students to answer questions based on lecture material. Answers must be written by hand on clean blank paper that the students bring to class; paper will not be provided to the students. The paper will be submitted to the lecturer **within the allotted time**. The paper must be letter/A4 size, clean, the writing must be legible, the submission must be made by the student who completed the task, and the submission must have the completing/submitting student's name, student number, date, and activity number. If any of these requirements are violated, a mark of 0 will be applied. If a student attempts to submit another student's work, this will be considered academic misconduct and will be investigated fully. A grade of 0 will be applied to the full lecture activity component of the final grade.
-
-.. These activities are open book, students are strongly encouraged to collaborate and share ideas, and students can check the internet; however, all submitted work must ultimately be done individually.  
-
-
 Email Contact
 =============
 
