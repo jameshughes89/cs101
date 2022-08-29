@@ -114,7 +114,9 @@ The textbook for this class is `FREE <http://openbookproject.net/thinkcs/python/
 Topics
 ======
 
-We will not necessarily cover everything listed here, nor in this order. Due to the way the class is being taught, the material covered will adapt to the interests, and abilities, of the class. Many of the things near the end of the list are fairly optimistic and we'll probably not get to them, but whatever. 
+We will not necessarily cover everything listed here, nor in this order. Due to the way the class is being taught, the
+material covered will adapt to the interests, and abilities, of the class. Many of the things near the end of the list
+are fairly optimistic and we'll probably not get to them, but whatever.
 
 - Introduction to Programming
 - Variables and Statements 
