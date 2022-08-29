@@ -238,6 +238,18 @@ Note that StFX and most other email providers establish quotas or limits on the 
 Students are encouraged to contact their course instructor via email with brief, email appropriate questions regarding lecture materials or clarification of assignments. However, before sending email to an instructor, the student should check the course website to see if the requested information is already there. Students must send email from their StFX account and include CSCI 161 in the subject line of the email. Lengthy and in-depth questions are to be asked during office hours.
 
 
+Office Hours
+============
+
+Office hours are provided to students to facilitate their success --- students are encouraged to come to office hours.
+
+Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
+students solving their problems.
+
+As per university policy, masking and proper social distancing is required. Students refusing to follow this policy will
+be asked to leave. 
+
+
 Attendance
 ==========
 
