@@ -33,7 +33,9 @@ Lecture Section 11
 * Dr. James Hughes
 * Office: Annex 20B
 * Office Hours: 
-    * Tuesday -- Friday, 10:00am -- 11:00am --- **Virtual Only (Link on Moodle)**
+    * Tuesday, 10:00am -- 11:00am
+    * Wednesday, 10:00am -- 11:00am
+    * Friday, 10:00am -- 11:00am
 * Email: jhughes at stfx.ca
 
 
