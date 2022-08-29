@@ -108,7 +108,7 @@ Textbook and Lecture Notes
 
 Lecture notes will be posted to the website. Assignments will be submitted through Moodle. 
 
-The textbook for this class is `FREE <http://openbookproject.net/thinkcs/python/english3e/>`_ ! 
+The textbook for this class is `FREE <http://openbookproject.net/thinkcs/python/english3e/>`_ !
 
 
 Topics
@@ -120,6 +120,7 @@ We will not necessarily cover everything listed here, nor in this order. Due to 
 - Variables and Statements 
 - Types
 - Functions
+- Testing
 - Conditionals (If/Else)
 - Booleans
 - Iteration (loops)
