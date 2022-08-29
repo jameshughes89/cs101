@@ -380,10 +380,3 @@ Professional courtesy and sensitivity are especially important with respect to i
 differences of race, culture, religion, politics, sexual orientation, gender, gender variance, and nationalities. Class
 rosters are provided to the instructor with the student's legal name. Please advise me of this preference early in the
 semester. See policies at http://www2.mystfx.ca/equity/policies
-
-
-
-.. Addendum
-.. ========
-
-.. *OTHER NOTES*
