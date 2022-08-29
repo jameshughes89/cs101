@@ -208,12 +208,10 @@ until you are satisfied that your final mark for the course has been computed pr
 Tests
 =====
 
-* No cheating of any form is allowed
-* Tests and exams are closed book/laptop/notebook/etc.
-* Calculators will not be permitted
-* Use of cell phones or similar devices is not permitted
-* The possession of unauthorized devices during tests and examinations constitutes violation of academic integrity, as per section 3.8.2(b)(v) of the academic calendar
-* Anything that a reasonable person would deem as cheating is not permitted
+No cheating of any form is allowed. Tests and exams are closed book/laptop/notebook/etc. and calculators, cell phones
+and/or similar devices are not permitted. The possession of unauthorized devices during tests and examinations
+constitutes violation of academic integrity, as per section 3.8.2(b)(v) of the academic calendar. Further, anything that
+a reasonable person would deem as cheating is not permitted and will be investigated fully as academic misconduct. 
 
 
 Labs
