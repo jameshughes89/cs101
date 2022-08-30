@@ -217,7 +217,7 @@ resubmit their assignments for additional marking. All corrected mistakes can re
 assignment. For example, if a student obtained 80/100 on the assignment after the regular submission, and the student
 correctly fixes errors that account for 12 of the 20 lost marks and resubmits for recoupment, the student will gain 6
 more marks for a total of 86/100 on the assignment. As always, no late submissions will be accepted and all work will be
-checked for plagiarism or cheating. 
+checked for plagiarism or cheating.
 
 There are some conditions, however. The marker will inform the student if their assignment is eligible for recoupment;
 only assignments deemed eligible may be resubmitted. Only assignments that were completed and attempted in earnest are
