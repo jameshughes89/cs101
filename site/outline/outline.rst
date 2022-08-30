@@ -224,6 +224,10 @@ only assignments deemed eligible may be resubmitted. Only assignments that were 
 eligible. Students with missing code/functions/portions of the assignment will not be eligible. If the student has
 portions of code that demonstrate a lack of a sincere attempt, the assignment will not be eligible for recoupment.
 
+Further, it is the responsibility of the student to make clear to the marker what exactly has been updated and changed.
+If the marker is unable to quickly determine what fixes the student has made, the resubmission will not be considered
+for recoupment. This could be in the form of notes in the Moodle submission with corresponding comments within the code. 
+
 
 Tests
 =====
