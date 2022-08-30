@@ -167,8 +167,11 @@ Student Evaluation (Tentative Dates)
 +------------------------+------------+---------------------+
 
 
-Assignment Submission
-=====================
+Assignments
+===========
+
+Submission
+----------
 
 Instructions for the submission of assignments will be posted on the course website. It is each student's responsibility
 to read and follow the instructions. Failure to follow the submission instructions may result in the assignment
@@ -178,15 +181,15 @@ You will be required to submit each programming assignment electronically. Detai
 descriptions. We reserve the right to use similarity detection software to detect possible cheating cases.
 
 
-Assignment Due Dates
-====================
+Due Dates
+---------
 
 The date and exact time assignments are due will be given in the assignment specifications. No submissions will be taken
 after the due date; there are no late submissions. No extensions will be given for assignments.
 
 
-Assignment Marking
-==================
+Marking
+-------
 
 Assignments are marked by the Teaching Assistants, who follow marking schemes provided by instructors.
 
@@ -201,6 +204,10 @@ It is each student's responsibility to keep up-to-date backups of assignment dis
 inadvertently erased files. Students must keep disk copies of all material submitted, as well as the actual graded
 assignment, to guard against the possibility of errors in recording marks. It is not safe to discard these materials
 until you are satisfied that your final mark for the course has been computed properly.
+
+
+Recoupment
+----------
 
 
 Tests
