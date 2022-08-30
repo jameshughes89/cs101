@@ -209,6 +209,20 @@ until you are satisfied that your final mark for the course has been computed pr
 Recoupment
 ----------
 
+Since mistakes are expected and lost marks are meant to provide feedback and not intended to be a penalty, students can
+redeem 50% of their lost marks via *assignment recoupment*.
+
+Students will have **1 week** after their marked assignment is returned to incorporate feedback, correct mistakes, and
+resubmit their assignments for additional marking. All corrected mistakes can recoup 50% of the lost marks on that
+assignment. For example, if a student obtained 80/100 on the assignment after the regular submission, and the student
+corrects 12 of the 20 lost marks and resubmits for recoupment, the student will gain 6 more marks for a total of 86/100
+on the assignment. As always, no late submissions will be accepted.
+
+There are some conditions, however. The marker will inform the student if their assignment is eligible for recoupment;
+only assignments deemed eligible may be resubmitted. Only assignments that were completed and attempted in earnest are
+eligible. Students with missing code/functions/portions of the assignment will not be eligible. If the student has
+portions of code that demonstrate a lack of a sincere attempt, the assignment will not be eligible for recoupment.
+
 
 Tests
 =====
