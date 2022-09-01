@@ -29,7 +29,7 @@ if __name__ == "__main__":
         python_requires=">=3.10",
         packages=find_packages(),
         install_requires=[
-            "black[jupyter]==22.6.0",
+            "black[jupyter]==22.8.0",
             "flake8==4.0.1",
             "flake8-black==0.3.3",
             "flake8-isort==4.2.0",
