@@ -129,8 +129,12 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
     topics/objects/data-structures
     topics/searching/searching
     topics/sorting/sorting
-    topics/models-of-computation/models-of-computation
-   
+
+
+
+
+
+
 
 .. toctree::
     :caption: Labs
