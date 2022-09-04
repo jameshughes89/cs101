@@ -129,8 +129,12 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
     topics/objects/data-structures
     topics/searching/searching
     topics/sorting/sorting
-    topics/recursion/recursion
-   
+
+
+
+
+
+
 
 .. toctree::
     :caption: Labs
@@ -148,7 +152,6 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
     labs/lists/references
     labs/objects/objects
     labs/objects/data-structures
-    labs/recursion/recursion
     
 
 .. toctree::
