@@ -240,6 +240,14 @@ a reasonable person would deem as cheating is not permitted and will be investig
 Test format will be in person; however, if necessary, the format *may* be changed to online. Students will be informed
 of the change as soon as possible. 
 
+
+Missed Midterm
+--------------
+
+If a student is unable to write the midterm, the weight of their midterm will be added to the weight of the final exam;
+the final exam will be worth 50% of the student's final grade,
+
+
 Labs
 ====
 
