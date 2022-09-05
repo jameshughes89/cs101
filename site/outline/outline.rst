@@ -244,8 +244,8 @@ of the change as soon as possible.
 Missed Midterm
 --------------
 
-If a student is unable to write the midterm, the weight of their midterm will be added to the weight of the final exam;
-the final exam will be worth 50% of the student's final grade,
+There are no make up midterms. If a student is unable to write the midterm, the weight of their midterm will be added to
+the weight of the final exam; the final exam will be worth 50% of the student's final grade,
 
 
 Labs
