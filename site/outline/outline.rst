@@ -276,6 +276,8 @@ Email Contact
 
 **Email etiquette** --- Emails should be addressed to Dr./Prof. Hughes or Delamer.
 
+Emails can be sent to csci-161@stfx.ca. By using this address, both professors and TAs obtain a copy of the email. 
+
 I may need to send email messages to the whole class or to students individually. Email will be sent to the StFX email
 address assigned to students. It is the responsibility of the student to read this email on a regular basis. You may
 wish to have mail forwarded to an alternative email address.
