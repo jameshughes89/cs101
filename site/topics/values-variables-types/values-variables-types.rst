@@ -30,7 +30,7 @@ What Is A Program/Algorithm?
 * What kind of computer was executing this program?
 
 
-What Is debugging?
+What Is Debugging?
 ==================
 
 * Most of the time your code will be wrong
