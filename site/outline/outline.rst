@@ -383,7 +383,8 @@ student-centered program of support. Located in Room 108 of the Angus L. MacDona
 meet with program staff to discuss options for support. Deadline for registering with the Center is two weeks prior to
 the end of classes each semester and 3 Business Days' notice is required for booking all accommodated tests and exams.
 
-To book an appointment please use the following:
+To book an appointment please use the following
+
 * link --- http://stfxcal.mywconline.com
 * Phone --- 902 867 5349
 * Email --- tramble@stfx.ca
