@@ -79,7 +79,7 @@ Terminology
 * Hardware/Software
 * Input/Output (I/O)
 * Processors
-* Hard Drive
+* Storage --- Hard Disk Drive/Solid State Drive
 * Memory and Random Access Memory (RAM)
 * Binary
 * Compiling
