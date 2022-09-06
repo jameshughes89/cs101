@@ -196,7 +196,7 @@ Using Variables
     b = 6
     print(a + b)
 
-* Both ``print``s will print out ``11``
+* Both ``print`` function calls will print out ``11``
 
     * The first one adds the literals ``5`` and ``6``
     * The second one adds the variables ``a`` and ``b``
