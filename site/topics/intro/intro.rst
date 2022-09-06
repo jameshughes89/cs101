@@ -178,7 +178,7 @@ Can I Write A Program Now?
 ==========================
 
 * If you have gone through :doc:`get set up for CSCI 161 </getting-set/getting-set>`, then yes
-* Go to Google Colab and make your "Hello, world!" program
+* Go to `Google Colab <https://colab.research.google.com/>`_ and make your "Hello, world!" program
 
     * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language
 
