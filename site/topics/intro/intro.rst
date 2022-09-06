@@ -141,7 +141,7 @@ So I Should Be Terrified?
         * This is normal
 
 
-I Need help!
+I Need Help!
 ============
 
 .. image:: beforeGoogle.jpg
