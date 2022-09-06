@@ -255,7 +255,7 @@ The purpose of the weekly labs is to give students hands-on experience. Labs wil
 revolve around `Kattis <https://open.kattis.com/>`_.
 
 
-Labs begin on the 1st week of class for lab sections 11 and 12. Lab sections 13, and 14 begin week 2.
+Labs begin on the 1st week of class for lab sections 11 and 12. Lab sections 13 and 14 begin week 2.
 
 Pre lab exercises must be completed before the start of the lab. Students who have not completed the pre-lab exercises
 will be asked to leave.
