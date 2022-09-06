@@ -254,7 +254,6 @@ Labs
 The purpose of the weekly labs is to give students hands-on experience. Labs will have required assigned work and will
 revolve around `Kattis <https://open.kattis.com/>`_.
 
-
 Labs begin on the 1st week of class for lab sections 11 and 12. Lab sections 13, and 14 begin week 2.
 
 Pre lab exercises must be completed before the start of the lab. Students who have not completed the pre-lab exercises
@@ -264,7 +263,7 @@ Lab exercises must be completed for marks; attendance and lab completion is mand
 the final grade (to a maximum of 10%). It is your responsibility to ensure your attendance and exercise completion is
 recorded.
 
-There is are a total of 12 labs, however there is potential that some labs may be cancelled. In the case where there are
+There is a total of 11 labs, however there is potential that some labs may be cancelled. In the case where there are
 less than 10 labs, your individual grades will be adjusted such that each lab is wroth the amount necessary to ensure
 the lab portion of the final grade is still 10%.
 
