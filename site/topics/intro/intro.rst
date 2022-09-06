@@ -121,7 +121,7 @@ So I Should Be Terrified?
 
 * No
 * It's entirely doable **if you put in the effort**
-* Waring though --- the class is dense and very accumulative, do not fall behind
+* Warning though --- the class is dense and very accumulative, do not fall behind
 
 * The good news is, you get to make mistakes
 
