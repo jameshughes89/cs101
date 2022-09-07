@@ -31,9 +31,9 @@ below.
 Integrated Development Environment
 ==================================
 
-An Integrated Development Environment (IDE) is a special programs that can make it easier to write code. However, I do
+An Integrated Development Environment (IDE) is a special program that can make it easier to write code. However, I do
 not recommend using one at the start of the course as it can be overwhelming. Although IDEs do absolutely make a
-programmers life easier, at this stage of learning it will likely impeded your learning.
+programmers life easier, at this stage of learning it will likely impede your learning.
 
 A popular IDE many use is called *PyCharm*. You can obtain the community or education edition for free from *JetBrains*.
 `Visit their download website to obtain the software <https://www.jetbrains.com/pycharm/download/>`_.
