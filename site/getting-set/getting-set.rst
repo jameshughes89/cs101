@@ -31,12 +31,12 @@ below.
 Integrated Development Environment
 ==================================
 
-If you would like, install an Integrated Development Environment (IDE). IDEs are special programs that can make it easier to write code. **HOWEVER**, I don't actually recommend using this in the course, or at least not at the start. Although IDEs do absolutely make a programmers life easier, at this stage of learning it will very very likely just confuse you and impeded your learning. 
+An Integrated Development Environment (IDE) is a special programs that can make it easier to write code. However, I do
+not recommend using one at the start of the course as it can be overwhelming. Although IDEs do absolutely make a
+programmers life easier, at this stage of learning it will likely impeded your learning.
 
-For Windows users, the good news is if you installed Anaconda you already have something called **Spyder** installed. This is an IDE that comes with Anaconda. 
-
-Another popular IDE is **PyCharm**. `If you want it, download the free community edition (DO NOT PAY FOR ANYTHING).
-<https://www.jetbrains.com/pycharm/download>`_
+A popular IDE many use is called *PyCharm*. You can obtain the community or education edition for free from *JetBrains*.
+`Visit their download website to obtain the software <https://www.jetbrains.com/pycharm/download/>`_.
 
 Note, I will not be providing IT support for IDEs (or really any IT support in general). 
 
