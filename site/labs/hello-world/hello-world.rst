@@ -30,6 +30,7 @@ Pre Lab Exercises
 
 #. `Chapter 1 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html#exercises>`_
 
+    * Although the exercises mention "the interpreter", you are to simply use Google Colab
     * 2
     * 4
 
