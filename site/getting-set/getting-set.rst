@@ -24,7 +24,8 @@ Although we'll still primarily use Colab, it is recommended to also install Pyth
 to use both Colab and your local interpreter throughout the course.
 
 To download Python onto your computer, visit the `Python download page <https://www.python.org/downloads/>`_, download
-it, and install.
+it, and install. If you go this route, you will also want an *Integrated Development Environment*, which is discussed
+below.
 
 
 Integrated Development Environment
