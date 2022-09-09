@@ -56,6 +56,19 @@ Read the assignment description in its entirety before starting.
 Part 1 --- Uploading Files to Colab
 ===================================
 
+After downloading the notebook file above, you will need to upload it to Colab to get started. See the below image to
+help find how to do this. I recommend saving a copy of this notebook file to your Google drive and then work with that
+one. You don't have to, but you will have to re-upload the project every time you want to work on it.
+
+.. image:: uploadColab.png
+
+Additionally, you will need to upload the Starbucks location data file to Colab. The way you upload a data file like
+this is different from uploading the notebook file. See the below image for an example of how to upload this file.
+Unfortunately, you must re-upload this data file every time you open your Colab project. Not a big deal, but something
+you will need to remember.
+
+.. image:: uploadStarbucks.png
+
 
 Part 2 --- Read Over Loading Function
 =====================================
