@@ -38,14 +38,6 @@ You are provided with
 
 * The data file called :download:`starbucks2018.csv <starbucks2018.csv>` containing latitude and longitude pairs of Starbucks locations
 
-.. warning::
-   
-	Some students have reported their browsers (seems to only be chrome that's being difficult) complaining about possible security issues. There isn't any; this is just because the files are scripts and scripts CAN be problematic if they are intended to be troublesome (these are not). To get around this, tell the browser to download it anyways. There are a few ways to do this: (a) Click the arrow next to the download at the bottom of the page and say "Keep". (b) Navigate to your browser's download screen and select "Keep".
- 
-    .. image:: security.png
-        :width: 200
-        :align: center
-
 
 Download the :download:`asn1.ipynp <asn1.ipynb>` notebook and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a copy of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it.
 
