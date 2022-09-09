@@ -19,10 +19,11 @@ You will
 * Write a function to count the number of starbucks contained within an area defined by latitudes and longitudes
 * Write a function to calculate the density of Starbucks within an area
 
-
 .. warning::
    
-	You should **not** expect to be able to sit down and just start coding a solution. Computer science does not work this way. Expect this assignment to take hours. Expect to get things wrong, then, expect to get things wrong more. 
+    You should **not** expect to be able to sit down and just start coding a solution. Programming does not work like
+    that. Expect this assignment to take hours. Expect to get things wrong, and then, expect to get them wrong again ---
+    this is normal.
     
 
 In this assignment, you will use a real dataset containing the locations of all North American Starbucks Coffee houses (as of a few years ago) to compute the *density* of Starbucks on a given patch of the Earth's surface.
