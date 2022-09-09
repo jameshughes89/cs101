@@ -21,11 +21,6 @@ You will
 * Write a function to calculate the density of Starbucks within an area
 
 
-
-.. NOTE::
-
-	This assignment may be done with other students. Feel free to collaborate all you want (in fact, I encourage it). Every student must submit their own work. The only rule I have here is that your code/functions must not be more or less identical to other students'. If your code is, you will be investigated for academic misconduct. Also, if your code/functions are identical to those that you *obtained* from somewhere, we're going to have a problem (I have copies of past years assignment submissions to check your work against). 
-
 .. warning::
    
 	You should **not** expect to be able to sit down and just start coding a solution. Computer science does not work this way. Expect this assignment to take hours. Expect to get things wrong, then, expect to get things wrong more. 
