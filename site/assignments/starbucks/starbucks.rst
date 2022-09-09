@@ -3,45 +3,98 @@ Density of Starbucks
 ********************
 
 * **Worth**: 10%
-* **DUE**: October 4th, 2021 at 11:55pm; submitted on MOODLE.
+* **DUE**: TBD, 2022 at 11:55pm; submitted on MOODLE.
 
-.. image:: starbucks_escher.jpeg
+Task
+====
 
-Learning objectives:
+You will write a program that will calculate the density of *Starbucks* locations within a specified area based on real
+data of Starbucks locations (as of 2018). You will have to work with some existing code that is provided to you, and you
+will need to write your own functions to ultimately complete the assignment.
+You will
 
-* Write some code
-* Solving a *real* problem/question
-* Thinking abstractly
-* Work with existing code
-* Understand existing code
-* Variables
-* Using functions
-* Boolean operators
-* Conditionals
-* Comments
-* Using your code to answer questions
-
-
-.. NOTE::
-
-	This assignment may be done with other students. Feel free to collaborate all you want (in fact, I encourage it). Every student must submit their own work. The only rule I have here is that your code/functions must not be more or less identical to other students'. If your code is, you will be investigated for academic misconduct. Also, if your code/functions are identical to those that you *obtained* from somewhere, we're going to have a problem (I have copies of past years assignment submissions to check your work against). 
+* Use a provided function to load data into your program
+* Write a function to convert latitude/longitude units from degrees, minutes, and seconds to decimal
+* Write a function to calculate the surface area of a sphere as defined by latitudes and longitudes
+* Write a function to count the number of starbucks contained within an area defined by latitudes and longitudes
+* Write a function to calculate the density of Starbucks within an area
 
 .. warning::
    
-	You should **not** expect to be able to sit down and just start coding a solution. Computer science does not work this way. Expect this assignment to take hours. Expect to get things wrong, then, expect to get things wrong more. 
-    
+    You should **not** expect to be able to sit down and just start coding a solution. Programming does not work like
+    that. Expect this assignment to take hours. Expect to get things wrong, and then, expect to get them wrong again ---
+    this is normal.
 
-In this assignment, you will use a real dataset containing the locations of all North American Starbucks Coffee houses (as of a few years ago) to compute the *density* of Starbucks on a given patch of the Earth's surface.
 
-To make life easier for the first assignment, you don't have to start from scratch. I've already started a file for you to use as a template. This is also somewhat realistic for programmers; you don't always start completely from scratch... Sometimes you're trying to modify someone else's code that you downloaded or inherited. Also, learning how to work with existing code is a huge way to learn. 
+Provided Files
+==============
+
+You are provided with
+
+* A notebook file called :download:`asn1.ipynp <asn1.ipynb>` containing the starting point of the assignment
+
+    * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
+    * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn1.py <asn1.py>` file
+
+* The data file called :download:`starbucks2018.csv <starbucks2018.csv>` containing latitude and longitude pairs of Starbucks locations
 
 .. warning::
-   
-	Some students have reported their browsers (seems to only be chrome that's being difficult) complaining about possible security issues. There isn't any; this is just because the files are scripts and scripts CAN be problematic if they are intended to be troublesome (these are not). To get around this, tell the browser to download it anyways. There are a few ways to do this: (a) Click the arrow next to the download at the bottom of the page and say "Keep". (b) Navigate to your browser's download screen and select "Keep".
- 
-    .. image:: security.png
-        :width: 200
-        :align: center
+
+    Do not alter the function details in the provided .ipynb/.py files
+
+        * Do not change the name of the functions
+        * Do not remove the function description
+        * Do not remove or add to the parameter list
+
+
+Part 0 --- Read the Assignment
+==============================
+
+Read the assignment description in its entirety before starting.
+
+
+Part 1 --- Uploading Files to Colab
+===================================
+
+
+Part 2 --- Read Over Loading Function
+=====================================
+
+
+Part 3 --- Degrees to Decimal
+=============================
+
+
+Part 4 --- Subtended Area
+=========================
+
+
+Part 5 --- Counting Starbucks
+=============================
+
+
+Part 6 --- Calculate Starbucks Density
+======================================
+
+
+Part 7 --- Using Your Function
+==============================
+
+
+Part 8 --- Testing
+==================
+
+
+Some Hints
+==========
+
+
+Some Marking Details
+====================
+
+
+What to Submit to Moodle
+========================
 
 
 Download the :download:`asn1.ipynp <asn1.ipynb>` notebook and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a copy of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it.
