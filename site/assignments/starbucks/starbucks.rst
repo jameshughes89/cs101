@@ -3,7 +3,7 @@ Density of Starbucks
 ********************
 
 * **Worth**: 10%
-* **DUE**: October 4th, 2021 at 11:55pm; submitted on MOODLE.
+* **DUE**: TBD, 2022 at 11:55pm; submitted on MOODLE.
 
 .. image:: starbucks_escher.jpeg
 
