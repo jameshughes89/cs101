@@ -5,19 +5,21 @@ Density of Starbucks
 * **Worth**: 10%
 * **DUE**: TBD, 2022 at 11:55pm; submitted on MOODLE.
 
-Learning objectives:
+Task
+====
 
-* Write some code
-* Solving a *real* problem/question
-* Thinking abstractly
-* Work with existing code
-* Understand existing code
-* Variables
-* Using functions
-* Boolean operators
-* Conditionals
-* Comments
-* Using your code to answer questions
+You will write a program that will calculate the density of *Starbucks* locations within a specified area. You will
+have to work with some existing code that is provided to you, and you will need to write your own functions to
+ultimately complete the assignment.
+
+You will
+
+* Use a provided function to load data into your program
+* Write a function to convert latitude/longitude units from degrees, minutes, and seconds to decimal
+* Write a function to calculate the surface area of a sphere as defined by latitudes and longitudes
+* Write a function to count the number of starbucks contained within an area defined by latitudes and longitudes
+* Write a function to calculate the density of Starbucks within an area
+
 
 
 .. NOTE::
