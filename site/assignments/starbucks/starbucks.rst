@@ -85,6 +85,17 @@ Part 8 --- Testing
 ==================
 
 
+Some Hints
+==========
+
+
+Some Marking Details
+====================
+
+
+What to Submit to Moodle
+========================
+
 
 Download the :download:`asn1.ipynp <asn1.ipynb>` notebook and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a copy of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it.
 
