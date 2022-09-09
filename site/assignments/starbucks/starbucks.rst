@@ -73,6 +73,19 @@ you will need to remember.
 Part 2 --- Read Over Loading Function
 =====================================
 
+The function that loads the data, ``load_starbucks_data``, is already provided for you. It contains ideas we have yet to
+discuss in class, but it shouldn't be too difficult to get an intuition about what exactly it is doing if you look over
+it and play with it a little.
+
+Get used to looking at code that is not yours, using unfamiliar ideas, and trying to figure out what existing code does.
+This is not a trivial thing, but as a programmer, it is something you will end up spending a lot of time doing.
+
+.. warning::
+
+    For the loading function to work, the .csv file **must** be in the same directory as your Python script. This means
+    in your Colab project (see Part 1). If it is not, this function will **not** work and you will see an error message
+    like ``No such file or directory: 'starbucks2018.csv'``.
+
 
 Part 3 --- Degrees to Decimal
 =============================
@@ -124,13 +137,8 @@ Your first task will be to fill out the code for the function ``convert_to_decim
 Have a peek at the data-loading function
 ========================================
 
-The function that loads the data is a freebie. It contains some stuff we haven't discussed in class yet, but it's pretty simple to figure out what's going on if you look at it and hack around. So... look at it. Get used to looking at code that isn't yours, using  unfamiliar ideas/idioms/patterns, and trying to figure out what it does. This isn't always simple (sometimes it's **very hard**), but you'll spend a lot of time doing it (whether you want to or not!). 
-
 This data in the .csv file is fortunately already in decimal format so you will not need to  convert it with ``convert_to_decimal()``, however, you still need to do part 1 and make sure  it works properly even though you might not actually use ``convert_to_decimal()`` for the below parts!!!!!!
 
-.. warning::
-   
-	This .csv file **MUST** be in the same directory as your python script!!!! This means in your Colab project or in the same directory on your computer if you are doing it not on Colab. If it is not, this function will **NOT** work!!! You'll see something like ``No such file or directory: 'starbucks.csv'`` if you don't have the file in the right place. 
 
 
 Complete the function to compute lat-long rectangle area
