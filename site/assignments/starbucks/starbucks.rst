@@ -5,8 +5,6 @@ Density of Starbucks
 * **Worth**: 10%
 * **DUE**: TBD, 2022 at 11:55pm; submitted on MOODLE.
 
-.. image:: starbucks_escher.jpeg
-
 Learning objectives:
 
 * Write some code
