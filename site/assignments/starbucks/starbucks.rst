@@ -82,6 +82,18 @@ Part 4 --- Subtended Area
 =========================
 
 
+We want to compute the *density* of Starbucks, not just the raw number of them. A reasonable measure for this is 'Starbucks per square kilometer'. To compute this, we first need to know how to find the area of a lat-long rectangle. The function ``subtended_area()`` takes as parameters the 'bottom left' and 'top right' corners of a lat-long rectangle (or, the left and bottom lines, and then the right and top lines). It should return the area of that lat-long rectangle in square kilometers.
+
+To save you some solid angle computations: given two lat/long pairs, the formula to compute the subtended area is:
+
+.. image:: asn1IMG.png
+
+where *R* is the radius of the sphere (Earth in this case: 6378.1 km).
+
+.. warning::
+	Do Python's trig functions (e.g. ``math.sin`` or ``numpy.sin``) expect parameters in *degrees* or *radians*? Be careful!
+
+
 Part 5 --- Counting Starbucks
 =============================
 
@@ -108,7 +120,6 @@ Some Marking Details
 
 What to Submit to Moodle
 ========================
-
 
 
 Complete Latitude/Longitude Conversion Function
