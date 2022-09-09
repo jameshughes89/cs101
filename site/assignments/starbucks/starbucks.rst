@@ -81,17 +81,25 @@ Part 3 --- Degrees to Decimal
 Part 4 --- Subtended Area
 =========================
 
+Since we want to calculate the *density* of starbucks, we need to consider the units used. A reasonable measure would be
+*Starbucks per square kilometers*. In order to compute this, we must first calculate the area of the "square" defined by
+two latitude and two longitudes. You are to complete the function ``subtended_area`` that takes four parameters. Two
+latitudes defining the top and bottom of the "square" and two longitudes defining the sides of the square. The function
+will return the area of the "square" in kilometers squared (:math:`km^{2}`).
 
-We want to compute the *density* of Starbucks, not just the raw number of them. A reasonable measure for this is 'Starbucks per square kilometer'. To compute this, we first need to know how to find the area of a lat-long rectangle. The function ``subtended_area()`` takes as parameters the 'bottom left' and 'top right' corners of a lat-long rectangle (or, the left and bottom lines, and then the right and top lines). It should return the area of that lat-long rectangle in square kilometers.
+However, in reality, since it is a sphere that the surface area is being calculated on, the latitude and longitudes do
+not actually define a square. This means that the simple :math:`length * height` will not work. Instead we need to
+calculate it with the following equation.
 
-To save you some solid angle computations: given two lat/long pairs, the formula to compute the subtended area is:
+:math:`\frac{\pi}{180} \cdot R^{2} \cdot \lvert sin(lat_{1}) - sin(lat_{2}) \rvert \cdot \lvert lon_{1} - lon_{2} \rvert`
 
-.. image:: asn1IMG.png
-
-where *R* is the radius of the sphere (Earth in this case: 6378.1 km).
+In our case we will use :math:`R = 6371` for Earth, which is stored in the provided file as the constant
+``EARTH_RADIUS``.
 
 .. warning::
-	Do Python's trig functions (e.g. ``math.sin`` or ``numpy.sin``) expect parameters in *degrees* or *radians*? Be careful!
+
+    Does Python's trig functions (eg., ``math.sin``) expect parameters in *degrees* or *radians*?
+    `Read the relevant documentation to find out <https://docs.python.org/3/library/math.html#math.sin>`_.
 
 
 Part 5 --- Counting Starbucks
