@@ -38,6 +38,49 @@ You are provided with
 
 * The data file called :download:`starbucks2018.csv <starbucks2018.csv>` containing latitude and longitude pairs of Starbucks locations
 
+.. warning::
+
+    Do not alter the function details in the provided .ipynb/.py files
+
+        * Do not change the name of the functions
+        * Do not remove the function description
+        * Do not remove or add to the parameter list
+
+
+Part 0 --- Read the Assignment
+==============================
+
+Read the assignment description in its entirety before starting.
+
+
+Part 1 --- Uploading Files to Colab
+===================================
+
+
+Part 2 --- Read Over Loading Function
+=====================================
+
+
+Part 3 --- Degrees to Decimal
+=============================
+
+
+Part 4 --- Subtended Area
+=========================
+
+
+Part 5 --- Counting Starbucks
+=============================
+
+
+Part 6 --- Calculate Starbucks Density
+======================================
+
+
+Part 7 --- Testing
+==================
+
+
 
 Download the :download:`asn1.ipynp <asn1.ipynb>` notebook and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a copy of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it.
 
