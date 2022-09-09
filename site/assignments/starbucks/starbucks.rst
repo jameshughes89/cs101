@@ -8,10 +8,9 @@ Density of Starbucks
 Task
 ====
 
-You will write a program that will calculate the density of *Starbucks* locations within a specified area. You will
-have to work with some existing code that is provided to you, and you will need to write your own functions to
-ultimately complete the assignment.
-
+You will write a program that will calculate the density of *Starbucks* locations within a specified area based on real
+data of Starbucks locations (as of 2018). You will have to work with some existing code that is provided to you, and you
+will need to write your own functions to ultimately complete the assignment.
 You will
 
 * Use a provided function to load data into your program
