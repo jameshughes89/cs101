@@ -110,29 +110,6 @@ What to Submit to Moodle
 ========================
 
 
-Download the :download:`asn1.ipynp <asn1.ipynb>` notebook and upload it to Colab to get started. See below image. **WARNING:** You should be sure to save a copy of this to your Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you want to work on it.
-
-
-.. image:: uploadColab.png
-
-Alternatively if you want, download :download:`asn1.py <asn1.py>` to get started if you want to *not* use Colab. Do whichever you want. It's the same as the notebook file, just missing the notebook stuff.
-
-The steps you need to do are laid out, in detail (and suggested order) below.
-
-.. warning::
-	Do not alter the function details in the .ipynb/.py files:
-   
-		* Do not change the name of the functions
-		* Do not remove the function description
-		* Do not remove or add to the parameters
-	  
-	You should also **NOT** be using the ``input()`` function in this assignment. 
-
-You will also need the data file :download:`starbucks.csv <starbucks.csv>`. Download this to your computer and upload it to your Colab files (see below image). Unfortunately, every time you open your colab project, you will need to re-upload. Not a big deal, but something you will need to remember.
-
-If you would like to *not* use Colab and work from your own computer, then just be sure to save this file in the **same directory** that you are saving your assignment in. 
-
-.. image:: uploadStarbucks.png
 
 Complete Latitude/Longitude Conversion Function
 ===============================================
