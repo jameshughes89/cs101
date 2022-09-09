@@ -77,7 +77,11 @@ Part 6 --- Calculate Starbucks Density
 ======================================
 
 
-Part 7 --- Testing
+Part 7 --- Using Your Function
+==============================
+
+
+Part 8 --- Testing
 ==================
 
 
