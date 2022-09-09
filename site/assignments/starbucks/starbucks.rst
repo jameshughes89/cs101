@@ -87,8 +87,7 @@ Complete the function ``convert_degrees_to_decimal`` such that it converts the p
 arcseconds to decimal. The parameters are a latitude/longitude in degrees, arcminutes, and arcseonds. The function
 should return the same latitude/longitude as a single value in decimal degrees (a single value of type ``float``).
 
-You are likely not familiar with the conversion, but fortunately
-`Wikipedia is <http://en.wikipedia.org/wiki/Arcminute>`_.
+If you are not familiar with the conversion, check `Wikipedia <http://en.wikipedia.org/wiki/Arcminute>`_.
 
 If you had a look at the data file, you will have noticed that the data is already stored as a decimal. This means you
 do not actually need to use this function to convert the data from the Starbucks location file.
