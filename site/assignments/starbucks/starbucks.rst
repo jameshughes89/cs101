@@ -77,6 +77,22 @@ Part 2 --- Read Over Loading Function
 Part 3 --- Degrees to Decimal
 =============================
 
+Humans like to express `latitudes <http://en.wikipedia.org/wiki/Latitude>`_ and
+`longitudes <http://en.wikipedia.org/wiki/Longitude>`_ in degrees, minutes, and seconds. You *could* work with those
+units in Python, but your computations (and, hence, code) will be much cleaner and easier to follow if you convert the
+data into the single unit "degrees", using decimals of a degree to represent "arcminutes" (1/60th of a degree) and
+"arcseconds" (1/60th of a arcminute).
+
+Complete the function ``convert_degrees_to_decimal`` such that it converts the provided degrees, arcminutes, and
+arcseconds to decimal. The parameters are a latitude/longitude in degrees, arcminutes, and arcseonds. The function
+should return the same latitude/longitude as a single value in decimal degrees (a single value of type ``float``).
+
+You are likely not familiar with the conversion, but fortunately
+`Wikipedia is <http://en.wikipedia.org/wiki/Arcminute>`_.
+
+If you had a look at the data file, you will have noticed that the data is already stored as a decimal. This means you
+do not actually need to use this function to convert the data from the Starbucks location file.
+
 
 Part 4 --- Subtended Area
 =========================
@@ -110,15 +126,6 @@ What to Submit to Moodle
 ========================
 
 
-
-Complete Latitude/Longitude Conversion Function
-===============================================
-
-Humans like to express `latitudes <http://en.wikipedia.org/wiki/Latitude>`_ and  `longitudes <http://en.wikipedia.org/wiki/Longitude>`_ in degrees, minutes, and seconds. You *could* work with those units in Python, but your computations (and, hence, code) will
-be much *cleaner* if you convert to the single unit "degrees", using decimals of a degree to represent arcminutes and arcseconds (don't worry, I swear you that this isn't that complicated).
-
-Your first task will be to fill out the code for the function ``convert_to_decimal()``. The parameters are a latitude (or longitude) in degrees, arcminutes, and arcseonds. The function should return the same latitude (or longitude) as a single value in decimal degrees
-(a single value of type ``float``). If you're not sure how to compute the conversion, `do some reading <http://en.wikipedia.org/wiki/Arcminute>`_.
 
 
 Have a peek at the data-loading function
