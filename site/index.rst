@@ -88,7 +88,8 @@ YouTube
 Learning Centre
 ================
 
-* https://www2.mystfx.ca/mscs/learning-centre
+* The Math, Stats, and Computer Science Departments offer open office hours and free tutoring
+* https://www.mystfx.ca/math-stats/learning-centre
 
 
 MSCS Tutorial Nights
