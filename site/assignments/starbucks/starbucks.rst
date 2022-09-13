@@ -183,7 +183,7 @@ Your work is in the body of the loop. Each time through the loop we'll be consid
 You need to keep track of how many Starbucks there are in the region and then return that
 value.
 
-.. image:: a1-LatLongSquareCounr.png
+.. image:: a1-LatLongSquareCount.png
 
 
 If the existing code is scaring you, think about it this way:
