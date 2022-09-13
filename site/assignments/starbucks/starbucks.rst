@@ -139,7 +139,8 @@ within the "rectangle" specified. In other words, check if the Starbucks' latitu
 latitudes and if the longitude falls between the "rectangle's" longitudes.
 
 The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
-specifying the "rectangle" as parameters. The function is already set up to *loop* over every Starbucks location in a
+specifying the "rectangle" as parameters. For simplicity, assume ``latitude_line_1 < latitude_line_2`` and
+``longitude_line_1 < longitude_line_2``. The function is already set up to *loop* over every Starbucks location in a
 *list*. Have a look a the loop --- even if we haven't formally discussed this in class, it should be pretty clear what
 it's doing.
 
