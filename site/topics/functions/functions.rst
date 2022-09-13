@@ -145,7 +145,10 @@ Execution of a Function
     #. The variable ``c`` is multiplied with itself (effectively squaring it) and the result is assigned to ``d``
     #. The function returns the value associated with ``d``
 
-* What happens if we don't give it enough, or too many parameters?
+* If you provide too few or too many parameters, Python will raise an error like the following examples
+
+    * Missing one parameter --- ``TypeError: square_of_sum() missing 1 required positional argument: 'b'``
+    * Too many parameters --- ``TypeError: square_of_sum() takes 2 positional arguments but 3 were given``
 
 .. raw:: html
 
