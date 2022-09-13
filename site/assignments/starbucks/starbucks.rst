@@ -110,14 +110,14 @@ Part 4 --- Subtended Area
 =========================
 
 Since we want to calculate the *density* of starbucks, we need to consider the units used. A reasonable measure would be
-*Starbucks per square kilometers*. In order to compute this, we must first calculate the area of the "square" defined by
-two latitude and two longitudes. You are to complete the function ``subtended_area`` that takes four parameters. Two
-latitudes defining the top and bottom of the "square" and two longitudes defining the sides of the square. The function
-will return the area of the "square" in kilometers squared (:math:`km^{2}`).
+*Starbucks per square kilometers*. In order to compute this, we must first calculate the area of the "rectangle" defined
+by two latitude and two longitudes. You are to complete the function ``subtended_area`` that takes four parameters. Two
+latitudes defining the top and bottom of the "rectangle" and two longitudes defining the sides of the "rectangle". The
+function will return the area of the "rectangle" in kilometers squared (:math:`km^{2}`).
 
 However, in reality, since it is a sphere that the surface area is being calculated on, the latitude and longitudes do
-not actually define a square. This means that the simple :math:`length * height` will not work. Instead we need to
-calculate it with the following equation.
+not actually define a rectangle we are familiar with. This means that the simple :math:`length * height` will not work.
+Instead we need to calculate it with the following equation.
 
 :math:`\frac{\pi}{180} \cdot R^{2} \cdot \lvert sin(lat_{1}) - sin(lat_{2}) \rvert \cdot \lvert lon_{1} - lon_{2} \rvert`
 
