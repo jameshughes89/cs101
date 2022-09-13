@@ -305,7 +305,7 @@ Creating Abstraction
 
 * Without being able to organize things into *levels of abstraction*, writing complex software would be prohibitively difficult
 
-    * The same is true for your every day live --- learning to think of things in terms of levels of abstraction is very important
+    * The same is true for your every day life --- learning to think of things in terms of levels of abstraction is very important
     * For example, when driving a car, do you think about the pistons firing?
     * Or, do you need to think about neurons firing and ion pumps to move your arm?
 
