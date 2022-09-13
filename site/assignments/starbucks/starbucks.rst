@@ -158,8 +158,22 @@ Some Hints
 * If you need help, ask
     * Drop by office hours
 
+
 Some Marking Details
 ====================
+
+.. warning::
+    Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or
+    even that your program is correct.
+
+Below is a list of both *quantitative* and *qualitative* things we will look for:
+
+* Correctness?
+* Did you follow instructions?
+* Comments?
+* Variable Names?
+* Style?
+* Did you do just weird things that make no sense?
 
 
 What to Submit to Moodle
