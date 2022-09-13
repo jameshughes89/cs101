@@ -141,7 +141,7 @@ Execution of a Function
 
         * ``a = 2`` and ``b = 3``
 
-    #. The sum of ``a`` and ``b`` is put into a variable ``c``
+    #. The sum of ``a`` and ``b`` is calculated and put into a variable ``c``
     #. The variable ``c`` is multiplied with itself (effectively squaring it) and the result is assigned to ``d``
     #. The function returns the value associated with ``d``
 
