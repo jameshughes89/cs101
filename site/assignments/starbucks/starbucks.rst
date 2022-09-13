@@ -133,6 +133,16 @@ In our case we will use :math:`R = 6371` for Earth, which is stored in the provi
 Part 5 --- Counting Starbucks
 =============================
 
+In order to calculate the density of Starbucks, the number of Starbucks within the specified area needs to be known.
+With the data available, the way to do this is to check each Starbucks' latitude & longitude and check if it falls
+within the "rectangle" specified. In other words, check if the Starbucks' latitude falls between the "rectangle's"
+latitudes and if the longitude falls between the "rectangle's" longitudes.
+
+The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
+specifying the "rectangle" as parameters. The function is already set up to *loop* over every Starbucks location in a
+*list*. Have a look a the loop --- even if we haven't formally discussed this in class, it should be pretty clear what
+it's doing.
+
 
 Part 6 --- Calculate Starbucks Density
 ======================================
