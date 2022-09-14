@@ -110,14 +110,14 @@ Part 4 --- Subtended Area
 =========================
 
 Since we want to calculate the *density* of starbucks, we need to consider the units used. A reasonable measure would be
-*Starbucks per square kilometers*. In order to compute this, we must first calculate the area of the "square" defined by
-two latitude and two longitudes. You are to complete the function ``subtended_area`` that takes four parameters. Two
-latitudes defining the top and bottom of the "square" and two longitudes defining the sides of the square. The function
-will return the area of the "square" in kilometers squared (:math:`km^{2}`).
+*Starbucks per square kilometers*. In order to compute this, we must first calculate the area of the "rectangle" defined
+by two latitude and two longitudes. You are to complete the function ``subtended_area`` that takes four parameters. Two
+latitudes defining the top and bottom of the "rectangle" and two longitudes defining the sides of the "rectangle". The
+function will return the area of the "rectangle" in kilometers squared (:math:`km^{2}`).
 
 However, in reality, since it is a sphere that the surface area is being calculated on, the latitude and longitudes do
-not actually define a square. This means that the simple :math:`length * height` will not work. Instead we need to
-calculate it with the following equation.
+not actually define a rectangle we are familiar with. This means that the simple :math:`length * height` will not work.
+Instead we need to calculate it with the following equation.
 
 :math:`\frac{\pi}{180} \cdot R^{2} \cdot \lvert sin(lat_{1}) - sin(lat_{2}) \rvert \cdot \lvert lon_{1} - lon_{2} \rvert`
 
@@ -132,6 +132,26 @@ In our case we will use :math:`R = 6371` for Earth, which is stored in the provi
 
 Part 5 --- Counting Starbucks
 =============================
+
+In order to calculate the density of Starbucks, the number of Starbucks within the specified area needs to be known.
+With the data available, the way to do this is to check each Starbucks' latitude & longitude and check if it falls
+within the specified "rectangle". In other words, check if the Starbucks' latitude falls between the "rectangle's"
+latitudes and if the longitude falls between the "rectangle's" longitudes. See the below image for an example.
+
+.. image:: a1-LatLongSquareCount.png
+
+The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
+specifying the "rectangle" as parameters. For simplicity, assume ``latitude_line_1 < latitude_line_2`` and
+``longitude_line_1 < longitude_line_2``. The function is already set up to *loop* over every Starbucks location in a
+*list*. Have a look a the loop --- even if we haven't formally discussed this in class, there is a good chance you can
+make sense of what it's doing.
+
+You are to complete the body of the loop. Each time through the loop, we'll be considering a new Starbucks location. The
+existing code already stores the current Starbucks location's ``latitude`` and ``longitude`` values in their respective
+variables. You are to figure out if this specific location falls within the area defined by the latitudes and longitudes
+passed to the function as parameters. If the location is within the area, we count it, otherwise, we do not. Keep track
+of the running total of Starbucks within the area and, when the loop is finished checking each Starbucks
+location, the function will return the final count.
 
 
 Part 6 --- Calculate Starbucks Density
@@ -170,27 +190,9 @@ This data in the .csv file is fortunately already in decimal format so you will 
 Complete the function that counts the number of Starbucks in a region
 =====================================================================
 
-Counting up the number of Starbucks in a given area. The function ``num_starbucks()`` is already set up to *loop* over every Starbucks location in a *list*. All you have to do is remember to pass in the list. Have a look a the loop. Even if we haven't formally discussed this structure in class yet, it should be pretty clear what it's doing.
-
-.. note::
-
-    Fortunately, the data coming in is **already in decimal format**, so there is no need to actually  convert these values with the ``convert_to_decimal`` function.
 
 
-Your work is in the body of the loop. Each time through the loop we'll be considering a new Starbucks location. The existing code will put the current location's latitude in ``loc_lat`` and longitude in ``loc_lon``. Your job is to figure out if this location falls in the area between the lat/long pairs defining your region. If this location is within the box defined by the lats and longs then it is in our defined region and we need to count it. 
 
-
-You need to keep track of how many Starbucks there are in the region and then return that
-value.
-
-.. image:: a1-LatLongSquareCounr.png
-
-
-If the existing code is scaring you, think about it this way:
-
-* There exists a robot that needs to be programmed
-* The robot will receive a new Starbucks location, one after the other, until there are no more locations. **(already coded for us)**
-* Robot will take the location, and ``IF`` the location is within the rectangle we care about, we count it, otherwise, ignore it. **(we need to code this bit)**
 
 
 
