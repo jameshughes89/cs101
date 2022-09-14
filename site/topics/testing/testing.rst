@@ -322,7 +322,7 @@ What You Don't Get
       """
       Calculate and return the sum of the two provided values.
 
-      :rtype:
+      :rtype: float
       :param a: First number
       :param b: Second number
       :return: The sum of the two numbers
