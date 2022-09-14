@@ -215,44 +215,6 @@ What to Submit to Moodle
 .. image:: downloadPy.png
 
 
-Have a peek at the data-loading function
-========================================
-
-This data in the .csv file is fortunately already in decimal format so you will not need to  convert it with ``convert_to_decimal()``, however, you still need to do part 1 and make sure  it works properly even though you might not actually use ``convert_to_decimal()`` for the below parts!!!!!!
-
-
-
-   
-Complete the function that counts the number of Starbucks in a region
-=====================================================================
-
-
-
-
-
-
-
-Finally
-=======
-
-Finally, fill in a convenience function ``starbucks_per_kmsq()`` which, given subtending lat/long pairs, returns the density of Starbucks. 
-
-TODO:
-
-* Use ``load_asn1_data()`` to load the locations and store them in a variable.
-* Compute the number of Starbucks in the region
-* Compute the size (area) of the region
-* Divide number of Starbucks by area to get density
-* return density
-
-
-Now try it!
-===========
-
-Try your code. Try small regions and big regions. What area has the highest Starbucks density you can find? The lowest? Make sure to print them out. 
-
-
-
 General FAQ:
 ============
 
