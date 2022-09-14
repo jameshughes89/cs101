@@ -290,7 +290,7 @@ Setting Type Hints
 * In the parameter list, each parameter's type is explicitly stated
 * The return type of the function is also stated after the parameter list
 
-    * This part `` -> float:``
+    * This part ``-> float:``
 
 * It is also good to include the return type in the docstring for the function
 
@@ -322,7 +322,7 @@ What You Don't Get
       """
       Calculate and return the sum of the two provided values.
 
-      :rtype:
+      :rtype: float
       :param a: First number
       :param b: Second number
       :return: The sum of the two numbers
