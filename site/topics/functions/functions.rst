@@ -257,7 +257,7 @@ Execution Flow
 
     * Functions end when there are no more lines to execute, or a ``return`` statement is hit
 
-* Like 8 prints out the value of ``fahrenheit``
+* Line 8 prints out the value of ``fahrenheit``
 * Line 10 assigns a value to a variable
 * Like 11 calls the function ``celsius_to_fahrenheit`` again, which means our execution jumps to line 1 again
 * Once the function is complete (lines 1 -- 4), the value is returned to like 11 and the returned value is assigned to ``fahrenheit``
