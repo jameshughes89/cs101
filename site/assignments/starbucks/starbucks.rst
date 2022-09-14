@@ -169,14 +169,50 @@ Part 8 --- Testing
 Some Hints
 ==========
 
+* Work on one method at a time
+* Get each method working perfectly before you go on to the next one
+* Test each method as you write it
+    * This is a really nice thing about programming; you can call your methods and see what result gets returned
+    * Mentally test before you even write --- what does this method do? What problem is it solving?
+
+* If you need help, ask
+    * Drop by office hours
+
 
 Some Marking Details
 ====================
+
+.. warning::
+    Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or
+    even that your program is correct.
+
+Below is a list of both *quantitative* and *qualitative* things we will look for:
+
+* Correctness?
+* Did you follow instructions?
+* Comments?
+* Variable Names?
+* Style?
+* Did you do just weird things that make no sense?
 
 
 What to Submit to Moodle
 ========================
 
+* Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program
+* Submit your version of ``asn1.py`` to Moodle
+    * Do **not** submit the .ipynb file
+    * To get the ``asn1.py`` file from Colab, see the image below
+
+* Also submit your text file describing the areas you found with the highest, and lowest, Starbucks densities and a short description of how you found them
+    * Don't worry about finding the highest or lowest density values, just try a few and pick your highest and lowest
+
+.. warning::
+
+    Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
+
+
+.. image:: downloadPy.png
 
 
 Have a peek at the data-loading function
@@ -215,49 +251,6 @@ Now try it!
 
 Try your code. Try small regions and big regions. What area has the highest Starbucks density you can find? The lowest? Make sure to print them out. 
 
-
-What to submit to Moodle
-========================
-
-Submit your work on Moodle. 
-
-* Your version of ``asn1.py``. Do **not** submit the .ipynb file. To get the asn1.py file from Colab, see the image below. 
-
-	* Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program.
-	* List anyone you worked with in the comments, too
-
-* A text file describing the areas you found with the highest, and lowest, Starbucks densities and a short description of how you found them.  
-	* Don't worry about finding the HIGHEST or LOWEST density, just try a few and pick your highest and lowest. 
-
-**VERIFY THAT YOUR SUBMISSION TO MOODLE WORKED!**
-**IF YOU SUBMIT INCORRECTLY, YOU WILL GET A 0**
-
-.. image:: downloadPy.png
-
-
-Some hints
-==========
-
-* Work on one function at a time. 
-* Get each function *working perfectly* before you go on to the next one. 
-* *Test* each function as you write it. 
-	* This is a really nice thing about programming: you can call your functions and see what result gets returned. Does it seem correct?
-* If you need help, *ask*! Drop by my office hours. 
-
-Some marking details
-====================
-
-.. warning::
-	Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or even that your program is correct.
-
-Below is a list of both *quantitative* and *qualitative* things we will look for:
- 
-* Correctness?
-* Did you follow instructions?
-* Comments?
-* Variable Names?
-* Style?
-* Did you do just weird things that make no sense?
 
 
 General FAQ:
