@@ -7,6 +7,7 @@ STARBUCKS_FILE_NAME = "starbucks2018.csv"
 # Average radius of the earth in km
 EARTH_RADIUS = 6371
 
+
 def load_starbucks_data(file_name: str) -> list:
     """
     Load a comma separated value (csv) file containing latitude and longitudes for Starbucks locations. This function
@@ -61,6 +62,7 @@ assert isinstance(load_starbucks_data(STARBUCKS_FILE_NAME)[0][0], float)
 assert (47.51, -92.55) == load_starbucks_data(STARBUCKS_FILE_NAME)[0]
 assert (33.79, -118.33) == load_starbucks_data(STARBUCKS_FILE_NAME)[-1]
 
+
 def convert_degrees_to_decimal(degrees: float, minutes: float, seconds: float) -> float:
     """
     Convert a latitude or longitude from a degrees, minutes, and seconds format to a decimal format. There are
@@ -75,7 +77,6 @@ def convert_degrees_to_decimal(degrees: float, minutes: float, seconds: float) -
     :return: Latitude or longitude in decimal format.
     :rtype: float
     """
-    
 
 
 # Test convert_degrees_to_decimal
@@ -85,6 +86,7 @@ def convert_degrees_to_decimal(degrees: float, minutes: float, seconds: float) -
 # assert 0.00001 > abs(convert_degrees_to_decimal(0, 0, 10) - 0.00277777777)
 # assert 0.00001 > abs(convert_degrees_to_decimal(10, 10, 10) - 10.16944444444)
 # assert 0.00001 > abs(convert_degrees_to_decimal(-10, -10, -10) - (-10.16944444444))
+
 
 def subtended_area(
     latitude_line_1: float, latitude_line_2: float, longitude_line_1: float, longitude_line_2: float
@@ -126,6 +128,7 @@ def subtended_area(
 # assert abs(subtended_area(10, 20, 10, 20) - 1192785.52) < 0.01
 # assert abs(subtended_area(-10, 20, -10, 20) - 10959337.08) < 0.01
 # assert abs(subtended_area(90, -90, 180, -180) - 510064471.91) < 0.01
+
 
 def number_starbucks_within_area(
     locations: list, latitude_line_1: float, latitude_line_2: float, longitude_line_1: float, longitude_line_2: float
@@ -169,7 +172,6 @@ def number_starbucks_within_area(
     # Add your code here --- you will want some variable to keep track of the running total of Starbucks within the
     # specified area
 
-
     # This is a *loop* --- the code within the loop (indented) will repeat multiple times. In this particular case, the
     # loop will run once for every location within the list locations.
     for starbucks in locations:
@@ -178,10 +180,10 @@ def number_starbucks_within_area(
 
         # Add your code here --- you need to check if the current Starbucks location being looked at is within the
         # specified area. If it is within the specified area, it needs to be counted.
-        
 
     # Return the final total number of Starbucks
-    return 
+    return
+
 
 # Test number_starbucks_within_area
 # assert 0 == number_starbucks_within_area([], 1, 10, 1, 10)
@@ -193,6 +195,7 @@ def number_starbucks_within_area(
 # assert 0 == number_starbucks_within_area([(1, 1), (1, 1)], 10, 20, 10, 20)
 # assert 2 == number_starbucks_within_area([(1, 1), (1, 1)], 0, 10, 0, 10)
 # assert 2 == number_starbucks_within_area([(1, 1), (1, 1), (11, 11), (12, 12)], 0, 10, 0, 10)
+
 
 def starbucks_per_square_kilometer(
     file_name: str, latitude_line_1: float, latitude_line_2: float, longitude_line_1: float, longitude_line_2: float
