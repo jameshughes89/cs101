@@ -184,6 +184,16 @@ densities --- simply try a few parameters and see what you get.
 Part 8 --- Testing
 ==================
 
+To help ensure that your program is correct, run the provided assertion tests. Each function is followed by a series of
+commented out assertion tests that will help you test your code. When you are ready to test your functions, simply make
+them not comments (remove the ``#``) to include them in your running program. There is no guarntee that if your code
+passes all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as
+they should.
+
+Realistically you should have been running tests after you complete each of the above parts, but this part is here to
+remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
+for the marker to return your assignment before you have an idea of if it works correctly.
+
 
 Some Hints
 ==========
