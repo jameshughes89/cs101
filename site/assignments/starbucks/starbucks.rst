@@ -166,9 +166,10 @@ Part 8 --- Testing
 ==================
 
 To help ensure that your program is correct, run the provided assertion tests. Each function is followed by a series of
-commented out assertion tests that will help you test your code. Simply make them not comments (remove the ``#``) to
-include them in your running program. There is no guarntee that if your code passes all the tests that you will be
-correct, but it certainly helps provide peace of mind that things are not going too wrong.
+commented out assertion tests that will help you test your code. When you are ready to test your functions, simply make
+them not comments (remove the ``#``) to include them in your running program. There is no guarntee that if your code
+passes all the tests that you will be correct, but it certainly helps provide peace of mind that things are not going
+too wrong.
 
 Realistically you should have been runnig tests after you complete each of the above parts, this Part is reminding you.
 Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait for the
