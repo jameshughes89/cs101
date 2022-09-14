@@ -141,11 +141,14 @@ Execution of a Function
 
         * ``a = 2`` and ``b = 3``
 
-    #. The sum of ``a`` and ``b`` is put into a variable ``c``
+    #. The sum of ``a`` and ``b`` is calculated and put into a variable ``c``
     #. The variable ``c`` is multiplied with itself (effectively squaring it) and the result is assigned to ``d``
     #. The function returns the value associated with ``d``
 
-* What happens if we don't give it enough, or too many parameters?
+* If you provide too few or too many parameters, Python will raise an error like the following examples
+
+    * Missing one parameter --- ``TypeError: square_of_sum() missing 1 required positional argument: 'b'``
+    * Too many parameters --- ``TypeError: square_of_sum() takes 2 positional arguments but 3 were given``
 
 .. raw:: html
 
@@ -305,7 +308,7 @@ Creating Abstraction
 
 * Without being able to organize things into *levels of abstraction*, writing complex software would be prohibitively difficult
 
-    * The same is true for your every day live --- learning to think of things in terms of levels of abstraction is very important
+    * The same is true for your every day life --- learning to think of things in terms of levels of abstraction is very important
     * For example, when driving a car, do you think about the pistons firing?
     * Or, do you need to think about neurons firing and ion pumps to move your arm?
 
