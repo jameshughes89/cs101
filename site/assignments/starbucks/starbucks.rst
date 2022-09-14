@@ -5,6 +5,7 @@ Density of Starbucks
 * **Worth**: 10%
 * **DUE**: TBD, 2022 at 11:55pm; submitted on MOODLE.
 
+
 Task
 ====
 
@@ -157,13 +158,41 @@ location, the function will return the final count.
 Part 6 --- Calculate Starbucks Density
 ======================================
 
+Complete the ``starbucks_per_square_kilometer`` function that, given a file name and the latitude and longitudes to
+define a "rectangle", calculates and returns the density of Starbucks within that "rectangle".
+
+The function will need to
+
+* Load the data
+* Calculate the area of the "rectangle"
+* Count the number of Starbucks within the "rectangle"
+* Calculate the density of Starbucks within the "rectangle" --- divide the number of Starbucks by the area
+* Return the density
+
 
 Part 7 --- Using Your Function
 ==============================
 
+Play around with the ``starbucks_per_square_kilometer`` function. Try some small "rectangles" and big ones. What area
+has the highest Starbucks density you can find? The lowest?
+
+After playing with the function a little, record within a text file the smallest and largest densities you found and
+what the parameters were that you used to get the densities. You do not need to find the largest or smallest possible
+densities --- simply try a few parameters and see what you get.
+
 
 Part 8 --- Testing
 ==================
+
+To help ensure that your program is correct, run the provided assertion tests. Each function is followed by a series of
+commented out assertion tests that will help you test your code. When you are ready to test your functions, simply make
+them not comments (remove the ``#``) to include them in your running program. There is no guarntee that if your code
+passes all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as
+they should.
+
+Realistically you should have been running tests after you complete each of the above parts, but this part is here to
+remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
+for the marker to return your assignment before you have an idea of if it works correctly.
 
 
 Some Hints
