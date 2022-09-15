@@ -14,8 +14,6 @@ Zombie Infections
     you may need to install the packages yourself.
 
 
-.. image:: zombieheader.jpeg
-   
 If you can simulate something accurately enough, the simulation might have real advantages over actually doing an experiment. For example, if you simulate a protein folding -- and get it right -- you can actually stop, rewind, replay, and even do matrix-style 'bullet time' pans around the protein, as it folds. This allows you to watch interactions on a level of detail that is completely impossible experimentally.
 
 Simulations also let you do things you simply *can't* do in reality. Suppose you're a social geographer who wants to study the social impact of different types of natural disasters on a small fishing village. You'd have difficulty getting ethics  approval to flood an actual village, or bury it in lava, and then collect data. If, however, your 'villagers' exist only in a simulation... there are no constraints on what you can do (except for your own guilt).
