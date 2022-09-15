@@ -14,6 +14,108 @@ Zombie Infections
     you may need to install the packages yourself.
 
 
+Task
+====
+
+
+Provided Files
+==============
+
+
+Part 0 --- Read the Assignment
+==============================
+
+Read the assignment description in its entirety before starting.
+
+
+Part 1 --- Uploading Files to Colab
+===================================
+
+
+Part 2 --- Read Over Provided Code
+==================================
+
+
+Part 3 --- Check if a City is Infected
+======================================
+
+
+Part 4 --- Get a City's Neighbours
+==================================
+
+
+Part 5 --- Infecting and Curing a City
+======================================
+
+
+Part 6 --- How Many Cities are Infected
+=======================================
+
+* Both ``number_of_cities_infected`` and ``is_world_completely_infected`` here
+
+
+Part 7 --- Simulation Step
+==========================
+
+
+Part 8 --- Simulate Infections Disease Scenario
+===============================================
+
+
+Part 9 --- Using Your Code and Plotting
+=======================================
+
+
+Part 10 --- Testing
+===================
+
+
+Some Hints
+==========
+
+* Work on one method at a time
+* Get each method working perfectly before you go on to the next one
+* Test each method as you write it
+    * This is a really nice thing about programming; you can call your methods and see what result gets returned
+    * Mentally test before you even write --- what does this method do? What problem is it solving?
+
+* If you need help, ask
+    * Drop by office hours
+
+
+Some Marking Details
+====================
+
+.. warning::
+    Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or
+    even that your program is correct.
+
+Below is a list of both *quantitative* and *qualitative* things we will look for:
+
+* Correctness?
+* Did you follow instructions?
+* Comments?
+* Variable Names?
+* Style?
+* Did you do just weird things that make no sense?
+
+
+What to Submit to Moodle
+========================
+
+* Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program
+* Submit your version of ``asn2.py`` to Moodle
+    * Do **not** submit the .ipynb file
+    * To get the ``asn2.py`` file from Colab, see the example image in Assignment 1
+
+.. warning::
+
+    Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
+
+
+
+
+
 If you can simulate something accurately enough, the simulation might have real advantages over actually doing an experiment. For example, if you simulate a protein folding -- and get it right -- you can actually stop, rewind, replay, and even do matrix-style 'bullet time' pans around the protein, as it folds. This allows you to watch interactions on a level of detail that is completely impossible experimentally.
 
 Simulations also let you do things you simply *can't* do in reality. Suppose you're a social geographer who wants to study the social impact of different types of natural disasters on a small fishing village. You'd have difficulty getting ethics  approval to flood an actual village, or bury it in lava, and then collect data. If, however, your 'villagers' exist only in a simulation... there are no constraints on what you can do (except for your own guilt).
