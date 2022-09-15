@@ -3,27 +3,15 @@ Zombie Infections
 *****************
 
 * **Worth**: 10%
-* **Due**: Oct 25, at 11:55pm; submitted on MOODLE.
+* **Due**: TBD 2022, at 11:55pm; submitted on MOODLE
 * **Files**: :download:`asn2.ipynb <asn2.ipynb>` OR :download:`asn2.py <asn2.py>`
 
-.. warning::
-
-   For this assignment, you may **not** work with anyone else. You need to work independently. By all means communicate with each other at a high level (that's good), but your code needs to be your own here. 
 
 .. warning::
 
-   For this assignment, you will need to use special Python packages (networkx, matplotlib). The good news is that if you are using Colab (or you have installed anaconda), you've got them installed already!
-   
-   You can access these in Colab or PyCharm. If using PyCharm and you create a PyCharm project, make sure to select the **Conda** interpreter. 
-   
-   .. image:: pycharmconda.png
-   
-   
-   **IGNORE IF USING COLAB** If for whatever reason PyCharm is being a troublemaker, you can use Spyder still. Just open up Spyder. On Windows, you can just search for it in the start menue. On Mac and Windows, you can also just open up the **Anaconda Navigator**. Then from within the navigator, open up Spyder. 
-   
-   .. image:: windowsSpyder.png
-   
-   .. image:: anacondanav.png
+    For this assignment, you will need to use special Python packages (networkx, matplotlib). The good news is that if
+    you are using Colab you do not need to do anything special. If, however, you are using a local Python interpreter,
+    you may need to install the packages yourself.
 
 
 .. image:: zombieheader.jpeg
