@@ -3,8 +3,8 @@ Zombie Infections
 *****************
 
 * **Worth**: 10%
-* **DUE**: Oct 25, at 11:55pm; submitted on MOODLE.
-* Starting point: :download:`asn2.ipynb <asn2.ipynb>` OR :download:`asn2.py <asn2.py>`
+* **Due**: Oct 25, at 11:55pm; submitted on MOODLE.
+* **Files**: :download:`asn2.ipynb <asn2.ipynb>` OR :download:`asn2.py <asn2.py>`
 
 .. warning::
 
