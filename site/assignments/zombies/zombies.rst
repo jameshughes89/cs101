@@ -108,6 +108,10 @@ What to Submit to Moodle
     * Do **not** submit the .ipynb file
     * To get the ``asn2.py`` file from Colab, see the example image in Assignment 1
 
+* A text/word file answering the analysis questions and providing *data* to back up your answers
+    * Include images in your submission
+
+
 .. warning::
 
     Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
@@ -417,13 +421,3 @@ Now we get to play with our simulator to answer burning public health questions 
 .. image:: zhist.png
 
 
-What to submit
-==============
-
-* Your version of ``asn2.py``. Also, please **DO NOT** change the name of this file. Leave it alone. 
-
-  * Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program.
-  * Make sure it's *commented* and has *function headers*!!
-  * Use proper variable names
-  
-* A text/word file answering the 4 analysis questions and providing *data* to back up your answers. Include images in your submission. 
