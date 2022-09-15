@@ -1,5 +1,5 @@
 *****************
-Oh crap, Zombies!
+Zombie Infections
 *****************
 
 * **Worth**: 10%
