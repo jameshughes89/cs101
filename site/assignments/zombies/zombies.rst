@@ -4,7 +4,7 @@ Zombie Infections
 
 * **Worth**: 10%
 * **Due**: TBD 2022, at 11:55pm; submitted on MOODLE
-* **Files**: :download:`asn2.ipynb <asn2.ipynb>` OR :download:`asn2.py <asn2.py>`
+* **Files**: :download:`asn2.ipynb <asn2.ipynb>`/:download:`asn2.py <asn2.py>`
 
 
 .. warning::
