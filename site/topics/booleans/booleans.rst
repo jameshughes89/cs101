@@ -177,7 +177,7 @@ Composing Operators and Values
 Evaluating Example Expressions
 ------------------------------
 
-**``((17 + 2) < 18) or (17 != 18)``**
+``((17 + 2) < 18) or (17 != 18)``
 
 ``(19 < 18) or (17 != 18)``
 
@@ -188,7 +188,7 @@ Evaluating Example Expressions
 ``True``
 
 
-**``(101 == 100) and  ((66 - 17) < 54))``**
+``(101 == 100) and  ((66 - 17) < 54))``
 
 ``False and ((66 - 17) < 54)``
 
@@ -202,7 +202,7 @@ Evaluating Example Expressions
 * With ``and``, if one of the operands are ``False``, the whole expression evaluated to ``False``
 
 
-**``(14 > 0) or ((6 != 7) and ((4 + 17) < 20))``**
+``(14 > 0) or ((6 != 7) and ((4 + 17) < 20))``
 
 ``True or ((6 != 7) and ((4 + 17) < 20))``
 
