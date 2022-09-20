@@ -110,8 +110,8 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
     topics/statements/statements
     topics/input/input
     topics/functions/functions
-    topics/testing/testing
     topics/booleans/booleans
+    topics/testing/testing
     topics/if-else/if-else
     topics/car-rental/car-rental
     topics/loops/loops
