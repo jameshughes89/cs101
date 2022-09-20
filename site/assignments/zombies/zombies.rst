@@ -17,6 +17,21 @@ Zombie Infections
 Task
 ====
 
+If you can simulate something accurately, it becomes possible to study the simulation without having to actually
+implement the real thing. You will write a program to simulate a zombie apocalypse scenatio on a randomly generated
+network of cities. Additionally, you will be using your simulation to analyze the spread of the zombie apocalypse
+throughout your network of cities.
+
+You will
+
+* Write a function to check if a city is infected
+* Write a function to find a given city's neighbouring cities
+* Write functions to infect and cure specific cities
+* Write a function to count the number of cities currently infected
+* Write functions to simulate the spread of the zombie apocalypse
+* Run simulations of the zombie apocalypse
+* Analyze the results of your simulations
+
 
 Provided Files
 ==============
