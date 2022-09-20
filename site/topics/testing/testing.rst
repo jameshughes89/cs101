@@ -128,7 +128,7 @@ Square of Sums Example Tests
     floating point numbers.
 
         * What comes after the integer :math:`1`? That's easy, it's :math:`2`.
-        * What comes after the floating point number :math`1.0`? Is it :math`1.1`? Or :math`1.01`? Maybe :math`1.00001`?
+        * What comes after the floating point number :math:`1.0`? Is it :math:`1.1`? Or :math:`1.01`? Maybe :math:`1.00001`?
 
     If I run ``square_of_sum(2.2, 2.2)``, the correct answer is ``19.36``, but Python will say ``19.360000000000003``
     due to the floating point number issue.
@@ -144,7 +144,7 @@ Square of Sums Example Tests
     There would be no sense testing beyond a difference of ``0.001`` liters since you cannot get beyond that precision
     in real life with those instruments.
 
-    Long story short, it you want to check equality between floating point numbers --- don't. Simply check that their
+    Long story short, if you want to check equality between floating point numbers --- don't. Simply check that their
     difference is less than some reasonable threshold.
 
 
