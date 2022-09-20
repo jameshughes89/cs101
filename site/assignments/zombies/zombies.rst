@@ -7,7 +7,7 @@ Zombie Infections
 * **Files**: :download:`asn2.ipynb <asn2.ipynb>`/:download:`asn2.py <asn2.py>`
 
 
-.. warning::
+.. note::
 
     For this assignment, you will need to use special Python packages (networkx, matplotlib). The good news is that if
     you are using Colab you do not need to do anything special. If, however, you are using a local Python interpreter,
