@@ -36,6 +36,21 @@ You will
 Provided Files
 ==============
 
+You are provided with
+
+* A notebook file called :download:`asn2.ipynp <asn2.ipynb>` containing the starting point of the assignment
+
+    * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
+    * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn2.py <asn2.py>` file
+
+.. warning::
+
+    Do not alter the function details in the provided .ipynb/.py files
+
+        * Do not change the name of the functions
+        * Do not remove the function description
+        * Do not remove or add to the parameter list
+
 
 Part 0 --- Read the Assignment
 ==============================
