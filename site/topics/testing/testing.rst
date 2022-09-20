@@ -128,7 +128,7 @@ Square of Sums Example Tests
     floating point numbers.
 
         * What comes after the integer :math:`1`? That's easy, it's :math:`2`.
-        * What comes after the floating point number :math`1.0`? Is it :math`1.1`? Or :math`1.01`? Maybe :math`1.00001`?
+        * What comes after the floating point number :math:`1.0`? Is it :math:`1.1`? Or :math:`1.01`? Maybe :math:`1.00001`?
 
     If I run ``square_of_sum(2.2, 2.2)``, the correct answer is ``19.36``, but Python will say ``19.360000000000003``
     due to the floating point number issue.
