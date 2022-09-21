@@ -1,177 +1,398 @@
-## CSCS 161 Assignment #2 -- Zombie Apocalypse
-## Name: PLEASE FILL THIS IN
-## Student number: SERIOUSLY
-
-import string
+# NAME:
+# ST-NUMBER:
+# StFX EMAIL:
+import copy
+import random
 
 import matplotlib.pyplot as plt
-import networkx
-import numpy
-
-#### This stuff you just have to use, you're not expected to know how it works.
-#### You just need to read the plain English function headers.
-#### If you want to learn more, by all means follow along (and ask questions if
-#### you're curious). But you certainly don't have to.
+import networkx as nx
 
 
-def make_city(name, neighbours):
+def make_city(name: str, neighbours: list) -> list:
     """
-    Create a city (implemented as a list).
+    Creates and returns a city, encoded as a list containing the city's name, state (if it is infected or not), and
+    list of neighbours, i.e. [name, infection state, [list of neighbours]]. Upon creation, all cities have their
+    infection status set to False.
 
-    :param name: String containing the city name
-    :param neighbours: The city's row from an adjacency matrix.
-
-    :return: [name, Infection status (defailt value of False), List of neighbours]
+    :param name: The name of the city.
+    :type name: String
+    :param neighbours: A list of integers representing the indices of adjacent cities.
+    :type neighbours: A list of integers (indices).
+    :return: An encoding of a city
+    :rtype: A list of the form [string, bool, [integers]]
     """
+    return [name, False, neighbours]
 
-    return [name, False, list(numpy.where(neighbours == 1)[0])]
+
+assert "Name" == make_city("Name", [0, 10, 100])[0]
+assert False == make_city("Name", [0, 10, 100])[1]
+assert [0, 10, 100] == make_city("Name", [0, 10, 100])[2]
 
 
-def make_connections(n, density=0.35):
+def make_edges(number_of_vertices: int, connected_neighbours: int = 4, rewire_probability: float = 0.33) -> dict:
     """
-    This function will return a random adjacency matrix of size
-    n x n. You read the matrix like this:
-
-    if matrix[2,7] = 1, then cities '2' and '7' are connected.
-    if matrix[2,7] = 0, then the cities are _not_ connected.
-
-    :param n: number of cities
-    :param density: controls the ratio of 1s to 0s in the matrix
-
-    :returns: an n x n adjacency matrix
+    Generate an adjacency list representing the edges for a graph/network of a specified size. The graph/network is
+    undirected and unweighted. The resulting adjacency list is guaranteed to encode a graph/network that is connected.
+    connected_neighbours is expected to be an even number; however, if an odd number is provided, then the resulting
+    graph/network will have each vertex connect to the (connected_neighbours - 1) closest neighbours.
+    :raises networkx.NetworkXError: If a connected graph cannot be generated after 1000 tries, raise an exception
+    :param number_of_vertices: The number of vertices/nodes in the graph.
+    :type number_of_vertices: Integer
+    :param connected_neighbours: Number of closest neighbours to connect to upon creation.
+    :type connected_neighbours: Integer
+    :param rewire_probability: Likelihood of an edge being rewired after creation.
+    :type rewire_probability: Float
+    :return: An adjacency list for a connected, undirected, and unweighted graph/network.
+    :rtype: Dictionary of lists of integers (integers represent vertices).
     """
-
-    # Generate a random adjacency matrix and use it to build a networkx graph
-    a = numpy.int32(numpy.triu((numpy.random.random_sample(size=(n, n)) < density)))
-    G = networkx.from_numpy_matrix(a)
-
-    # If the network is 'not connected' (i.e., there are isolated nodes)
-    # generate a new one. Keep doing this until we get a connected one.
-    # Yes, there are more elegant ways to do this, but I'm demonstrating
-    # while loops!
-    while not networkx.is_connected(G):
-        a = numpy.int32(numpy.triu((numpy.random.random_sample(size=(n, n)) < density)))
-        G = networkx.from_numpy_matrix(a)
-
-    # Cities should be connected to themselves.
-    numpy.fill_diagonal(a, 1)
-
-    return a + numpy.triu(a, 1).T
+    try:
+        network = nx.connected_watts_strogatz_graph(
+            number_of_vertices, connected_neighbours, rewire_probability, tries=1000
+        )
+    except nx.NetworkXError:
+        raise nx.NetworkXError("Connected graph was unable to be created after 1000 tries --- please run again")
+    return nx.to_dict_of_lists(network)
 
 
-def set_up_cities(
-    names=[
-        "City 0",
-        "City 1",
-        "City 2",
-        "City 3",
-        "City 4",
-        "City 5",
-        "City 6",
-        "City 7",
-        "City 8",
-        "City 9",
-        "City 10",
-        "City 11",
-        "City 12",
-        "City 13",
-        "City 14",
-        "City 15",
-    ]
-):
+assert 10 == len(make_edges(10, 4, 0.33))
+assert 40 == sum(len(current_list) for current_list in make_edges(10, 4, 0.33).values())
+
+
+def make_world(number_of_cities: int, connected_neighbours: int = 4, rewire_probability: float = 0.33) -> list:
     """
-    Set up a collection of cities (world) for our simulator.
-    Each city is a 3 element list, and our world will be a list of cities.
+    Returns a world consisting of multiple cities with some amount of connectivity between the cities. The world is
+    a list of cities. Each city maintains its list of neighbouring cities.
 
-    :param names: A list with the names of the cities in the world.
-
-    :return: a list of cities
+    :param number_of_cities: The number of vertices/nodes in the graph.
+    :type number_of_cities: Integer
+    :param connected_neighbours: Number of closest neighbours to connect to upon creation.
+    :type connected_neighbours: Integer
+    :param rewire_probability: Likelihood of an edge being rewired after creation.
+    :type rewire_probability: Float
+    :return: A list of n cities.
+    :return: A list of lists of the form [[string, bool, [integers]], [string, bool, [integers]], ... ]
     """
-
-    # Make an adjacency matrix describing how all the cities are connected.
-    con = make_connections(len(names))
-
-    # Add each city to the list
-    city_list = []
-    for n in enumerate(names):
-        city_list += [make_city(n[1], con[n[0]])]
-
-    return city_list
+    world = []
+    connections = make_edges(number_of_cities, connected_neighbours, rewire_probability)
+    for i in range(number_of_cities):
+        world.append(make_city(f"City {i}", connections[i]))
+    return world
 
 
-def draw_world(world):
+world_test = make_world(10)
+assert 10 == len(world_test)
+
+
+def copy_world(world: list) -> list:
     """
-    Given a list of cities, produces a nice graph visualization. Infected
-    cities are drawn as red nodes, clean cities as blue. Edges are drawn
-    between neighbouring cities.
+    Create and return a copy of the world.
 
-    :param world: a list of cities
+    :param world: A list of cities representing the world to be copied.
+    :type world: A list of cities, of the form [[city 0, status, [neighbours]], [[city 1, status, [neighbours]] ... ]
+    :return: A copy of the list of cities.
+    :return: A list of lists of the form [[string, bool, [integers]], [string, bool, [integers]], ... ]
     """
+    return copy.deepcopy(world)
 
-    G = networkx.Graph()
 
-    bluelist = []
-    redlist = []
+world_test = make_world(10)
+copied_world_test = copy_world(world_test)
+assert world_test == copied_world_test
+assert not (world_test is copied_world_test)
+assert not (world_test[0] is copied_world_test[0])
+assert not (world_test[0][2] is copied_world_test[0][2])
 
+
+def draw_world(world: list) -> None:
+    """
+    Calling this function will display an image representing the world in its current state.
+
+    Draw the cities with their names, their connections, and represent the city's infection status with the vertex's
+    colour (cyan --- not infected, red --- infected).
+
+    :param world: A list of cities representing the world.
+    :type world: A list of cities, of the form [[city 0, status, [neighbours]], [[city 1, status, [neighbours]] ... ]
+    """
+    network = nx.Graph()
+    city_infection_state_colours = []
     plt.clf()
 
-    # For each city, add a node to the graph and figure out if
-    # the node should be red (infected) or blue (not infected)
-    for city in enumerate(world):
-        if city[1][1] == False:
-            G.add_node(city[0])
-            bluelist.append(city[0])
+    # Generate a networkx graph of our world
+    for i, city in enumerate(world):
+        network.add_node(i)
+        if city[1]:
+            city_infection_state_colours.append("r")
         else:
-            G.add_node(city[0], node_color="r")
-            redlist.append(city[0])
+            city_infection_state_colours.append("c")
+        for neighbour in city[2]:
+            network.add_edge(i, neighbour)
 
-        for neighbour in city[1][2]:
-            G.add_edge(city[0], neighbour)
-
-    # Lay out the nodes of the graph
-    position = networkx.circular_layout(G)
-
-    # Draw the nodes
-    networkx.draw_networkx_nodes(G, position, nodelist=bluelist, node_color="b")
-    networkx.draw_networkx_nodes(G, position, nodelist=redlist, node_color="r")
-
-    # Draw the edges and labels
-    networkx.draw_networkx_edges(G, position)
-    networkx.draw_networkx_labels(G, position)
-
-    # Force Python to display the updated graph
+    layout = nx.circular_layout(network)
+    nx.draw_networkx(network, pos=layout, with_labels=True, node_color=city_infection_state_colours, node_size=500)
     plt.show()
-    plt.draw()
 
 
-def print_world(world):
+# Eyeball test required --- uncomment to view test
+"""
+draw_world(
+    [
+        ["City 0", False, [4, 1]],
+        ["City 1", True, [0, 2]],
+        ["City 2", False, [1, 3]],
+        ["City 3", True, [2, 4]],
+        ["City 5", False, [3, 0]],
+    ]
+)"""
+
+
+def draw_number_of_cities_infected(number_of_cities_infected_list: list) -> None:
     """
-    In case the graphics don't work for you, this function will print
-    out the current state of the world as text.
+    Draw a line plot of the number of cities infected in the world over time. The parameter provided will be a list of
+    the number of cities infected at each time step of the simulation, with index 0 being the first observation of the
+    number of cities infected, and the last index will be the last observation.
 
-    :param world: a list of cities
+    :param number_of_cities_infected_list: A list of the number of cities infected at each step of a simulation.
+    :type number_of_cities_infected_list: List of Integers.
     """
+    plt.clf()
+    plt.plot(number_of_cities_infected_list)
+    plt.title("The Number of Cities Infected In The World Over Time")
+    plt.xlabel("Time Step")
+    plt.ylabel("Number of Cities Infected")
+    plt.show()
 
-    print("{:15}{:15}".format("City", "Infected?"))
-    print("------------------------")
-    for city in world:
-        print("{:15}{}".format(city[0], city[1]))
+
+# Eyeball test required --- uncomment to view test
+# draw_number_of_cities_infected([1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 4, 4, 4, 4, 3, 3, 3, 2, 2, 1])
 
 
-def draw_pretty_histogram(times):
+def draw_distribution(simulation_steps_list: list) -> None:
     """
-    Create a pretty histogram showing a distribution of the number of times it
-    took to get to the end of the world over the provided times.
-    :param times: a list of the time to end of worlds. The distribution of
-        these values will be created.
-    """
+    Creates a histogram of the distribution of simulation runtimes (in total steps).
 
-    plt.hist(times)
-    plt.xlabel("Time to End of World")
+    :param simulation_steps_list: Collection of simulation runtimes (in total steps)
+    :type simulation_steps_list: List of integers
+    """
+    plt.clf()
+    plt.hist(simulation_steps_list)
+    plt.title("Distribution of Simulation Runtimes in Total Steps")
+    plt.xlabel("Total Simulation Steps")
     plt.ylabel("Count")
-    plt.title("Distribution of End of the World Times")
     plt.show()
 
 
-#### That's the end of the stuff provided for you.
-#### Put *your* code after this comment.
+# Eyeball test required --- uncomment to view test
+# draw_distribution([1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5])
+
+def is_infected(city: list) -> bool:
+    """
+    Return the infection state of the provided city. True if the city is infected, False otherwise.
+
+    :param city: City to retrieve state from
+    :type city: A list of the form [string, bool, [integers]]
+    :return: True if the city is infected, False otherwise
+    :rtype: Boolean
+    """
+    
+
+
+# city_is_infected_test = make_city("", [])
+# city_is_infected_test[1] = False
+# assert False == is_infected(city_is_infected_test)
+# city_is_infected_test[1] = True
+# assert True == is_infected(city_is_infected_test)
+
+def get_neighbours(city: list) -> list:
+    """
+    Return the provided city's list of neighbours indices. Note, the list of neighbours are indices of the neighbours,
+    not cities themselves.
+
+    :param city: An encoding of a city.
+    :type city: A list of the form [string, bool, [integers]].
+    :return: The city's list of neighbour indices.
+    :rtype: A list of integers.
+    """
+    
+
+
+# city_neighbours_test = make_city("", [])
+# assert [] == get_neighbours(city_neighbours_test)
+# city_neighbours_test = make_city("", [0, 1, 2])
+# assert [0, 1, 2] == get_neighbours(city_neighbours_test)
+
+def infect(city: list) -> list:
+    """
+    Return a copy of the city as infected; return a copy of the city with the infection status set to True.
+
+    :param city: City to be infected
+    :type city: A list of the form [string, bool, [integers]]
+    :return: A copy of the provided city with the infected status set to True
+    :rtype: A list of the form [string, bool, [integers]]
+    """
+
+
+
+# city_infect_test_a = make_city("", [])
+# city_infect_test_b = infect(city_infect_test_a)
+# assert True == city_infect_test_b[1]
+# city_infect_test_c = infect(city_infect_test_b)
+# assert True == city_infect_test_c[1]
+# assert not (city_infect_test_a is city_infect_test_b)
+# assert not (city_infect_test_b is city_infect_test_c)
+
+
+def cure(city: list) -> list:
+    """
+    Return a copy of the city as not infected; return a copy with the infection status set to False.
+
+    :param city: City to be cured
+    :type city: A list of the form [string, bool, [integers]]
+    :return: A copy of the provided city with the infected status set to False
+    :rtype: A list of the form [string, bool, [integers]]
+    """
+
+
+# city_cure_test_a = make_city("", [])
+# city_cure_test_a[1] = True
+# city_cure_test_b = cure(city_cure_test_a)
+# assert False == city_cure_test_b[1]
+# city_cure_test_c = cure(city_cure_test_b)
+# assert False == city_cure_test_c[1]
+# assert not (city_cure_test_a is city_cure_test_b)
+# assert not (city_cure_test_b is city_cure_test_c)
+
+def number_of_cities_infected(world: list) -> int:
+    """
+    Count the number of cities that are currently infected in the world.
+
+    :param world: A list of cities representing the world.
+    :type world: A list of cities, of the form [[city 0, status, [neighbours]], [[city 1, status, [neighbours]] ... ].
+    :return: The number of cities currently infected in the world.
+    :rtype: Integer.
+    """
+
+
+
+# assert 0 == number_of_cities_infected([])
+# assert 0 == number_of_cities_infected([["", False, []], ["", False, []], ["", False, []]])
+# assert 3 == number_of_cities_infected([["", True, []], ["", True, []], ["", True, []]])
+# assert 2 == number_of_cities_infected([["", True, []], ["", False, []], ["", True, []]])
+# assert 1 == number_of_cities_infected([["", True, []], ["", False, []], ["", False, []]])
+# assert 1 == number_of_cities_infected([["", False, []], ["", True, []], ["", False, []]])
+# assert 1 == number_of_cities_infected([["", False, []], ["", False, []], ["", True, []]])
+
+def is_world_completely_infected(world: list) -> bool:
+    """
+    Check if the world is completely infected. The world is determined to be completely infected if all cities in the
+    world have their infection status as True. This function returns True if the world is completely infected and False
+    otherwise.
+
+    :param world: A list of cities representing the world.
+    :type world: A list of cities, of the form [[city 0, status, [neighbours]], [[city 1, status, [neighbours]] ... ].
+    :return: True if the world is completely infected (all cities infected), False otherwise.
+    :rtype: Boolean.
+    """
+
+
+
+# assert True == is_world_completely_infected([])
+# assert True == is_world_completely_infected([["", True, []], ["", True, []], ["", True, []]])
+# assert False == is_world_completely_infected([["", False, []], ["", False, []], ["", False, []]])
+# assert False == is_world_completely_infected([["", True, []], ["", False, []], ["", False, []]])
+# assert False == is_world_completely_infected([["", False, []], ["", True, []], ["", False, []]])
+# assert False == is_world_completely_infected([["", False, []], ["", False, []], ["", True, []]])
+
+def simulation_step(world: list, spread_probability: float, cure_probability: float) -> list:
+    """
+    Simulate a step of the infectious disease scenario and return the resulting world.
+
+    Each city, if infected, has (a) a chance to spread the disease to a neighbouring city and (b) a chance to be cured.
+    Infection happens to one of the current city's neighbours and curing happens to the current city.
+
+    The function ensures that city 0 is always infected when completed.
+
+    This function executes such that all decisions on curing and infecting are based on the parameter `world` and the
+    final resulting world after the simulation step is returned. This is to treat the simulation step as if all cities
+    in the world are infecting/curing at the same time.
+
+    :param world: A list of cities representing the world.
+    :type world: A list of cities, of the form [[city 0, status, [neighbours]], [[city 1, status, [neighbours]] ... ].
+    :param spread_probability: Probability that a city will spread its infection to another neighbouring city.
+    :type spread_probability: Float, between 0 -- 1.
+    :param cure_probability: Probability that a city will be cured of its infection.
+    :type cure_probability: Float, between 0 -- 1.
+    :return: A list of cities representing the state of the world after the simulated step.
+    :return: A list of lists of the form [[string, bool, [integers]], [string, bool, [integers]], ... ]
+    """
+
+
+
+# sim_step_world_test = [
+#     ["City 0", True, [1]],
+#     ["City 1", False, [2]],
+#     ["City 2", True, [3]],
+#     ["City 3", False, [4]],
+#     ["City 4", False, [0]],
+# ]
+# next_world = simulation_step(sim_step_world_test, 0, 0)
+# assert not (next_world is sim_step_world_test)
+# assert True == next_world[0][1]
+# assert False == next_world[1][1]
+# assert True == next_world[2][1]
+# assert False == next_world[3][1]
+# assert False == next_world[4][1]
+# next_world = simulation_step(sim_step_world_test, 0, 1)
+# assert True == next_world[0][1]
+# assert False == next_world[1][1]
+# assert False == next_world[2][1]
+# assert False == next_world[3][1]
+# assert False == next_world[4][1]
+# next_world = simulation_step(sim_step_world_test, 1, 1)
+# assert True == next_world[0][1]
+# assert True == next_world[1][1]
+# assert False == next_world[2][1]
+# assert True == next_world[3][1]
+# assert False == next_world[4][1]
+# next_world = simulation_step(sim_step_world_test, 1, 0)
+# assert True == next_world[0][1]
+# assert True == next_world[1][1]
+# assert True == next_world[2][1]
+# assert True == next_world[3][1]
+# assert False == next_world[4][1]
+
+def simulate_infections_disease(
+    world: list, spread_probability: float, cure_probability: float, cutoff: int = 100000
+) -> list:
+    """
+    Run a simulation of an infections disease scenario on the provided world with the specified parameters and return a
+    list of the number of cities infected for each step of the simulation, with index 0 being the first step. Note that
+    index 0 should always be 1 as city 0 always starts as the only infected city. Although the provided world may have
+    cities having different infection statuses, this function will automatically set city 0 as infected before the
+    simulation starts. This function will run until the whole whole is infected, or the cutoff value is hit. The purpose
+    of the cutoff is to ensure that the simulation does not run forever. If the simulation hits the cutoff but you
+    expect that the simulation would have finish had it run longer, then increase the value of the cutoff.
+
+    :param world: A list of cities representing the world that the simulation is run on.
+    :type world: A list of cities, of the form [[city 0, status, [neighbours]], [[city 1, status, [neighbours]] ... ].
+    :param spread_probability: Probability that a city will spread its infection to another neighbouring city.
+    :type spread_probability: Float, between 0 -- 1.
+    :param cure_probability: Probability that a city will be cured of its infection.
+    :type cure_probability: Float, between 0 -- 1.
+    :param cutoff: Ensure the simulation runs no longer than this number of steps.
+    :type cutoff: Integer
+    :return: A list of the number of infected cities at each step of the pandemic
+    :rtype: A list of integers
+    """
+
+
+
+# world = make_world(10, 4, 0.33)
+# assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infections_disease(world, 0, 0, 10)
+# assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infections_disease(world, 0, 1, 10)
+# Eyeball test required --- uncomment to view test
+# draw_number_of_cities_infected(simulate_infections_disease(0.4, 0.25))
+
+# Run a simulation on a new world
+
+# Eyeball test required --- uncomment to view test
+# draw_distribution(number_of_iterations)
