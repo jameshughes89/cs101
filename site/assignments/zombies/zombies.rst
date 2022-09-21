@@ -31,6 +31,11 @@ Read the assignment description in its entirety before starting.
 Part 1 --- Uploading Files to Colab
 ===================================
 
+After downloading the notebook file above, you will need to upload it to Colab to get started. See the respective
+section from assignment 1 for an example on how to do this. I recommend saving a copy of this notebook file to your
+Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you
+want to work on it.
+
 
 Part 2 --- Read Over Provided Code
 ==================================
