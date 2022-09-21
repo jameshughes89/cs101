@@ -184,6 +184,7 @@ def draw_distribution(simulation_steps_list: list) -> None:
 # Eyeball test required --- uncomment to view test
 # draw_distribution([1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5])
 
+
 def is_infected(city: list) -> bool:
     """
     Return the infection state of the provided city. True if the city is infected, False otherwise.
@@ -193,7 +194,6 @@ def is_infected(city: list) -> bool:
     :return: True if the city is infected, False otherwise
     :rtype: Boolean
     """
-    
 
 
 # city_is_infected_test = make_city("", [])
@@ -201,6 +201,7 @@ def is_infected(city: list) -> bool:
 # assert False == is_infected(city_is_infected_test)
 # city_is_infected_test[1] = True
 # assert True == is_infected(city_is_infected_test)
+
 
 def get_neighbours(city: list) -> list:
     """
@@ -212,13 +213,13 @@ def get_neighbours(city: list) -> list:
     :return: The city's list of neighbour indices.
     :rtype: A list of integers.
     """
-    
 
 
 # city_neighbours_test = make_city("", [])
 # assert [] == get_neighbours(city_neighbours_test)
 # city_neighbours_test = make_city("", [0, 1, 2])
 # assert [0, 1, 2] == get_neighbours(city_neighbours_test)
+
 
 def infect(city: list) -> list:
     """
@@ -229,7 +230,6 @@ def infect(city: list) -> list:
     :return: A copy of the provided city with the infected status set to True
     :rtype: A list of the form [string, bool, [integers]]
     """
-
 
 
 # city_infect_test_a = make_city("", [])
@@ -261,6 +261,7 @@ def cure(city: list) -> list:
 # assert not (city_cure_test_a is city_cure_test_b)
 # assert not (city_cure_test_b is city_cure_test_c)
 
+
 def number_of_cities_infected(world: list) -> int:
     """
     Count the number of cities that are currently infected in the world.
@@ -272,7 +273,6 @@ def number_of_cities_infected(world: list) -> int:
     """
 
 
-
 # assert 0 == number_of_cities_infected([])
 # assert 0 == number_of_cities_infected([["", False, []], ["", False, []], ["", False, []]])
 # assert 3 == number_of_cities_infected([["", True, []], ["", True, []], ["", True, []]])
@@ -280,6 +280,7 @@ def number_of_cities_infected(world: list) -> int:
 # assert 1 == number_of_cities_infected([["", True, []], ["", False, []], ["", False, []]])
 # assert 1 == number_of_cities_infected([["", False, []], ["", True, []], ["", False, []]])
 # assert 1 == number_of_cities_infected([["", False, []], ["", False, []], ["", True, []]])
+
 
 def is_world_completely_infected(world: list) -> bool:
     """
@@ -294,13 +295,13 @@ def is_world_completely_infected(world: list) -> bool:
     """
 
 
-
 # assert True == is_world_completely_infected([])
 # assert True == is_world_completely_infected([["", True, []], ["", True, []], ["", True, []]])
 # assert False == is_world_completely_infected([["", False, []], ["", False, []], ["", False, []]])
 # assert False == is_world_completely_infected([["", True, []], ["", False, []], ["", False, []]])
 # assert False == is_world_completely_infected([["", False, []], ["", True, []], ["", False, []]])
 # assert False == is_world_completely_infected([["", False, []], ["", False, []], ["", True, []]])
+
 
 def simulation_step(world: list, spread_probability: float, cure_probability: float) -> list:
     """
@@ -324,7 +325,6 @@ def simulation_step(world: list, spread_probability: float, cure_probability: fl
     :return: A list of cities representing the state of the world after the simulated step.
     :return: A list of lists of the form [[string, bool, [integers]], [string, bool, [integers]], ... ]
     """
-
 
 
 # sim_step_world_test = [
@@ -360,6 +360,7 @@ def simulation_step(world: list, spread_probability: float, cure_probability: fl
 # assert True == next_world[3][1]
 # assert False == next_world[4][1]
 
+
 def simulate_infections_disease(
     world: list, spread_probability: float, cure_probability: float, cutoff: int = 100000
 ) -> list:
@@ -383,7 +384,6 @@ def simulate_infections_disease(
     :return: A list of the number of infected cities at each step of the pandemic
     :rtype: A list of integers
     """
-
 
 
 # world = make_world(10, 4, 0.33)
