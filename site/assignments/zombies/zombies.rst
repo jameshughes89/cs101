@@ -7,7 +7,7 @@ Zombie Infections
 * **Files**: :download:`asn2.ipynb <asn2.ipynb>`/:download:`asn2.py <asn2.py>`
 
 
-.. warning::
+.. note::
 
     For this assignment, you will need to use special Python packages (networkx, matplotlib). The good news is that if
     you are using Colab you do not need to do anything special. If, however, you are using a local Python interpreter,
@@ -17,9 +17,39 @@ Zombie Infections
 Task
 ====
 
+If you can simulate something accurately, it becomes possible to study the simulation without having to actually
+implement the real thing. You will write a program to simulate a zombie apocalypse scenatio on a randomly generated
+network of cities. Additionally, you will be using your simulation to analyze the spread of the zombie apocalypse
+throughout your network of cities.
+
+You will
+
+* Write a function to check if a city is infected
+* Write a function to find a given city's neighbouring cities
+* Write functions to infect and cure specific cities
+* Write a function to count the number of cities currently infected
+* Write functions to simulate the spread of the zombie apocalypse
+* Run simulations of the zombie apocalypse
+* Analyze the results of your simulations
+
 
 Provided Files
 ==============
+
+You are provided with
+
+* A notebook file called :download:`asn2.ipynp <asn2.ipynb>` containing the starting point of the assignment
+
+    * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
+    * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn2.py <asn2.py>` file
+
+.. warning::
+
+    Do not alter the function details in the provided .ipynb/.py files
+
+        * Do not change the name of the functions
+        * Do not remove the function description
+        * Do not remove or add to the parameter list
 
 
 Part 0 --- Read the Assignment
