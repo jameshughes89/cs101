@@ -44,12 +44,6 @@ Before Kattis
 
     * Be sure to write some ``assert`` tests to verify correctness
 
-#. Write some code to take ``input`` from the user and store the inputted value in a variable
-
-    * The inputted value will be a float representing some grade between :math:`0 -- 100`
-
-#. Call the function ``did_pass`` with the inputted value from the previous question as the argument for the function
-
 #. Write a function called ``letter_grade(percent_grade: float) -> str:`` that takes a grade as a percentage and returns the appropriate letter grade
 
     * 0 - 49 -> F, 50 - 59 -> D, 60 - 69 -> C, 70 - 79 -> B, 80 - 89 -> A, 90 - 100 -> A+
