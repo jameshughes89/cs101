@@ -61,9 +61,26 @@ Read the assignment description in its entirety before starting.
 Part 1 --- Uploading Files to Colab
 ===================================
 
+After downloading the notebook file above, you will need to upload it to Colab to get started. See the respective
+section from assignment 1 for an example on how to do this. I recommend saving a copy of this notebook file to your
+Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you
+want to work on it.
+
 
 Part 2 --- Read Over Provided Code
 ==================================
+
+There are many functions already completed within the assignment 2 notebook file. These functions provide important
+functionality for the assignment. They contains ideas that you are likley not familiar with, but do spend some time going
+over the code to see if you can get a high-level idea of what each is doing.
+
+Get used to looking at code that is not yours, using unfamiliar ideas, and trying to figure out what existing code does.
+This is not a trivial thing, but as a programmer, it is something you will end up spending a lot of time doing.
+
+You will notice that each of the provided functions has corresponding assert tests, but some are commented with a
+"eyeball test" note. For these functions, there is no way to easily test the function with an assertion, so in order to
+test it, one would need to visually inspect the result to verify correctness. These tests are commented out by default,
+but if you are interested, feel free uncommenting them to see what happens.
 
 
 Part 3 --- Check if a City is Infected
