@@ -36,6 +36,8 @@ Pre Lab Exercises
 
     * 2
 
+#. Write assertion tests for each of your functions above
+
 
 Before Kattis
 =============

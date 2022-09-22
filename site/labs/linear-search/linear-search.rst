@@ -32,11 +32,13 @@ Pre Lab Exercises
 
     * 3
     * 4
-    * 9
-    * 10
-    * 11
-    * 12
-    * 13
+    * 9 (use ``assert`` to test instead of their ``test`` function)
+    * 10 (use ``assert`` to test instead of their ``test`` function)
+    * 11 (use ``assert`` to test instead of their ``test`` function)
+    * 12 (use ``assert`` to test instead of their ``test`` function)
+    * 13 (use ``assert`` to test instead of their ``test`` function)
+
+#. Write assertion tests for each of your functions above
 
 
 Before Kattis
