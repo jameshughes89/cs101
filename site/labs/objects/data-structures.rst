@@ -46,7 +46,7 @@ Before Kattis
     * Make instances of the class and write ``assert`` tests to verify correctness
 
 
-# Write a ``Contacts`` class that will manage a collection of ``Person`` objects
+#. Write a ``Contacts`` class that will manage a collection of ``Person`` objects
 
     * The class will keep track of many instances of ``Person`` objects
     * A method for getting the ``size()`` of the ``Contacts``
