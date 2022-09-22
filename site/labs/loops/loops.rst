@@ -34,6 +34,8 @@ Pre Lab Exercises
     * 14 (use ``assert`` to test instead of their ``test`` function)
     * 15 (use ``assert`` to test instead of their ``test`` function)
 
+#. Write assertion tests for each of your functions above
+
 
 Before Kattis
 =============
