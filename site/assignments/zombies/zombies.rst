@@ -58,6 +58,24 @@ Part 0 --- Read the Assignment
 Read the assignment description in its entirety before starting.
 
 
+City Data Structure
+-------------------
+
+Every *city* in the simulation is represented as a list ````[name, infected, [neighbours]]``.
+
+* ``name`` is a string with the name of the city
+* ``infected`` is a ``bool`` --- ``True`` if the city is infected with zombies, ``False`` otherwise
+* ``[neighbours]`` is a *list* containing the city numbers (indexes) of the cities connected to this city
+
+For example, a city named ``"City 0`` that is not infected and three neighbours: cities with indices ``3``, ``6``, and
+``7``, would be represented as ``["City 0", False, [3, 6, 7]]``.
+
+The *world* is made up of multiple cities, which are also stored in a list. Therefore, a world with cities 0, 1, 2, ...
+would be represented as ``[city0, city1, city2, ...]``, where ``city0`` would be a stand in for a whole city data
+structure. If we were to expand out the city data structures in the above example, we could visualize the data as
+``[["City 0", False, [3, 6, 7]], ["City 1", False, [0, 6, 8, 9]], ["City 2", False, [3, 6]], ...]``
+
+
 Part 1 --- Uploading Files to Colab
 ===================================
 
@@ -71,7 +89,7 @@ Part 2 --- Read Over Provided Code
 ==================================
 
 There are many functions already completed within the assignment 2 notebook file. These functions provide important
-functionality for the assignment. They contains ideas that you are likley not familiar with, but do spend some time going
+functionality for the assignment. They contains ideas that you are likely not familiar with, but do spend some time going
 over the code to see if you can get a high-level idea of what each is doing.
 
 Get used to looking at code that is not yours, using unfamiliar ideas, and trying to figure out what existing code does.
@@ -247,100 +265,6 @@ General FAQ:
 
 
 
-
-If you can simulate something accurately enough, the simulation might have real advantages over actually doing an experiment. For example, if you simulate a protein folding -- and get it right -- you can actually stop, rewind, replay, and even do matrix-style 'bullet time' pans around the protein, as it folds. This allows you to watch interactions on a level of detail that is completely impossible experimentally.
-
-Simulations also let you do things you simply *can't* do in reality. Suppose you're a social geographer who wants to study the social impact of different types of natural disasters on a small fishing village. You'd have difficulty getting ethics  approval to flood an actual village, or bury it in lava, and then collect data. If, however, your 'villagers' exist only in a simulation... there are no constraints on what you can do (except for your own guilt).
-
-For this assignment, you will be simulating the outbreak of a **ZOMBIE APOCALYPSE**. Specifically, you'll be writing code to simulate the spread of zombies through a network of cities. Once your simulation is working, you'll write a bit more code to analyze the data produced by your simulation to determine exciting things like how long it will take for the world to end.
-
-How to approach the assignment
-==============================
-
-Once again, you are asked to extend existing code. Extending existing code can actually be more challenging than writing code from scratch, but this is what a lot of real world programming is (don't worry, you will start writing large programs from scratch very soon). 
-
-The first thing you should do is :download:`download the existing notebook <asn2.ipynb>` (:download:`or download the .py if you want <asn2.py>`) and take a quick look at it. Just skim it. Some of the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
-
-So... look at that code. Seriously. Do it. Familiarizing yourself with what's going on in the file is the best possible preparation for doing the assignment. Consider this the first requirement of the assignment.
-
-Data structures you need to know about
-======================================
-
-Every city in our simulation is going to be represented by a list ``[name, infected, neighbours]``. The good news is, you've been using lists since week one in the labs. 
-
-* ``name`` is a string with the name of the city. 
-* ``infected`` is a ``bool`` . ``True`` if the city has zombies, ``False`` if it doesn't.
-* ``neighbours`` is a *list* (so we've nested a list inside a list!) containing the city numbers (indexes) of the cities that can be directly reached from this city.
-  
-   ex: 
-       ``# a city named city0 is NOT infected, and has``
-	   
-       ``# 3 neighbours; cities indexed by 3, 6, and 7``
-	   
-       ``a_city = ['city0', False, [3, 6, 7]]``
-  
-Our *world* is actually made up of multiple cities. How can we store all these cities? In another list, of course! So the world is a list of lists:
-
-   ``world = [city0, city1, city2, ...]``
-   
-Well, really it will be more like this...
-
-   ``world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]``
-   
-.. warning::
-
-   Note that the numbers in the list of neighbours will actually be the indexes of the cities, and not the names of the cities. This is pretty convenient actually, because what we could do is something like this. 
-   
-   .. code-block:: python
-   
-      world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]
-	  
-      # This make a_city reference [city1, False, [0, 6, 8, 9]]
-      a_city = world[1]
-        
-      # This will get the index of the 0th neighbour. 
-      # a_city[2] is the list of neighbours
-      # a_city[2][x] will get us the xth neighbour from the list
-      a_neighbour = a_city[2][0]
-      
-      # This will make the_neighbour reference [city0, False, [3, 6, 7]]
-      the_neighbour = world[a_neighbour]
-      
-      # We can also do this all in one shot like this
-      # world is a list of cities
-      # world[1] is a specific city (a list)
-      # world[1][2] is the list of neighbours in that city
-      # world[1][2][0] is the 0th neighbour in that city indexed by 1
-      # world[word[1][2][0]] is city that is the 0th neighbour of city 1
-      the_neighbour = world[word[1][2][0]]
-      # woah!
-	  
-
-   
-Getting started
-===============
-
-To make your life easier, I've provided a function called ``set_up_cities`` that will randomly generate some cities, and connections between those cities, for you. If you call this function, it returns a *list* of cities, detailing the state of your simulated world. You'd use the function like this:
-
-.. code-block:: python
-   
-   my_world = set_up_cities()
-   
-.. admonition:: Note
-    :class: note
-
-    If you don't like the (boring) default names for the cities, note that there is an optional ``name`` parameter
-    for this function. This lets you pass in your own list of city names if you want to (it also allows you to
-    create a world with fewer, or more, cities). Apologies for the boring names, but I didn't want use real cities to avoid traumatizing any
-    class members who may have lost a loved one to a zombie outbreak in those cities).
-
-You should probably load up the ``asn2.ipynb`` (or ``asn2.py``) file into Colab or your IDE and play around with the ``set_up_cities()`` function to get a feel for it. Have a look at the lists it generates (``print``) and make sure you understand their structure. I'm not being silly here. You should do this. Playing with the code is the best way to learn how it works.   
-
-.. image:: zahead.jpeg
-
-.. warning::
-
-   You should also **NOT** be using the ``input()`` function in this assignment in any area. 
    
 Coding, Part I
 ==============
