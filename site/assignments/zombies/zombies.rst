@@ -58,6 +58,60 @@ Part 0 --- Read the Assignment
 Read the assignment description in its entirety before starting.
 
 
+City Data Structure
+-------------------
+
+Every *city* in the simulation is represented as a list ````[name, infected, [neighbours]]``.
+
+* ``name`` is a string with the name of the city
+* ``infected`` is a ``bool`` --- ``True`` if the city is infected with zombies, ``False`` otherwise
+* ``[neighbours]`` is a *list* containing the city numbers (indexes) of the cities connected to this city
+
+For example, a city named ``"City 0`` that is not infected and three ntighbours: cities with indices ``3``, ``6``, and
+``7``, would be represented as ``["City 0", False, [3, 6, 7]]``.
+
+The *world*
+
+
+Our *world* is actually made up of multiple cities. How can we store all these cities? In another list, of course! So the world is a list of lists:
+
+   ``world = [city0, city1, city2, ...]``
+
+Well, really it will be more like this...
+
+   ``world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]``
+
+.. warning::
+
+   Note that the numbers in the list of neighbours will actually be the indexes of the cities, and not the names of the cities. This is pretty convenient actually, because what we could do is something like this.
+
+   .. code-block:: python
+
+      world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]
+
+      # This make a_city reference [city1, False, [0, 6, 8, 9]]
+      a_city = world[1]
+
+      # This will get the index of the 0th neighbour.
+      # a_city[2] is the list of neighbours
+      # a_city[2][x] will get us the xth neighbour from the list
+      a_neighbour = a_city[2][0]
+
+      # This will make the_neighbour reference [city0, False, [3, 6, 7]]
+      the_neighbour = world[a_neighbour]
+
+      # We can also do this all in one shot like this
+      # world is a list of cities
+      # world[1] is a specific city (a list)
+      # world[1][2] is the list of neighbours in that city
+      # world[1][2][0] is the 0th neighbour in that city indexed by 1
+      # world[word[1][2][0]] is city that is the 0th neighbour of city 1
+      the_neighbour = world[word[1][2][0]]
+      # woah!
+
+
+
+
 Part 1 --- Uploading Files to Colab
 ===================================
 
@@ -254,60 +308,6 @@ The first thing you should do is :download:`download the existing notebook <asn2
 
 So... look at that code. Seriously. Do it. Familiarizing yourself with what's going on in the file is the best possible preparation for doing the assignment. Consider this the first requirement of the assignment.
 
-Data structures you need to know about
-======================================
-
-Every city in our simulation is going to be represented by a list ``[name, infected, neighbours]``. The good news is, you've been using lists since week one in the labs. 
-
-* ``name`` is a string with the name of the city. 
-* ``infected`` is a ``bool`` . ``True`` if the city has zombies, ``False`` if it doesn't.
-* ``neighbours`` is a *list* (so we've nested a list inside a list!) containing the city numbers (indexes) of the cities that can be directly reached from this city.
-  
-   ex: 
-       ``# a city named city0 is NOT infected, and has``
-	   
-       ``# 3 neighbours; cities indexed by 3, 6, and 7``
-	   
-       ``a_city = ['city0', False, [3, 6, 7]]``
-  
-Our *world* is actually made up of multiple cities. How can we store all these cities? In another list, of course! So the world is a list of lists:
-
-   ``world = [city0, city1, city2, ...]``
-   
-Well, really it will be more like this...
-
-   ``world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]``
-   
-.. warning::
-
-   Note that the numbers in the list of neighbours will actually be the indexes of the cities, and not the names of the cities. This is pretty convenient actually, because what we could do is something like this. 
-   
-   .. code-block:: python
-   
-      world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]
-	  
-      # This make a_city reference [city1, False, [0, 6, 8, 9]]
-      a_city = world[1]
-        
-      # This will get the index of the 0th neighbour. 
-      # a_city[2] is the list of neighbours
-      # a_city[2][x] will get us the xth neighbour from the list
-      a_neighbour = a_city[2][0]
-      
-      # This will make the_neighbour reference [city0, False, [3, 6, 7]]
-      the_neighbour = world[a_neighbour]
-      
-      # We can also do this all in one shot like this
-      # world is a list of cities
-      # world[1] is a specific city (a list)
-      # world[1][2] is the list of neighbours in that city
-      # world[1][2][0] is the 0th neighbour in that city indexed by 1
-      # world[word[1][2][0]] is city that is the 0th neighbour of city 1
-      the_neighbour = world[word[1][2][0]]
-      # woah!
-	  
-
-   
 Getting started
 ===============
 
