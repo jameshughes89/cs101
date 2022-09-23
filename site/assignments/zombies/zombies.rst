@@ -86,7 +86,7 @@ but if you are interested, feel free uncommenting them to see what happens.
 Part 3 --- Check if a City is Infected
 ======================================
 
-As discussed above, eEach city is represented as a list of three elements --- the name of the city, the infection status
+As discussed above, each city is represented as a list of three elements --- the name of the city, the infection status
 of the city, and a list of neighbours the city is connected to.
 
 Write a function ``is_infected`` that checks if a given city is infected or not. This function will take a city (list)
