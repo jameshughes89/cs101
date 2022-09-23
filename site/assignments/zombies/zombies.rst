@@ -70,46 +70,10 @@ Every *city* in the simulation is represented as a list ````[name, infected, [ne
 For example, a city named ``"City 0`` that is not infected and three ntighbours: cities with indices ``3``, ``6``, and
 ``7``, would be represented as ``["City 0", False, [3, 6, 7]]``.
 
-The *world*
-
-
-Our *world* is actually made up of multiple cities. How can we store all these cities? In another list, of course! So the world is a list of lists:
-
-   ``world = [city0, city1, city2, ...]``
-
-Well, really it will be more like this...
-
-   ``world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]``
-
-.. warning::
-
-   Note that the numbers in the list of neighbours will actually be the indexes of the cities, and not the names of the cities. This is pretty convenient actually, because what we could do is something like this.
-
-   .. code-block:: python
-
-      world = [[city0, False, [3, 6, 7]], [city1, False, [0, 6, 8, 9]], [city2, False, [3, 6]], ...]
-
-      # This make a_city reference [city1, False, [0, 6, 8, 9]]
-      a_city = world[1]
-
-      # This will get the index of the 0th neighbour.
-      # a_city[2] is the list of neighbours
-      # a_city[2][x] will get us the xth neighbour from the list
-      a_neighbour = a_city[2][0]
-
-      # This will make the_neighbour reference [city0, False, [3, 6, 7]]
-      the_neighbour = world[a_neighbour]
-
-      # We can also do this all in one shot like this
-      # world is a list of cities
-      # world[1] is a specific city (a list)
-      # world[1][2] is the list of neighbours in that city
-      # world[1][2][0] is the 0th neighbour in that city indexed by 1
-      # world[word[1][2][0]] is city that is the 0th neighbour of city 1
-      the_neighbour = world[word[1][2][0]]
-      # woah!
-
-
+The *world* is made up of multiple cities, which are also stored in a list. Therefore, a world with cities 1, 2, 3, ...
+would be represented as ``[city0, city1, city2, ...]``, where ``city0`` would be a stand in for a whole city data
+structure. If we were to expand out the city data structures in the above example, we could visualize the data as
+``[["City 0", False, [3, 6, 7]], ["City 1", False, [0, 6, 8, 9]], ["City 2", False, [3, 6]], ...]``
 
 
 Part 1 --- Uploading Files to Colab
