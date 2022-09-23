@@ -89,7 +89,7 @@ Part 2 --- Read Over Provided Code
 ==================================
 
 There are many functions already completed within the assignment 2 notebook file. These functions provide important
-functionality for the assignment. They contains ideas that you are likley not familiar with, but do spend some time going
+functionality for the assignment. They contains ideas that you are likely not familiar with, but do spend some time going
 over the code to see if you can get a high-level idea of what each is doing.
 
 Get used to looking at code that is not yours, using unfamiliar ideas, and trying to figure out what existing code does.
