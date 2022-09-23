@@ -96,6 +96,9 @@ as a parameter and return ``True`` if the city is infected, and ``False`` otherw
 Part 4 --- Get a City's Neighbours
 ==================================
 
+Write a function ``get_neighbours`` that retrieves the neighbours of a given city. The function will take a city (list)
+as a parameter and ``return`` a list containing all the neighbouring cities.
+
 
 Part 5 --- Infecting and Curing a City
 ======================================
