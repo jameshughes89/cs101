@@ -256,46 +256,6 @@ General FAQ:
 
 
 
-
-If you can simulate something accurately enough, the simulation might have real advantages over actually doing an experiment. For example, if you simulate a protein folding -- and get it right -- you can actually stop, rewind, replay, and even do matrix-style 'bullet time' pans around the protein, as it folds. This allows you to watch interactions on a level of detail that is completely impossible experimentally.
-
-Simulations also let you do things you simply *can't* do in reality. Suppose you're a social geographer who wants to study the social impact of different types of natural disasters on a small fishing village. You'd have difficulty getting ethics  approval to flood an actual village, or bury it in lava, and then collect data. If, however, your 'villagers' exist only in a simulation... there are no constraints on what you can do (except for your own guilt).
-
-For this assignment, you will be simulating the outbreak of a **ZOMBIE APOCALYPSE**. Specifically, you'll be writing code to simulate the spread of zombies through a network of cities. Once your simulation is working, you'll write a bit more code to analyze the data produced by your simulation to determine exciting things like how long it will take for the world to end.
-
-How to approach the assignment
-==============================
-
-Once again, you are asked to extend existing code. Extending existing code can actually be more challenging than writing code from scratch, but this is what a lot of real world programming is (don't worry, you will start writing large programs from scratch very soon). 
-
-The first thing you should do is :download:`download the existing notebook <asn2.ipynb>` (:download:`or download the .py if you want <asn2.py>`) and take a quick look at it. Just skim it. Some of the provided functions call on rather complex Python libraries and may look very confusing to you. That's totally normal. What you really want to look at are the descriptions in the function headers. Right after the ``def`` line, you'll see some text wrapped between """ and """. Read this carefully. This tells you everything you need to know about how to use that function -- without you having to understand how all the details of the function work. That is: you can work *one level of abstraction higher* than the function (just like when you use ``print`` -- I bet you have no clue how ``print`` *actually* works).
-
-So... look at that code. Seriously. Do it. Familiarizing yourself with what's going on in the file is the best possible preparation for doing the assignment. Consider this the first requirement of the assignment.
-
-Getting started
-===============
-
-To make your life easier, I've provided a function called ``set_up_cities`` that will randomly generate some cities, and connections between those cities, for you. If you call this function, it returns a *list* of cities, detailing the state of your simulated world. You'd use the function like this:
-
-.. code-block:: python
-   
-   my_world = set_up_cities()
-   
-.. admonition:: Note
-    :class: note
-
-    If you don't like the (boring) default names for the cities, note that there is an optional ``name`` parameter
-    for this function. This lets you pass in your own list of city names if you want to (it also allows you to
-    create a world with fewer, or more, cities). Apologies for the boring names, but I didn't want use real cities to avoid traumatizing any
-    class members who may have lost a loved one to a zombie outbreak in those cities).
-
-You should probably load up the ``asn2.ipynb`` (or ``asn2.py``) file into Colab or your IDE and play around with the ``set_up_cities()`` function to get a feel for it. Have a look at the lists it generates (``print``) and make sure you understand their structure. I'm not being silly here. You should do this. Playing with the code is the best way to learn how it works.   
-
-.. image:: zahead.jpeg
-
-.. warning::
-
-   You should also **NOT** be using the ``input()`` function in this assignment in any area. 
    
 Coding, Part I
 ==============
