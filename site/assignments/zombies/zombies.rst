@@ -67,10 +67,10 @@ Every *city* in the simulation is represented as a list ````[name, infected, [ne
 * ``infected`` is a ``bool`` --- ``True`` if the city is infected with zombies, ``False`` otherwise
 * ``[neighbours]`` is a *list* containing the city numbers (indexes) of the cities connected to this city
 
-For example, a city named ``"City 0`` that is not infected and three ntighbours: cities with indices ``3``, ``6``, and
+For example, a city named ``"City 0`` that is not infected and three neighbours: cities with indices ``3``, ``6``, and
 ``7``, would be represented as ``["City 0", False, [3, 6, 7]]``.
 
-The *world* is made up of multiple cities, which are also stored in a list. Therefore, a world with cities 1, 2, 3, ...
+The *world* is made up of multiple cities, which are also stored in a list. Therefore, a world with cities 0, 1, 2, ...
 would be represented as ``[city0, city1, city2, ...]``, where ``city0`` would be a stand in for a whole city data
 structure. If we were to expand out the city data structures in the above example, we could visualize the data as
 ``[["City 0", False, [3, 6, 7]], ["City 1", False, [0, 6, 8, 9]], ["City 2", False, [3, 6]], ...]``
