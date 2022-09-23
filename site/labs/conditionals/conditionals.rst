@@ -30,7 +30,6 @@ Pre Lab Exercises
 #. `Chapter 5 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/conditionals.html#exercises>`_
 
     * 1
-    * 2 (do not forget about ``%``)
     * 10
     * 11
 
