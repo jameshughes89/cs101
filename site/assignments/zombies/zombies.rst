@@ -142,12 +142,14 @@ step.
 
 To perform a simulation step properly, one must consider that the world has a *before* state, which is the state of the
 world before the simulation step occurs, and an *after* state, which is the state of the world after the simulation
-step. Information for the simulation step is retrieved from the *before* state, and all changes to the world will be
-put into the *after* state.
+step. To do this easily, a copy of the before state can be made (see the provided ``copy_world`` function) such that
+your program has two versions of the world for the execution of the step of the simulation. Information for the
+simulation step is retrieved from the *before* state, and all changes to the world will be put into the *after* state.
 
 Consider the below image as an example. In the *before state*, cities 0 and 2 are infected, and cities 1, 3, and 4 are
 not infected. If during the simulation step city 0 were to become cured, and cities 1 and 4 become infected, the changes
-are made to the *after* state while the *before* state is left alone, unchanged.
+are made to the *after* state while the *before* state is left alone, unchanged. Again, note that *before state* and
+*after state* are two separate world (two lists of cities).
 
 .. image:: before_after_states.png
 
