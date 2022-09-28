@@ -282,20 +282,6 @@ Coding, Part I
 
 Write the following functions:
 
-1. ``zombify(cities, cityno)``. This function takes your list of cities as the parameter ``cities`` and an integer ``cityno`` specifying which city in the list should be infected. So, to infect city 2, you might use the function like this:
-   
-   .. code-block:: python
-   
-      my_world = set_up_cities()
-      zombify(my_world, 2)
-	  
-   
-   **Hint 1:** Which index held the infected boolean?
-
-   **Hint 2:** If the above hint made no sense to you, you didn't read *Data structures you need to know about* section carefully enough. 
- 
-2. ``cure(cities, cityno)``. The opposite of ``zombify``. Clear the infection flag for the city.  
-   
 3. ``sim_step(cities, p_spread, p_cure)``. This is the most important function in the assignment. This function will execute a single *time step* of your simulation. Depending on how fast you want to think of your zombies spreading, that time step could be a day, an hour, a week, whatever. When modelling a real zombie outbreak, you'd determine the size of your time step from the empirical data. Here is some English-language "pseudocode" for function. You'll have to turn it into Python::
    
     for each city in cities (enumerate?):
