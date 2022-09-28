@@ -18,7 +18,7 @@ Task
 ====
 
 If you can simulate something accurately, it becomes possible to study the simulation without having to actually
-implement the real thing. You will write a program to simulate a zombie apocalypse scenatio on a randomly generated
+implement the real thing. You will write a program to simulate a zombie apocalypse scenario on a randomly generated
 network of cities. Additionally, you will be using your simulation to analyze the spread of the zombie apocalypse
 throughout your network of cities.
 
