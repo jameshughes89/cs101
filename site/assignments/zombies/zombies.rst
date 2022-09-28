@@ -131,7 +131,7 @@ Part 6 --- How Many Cities are Infected
 Part 7 --- Simulation Step
 ==========================
 
-Write a function ``simulation_step`` that simulate a single iteration of the zombie apocalypse. The function will take
+Write a function ``simulation_step`` that simulates a single iteration of the zombie apocalypse. The function will take
 the world (list of cities) as a parameter, along with spread and cure probabilities as parameters. The function will
 return a copy of the world after performing a step of the simulation.
 
@@ -153,12 +153,12 @@ simulation step is retrieved from the *before* state, and all changes to the wor
 Consider the below image as an example. In the *before state*, cities 0 and 2 are infected, and cities 1, 3, and 4 are
 not infected. If during the simulation step city 0 were to become cured, and cities 1 and 4 become infected, the changes
 are made to the *after* state while the *before* state is left alone, unchanged. Again, note that *before state* and
-*after state* are two separate world (two lists of cities).
+*after state* are two separate world (two separate lists of cities).
 
 .. image:: before_after_states.png
 
 The simulation of a step requires checking if a city will either spread the disease or cure itself. This is where the
-``spread_probability`` and ``cure_probability`` values come in. These parameters will have some value between 0 and 1
+``spread_probability`` and ``cure_probability`` values come in. These parameters will have some value between 0 -- 1
 --- the closer to 0, the less likely we want the event is to occur, and the closer to 1, the more likely. To achieve
 this functionality, we can make use of Python's ``random`` library, namely, the
 `random function <https://docs.python.org/3/library/random.html#random.random>`_ . This function will return some value
