@@ -154,6 +154,29 @@ are made to the *after* state while the *before* state is left alone, unchanged.
 .. image:: before_after_states.png
 
 
+Given the complexity of this function, pseudocode is provided below to help with the writing of your function.
+
+    ``Make a copy of the world for the after state``
+
+    ``For each city in the before state:``
+
+        ``If the city is infected``
+
+            ``If the city is infecting a neighbouring city``
+
+                ``Select a random neighbour``
+
+                ``Infect the selected neighbour and update the after state``
+
+            ``If the city is curing itself``
+
+                ``Cure the city and update the after state``
+
+    ``Ensure city 0 is always infected``
+
+    ``Return after state``
+
+
 Part 8 --- Simulate Infections Disease Scenario
 ===============================================
 
