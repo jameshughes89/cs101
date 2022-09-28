@@ -125,7 +125,8 @@ Part 5 --- Infecting and Curing a City
 Part 6 --- How Many Cities are Infected
 =======================================
 
-* Both ``number_of_cities_infected`` and ``is_world_completely_infected`` here
+
+
 
 
 Part 7 --- Simulation Step
