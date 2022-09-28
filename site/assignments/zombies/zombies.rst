@@ -154,6 +154,22 @@ are made to the *after* state while the *before* state is left alone, unchanged.
 .. image:: before_after_states.png
 
 
+The simulation of a step requires checking if a city will either spread the disease or cure itself. This is where the
+``spread_probability`` and ``cure_probability`` values come in. These parameters will have some value between 0 and 1
+--- the closer to 0, the less likely we want the event is to occur, and the closer to 1, the more likely. To achieve
+this functionality, we can make use of Python's ``random`` library, namely, the
+`random function <https://docs.python.org/3/library/random.html#random.random>`_ . This function will return some value
+between 0 and 1 from a uniform distribution. Therefore, calling this function will provide some arbitrary value between
+0 -- 1, and by checking if that value is, for example ``< cure_probability``, we can implement the probabilistic
+occurrences of the events we want. For example, if ``cure_probability`` was set to ``0.80`` (80%), and since
+``random()`` is equally likely to select all values between 0 -- 1, ``random()`` will produce a value less than ``0.80``
+80% of the time.
+
+Finally, for the purposes of our simulation, we want to make sure city 0 is always infected. There are a few ways one
+could implement this, but perhaps the simplest is to just update city 0 to infected in the after state before the
+function finishes. That way, if city 0 was cured during the simulation step, it is reset to infected, and if city 0
+happened to not get cured, there is no harm in setting it to infected anyways.
+
 Given the complexity of this function, pseudocode is provided below to help with the writing of your function.
 
     ``Make a copy of the world for the after state``
@@ -162,13 +178,13 @@ Given the complexity of this function, pseudocode is provided below to help with
 
         ``If the city is infected``
 
-            ``If the city is infecting a neighbouring city``
+            ``If the city is infecting a neighbouring city based on the probability value``
 
                 ``Select a random neighbour``
 
                 ``Infect the selected neighbour and update the after state``
 
-            ``If the city is curing itself``
+            ``If the city is curing itself based on the probability value``
 
                 ``Cure the city and update the after state``
 
