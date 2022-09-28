@@ -125,7 +125,11 @@ Part 5 --- Infecting and Curing a City
 Part 6 --- How Many Cities are Infected
 =======================================
 
-
+Write a function ``number_of_cities_infected`` that takes a world (list of cities) as a parameter and counts the number
+of cities within the world that are infected. This function will return the final count when it completes. In other
+words, it will look at *each* city within the world, check *if* it is infected, and if it is, it adds one to the running
+total of infected cities. After each city has been investigated, the function returns the value of the running total of
+infected cities. 
 
 
 
