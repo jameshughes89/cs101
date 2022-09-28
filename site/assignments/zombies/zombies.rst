@@ -180,23 +180,14 @@ happened to not get cured, there is no harm in setting it to infected anyways.
 
 
     ``Make a copy of the world for the after state``
-
     ``For each city in the before state:``
-
         ``If the city is infected``
-
             ``If the city is infecting a neighbouring city based on the probability value``
-
                 ``Select a random neighbour``
-
                 ``Infect the selected neighbour and update the after state``
-
             ``If the city is curing itself based on the probability value``
-
                 ``Cure the city and update the after state``
-
     ``Ensure city 0 is always infected``
-
     ``Return after state``
 
 
