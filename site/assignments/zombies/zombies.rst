@@ -140,6 +140,14 @@ a given infected city will spread the disease to one of its neighbours in the cu
 ``cure_probability`` is the percent probability that a given infected city will cure *itself* in the current simulation
 step. 
 
+To perform a simulation step properly, one must consider that the world has a *before* state, which is the state of the
+world before the simulation step occurs, and an *after* state, which is the state of the world after the simulation
+step. Information for the simulation step is retrieved from the *before* state, and all changes to the world will be
+put into the *after* state.
+
+
+.. image:: before_after_states.png
+
 
 Part 8 --- Simulate Infections Disease Scenario
 ===============================================
