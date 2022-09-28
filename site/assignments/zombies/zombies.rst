@@ -162,8 +162,13 @@ this functionality, we can make use of Python's ``random`` library, namely, the
 between 0 and 1 from a uniform distribution. Therefore, calling this function will provide some arbitrary value between
 0 -- 1, and by checking if that value is, for example ``< cure_probability``, we can implement the probabilistic
 occurrences of the events we want. For example, if ``cure_probability`` was set to ``0.80`` (80%), and since
-``random()`` is equally likely to select all values between 0 -- 1, ``random()`` will produce a value less than ``0.80``
+``random`` is equally likely to select all values between 0 -- 1, ``random`` will produce a value less than ``0.80``
 80% of the time.
+
+When it comes to randomly selecting a neighbour to infect, the ``random`` library provides many functions that may work
+effectively. I suggest investigating the
+`choice function <https://docs.python.org/3/library/random.html#random.choice>`_ as you may find it to be the simplest
+to get working for you.
 
 Finally, for the purposes of our simulation, we want to make sure city 0 is always infected. There are a few ways one
 could implement this, but perhaps the simplest is to just update city 0 to infected in the after state before the
