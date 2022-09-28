@@ -121,6 +121,17 @@ as a parameter and ``return`` a list containing all the neighbouring cities.
 Part 5 --- Infecting and Curing a City
 ======================================
 
+Write functions to ``infect`` a city and ``cure`` a city. For ``infect``, your function will take a city as a parameter
+and return a *copy* of the city with the infection status set to ``True``. Similarly for ``cure``, the function will
+take the city being cured as a parameter and will return a *copy* of the city with the infection status set to
+``False``.
+
+The simplest way to make a copy is to make a new city based on the information of the city being infected/cured and then
+setting the city's infection status accordingly.
+
+The motivation for making a copy and not just modifying the current city's infection status value is to make our data
+*stateless*. By doing so, it helps eliminate many potential problems within your programs.
+
 
 Part 6 --- How Many Cities are Infected
 =======================================
