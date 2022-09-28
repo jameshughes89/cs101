@@ -353,7 +353,7 @@ simulations. In particular, top government officials want to know how long it wi
 to end in the event of a zombie apocalypse. 
 
 Write the following functions:   
-  
+
 5. ``time_to_end_of_world(p_spread, p_cure)``. Run a simulation, for specific values of ``p_spread`` and ``p_cure`` and count how long it takes the world to end (which you can now test with ``is_end_of_world``, of course). Some pseudocode for you::
    
       set up a new list of cities (``world = set_up_cities()``)
