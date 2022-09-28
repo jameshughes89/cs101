@@ -135,6 +135,10 @@ Write a function ``simulation_step`` that simulate a single iteration of the zom
 the world (list of cities) as a parameter, along with spread and cure probabilities as parameters. The function will
 return a copy of the world after performing a step of the simulation.
 
+The parameter ``spread_probability`` is a floating point values between 0 -- 1 representing the percent probability that
+a given infected city will spread the disease to one of its neighbours in the current simulation step. The parameter
+``cure_probability`` is the percent probability that a given infected city will cure *itself* in the current simulation
+step. 
 
 
 Part 8 --- Simulate Infections Disease Scenario
