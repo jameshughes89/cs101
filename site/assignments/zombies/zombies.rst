@@ -140,6 +140,10 @@ a given infected city will spread the disease to one of its neighbours in the cu
 ``cure_probability`` is the percent probability that a given infected city will cure *itself* in the current simulation
 step. 
 
+The overall idea of simulating a step requires that each city in the world is investigated and checked if it will spread
+the disease to a neighbouring city and/or cure itself. Details are provided below and, given the complexity of this
+function, pseudocode is provided at the end of this section to help with the writing of your function.
+
 To perform a simulation step properly, one must consider that the world has a *before* state, which is the state of the
 world before the simulation step occurs, and an *after* state, which is the state of the world after the simulation
 step. To do this easily, a copy of the before state can be made (see the provided ``copy_world`` function) such that
@@ -152,7 +156,6 @@ are made to the *after* state while the *before* state is left alone, unchanged.
 *after state* are two separate world (two lists of cities).
 
 .. image:: before_after_states.png
-
 
 The simulation of a step requires checking if a city will either spread the disease or cure itself. This is where the
 ``spread_probability`` and ``cure_probability`` values come in. These parameters will have some value between 0 and 1
@@ -175,7 +178,6 @@ could implement this, but perhaps the simplest is to just update city 0 to infec
 function finishes. That way, if city 0 was cured during the simulation step, it is reset to infected, and if city 0
 happened to not get cured, there is no harm in setting it to infected anyways.
 
-Given the complexity of this function, pseudocode is provided below to help with the writing of your function.
 
     ``Make a copy of the world for the after state``
 
