@@ -121,6 +121,17 @@ as a parameter and ``return`` a list containing all the neighbouring cities.
 Part 5 --- Infecting and Curing a City
 ======================================
 
+Write functions to ``infect`` a city and ``cure`` a city. For ``infect``, your function will take a city as a parameter
+and return a *copy* of the city with the infection status set to ``True``. Similarly for ``cure``, the function will
+take the city being cured as a parameter and will return a *copy* of the city with the infection status set to
+``False``.
+
+The simplest way to make a copy is to make a new city based on the information of the city being infected/cured and then
+setting the city's infection status accordingly.
+
+The motivation for making a copy and not just modifying the current city's infection status value is to make our data
+*stateless*. By doing so, it helps eliminate many potential problems within your programs.
+
 
 Part 6 --- How Many Cities are Infected
 =======================================
@@ -210,58 +221,58 @@ General FAQ:
    * I know... it should... it's still stochastic...
 
 * Does my text file have enough details?
-	* Probably. The shorter the better. I really just want to see that you played around a little.
+    * Probably. The shorter the better. I really just want to see that you played around a little.
 
 * Is my area a high/low enough density?
-	* I really don't care how high/low it is. Just try a few things and see what you get.
+    * I really don't care how high/low it is. Just try a few things and see what you get.
 
 * I don't know how to do *X*.
-	* OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
+    * OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
 
 * It’s not working, therefore Python is broken!
-	* Probably not; you’re very likely doing something wrong
+    * Probably not; you’re very likely doing something wrong
 
 * My thing keeps telling me ``No such file or directory: 'starbucks2018.csv'``
-	* Then the starbucks file probably isn't where python is looking.
+    * Then the starbucks file probably isn't where python is looking.
 
 * But density will grow larger the smaller I make the area.
-	* Correct, you understand basic arithmetic.
+    * Correct, you understand basic arithmetic.
 
 * But I never used the one function!!!!1!
-	* Fine, but write the code anyways and make sure it works.
+    * Fine, but write the code anyways and make sure it works.
 
 * But the degrees values don't specify a cardinal direction!
-	* Make use of changing +/- if you need to change hemispheres.
+    * Make use of changing +/- if you need to change hemispheres.
 
 * Wtf do the functions do that you gave me?
-	* Read the descriptions. Try figuring it out. This is actually part of the assignment learning objectives.
+    * Read the descriptions. Try figuring it out. This is actually part of the assignment learning objectives.
 
 * Some of the code in the functions you gave us look like magic.
-	* At this point it may seem that way, but by the end of the semester, they will lose their magic.
+    * At this point it may seem that way, but by the end of the semester, they will lose their magic.
 
 * Do I have enough comments?
-	* I don't know, maybe? If the code is too complex to understand simply by looking at it, add a comment.
+    * I don't know, maybe? If the code is too complex to understand simply by looking at it, add a comment.
 
 * I know you told me to do it this way, but I did it another way, and I think my way is better.
-	* Your way may be better, but I don’t care. Do it the way I told you.
+    * Your way may be better, but I don’t care. Do it the way I told you.
 
 * Can I work with my friend?
-	* No.
+    * No.
 
 * I know I cheated, I know I know I was cheating, but I’m reeeeaaaaaaaaallllllly sorry [that I got caught]. Can we just ignore it this time?
-	* Lol, no.
+    * Lol, no.
 
 * If I submit it at 11:56pm, you’ll still mark it, right? I mean, commmmon!
-	* No. 11:55pm and earlier is on time. Anything after 11:55pm is late. Anything late is not marked. It’s rather simple really.
+    * No. 11:55pm and earlier is on time. Anything after 11:55pm is late. Anything late is not marked. It’s rather simple really.
 
 * Moodle was totally broken, it’s not my fault it’s late.
-	* Nice try.
+    * Nice try.
 
 * I accidentally submitted the wrong code. Here is the right code, but it’s late. But you can see that I submitted the wrong code on time! You’ll still accept it, right?
-	* Do you think I was born yesterday? No.
+    * Do you think I was born yesterday? No.
 
 * Will I really get 0 if I do the submission wrong? Like, what if I submit the .ipynb instead of the .py?
-	* Yes, you'll really get a **ZERO**.
+    * Yes, you'll really get a **ZERO**.
 
 
 
@@ -271,20 +282,6 @@ Coding, Part I
 
 Write the following functions:
 
-1. ``zombify(cities, cityno)``. This function takes your list of cities as the parameter ``cities`` and an integer ``cityno`` specifying which city in the list should be infected. So, to infect city 2, you might use the function like this:
-   
-   .. code-block:: python
-   
-      my_world = set_up_cities()
-      zombify(my_world, 2)
-	  
-   
-   **Hint 1:** Which index held the infected boolean?
-
-   **Hint 2:** If the above hint made no sense to you, you didn't read *Data structures you need to know about* section carefully enough. 
- 
-2. ``cure(cities, cityno)``. The opposite of ``zombify``. Clear the infection flag for the city.  
-   
 3. ``sim_step(cities, p_spread, p_cure)``. This is the most important function in the assignment. This function will execute a single *time step* of your simulation. Depending on how fast you want to think of your zombies spreading, that time step could be a day, an hour, a week, whatever. When modelling a real zombie outbreak, you'd determine the size of your time step from the empirical data. Here is some English-language "pseudocode" for function. You'll have to turn it into Python::
    
     for each city in cities (enumerate?):
