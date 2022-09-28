@@ -132,7 +132,9 @@ total of infected cities. After each city has been investigated, the function re
 infected cities.
 
 Write another function, ``is_world_completely_infected``, that takes a world (list of cities) as a parameter and returns
-``True`` if the whole world is infected (all cities are infected), and ``False`` otherwise.
+``True`` if the whole world is infected (all cities are infected), and ``False`` otherwise. In other words,
+*if the number of cities infected* is equal to the number of cities in the world, then the whole world is considered
+infected.
 
 
 Part 7 --- Simulation Step
@@ -352,8 +354,6 @@ to end in the event of a zombie apocalypse.
 
 Write the following functions:   
   
-4. ``is_end_of_world(cities)``. Loop through all the cities in the list ``cities``. If *all* of them are infected, return ``True`` (it's been nice knowing you). Otherwise, return ``False``.  
-
 5. ``time_to_end_of_world(p_spread, p_cure)``. Run a simulation, for specific values of ``p_spread`` and ``p_cure`` and count how long it takes the world to end (which you can now test with ``is_end_of_world``, of course). Some pseudocode for you::
    
       set up a new list of cities (``world = set_up_cities()``)
