@@ -168,7 +168,7 @@ occurrences of the events we want. For example, if ``cure_probability`` was set 
 When it comes to randomly selecting a neighbour to infect, the ``random`` library provides many functions that may work
 effectively. I suggest investigating the
 `choice function <https://docs.python.org/3/library/random.html#random.choice>`_ as you may find it to be the simplest
-to get working for you.
+to get working for your needs.
 
 Finally, for the purposes of our simulation, we want to make sure city 0 is always infected. There are a few ways one
 could implement this, but perhaps the simplest is to just update city 0 to infected in the after state before the
