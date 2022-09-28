@@ -131,6 +131,11 @@ Part 6 --- How Many Cities are Infected
 Part 7 --- Simulation Step
 ==========================
 
+Write a function ``simulation_step`` that simulate a single iteration of the zombie apocalypse. The function will take
+the world (list of cities) as a parameter, along with spread and cure probabilities as parameters. The function will
+return a copy of the world after performing a step of the simulation.
+
+
 
 Part 8 --- Simulate Infections Disease Scenario
 ===============================================
