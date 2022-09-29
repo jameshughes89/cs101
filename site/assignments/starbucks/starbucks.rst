@@ -187,7 +187,7 @@ Part 8 --- Testing
 
 To help ensure that your program is correct, run the provided assertion tests. Each function is followed by a series of
 commented out assertion tests that will help you test your code. When you are ready to test your functions, simply make
-them not comments (remove the ``#``) to include them in your running program. There is no guarntee that if your code
+them not comments (remove the ``#``) to include them in your running program. There is no guarantee that if your code
 passes all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as
 they should.
 
