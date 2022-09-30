@@ -125,7 +125,16 @@ Part 5 --- Infecting and Curing a City
 Part 6 --- How Many Cities are Infected
 =======================================
 
-* Both ``number_of_cities_infected`` and ``is_world_completely_infected`` here
+Write a function ``number_of_cities_infected`` that takes a world (list of cities) as a parameter and counts the number
+of cities within the world that are infected. This function will return the final count when it completes. In other
+words, it will look at *each* city within the world, check *if* it is infected, and if it is, it adds one to the running
+total of infected cities. After each city has been investigated, the function returns the value of the running total of
+infected cities.
+
+Write another function, ``is_world_completely_infected``, that takes a world (list of cities) as a parameter and returns
+``True`` if the whole world is infected (all cities are infected), and ``False`` otherwise. In other words,
+*if the number of cities infected* is equal to the number of cities in the world, then the whole world is considered
+infected.
 
 
 Part 7 --- Simulation Step
@@ -344,8 +353,6 @@ simulations. In particular, top government officials want to know how long it wi
 to end in the event of a zombie apocalypse. 
 
 Write the following functions:   
-  
-4. ``is_end_of_world(cities)``. Loop through all the cities in the list ``cities``. If *all* of them are infected, return ``True`` (it's been nice knowing you). Otherwise, return ``False``.  
 
 5. ``time_to_end_of_world(p_spread, p_cure)``. Run a simulation, for specific values of ``p_spread`` and ``p_cure`` and count how long it takes the world to end (which you can now test with ``is_end_of_world``, of course). Some pseudocode for you::
    
