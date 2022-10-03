@@ -18,7 +18,7 @@ Task
 ====
 
 If you can simulate something accurately, it becomes possible to study the simulation without having to actually
-implement the real thing. You will write a program to simulate a zombie apocalypse scenatio on a randomly generated
+implement the real thing. You will write a program to simulate a zombie apocalypse scenario on a randomly generated
 network of cities. Additionally, you will be using your simulation to analyze the spread of the zombie apocalypse
 throughout your network of cities.
 
@@ -136,11 +136,88 @@ The motivation for making a copy and not just modifying the current city's infec
 Part 6 --- How Many Cities are Infected
 =======================================
 
-* Both ``number_of_cities_infected`` and ``is_world_completely_infected`` here
+Write a function ``number_of_cities_infected`` that takes a world (list of cities) as a parameter and counts the number
+of cities within the world that are infected. This function will return the final count when it completes. In other
+words, it will look at *each* city within the world, check *if* it is infected, and if it is, it adds one to the running
+total of infected cities. After each city has been investigated, the function returns the value of the running total of
+infected cities.
+
+Write another function, ``is_world_completely_infected``, that takes a world (list of cities) as a parameter and returns
+``True`` if the whole world is infected (all cities are infected), and ``False`` otherwise. In other words,
+*if the number of cities infected* is equal to the number of cities in the world, then the whole world is considered
+infected.
 
 
 Part 7 --- Simulation Step
 ==========================
+
+Write a function ``simulation_step`` that simulates a single iteration of the zombie apocalypse. The function will take
+the world (list of cities) as a parameter, along with spread and cure probabilities as parameters. The function will
+return a copy of the world after performing a step of the simulation.
+
+The parameter ``spread_probability`` is a floating point values between 0 -- 1 representing the percent probability that
+a given infected city will spread the disease to one of its neighbours in the current simulation step. The parameter
+``cure_probability`` is the percent probability that a given infected city will cure *itself* in the current simulation
+step. 
+
+The overall idea of simulating a step requires that each city in the world is investigated and checked if it will spread
+the disease to a neighbouring city and/or cure itself. Details are provided below and, given the complexity of this
+function, pseudocode is provided at the end of this section to help with the writing of your function.
+
+To perform a simulation step properly, one must consider that the world has a *before* state, which is the state of the
+world before the simulation step occurs, and an *after* state, which is the state of the world after the simulation
+step. To do this easily, a copy of the before state can be made (see the provided ``copy_world`` function) such that
+your program has two versions of the world for the execution of the step of the simulation. Information for the
+simulation step is retrieved from the *before* state, and all changes to the world will be put into the *after* state.
+
+Consider the below image as an example. In the *before state*, cities 0 and 2 are infected, and cities 1, 3, and 4 are
+not infected. If during the simulation step city 0 were to become cured, and cities 1 and 4 become infected, the changes
+are made to the *after* state while the *before* state is left alone, unchanged. Again, note that *before state* and
+*after state* are two separate world (two separate lists of cities).
+
+.. image:: before_after_states.png
+
+The simulation of a step requires checking if a city will either spread the disease or cure itself. This is where the
+``spread_probability`` and ``cure_probability`` values come in. These parameters will have some value between 0 -- 1
+--- the closer to 0, the less likely we want the event is to occur, and the closer to 1, the more likely. To achieve
+this functionality, we can make use of Python's ``random`` library, namely, the
+`random function <https://docs.python.org/3/library/random.html#random.random>`_ . This function will return some value
+between 0 and 1 from a uniform distribution. Therefore, calling this function will provide some arbitrary value between
+0 -- 1, and by checking if that value is, for example ``< cure_probability``, we can implement the probabilistic
+occurrences of the events we want. For example, if ``cure_probability`` was set to ``0.80`` (80%), and since
+``random`` is equally likely to select all values between 0 -- 1, ``random`` will produce a value less than ``0.80``
+80% of the time.
+
+When it comes to randomly selecting a neighbour to infect, the ``random`` library provides many functions that may work
+effectively. I suggest investigating the
+`choice function <https://docs.python.org/3/library/random.html#random.choice>`_ as you may find it to be the simplest
+to get working for your needs.
+
+Finally, for the purposes of our simulation, we want to make sure city 0 is always infected. There are a few ways one
+could implement this, but perhaps the simplest is to just update city 0 to infected in the after state before the
+function finishes. That way, if city 0 was cured during the simulation step, it is reset to infected, and if city 0
+happened to not get cured, there is no harm in setting it to infected anyways.
+
+
+    ``Make a copy of the world for the after state``
+
+    ``For each city in the before state:``
+
+        ``If the city is infected``
+
+            ``If the city is infecting a neighbouring city based on the probability value``
+
+                ``Select a random neighbour``
+
+                ``Infect the selected neighbour and update the after state``
+
+            ``If the city is curing itself based on the probability value``
+
+                ``Cure the city and update the after state``
+
+    ``Ensure city 0 is always infected``
+
+    ``Return after state``
 
 
 Part 8 --- Simulate Infections Disease Scenario
@@ -153,6 +230,18 @@ Part 9 --- Using Your Code and Plotting
 
 Part 10 --- Testing
 ===================
+
+To help ensure that your program is correct, run the provided assertion tests. Each function is followed by a series of
+commented out assertion tests that will help you test your code. In addition to the assertion tests there are some
+"eyeball tests" that require you to run and investigate yourself to confirm that the result *looks* correct. These tests
+are needed due to the limitations of the assertion tests. When you are ready to test your functions, simply make them
+not comments (remove the ``#``) to include them in your running program. There is no guarantee that if your code passes
+all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as they
+should.
+
+Realistically you should have been running tests after you complete each of the above parts, but this part is here to
+remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
+for the marker to return your assignment before you have an idea of if it works correctly.
 
 
 Some Hints
@@ -341,8 +430,6 @@ simulations. In particular, top government officials want to know how long it wi
 to end in the event of a zombie apocalypse. 
 
 Write the following functions:   
-  
-4. ``is_end_of_world(cities)``. Loop through all the cities in the list ``cities``. If *all* of them are infected, return ``True`` (it's been nice knowing you). Otherwise, return ``False``.  
 
 5. ``time_to_end_of_world(p_spread, p_cure)``. Run a simulation, for specific values of ``p_spread`` and ``p_cure`` and count how long it takes the world to end (which you can now test with ``is_end_of_world``, of course). Some pseudocode for you::
    
