@@ -130,7 +130,7 @@ The simplest way to make a copy is to make a new city based on the information o
 setting the city's infection status accordingly.
 
 The motivation for making a copy and not just modifying the current city's infection status value is to make our data
-*stateless*. By doing so, it helps eliminate many potential problems within your programs.
+*immutable*. By doing so, it keeps things easier to reason about and helps eliminate many potential problems within your programs.
 
 
 Part 6 --- How Many Cities are Infected
