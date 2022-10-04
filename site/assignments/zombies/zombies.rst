@@ -227,6 +227,15 @@ Part 8 --- Simulate Infections Disease Scenario
 Part 9 --- Using Your Code and Plotting
 =======================================
 
+Call the ``simulate_infections_disease`` function a few times and make use of the provided
+``draw_number_of_cities_infected`` function to visualize the results. Be sure to try varying parameter values,
+especially for the spread and cure probabilities. 
+
+# use it
+# save images
+# write report as txt
+
+When simulating
 
 Part 10 --- Testing
 ===================
