@@ -229,7 +229,13 @@ parameter for setting a cutoff for the simulation (more on this below). The func
 cities infected at each step of the simulation.
 
 The purpose of this function is to just run the simulation step repeatedly until it is the end of the world (all cities
-infected). In other words, loop the simulation step while the world is not completely infected.
+infected). In other words, loop the simulation step while the world is not completely infected. This will require the
+use of ``simulation_step`` and ``is_world_completely_infected``. Remember, the function ``simulation_step`` takes the
+before state of the world as an argument and returns the after state --- be sure to be keeping track of the most recent
+world state in your loop.
+
+
+
 
 Part 9 --- Using Your Code and Plotting
 =======================================
