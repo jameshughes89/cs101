@@ -40,12 +40,12 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-#. Write a function ``count_to_n_while(n: int):`` to print out each number from :math:`0 -- (n - 1)`
+#. Write a function ``count_to_n_while(n: int):`` to print out each number from :math:`0` -- :math:`(n - 1)`
 
     * This function must use a ``while`` loop
     * This function will not return anything
 
-#. Write a function ``count_to_n_for(n: int):`` to print out each number from :math:`0 -- (n - 1)`
+#. Write a function ``count_to_n_for(n: int):`` to print out each number from :math:`0` -- :math:`(n - 1)`
 
     * This function must use a ``for`` loop
     * This function will not return anything
