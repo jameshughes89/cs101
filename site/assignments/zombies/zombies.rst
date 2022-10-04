@@ -258,7 +258,7 @@ Below is some pseudocode to help with writing the function.
 
     ``Update list of number of infected cities``
 
-    ``While it is not the end of the world and we are not beyond the cuttoff``
+    ``While it is not the end of the world and we are not beyond the cutoff``
 
         ``Run a simulation step``
 
