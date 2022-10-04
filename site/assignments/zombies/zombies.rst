@@ -224,7 +224,7 @@ Part 8 --- Simulate Infections Disease Scenario
 ===============================================
 
 Write a function ``simulate_infections_disease`` that simulates a full infections disease scenario. The function will
-take a world (list of cities) and the spread and cure probabilities as parameters. The function also has an optional
+have a world (list of cities) and the spread and cure probabilities as parameters. The function also has an optional
 parameter for setting a cutoff for the simulation (more on this below). The function will return a list of the number of
 cities infected at each step of the simulation.
 
