@@ -232,11 +232,11 @@ Call the ``simulate_infections_disease`` function a few times and make use of th
 especially for the spread and cure probabilities.
 
 Typically, when analyzing a stochastic simulation of something, we run the simulation many times in order to get an idea
-of how things work *in general*. Run the simulation many times (try 100) and, in a list, keep track of the number of
-iterations each of the simulations took to finish (remember, the ``simulate_infections_disease`` returns a list whose
-length ``-1`` would be the number of steps the simulation took). Visualize the distribution of steps of the infections
-disease scenario with the provided ``draw_distribution`` function. Like before, be sure to run try varying values for
-the spread and cure probabilities.
+of how things work *in general*. Run the full simulation 100 times and, in a list, keep track of the number of
+iterations each of the 100 simulations took to finish (remember, the ``simulate_infections_disease`` returns a list
+whose length minus one would be the number of steps the simulation took). Visualize the distribution of steps of the
+infections disease scenario with the provided ``draw_distribution`` function. Like before, be sure to run try varying
+values for the spread and cure probabilities.
 
     ``Make a world``
 
@@ -249,11 +249,20 @@ the spread and cure probabilities.
         ``Update the list of the lengths of simulations``
 
 
-# use it
-# save images
-# write report as txt
 
-When simulating
+After getting a sense of the results, do a short writeup in a txt/word file explaining your results. Also save some of
+the relevant figures (plots) to reference in your writeup. Questions to consider:
+
+    #. Fix the cure probability to zero. How does varying the spread probability affect the runtimes?
+
+    #. Fix the cure probability to ``0.5``. How does varying the spread probability affect the runtimes?
+
+    #. Fix the spread probability to ``0.5``. How does varying the cure probability affect the runtimes?
+
+
+Note, a single plot of the number of infected cities over a single run of the simulation is not too convincing. Showing
+the distribution of results over many simulations will provide a much more convincing argument.
+
 
 Part 10 --- Testing
 ===================
