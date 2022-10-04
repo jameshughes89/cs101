@@ -223,6 +223,13 @@ happened to not get cured, there is no harm in setting it to infected anyways.
 Part 8 --- Simulate Infections Disease Scenario
 ===============================================
 
+Write a function ``simulate_infections_disease`` that simulates a full infections disease scenario. The function will
+take a world (list of cities) and the spread and cure probabilities as parameters. The function also has an optional
+parameter for setting a cutoff for the simulation (more on this below). The function will return a list of the number of
+cities infected at each step of the simulation.
+
+The purpose of this function is to just run the simulation step repeatedly until it is the end of the world (all cities
+infected). In other words, loop the simulation step while the world is not completely infected.
 
 Part 9 --- Using Your Code and Plotting
 =======================================
