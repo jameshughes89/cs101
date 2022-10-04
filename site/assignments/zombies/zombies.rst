@@ -229,7 +229,25 @@ Part 9 --- Using Your Code and Plotting
 
 Call the ``simulate_infections_disease`` function a few times and make use of the provided
 ``draw_number_of_cities_infected`` function to visualize the results. Be sure to try varying parameter values,
-especially for the spread and cure probabilities. 
+especially for the spread and cure probabilities.
+
+Typically, when analyzing a stochastic simulation of something, we run the simulation many times in order to get an idea
+of how things work *in general*. Run the simulation many times (try 100) and, in a list, keep track of the number of
+iterations each of the simulations took to finish (remember, the ``simulate_infections_disease`` returns a list whose
+length ``-1`` would be the number of steps the simulation took). Visualize the distribution of steps of the infections
+disease scenario with the provided ``draw_distribution`` function. Like before, be sure to run try varying values for
+the spread and cure probabilities.
+
+    ``Make a world``
+
+    ``Make an empty list to keep track of the length of each simulation``
+
+    ``For some number of loops (100ish)``
+
+        ``Run a whole simulation``
+
+        ``Update the list of the lengths of simulations``
+
 
 # use it
 # save images
