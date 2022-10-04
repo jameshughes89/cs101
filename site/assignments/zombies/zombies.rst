@@ -234,7 +234,37 @@ use of ``simulation_step`` and ``is_world_completely_infected``. Remember, the f
 before state of the world as an argument and returns the after state --- be sure to be keeping track of the most recent
 world state in your loop.
 
+The total number of cities infected at each step of the simulation is to be recorded and returned after the whole
+simulation is complete. These values can simply be stored in a list, and after each step of the simulation the current
+number of cities infected can be appended to the list. For this, make use of the ``number_of_cities_infected`` function.
 
+Before the simulation starts looping through steps, city 0 needs to be set to infected, and the number of cities at time
+step 0 needs to be recorded in the list too. This means that the function should start with some simple setup work.
+
+Lastly, there is a special optional ``cutoff`` parameter for the function. Since it is possible that the spread and cure
+probabilities are set such that the loop may run excessively long, the `cutoff`` value is used to ensure that the
+simulation will stop in some reasonable time. Since a list is used to keep track of the number of infected cities after
+each simulation step, the length of that list can be used to know how many times the loop ran (since the list grows by 1
+every time the loop runs). In other words, a way to check how many times the loop has run would be
+``len(infected_count) < cutoff + 1``, where ``infected_count`` is the list of the number of infected cities at each time
+step. Note the use of the ``+ 1`` on ``cutoff``, which is there since the list should start the loop with size 1 since
+we include the number of cities infected before the simulation starts (which is just city 0 being infected).
+
+Below is some pseudocode to help with writing the function.
+
+    ``Create empty list to keep track of the number of infected cities at each time step``
+
+    ``Infect city 0``
+
+    ``Update list of number of infected cities``
+
+    ``While it is not the end of the world and we are not beyond the cuttoff``
+
+        ``Run a simulation step``
+
+        ``Count the number of cities currently infected and update the list of the number of infected cities``
+
+    ``Return the list of the number of infected cities at each step of the simulation``
 
 
 Part 9 --- Using Your Code and Plotting
