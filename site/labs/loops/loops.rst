@@ -29,7 +29,7 @@ Pre Lab Exercises
 
 #. `Chapter 7 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/iteration.html#exercises>`_
 
-    * 9 `What is a "triangle number? <https://en.wikipedia.org/wiki/Triangular_number>`_
+    * 9 `What is a "triangle number"? <https://en.wikipedia.org/wiki/Triangular_number>`_
     * 14 (use ``assert`` to test instead of their ``test`` function)
     * 15 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
 
