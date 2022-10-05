@@ -161,7 +161,7 @@ The Math, Stats, and CS Society now has a time and location for our free tutoria
     :numbered:
    
     assignments/starbucks/starbucks
-    .. assignments/zombies/zombies
+    assignments/zombies/zombies
     .. assignments/tic-tac-toe/tic-tac-toe
     .. assignments/objects/objects
 
