@@ -101,7 +101,7 @@ For loops
     * The loop ends as there are no more characters in the string
 
 
-* Both the``while`` and ``for`` loops are perfectly fine for this situation
+* Both the ``while`` and ``for`` loops are perfectly fine for this situation
 
     * But you may find the ``for`` loop has a little nicer syntax
 
