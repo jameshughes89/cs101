@@ -202,10 +202,10 @@ Total Kilometers
         This function calculates the total number of kilometers driven based
         on starting and ending odometer readings.
 
-        @rtype: float
-        @param odometer_start: The number of kms the car had before renting
-        @param odometer_finish: The number of kms the car had after rending
-        @return: The total kms driven
+        :rtype: float
+        :param odometer_start: The number of kms the car had before renting
+        :param odometer_finish: The number of kms the car had after rending
+        :return: The total kms driven
         """
 
         return odometer_finish - odometer_start
@@ -242,10 +242,10 @@ Average Kilometers Per Day
         Calculate the average number of kilometers driven per day
         over the rental period
 
-        @rtype: float
-        @param num_days: The total number of days the car was rented
-        @param num_kms: The total number of kilometers driven during the rental period
-        @return: The average number of kilometers driven per day
+        :rtype: float
+        :param num_days: The total number of days the car was rented
+        :param num_kms: The total number of kilometers driven during the rental period
+        :return: The average number of kilometers driven per day
         """
 
         return num_kms / num_days
@@ -274,9 +274,9 @@ Kilometers Above Allowable Average
         Calculates the number of kms the renter went over of their daily allowance.
         We will use the customer's average daily kms.
 
-        @rtype: float
-        @param avg_num_kms: average number of kms driven per day
-        @return: The number of kms over 100 they went (return 0 if it's less than 100)
+        :rtype: float
+        :param avg_num_kms: average number of kms driven per day
+        :return: The number of kms over 100 they went (return 0 if it's less than 100)
         """
 
         # If the average kms traveled is above 100,
@@ -319,13 +319,13 @@ Revisit Calculating the Total Charge
         Calculate how much the renter needs to be charged based on the classification,
         the number of kms travelled and the age of the driver.
 
-        @rtype: float
-        @param num_days: Number of days the car was rented.
-        @param age: Age of the driver.
-        @param rental_code: The classification code (B ord D).
-        @param odometer_start: Odometer when the renter took the car.
-        @param odometer_finish: Odometer when the renter returned the car.
-        @return: The amount to charge the renter.
+        :rtype: float
+        :param num_days: Number of days the car was rented.
+        :param age: Age of the driver.
+        :param rental_code: The classification code (B ord D).
+        :param odometer_start: Odometer when the renter took the car.
+        :param odometer_finish: Odometer when the renter returned the car.
+        :return: The amount to charge the renter.
         """
         # Set up a variable for our total charge
         total_charge = 0
