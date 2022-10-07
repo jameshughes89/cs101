@@ -47,7 +47,7 @@ Reusing Variables
 
     a = a + 1
 
-* The above example sill add one to whatever value is stored in ``a`` and then store that new value back to ``a``
+* The above example will add one to whatever value is stored in ``a`` and then store that new value back to ``a``
 * For example
 
     * If ``a`` starts with the value ``5``
