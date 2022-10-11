@@ -24,7 +24,7 @@ Lists
         print(type(some_list))
 
     #. Determine what types can be in a list.
-    #. Can a list contain things od different types at the same time?
+    #. Can a list contain things of different types at the same time?
     #. How can you access the last element in a list?
     #. Can we find the length of a list?
     #. Is it possible to have a list of length 0? This would be an empty list, or a list with nothing in it.
