@@ -133,6 +133,7 @@ def draw_world(world: list) -> None:
     nx.draw_networkx(network, pos=layout, with_labels=True, node_color=city_infection_state_colours, node_size=500)
     plt.show()
 
+
 # Eyeball test required --- uncomment to view test
 """
 draw_world(
