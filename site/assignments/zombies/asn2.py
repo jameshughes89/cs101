@@ -106,8 +106,10 @@ assert not (world_test[0][2] is copied_world_test[0][2])
 def draw_world(world: list) -> None:
     """
     Calling this function will display an image representing the world in its current state.
+
     Draw the cities with their names, their connections, and represent the city's infection status with the vertex's
     colour (cyan --- not infected, red --- infected).
+
     :param world: A list of cities representing the world.
     :type world: A list of cities, of the form [[city 0, status, [neighbours]], [[city 1, status, [neighbours]] ... ]
     """
