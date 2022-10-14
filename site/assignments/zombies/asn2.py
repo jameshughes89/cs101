@@ -117,13 +117,17 @@ def draw_world(world: list) -> None:
     city_infection_state_colours = []
     plt.clf()
 
-    # Generate a networkx graph of our world
+    # Create all the city nodes and set colours
     for i, city in enumerate(world):
         network.add_node(i)
         if city[1]:
             city_infection_state_colours.append("r")
         else:
             city_infection_state_colours.append("c")
+
+    # Add edges between nodes (cities) _after_ all nodes are created to
+    # eliminate issues with networkx's automatic node numbering and labels
+    for i, city in enumerate(world):
         for neighbour in city[2]:
             network.add_edge(i, neighbour)
 
