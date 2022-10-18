@@ -1,6 +1,6 @@
-*******************************************
-I'm Only Taking CS to Make Sick Video Games
-*******************************************
+***********
+Tic-Tac-Toe
+***********
 
 * **Worth**: 10%
 * **Due**: TBD at 11:55pm; submitted on MOODLE
