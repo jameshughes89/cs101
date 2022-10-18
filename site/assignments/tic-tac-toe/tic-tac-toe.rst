@@ -1,6 +1,165 @@
-*******************************************
-I'm only taking CS to make sick video games
-*******************************************
+***********
+Tic-Tac-Toe
+***********
+
+* **Worth**: 10%
+* **Due**: TBD at 11:55pm; submitted on MOODLE
+* **Files**:
+
+
+Task
+====
+
+
+Provided Files
+==============
+
+
+Part 0 --- Read the Assignment
+==============================
+
+
+Part 1 --- Creating a new Notebook on Colab
+===========================================
+
+
+Part 2 --- Setup Game
+=====================
+
+
+Part 3 --- Parse Move
+=====================
+
+
+Part 4 --- Validate Move
+========================
+
+
+Part 5 --- Apply Move
+=====================
+
+
+Part 6 --- Check For Winner
+===========================
+
+
+Check Row & Column
+------------------
+
+
+Check Diagonals
+---------------
+
+
+Checking All Directions
+-----------------------
+
+
+Part 7 --- Rendering the Game Board
+===================================
+
+
+Render Cell
+-----------
+
+
+Render Row
+----------
+
+
+Render Board
+------------
+
+
+Part 8 --- Putting it Together
+==============================
+
+
+
+Part 9 --- Testing
+==================
+
+
+
+
+Some Hints
+==========
+
+* Work on one function at a time
+* Get each function working perfectly before you go on to the next one
+* Test each function as you write it
+    * This is a really nice thing about programming; you can call your functions and see what result gets returned
+    * Mentally test before you even write --- what does this function do? What problem is it solving?
+
+* If you need help, ask
+    * Drop by office hours
+
+
+Some Marking Details
+====================
+
+.. warning::
+    Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or
+    even that your program is correct.
+
+Below is a list of both *quantitative* and *qualitative* things we will look for:
+
+* Correctness?
+* Did you follow instructions?
+* Comments?
+* Variable Names?
+* Style?
+* Did you do just weird things that make no sense?
+
+
+What to Submit to Moodle
+========================
+
+* Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program
+* Submit your version of ``asn3.py`` to Moodle
+    * Do **not** submit the .ipynb file
+    * To get the ``asn3.py`` file from Colab, see the example image in Assignment 1
+
+
+.. warning::
+
+    Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
+
+
+General FAQ:
+============
+
+* I don't know how to do *X*.
+    * OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
+
+* It’s not working, therefore Python is broken!
+    * Probably not; you’re very likely doing something wrong
+
+* Do I have enough comments?
+    * I don't know, maybe? If the code is too complex to understand simply by looking at it, add a comment.
+
+* I know you told me to do it this way, but I did it another way, and I think my way is better.
+    * Your way may be better, but I don’t care. Do it the way I told you.
+
+* Can I work with my friend?
+    * No.
+
+* I know I cheated, I know I know I was cheating, but I’m reeeeaaaaaaaaallllllly sorry [that I got caught]. Can we just ignore it this time?
+    * Lol, no.
+
+* If I submit it at 11:56pm, you’ll still mark it, right? I mean, commmmon!
+    * No. 11:55pm and earlier is on time. Anything after 11:55pm is late. Anything late is not marked. It’s rather simple really.
+
+* Moodle was totally broken, it’s not my fault it’s late.
+    * Nice try.
+
+* I accidentally submitted the wrong code. Here is the right code, but it’s late. But you can see that I submitted the wrong code on time! You’ll still accept it, right?
+    * Do you think I was born yesterday? No.
+
+* Will I really get 0 if I do the submission wrong? Like, what if I submit the .ipynb instead of the .py?
+    * Yes, you'll really get a **ZERO**.
+
+
 
 * **Worth**: 10%
 * **DUE**: November 15th at 11:55pm; submitted on MOODLE.
