@@ -7,8 +7,52 @@ I'm Only Taking CS to Make Sick Video Games
 * **Files**: N/A
 
 
+Task
+====
 
 
+Provided Files
+==============
+
+
+Part 0 --- Read the Assignment
+==============================
+
+
+Part 1 --- Creating a new Notebook on Colab
+===========================================
+
+
+Part 2 --- Setup Game
+=====================
+
+
+Part 3 --- Parse Move
+=====================
+
+
+Part 4 --- Validate Move
+========================
+
+
+Part 5 --- Apply Move
+=====================
+
+
+Part 6 --- Check For Winner
+===========================
+
+
+Check Row & Column
+------------------
+
+
+Check Diagonals
+---------------
+
+
+Checking All Directions
+-----------------------
 
 
 
