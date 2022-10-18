@@ -4,7 +4,7 @@ I'm Only Taking CS to Make Sick Video Games
 
 * **Worth**: 10%
 * **Due**: TBD at 11:55pm; submitted on MOODLE
-* **Files**: N/A
+* **Files**:
 
 
 Task
@@ -55,9 +55,29 @@ Checking All Directions
 -----------------------
 
 
+Part 7 --- Rendering the Game Board
+===================================
+
+
+Render Cell
+-----------
+
+
+Render Row
+----------
+
+
+Render Board
+------------
+
+
+Part 8 --- Putting it Together
+==============================
 
 
 
+Part 9 --- Testing
+==================
 
 
 * **Worth**: 10%
