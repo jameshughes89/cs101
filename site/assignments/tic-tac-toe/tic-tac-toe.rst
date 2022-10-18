@@ -1,6 +1,20 @@
 *******************************************
-I'm only taking CS to make sick video games
+I'm Only Taking CS to Make Sick Video Games
 *******************************************
+
+* **Worth**: 10%
+* **Due**: TBD at 11:55pm; submitted on MOODLE
+* **Files**: N/A
+
+
+
+
+
+
+
+
+
+
 
 * **Worth**: 10%
 * **DUE**: November 15th at 11:55pm; submitted on MOODLE.
