@@ -14,7 +14,13 @@ The time has come to make one of the best video games of all time --- Xtreme tic
 `tic-tac-toe <https://en.wikipedia.org/wiki/Tic-tac-toe>`_ except the game sizes can differ. Your task is to implement
 the game, from the ground up, entirely.
 
+You will
 
+* Write functions to setup the initial game board
+* Read and validate moves from players
+* Apply moves to the game board and check for winning conditions
+* Render and display the game board
+* Implement the *game loop*
 
 
 Provided Files
