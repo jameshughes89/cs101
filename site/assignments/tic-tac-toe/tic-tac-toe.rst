@@ -10,6 +10,12 @@ Tic-Tac-Toe
 Task
 ====
 
+The time has come to make one of the best video games of all time --- Xtreme tic-tac-toe. It's effectively
+`tic-tac-toe <https://en.wikipedia.org/wiki/Tic-tac-toe>`_ except the game sizes can differ. Your task is to implement
+the game, from the ground up, entirely.
+
+
+
 
 Provided Files
 ==============
