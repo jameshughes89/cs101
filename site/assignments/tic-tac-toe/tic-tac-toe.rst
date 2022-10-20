@@ -3,7 +3,7 @@ Tic-Tac-Toe
 ***********
 
 * **Worth**: 10%
-* **Due**: October 11, 2022 at 11:55pm; submitted on MOODLE
+* **Due**: November 14, 2022 at 11:55pm; submitted on MOODLE
 * **Files**:
 
 
