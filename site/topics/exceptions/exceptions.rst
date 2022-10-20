@@ -211,9 +211,9 @@ Why Care?
 * The trouble is, that depends on your situation
 * The point is, how can the programmer in 1991 know what you want to do with your situation today?
 
-# Exceptions are fantastic because
+* Ultimately, exceptions are fantastic because
 
-    * They allow programmers to pass info around and communicate through Time
+    * They allow programmers to pass info around and communicate through *time*
     * They allow us to deal with exceptional situations effectively
     * They provide a nice logical division between normal code and exceptional code
 
