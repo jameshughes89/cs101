@@ -173,47 +173,6 @@ General FAQ:
 
 
 
-* **Worth**: 10%
-* **DUE**: November 15th at 11:55pm; submitted on MOODLE.
-* Starting point: Create a new thing called asn3 
-* Learning Objectives
-   * Starting from scratch 
-   * Interpreting requirements correctly
-   * Validating input
-   * Formatting output
-   * Debugging
-   * 2D lists
-   * Generalizing rules 
-
-
-.. warning::
-
-    Remember, List vs. Pointer to a List! Review the discussion on aliasing.
-    
-
-.. image:: a3_videoGame.jpg
-
-It's time. With the skills we've learned so far, we're going to make one of the most badass video games of all time. Are you ready? We're going to make a... wait for it... X-treme tic-tac-toe game from scratch!
-
-For those of you that don't know what this amazing game is, `check out wikipedia <https://en.wikipedia.org/wiki/Tic-tac-toe>`_. 
-
-This assignment will be a little bit different from the previous two. A1 and A2 were more analytics-ie, and now A3 will be more engineering-ie. Also, unlike the previous assignments, you will be starting from scratch. 
-
-**DO NOT PANIC THOUGH**. 
-
-I will still be guiding you through this assignment. Remember, try not to think about solving the problem all at once. We want to solve the little problems. In fact, most of the time we want to break the little problems into littler problems, and then break them down even more... Then, once we write some code, even if it's 1 or 2 lines, **we always make sure those lines do what we expect!** Being the good programmers like you are, I am certain that you were going to do this already. 
-
-.. warning::
-
-    I'm not playing. Test everything you do in every way you can think to try to break it. This assignment is very constructive. If something early doesn't work then you'll be in trouble. 
-
-
-Some of the functions I'll have you write at first may seem kinda' scatterbrained, but don't worry, it will all come together in the end. 
-
-.. image:: a3_programmer.jpg
-
-
-Now, when I say, *X-treme* tic-tac-toe, I mean **X-treme**. Instead of being stuck with just a boring old 3x3 game, we can do 4x4, 10x10, etc. Basically, any size we want! So we need to: a) ask the players what size the game is; b) make sure all the stuff we program will work for whatever size the game is. 
 
 .. image:: a3_3x3-2.png
 
