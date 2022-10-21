@@ -66,12 +66,12 @@ size. This means we may have game boards that are 3x3, or 5x5, or 999x999. If th
     ``[' ', ' ', ' ', ' ']]``
 
 
-Write a function ``setup_game`` that takes an integer representing the desired board size as a parameter and returns a
-list of lists of strings representing the game board.
+Write a function ``setup_game`` that takes an integer representing the desired board size as a parameter and returns the
+appropriate list of lists of strings representing the game board.
 
-* different sizes
-* what the board looks like
-* warn about aliases
+Remember, we need to ensure our lists are in fact separate lists and not simply aliases to the same single list. If we
+specified a game board size of ``3``, we need a list containing three references to three separate lists, not three
+references to the same single list.
 
 
 Part 3 --- Parse Move
