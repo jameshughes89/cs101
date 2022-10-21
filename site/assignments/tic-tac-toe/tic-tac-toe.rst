@@ -38,6 +38,13 @@ Part 1 --- Creating a new Notebook on Colab
 Part 2 --- Setup Game
 =====================
 
+Write a function ``setup_game`` that takes an integer representing the desired board size as a parameter and returns a
+list of lists of strings representing the game board.
+
+* different sizes
+* what the board looks like
+* warn about aliases
+
 
 Part 3 --- Parse Move
 =====================
