@@ -38,6 +38,20 @@ Part 1 --- Creating a new Notebook on Colab
 Part 2 --- Setup Game
 =====================
 
+The tic-tac-toe game board is to be represented as lists of lists of strings where the strings may be a ``" "`` (space),
+an ``"X"``, or an ``"O"``. For example, a 3x3 empty game board would be
+``[[" ", " ", " "],[" ", " ", " "], [" ", " ", " "]]``; however, one can think of this list of lists as a
+two-dimensional matrix
+
+    ``[[" ", " ", " "],``
+
+    ``[" ", " ", " "],``
+
+    ``[" ", " ", " "]]``
+
+where the first index would be the row and the second is the column. In this example, if the list of list was referenced
+by a variable named ``board``, then ``board[1][2]`` would be the last element in the middle row.
+
 Write a function ``setup_game`` that takes an integer representing the desired board size as a parameter and returns a
 list of lists of strings representing the game board.
 
