@@ -66,7 +66,6 @@ Before Kattis
 #. Use the ``replace_all`` function to change the list ``[1, 2, 2, 1]`` -> ``[2, 1, 1, 2]``
 
     * You will need to use ``replace_all`` multiple times
-    * Write ``assert`` tests to verify correctness
 
 
 Kattis Problems
