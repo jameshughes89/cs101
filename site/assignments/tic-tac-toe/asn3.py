@@ -86,9 +86,10 @@ assert False == is_move_valid((3, 3), test_board_3)
 assert False == is_move_valid((1, 1), test_board_3)
 assert False == is_move_valid((0, 1), test_board_3)
 
-def apply_move(move: tuple, board: list, player: str) -> None:
+def apply_move(move: tuple, board: list, player: str) -> list:
     """
-    Apply a move to the game board by placing the player symbol ('X', or 'O') in the move's corresponding location.
+    Apply a move to the game board by making a copy of the board and placing the player symbol ('X', or 'O') in the
+    move's corresponding location in the new board. This function does not have any side effect.
 
     The move is provided as a tuple of the form (x, y):
         x --- the x/column of the move
@@ -102,20 +103,26 @@ def apply_move(move: tuple, board: list, player: str) -> None:
     :type board: A list of n lists containing n characters (strings) each.
     :param player: The current player's symbol ('X' or 'O').
     :type player: A string, either 'X' or 'O'.
+    :return: A new board with the current state.
+    :rtype: list of lists
     """
 
 
 
 test_board_2 = [[" ", " "], [" ", " "]]
-apply_move((0, 0), test_board_2, "X")
-assert [["X", " "], [" ", " "]] == test_board_2
-apply_move((1, 1), test_board_2, "O")
-assert [["X", " "], [" ", "O"]] == test_board_2
+test_board_2_applied = apply_move((0, 0), test_board_2, "X")
+assert [["X", " "], [" ", " "]] == test_board_2_applied
+assert test_board_2 is not test_board_2_applied
+test_board_2_applied_twice = apply_move((1, 1), test_board_2_applied, "O")
+assert [["X", " "], [" ", "O"]] == test_board_2_applied_twice
+assert test_board_2_applied is not test_board_2_applied_twice
 test_board_3 = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
-apply_move((0, 2), test_board_3, "X")
-assert [[" ", " ", " "], [" ", " ", " "], ["X", " ", " "]] == test_board_3
-apply_move((2, 0), test_board_3, "O")
-assert [[" ", " ", "O"], [" ", " ", " "], ["X", " ", " "]] == test_board_3
+test_board_3_applied = apply_move((0, 2), test_board_3, "X")
+assert [[" ", " ", " "], [" ", " ", " "], ["X", " ", " "]] == test_board_3_applied
+assert test_board_3 is not test_board_3_applied
+test_board_3_applied_twice = apply_move((2, 0), test_board_3_applied, "O")
+assert [[" ", " ", "O"], [" ", " ", " "], ["X", " ", " "]] == test_board_3_applied_twice
+assert test_board_3_applied is not test_board_3_applied_twice
 
 def check_row(board: list, row: int, player: str) -> bool:
     """
