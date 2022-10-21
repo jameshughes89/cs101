@@ -4,7 +4,7 @@ Tic-Tac-Toe
 
 * **Worth**: 10%
 * **Due**: November 21, 2022 at 11:55pm; submitted on MOODLE
-* **Files**:
+* **Files**: :download:`asn3.ipynb <asn3.ipynb>`/:download:`asn3.py <asn3.py>`
 
 
 Task
@@ -25,6 +25,28 @@ You will
 
 Provided Files
 ==============
+
+You are provided with
+
+* A notebook file called :download:`asn3.ipynp <asn3.ipynb>` containing the starting point of the assignment
+
+    * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
+    * This notebook contains the function definition lines with docstrings and ``assert`` tests
+    * The notebook also includes a special if statement ``if __name__ == "__main__":`` at the end
+
+        * This is included to help with marking and unit tests
+        * More details on this line are provided below
+
+    * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn3.py <asn3.py>` file
+
+
+.. warning::
+
+    Do not alter the function details in the provided .ipynb/.py files
+
+        * Do not change the name of the functions
+        * Do not remove the function description
+        * Do not remove or add to the parameter list
 
 
 Part 0 --- Read the Assignment
