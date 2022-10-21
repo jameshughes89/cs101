@@ -65,6 +65,41 @@ want to work on it.
 Part 2 --- Setup Game
 =====================
 
+The tic-tac-toe game board is to be represented as lists of lists of strings where the strings may be a ``" "`` (space),
+an ``"X"``, or an ``"O"``. For example, an empty 3x3 game board would be
+``[[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]``; however, one can think of this list of lists as a
+two-dimensional matrix
+
+    ``[[" ", " ", " "],``
+
+    ``[" ", " ", " "],``
+
+    ``[" ", " ", " "]]``
+
+where the first index would be the row and the second is the column. In this example, if the list of list was referenced
+by a variable named ``board``, then ``board[1][2]`` would be the last element in the middle row.
+
+A 3x3 board was shown in the above example, but this is Xtreme tic-tac-toe, which means the game can be of arbitrary
+size. Thus, we may have game boards that are 3x3, or 4x4, or 999x999. If the game board was specified to be 4x4, we need
+a list of 4 lists that contain 4 strings ---
+``[[' ', ' ', ' ', ' '], [' ', ' ', ' ', ' '], [' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ']]``, or as a matrix
+
+    ``[[' ', ' ', ' ', ' '],``
+
+    ``[' ', ' ', ' ', ' '],``
+
+    ``[' ', ' ', ' ', ' '],``
+
+    ``[' ', ' ', ' ', ' ']]``
+
+
+Write a function ``setup_game`` that takes an integer representing the desired board size as a parameter and returns the
+appropriate list of lists of strings representing the game board.
+
+Remember, we need to ensure our lists are in fact separate lists and not simply aliases to the same single list. If we
+specified a game board size of ``3``, we need a list containing three references to three separate lists, not three
+references to the same single list.
+
 
 Part 3 --- Parse Move
 =====================
