@@ -120,9 +120,15 @@ For example, consider the current game board being ``board = [["X", " ", " "], [
 * ``is_move_valid((2, 1), board)`` returns ``False`` since ``(2, 1)`` already contains an ``"O"``
 * ``is_move_valid((-2, 1), board)``returns ``False`` since the move location does not exist on the provided game board
 
+
 .. note::
 
-    When thinking of the game board like a matrix
+    When thinking of the game board like a matrix, one may be tempted to think of indexing the board with ``x`` first
+    and ``y`` second --- ``board[x][y]``. However, the convention being followed is that ``x``, like in a cartesian
+    coordinate system, specifies the horizontal positioning --- the column --- and ``y`` specifies the vertical
+    positioning --- the row. This would mean that one needs to index the board with ``y`` first to specify the row and
+    then once the row is selected, the ``x`` value is used to indicate which column in the row the cell/location is. In
+    other worse, the correct indexing would be ``board[y][x]``. 
 
 
 
