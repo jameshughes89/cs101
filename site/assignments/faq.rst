@@ -2,29 +2,11 @@
 General Assignment Frequently Asked Questions (FAQ)
 ***************************************************
 
-* Does my text file have enough details?
-	* Probably. The shorter the better. I really just want to see that you played around a little.
-
-* Is my area a high/low enough density?
-	* I really don't care how high/low it is. Just try a few things and see what you get.
-
 * I don't know how to do *X*.
 	* OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
 
 * It’s not working, therefore Python is broken!
 	* Probably not; you’re very likely doing something wrong
-
-* My thing keeps telling me ``No such file or directory: 'starbucks2018.csv'``
-	* Then the starbucks file probably isn't where python is looking.
-
-* But density will grow larger the smaller I make the area.
-	* Correct, you understand basic arithmetic.
-
-* But I never used the one function!!!!1!
-	* Fine, but write the code anyways and make sure it works.
-
-* But the degrees values don't specify a cardinal direction!
-	* Make use of changing +/- if you need to change hemispheres.
 
 * Wtf do the functions do that you gave me?
 	* Read the descriptions. Try figuring it out. This is actually part of the assignment learning objectives.
