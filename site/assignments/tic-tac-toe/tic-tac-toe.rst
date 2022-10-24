@@ -201,39 +201,10 @@ What to Submit to Moodle
     Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
 
 
-General FAQ:
-============
+Assignment FAQ
+==============
 
-* I don't know how to do *X*.
-    * OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
-
-* It’s not working, therefore Python is broken!
-    * Probably not; you’re very likely doing something wrong
-
-* Do I have enough comments?
-    * I don't know, maybe? If the code is too complex to understand simply by looking at it, add a comment.
-
-* I know you told me to do it this way, but I did it another way, and I think my way is better.
-    * Your way may be better, but I don’t care. Do it the way I told you.
-
-* Can I work with my friend?
-    * No.
-
-* I know I cheated, I know I know I was cheating, but I’m reeeeaaaaaaaaallllllly sorry [that I got caught]. Can we just ignore it this time?
-    * Lol, no.
-
-* If I submit it at 11:56pm, you’ll still mark it, right? I mean, commmmon!
-    * No. 11:55pm and earlier is on time. Anything after 11:55pm is late. Anything late is not marked. It’s rather simple really.
-
-* Moodle was totally broken, it’s not my fault it’s late.
-    * Nice try.
-
-* I accidentally submitted the wrong code. Here is the right code, but it’s late. But you can see that I submitted the wrong code on time! You’ll still accept it, right?
-    * Do you think I was born yesterday? No.
-
-* Will I really get 0 if I do the submission wrong? Like, what if I submit the .ipynb instead of the .py?
-    * Yes, you'll really get a **ZERO**.
-
+* :doc:`See the general FAQ </assignments/faq>`
 
 
 
