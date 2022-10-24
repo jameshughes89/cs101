@@ -104,6 +104,13 @@ references to the same single list.
 Part 3 --- Parse Move
 =====================
 
+input as string
+input format
+needs to be parsed
+write function to
+
+
+
 
 Part 4 --- Validate Move
 ========================
