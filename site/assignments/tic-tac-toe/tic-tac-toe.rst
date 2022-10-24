@@ -128,8 +128,7 @@ For example, consider the current game board being ``board = [["X", " ", " "], [
     coordinate system, specifies the horizontal positioning --- the column --- and ``y`` specifies the vertical
     positioning --- the row. This would mean that one needs to index the board with ``y`` first to specify the row and
     then once the row is selected, the ``x`` value is used to indicate which column in the row the cell/location is. In
-    other worse, the correct indexing would be ``board[y][x]``. 
-
+    other worse, the correct indexing would be ``board[y][x]``.
 
 
 Part 5 --- Apply Move
