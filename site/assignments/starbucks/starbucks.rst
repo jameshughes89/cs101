@@ -248,7 +248,7 @@ What to Submit to Moodle
 Assignment FAQ
 ==============
 
-* :doc:`See the general FAQ <assignments/faq>`
+* :doc:`See the general FAQ </assignments/faq>`
 
 * Python keeps saying ``No such file or directory: 'starbucks2018.csv'``
 

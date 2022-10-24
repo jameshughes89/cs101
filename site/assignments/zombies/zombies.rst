@@ -374,7 +374,7 @@ What to Submit to Moodle
 Assignment FAQ
 ==============
 
-* :doc:`See the general FAQ <assignments/faq>`
+* :doc:`See the general FAQ </assignments/faq>`
 
 * My plots and figures look different every time I run the program
 
