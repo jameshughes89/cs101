@@ -52,6 +52,7 @@ You are provided with
 Part 0 --- Read the Assignment
 ==============================
 
+Read the assignment description in its entirety before starting.
 
 Part 1 --- Uploading Files to Colab
 ===================================
