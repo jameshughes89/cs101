@@ -116,9 +116,13 @@ boolean indicating if the provided move is valid --- ``True`` if it is valid, ``
 
 For example, consider the current game board being ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``.
 
-* If one were to call ``is_move_valid((2, 2), board)``, the function would return ``True``
-* If one called ``is_move_valid((2, 1), board)``, the function would return ``False`` since ``(2, 1)`` already contains an ``"O"``
-* If one called ``is_move_valid((-2, 20), board)``, the function would return ``False`` since the move location does not exist on the provided game board
+* ``is_move_valid((2, 2), board)`` returns ``True``
+* ``is_move_valid((2, 1), board)`` returns ``False`` since ``(2, 1)`` already contains an ``"O"``
+* ``is_move_valid((-2, 20), board)``returns ``False`` since the move location does not exist on the provided game board
+
+.. note::
+
+    When thinking of the game board like a matrix
 
 
 
