@@ -111,6 +111,8 @@ Part 4 --- Validate Move
 Player moves are considered valid if (a) the specified game board cell/location is unoccupied (contains a ``" "``
 (space) character) and (b) is within the game board.
 
+Write a function ``is_move_valid`` that takes a move tuple and the current game board as a parameter and returns a
+boolean indicating if the provided move is valid --- ``True`` if it is valid, ``False`` otherwise. 
 
 
 Part 5 --- Apply Move
