@@ -118,7 +118,7 @@ For example, consider the current game board being ``board = [["X", " ", " "], [
 
 * ``is_move_valid((2, 2), board)`` returns ``True``
 * ``is_move_valid((2, 1), board)`` returns ``False`` since ``(2, 1)`` already contains an ``"O"``
-* ``is_move_valid((-2, 20), board)``returns ``False`` since the move location does not exist on the provided game board
+* ``is_move_valid((-2, 1), board)``returns ``False`` since the move location does not exist on the provided game board
 
 .. note::
 
