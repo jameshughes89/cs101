@@ -108,6 +108,10 @@ Part 3 --- Parse Move
 Part 4 --- Validate Move
 ========================
 
+Player moves are considered valid if (a) the specified game board cell/location is unoccupied (contains a ``" "``
+(space) character) and (b) is within the game board.
+
+
 
 Part 5 --- Apply Move
 =====================
