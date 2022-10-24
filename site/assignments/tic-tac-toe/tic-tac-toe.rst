@@ -104,12 +104,12 @@ references to the same single list.
 Part 3 --- Parse Move
 =====================
 
-input as string
-input format
-needs to be parsed
-write function to
+All moves a player makes will be entered as a string in the form ``"x, y"``, where ``x`` is the column and ``y`` is the
+row. However, the game needs the move to be two separate integers in order to effectively use the information.
 
-
+Write a function ``parse_move`` that takes a move string as a parameter and returns a tuple of the integers representing
+the ``x`` and ``y`` coordinates of the move. For example, calling ``parse_move("2, 1")`` would result in the tuple
+``(2, 1)`` being returned.
 
 
 Part 4 --- Validate Move
