@@ -112,12 +112,14 @@ Player moves are considered valid if (a) the specified game board cell/location 
 (space) character) and (b) is within the game board.
 
 Write a function ``is_move_valid`` that takes a move tuple and the current game board as a parameter and returns a
-boolean indicating if the provided move is valid --- ``True`` if it is valid, ``False`` otherwise. For an example,
-consider the current game board being ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``. If one were to
-call ``is_move_valid((2, 2), board)``, the function would return ``True``. If one called
-``is_move_valid((2, 1), board)``, the function would return ``False`` since ``(2, 1)`` already contains an ``"O"``.
-Lastly, if one called ``is_move_valid((-2, 20), board)``, the function would return ``False`` since the move location
-does not exist on the provided game board. 
+boolean indicating if the provided move is valid --- ``True`` if it is valid, ``False`` otherwise.
+
+For example, consider the current game board being ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``.
+
+* If one were to call ``is_move_valid((2, 2), board)``, the function would return ``True``
+* If one called ``is_move_valid((2, 1), board)``, the function would return ``False`` since ``(2, 1)`` already contains an ``"O"``
+* If one called ``is_move_valid((-2, 20), board)``, the function would return ``False`` since the move location does not exist on the provided game board
+
 
 
 Part 5 --- Apply Move
