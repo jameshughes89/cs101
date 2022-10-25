@@ -370,62 +370,37 @@ What to Submit to Moodle
     Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
 
 
-General FAQ:
-============
 
-* My drawing looks different every time!
-   * It should, it's random every time.
+Assignment FAQ
+==============
 
-* My drawing isn't updating for each step!
-   * This might be happening because it's running so fast.
+* :doc:`See the general FAQ </assignments/faq>`
 
-* My program runs but seems to be running forever.
-   * Maybe your probabilities are set in such a way that it just has not ended yet.
+* My plots and figures look different every time I run the program
 
-* My histogram looks different from yours!
-   * I know, it should, it's stochastic.
+    * This is expected
+    * The world configuration will be random every time
+    * When a city spreads the infection is random
+    * Which city the infection spreads to is random
+    * When a city is cured is random
 
-* My histogram looks different every time!
-   * I know... it should... it's still stochastic...
 
-* Does my text file have enough details?
-    * Probably. The shorter the better. I really just want to see that you played around a little.
+* My drawing isn't updating for each step
 
-* I don't know how to do *X*.
-    * OK, go to `google.ca <https://www.google.ca>`_ and type in *X*.
+    * Depending on your programming environment, this may be because it's running so fast
 
-* It’s not working, therefore Python is broken!
-    * Probably not; you’re very likely doing something wrong
 
-* But I never used the one function!!!!1!
-    * Fine, but write the code anyways and make sure it works.
+* My program seems to be running forever
 
-* Wtf do the functions do that you gave me?
-    * Read the descriptions. Try figuring it out. This is actually part of the assignment learning objectives.
+    * This could be because of a bug in your code
+    * Could be the probabilities for spreading and curing are set in such a way that the simulation has yet to end
+    * For example, with a high cure probability, it may be difficult for the infection to take over the whole world
 
-* Some of the code in the functions you gave us look like magic.
-    * At this point it may seem that way, but by the end of the semester, they will lose their magic.
 
-* Do I have enough comments?
-    * I don't know, maybe? If the code is too complex to understand simply by looking at it, add a comment.
+* Did I provide enough detail in my text file?
 
-* I know you told me to do it this way, but I did it another way, and I think my way is better.
-    * Your way may be better, but I don’t care. Do it the way I told you.
+    * Probably
+    * The shorter the better
+    * The marker just wants to see that you played around a little and found answers to the questions
 
-* Can I work with my friend?
-    * No.
 
-* I know I cheated, I know I know I was cheating, but I’m reeeeaaaaaaaaallllllly sorry [that I got caught]. Can we just ignore it this time?
-    * Lol, no.
-
-* If I submit it at 11:56pm, you’ll still mark it, right? I mean, commmmon!
-    * No. 11:55pm and earlier is on time. Anything after 11:55pm is late. Anything late is not marked. It’s rather simple really.
-
-* Moodle was totally broken, it’s not my fault it’s late.
-    * Nice try.
-
-* I accidentally submitted the wrong code. Here is the right code, but it’s late. But you can see that I submitted the wrong code on time! You’ll still accept it, right?
-    * Do you think I was born yesterday? No.
-
-* Will I really get 0 if I do the submission wrong? Like, what if I submit the .ipynb instead of the .py?
-    * Yes, you'll really get a **ZERO**.
