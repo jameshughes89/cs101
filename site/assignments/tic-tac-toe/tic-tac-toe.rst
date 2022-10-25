@@ -192,11 +192,14 @@ The process for checking the row and column conditions will be very similar.
 
 Write a function ``check_row`` that takes the current game board, an integer representing a specific row to check, and
 the player's symbol as a string, and returns ``True`` if the player occupy all cells in the specified row and ``False``
-otherwise.
+otherwise. For example, if ``board = [["X", "O", "O"], [" ", "O", "O"], ["X ", "X", "X"]]``, calling
+``check_row(board, 2, "X")`` would return ``True``.
 
 Similarly, write a function ``check_column`` that takes the current game board, an integer representing a specific
 column to check, and the player's symbol as a string, and returns ``True`` if the player occupy all cells in the
-specified column and ``False`` otherwise.
+specified column and ``False`` otherwise. For example, if
+``board = [["X", "O", "O"], ["X", "O", "X"], ["X ", "O", " "]]``, calling ``check_column(board, 1, "O")`` would return
+``True``.
 
 
 Check Diagonals
