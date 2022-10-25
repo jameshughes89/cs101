@@ -202,6 +202,15 @@ specified column and ``False`` otherwise.
 Check Diagonals
 ---------------
 
+Write a function ``check_down_diagonal`` that takes the current game board and the player's symbol as a string, and
+returns ``True`` if the player occupies all cells in the downward diagonal starting in the top left, and ``False``
+otherwise. Unlike the rows and columns check, there is only one downward diagonal starting in the top left, thus there
+is no need to include an integer as a parameter.
+
+Similarly, write a function ``check_up_diagonal`` that takes the current game board and the player's symbol as a string,
+and returns ``True`` if the player occupies all cells in the upward diagonal starting in the bottom left, and ``False``
+otherwise.
+
 
 Checking All Directions
 -----------------------
