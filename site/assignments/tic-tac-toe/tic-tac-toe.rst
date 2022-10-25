@@ -413,13 +413,3 @@ Below are some more pictures.
 .. image:: a3_O_win_4x4.png
 
 .. image:: a3_no_win_3x3.png
-
-
-What to submit
-==============
-
-* Your version of ``asn3.py``. Also, please **DO NOT** change the name of this file. Leave it alone. 
-
-  * Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program.
-  * Make sure it's *commented* and has *function headers*!!
-  * Use proper variable names
