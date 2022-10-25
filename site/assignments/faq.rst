@@ -90,3 +90,11 @@ General Assignment Frequently Asked Questions (FAQ)
 
     * Yes
     * Unfortunately, like submitting the wrong code, this is a common cheating strategy
+
+
+* I had technical difficulties when trying to submit, therefore it was late --- will you accept the submission now?
+
+    * No
+    * Like the others, this is another common cheating strategy
+    * Because this is commonly used for cheating, we can't accept the submission
+    * To hedge against this, aim to submit your assignment well before the deadline 
