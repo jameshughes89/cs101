@@ -116,6 +116,32 @@ the ``x`` and ``y`` coordinates of the move. For example, calling ``parse_move("
 Part 4 --- Validate Move
 ========================
 
+Player moves are considered valid if (a) the specified game board cell/location is unoccupied (contains a ``" "``
+(space) character) and (b) is within the game board.
+
+Write a function ``is_move_valid`` that takes a move tuple and the current game board as a parameter and returns a
+boolean indicating if the provided move is valid --- ``True`` if it is valid, ``False`` otherwise.
+
+For example, consider the current game board being ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``.
+
+* ``is_move_valid((2, 2), board)`` returns ``True``
+* ``is_move_valid((2, 1), board)`` returns ``False`` since ``(2, 1)`` already contains an ``"O"``
+* ``is_move_valid((-2, 1), board)``returns ``False`` since the move location does not exist on the provided game board
+
+
+.. note::
+
+    When thinking of the game board like a matrix, there is no rule indicating which index of a list of lists is the row
+    and which is the column. In other words, there is no rule saying that the indexing is ``board[row][column]`` or
+    ``board[column][row]``. However, for this assignment, we will have the first index be the row and the second be the
+    column.
+
+    Since we like to follow the conventional cartesian coordinate system of ``x`` specifying the horizontal positioning
+    --- the column --- and ``y`` specifies the vertical positioning --- the row, we must be mindful of how we use these
+    values to index the board. By following this convention, it would mean that one needs to index the board with ``y``
+    first to specify the row and then once the row is selected, the ``x`` value is used to indicate which column in the
+    row the cell/location is. In other worse, the correct indexing would be ``board[y][x]``.
+
 
 Part 5 --- Apply Move
 =====================
