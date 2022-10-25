@@ -277,9 +277,6 @@ Assignment FAQ
 
 
 
-.. image:: a3_3x3-2.png
-
-.. image:: a3_10x10.png
 
 Coding, Part I
 ==============
