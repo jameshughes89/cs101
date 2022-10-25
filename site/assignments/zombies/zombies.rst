@@ -209,11 +209,11 @@ happened to not get cured, there is no harm in setting it to infected anyways.
 
                 ``Select a random neighbour``
 
-                ``Infect the selected neighbour and update the after state``
+                ``Infect the selected neighbour in the after state``
 
             ``If the city is curing itself based on the probability value``
 
-                ``Cure the city and update the after state``
+                ``Cure the city in the after state``
 
     ``Ensure city 0 is always infected``
 
