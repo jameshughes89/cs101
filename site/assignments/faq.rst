@@ -13,7 +13,7 @@ General Assignment Frequently Asked Questions (FAQ)
 
     * This will depend heavily on experience levels
     * At this stage, expect the assignments to take multiple hours
-    * In other words, do not get discouraged if you are on hour 4 and you're yet to finish
+    * In other words, do not get discouraged if you are on hour 4 and you've yet to finish
     * Remember, you would not expect to write a high quality essay in a single one hour sitting
 
 
