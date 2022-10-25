@@ -61,7 +61,7 @@ Read the assignment description in its entirety before starting.
 City Data Structure
 -------------------
 
-Every *city* in the simulation is represented as a list ````[name, infected, [neighbours]]``.
+Every *city* in the simulation is represented as a list ``[name, infected, [neighbours]]``.
 
 * ``name`` is a string with the name of the city
 * ``infected`` is a ``bool`` --- ``True`` if the city is infected with zombies, ``False`` otherwise
@@ -209,11 +209,11 @@ happened to not get cured, there is no harm in setting it to infected anyways.
 
                 ``Select a random neighbour``
 
-                ``Infect the selected neighbour and update the after state``
+                ``Infect the selected neighbour in the after state``
 
             ``If the city is curing itself based on the probability value``
 
-                ``Cure the city and update the after state``
+                ``Cure the city in the after state``
 
     ``Ensure city 0 is always infected``
 
