@@ -61,7 +61,7 @@ Read the assignment description in its entirety before starting.
 City Data Structure
 -------------------
 
-Every *city* in the simulation is represented as a list ````[name, infected, [neighbours]]``.
+Every *city* in the simulation is represented as a list ``[name, infected, [neighbours]]``.
 
 * ``name`` is a string with the name of the city
 * ``infected`` is a ``bool`` --- ``True`` if the city is infected with zombies, ``False`` otherwise
