@@ -282,17 +282,6 @@ Coding, Part I
 ==============
 
 
-
-3. Write ``get_move(player)``. This function will: a) prompt a given player for a move; b) read in the move; c) return the move as a *tuple* of integers. The ``player`` parameter will be a string, either 'X' or 'O', to indicate which player's turn it is. Moves are also to be entered like this: 0,0 (zero comma zero) to mean the location (0,0). See the below example image. **Again, once you are done, test the function!**
-
-
-.. image:: a3_get_move.png
-
-
-4. Write the function ``make_move(cur, move, player)``. ``cur`` will be the game board, ``move`` will be a tuple containing a move, and ``player`` will be a string of which player's move it is. If you couldn't guess, this function will apply a player's move to the game board. For our purposes, we'll make the move (0,0) mean the top left of the game board. I suspect the following image will explain well enough. In this image, I am telling the function to apply the move (0,0) for player X to our game board (we replace the ' ' in the list of lists with an 'X'). Note that this function does not return anything. Instead, it has a *side effect*. **Once you are done, test the function!**
-
-.. image:: a3_make_move.png
-
 5. The game is gonna' look pretty ugly if we don't format the output nicely. Sure we could just keep printing the game out like the above picture, but gamers these days want awesome graphics. Write a function ``game_print(cur)`` that will print out the current game board ``cur``. Check out the below image to see how I want things formatted. In the below example, it assumes that the whole game board is empty EXCEPT for the position (0,0), which has an 'X' in it. I do want yours to work with any game board passed though (also, be aware that the game board can be any sized square too). I am expecting your output to be formatted to match what I've shown you **exactly**.
 
 
