@@ -146,6 +146,30 @@ For example, consider the current game board being ``board = [["X", " ", " "], [
 Part 5 --- Apply Move
 =====================
 
+Once a move is provided, parsed, and validated, the move can then be applied.
+
+Write a function ``apply_move`` that takes an already validated move tuple, the current game board, and a string of the
+current player's symbol (``"X"`` or ``"O"``), and returns a new game board with the player's move applied. For example,
+if one called ``apply_move((0, 1), [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]], "X")``, the function would
+return the new list of lists of strings ``[["X", "X", " "], [" ", " ", "O"], [" ", " ", " "]]``.
+
+This function should **not** have any side effect --- the game board passed as a parameter to the function should
+**not** be altered in any way. Instead, a copy of the game board is to be created that is then modified and returned by
+the function. Be warned, however, that one needs to be careful how they perform the copy --- when we have a list of
+lists, we *really* have a list of *references* to other lists; we need to ensure we are making copies of the internal
+lists and not just the outside list. If we perform a copy naively, we may accidentally make a copy of the list with
+copies of the references --- this is called a "shallow copy". Refer to the following images to see the difference
+between a "shallow" copy and a "deep" copy in this context.
+
+.. figure:: shallow_copy.png
+
+    Example of a "shallow copy" --- only the references to the internal lists were copied. The actual internal lists
+    were never copied.
+
+.. figure:: deep_copy.png
+
+    Example of a "deep copy" --- copies of the internal lists were made.
+
 
 Part 6 --- Check For Winner
 ===========================
