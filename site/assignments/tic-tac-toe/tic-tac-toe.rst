@@ -123,12 +123,16 @@ For example, consider the current game board being ``board = [["X", " ", " "], [
 
 .. note::
 
-    When thinking of the game board like a matrix, one may be tempted to think of indexing the board with ``x`` first
-    and ``y`` second --- ``board[x][y]``. However, the convention being followed is that ``x``, like in a cartesian
-    coordinate system, specifies the horizontal positioning --- the column --- and ``y`` specifies the vertical
-    positioning --- the row. This would mean that one needs to index the board with ``y`` first to specify the row and
-    then once the row is selected, the ``x`` value is used to indicate which column in the row the cell/location is. In
-    other worse, the correct indexing would be ``board[y][x]``.
+    When thinking of the game board like a matrix, there is no rule indicating which index of a list of lists is the row
+    and which is the column. In other words, there is no rule saying that the indexing is ``board[row][column]`` or
+    ``board[column][row]``. However, for this assignment, we will have the first index be the row and the second be the
+    column.
+
+    Since we like to follow the conventional cartesian coordinate system of ``x`` specifying the horizontal positioning
+    --- the column --- and ``y`` specifies the vertical positioning --- the row, we must be mindful of how we use these
+    values to index the board. By following this convention, it would mean that one needs to index the board with ``y``
+    first to specify the row and then once the row is selected, the ``x`` value is used to indicate which column in the
+    row the cell/location is. In other worse, the correct indexing would be ``board[y][x]``.
 
 
 Part 5 --- Apply Move
