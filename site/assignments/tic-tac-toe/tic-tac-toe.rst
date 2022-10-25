@@ -281,11 +281,6 @@ Assignment FAQ
 Coding, Part I
 ==============
 
-1. Write a function ``get_game_size()`` that will simply prompt the players to enter a game size and then the function will ``return`` the inputted value as an integer. They will only enter one integer. For example, if they enter 3, the function would return 3. This value will ultimately mean that the game is 3x3. If they enter 10, it would mean that the game is 10x10. **Once you are done, test the function!**
-
-2. Write a function ``set_up_game(size)`` that takes a game size as parameter and then returns the game board. For example, check out the image below. Here I called it with 3, and it returned a list with 3 lists. Each of the internal lists had 3 strings in it. Each of these strings was a single space character (' '). Eventually we will replace these space characters with either an 'X' or an 'O'. **Once you are done, test the function! Seriously, test it throughly. If these early functions do not work properly, the latter functions are gonna' have a bad time.** Warning, be careful with pointers here!
-
-.. image:: a3_set_up_game.png
 
 
 3. Write ``get_move(player)``. This function will: a) prompt a given player for a move; b) read in the move; c) return the move as a *tuple* of integers. The ``player`` parameter will be a string, either 'X' or 'O', to indicate which player's turn it is. Moves are also to be entered like this: 0,0 (zero comma zero) to mean the location (0,0). See the below example image. **Again, once you are done, test the function!**
