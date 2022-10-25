@@ -175,6 +175,15 @@ between a "shallow" copy and a "deep" copy in this context.
 Part 6 --- Check For Winner
 ===========================
 
+A player wins the game if they meet one of the following conditions:
+
+    * They occupy all cells in a given row
+    * They occupy all cells in a given column
+    * They occupy all cells in the top left to bottom right diagonal
+    * They occupy all cells in the bottom left to top right diagonal
+
+All of these conditions need to be checked in order to confirm if someone has won or not.
+
 
 Check Row & Column
 ------------------
