@@ -191,13 +191,13 @@ Check Row & Column
 The process for checking the row and column conditions will be very similar.
 
 Write a function ``check_row`` that takes the current game board, an integer representing a specific row to check, and
-the player's symbol as a string as parameters, and returns ``True`` if the player occupy all cells in the specified row
-and ``False`` otherwise. For example, if ``board = [["X", "O", "O"], [" ", "O", "O"], ["X ", "X", "X"]]``, calling
-``check_row(board, 2, "X")`` would return ``True``.
+the player's symbol as a string as parameters, and returns ``True`` if the specified player occupy all cells in the
+specified row and ``False`` otherwise. For example, if ``board = [["X", "O", "O"], [" ", "O", "O"], ["X ", "X", "X"]]``,
+calling ``check_row(board, 2, "X")`` would return ``True``.
 
 Similarly, write a function ``check_column`` that takes the current game board, an integer representing a specific
-column to check, and the player's symbol as a string as parameters, and returns ``True`` if the player occupy all cells
-in the specified column and ``False`` otherwise. For example, if
+column to check, and the player's symbol as a string as parameters, and returns ``True`` if the specified player occupy
+all cells in the specified column and ``False`` otherwise. For example, if
 ``board = [["X", "O", "O"], ["X", "O", "X"], ["X ", "O", " "]]``, calling ``check_column(board, 1, "O")`` would return
 ``True``.
 
@@ -206,13 +206,13 @@ Check Diagonals
 ---------------
 
 Write a function ``check_down_diagonal`` that takes the current game board and the player's symbol as a string as
-parameters, and returns ``True`` if the player occupies all cells in the downward diagonal starting in the top left, and
-``False`` otherwise. Unlike the rows and columns check, there is only one downward diagonal starting in the top left,
-thus there is no need to include an integer as a parameter.
+parameters, and returns ``True`` if the specified player occupies all cells in the downward diagonal starting in the top
+left, and ``False`` otherwise. Unlike the rows and columns check, there is only one downward diagonal starting in the
+top left, thus there is no need to include an integer as a parameter.
 
 Similarly, write a function ``check_up_diagonal`` that takes the current game board and the player's symbol as a string
-as parameters, and returns ``True`` if the player occupies all cells in the upward diagonal starting in the bottom left,
-and ``False`` otherwise.
+as parameters, and returns ``True`` if the specified player occupies all cells in the upward diagonal starting in the
+bottom left, and ``False`` otherwise.
 
 
 Checking All Directions
