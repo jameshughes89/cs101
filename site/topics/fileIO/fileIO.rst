@@ -226,7 +226,8 @@ Writing to a CSV File
     # Create a file to write to
     out_file = open("nameOfOutputFile.csv", "w")
     csv_out_file = csv.writer(out_file)
-
+    out_file.close()
+    
     # Write a row to the file
     csv_out_file.writerow(['First cell','Second cell', 'Third cell'])
 
