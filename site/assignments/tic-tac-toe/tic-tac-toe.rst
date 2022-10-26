@@ -175,17 +175,54 @@ between a "shallow" copy and a "deep" copy in this context.
 Part 6 --- Check For Winner
 ===========================
 
+A player wins the game if they meet one of the following conditions:
+
+    * They occupy all cells in a given row
+    * They occupy all cells in a given column
+    * They occupy all cells in the top left to bottom right diagonal
+    * They occupy all cells in the bottom left to top right diagonal
+
+All of these conditions need to be checked in order to confirm if someone has won or not.
+
 
 Check Row & Column
 ------------------
+
+The process for checking the row and column conditions will be very similar.
+
+Write a function ``check_row`` that takes the current game board, an integer representing a specific row to check, and
+the player's symbol as a string as parameters, and returns ``True`` if the specified player occupy all cells in the
+specified row and ``False`` otherwise. For example, if ``board = [["X", "O", "O"], [" ", "O", "O"], ["X ", "X", "X"]]``,
+calling ``check_row(board, 2, "X")`` would return ``True``.
+
+Similarly, write a function ``check_column`` that takes the current game board, an integer representing a specific
+column to check, and the player's symbol as a string as parameters, and returns ``True`` if the specified player occupy
+all cells in the specified column and ``False`` otherwise. For example, if
+``board = [["X", "O", "O"], ["X", "O", "X"], ["X ", "O", " "]]``, calling ``check_column(board, 1, "O")`` would return
+``True``.
 
 
 Check Diagonals
 ---------------
 
+Write a function ``check_down_diagonal`` that takes the current game board and the player's symbol as a string as
+parameters, and returns ``True`` if the specified player occupies all cells in the downward diagonal starting in the top
+left, and ``False`` otherwise. Unlike the rows and columns check, there is only one downward diagonal starting in the
+top left, thus there is no need to include an integer as a parameter.
+
+Similarly, write a function ``check_up_diagonal`` that takes the current game board and the player's symbol as a string
+as parameters, and returns ``True`` if the specified player occupies all cells in the upward diagonal starting in the
+bottom left, and ``False`` otherwise.
+
 
 Checking All Directions
 -----------------------
+
+Write a function ``check_for_winner`` that takes the current game board and the player's symbol to check as a string as
+the parameters, and returns ``True`` if the specified player has met any win condition, and ``False`` otherwise. This
+function will make use of the ``check_row``, ``check_column``, ``check_down_diagonal``, and ``check_up_diagonal``
+functions described above.
+
 
 
 Part 7 --- Rendering the Game Board
@@ -323,20 +360,6 @@ Coding, Part II
 ===============
 
 **The next 5 functions go together**
-
-We want to have some functions that will check to see if a given player has won. There are a few ways a player can win: a) gets a row; b) gets a column; or c) gets a diagonal. We will write some functions to check these specific cases and then we will write one big function that makes use of the smaller ones. 
-
-8. Write a function ``check_row(cur, row, player)`` that will return True if the ``player`` has won a given ``row``, or return False otherwise. Notice that this function will only check a given row and not all rows. See the below image for an example. 
-
-.. image:: a3_check_row.png
-
-9. Write a function ``check_column(cur, col, player)`` that, similar to above, checks to see if the ``player`` has won a given ``col``. 
-
-10. Write a function ``check_down_diag(cur, player)`` that will check if the ``player`` has won the diagonal starting in the top left and ending in the bottom right. Note that we do not need to specify a row/col here as a function parameter. 
-
-11. Write another function ``check_up_diag(cur, player)`` that's basically the same as #10, but checks the other diagonal (bottom left to top right). 
-
-12. Write a function ``has_player_won(cur, player)`` that will return True if the ``player`` has won in any way on the board ``cur`` (see above) and False otherwise. This function **must** make use of functions 8 -- 11. 
 
 .. warning::
 
