@@ -277,29 +277,10 @@ Assignment FAQ
 
 
 
-.. image:: a3_3x3-2.png
-
-.. image:: a3_10x10.png
 
 Coding, Part I
 ==============
 
-1. Write a function ``get_game_size()`` that will simply prompt the players to enter a game size and then the function will ``return`` the inputted value as an integer. They will only enter one integer. For example, if they enter 3, the function would return 3. This value will ultimately mean that the game is 3x3. If they enter 10, it would mean that the game is 10x10. **Once you are done, test the function!**
-
-2. Write a function ``set_up_game(size)`` that takes a game size as parameter and then returns the game board. For example, check out the image below. Here I called it with 3, and it returned a list with 3 lists. Each of the internal lists had 3 strings in it. Each of these strings was a single space character (' '). Eventually we will replace these space characters with either an 'X' or an 'O'. **Once you are done, test the function! Seriously, test it throughly. If these early functions do not work properly, the latter functions are gonna' have a bad time.** Warning, be careful with pointers here!
-
-.. image:: a3_set_up_game.png
-
-
-3. Write ``get_move(player)``. This function will: a) prompt a given player for a move; b) read in the move; c) return the move as a *tuple* of integers. The ``player`` parameter will be a string, either 'X' or 'O', to indicate which player's turn it is. Moves are also to be entered like this: 0,0 (zero comma zero) to mean the location (0,0). See the below example image. **Again, once you are done, test the function!**
-
-
-.. image:: a3_get_move.png
-
-
-4. Write the function ``make_move(cur, move, player)``. ``cur`` will be the game board, ``move`` will be a tuple containing a move, and ``player`` will be a string of which player's move it is. If you couldn't guess, this function will apply a player's move to the game board. For our purposes, we'll make the move (0,0) mean the top left of the game board. I suspect the following image will explain well enough. In this image, I am telling the function to apply the move (0,0) for player X to our game board (we replace the ' ' in the list of lists with an 'X'). Note that this function does not return anything. Instead, it has a *side effect*. **Once you are done, test the function!**
-
-.. image:: a3_make_move.png
 
 5. The game is gonna' look pretty ugly if we don't format the output nicely. Sure we could just keep printing the game out like the above picture, but gamers these days want awesome graphics. Write a function ``game_print(cur)`` that will print out the current game board ``cur``. Check out the below image to see how I want things formatted. In the below example, it assumes that the whole game board is empty EXCEPT for the position (0,0), which has an 'X' in it. I do want yours to work with any game board passed though (also, be aware that the game board can be any sized square too). I am expecting your output to be formatted to match what I've shown you **exactly**.
 
@@ -340,14 +321,6 @@ In case you want the actual text, here it is:
 
 Coding, Part II
 ===============
-
-The above got a lot of the scaffolding out of the way, but the game is still not playable or smart enough to know if anyone won. Part II will get us closer to our goal. 
-
-.. image:: a3_player.png
-
-7. Video game players are notoriously annoying when it comes to trying to exploit the coded rules of the game, so to be safe, we need to do some input validation. We won't be going crazy with the validating, but we will do some. Write a function ``is_move_valid(cur, move)`` that will check if the ``move`` is a valid move for the board ``cur``. The function will return a boolean: True if the move is valid, False otherwise. A move will be considered invalid if it is already taken or if it is not on the game board, eg: given a 3x3 board, (-1,-1), and (1123,4) would be invalid. If the move is not invalid, then it is valid. 
-
-.. image:: a3_is_move_valid.png
 
 **The next 5 functions go together**
 
@@ -440,13 +413,3 @@ Below are some more pictures.
 .. image:: a3_O_win_4x4.png
 
 .. image:: a3_no_win_3x3.png
-
-
-What to submit
-==============
-
-* Your version of ``asn3.py``. Also, please **DO NOT** change the name of this file. Leave it alone. 
-
-  * Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program.
-  * Make sure it's *commented* and has *function headers*!!
-  * Use proper variable names
