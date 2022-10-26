@@ -394,7 +394,7 @@ def simulate_infections_disease(
 # assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infections_disease(world, 0, 0, 10)
 # assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infections_disease(world, 0, 1, 10)
 # Eyeball test required --- uncomment to view test
-# draw_number_of_cities_infected(simulate_infections_disease(0.4, 0.25))
+# draw_number_of_cities_infected(simulate_infections_disease(world, 0.4, 0.25))
 
 # Run a simulation on a new world
 
