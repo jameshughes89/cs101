@@ -226,10 +226,13 @@ Writing to a CSV File
     # Create a file to write to
     out_file = open("nameOfOutputFile.csv", "w")
     csv_out_file = csv.writer(out_file)
-
+    
     # Write a row to the file
     csv_out_file.writerow(['First cell','Second cell', 'Third cell'])
 
+    # Be sure to close the file when done!!!
+    out_file.close()
+    
 
 * In the above example, notice that all the data for the row is contained within a list
 
