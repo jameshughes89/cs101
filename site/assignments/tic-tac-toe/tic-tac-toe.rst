@@ -263,7 +263,15 @@ human friendly string that can be displayed. This functionality will be broken d
 Render Cell
 -----------
 
+Write a function ``render_cell`` that takes the current game board and the x/column and y/row coordinate of the cell
+from the game board to be rendered. This function will return a string of the contents of the specified cell. This
+function will only include the cell contents in the string and not any horizontal (``-``) or vertical  (``|``) lines.
 
+Below are examples of using the function with ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``
+
+* ``render_cell(board, 0, 0)`` returns the string ``"X"``
+* ``render_cell(board, 2, 1)`` returns the string ``"O"``
+* ``render_cell(board, 0, 2)`` returns the string ``" "``
 
 
 Render Row
