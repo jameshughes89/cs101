@@ -256,11 +256,14 @@ Below is an example of a game board with player moves applied:
 The above example shows how player symbols (``"X"`` or ``"O"``) are to be displayed in the game board.
 
 A function needs to be written that will take the encoding of the game board as a list of lists of strings and return a
-human friendly string that can be displayed. 
+human friendly string that can be displayed. This functionality will be broken down into (a) rendering a single cell,
+(b) rendering a single row, and (c) rendering the whole board.
 
 
 Render Cell
 -----------
+
+
 
 
 Render Row
