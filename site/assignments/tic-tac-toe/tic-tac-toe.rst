@@ -329,61 +329,6 @@ Assignment FAQ
 
 
 
-Coding, Part I
-==============
-
-
-5. The game is gonna' look pretty ugly if we don't format the output nicely. Sure we could just keep printing the game out like the above picture, but gamers these days want awesome graphics. Write a function ``game_print(cur)`` that will print out the current game board ``cur``. Check out the below image to see how I want things formatted. In the below example, it assumes that the whole game board is empty EXCEPT for the position (0,0), which has an 'X' in it. I do want yours to work with any game board passed though (also, be aware that the game board can be any sized square too). I am expecting your output to be formatted to match what I've shown you **exactly**.
-
-
-.. image:: a3_game_print.png
-
-In case you want the actual text, here it is:
-
-   .. code-block:: python
-   
-         |   |
-       X |   |
-         |   |
-      -----------
-         |   |
-         |   |
-         |   |
-      -----------
-         |   |
-         |   |
-         |   |
-
-.. warning::
-
-   ``game_print(cur)`` will be one of the harder functions of the assignment. I'm warning you, it will be painful. Get ready to fiddle with the code in this function A LOT!
-
-6. **IGNORE THIS** Write a function ``game_clear()`` that will clear out the console. Basically, when you call this function, I want all the text on the screen to go away. Chances are you have no idea how to do this, but that's OK, check out *Hanno Behrens'* answer `here <https://www.quora.com/Is-there-a-Clear-screen-function-in-Python>`_. **IGNORE THIS**
- 
-.. warning::
-
-   Before moving on, are you sure that:
-
-      * All of the functions work properly?
-	     * Did you test them thoroughly?
-		    * Seriously?
-      * They will work with arbitrarily sized game boards.  
-
-
-Coding, Part II
-===============
-
-**The next 5 functions go together**
-
-.. warning::
-
-   Before moving on:
-
-      * Are all of the functions work properly?
-      * Are you sure they're working properly?
-      * They will work with arbitrarily sized game boards?  
-      * By the way, did you verify that your functions are working properly?
-	  
 	  
 Coding, Part III
 ================
