@@ -240,7 +240,7 @@ Render Row
 Render Board
 ------------
 
-Write a function ``render_board`` that takes the current game board as a parameter and returns a string representign the
+Write a function ``render_board`` that takes the current game board as a parameter and returns a string representing the
 entire board. This function will make use of ``render_row``.  This function will include all horizontal (``-``) and
 vertical (``|``) lines in addition to the intersecting symbol (``+``).
 
