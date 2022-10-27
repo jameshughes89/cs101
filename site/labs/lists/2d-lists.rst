@@ -68,7 +68,7 @@ Given the following code:
                 ['g', 'h', 'i']]
 
 
-#. Write a function ``print_row(matrix, row: int):``
+1. Write a function ``print_row(matrix, row: int):``
 
     * ``matrix`` is a list of lists (2D list)
     * ``row`` is the specified row to print
@@ -80,7 +80,7 @@ Given the following code:
 .. image:: matRow.png
 
 
-#. Write a function ``print_column(matrix, column: int):``
+2. Write a function ``print_column(matrix, column: int):``
 
     * ``matrix`` is a list of lists (2D list)
     * ``column`` is the specified column to print
@@ -92,7 +92,7 @@ Given the following code:
 .. image:: matCol.png
 
 
-#. Write a function ``print_down_right(matrix):``
+3. Write a function ``print_down_right(matrix):``
 
     * ``matrix`` is a list of lists (2D list)
     * The function will print out the values of the matrix diagonal starting in the top left moving down to the right
@@ -103,7 +103,7 @@ Given the following code:
 .. image:: matDiag3.png
 
 
-#. Write a function ``print_up_right(matrix):``
+4. Write a function ``print_up_right(matrix):``
 
     * ``matrix`` is a list of lists (2D list)
     * The function will print out the values of the matrix diagonal starting in the bottom left moving up to the right
@@ -115,7 +115,7 @@ Given the following code:
 .. image:: matDiag4.png
 
 
-#. Write a function ``print_down_left(matrix):``
+5. Write a function ``print_down_left(matrix):``
 
     * ``matrix`` is a list of lists (2D list)
     * The function will print out the values of the matrix diagonal starting in the top right moving down to the left
@@ -126,7 +126,7 @@ Given the following code:
 .. image:: matDiag5.png
 
 
-#. Write a function ``print_up_left(matrix):``
+6. Write a function ``print_up_left(matrix):``
 
     * ``matrix`` is a list of lists (2D list)
     * The function will print out the values of the matrix diagonal starting in the bottom right moving up to the left
@@ -137,7 +137,7 @@ Given the following code:
 .. image:: matDiag6.png
 
 
-#. To verify that your functions work on arbitrary sized 2D lists, what happens if you run your functions with the following matrix?
+7. To verify that your functions work on arbitrary sized 2D lists, what happens if you run your functions with the following matrix?
 
         * Ensure each function works as expected
         * If the functions are only printing out three values, there is something wrong
