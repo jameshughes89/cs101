@@ -224,9 +224,39 @@ function will make use of the ``check_row``, ``check_column``, ``check_down_diag
 functions described above.
 
 
-
 Part 7 --- Rendering the Game Board
 ===================================
+
+Currently the game board is represented as a list of lists for Python, however this representation is not ideal for
+humans; typically humans represent tic-tac-toe as a grid. For example, consider the following empty 3x3 game example:
+
+    .. code-block:: python
+
+         | |
+        -+-+-
+         | |
+        -+-+-
+         | |
+
+
+In the above example, since it is an empty board, each cell is an empty space and the cells are seperated by horizontal
+(``-``) or vertical (``|``) lines. Intersecting lines are drawn as plus signs (``+``).
+
+Below is an example of a game board with player moves applied:
+
+    .. code-block:: python
+
+        X|O|O
+        -+-+-
+         |X|
+        -+-+-
+        X| |O
+
+
+The above example shows how player symbols (``"X"`` or ``"O"``) are to be displayed in the game board.
+
+A function needs to be written that will take the encoding of the game board as a list of lists of strings and return a
+human friendly string that can be displayed. 
 
 
 Render Cell
