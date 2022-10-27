@@ -240,6 +240,20 @@ Render Row
 Render Board
 ------------
 
+Write a function ``render_board`` that takes the current game board as a parameter and returns a string representign the
+entire board. This function will include all horizontal (``-``) and vertical (``|``) lines in addition to the
+intersecting symbol (``+``).
+
+Given ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``, calling ``render_board(board)`` would return the
+the following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be printed out as the following:
+
+    .. code-block:: python
+        X| |
+        -+-+-
+         | |O
+        -+-+-
+         | |
+
 
 Part 8 --- Putting it Together
 ==============================
