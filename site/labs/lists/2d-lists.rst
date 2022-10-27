@@ -77,7 +77,7 @@ Given the following code:
     * The function will not return anything
     * Verify correctness by running the function on multiple 2D lists
 
-.. image:: matRow.png
+    .. image:: matRow.png
 
 
 #. Write a function ``print_column(matrix, column: int):``
@@ -89,7 +89,7 @@ Given the following code:
     * The function will not return anything
     * Verify correctness by running the function on multiple 2D lists
 
-.. image:: matCol.png
+    .. image:: matCol.png
 
 
 #. Write a function ``print_down_right(matrix):``
@@ -100,7 +100,7 @@ Given the following code:
     * The function will not return anything
     * Verify correctness by running the function on multiple 2D lists
 
-.. image:: matDiag3.png
+    .. image:: matDiag3.png
 
 
 #. Write a function ``print_up_right(matrix):``
@@ -112,7 +112,7 @@ Given the following code:
     * Verify correctness by running the function on multiple 2D lists
 
 
-.. image:: matDiag4.png
+    .. image:: matDiag4.png
 
 
 #. Write a function ``print_down_left(matrix):``
@@ -123,7 +123,7 @@ Given the following code:
     * The function will not return anything
     * Verify correctness by running the function on multiple 2D lists
 
-.. image:: matDiag5.png
+    .. image:: matDiag5.png
 
 
 #. Write a function ``print_up_left(matrix):``
@@ -134,7 +134,7 @@ Given the following code:
     * The function will not return anything
     * Verify correctness by running the function on multiple 2D lists
 
-.. image:: matDiag6.png
+    .. image:: matDiag6.png
 
 
 #. To verify that your functions work on arbitrary sized 2D lists, what happens if you run your functions with the following matrix?
