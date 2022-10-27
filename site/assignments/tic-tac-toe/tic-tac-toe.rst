@@ -236,6 +236,17 @@ Render Cell
 Render Row
 ----------
 
+Write a function ``render_row`` that takes the current game board and a specific y/row value as parameters and returns
+the string representation of the specified row. This function will make use of the ``render_cell`` function. This
+function will include the vertical lines (``|``) within the string being returned along with a new line character at
+the end.
+
+Below are examples of using the function with ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``
+
+* ``render_row(board, 0)`` returns the string ``"X| | \n"``
+* ``render_row(board, 1)`` returns the string ``" | |O\n"``
+* ``render_row(board, 2)`` returns the string ``" | | \n"``
+
 
 Render Board
 ------------
