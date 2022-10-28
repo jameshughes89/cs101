@@ -259,7 +259,23 @@ The setup is fairly straight forward:
         * A flag for if the game is over
 
 
+The game loop is going to do much of the work. It needs to:
 
+    * Run while no one has won yet and there are still valid moves left
+    * Set the current player symbol
+    * Render and display the board
+    * Display the current move counter
+    * Prompt the user for a move until they provide a valid move
+    * Apply the move to the board
+    * Increase the move counter
+    * Check for a winner
+
+
+
+final
+notes
+example
+warn about main
 
 
 
