@@ -318,8 +318,7 @@ script was ran directly.
 
 
 Below is an example of a full game with player ``"X"`` winning. Notice that player ``"X"`` entered an invalid move for
-their first move. Remember, it is possible for a draw. For example, if on a 3x3 board, all 9 cells were occupied and no
-one has met any win condition, then the game is a draw, which is often called a "cat's game" in tic-tac-toe.
+their first move.
 
 .. code-block:: python
 
@@ -375,7 +374,27 @@ one has met any win condition, then the game is a draw, which is often called a 
     Player X won in 5 moves.
 
 
+Remember, it is possible for a draw. For example, if on a 3x3 board, all 9 cells were occupied and no one has met any
+win condition, then the game is a draw, which is often called a "cat's game" in tic-tac-toe. Below is an example of the
+end of a game with a draw.
 
+.. code-block:: python
+
+    X|O|O
+    -+-+-
+    O|X|
+    -+-+-
+    X|X|O
+
+    Move Counter: 8
+    X's move (x, y): 2,1
+    X|O|O
+    -+-+-
+    O|X|X
+    -+-+-
+    X|X|O
+
+    Cat's game; no one wins.
 
 
 Part 9 --- Testing
