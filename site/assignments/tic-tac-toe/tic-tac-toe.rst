@@ -244,6 +244,23 @@ Render Board
 Part 8 --- Putting it Together
 ==============================
 
+The main game loop is now needed. More accurate, we need the setup for a game, the game loop, and the displaying of the
+final result. Fortunately, with all the core functionality already written, much of this is just a matter of putting
+things together.
+
+The setup is fairly straight forward:
+
+    * Prompt the user for the game size
+    * Create the game board with the specified size
+    * Setup some bookkeeping variables
+
+        * Move counters
+        * Current player symbol
+        * A flag for if the game is over
+
+
+
+
 
 
 Part 9 --- Testing
