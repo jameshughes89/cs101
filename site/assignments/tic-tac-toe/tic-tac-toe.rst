@@ -277,7 +277,14 @@ Once the game ends, final details need to be displayed to the players. This will
     * Say who won the game and in how many moves *or* state that it's a cat's game (which means no one won)
 
 
+Some additional things to note about Xtreme tic-tac-toe:
+
+   * X always goes first
+   * The game can end in a draw if there are no more valid moves available (this is called a "cat's game")
+   * X will always win a game that's smaller than 3x3 (think about why that is)
+
 notes
+pseudocode
 example
 warn about main
 
