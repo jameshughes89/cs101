@@ -291,35 +291,88 @@ example, if one were to ``import`` your code into another script (which is done 
 all the code within the imported script. By having this line of code, it says to not bother running the block unless the
 script was ran directly.
 
-    .. code-block:: python
+.. code-block:: python
 
+    # Not actual pseudocode --- makes it so the import
+    # from the unit tests do not break things
+    if __name__ == "__main__":
+        # Setup code
+        Get the game size
+        Create a game board of the size
+        Initialize a move counter
+        Set current player symbol
+        Set game over flag to false
 
-        # Not actual pseudocode --- makes it so the import
-        # from the unit tests do not break things
-        if __name__ == "__main__":
-            # Setup code
-            Get the game size
-            Create a game board of the size
-            Initialize a move counter
+        # Game loop
+        while the game is not over
             Set current player symbol
-            Set game over flag to false
+            Render and display the game board and move counter
+            Read input from the user until valid input is entered
+            Apply the move to the game board
+            Increment move counter
+            Check if player has won
 
-            # Game loop
-            while the game is not over
-                Set current player symbol
-                Render and display the game board and move counter
-                Read input from the user until valid input is entered
-                Apply the move to the game board
-                Increment move counter
-                Check if player has won
-
-            # Game ending part
-            Render and display the game board
-            Print out which player won and in how many moves or if no one won
+        # Game ending part
+        Render and display the game board
+        Print out which player won and in how many moves or if no one won
 
 
-example
-warn about main
+Below is an example of a full game with player ``"X"`` winning
+
+.. code-block:: python
+
+    Game Board Size: 3
+     | |
+    -+-+-
+     | |
+    -+-+-
+     | |
+
+    Move Counter: 0
+    X's move (x, y): 1, 3
+    INVALID MOVE --- TRY AGAIN.
+    X's move (x, y): 0, 2
+     | |
+    -+-+-
+     | |
+    -+-+-
+    X| |
+
+    Move Counter: 1
+    O's move (x, y): 1,1
+     | |
+    -+-+-
+     |O|
+    -+-+-
+    X| |
+
+    Move Counter: 2
+    X's move (x, y): 0,1
+     | |
+    -+-+-
+    X|O|
+    -+-+-
+    X| |
+
+    Move Counter: 3
+    O's move (x, y): 1,0
+     |O|
+    -+-+-
+    X|O|
+    -+-+-
+    X| |
+
+    Move Counter: 4
+    X's move (x, y): 0,0
+    X|O|
+    -+-+-
+    X|O|
+    -+-+-
+    X| |
+
+    Player X won in 5 moves.
+
+
 
 
 
