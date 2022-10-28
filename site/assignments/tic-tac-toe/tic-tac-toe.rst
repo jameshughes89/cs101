@@ -283,7 +283,43 @@ Some additional things to note about Xtreme tic-tac-toe:
    * The game can end in a draw if there are no more valid moves available (this is called a "cat's game")
    * X will always win a game that's smaller than 3x3 (think about why that is)
 
-notes
+
+Below is some pseudocode that you may find helpful. For the most part, it is just restating the above points. The first
+line of code, the ``if`` statement, is not actual pseudocode and is something you need in your code. It is required for
+our marking and basically means that the code within the block will only run if we are directly running this script. For
+example, if one were to ``import`` your code into another script (which is done for marking), Python would try to run
+all the code within the imported script. By having this line of code, it says to not bother running the block unless the
+script was ran directly. 
+
+    .. code-block:: python
+
+
+        # Not actual pseudocode --- makes it so the import from the unit tests do not break things
+        if __name__ == "__main__":
+            # Execution of Game
+            Get the game size
+            Create a game board of the size
+            Initialize a move counter
+            Set current player symbol
+            Set game over flag to false
+
+
+            while the game is not over
+                clear the console
+                print the current game
+                print the move counter
+                figure out who the current player is.
+                ask for a move until it's valid. If it's not valid, tell them and ask again.
+                apply the move
+                increment move counter
+                see if the player won
+
+            clear console     # do not need to do this
+            print game
+            If someone won, print out who won and 'gg'
+            If no won won, say no one won.
+
+
 pseudocode
 example
 warn about main
