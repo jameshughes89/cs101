@@ -271,8 +271,12 @@ The game loop is going to do much of the work. It needs to:
     * Check for a winner
 
 
+Once the game ends, final details need to be displayed to the players. This will include:
 
-final
+    * The final game board
+    * Say who won the game and in how many moves *or* state that it's a cat's game (which means no one won)
+
+
 notes
 example
 warn about main
