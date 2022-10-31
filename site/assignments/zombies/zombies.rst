@@ -244,19 +244,15 @@ we include the number of cities infected before the simulation starts (which is 
 
 Below is some pseudocode to help with writing the function.
 
-    ``Create empty list to keep track of the number of infected cities at each time step``
+    .. code-block:: text
 
-    ``Infect city 0``
-
-    ``Update list of number of infected cities``
-
-    ``While it is not the end of the world and we are not beyond the cutoff``
-
-        ``Run a simulation step``
-
-        ``Count the number of cities currently infected and update the list of the number of infected cities``
-
-    ``Return the list of the number of infected cities at each step of the simulation``
+        Create empty list to keep track of the number of infected cities at each time step
+        Infect city 0
+        Update list of number of infected cities
+        While it is not the end of the world and we are not beyond the cutoff
+            Run a simulation step
+            Count the number of cities currently infected and update the list of the number of infected cities
+        Return the list of the number of infected cities at each step of the simulation
 
 
 Part 9 --- Using Your Code and Plotting
