@@ -162,13 +162,15 @@ Part 6 --- Calculate Starbucks Density
 Complete the ``starbucks_per_square_kilometer`` function that, given a file name and the latitude and longitudes to
 define a "rectangle", calculates and returns the density of Starbucks within that "rectangle".
 
-The function will need to
+Below is some pseudocode of what this function is to do.
 
-* Load the data
-* Calculate the area of the "rectangle"
-* Count the number of Starbucks within the "rectangle"
-* Calculate the density of Starbucks within the "rectangle" --- divide the number of Starbucks by the area
-* Return the density
+    .. code-block:: text
+
+        Load the data
+        Calculate the area of the "rectangle"
+        Count the number of Starbucks within the "rectangle"
+        Calculate the density of Starbucks within the "rectangle" --- divide the number of Starbucks by the area
+        Return the density
 
 
 Part 7 --- Using Your Function
