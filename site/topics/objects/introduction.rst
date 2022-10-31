@@ -12,7 +12,7 @@ Objects I --- Introduction
     * They have some data associated with them,
 
         * Their size
-        * the information stored in the list
+        * The information stored in the list
 
     * But they also have functionality associated with them too
 
