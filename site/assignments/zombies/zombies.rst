@@ -269,15 +269,13 @@ whose length minus one would be the number of steps the simulation took). Visual
 infections disease scenario with the provided ``draw_distribution`` function. Like before, be sure to run try varying
 values for the spread and cure probabilities.
 
-    ``Make a world``
+    .. code-block:: text
 
-    ``Make an empty list to keep track of the length of each simulation``
-
-    ``For some number of loops (100ish)``
-
-        ``Run a whole simulation``
-
-        ``Update the list of the lengths of simulations``
+        Make a world
+        Make an empty list to keep track of the length of each simulation
+        For some number of loops (100ish)
+            Run a whole simulation
+            Update the list of the lengths of simulations
 
 
 
