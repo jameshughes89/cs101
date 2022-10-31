@@ -291,7 +291,7 @@ example, if one were to ``import`` your code into another script (which is done 
 all the code within the imported script. By having this line of code, it says to not bother running the block unless the
 script was ran directly.
 
-.. code-block:: python
+.. code-block:: text
 
     # Not actual pseudocode --- makes it so the import
     # from the unit tests do not break things
@@ -320,7 +320,7 @@ script was ran directly.
 Below is an example of a full game with player ``"X"`` winning. Notice that player ``"X"`` entered an invalid move for
 their first move.
 
-.. code-block:: python
+.. code-block:: text
 
     Game Board Size: 3
      | |
@@ -378,7 +378,7 @@ Remember, it is possible for a draw. For example, if on a 3x3 board, all 9 cells
 win condition, then the game is a draw, which is often called a "cat's game" in tic-tac-toe. Below is an example of the
 end of a game with a draw.
 
-.. code-block:: python
+.. code-block:: text
 
     X|O|O
     -+-+-
