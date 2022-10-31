@@ -71,11 +71,11 @@ an ``"X"``, or an ``"O"``. For example, an empty 3x3 game board would be
 ``[[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]``; however, one can think of this list of lists as a
 two-dimensional matrix
 
-    ``[[" ", " ", " "],``
+    .. code-block:: text
 
-    ``[" ", " ", " "],``
-
-    ``[" ", " ", " "]]``
+        [[" ", " ", " "],
+        [" ", " ", " "],
+        [" ", " ", " "]]
 
 where the first index would be the row and the second is the column. With this configuration, the top left corner of the
 game board would be at index ``0, 0``. In this example, if the list of list was referenced by a variable named
@@ -84,15 +84,14 @@ game board would be at index ``0, 0``. In this example, if the list of list was 
 A 3x3 board was shown in the above example, but this is Xtreme tic-tac-toe, which means the game can be of arbitrary
 size. Thus, we may have game boards that are 3x3, or 4x4, or 999x999. If the game board was specified to be 4x4, we need
 a list of 4 lists that contain 4 strings ---
-``[[' ', ' ', ' ', ' '], [' ', ' ', ' ', ' '], [' ', ' ', ' ', ' '], [' ', ' ', ' ', ' ']]``, or as a matrix
+``[[" ", " ", " ", " "], [" ", " ", " ", " "], [" ", " ", " ", " "], [" ", " ", " ", " "]]``, or as a matrix
 
-    ``[[' ', ' ', ' ', ' '],``
+    .. code-block:: text
 
-    ``[' ', ' ', ' ', ' '],``
-
-    ``[' ', ' ', ' ', ' '],``
-
-    ``[' ', ' ', ' ', ' ']]``
+        [[" ", " ", " ", " "],
+        [" ", " ", " ", " "],
+        [" ", " ", " ", " "],
+        [" ", " ", " ", " "]]
 
 
 Write a function ``setup_game`` that takes an integer representing the desired board size as a parameter and returns the
