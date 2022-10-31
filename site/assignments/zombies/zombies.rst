@@ -198,26 +198,18 @@ could implement this, but perhaps the simplest is to just update city 0 to infec
 function finishes. That way, if city 0 was cured during the simulation step, it is reset to infected, and if city 0
 happened to not get cured, there is no harm in setting it to infected anyways.
 
+    .. code-block:: text
 
-    ``Make a copy of the world for the after state``
-
-    ``For each city in the before state:``
-
-        ``If the city is infected``
-
-            ``If the city is infecting a neighbouring city based on the probability value``
-
-                ``Select a random neighbour``
-
-                ``Infect the selected neighbour in the after state``
-
-            ``If the city is curing itself based on the probability value``
-
-                ``Cure the city in the after state``
-
-    ``Ensure city 0 is always infected``
-
-    ``Return after state``
+        Make a copy of the world for the after state
+        For each city in the before state:
+            If the city is infected
+                If the city is infecting a neighbouring city based on the probability value
+                    Select a random neighbour
+                    Infect the selected neighbour in the after state
+                If the city is curing itself based on the probability value
+                    Cure the city in the after state
+        Ensure city 0 is always infected
+        Return after state
 
 
 Part 8 --- Simulate Infections Disease Scenario
