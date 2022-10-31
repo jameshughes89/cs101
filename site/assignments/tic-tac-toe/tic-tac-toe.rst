@@ -310,6 +310,157 @@ the following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be p
 Part 8 --- Putting it Together
 ==============================
 
+The main game loop is now needed. More accurately, we need the setup for a game, the game loop, and the displaying of
+the final result. Fortunately, with all the core functionality already written, much of this is just a matter of putting
+things together.
+
+The setup is fairly straight forward:
+
+    * Prompt the user for the game size
+    * Create the game board with the specified size
+    * Setup some bookkeeping variables
+
+        * Move counters
+        * Current player symbol
+        * A flag for if the game is over
+
+
+The game loop is going to do much of the work. It needs to:
+
+    * Run while no one has won yet and there are still valid moves left
+    * Set the current player symbol
+    * Render and display the board
+    * Display the current move counter
+    * Prompt the user for a move until they provide a valid move
+    * Apply the move to the board
+    * Increase the move counter
+    * Check for a winner
+
+
+Once the game ends, final details need to be displayed to the players. This will include:
+
+    * The final game board
+    * Say who won the game and in how many moves *or* state that it's a cat's game (which means no one won)
+
+
+Some additional things to note about Xtreme tic-tac-toe:
+
+   * X always goes first
+   * The game can end in a draw if there are no more valid moves available (this is called a "cat's game")
+   * X will always win a game that's smaller than 3x3 (think about why that is)
+
+
+Below is some pseudocode that you may find helpful. For the most part, it is just restating the above points. The first
+line of code, the ``if`` statement, is not actual pseudocode and is something you need in your code. It is required for
+our marking and basically means that the code within the block will only run if we are directly running this script. For
+example, if one were to ``import`` your code into another script (which is done for marking), Python would try to run
+all the code within the imported script. By having this line of code, it says to not bother running the block unless the
+script was ran directly.
+
+.. code-block:: text
+
+    # Not actual pseudocode --- makes it so the import
+    # from the unit tests do not break things
+    if __name__ == "__main__":
+        # Setup code
+        Get the game size
+        Create a game board of the size
+        Initialize a move counter
+        Set current player symbol
+        Set game over flag to false
+
+        # Game loop
+        while the game is not over
+            Set current player symbol
+            Render and display the game board and move counter
+            Read input from the user until valid input is entered
+            Apply the move to the game board
+            Increment move counter
+            Check if player has won
+
+        # Game ending part
+        Render and display the game board
+        Print out which player won and in how many moves or if no one won
+
+
+Below is an example of a full game with player ``"X"`` winning. Notice that player ``"X"`` entered an invalid move for
+their first move.
+
+.. code-block:: text
+
+    Game Board Size: 3
+     | |
+    -+-+-
+     | |
+    -+-+-
+     | |
+
+    Move Counter: 0
+    X's move (x, y): 1, 3
+    INVALID MOVE --- TRY AGAIN.
+    X's move (x, y): 0, 2
+     | |
+    -+-+-
+     | |
+    -+-+-
+    X| |
+
+    Move Counter: 1
+    O's move (x, y): 1,1
+     | |
+    -+-+-
+     |O|
+    -+-+-
+    X| |
+
+    Move Counter: 2
+    X's move (x, y): 0,1
+     | |
+    -+-+-
+    X|O|
+    -+-+-
+    X| |
+
+    Move Counter: 3
+    O's move (x, y): 1,0
+     |O|
+    -+-+-
+    X|O|
+    -+-+-
+    X| |
+
+    Move Counter: 4
+    X's move (x, y): 0,0
+    X|O|
+    -+-+-
+    X|O|
+    -+-+-
+    X| |
+
+    Player X won in 5 moves.
+
+
+Remember, it is possible for a draw. For example, if on a 3x3 board, all 9 cells were occupied and no one has met any
+win condition, then the game is a draw, which is often called a "cat's game" in tic-tac-toe. Below is an example of the
+end of a game with a draw.
+
+.. code-block:: text
+
+    X|O|O
+    -+-+-
+    O|X|
+    -+-+-
+    X|X|O
+
+    Move Counter: 8
+    X's move (x, y): 2,1
+    X|O|O
+    -+-+-
+    O|X|X
+    -+-+-
+    X|X|O
+
+    Cat's game; no one wins.
 
 
 Part 9 --- Testing
