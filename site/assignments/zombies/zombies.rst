@@ -329,10 +329,12 @@ Some Hints
 * Work on one function at a time
 * Get each function working perfectly before you go on to the next one
 * Test each function as you write it
+
     * This is a really nice thing about programming; you can call your functions and see what result gets returned
     * Mentally test before you even write --- what does this function do? What problem is it solving?
 
 * If you need help, ask
+
     * Drop by office hours
 
 
@@ -358,10 +360,12 @@ What to Submit to Moodle
 
 * Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program
 * Submit your version of ``asn2.py`` to Moodle
+
     * Do **not** submit the .ipynb file
     * To get the ``asn2.py`` file from Colab, see the example image in Assignment 1
 
 * A text/word file answering the analysis questions and providing *data* to back up your answers
+
     * Include images in your submission
 
 
