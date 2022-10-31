@@ -230,7 +230,7 @@ Part 7 --- Rendering the Game Board
 Currently the game board is represented as a list of lists for Python, however this representation is not ideal for
 humans; typically humans represent tic-tac-toe as a grid. For example, consider the following empty 3x3 game example:
 
-    .. code-block:: python
+    .. code-block:: text
 
          | |
         -+-+-
@@ -244,7 +244,7 @@ In the above example, since it is an empty board, each cell is an empty space an
 
 Below is an example of a game board with player moves applied:
 
-    .. code-block:: python
+    .. code-block:: text
 
         X|O|O
         -+-+-
@@ -299,7 +299,8 @@ vertical (``|``) lines in addition to the intersecting symbol (``+``).
 Given ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``, calling ``render_board(board)`` would return the
 the following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be printed out as the following:
 
-    .. code-block:: python
+    .. code-block:: text
+
         X| |
         -+-+-
          | |O
