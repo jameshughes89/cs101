@@ -26,9 +26,21 @@ Part 1 --- Uploading Files to Colab
 Country Class
 =============
 
-Part X --- SOMETHING
-====================
 
+Part 2 --- Constructor
+----------------------
+
+
+Part 3 --- Population Density
+-----------------------------
+
+
+Part 4 --- Equals and Repr
+--------------------------
+
+
+Part 5 --- Testing Country Class
+--------------------------------
 
 
 Country Catalogue Class
