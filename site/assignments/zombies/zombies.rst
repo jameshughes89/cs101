@@ -198,26 +198,18 @@ could implement this, but perhaps the simplest is to just update city 0 to infec
 function finishes. That way, if city 0 was cured during the simulation step, it is reset to infected, and if city 0
 happened to not get cured, there is no harm in setting it to infected anyways.
 
+    .. code-block:: text
 
-    ``Make a copy of the world for the after state``
-
-    ``For each city in the before state:``
-
-        ``If the city is infected``
-
-            ``If the city is infecting a neighbouring city based on the probability value``
-
-                ``Select a random neighbour``
-
-                ``Infect the selected neighbour in the after state``
-
-            ``If the city is curing itself based on the probability value``
-
-                ``Cure the city in the after state``
-
-    ``Ensure city 0 is always infected``
-
-    ``Return after state``
+        Make a copy of the world for the after state
+        For each city in the before state:
+            If the city is infected
+                If the city is infecting a neighbouring city based on the probability value
+                    Select a random neighbour
+                    Infect the selected neighbour in the after state
+                If the city is curing itself based on the probability value
+                    Cure the city in the after state
+        Ensure city 0 is always infected
+        Return after state
 
 
 Part 8 --- Simulate Infections Disease Scenario
@@ -252,19 +244,15 @@ we include the number of cities infected before the simulation starts (which is 
 
 Below is some pseudocode to help with writing the function.
 
-    ``Create empty list to keep track of the number of infected cities at each time step``
+    .. code-block:: text
 
-    ``Infect city 0``
-
-    ``Update list of number of infected cities``
-
-    ``While it is not the end of the world and we are not beyond the cutoff``
-
-        ``Run a simulation step``
-
-        ``Count the number of cities currently infected and update the list of the number of infected cities``
-
-    ``Return the list of the number of infected cities at each step of the simulation``
+        Create empty list to keep track of the number of infected cities at each time step
+        Infect city 0
+        Update list of number of infected cities
+        While it is not the end of the world and we are not beyond the cutoff
+            Run a simulation step
+            Count the number of cities currently infected and update the list of the number of infected cities
+        Return the list of the number of infected cities at each step of the simulation
 
 
 Part 9 --- Using Your Code and Plotting
@@ -281,15 +269,13 @@ whose length minus one would be the number of steps the simulation took). Visual
 infections disease scenario with the provided ``draw_distribution`` function. Like before, be sure to run try varying
 values for the spread and cure probabilities.
 
-    ``Make a world``
+    .. code-block:: text
 
-    ``Make an empty list to keep track of the length of each simulation``
-
-    ``For some number of loops (100ish)``
-
-        ``Run a whole simulation``
-
-        ``Update the list of the lengths of simulations``
+        Make a world
+        Make an empty list to keep track of the length of each simulation
+        For some number of loops (100ish)
+            Run a whole simulation
+            Update the list of the lengths of simulations
 
 
 
