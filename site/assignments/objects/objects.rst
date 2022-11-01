@@ -6,8 +6,25 @@ Country Catalogue
 * **DUE**: December 5th at 11:55pm; submitted on MOODLE.
 * **Files**: TBD
 
+Task
+====
 
 
+Provided Files
+==============
+
+
+Part 0 --- Read the Assignment
+==============================
+
+Read the assignment description in its entirety before starting.
+
+Part 1 --- Uploading Files to Colab
+===================================
+
+
+Part X --- SOMETHING
+====================
 
 
 
