@@ -19,6 +19,7 @@ Part 0 --- Read the Assignment
 
 Read the assignment description in its entirety before starting.
 
+
 Part 1 --- Uploading Files to Colab
 ===================================
 
@@ -27,8 +28,8 @@ Country Class
 =============
 
 
-Part 2 --- Constructor
-----------------------
+Part 2 --- Country Constructor
+------------------------------
 
 
 Part 3 --- Population Density
@@ -47,23 +48,65 @@ Country Catalogue Class
 =======================
 
 
+Part 6 --- Country Catalogue Constructor
+----------------------------------------
 
 
-Part X --- Putting it Together
+Part 7 --- Private Find Method
+------------------------------
+
+
+Part 8 --- Contains
+-------------------
+
+
+Part 9 --- Add
+--------------
+
+
+Part 10 --- Remove
+------------------
+
+
+Part 11 --- Largest Density
+---------------------------
+
+
+Part 12 --- Smallest Density
+----------------------------
+
+
+Part 13 --- Filter by Density
+-----------------------------
+
+
+Part 14 --- Most Populous Continent
+-----------------------------------
+
+
+Part 15 --- Equals, Repr, and Length
+------------------------------------
+
+
+Part 16 --- Testing Country Catalogue Class
+-------------------------------------------
+
+
+
+Part 17 --- Putting it Together
 ==============================
 
 
-Part 9 --- Testing
-==================
 
-To help ensure that your program is correct, run the provided assertion tests. Each function is followed by a series of
-commented out assertion tests that will help you test your code. When you are ready to test your functions, simply make
-them not comments (remove the ``#``) to include them in your running program. There is no guarantee that if your code
-passes all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as
-they should.
 
-There are no assertion tests for the final game loop, so you will need to run the game in order to get a sense of if it
-is working or not. When testing by playing, actively try to break the game.
+Part 18 --- Testing
+===================
+
+Unlike previous assignments, no assertion tests are provided. Instead, to help ensure that your program is correct, run
+the provided **unittests**. There is no guarantee that if your code passes all the tests that you will be correct, but
+it certainly helps provide peace of mind that things are working as they should.
+
+There are no unittests for the ``asn4.py``.
 
 Realistically you should have been running tests after you complete each of the above parts, but this part is here to
 remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
