@@ -23,8 +23,23 @@ Part 1 --- Uploading Files to Colab
 ===================================
 
 
+Country Class
+=============
+
 Part X --- SOMETHING
 ====================
+
+
+
+Country Catalogue Class
+=======================
+
+
+
+
+Part X --- Putting it Together
+==============================
+
 
 Part 9 --- Testing
 ==================
