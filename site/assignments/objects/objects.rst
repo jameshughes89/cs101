@@ -26,6 +26,70 @@ Part 1 --- Uploading Files to Colab
 Part X --- SOMETHING
 ====================
 
+Part 9 --- Testing
+==================
+
+To help ensure that your program is correct, run the provided assertion tests. Each function is followed by a series of
+commented out assertion tests that will help you test your code. When you are ready to test your functions, simply make
+them not comments (remove the ``#``) to include them in your running program. There is no guarantee that if your code
+passes all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as
+they should.
+
+There are no assertion tests for the final game loop, so you will need to run the game in order to get a sense of if it
+is working or not. When testing by playing, actively try to break the game.
+
+Realistically you should have been running tests after you complete each of the above parts, but this part is here to
+remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
+for the marker to return your assignment before you have an idea of if it works correctly.
+
+
+Some Hints
+==========
+
+* Work on one function at a time
+* Get each function working perfectly before you go on to the next one
+* Test each function as you write it
+
+    * This is a really nice thing about programming; you can call your functions and see what result gets returned
+    * Mentally test before you even write --- what does this function do? What problem is it solving?
+
+* If you need help, ask
+
+    * Drop by office hours
+
+
+Some Marking Details
+====================
+
+.. warning::
+    Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or
+    even that your program is correct.
+
+Below is a list of both *quantitative* and *qualitative* things we will look for:
+
+* Correctness?
+* Did you follow instructions?
+* Comments?
+* Variable Names?
+* Style?
+* Did you do just weird things that make no sense?
+
+
+What to Submit to Moodle
+========================
+
+
+
+.. warning::
+
+    Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
+
+
+Assignment FAQ
+==============
+
+* :doc:`See the general FAQ </assignments/faq>`
+
 
 
 
