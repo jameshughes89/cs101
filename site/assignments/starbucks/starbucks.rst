@@ -162,13 +162,15 @@ Part 6 --- Calculate Starbucks Density
 Complete the ``starbucks_per_square_kilometer`` function that, given a file name and the latitude and longitudes to
 define a "rectangle", calculates and returns the density of Starbucks within that "rectangle".
 
-The function will need to
+Below is some pseudocode of what this function is to do.
 
-* Load the data
-* Calculate the area of the "rectangle"
-* Count the number of Starbucks within the "rectangle"
-* Calculate the density of Starbucks within the "rectangle" --- divide the number of Starbucks by the area
-* Return the density
+    .. code-block:: text
+
+        Load the data
+        Calculate the area of the "rectangle"
+        Count the number of Starbucks within the "rectangle"
+        Calculate the density of Starbucks within the "rectangle" --- divide the number of Starbucks by the area
+        Return the density
 
 
 Part 7 --- Using Your Function
@@ -202,10 +204,12 @@ Some Hints
 * Work on one function at a time
 * Get each function working perfectly before you go on to the next one
 * Test each function as you write it
+
     * This is a really nice thing about programming; you can call your functions and see what result gets returned
     * Mentally test before you even write --- what does this function do? What problem is it solving?
 
 * If you need help, ask
+
     * Drop by office hours
 
 
@@ -231,10 +235,12 @@ What to Submit to Moodle
 
 * Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program
 * Submit your version of ``asn1.py`` to Moodle
+
     * Do **not** submit the .ipynb file
     * To get the ``asn1.py`` file from Colab, see the image below
 
 * Also submit your text file describing the areas you found with the highest, and lowest, Starbucks densities and a short description of how you found them
+
     * Don't worry about finding the highest or lowest density values, just try a few and pick your highest and lowest
 
 .. warning::
