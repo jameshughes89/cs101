@@ -93,6 +93,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -119,6 +122,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 
@@ -186,6 +192,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -210,6 +219,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 
@@ -270,6 +282,9 @@ Magic Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -311,6 +326,9 @@ Magic Methods
     :linenos:
     :emphasize-lines: 5
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -328,6 +346,9 @@ Magic Methods
 
     .. code-block:: python
         :linenos:
+
+        import math
+
 
         class Circle:
 
@@ -384,6 +405,9 @@ Magic Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -400,6 +424,9 @@ Magic Methods
 
     .. code-block:: python
         :linenos:
+
+        import math
+
 
         class Circle:
 
