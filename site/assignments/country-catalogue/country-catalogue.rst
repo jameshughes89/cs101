@@ -1,9 +1,183 @@
-***************************
-Playing with Objects is Fun
-***************************
+*****************
+Country Catalogue
+*****************
 
 * **Worth**: 10%
-* **DUE**: December 6th at 11:55pm; submitted on MOODLE.
+* **DUE**: December 5th at 11:55pm; submitted on MOODLE.
+* **Files**: TBD
+
+Task
+====
+
+
+Provided Files
+==============
+
+
+Part 0 --- Read the Assignment
+==============================
+
+Read the assignment description in its entirety before starting.
+
+
+Part 1 --- Uploading Files to Colab
+===================================
+
+
+Country Class
+=============
+
+
+Part 2 --- Country Constructor
+------------------------------
+
+
+Part 3 --- Population Density
+-----------------------------
+
+
+Part 4 --- Equals and Repr
+--------------------------
+
+
+Part 5 --- Testing Country Class
+--------------------------------
+
+
+Country Catalogue Class
+=======================
+
+
+Part 6 --- Country Catalogue Constructor
+----------------------------------------
+
+
+Part 7 --- Private Find Method
+------------------------------
+
+
+Part 8 --- Contains
+-------------------
+
+
+Part 9 --- Add
+--------------
+
+
+Part 10 --- Remove
+------------------
+
+
+Part 11 --- Largest Density
+---------------------------
+
+
+Part 12 --- Smallest Density
+----------------------------
+
+
+Part 13 --- Filter by Density
+-----------------------------
+
+
+Part 14 --- Most Populous Continent
+-----------------------------------
+
+
+Part 15 --- Equals, Repr, and Length
+------------------------------------
+
+
+Part 16 --- Testing Country Catalogue Class
+-------------------------------------------
+
+
+
+Part 17 --- Putting it Together
+==============================
+
+
+
+
+Part 18 --- Testing
+===================
+
+Unlike previous assignments, no assertion tests are provided. Instead, to help ensure that your program is correct, run
+the provided **unittests**. There is no guarantee that if your code passes all the tests that you will be correct, but
+it certainly helps provide peace of mind that things are working as they should.
+
+There are no unittests for the ``asn4.py``.
+
+Realistically you should have been running tests after you complete each of the above parts, but this part is here to
+remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
+for the marker to return your assignment before you have an idea of if it works correctly.
+
+
+Some Hints
+==========
+
+* Work on one function at a time
+* Get each function working perfectly before you go on to the next one
+* Test each function as you write it
+
+    * This is a really nice thing about programming; you can call your functions and see what result gets returned
+    * Mentally test before you even write --- what does this function do? What problem is it solving?
+
+* If you need help, ask
+
+    * Drop by office hours
+
+
+Some Marking Details
+====================
+
+.. warning::
+    Just because your program produces the correct output, that does not necessarily mean that you will get perfect, or
+    even that your program is correct.
+
+Below is a list of both *quantitative* and *qualitative* things we will look for:
+
+* Correctness?
+* Did you follow instructions?
+* Comments?
+* Variable Names?
+* Style?
+* Did you do just weird things that make no sense?
+
+
+What to Submit to Moodle
+========================
+
+
+
+.. warning::
+
+    Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
+
+
+Assignment FAQ
+==============
+
+* :doc:`See the general FAQ </assignments/faq>`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .. Warning::
 
