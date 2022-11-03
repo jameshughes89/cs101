@@ -52,18 +52,18 @@ Before Kattis
         * Do whatever you need to do to figure it out
 
 
-.. code-block:: python
-    :linenos:
-    
-    a = [0, 0, 0]
-    b = [a,a,a]
+    .. code-block:: python
+        :linenos:
 
-    for row in b:
-        toPrint = ''
-        for d in row:
-            toPrint += str(d) + ' '
-            
-        print(toPrint)
+        a = [0, 0, 0]
+        b = [a,a,a]
+
+        for row in b:
+            toPrint = ''
+            for d in row:
+                toPrint += str(d) + ' '
+
+            print(toPrint)
 
 
 #. Add ``b[1][1] = 1`` to line 3 and run it again and see what happens
@@ -75,11 +75,11 @@ Before Kattis
 
     * Change the list setup/creation part, not the loops
 
-.. code-block:: python
+    .. code-block:: python
 
-    0 0 0
-    0 1 0
-    0 0 0
+        0 0 0
+        0 1 0
+        0 0 0
 
 
 #. Add ``b[0][1] = 1`` to line 3 and run it again and see what happens
@@ -101,7 +101,7 @@ Before Kattis
 
     * Can you somehow think of a better algorithm that would do less work?
     * Don't spend too much time on this if you can't come up with a solution
-    * **Hint:** Dictionaries
+    * **Hint:** Dictionaries (but leave the ``nums`` list alone)
  
 
 Kattis Problems
