@@ -255,8 +255,47 @@ Below is an example of a game board with player moves applied:
 The above example shows how player symbols (``"X"`` or ``"O"``) are to be displayed in the game board.
 
 A function needs to be written that will take the encoding of the game board as a list of lists of strings and return a
-human friendly string that can be displayed. This functionality will be broken down into (a) rendering a single cell,
-(b) rendering a single row, and (c) rendering the whole board.
+human friendly string that can be displayed.
+
+Write a function ``render_board`` that takes the current game board as a parameter and returns a string representing the
+entire board. This function will include all horizontal (``-``) and vertical (``|``) lines in addition to the
+intersecting symbol (``+``).
+
+Given ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``, calling ``render_board(board)`` would return the
+the following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be printed out as the following:
+
+    .. code-block:: text
+
+        X| |
+        -+-+-
+         | |O
+        -+-+-
+         | |
+
+
+Before starting to write the function, consider the complexity of what is required. The whole board has many cells, each
+cell will have different symbols, and further, each cell has different separation symbols.
+
+If, on the other hand, it were possible to break the problem down such that there was a mechanism to render a whole row,
+then the complexity in ``render_board`` feels much lower --- no need to think of the details of rendering the individual
+cells, just render rows with horizontal lines between them.
+
+
+Render Row
+----------
+
+Write a function ``render_row`` that takes the current game board and a specific y/row value as parameters and returns
+the string representation of the specified row. This function will include the vertical lines (``|``) within the string
+being returned along with a new line character at the end.
+
+Below are examples of using the function with ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``
+
+* ``render_row(board, 0)`` returns the string ``"X| | \n"``
+* ``render_row(board, 1)`` returns the string ``" | |O\n"``
+* ``render_row(board, 2)`` returns the string ``" | | \n"``
+
+Once again, however, one may feel that the complexity of rendering a whole row to still be rather complex. Instead, if
+a function to render individual cells existed, then that portion of the rendering can be offloaded.
 
 
 Render Cell
@@ -273,38 +312,11 @@ Below are examples of using the function with ``board = [["X", " ", " "], [" ", 
 * ``render_cell(board, 0, 2)`` returns the string ``" "``
 
 
-Render Row
-----------
+Putting it together
+-------------------
 
-Write a function ``render_row`` that takes the current game board and a specific y/row value as parameters and returns
-the string representation of the specified row. This function will make use of the ``render_cell`` function. This
-function will include the vertical lines (``|``) within the string being returned along with a new line character at
-the end.
-
-Below are examples of using the function with ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``
-
-* ``render_row(board, 0)`` returns the string ``"X| | \n"``
-* ``render_row(board, 1)`` returns the string ``" | |O\n"``
-* ``render_row(board, 2)`` returns the string ``" | | \n"``
-
-
-Render Board
-------------
-
-Write a function ``render_board`` that takes the current game board as a parameter and returns a string representing the
-entire board. This function will make use of ``render_row``.  This function will include all horizontal (``-``) and
-vertical (``|``) lines in addition to the intersecting symbol (``+``).
-
-Given ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``, calling ``render_board(board)`` would return the
-the following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be printed out as the following:
-
-    .. code-block:: text
-
-        X| |
-        -+-+-
-         | |O
-        -+-+-
-         | |
+Once both ``render_row`` and ``render_cell`` are complete, write the ``render_board`` function described above. This
+function will make use of ``render_row``, which in turn will make use of ``render_cell``.
 
 
 Part 8 --- Putting it Together
