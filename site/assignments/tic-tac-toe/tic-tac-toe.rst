@@ -277,8 +277,8 @@ Before starting to write the function, consider the complexity of what is requir
 cell will have different symbols, and further, each cell has different separation symbols.
 
 If, on the other hand, it were possible to break the problem down such that there was a mechanism to render a whole row,
-then the complexity in ``render_board`` feels much lower --- no need to think of the details of rendering the cells,
-just render rows.
+then the complexity in ``render_board`` feels much lower --- no need to think of the details of rendering the individual
+cells, just render rows with horizontal lines between them.
 
 
 Render Row
@@ -310,8 +310,6 @@ Below are examples of using the function with ``board = [["X", " ", " "], [" ", 
 * ``render_cell(board, 0, 0)`` returns the string ``"X"``
 * ``render_cell(board, 2, 1)`` returns the string ``"O"``
 * ``render_cell(board, 0, 2)`` returns the string ``" "``
-
-
 
 
 Putting it together
