@@ -315,8 +315,8 @@ Below are examples of using the function with ``board = [["X", " ", " "], [" ", 
 Putting it together
 -------------------
 
-Once both ``render_row`` and ``render_cell`` are complete, write the ``render_board`` function. This function will make
-use of ``render_row``, which in turn will make use of ``render_cell``.
+Once both ``render_row`` and ``render_cell`` are complete, write the ``render_board`` function described above. This
+function will make use of ``render_row``, which in turn will make use of ``render_cell``.
 
 
 Part 8 --- Putting it Together
