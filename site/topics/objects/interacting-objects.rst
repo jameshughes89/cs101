@@ -75,6 +75,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Point3D:
 
         # init and/or other methods not shown for brevity
@@ -98,6 +101,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Point3D:
 
@@ -213,6 +219,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -231,6 +240,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 
@@ -254,6 +266,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 
@@ -294,6 +309,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -310,6 +328,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 
