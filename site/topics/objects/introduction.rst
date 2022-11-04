@@ -229,6 +229,9 @@ Functionality and Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Circle:
 
         # init and/or other methods not shown for brevity
