@@ -53,6 +53,7 @@ class Point3D:
 point_origin = Point3D(0, 0, 0)
 assert 0 == point_origin.x
 assert 0 == point_origin.y
+assert 0 == point_origin.z
 assert 0 == point_origin.distance_from_point(Point3D(0, 0, 0))
 assert 0.001 > abs(point_origin.distance_from_point(Point3D(1, 1, 1)) - 1.732051)
 assert 0.001 > abs(point_origin.distance_from_point(Point3D(-1, -1, -1)) - 1.732051)
