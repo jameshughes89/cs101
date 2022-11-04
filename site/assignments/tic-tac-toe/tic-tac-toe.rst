@@ -255,8 +255,30 @@ Below is an example of a game board with player moves applied:
 The above example shows how player symbols (``"X"`` or ``"O"``) are to be displayed in the game board.
 
 A function needs to be written that will take the encoding of the game board as a list of lists of strings and return a
-human friendly string that can be displayed. This functionality will be broken down into (a) rendering a single cell,
-(b) rendering a single row, and (c) rendering the whole board.
+human friendly string that can be displayed.
+
+Write a function ``render_board`` that takes the current game board as a parameter and returns a string representing the
+entire board. This function will include all horizontal (``-``) and vertical (``|``) lines in addition to the
+intersecting symbol (``+``).
+
+Given ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``, calling ``render_board(board)`` would return the
+the following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be printed out as the following:
+
+    .. code-block:: text
+
+        X| |
+        -+-+-
+         | |O
+        -+-+-
+         | |
+
+
+Before starting to write the function, consider the complexity of what is required. The whole board has many cells, each
+cell will have different symbols, and further, each cell has different separation symbols.
+
+If, on the other hand, it were possible to break the problem down such that there was a mechanism to render a whole row,
+then the complexity in ``render_board`` feels much lower --- no need to think of the details of rendering the cells,
+just render rows.
 
 
 Render Cell
