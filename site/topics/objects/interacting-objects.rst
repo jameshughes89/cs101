@@ -31,9 +31,7 @@ Point3D Class
 
 * The class will also have a few methods, including some that will replace functionality within the ``Sphere`` class
 
-    * A method for measuring the ``Point3D``\s distance from the origin
     * A method for measuring the distance from another ``Point3D`` object
-    * A method for finding the midpoint between two points
     * A method for checking if two ``Point3D`` objects are *equal*
     * A method for generating a nice, human readable string representation of the object
 
@@ -148,20 +146,15 @@ Testing
     point_origin = Point3D(0, 0, 0)
     assert 0 == point_origin.x
     assert 0 == point_origin.y
-    assert 0 == point_origin.distance_from_origin()
+    assert 0 == point_origin.z
     assert 0 == point_origin.distance_from_point(Point3D(0, 0, 0))
     assert 0.001 > abs(point_origin.distance_from_point(Point3D(1, 1, 1)) - 1.732051)
     assert 0.001 > abs(point_origin.distance_from_point(Point3D(-1, -1, -1)) - 1.732051)
-    assert Point3D(1, 1, 1) == point_origin.find_midpoint(Point3D(2, 2, 2))
-    assert Point3D(-1, -1, -1) == point_origin.find_midpoint(Point3D(-2, -2, -2))
-    assert Point3D(0, 0, 0) == point_origin.find_midpoint(Point3D(0, 0, 0))
     assert "Point3D(0, 0, 0)" == str(point_origin)
 
     point = Point3D(-2, 7, 4)
-    assert 0.001 > abs(point.distance_from_origin() - 8.306624)
     assert 0.001 > abs(point.distance_from_point(Point3D(0, 0, 0)) - 8.306624)
     assert 0.001 > abs(point.distance_from_point(Point3D(6, 3, 0)) - 9.797959)
-    assert Point3D(5, 5.5, 3) == point.find_midpoint(Point3D(12, 4, 2))
     assert "Point3D(-2, 7, 4)"
 
     assert point != point_origin
