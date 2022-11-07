@@ -78,21 +78,43 @@ the project every time you want to work on it.
 Country Class
 =============
 
+The ``Country`` class is simply going to represent an individual country. For our purposes, a ``Country`` will know its
+``name``, ``continent``, ``population``, and land ``area``. In addition to the attributes, a ``Country`` will also be
+able to determine it's population density (``population/area``). A method for determining equality (``__eq__``) and
+generating a nice, human readable string representation of the ``Country`` object (``__repr__``) will be written.
+
 
 Part 2 --- Country Constructor
 ------------------------------
+
+Write the constructor (``__init__``) for the ``Country`` object. The constructor will take a country ``name``, which
+``continent`` it's on, its ``population``, and the total land ``area`` as parameters. The constructor will assign the
+values passed as parameters to their respective attributes --- ``name``, ``continent``, ``population, and ``area``.
 
 
 Part 3 --- Population Density
 -----------------------------
 
+Write a method ``population_density`` that returns the population density of the ``Country`` object. The population
+density should be a float.
+
 
 Part 4 --- Equals and Repr
 --------------------------
 
+Write the ``__eq__`` magic method for the ``Country`` class. For our purposes, two ``Country`` objects will be
+considered equal if all their attributes are equal.
+
+Write the ``__repr__`` magic method for the ``Country`` class. For our needs, we will simply follow the pattern
+``ClassName(attribute, values)``. For example, representing the country Canada as a string would be
+``Country(name=Canada, continent=North America, population=34207000, area=9976140.00)``.
+
 
 Part 5 --- Testing Country Class
 --------------------------------
+
+To help ensure correctness, run the ``CountryTest`` class and ensure all unit tests pass. If any of the tests fail, read
+which test failed and under which condition. The output of the tests will help guide your debugging.
 
 
 Country Catalogue Class
@@ -229,59 +251,7 @@ Assignment FAQ
 
 
 
-Part 1
-======
 
-Make a Country Class. 
-
-**Properties/attributes** we want country objects to have are:
-
-* name: str
-* population: int
-* area: float
-* continent: str
-
-That's it. Those are the properties/attributes we want out country objects to have. Also, you don't have to worry about making them *private* here. If you do, great, if not, whatever. 
-
-We're going to write some **methods** for our country object. We'll have:
-
-* Constructor --- sets the instance's attributes. 
-* *Getter* Methods
-    * get_name
-    * get_population
-    * get_area
-    * get_continent
-* get_pop_density --- a method that calculates and returns the population density of a country (population divided by area)
-* *Setter* Method
-    * set_population
-* __repr__ --- generate a string representation of the country instance. 
-    "``name`` in ``continent``", so, for example: "China in Asia"
-
-Your class should look like this, but with the functions filled in:	
-   
-.. code-block:: python
-
-    class Country:
-   
-        def __init__(self, name, pop, area, continent):
-	   
-        def __repr__(self):
-	   
-        def set_population(self, pop):
-	   
-        def get_name(self):
-	   
-        def get_area(self):
-	   
-        def get_population(self):
-	   
-        def get_continent(self):
-       	
-        def get_pop_density(self):
-
-.. Warning::
-
-   Test that your Country objects work correctly. Test **THOROUGHLY**. Do **not** move on until you know everything here is working properly.
 
 Part 2
 ======
