@@ -197,15 +197,6 @@ Assignment FAQ
 
 
 
-
-Now for another more engineering-ie assignment where we will build something. In fact, we're going to build our own objects from scratch. This may seem intimidating, but in reality, coding this way can often really simplify all of your problems. It's all about nice *encapsulation*. 
-
-We're going to write a program that will use objects to store, search, remove, and filter data. Specifically, we're going to keep a record of some country details. 
-
-.. Warning::
-
-    The trick here is to really focus on the sub-problems. I have seen a lot of people on the previous assignments get overwhelmed and distracted by the bigger picture. It's not a bad idea to keep the big picture in mind, but here just focus on the small problems, one at at time. Everything will come together. 
-   
 Part 1
 ======
 
