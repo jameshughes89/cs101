@@ -51,6 +51,13 @@ density should be a float.
 Part 4 --- Equals and Repr
 --------------------------
 
+Write the ``__eq__`` magic dunder method for the ``Country`` class. For our purposes, two ``Country`` objects will be
+considered equal if all their attributes are equal.
+
+Write the ``__repr__`` magic dunder method for the ``Country`` class. For our needs, we will simply follow the pattern
+``ClassName(attribute, values)``. For example, representing the country Canada as a string would be
+``Country(name=Canada, continent=North America, population=34207000, area=9976140.00)``.
+
 
 Part 5 --- Testing Country Class
 --------------------------------
