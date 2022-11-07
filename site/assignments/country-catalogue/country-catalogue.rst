@@ -62,6 +62,9 @@ Write the ``__repr__`` magic dunder method for the ``Country`` class. For our ne
 Part 5 --- Testing Country Class
 --------------------------------
 
+To help ensure correctness, run the ``CountryTest`` class and ensure all unit tests pass. If any of the tests fail, read
+which test failed and under which condition. The output of the tests will help guide your debugging.
+
 
 Country Catalogue Class
 =======================
