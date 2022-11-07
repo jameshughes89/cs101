@@ -32,6 +32,32 @@ You will
 Provided Files
 ==============
 
+You are provided with
+
+* A notebook file called :download:`asn4.ipynp <asn4.ipynb>` containing the starting point of the assignment
+
+    * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
+    * The notebook contains the start of the ``Country`` and ``CountryCatalogue`` classes
+    * The notebook contains unit tests for the ``Country`` and ``CountryCatalogue`` classes
+    * The notebook contains already written code that will make use of the classes you are to write
+    * The notebook also includes a special if statement ``if __name__ == "__main__":`` at the end
+
+        * This is included to help with marking and unit tests
+        * More details on this line are provided below
+
+    * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn4.py <asn4.py>` file
+
+
+.. warning::
+
+    Do not alter the function details in the provided .ipynb/.py files
+
+        * Do not change the name of the functions
+        * Do not remove the function description
+        * Do not remove or add to the parameter list
+
+
+
 
 Part 0 --- Read the Assignment
 ==============================
