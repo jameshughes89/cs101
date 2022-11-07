@@ -6,8 +6,27 @@ Country Catalogue
 * **DUE**: December 5th at 11:55pm; submitted on MOODLE.
 * **Files**: TBD
 
+
 Task
 ====
+
+The goal is to create a collection of ``Country`` objects. The collection, called a ``CountryCatalogue``, will provide
+functionality to store (add/remove) the ``Country`` objects in addition to making inquiries about the data in the
+collection.
+
+You will
+
+* Create a ``Country`` class to store details about a country
+* Create a ``CountryCatalogue`` class
+
+    * Provide a way to add and remove ``Country`` objects
+    * Search through the catalogue
+    * Ask questions about the data in the catalogue
+    * Filter data in the catalogue
+
+* Use the written classes to build a ``CountryCatalogue``
+* Read data from a file
+* Write data to a file
 
 
 Provided Files
