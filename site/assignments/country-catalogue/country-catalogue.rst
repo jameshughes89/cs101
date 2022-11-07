@@ -120,6 +120,12 @@ which test failed and under which condition. The output of the tests will help g
 Country Catalogue Class
 =======================
 
+The ``CountryCatalogue`` class holds reference to a collection of ``Country`` objects. Additionally, the
+``CountryCatalogue`` provides some functionality to ask questions about the collection of data.
+
+The ``CountryCatalogue`` is effectively a list keeping track of the ``Country`` objects with additional proprietary
+methods. Details on the functionality is provided below. 
+
 
 Part 6 --- Country Catalogue Constructor
 ----------------------------------------
