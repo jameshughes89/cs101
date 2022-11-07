@@ -27,6 +27,11 @@ Part 1 --- Uploading Files to Colab
 Country Class
 =============
 
+The ``Country`` class is simply going to represent an individual country. For our purposes, a ``Country`` will know its
+``name``, ``continent``, ``population``, and land ``area``. In addition to the attributes, a ``Country`` will also be
+able to determine it's population density (``population/area``). A method for determining equality (``__eq__``) and
+generating a nice, human readable string representation of the ``Country`` object (``__repr__``) will be written.
+
 
 Part 2 --- Country Constructor
 ------------------------------
