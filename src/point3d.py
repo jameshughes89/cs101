@@ -53,15 +53,19 @@ class Point3D:
 point_origin = Point3D(0, 0, 0)
 assert 0 == point_origin.x
 assert 0 == point_origin.y
+assert 0 == point_origin.z
 assert 0 == point_origin.distance_from_point(Point3D(0, 0, 0))
 assert 0.001 > abs(point_origin.distance_from_point(Point3D(1, 1, 1)) - 1.732051)
 assert 0.001 > abs(point_origin.distance_from_point(Point3D(-1, -1, -1)) - 1.732051)
 assert "Point3D(x=0, y=0, z=0)" == str(point_origin)
 
 point = Point3D(-2, 7, 4)
+assert -2 == point.x
+assert 7 == point.y
+assert 4 == point.z
 assert 0.001 > abs(point.distance_from_point(Point3D(0, 0, 0)) - 8.306624)
 assert 0.001 > abs(point.distance_from_point(Point3D(6, 3, 0)) - 9.797959)
-assert "Point3D(x=-2, y=7, z=4)"
+assert "Point3D(x=-2, y=7, z=4)" == str(point)
 
 assert point != point_origin
 assert point_origin == Point3D(0, 0, 0)
