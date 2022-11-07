@@ -131,7 +131,8 @@ Part 6 --- Country Catalogue Constructor
 ----------------------------------------
 
 Write the constructor (``__init__``) for the ``CountryCatalogue`` class. The constructor for the class is simple ---
-initialize the object with an attribute that is a reference to an empty list.
+initialize the object with an attribute assigned to a reference to an empty list. It is recommended to call the
+attribute ``catalogue``.
 
 
 Part 7 --- Private Find Method
