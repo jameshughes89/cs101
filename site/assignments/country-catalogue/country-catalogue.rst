@@ -136,6 +136,10 @@ Part 8 --- Contains
 Part 9 --- Add
 --------------
 
+Write a method ``add`` that takes a ``Country`` object as a parameter and adds the provided ``Country`` to the
+collection. In other words, append the provided ``Country`` to the ``CountryCatalogue`` object's attribute referencing
+a list. This method returns nothing. 
+
 
 Part 10 --- Remove
 ------------------
