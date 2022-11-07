@@ -160,9 +160,18 @@ an equivalent ``Country`` object exists within the collection, and ``False`` oth
 Part 9 --- Add
 --------------
 
+Write a method ``add`` that takes a ``Country`` object as a parameter and adds the provided ``Country`` to the
+collection. In other words, append the provided ``Country`` to the ``CountryCatalogue`` object's attribute referencing
+a list. This method returns nothing.
+
 
 Part 10 --- Remove
 ------------------
+
+Write a method ``remove`` that takes a ``Country`` object as a parameter and removes the first occurrence of an
+equivalent ``Country`` object from the ``CountryCatalogue``. This method returns a reference to the removed ``Country``
+object. If no equivalent ``Country`` object is found within the ``CountryCatalogue``, then the method will raise a
+``ValueError`` exception.
 
 
 Part 11 --- Largest Density
@@ -191,7 +200,7 @@ Part 16 --- Testing Country Catalogue Class
 
 
 Part 17 --- Putting it Together
-==============================
+===============================
 
 
 
