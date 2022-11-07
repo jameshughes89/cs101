@@ -216,6 +216,8 @@ Part 15 --- Equals, Repr, get item, and Length
 Part 16 --- Testing Country Catalogue Class
 -------------------------------------------
 
+To help ensure correctness, run the ``CountryCatalogueTest`` class and ensure all unit tests pass. If any of the tests
+fail, read which test failed and under which condition. The output of the tests will help guide your debugging.
 
 
 Part 17 --- Putting it Together
