@@ -129,7 +129,7 @@ Part 7 --- Private Find Method
 ------------------------------
 
 Write a method ``_find`` that takes a reference to a ``Country`` object and returns the index of the first occurrence of
-an equivalent country within the catalogue. If no matching ``Country`` exists, the method will return ``-1``.
+an equivalent ``Country`` within the catalogue. If no matching ``Country`` exists, the method will return ``-1``.
 
 This method is "private", which means that it should not be accessed/used except from inside the object. In Python,
 this "private" property is not enforced, but for methods or attributes that are intended to be "private", the convention
@@ -138,6 +138,9 @@ is to start the method name with an underscore (``_``), thus the name ``_find``.
 
 Part 8 --- Contains
 -------------------
+
+Write a method called ``contains`` that takes a reference to a ``Country`` object as a parameter and returns ``True`` if
+an equivalent ``Country`` object exists within the collection, and ``False`` otherwise.
 
 
 Part 9 --- Add
