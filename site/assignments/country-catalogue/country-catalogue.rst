@@ -152,6 +152,16 @@ Part 12 --- Smallest Density
 Part 13 --- Filter by Density
 -----------------------------
 
+Write a method ``filter_countries_by_population_density`` that takes a range of population density values as parameters
+and returns a new ``CountryCatalogue`` object with references to ``Country`` objects that fall within the specified
+population density range. The range specified will be :math:`[low, high)`; the ``Country`` objects with a population
+density greater-than or equal to the low and strictly less-than the high will be included in the filtered
+``CountryCatalogue``.
+
+For example, calling ``some_catalogue.filter_countries_by_population_density(200, 250)`` would return a new
+``CountryCatalogue`` containing references to all the ``Country`` objects within ``some_catalogue`` that have a
+population density :math:`\ge 200` and :math:`< 250`.
+
 
 Part 14 --- Most Populous Continent
 -----------------------------------
