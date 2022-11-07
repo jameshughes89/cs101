@@ -44,6 +44,9 @@ values passed as parameters to their respective attributes --- ``name``, ``conti
 Part 3 --- Population Density
 -----------------------------
 
+Write a method ``population_density`` that returns the population density of the ``Country`` object. The population
+density should be a float.
+
 
 Part 4 --- Equals and Repr
 --------------------------
