@@ -157,7 +157,7 @@ and returns a new ``CountryCatalogue`` object with references to ``Country`` obj
 population density range. The range specified will be :math:`[low, high)`; the ``Country`` objects with a population
 density greater-than or equal to the low and strictly less-than the high will be included in the filtered
 ``CountryCatalogue``. If no ``Country`` objects fall within the specified range, this method will return an empty
-``CountryCatalogue``. 
+``CountryCatalogue``.
 
 For example, calling ``some_catalogue.filter_countries_by_population_density(200, 250)`` would return a new
 ``CountryCatalogue`` containing references to all the ``Country`` objects within ``some_catalogue`` that have a
