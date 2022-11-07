@@ -131,6 +131,7 @@ complete the methods in any order they see fit. For example, the ``__len__`` mag
 be helpful when writing the other methods. This may motivate one to write it earlier.
 
 
+
 Part 6 --- Country Catalogue Constructor
 ----------------------------------------
 
@@ -142,29 +143,67 @@ attribute ``catalogue``.
 Part 7 --- Private Find Method
 ------------------------------
 
+Write a method ``_find`` that takes a reference to a ``Country`` object and returns the index of the first occurrence of
+an equivalent ``Country`` within the catalogue. If no matching ``Country`` exists, the method will return ``-1``.
+
+This method is "private", which means that it should not be accessed/used except from inside the object. In Python,
+this "private" property is not enforced, but for methods or attributes that are intended to be "private", the convention
+is to start the method name with an underscore (``_``), thus the name ``_find``.
+
 
 Part 8 --- Contains
 -------------------
+
+Write a method called ``contains`` that takes a reference to a ``Country`` object as a parameter and returns ``True`` if
+an equivalent ``Country`` object exists within the collection, and ``False`` otherwise.
 
 
 Part 9 --- Add
 --------------
 
+Write a method ``add`` that takes a ``Country`` object as a parameter and adds the provided ``Country`` to the
+collection. In other words, append the provided ``Country`` to the ``CountryCatalogue`` object's attribute referencing
+a list. This method returns nothing.
+
 
 Part 10 --- Remove
 ------------------
+
+Write a method ``remove`` that takes a ``Country`` object as a parameter and removes the first occurrence of an
+equivalent ``Country`` object from the ``CountryCatalogue``. This method returns a reference to the removed ``Country``
+object. If no equivalent ``Country`` object is found within the ``CountryCatalogue``, then the method will raise a
+``ValueError`` exception.
 
 
 Part 11 --- Largest Density
 ---------------------------
 
+Write a method ``country_with_largest_population_density`` that returns a reference to the ``Country`` object within the
+``CountryCatalogue`` that has the largest population density. If the ``CountryCatalogue`` is empty, this method will
+raise an ``IndexError`` exception.
+
 
 Part 12 --- Smallest Density
 ----------------------------
 
+Write a method ``country_with_smallest_population_density`` that returns a reference to the ``Country`` object within
+the ``CountryCatalogue`` that has the smallest population density. If the ``CountryCatalogue`` is empty, this method
+will raise an ``IndexError`` exception.
+
 
 Part 13 --- Filter by Density
 -----------------------------
+
+Write a method ``filter_countries_by_population_density`` that takes a range of population density values as parameters
+and returns a new ``CountryCatalogue`` object with references to ``Country`` objects that fall within the specified
+population density range. The range specified will be :math:`[low, high)`; the ``Country`` objects with a population
+density greater-than or equal to the low and strictly less-than the high will be included in the filtered
+``CountryCatalogue``. If no ``Country`` objects fall within the specified range, this method will return an empty
+``CountryCatalogue``.
+
+For example, calling ``some_catalogue.filter_countries_by_population_density(200, 250)`` would return a new
+``CountryCatalogue`` containing references to all the ``Country`` objects within ``some_catalogue`` that have a
+population density :math:`\ge 200` and :math:`< 250`.
 
 
 Part 14 --- Most Populous Continent
@@ -199,10 +238,12 @@ objects stored within the ``CountryCatalogue``.
 Part 16 --- Testing Country Catalogue Class
 -------------------------------------------
 
+To help ensure correctness, run the ``CountryCatalogueTest`` class and ensure all unit tests pass. If any of the tests
+fail, read which test failed and under which condition. The output of the tests will help guide your debugging.
 
 
 Part 17 --- Putting it Together
-==============================
+===============================
 
 
 
