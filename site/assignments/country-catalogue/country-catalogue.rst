@@ -47,6 +47,8 @@ You are provided with
 
     * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn4.py <asn4.py>` file
 
+* A data file called :download:`country_cata.csv <country_data.csv>` containing information about countries that will be used to populate the ``CountryCatalogue``
+
 
 .. warning::
 
