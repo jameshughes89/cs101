@@ -226,60 +226,7 @@ We're going to write a program that will use objects to store, search, remove, a
 .. Warning::
 
     The trick here is to really focus on the sub-problems. I have seen a lot of people on the previous assignments get overwhelmed and distracted by the bigger picture. It's not a bad idea to keep the big picture in mind, but here just focus on the small problems, one at at time. Everything will come together. 
-   
-Part 1
-======
 
-Make a Country Class. 
-
-**Properties/attributes** we want country objects to have are:
-
-* name: str
-* population: int
-* area: float
-* continent: str
-
-That's it. Those are the properties/attributes we want out country objects to have. Also, you don't have to worry about making them *private* here. If you do, great, if not, whatever. 
-
-We're going to write some **methods** for our country object. We'll have:
-
-* Constructor --- sets the instance's attributes. 
-* *Getter* Methods
-    * get_name
-    * get_population
-    * get_area
-    * get_continent
-* get_pop_density --- a method that calculates and returns the population density of a country (population divided by area)
-* *Setter* Method
-    * set_population
-* __repr__ --- generate a string representation of the country instance. 
-    "``name`` in ``continent``", so, for example: "China in Asia"
-
-Your class should look like this, but with the functions filled in:	
-   
-.. code-block:: python
-
-    class Country:
-   
-        def __init__(self, name, pop, area, continent):
-	   
-        def __repr__(self):
-	   
-        def set_population(self, pop):
-	   
-        def get_name(self):
-	   
-        def get_area(self):
-	   
-        def get_population(self):
-	   
-        def get_continent(self):
-       	
-        def get_pop_density(self):
-
-.. Warning::
-
-   Test that your Country objects work correctly. Test **THOROUGHLY**. Do **not** move on until you know everything here is working properly.
 
 Part 2
 ======
