@@ -144,9 +144,17 @@ Part 10 --- Remove
 Part 11 --- Largest Density
 ---------------------------
 
+Write a method ``country_with_largest_population_density`` that returns a reference to the ``Country`` object within the
+``CountryCatalogue`` that has the largest population density. If the ``CountryCatalogue`` is empty, this method will
+raise an ``IndexError`` exception.
+
 
 Part 12 --- Smallest Density
 ----------------------------
+
+Write a method ``country_with_smallest_population_density`` that returns a reference to the ``Country`` object within
+the ``CountryCatalogue`` that has the smallest population density. If the ``CountryCatalogue`` is empty, this method
+will raise an ``IndexError`` exception.
 
 
 Part 13 --- Filter by Density
