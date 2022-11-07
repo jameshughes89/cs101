@@ -4,14 +4,60 @@ Country Catalogue
 
 * **Worth**: 10%
 * **DUE**: December 5th at 11:55pm; submitted on MOODLE.
-* **Files**: TBD
+* **Files**: :download:`asn4.ipynb <asn4.ipynb>`/:download:`asn4.py <asn4.py>` and :download:`country_data.csv <country_data.csv>`
+
 
 Task
 ====
 
+The goal is to create a collection of ``Country`` objects. The collection, called a ``CountryCatalogue``, will provide
+functionality to store (add/remove) the ``Country`` objects in addition to making inquiries about the data in the
+collection.
+
+You will
+
+* Create a ``Country`` class to store details about a country
+* Create a ``CountryCatalogue`` class
+
+    * Provide a way to add and remove ``Country`` objects
+    * Search through the catalogue
+    * Ask questions about the data in the catalogue
+    * Filter data in the catalogue
+
+* Use the written classes to build a ``CountryCatalogue``
+* Read data from a file
+* Write data to a file
+
 
 Provided Files
 ==============
+
+You are provided with
+
+* A notebook file called :download:`asn4.ipynp <asn4.ipynb>` containing the starting point of the assignment
+
+    * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
+    * The notebook contains the start of the ``Country`` and ``CountryCatalogue`` classes
+    * The notebook contains unit tests for the ``Country`` and ``CountryCatalogue`` classes
+    * The notebook contains already written code that will make use of the classes you are to write
+    * The notebook also includes a special if statement ``if __name__ == "__main__":`` at the end
+
+        * This is included to help with marking and unit tests
+        * More details on this line are provided below
+
+    * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn4.py <asn4.py>` file
+
+* A data file called :download:`country_cata.csv <country_data.csv>` containing information about countries that will be used to populate the ``CountryCatalogue``
+
+
+.. warning::
+
+    Do not alter the function details in the provided .ipynb/.py files
+
+        * Do not change the name of the functions
+        * Do not remove the function description
+        * Do not remove or add to the parameter list
+
 
 
 Part 0 --- Read the Assignment
@@ -22,6 +68,11 @@ Read the assignment description in its entirety before starting.
 
 Part 1 --- Uploading Files to Colab
 ===================================
+
+After downloading the notebook and data files above, you will need to upload them to Colab to get started. See the
+respective section from assignment 1 for an example on how to do this. I recommend saving a copy of this notebook file
+and csv data file to your Google drive and then work with that one. You don't have to, but you will have to re-upload
+the project every time you want to work on it.
 
 
 Country Class
@@ -178,33 +229,6 @@ Assignment FAQ
 
 
 
-
-.. Warning::
-
-    On this assignment **you are allowed to work with others**. Peer learning and peer teaching are some of the best possible things you can do when learning something new. So feel free to work together. I don't even care if your code is identical. **BUT** be warned. You better understand what's going on. If not, you **will** fail the exam and probably the class. Don't be that person. 
-
-* Learning Objectives
-    * Starting from scratch 
-    * Interpreting requirements correctly
-    * File IO
-    * Strings
-    * Building objects
-    * Working with objects
-    * Lists
-    * Complex data structures
-    * Generalizing rules 
-    * Testing code
-
-.. image:: world.png
-
-Now for another more engineering-ie assignment where we will build something. In fact, we're going to build our own objects from scratch. This may seem intimidating, but in reality, coding this way can often really simplify all of your problems. It's all about nice *encapsulation*. 
-
-We're going to write a program that will use objects to store, search, remove, and filter data. Specifically, we're going to keep a record of some country details. 
-
-.. Warning::
-
-    The trick here is to really focus on the sub-problems. I have seen a lot of people on the previous assignments get overwhelmed and distracted by the bigger picture. It's not a bad idea to keep the big picture in mind, but here just focus on the small problems, one at at time. Everything will come together. 
-   
 Part 1
 ======
 
