@@ -180,15 +180,20 @@ will be considered equal if their attributes (list of ``Country`` objects) are e
 Write the ``__repr__`` magic method for the ``CountryCatalogue`` class. For our needs, the string should be an aggregate
 of each individual ``Country`` object's string representation, each on their own line. For example
 
-.. code-block:: text
+    .. code-block:: text
 
-    Country(name=Canada, continent=North America, population=34207000, area=9976140.00)
-    Country(name=China, continent=Asia, population=1339190000, area=9596960.00)
-    Country(name=Egypt, continent=Africa, population=93383574, area=1000000.00)
-    Country(name=France, continent=Europe, population=64668129, area=541656.76)
+        Country(name=Canada, continent=North America, population=34207000, area=9976140.00)
+        Country(name=China, continent=Asia, population=1339190000, area=9596960.00)
+        Country(name=Egypt, continent=Africa, population=93383574, area=1000000.00)
+        Country(name=France, continent=Europe, population=64668129, area=541656.76)
 
 
+Write the ``__getitem__`` magic method for the ``CountryCatalogue`` class. This method takes an index as a parameter and
+returns a reference to the ``Country`` object at ths specified index. For more details on this method,
+`see the relevant documentation <https://docs.python.org/3/reference/datamodel.html#object.__getitem__>`_.
 
+Write the ``__len__`` magic method for the ``CountryCatalogue`` class. This method returns the number of ``Country``
+objects stored within the ``CountryCatalogue``.
 
 
 Part 16 --- Testing Country Catalogue Class
