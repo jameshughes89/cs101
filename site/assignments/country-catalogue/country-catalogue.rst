@@ -126,6 +126,10 @@ The ``CountryCatalogue`` class holds reference to a collection of ``Country`` ob
 The ``CountryCatalogue`` is effectively a list keeping track of the ``Country`` objects with additional proprietary
 methods. Details on the functionality is provided below.
 
+Although the description of this class is provided with an order and each part is numbered, one should feel free to
+complete the methods in any order they see fit. For example, the ``__len__`` magic method, which is described last, may
+be helpful when writing the other methods. This may motivate one to write it earlier. 
+
 
 Part 6 --- Country Catalogue Constructor
 ----------------------------------------
