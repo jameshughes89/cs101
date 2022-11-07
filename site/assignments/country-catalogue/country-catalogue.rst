@@ -198,24 +198,6 @@ Assignment FAQ
 
 
 
-.. Warning::
-
-    On this assignment **you are allowed to work with others**. Peer learning and peer teaching are some of the best possible things you can do when learning something new. So feel free to work together. I don't even care if your code is identical. **BUT** be warned. You better understand what's going on. If not, you **will** fail the exam and probably the class. Don't be that person. 
-
-* Learning Objectives
-    * Starting from scratch 
-    * Interpreting requirements correctly
-    * File IO
-    * Strings
-    * Building objects
-    * Working with objects
-    * Lists
-    * Complex data structures
-    * Generalizing rules 
-    * Testing code
-
-.. image:: world.png
-
 Now for another more engineering-ie assignment where we will build something. In fact, we're going to build our own objects from scratch. This may seem intimidating, but in reality, coding this way can often really simplify all of your problems. It's all about nice *encapsulation*. 
 
 We're going to write a program that will use objects to store, search, remove, and filter data. Specifically, we're going to keep a record of some country details. 
