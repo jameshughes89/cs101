@@ -87,7 +87,7 @@ generating a nice, human readable string representation of the ``Country`` objec
 Part 2 --- Country Constructor
 ------------------------------
 
-Write the constructor (``__init__``) for the ``Country`` object. The constructor will take a country ``name``, which
+Write the constructor (``__init__``) for the ``Country`` class. The constructor will take a country ``name``, which
 ``continent`` it's on, its ``population``, and the total land ``area`` as parameters. The constructor will assign the
 values passed as parameters to their respective attributes --- ``name``, ``continent``, ``population, and ``area``.
 
@@ -124,11 +124,14 @@ The ``CountryCatalogue`` class holds reference to a collection of ``Country`` ob
 ``CountryCatalogue`` provides some functionality to ask questions about the collection of data.
 
 The ``CountryCatalogue`` is effectively a list keeping track of the ``Country`` objects with additional proprietary
-methods. Details on the functionality is provided below. 
+methods. Details on the functionality is provided below.
 
 
 Part 6 --- Country Catalogue Constructor
 ----------------------------------------
+
+Write the constructor (``__init__``) for the ``CountryCatalogue`` class. The constructor for the class is simple ---
+initialize the object with an attribute that is a reference to an empty list.
 
 
 Part 7 --- Private Find Method
