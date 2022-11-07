@@ -84,8 +84,8 @@ Part 14 --- Most Populous Continent
 -----------------------------------
 
 
-Part 15 --- Equals, Repr, and Length
-------------------------------------
+Part 15 --- Equals, Repr, get item, and Length
+----------------------------------------------
 
 
 Part 16 --- Testing Country Catalogue Class
