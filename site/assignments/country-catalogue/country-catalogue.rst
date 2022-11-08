@@ -131,7 +131,6 @@ complete the methods in any order they see fit. For example, the ``__len__`` mag
 be helpful when writing the other methods. This may motivate one to write it earlier.
 
 
-
 Part 6 --- Country Catalogue Constructor
 ----------------------------------------
 
@@ -269,7 +268,7 @@ Unlike previous assignments, no assertion tests are provided. Instead, to help e
 the provided **unittests**. There is no guarantee that if your code passes all the tests that you will be correct, but
 it certainly helps provide peace of mind that things are working as they should.
 
-There are no unittests for the *main* portion of the assignment discussed in the previous part. 
+There are no unittests for the *main* portion of the assignment discussed in the previous part.
 
 Realistically you should have been running tests after you complete each of the above parts, but this part is here to
 remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
