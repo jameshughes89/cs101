@@ -208,6 +208,19 @@ population density :math:`\ge 200` and :math:`< 250`.
 Part 14 --- Most Populous Continent
 -----------------------------------
 
+Write a method ``most_populous_continent`` that returns the name of the continent (as a string) that has the largest
+population based on information within the ``CountryCatalogue``. If the the ``CountryCatalogue`` is empty, this method
+raises an ``IndexError`` exception.
+
+This method will only consider the ``Country`` objects contained within the ``CountryCatalogue``. In other words,
+although Asia has a large population, if no ``Country`` objects from Asia were included in the ``CountryCatalogue``,
+then those populations are not considered in the calculation.
+
+Further, this method should work on any arbitrary planet within our universe that may have unusual continent names (do
+not hard code any details about continents based on Earth).
+
+**Hint:** Consider using a dictionary within this method to help with determining each continent's population.
+
 
 Part 15 --- Equals, Repr, get item, and Length
 ----------------------------------------------
