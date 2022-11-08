@@ -131,7 +131,6 @@ complete the methods in any order they see fit. For example, the ``__len__`` mag
 be helpful when writing the other methods. This may motivate one to write it earlier.
 
 
-
 Part 6 --- Country Catalogue Constructor
 ----------------------------------------
 
@@ -259,7 +258,16 @@ fail, read which test failed and under which condition. The output of the tests 
 Part 17 --- Putting it Together
 ===============================
 
+The *main* portion of the code that was provided is what *puts everything together*. This code
 
+* Opens a file and loads the data into a ``CountryCatalogue``
+* Makes changes to the contents of the ``CountryCatalogue``
+* Asks questions of the data in the ``CountryCatalogue``
+* Filters the ``CountryCatalogue`` based on population density
+* Saves the filtered data to a file
+
+If everything was implemented correctly, this code should run with no issue. Although no unit tests are provided for
+this portion of code, you can likely determine if everything worked correctly by checking the output of the program.
 
 
 Part 18 --- Testing
@@ -269,7 +277,7 @@ Unlike previous assignments, no assertion tests are provided. Instead, to help e
 the provided **unittests**. There is no guarantee that if your code passes all the tests that you will be correct, but
 it certainly helps provide peace of mind that things are working as they should.
 
-There are no unittests for the ``asn4.py``.
+There are no unittests for the *main* portion of the assignment discussed in the previous part.
 
 Realistically you should have been running tests after you complete each of the above parts, but this part is here to
 remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
