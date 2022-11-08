@@ -116,6 +116,13 @@ Part 5 --- Testing Country Class
 To help ensure correctness, run the ``CountryTest`` class and ensure all unit tests pass. If any of the tests fail, read
 which test failed and under which condition. The output of the tests will help guide your debugging.
 
+To run the tests, run the cell in the notebook containing the following
+
+    .. code-block:: python
+
+        # Run this cell to run all unit tests
+        unittest.main(argv=[''], verbosity=2, exit=False)
+
 
 Country Catalogue Class
 =======================
@@ -255,6 +262,13 @@ Part 16 --- Testing Country Catalogue Class
 To help ensure correctness, run the ``CountryCatalogueTest`` class and ensure all unit tests pass. If any of the tests
 fail, read which test failed and under which condition. The output of the tests will help guide your debugging.
 
+To run the tests, run the cell in the notebook containing the following
+
+    .. code-block:: python
+
+        # Run this cell to run all unit tests
+        unittest.main(argv=[''], verbosity=2, exit=False)
+
 
 Part 17 --- Putting it Together
 ===============================
@@ -274,6 +288,13 @@ There are no unittests for the ``asn4.py``.
 Realistically you should have been running tests after you complete each of the above parts, but this part is here to
 remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
 for the marker to return your assignment before you have an idea of if it works correctly.
+
+To run the tests, run the cell in the notebook containing the following
+
+    .. code-block:: python
+
+        # Run this cell to run all unit tests
+        unittest.main(argv=[''], verbosity=2, exit=False)
 
 
 Some Hints
