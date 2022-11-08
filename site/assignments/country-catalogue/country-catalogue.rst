@@ -258,7 +258,16 @@ fail, read which test failed and under which condition. The output of the tests 
 Part 17 --- Putting it Together
 ===============================
 
+The *main* portion of the code that was provided is what *puts everything together*. This code
 
+* Opens a file and loads the data into a ``CountryCatalogue``
+* Makes changes to the contents of the ``CountryCatalogue``
+* Asks questions of the data in the ``CountryCatalogue``
+* Filters the ``CountryCatalogue`` based on population density
+* Saves the filtered data to a file
+
+If everything was implemented correctly, this code should run with no issue. Although no unit tests are provided for
+this portion of code, you can likely determine if everything worked correctly by checking the output of the program.
 
 
 Part 18 --- Testing
