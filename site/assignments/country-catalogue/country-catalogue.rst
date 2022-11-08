@@ -311,6 +311,11 @@ Below is a list of both *quantitative* and *qualitative* things we will look for
 What to Submit to Moodle
 ========================
 
+* Make sure your **NAME** and **STUDENT NUMBER** appear in a comment at the top of the program
+* Submit your version of ``asn4.py`` to Moodle
+
+    * Do **not** submit the .ipynb file
+    * To get the ``asn4.py`` file from Colab, see the example image in Assignment 1
 
 
 .. warning::
