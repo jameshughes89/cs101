@@ -133,7 +133,6 @@ Writing Unit Tests
             self.assertEqual("Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)", str(sphere))
 
 
-
 * Above are additional tests for the magic methods ``__eq__`` and ``__repr__``
 * For two of the ``__eq__`` methods, you will see the setup is a little more involved as we need two ``Sphere`` objects for the test
 * You will also notice the use of ``assertNotEqual``, which is just another type of test
