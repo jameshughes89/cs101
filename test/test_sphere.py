@@ -98,7 +98,7 @@ class SphereTest(unittest.TestCase):
 
     def test_equal_on_sphere_and_string_returns_false(self):
         sphere = Sphere(Point3D(1, 2, 3), 4)
-        self.assertNotEqual("Sphere(x=1, y=2, z=3, radius=4)", sphere)
+        self.assertNotEqual("Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)", sphere)
 
     def test_repr_arbitrary_sphere_returns_correct_string(self):
         sphere = Sphere(Point3D(1, 2, 3), 4)
