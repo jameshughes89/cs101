@@ -130,7 +130,8 @@ Writing Unit Tests
 
         def test_repr_arbitrary_sphere_returns_correct_string(self):
             sphere = Sphere(Point3D(1, 2, 3), 4)
-            self.assertEqual("Sphere(Point3D(1, 2, 3), 4)", str(sphere))
+            self.assertEqual("Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)", str(sphere))
+
 
 
 * Above are additional tests for the magic methods ``__eq__`` and ``__repr__``
