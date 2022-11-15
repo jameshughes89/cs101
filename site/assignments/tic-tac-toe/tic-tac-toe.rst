@@ -151,7 +151,7 @@ Once a move is provided, parsed, and validated, the move can then be applied.
 Write a function ``apply_move`` that takes an already validated move tuple, the current game board, and a string of the
 current player's symbol (``"X"`` or ``"O"``), and returns a new game board with the player's move applied. For example,
 if one called ``apply_move((0, 1), [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]], "X")``, the function would
-return the new list of lists of strings ``[["X", "X", " "], [" ", " ", "O"], [" ", " ", " "]]``.
+return the new list of lists of strings ``[["X", " ", " "], ["X", " ", "O"], [" ", " ", " "]]``.
 
 This function should **not** have any side effect --- the game board passed as a parameter to the function should
 **not** be altered in any way. Instead, a copy of the game board is to be created that is then modified and returned by
