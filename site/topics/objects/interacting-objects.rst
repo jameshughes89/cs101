@@ -133,7 +133,7 @@ Methods
             :return: A string representation of the Point3D
             :rtype: string
             """
-            return f"Point3D({self.x}, {self.y}, {self.z})"
+            return f"Point3D(x={self.x}, y={self.y}, z={self.z})"
 
 
 * In the above ``__eq__`` method, equality for ``Point3D`` objects will be if all their attributes match
@@ -156,12 +156,15 @@ Testing
     assert 0 == point_origin.distance_from_point(Point3D(0, 0, 0))
     assert 0.001 > abs(point_origin.distance_from_point(Point3D(1, 1, 1)) - 1.732051)
     assert 0.001 > abs(point_origin.distance_from_point(Point3D(-1, -1, -1)) - 1.732051)
-    assert "Point3D(0, 0, 0)" == str(point_origin)
+    assert "Point3D(x=0, y=0, z=0)" == str(point_origin)
 
     point = Point3D(-2, 7, 4)
+    assert -2 == point.x
+    assert 7 == point.y
+    assert 4 == point.z
     assert 0.001 > abs(point.distance_from_point(Point3D(0, 0, 0)) - 8.306624)
     assert 0.001 > abs(point.distance_from_point(Point3D(6, 3, 0)) - 9.797959)
-    assert "Point3D(-2, 7, 4)"
+    assert "Point3D(x=-2, y=7, z=4)" == str(point)
 
     assert point != point_origin
     assert point_origin == Point3D(0, 0, 0)
