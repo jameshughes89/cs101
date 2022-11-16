@@ -89,7 +89,7 @@ Part 2 --- Country Constructor
 
 Write the constructor (``__init__``) for the ``Country`` class. The constructor will take a country ``name``, which
 ``continent`` it's on, its ``population``, and the total land ``area`` as parameters. The constructor will assign the
-values passed as parameters to their respective attributes --- ``name``, ``continent``, ``population, and ``area``.
+values passed as parameters to their respective attributes --- ``name``, ``continent``, ``population``, and ``area``.
 
 
 Part 3 --- Population Density
