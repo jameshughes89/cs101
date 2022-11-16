@@ -70,6 +70,12 @@ Before Kattis
     * Make instances of the class and write ``assert`` tests to verify correctness
 
 
+#. Create unittest classes for each of the above classes
+
+    * Write tests for each of the methods in each class
+    * Ensure all tests pass
+    * Run the tests with ``unittest.main(argv=[''], verbosity=2, exit=False)``
+
 Kattis Problems
 ===============
 
