@@ -73,8 +73,13 @@ Before Kattis
 #. Create unittest classes for each of the above classes
 
     * Write tests for each of the methods in each class
-    * Ensure all tests pass
+    * Be sure to reference the :doc:`unittest topic </topics/testing/unittest>`
+    * You may find the ``Circle`` class' :download:`unittests helpful <../../../test/test_circle.py>`
+
+        * Be sure to remove the ``from src.circle import Circle`` line
+
     * Run the tests with ``unittest.main(argv=[''], verbosity=2, exit=False)``
+    * Ensure all tests pass
 
 Kattis Problems
 ===============
