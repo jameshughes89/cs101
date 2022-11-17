@@ -37,31 +37,15 @@ class CircleTest(unittest.TestCase):
         circle_10 = Circle(10)
         self.assertAlmostEqual(62.831853, circle_10.circumference(), 5)
 
-    def test_setting_radius_to_20_updates_radius_to_20(self):
-        self.circle_0.radius = 20
-        self.assertEqual(20, self.circle_0.radius)
-
-    def test_setting_radius_to_20_returns_correct_diameter(self):
-        self.circle_0.radius = 20
-        self.assertEqual(40, self.circle_0.diameter())
-
-    def test_setting_radius_to_20_returns_correct_area(self):
-        self.circle_0.radius = 20
-        self.assertAlmostEqual(1256.637061, self.circle_0.area(), 5)
-
-    def test_setting_radius_to_20_returns_correct_circumference(self):
-        self.circle_0.radius = 20
-        self.assertAlmostEqual(125.6637061, self.circle_0.circumference(), 5)
-
     def test_equals_on_equal_circles_returns_true(self):
         circle_a = Circle(1)
         circle_b = Circle(1)
-        self.assertTrue(circle_a == circle_b)
+        self.assertEqual(circle_a, circle_b)
 
     def test_equals_on_not_equal_circles_returns_false(self):
         circle_a = Circle(1)
         circle_b = Circle(2)
-        self.assertFalse(circle_a == circle_b)
+        self.assertNotEqual(circle_a, circle_b)
 
     def test_equal_on_circle_and_string_returns_false(self):
         circle = Circle(1)
