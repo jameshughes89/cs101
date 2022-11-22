@@ -154,7 +154,7 @@ Course Class
 
     * Like the attribute ``_students``, the method ``_find`` is not really indented to be used outside the class, thus, by convention, it starts with an underscore
 
-* ``_find`` will me a method that performs the linear search on the list
+* ``_find`` will be a method that performs the linear search on the list
 
     * If the specified ``Student`` is found within the ``_students`` list, return the index of where it is
     * If the ``Student`` is *not* found, return a sentinel value --- ``-1``
