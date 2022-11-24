@@ -33,7 +33,10 @@ Pre Lab Exercises
 
     * 6
 
-#. Write assertion tests for each of your functions above
+#. Write *unit tests* for the class
+
+    * Writing tests for collections can be difficult, so do your best
+    * Use the `CountryCatalogueTest` class as an example from assignment 4.
 
 
 Before Kattis
