@@ -70,7 +70,7 @@ Selection Sort
 .. admonition:: Activity
     :class: activity
 
-    Perform a insertion sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
+    Perform a selection sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
     and sorted list at each step of the algorithm.
 
 
@@ -135,8 +135,8 @@ Insertion Sort
     * Elements are inserted into their proper relative location to the elements already within the sorted collection
     * Any subsequent insertion cannot disrupt the ordering of the whole list if it is being inserted in its proper location
 
-        * For example, consider the list `[1, 4, 7, 9]`
-        * If we need to insert the number `6`, it obviously goes between the `4` and `7` since ``4 < 6 < 7`` --- `[1, 4, 6, 7, 9]`
+        * For example, consider the list ``[1, 4, 7, 9]``
+        * If we need to insert the number ``6``, it obviously goes between the ``4`` and ``7`` since ``4 < 6 < 7`` --- ``[1, 4, 6, 7, 9]``
         * The order of the elements ``1`` and ``4`` remain unchanged, and similarly with ``7`` and ``9``
 
 
@@ -144,7 +144,7 @@ Insertion Sort
 .. admonition:: Activity
     :class: activity
 
-    Perform a selection sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
+    Perform a insertion sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
     and sorted list at each step of the algorithm.
 
 
