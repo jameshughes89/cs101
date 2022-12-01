@@ -30,15 +30,15 @@ if __name__ == "__main__":
         packages=find_packages(),
         install_requires=[
             "black[jupyter]==22.10.0",
-            "flake8==5.0.4",
-            "flake8-black==0.3.3",
-            "flake8-isort==5.0.0",
+            "flake8==6.0.0",
+            "flake8-black==0.3.5",
+            "flake8-isort==5.0.3",
             "isort==5.10.1",
             "mdformat==0.7.16",
             "mdformat-gfm==0.3.5",
             "mdformat-black==0.1.1",
             "sphinx==5.3.0",
-            "sphinx-rtd-theme==1.0.0",
+            "sphinx-rtd-theme==1.1.1",
         ],
         entry_points={
             "console_scripts": [
