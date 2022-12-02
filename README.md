@@ -31,7 +31,7 @@ SETUPTOOLS_ENABLE_FEATURES="legacy-editable" pip install --editable .
 ## Bash
 
 ```sh
-python3.10 -m venv --clear --prompt cs101 venv
+python3.11 -m venv --clear --prompt cs101 venv
 . venv/bin/activate
 pip install --upgrade pip setuptools wheel
 SETUPTOOLS_ENABLE_FEATURES="legacy-editable" pip install --editable .
