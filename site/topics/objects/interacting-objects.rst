@@ -31,9 +31,7 @@ Point3D Class
 
 * The class will also have a few methods, including some that will replace functionality within the ``Sphere`` class
 
-    * A method for measuring the ``Point3D``\s distance from the origin
     * A method for measuring the distance from another ``Point3D`` object
-    * A method for finding the midpoint between two points
     * A method for checking if two ``Point3D`` objects are *equal*
     * A method for generating a nice, human readable string representation of the object
 
@@ -75,6 +73,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Point3D:
 
         # init and/or other methods not shown for brevity
@@ -98,6 +99,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Point3D:
 
@@ -129,7 +133,7 @@ Methods
             :return: A string representation of the Point3D
             :rtype: string
             """
-            return f"Point3D({self.x}, {self.y}, {self.z})"
+            return f"Point3D(x={self.x}, y={self.y}, z={self.z})"
 
 
 * In the above ``__eq__`` method, equality for ``Point3D`` objects will be if all their attributes match
@@ -148,21 +152,19 @@ Testing
     point_origin = Point3D(0, 0, 0)
     assert 0 == point_origin.x
     assert 0 == point_origin.y
-    assert 0 == point_origin.distance_from_origin()
+    assert 0 == point_origin.z
     assert 0 == point_origin.distance_from_point(Point3D(0, 0, 0))
     assert 0.001 > abs(point_origin.distance_from_point(Point3D(1, 1, 1)) - 1.732051)
     assert 0.001 > abs(point_origin.distance_from_point(Point3D(-1, -1, -1)) - 1.732051)
-    assert Point3D(1, 1, 1) == point_origin.find_midpoint(Point3D(2, 2, 2))
-    assert Point3D(-1, -1, -1) == point_origin.find_midpoint(Point3D(-2, -2, -2))
-    assert Point3D(0, 0, 0) == point_origin.find_midpoint(Point3D(0, 0, 0))
-    assert "Point3D(0, 0, 0)" == str(point_origin)
+    assert "Point3D(x=0, y=0, z=0)" == str(point_origin)
 
     point = Point3D(-2, 7, 4)
-    assert 0.001 > abs(point.distance_from_origin() - 8.306624)
+    assert -2 == point.x
+    assert 7 == point.y
+    assert 4 == point.z
     assert 0.001 > abs(point.distance_from_point(Point3D(0, 0, 0)) - 8.306624)
     assert 0.001 > abs(point.distance_from_point(Point3D(6, 3, 0)) - 9.797959)
-    assert Point3D(5, 5.5, 3) == point.find_midpoint(Point3D(12, 4, 2))
-    assert "Point3D(-2, 7, 4)"
+    assert "Point3D(x=-2, y=7, z=4)" == str(point)
 
     assert point != point_origin
     assert point_origin == Point3D(0, 0, 0)
@@ -213,6 +215,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -231,6 +236,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 
@@ -254,6 +262,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 
@@ -294,6 +305,9 @@ Methods
 .. code-block:: python
     :linenos:
 
+    import math
+
+
     class Sphere:
 
         # init and/or other methods not shown for brevity
@@ -310,6 +324,9 @@ Methods
 
 .. code-block:: python
     :linenos:
+
+    import math
+
 
     class Sphere:
 

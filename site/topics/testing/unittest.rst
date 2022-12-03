@@ -67,12 +67,12 @@ Writing Unit Tests
     class SphereTest(unittest.TestCase):
 
         def test_sphere_centre_point_returns_correct_point3D(self):
-            sphere = Sphere(Point3D(0, 0, 0), 1)
-            self.assertEqual(Point3D(0, 0, 0), sphere.centre_point)
+            sphere = Sphere(Point3D(3, 2, 1), 11)
+            self.assertEqual(Point3D(3, 2, 1), sphere.centre_point)
 
         def test_sphere_radius_returns_correct_radius(self):
-            sphere = Sphere(Point3D(0, 0, 0), 1)
-            self.assertEqual(1, sphere.radius)
+            sphere = Sphere(Point3D(3, 2, 1), 11)
+            self.assertEqual(11, sphere.radius)
 
 
 * Above are two tests confirming the correctness of the constructor and the assigning of the ``Sphere`` class' attributes
@@ -126,11 +126,11 @@ Writing Unit Tests
 
         def test_equal_on_sphere_and_string_returns_false(self):
             sphere = Sphere(Point3D(1, 2, 3), 4)
-            self.assertNotEqual("Sphere(Point3D(1, 2, 3), 4)", sphere)
+            self.assertNotEqual("Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)", sphere)
 
         def test_repr_arbitrary_sphere_returns_correct_string(self):
             sphere = Sphere(Point3D(1, 2, 3), 4)
-            self.assertEqual("Sphere(Point3D(1, 2, 3), 4)", str(sphere))
+            self.assertEqual("Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)", str(sphere))
 
 
 * Above are additional tests for the magic methods ``__eq__`` and ``__repr__``

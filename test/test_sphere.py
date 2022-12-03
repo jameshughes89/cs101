@@ -6,12 +6,12 @@ from src.sphere import Sphere
 
 class SphereTest(unittest.TestCase):
     def test_sphere_centre_point_returns_correct_point3D(self):
-        sphere = Sphere(Point3D(0, 0, 0), 1)
-        self.assertEqual(Point3D(0, 0, 0), sphere.centre_point)
+        sphere = Sphere(Point3D(3, 2, 1), 11)
+        self.assertEqual(Point3D(3, 2, 1), sphere.centre_point)
 
     def test_sphere_radius_returns_correct_radius(self):
-        sphere = Sphere(Point3D(0, 0, 0), 1)
-        self.assertEqual(1, sphere.radius)
+        sphere = Sphere(Point3D(3, 2, 1), 11)
+        self.assertEqual(11, sphere.radius)
 
     def test_diameter_various_spheres_returns_correct_diameter(self):
         cases = [
@@ -98,7 +98,7 @@ class SphereTest(unittest.TestCase):
 
     def test_equal_on_sphere_and_string_returns_false(self):
         sphere = Sphere(Point3D(1, 2, 3), 4)
-        self.assertNotEqual("Sphere(x=1, y=2, z=3, radius=4)", sphere)
+        self.assertNotEqual("Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)", sphere)
 
     def test_repr_arbitrary_sphere_returns_correct_string(self):
         sphere = Sphere(Point3D(1, 2, 3), 4)

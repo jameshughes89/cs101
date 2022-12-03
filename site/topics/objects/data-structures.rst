@@ -117,7 +117,7 @@ Course Class
 
 
 * Above is the constructor for the class
-* The only two attrivutes the class has are ``course_name`` and ``_students``
+* The only two attributes the class has are ``course_name`` and ``_students``
 * Notice how the ``Students`` attribute starts with an underscore ``_``
 * We don't really want to access the list of ``Student`` objects directly
 * Instead, to give us more control over how the list is used, we want to add and remove ``Students`` through the methods we write in the class
@@ -154,7 +154,7 @@ Course Class
 
     * Like the attribute ``_students``, the method ``_find`` is not really indented to be used outside the class, thus, by convention, it starts with an underscore
 
-* ``_find`` will me a method that performs the linear search on the list
+* ``_find`` will be a method that performs the linear search on the list
 
     * If the specified ``Student`` is found within the ``_students`` list, return the index of where it is
     * If the ``Student`` is *not* found, return a sentinel value --- ``-1``
