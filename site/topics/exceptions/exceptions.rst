@@ -10,7 +10,7 @@ Exceptions
     ValueError: invalid literal for int() with base 10: 'hello'
 
 
-* In the above example, when we tried to convert the string ``hello"`` to an integer, Python *raised* an exception
+* In the above example, when we tried to convert the string ``"hello"`` to an integer, Python *raised* an exception
 
 .. code-block:: python
 
