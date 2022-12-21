@@ -4,7 +4,7 @@ General Assignment Frequently Asked Questions (FAQ)
 
 * I don't know how to do *X*
 
-    * This is typical and sometimes intentional
+    * This is typical and sometimes intentional as independent wording is critically important
     * Go to `google.ca <https://www.google.ca>`_ and type in *X*
     * This is not to dismiss your question --- it's how experienced programmers figure out how to do *X*
 
