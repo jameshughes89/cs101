@@ -61,15 +61,6 @@ General Assignment Frequently Asked Questions (FAQ)
 * Can I work with a friend?
 
     * No
-    * This can be a little tricky to navigate since high-level discussions among students about ideas is fine
-
-        * But sitting down and working together is not
-
-    * Additionally, using Google to help find answers to your questions is encouraged
-
-        * But finding a solution and copying it is not
-
-    * You have been taught how to not cheat when you were younger --- use your best judgement
 
 
 * If the deadline is 11:55pm and I submit it shortly after that, will it still get marked?
