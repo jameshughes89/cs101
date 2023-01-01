@@ -19,7 +19,6 @@ Dr. James Hughes (Section 11)
 
 * jhughes at stfx.ca
 * Annex 20B
-* `@Modsurski <https://twitter.com/Modsurski>`_
 * `YouTube <https://www.youtube.com/channel/UCIruexBZJaawh_9WF_vjTPg>`_
 
 
