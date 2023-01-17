@@ -77,10 +77,10 @@ div.highlight div.mac-header span.dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.1);
+/*   background: rgba(0,0,0,0.1); */
   margin: 0 4px 0 0;
 }
-div.highlight:hover div.mac-header span.dot.red {
+/* div.highlight:hover div.mac-header span.dot.red {
   background: rgb(255,86,80);
 }
 div.highlight:hover div.mac-header span.dot.yellow {
@@ -88,7 +88,7 @@ div.highlight:hover div.mac-header span.dot.yellow {
 }
 div.highlight:hover div.mac-header span.dot.green {
   background: rgb(41,193,68);
-}
+} */
 div.highlight div.mac-header span.copy {
   position: absolute;
   top: 0;
