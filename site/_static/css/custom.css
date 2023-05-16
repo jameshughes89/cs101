@@ -1,51 +1,109 @@
-/*
-    Title and background colors for the class activity.
-*/
-.rst-content .activity .admonition-title {
-    background: #5594ca
-}
- 
-.rst-content .activity {
-    background: #c5dfff
+/* ===== Admonition ===== */
+
+.rst-content .admonition {
+    border-radius: 6px;
 }
 
-/*
-    Title and background colors for the class note.
-    By default notes already has a template.
-    Uncomment to modify it.
-*/
-/* .rst-content .note .admonition-title {
-    background: #5594ca
+.rst-content .admonition .admonition-title {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
- 
-.rst-content .note {
-    background: #c5dfff
+
+.rst-content .admonition.note {
+    background: linear-gradient(to bottom right, rgba(59,124,221,0.3), rgba(30,124,221,0.15));
+}
+
+.rst-content .admonition.note .admonition-title {
+    background: linear-gradient(to bottom right, rgba(23,90,180,0.3), rgba(30,124,221,0.3));
+}
+
+.rst-content .admonition.activity {
+    background: linear-gradient(to bottom right, rgba(255,185,47,0.3), rgba(255,142,38,0.15));
+}
+
+.rst-content .admonition.activity .admonition-title {
+    background: linear-gradient(to bottom right, rgba(243,113,33,0.3), rgba(255,142,38,0.3));
+}
+
+.rst-content .admonition.example {
+  background: linear-gradient(to bottom right, rgba(33, 138, 127, 0.3), rgba(33, 138, 127, 0.15));
+}
+
+.rst-content .admonition.example .admonition-title {
+  background: linear-gradient(to bottom right, rgba(17, 138, 126, 0.3), rgba(25, 136, 125, 0.3));
+}
+
+.rst-content .admonition.warning {
+  background: linear-gradient(to bottom right, rgba(255, 47, 75, 0.3), rgba(255, 47, 75, 0.15));
+}
+
+.rst-content .admonition.warning .admonition-title {
+  background: linear-gradient(to bottom right, rgba(247, 78, 100, 0.3), rgba(245, 101, 120, 0.3));
+}
+
+.rst-content .admonition.important {
+  background: linear-gradient(to bottom right, rgba(117, 92, 187, 0.3), rgba(117, 92, 187, 0.15));
+}
+
+.rst-content .admonition.important .admonition-title {
+  background: linear-gradient(to bottom right, rgba(98, 71, 170, 0.3), rgba(163, 146, 209, 0.3));
+}
+
+/* ===== Code ===== */
+
+.rst-content div[class^=highlight]{
+  border: none;
+}
+
+
+div.highlight{
+  border: none;
+  background: rgba(27,31,35,.05);
+  border-radius: 6px;
+}
+.rst-content {
+  overflow-wrap: break-word;
+}
+div.highlight {
+  background: linear-gradient(to bottom right, rgb(242,242,242), rgb(236,236,236));
+}
+div.highlight div.mac-header {
+  display: flex;
+  position: relative;
+  padding: 9px 0 9px 12px;
+  background: rgb(232,232,232);
+}
+div.highlight div.mac-header span.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+/*   background: rgba(0,0,0,0.1); */
+  margin: 0 4px 0 0;
+}
+/* div.highlight:hover div.mac-header span.dot.red {
+  background: rgb(255,86,80);
+}
+div.highlight:hover div.mac-header span.dot.yellow {
+  background: rgb(255,181,60);
+}
+div.highlight:hover div.mac-header span.dot.green {
+  background: rgb(41,193,68);
 } */
-
-/*
-    Title and background colors for the class warning.
-    By default notes already has a template.
-    Uncomment to modify it.
-*/
-/* .rst-content .warning .admonition-title {
-    background: #5594ca
+div.highlight div.mac-header span.copy {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  color: rgba(0,0,0,0.1);
 }
- 
-.rst-content .warning {
-    background: #c5dfff
-} */
-
-/*
-    Title and background colors for the class important.
-    By default notes already has a template.
-    Uncomment to modify it.
-*/
-/* .rst-content .important .admonition-title {
-    background: #5594ca
+div.highlight div.mac-header span.copy:hover {
+  color: rgba(0,0,0,0.5);
 }
- 
-.rst-content .important {
-    background: #c5dfff
-} */
-
-/* Add new styles below */
+div.highlight div.mac-header span.copy:active {
+  color: rgb(30,124,221);
+}
+.rst-content code.xref {
+  padding: .2em .4em;
+}
