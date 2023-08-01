@@ -29,16 +29,16 @@ if __name__ == "__main__":
         python_requires=">=3.11",
         packages=find_packages(),
         install_requires=[
-            "black[jupyter]==22.10.0",
-            "flake8==6.0.0",
-            "flake8-black==0.3.5",
-            "flake8-isort==5.0.3",
-            "isort==5.10.1",
+            "black[jupyter]==23.7.0",
+            "flake8==6.1.0",
+            "flake8-black==0.3.6",
+            "flake8-isort==6.0.0",
+            "isort==5.12.0",
             "mdformat==0.7.16",
             "mdformat-gfm==0.3.5",
             "mdformat-black==0.1.1",
-            "sphinx==5.3.0",
-            "sphinx-rtd-theme==1.1.1",
+            "sphinx==6.1.3",
+            "sphinx-rtd-theme==1.2.2",
         ],
         entry_points={
             "console_scripts": [
