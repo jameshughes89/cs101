@@ -2,11 +2,26 @@
 Debug
 *****
 
+* Feel free to use your laptop
+* You are strongly encourage to work with others
+
+    * When you get stuck, ask those sitting around you for help
+    * Get used to working together in the labs
+    * Peer teaching and peer learning has been empirically shown to be very effective
+
+
+
+Pre Lab Exercises
+=================
+
+* There are no exercises to complete before this lab
+
 Before Kattis
 =============
 
 .. Warning::
-    Before you do ANYTHING, take out a scrap piece of paper. If I do not see your paper at the end of the lab, you will get **0** on this lab. 
+    Before you do ANYTHING, take out a scrap piece of paper. If I do not see your paper at the end of the lab, you will
+    get **0** on this lab.
 
 
 **1**
@@ -14,7 +29,6 @@ Before Kattis
 Using ``print`` statements, fix this code...
 
 .. code-block:: python
-
 
     def count_numbers_up_to(n):
         '''
