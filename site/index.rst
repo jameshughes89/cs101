@@ -44,8 +44,8 @@ Lab Sections
 
 * Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
 * Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
-* Lab Sec 13: Mon 13:20 -- 15:20 (C4-A7), MULH 4024
-* Lab Sec 14: Tue 13:20 -- 15:20 (A5-K7), MULH 4024
+* Lab Sec 13: Mon 13:30 -- 15:20 (C4-A7), MULH 4024
+* Lab Sec 14: Tue 13:30 -- 15:20 (A5-K7), MULH 4024
 
 
 `Office Hours <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
