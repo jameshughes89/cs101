@@ -16,13 +16,10 @@ Pre Lab Exercises
 
 * There are no exercises to complete before this lab
 
+
+
 Before Kattis
 =============
-
-.. Warning::
-    Before you do ANYTHING, take out a scrap piece of paper. If I do not see your paper at the end of the lab, you will
-    get **0** on this lab.
-
 
 **1**
 
@@ -143,6 +140,7 @@ Obviously you should know where the problem is given that you fixed this above, 
 
     print(find_max_index([5,2,8,9,5,4,3]))
 
+
 1. Copy this into PyCharm.
 2. Set a *break point* on line 13 **NOTE, THIS WILL PROBABLY BE A DIFFERENT LINE NUMBER WHEN YOU COPY IT**	 
 3. Start the **debugger**. 
@@ -150,10 +148,7 @@ Obviously you should know where the problem is given that you fixed this above, 
 5. Add a *watch* for the condition on like 14 (``aList[c] > curMax``)
 6. Now you will press the *step into* button. Take your time with this, for real. If you don't, you're using the debugger wrong and it won't actually be helpful. This is where the magic happens. The trick is to (a) do **not** skip a step, (b) do **not** make any assumptions, (c) critically think about what *should* happen if the code was correct, and compare your hypothesis to what is *actually* happening, (d) oh, and TAKE YOUR TIME. 
 
-
-
-
-7. I know you know where the problem is, so just spay special attention to what your hypothesis for ``curMaxIndex`` should be when ``curMax`` is set to 8, and how the code actually reacts. 
+7. I know you know where the problem is, so just spay special attention to what your hypothesis for ``curMaxIndex`` should be when ``curMax`` is set to 8, and how the code actually reacts.
 	  
 
 **5 Use whatever you want now**
@@ -333,9 +328,11 @@ This one is very buggy :(
 
 Kattis Problems
 ===============
+
 I'm willing to bet that in previous weeks you were working on Kattis problems that you couldn't quite debug. You may have been close, or way off, but the problem was you were stuck wondering how best to *fix* your code. Now that you're equipped with the debugger, go back and work on them! Seriously, GO BACK! But make use of this debugger. Whenever you can, USE THE DEBUGGER. Stuck on Kattis? DEBUGGER! Stuck on assignment? DEBUGGER! Stuck in life? DEBUGGER?
 
 If you're done everything I have listed so far, try some of the *easy* Kattis problems on the website that I didn't assign. 
+
 
 LeetCode Problems
 =================
