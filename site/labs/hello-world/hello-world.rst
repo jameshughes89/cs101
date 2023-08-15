@@ -20,10 +20,12 @@ Pre Lab Exercises
     * 2
     * 4
 
+
 #. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
 
     * 1
     * 5
+
 
 
 Hello World
@@ -34,9 +36,11 @@ Hello World
 
     * If you do not have a Google account, you can make one for the purpose of this course
 
+
 #. Get *Hello World* working on Colab
 
     * If you are unsure of what this is, review :doc:`Topic 1 </topics/intro/intro>`
+
 
 
 Refreshing What We Learned
@@ -52,6 +56,7 @@ Refreshing What We Learned
 
 
     * Have Python print out the type of ``a``
+
 
 #. Enter and run the following code
 
@@ -73,6 +78,7 @@ Refreshing What We Learned
     * Print out the value of the third variable
 
 
+
 Kattis
 ======
 
@@ -81,6 +87,7 @@ Kattis
 
     You are not expected to complete all the Kattis problems. Just work on them until the time runs out. If you need
     help, ask those around you for help. If you're still stuck, ask us for help.
+
 
 .. admonition:: Note
     :class: note
@@ -92,7 +99,8 @@ Kattis
 
     * Go to settings to do this
     * Also, I highly recommend setting your default language to Python 3
-    
+
+
 #. https://open.kattis.com/problems/hello
 
     .. raw:: html

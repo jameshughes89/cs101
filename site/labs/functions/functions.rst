@@ -18,6 +18,7 @@ Pre Lab Exercises
 
     * 5 **but** have it in a function that returns the result
 
+
 #. `Chapter 4 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/functions.html#exercises>`_
 
     * 8
@@ -99,6 +100,7 @@ Before Kattis
     * You can **not** make use of the addition operator (``+``) directly within this function
     * You **must** make use of ``add_two_numbers_return`` three times
     * Verify correctness by running the function a few times
+
 
 
 Kattis Problems

@@ -20,6 +20,7 @@ Pre Lab Exercises
     * It will provide a nice template for all the classes you will make in this lab
 
 
+
 Before Kattis
 =============
 
@@ -69,8 +70,11 @@ Before Kattis
 
         * Be sure to remove the ``from src.circle import Circle`` line
 
+
     * Run the tests with ``unittest.main(argv=[''], verbosity=2, exit=False)``
     * Ensure all tests pass
+
+
 
 Kattis Problems
 ===============

@@ -23,7 +23,9 @@ Pre Lab Exercises
     * 12 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
     * 13 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
 
+
 #. Write assertion tests for each of your functions above
+
 
 
 Before Kattis
@@ -34,20 +36,24 @@ Before Kattis
     * The function will ``return`` ``True`` if ``needle`` exists within ``haystack`` and ``False`` otherwise
     * This function must use a ``while`` loop
 
+
 #. Write a function ``character_is_in_for(needle: str, haystack:str) -> bool:``
 
     * The function will ``return`` ``True`` if ``needle`` exists within ``haystack`` and ``False`` otherwise
     * This function must use a ``for`` loop
+
 
 #. Write a function ``character_is_at_while(needle: str, haystack:str) -> int:``
 
     * The function will ``return`` the index of the first occurrence of ``needle`` within ``haystack`` and ``-1`` if it is not found
     * This function must use a ``while`` loop
 
+
 #. Write a function ``character_is_at_for(needle: str, haystack:str) -> int:``
 
     * The function will ``return`` the index of the first occurrence of ``needle`` within ``haystack`` and ``-1`` if it is not found
     * This function must use a ``for`` loop
+
 
 
 Kattis Problems
@@ -57,6 +63,7 @@ Kattis Problems
 
     * The problems you are to solve are getting too complex to try to solve by just coding
     * Trying to solve problems by just typing away will not yield success
+
 
 .. note::
 

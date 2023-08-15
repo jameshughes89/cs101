@@ -18,11 +18,14 @@ Pre Lab Exercises
 
     * Use ``assert`` to test instead of their ``test`` function
 
+
 #. `Chapter 14 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html#exercises>`_
 
     * 2 --- note the portions of solutions within the chapter text
 
+
 #. Write assertion tests for each of your functions above
+
 
 
 Before Kattis
@@ -72,6 +75,7 @@ Before Kattis
 
     * Is this what you expected?
 
+
 #. Given a list of integers, return, in a list, indices of two numbers such that they add up to a specific target
 
     * You may assume that each input would have exactly one solution
@@ -90,6 +94,7 @@ Before Kattis
     * **Hint:** Dictionaries (but leave the ``nums`` list alone)
  
 
+
 Kattis Problems
 ===============
 
@@ -97,6 +102,7 @@ Kattis Problems
 
     * The problems you are to solve are getting too complex to try to solve by just coding
     * Trying to solve problems by just typing away will not yield success
+
 
 #. https://open.kattis.com/problems/bijele
 #. https://open.kattis.com/problems/cold

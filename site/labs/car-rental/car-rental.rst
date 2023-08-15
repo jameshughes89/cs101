@@ -17,6 +17,7 @@ Pre Lab Exercises
 * There are no exercises to complete before this lab
 
 
+
 Before Kattis
 =============
 
@@ -34,7 +35,6 @@ rental agreement, age, how far they drove, and how long they had the car.
 
 **Rules:**
 
-
 * We will get and record the customer's:
 
     * Age
@@ -43,17 +43,21 @@ rental agreement, age, how far they drove, and how long they had the car.
     * Starting odometer reading
     * Ending odometer reading
 
+
 * If the classification code is **B**
 
     * Base charge of $20.00/day
     * Plus $0.30 for every km driven
+
 
 * If the classification is **D**
 
     * Base charge of $50.00/day
     * Plus $0.30 for every km driven above the 100km/day average allowance
 
+
 * All renters under the age of 25 are charged an additional $10.00/day
+
 
 
 Kattis Problems

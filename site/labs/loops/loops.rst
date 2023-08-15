@@ -20,7 +20,9 @@ Pre Lab Exercises
     * 14 (use ``assert`` to test instead of their ``test`` function)
     * 15 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
 
+
 #. Write assertion tests for each of your functions above, except for exercise 9, since it requires ``print``
+
 
 
 Before Kattis
@@ -31,10 +33,12 @@ Before Kattis
     * This function must use a ``while`` loop
     * This function will not return anything
 
+
 #. Write a function ``count_to_n_for(n: int):`` to print out each number from :math:`0` -- :math:`(n - 1)`
 
     * This function must use a ``for`` loop
     * This function will not return anything
+
 
 
 Kattis Problems
@@ -44,6 +48,7 @@ Kattis Problems
 
     * The problems you are to solve are getting too complex to try to solve by just coding
     * Trying to solve problems by just typing away will not yield success
+
 
 #. https://open.kattis.com/problems/timeloop
 #. https://open.kattis.com/problems/oddities

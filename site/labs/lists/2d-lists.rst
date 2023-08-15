@@ -19,12 +19,15 @@ Pre Lab Exercises
     * Do **not** make a ``vector.py`` file, just use Colab like you have been
     * Use ``assert`` to test instead of their ``test`` function
 
+
 #. `Chapter 11 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/lists.html#exercises>`_
 
     * 7
     * 8
 
+
 #. Write assertion tests for each of your functions above
+
 
 
 Before Kattis
@@ -97,7 +100,6 @@ Given the following code:
     * The function will not return anything
     * Verify correctness by running the function on multiple 2D lists
 
-
     .. image:: matDiag4.png
 
 
@@ -143,6 +145,7 @@ Kattis Problems
 
     * The problems you are to solve are getting too complex to try to solve by just coding
     * Trying to solve problems by just typing away will not yield success
+
 
 #. https://open.kattis.com/problems/bijele
 #. https://open.kattis.com/problems/cold

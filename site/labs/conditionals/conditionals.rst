@@ -20,7 +20,9 @@ Pre Lab Exercises
     * 10
     * 11
 
+
 #. Write assertion tests for each of your functions above
+
 
 
 Before Kattis
@@ -30,15 +32,18 @@ Before Kattis
 
     * Be sure to write some ``assert`` tests to verify correctness
 
+
 #. Write a function called ``letter_grade(percent_grade: float) -> str:`` that takes a grade as a percentage and returns the appropriate letter grade
 
     * 0 - 49 -> F, 50 - 59 -> D, 60 - 69 -> C, 70 - 79 -> B, 80 - 89 -> A, 90 - 100 -> A+
     * Write ``assert`` tests to verify correctness
 
+
 #. Rewrite ``letter_grade(percent_grade: float) -> str:`` such that you reverse the order you check the grade in
 
     * For example, if you checked ``if grade < 50:`` first, start with checking for an A+
     * Run the ``assert`` tests from the previous question
+
 
 
 Kattis Problems
