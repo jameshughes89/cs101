@@ -26,17 +26,17 @@ Dr. James Hughes (Section 11 & 12)
 Lecture Section 11
 ^^^^^^^^^^^^^^^^^^
 
-* Tue 11:30 - 12:20 (K4), MULH 2070
-* Wed 13:30 - 14:20 (K5), MULH 2070
-* Fri 12:30 - 13:20 (K6), MULH 2070
+* Tue 11:30 -- 12:20 (K4), MULH 2070
+* Wed 13:30 -- 14:20 (K5), MULH 2070
+* Fri 12:30 -- 13:20 (K6), MULH 2070
 
 
 Lecture Section 12
 ^^^^^^^^^^^^^^^^^^
 
-* Mon 10:30 - 11:20 (C1), SCHW 110
-* Wed 09:30 - 10:20 (C2), SCHW 110
-* Fri 08:30 - 09:20 (C3), SCHW 110
+* Mon 10:30 -- 11:20 (C1), SCHW 110
+* Wed 09:30 -- 10:20 (C2), SCHW 110
+* Fri 08:30 -- 09:20 (C3), SCHW 110
 
 
 Lab Sections
@@ -51,7 +51,10 @@ Lab Sections
 `Office Hours <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* TBD
+* Tue 12:30 -- 13:30, Annex 20B
+* Wed 12:30 -- 13:30, Annex 20B
+* Thr 13:30 -- 14:30, Annex 20B
+* Fri 13:30 -- 14:30, Annex 20B
 
 
 .. toctree::
