@@ -2,8 +2,8 @@
 Density of Starbucks
 ********************
 
-* **Worth**: 10%
-* **Due**: October 11, 2022 at 11:55pm; submitted on MOODLE
+* **Worth**: TBD%
+* **DUE**: TBD at 11:55pm; submitted on MOODLE.
 * **Files**: :download:`asn1.ipynb <asn1.ipynb>`/:download:`asn1.py <asn1.py>` and :download:`starbucks2018.csv <starbucks2018.csv>`
 
 
