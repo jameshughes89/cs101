@@ -26,36 +26,32 @@ Dr. James Hughes (Section 11 & 12)
 Lecture Section 11
 ^^^^^^^^^^^^^^^^^^
 
-* Tue 11:15 - 12:05 (K4), MULH 2070
-* Wed 13:15 - 14:05 (K5), MULH 2070
-* Fri 12:15 - 13:05 (K6), MULH 2070
+* Tue 11:30 - 12:20 (K4), MULH 2070
+* Wed 13:30 - 14:20 (K5), MULH 2070
+* Fri 12:30 - 13:20 (K6), MULH 2070
 
 
 Lecture Section 12
 ^^^^^^^^^^^^^^^^^^
 
-* Mon 10:15 - 11:05 (C1), SCHW 110
-* Wed 09:15 - 10:05 (C2), SCHW 110
-* Fri 08:15 - 09:05 (C3), SCHW 110
+* Mon 10:30 - 11:20 (C1), SCHW 110
+* Wed 09:20 - 10:20 (C2), SCHW 110
+* Fri 08:30 - 09:20 (C3), SCHW 110
 
 
 Lab Sections
 ^^^^^^^^^^^^
 
-* Lab Sec 11: Thr 14:15 -- 16:05 (L8-A9), MULH 4024
-* Lab Sec 12: Fri 14:15 -- 16:05 (C9-K9), MULH 4024
-* Lab Sec 13: Mon 13:15 -- 15:05 (C4-A7), MULH 4024
-* Lab Sec 14: Tue 13:15 -- 15:05 (A5-K7), MULH 4024
+* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
+* Lab Sec 13: Mon 13:20 -- 15:20 (C4-A7), MULH 4024
+* Lab Sec 14: Tue 13:20 -- 15:20 (A5-K7), MULH 4024
 
 
 `Office Hours <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Tue, 10:00 -- 11:00
-* Wed, 10:00 -- 11:00
-* Thr, 10:00 -- 11:00
-* Fri, 10:00 -- 11:00
-
+* TBD
 
 
 .. toctree::
