@@ -61,7 +61,3 @@ Kattis Problems
 
 * Work on the Kattis problems you have not solved from previous weeks
 * Remember, I encourage you to work with others to solve the problems
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

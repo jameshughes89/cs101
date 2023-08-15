@@ -75,7 +75,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/conundrum
 #. https://open.kattis.com/problems/bela
 #. https://open.kattis.com/problems/kornislav
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

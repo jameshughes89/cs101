@@ -61,7 +61,3 @@ Kattis Problems
 Go back and work on Kattis problems from previous labs that you have yet to solve. I'm betting there are several of the
 earlier ones you can revisit and solve. Remember, the Kattis problems are great for practice, and practice is the only
 way to get better at programming.
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

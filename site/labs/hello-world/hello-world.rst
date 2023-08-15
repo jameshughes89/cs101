@@ -148,7 +148,3 @@ Kattis
 #. https://open.kattis.com/problems/faktor
 #. https://open.kattis.com/problems/ladder
 #. https://open.kattis.com/problems/planina
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

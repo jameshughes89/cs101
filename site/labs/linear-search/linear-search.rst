@@ -72,7 +72,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/reversebinary
 #. https://open.kattis.com/problems/sevenwonders
 #. https://open.kattis.com/problems/zamka
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

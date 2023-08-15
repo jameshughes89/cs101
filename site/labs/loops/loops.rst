@@ -52,7 +52,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/bus
 #. https://open.kattis.com/problems/datum
 #. https://open.kattis.com/problems/dicecup
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

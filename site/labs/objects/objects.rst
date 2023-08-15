@@ -86,8 +86,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/oddmanout
 #. https://open.kattis.com/problems/securedoors
 #. https://open.kattis.com/problems/modulo
-
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

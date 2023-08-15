@@ -67,7 +67,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/spavanac
 #. https://open.kattis.com/problems/cetvrta
 #. https://open.kattis.com/problems/bus
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
