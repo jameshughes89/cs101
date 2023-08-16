@@ -210,14 +210,16 @@ constitutes violation of academic integrity, as per section 3.8.2(b)(v) of the a
 a reasonable person would deem as cheating is not permitted and will be investigated fully as academic misconduct.
 
 Test format will be in person; however, if necessary, the format *may* be changed to online. Students will be informed
-of the change as soon as possible. 
+of the change as soon as possible.
 
 
-Missed Midterm
---------------
+Missed Tests
+------------
 
-There are no make-up midterms. If a student is unable to write the midterm, the weight of their midterm will be added to
-the weight of the final exam; the final exam will be worth 50% of the student's final grade,
+There are no make-up tests. If a student is unable to write a test, the weight of their test will be added to the
+following test or final exam, whichever comes first. If both tests are missed, the weight of the tests will be added to
+the final exam.
+
 
 
 Labs
@@ -228,27 +230,20 @@ revolve around `Kattis <https://open.kattis.com/>`_.
 
 Labs begin on the 1st week of class for lab sections 11 and 12. Lab sections 13 and 14 begin week 2.
 
-Pre lab exercises must be completed before the start of the lab. Students who have not completed the pre-lab exercises
-will be asked to leave.
-
-Lab exercises must be completed for marks; attendance and lab completion is mandatory. Each completed lab is worth 1% of
-the final grade (to a maximum of 10%). It is your responsibility to ensure your attendance and exercise completion is
-recorded.
-
-There is a total of 11 labs, however there is potential that some labs may be cancelled. In the case where there are
-less than 10 labs, your individual grades will be adjusted such that each lab is wroth the amount necessary to ensure
-the lab portion of the final grade is still 10%.
+Lab attendance is mandatory and it is your responsibility to ensure your attendance is recorded.
 
 You may only attend the lab session for which you are registered. Students must bring their student identification to
 all labs.
+
+There are no make-up labs, and students who are absent for a lab do not have the option of attending another lab.
+Students who encounter serious health or other personal difficulties are encouraged to contact the professor.
+
 
 
 Email Contact
 =============
 
-**Email etiquette** --- Emails should be addressed to Dr./Prof. Hughes or Delamer.
-
-Emails can be sent to csci-161@stfx.ca. By using this address, both professors and TAs obtain a copy of the email. 
+**Email etiquette** --- Emails should be addressed to Dr./Prof. Hughes.
 
 I may need to send email messages to the whole class or to students individually. Email will be sent to the StFX email
 address assigned to students. It is the responsibility of the student to read this email on a regular basis. You may
@@ -261,8 +256,9 @@ email is not an acceptable excuse for not knowing about the information that was
 Students are encouraged to contact their course instructor via email with brief, email appropriate questions regarding
 lecture materials or clarification of assignments. However, before sending email to an instructor, the student should
 check the course website to see if the requested information is already there. Students must send email from their StFX
-account and include CSCI 161 in the subject line of the email. Lengthy and in-depth questions are to be asked during
+account and include CSCI 162 in the subject line of the email. Lengthy and in-depth questions are to be asked during
 office hours.
+
 
 
 Office Hours
@@ -273,9 +269,6 @@ Office hours are provided to students to facilitate their success --- students a
 Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
 students solving their problems.
 
-As per university policy, masking and proper social distancing is required. Students refusing to follow this policy will
-be asked to leave.
-
 
 Attendance
 ==========
@@ -283,8 +276,8 @@ Attendance
 Students missing three classes without reasonable cause will be reported to the Associate Dean. See section 3.7 of the
 academic calendar for more details.
 
-You will be reported to Dr. Cathy MacDonald, Associate Dean, Academic Affairs' Office if you are repeatedly delinquent
-in assignments or attendance at classes or laboratories.
+You will be reported to the Associate Dean, Academic Affairs' Office if you are repeatedly delinquent in assignments or
+attendance at classes or laboratories.
 
 
 Copyright Policy
@@ -294,7 +287,7 @@ The materials in CSCI 161 at StFX are the property of the instructor, unless sta
 posting or selling this material to third parties for distribution without permission is subject to Canadian Copyright
 law and is strictly prohibited.
 
-The course copyright policy will be aggressively enforced. 
+The course copyright policy will be aggressively enforced.
 
 
 Class Recording Policy
@@ -317,7 +310,7 @@ advocate for an automatic failure in the course, or expulsion from the universit
 
 
 Use of Plagiarism-Checking Software
-===================================
+-----------------------------------
 
 All required papers/submissions may be subject to submission for textual similarity review to the commercial plagiarism
 detection software under license to the University for the detection of plagiarism. All papers submitted for such
@@ -326,10 +319,11 @@ papers subsequently submitted to the system.
 
 
 Use of Cheating-Analysis Software
-=================================
+---------------------------------
 
 All submitted work may be subject to submission for similarity review by software that will check for unusual
 coincidences in answer patterns that may indicate cheating (MOSS).
+
 
 
 Tutoring
@@ -398,4 +392,4 @@ Preferred Pronouns
 Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with
 differences of race, culture, religion, politics, sexual orientation, gender, gender variance, and nationalities. Class
 rosters are provided to the instructor with the student's legal name. Please advise me of this preference early in the
-semester. See policies at http://www2.mystfx.ca/equity/policies
+semester. See policies at http://www2.mystfx.ca/equity/policies.
