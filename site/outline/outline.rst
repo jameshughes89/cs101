@@ -2,7 +2,7 @@
 Computer Science 161 Sections 11 & 12 --- Introduction to Programming
 =====================================================================
 
-Fall 2022
+Fall 2023
 =========
 
 Course Description
@@ -15,7 +15,7 @@ This course is devoted to learning proper problem solving techniques and basic p
 problem analysis, algorithm development, data representation, control structures, lists, functions, testing, and file
 manipulation.
 
-This class will use the programming language python.
+This class will use the programming language Python.
 
 
 Prerequisites
@@ -27,73 +27,54 @@ Prerequisites
 Instructor
 ==========
 
-Lecture Section 11
-------------------
+
+Instructor
+==========
 
 * Dr. James Hughes
-* Office: Annex 20B
-* Office Hours: 
-    * Tuesday, 10:00am -- 11:00am
-    * Wednesday, 10:00am -- 11:00am
-    * Friday, 10:00am -- 11:00am
-* Email: jhughes at stfx.ca
+* Annex 20B
+* jhughes at stfx.ca
 
 
-Lecture Section 12
-------------------
 
-* Dr. Jean-Alexis Delamer
-* Office: Annex 9C
-* Office Hours:
-    * Monday,    9:00am -- 10:00am
-    * Tuesday,   10:30am -- 11:30am
-    * Wednesday, 10:30am -- 11:30am and 1:00pm -- 2:00pm
-    * Thursday,  10:30am -- 11:30am
-* Email: jdelamer at stfx.ca
-
-
-Class Times
-===========
+Lecture Times
+=============
 
 Lecture Section 11
-------------------
+^^^^^^^^^^^^^^^^^^
 
-**Dr. Hughes**
-
-* Tue 11:15 - 12:05 (K4), MULH 2070
-* Wed 13:15 - 14:05 (K5), MULH 2070
-* Fri 12:15 - 13:05 (K6), MULH 2070
+* Tue 11:30 -- 12:20 (K4), MULH 2070
+* Wed 13:30 -- 14:20 (K5), MULH 2070
+* Fri 12:30 -- 13:20 (K6), MULH 2070
 
 
 Lecture Section 12
-------------------
+^^^^^^^^^^^^^^^^^^
 
-**Dr. Delamer**
-
-* Mon 10:15 - 11:05 (C1), SCHW 110
-* Wed 09:15 - 10:05 (C2), SCHW 110
-* Fri 08:15 - 09:05 (C3), SCHW 110
+* Mon 10:30 -- 11:20 (C1), SCHW 110
+* Wed 09:30 -- 10:20 (C2), SCHW 110
+* Fri 08:30 -- 09:20 (C3), SCHW 110
 
 
-Lab
-===
 
-Lab Section 11 & 12
--------------------
+Lab Sections
+============
 
-**Dr. Hughes**
-
-* Lab Sec 11: Thr 14:15 -- 16:05 (L8-A9), MULH 4024
-* Lab Sec 12: Fri 14:15 -- 16:05 (C9-K9), MULH 4024
+* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
+* Lab Sec 13: Mon 13:30 -- 15:20 (C4-A7), MULH 4024
+* Lab Sec 14: Tue 13:30 -- 15:20 (A5-K7), MULH 4024
 
 
-Lab Section 13 & 14
--------------------
 
-**Dr. Delamer**
+Office Hours
+============
 
-* Lab Sec 13: Mon 13:15 -- 15:05 (C4-A7), MULH 4024
-* Lab Sec 14: Tue 13:15 -- 15:05 (A5-K7), MULH 4024
+* Tue 12:30 -- 13:30, Annex 20B
+* Wed 12:30 -- 13:30, Annex 20B
+* Thr 13:30 -- 14:30, Annex 20B
+* Fri 13:30 -- 14:30, Annex 20B
+
 
 
 Website
@@ -109,6 +90,7 @@ Textbook and Lecture Notes
 Lecture notes will be posted to the website. Assignments will be submitted through Moodle. 
 
 The textbook for this class is `FREE <http://openbookproject.net/thinkcs/python/english3e/>`_ !
+
 
 
 Topics
@@ -145,26 +127,38 @@ are fairly optimistic and we'll probably not get to them, but whatever.
 - Monte Carlo Methods
 
 
-Student Evaluation (Tentative Dates) 
+
+Student Evaluation (Tentative Dates)
 ====================================
 
-+------------------------+------------+---------------------+
-|                        | Worth      | Due                 |
-+========================+============+=====================+
-| Assignment 1           | 10%        | End of September-ish|
-+------------------------+------------+---------------------+
-| Assignment 2           | 10%        | Mid October-ish     |
-+------------------------+------------+---------------------+
-| Assignment 3           | 10%        | Early November-ish  |
-+------------------------+------------+---------------------+
-| Assignment 4           | 10%        | End of November-ish |
-+------------------------+------------+---------------------+
-| Labs                   | 10%        | Throughout          |
-+------------------------+------------+---------------------+
-| Midterm Exam           | 20%        | October 19 in class |
-+------------------------+------------+---------------------+
-| Final Exam             | 30%        | TBA                 |
-+------------------------+------------+---------------------+
+.. list-table:: Final Grade Breakdown
+    :widths: 50 50 50
+    :header-rows: 1
+
+    * - Deliverable
+      - Percentage
+      - Due Date
+    * - Assignment 1
+      - 5%
+      - End of September-ish
+    * - Assignment 2
+      - 5%
+      - Mid October-ish
+    * - Assignment 3
+      - 5%
+      - Early November-ish
+    * - Assignment 4
+      - 5%
+      - End of November-ish
+    * - Test 1
+      - 20%
+      - End of September-ish
+    * - Test 2
+      - 20%
+      - End of October-ish
+    * - Final Exam
+      - 40%
+      - TBD
 
 
 Assignments
