@@ -41,7 +41,7 @@ Lecture Times
 =============
 
 Lecture Section 11
-^^^^^^^^^^^^^^^^^^
+------------------
 
 * Tue 11:30 -- 12:20 (K4), MULH 2070
 * Wed 13:30 -- 14:20 (K5), MULH 2070
@@ -49,7 +49,7 @@ Lecture Section 11
 
 
 Lecture Section 12
-^^^^^^^^^^^^^^^^^^
+------------------
 
 * Mon 10:30 -- 11:20 (C1), SCHW 110
 * Wed 09:30 -- 10:20 (C2), SCHW 110
@@ -164,6 +164,7 @@ Student Evaluation (Tentative Dates)
 
 Assignments
 ===========
+
 
 Submission
 ----------
