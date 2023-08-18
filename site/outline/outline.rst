@@ -284,11 +284,9 @@ students solving their problems.
 Attendance
 ==========
 
-Students missing three classes without reasonable cause will be reported to the Associate Dean. See section 3.7 of the
-academic calendar for more details.
-
-You will be reported to the Associate Dean, Academic Affairs' Office if you are repeatedly delinquent in assignments or
-attendance at classes or laboratories.
+Students missing three classes without reasonable cause will be reported to the Assistant Vice-President Academic
+Affairs. See section 3.7 of the academic calendar for more details. You will be reported if you are repeatedly
+delinquent in assignments or attendance at classes or laboratories.
 
 
 Copyright Policy
