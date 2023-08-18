@@ -416,29 +416,14 @@ Support Services
 
 There are various support services around campus and these include, but are not limited to:
 
-#. Student Life:
-`Student Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services>`_
-
-#. Office of the Registrar:
-`Registrar’s Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/registrars-office>`_
-
-#. Health & Counselling Centre:
-`Health and Counselling Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/health-counselling-centre>`_
-
-#. Academic Advising:
-`Academic Advising | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/academic-advising>`_
-
-#. Academic Success Centre:
-`Academic Success Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services/academic-success-centre>`_
-
-#. Student Career Centre:
-`Student Career Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services/student-career-centre>`_
-
-#. Office of Internationalization:
-`Internationalization | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/internationalization>`_
-
-#. Financial Aid Office:
-`Financial Aid Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/financial-support/financial-aid-office>`_
+#. Student Life: `Student Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services>`_
+#. Office of the Registrar: `Registrar’s Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/registrars-office>`_
+#. Health & Counselling Centre: `Health and Counselling Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/health-counselling-centre>`_
+#. Academic Advising: `Academic Advising | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/academic-advising>`_
+#. Academic Success Centre: `Academic Success Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services/academic-success-centre>`_
+#. Student Career Centre: `Student Career Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services/student-career-centre>`_
+#. Office of Internationalization: `Internationalization | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/internationalization>`_
+#. Financial Aid Office: `Financial Aid Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/financial-support/financial-aid-office>`_
 
 
 
