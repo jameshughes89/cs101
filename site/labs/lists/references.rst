@@ -2,41 +2,30 @@
 References & More Lists
 ***********************
 
-* Feel free to use your laptop if you have it
-* Ensure I have recorded your completion --- failure to do so will result in a grade of 0
-* I strongly encourage you to work with others in the lab
+* Feel free to use your laptop
+* You are strongly encourage to work with others
 
-    * When you get stuck, do me a favour and ask those sitting around you for help
-    * I want people to get used to working together in the labs
-    * Peer teaching and peer learning is super effective
+    * When you get stuck, ask those sitting around you for help
+    * Get used to working together in the labs
+    * Peer teaching and peer learning has been empirically shown to be very effective
 
-.. note::
-
-    To obtain full marks for the lab, you must:
-
-        #. Have completed the pre-lab exercises
-        #. Have been working on the lab content
-        #. Demonstrate competency in the topics
 
 
 Pre Lab Exercises
 =================
 
-.. warning::
-
-    You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
-    you will be asked to leave and you will obtain a grade of 0 for the lab.
-
-
 * For all exercises
 
     * Use ``assert`` to test instead of their ``test`` function
+
 
 #. `Chapter 14 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html#exercises>`_
 
     * 2 --- note the portions of solutions within the chapter text
 
+
 #. Write assertion tests for each of your functions above
+
 
 
 Before Kattis
@@ -86,6 +75,7 @@ Before Kattis
 
     * Is this what you expected?
 
+
 #. Given a list of integers, return, in a list, indices of two numbers such that they add up to a specific target
 
     * You may assume that each input would have exactly one solution
@@ -104,6 +94,7 @@ Before Kattis
     * **Hint:** Dictionaries (but leave the ``nums`` list alone)
  
 
+
 Kattis Problems
 ===============
 
@@ -111,6 +102,7 @@ Kattis Problems
 
     * The problems you are to solve are getting too complex to try to solve by just coding
     * Trying to solve problems by just typing away will not yield success
+
 
 #. https://open.kattis.com/problems/bijele
 #. https://open.kattis.com/problems/cold
@@ -125,7 +117,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/conundrum
 #. https://open.kattis.com/problems/bela
 #. https://open.kattis.com/problems/kornislav
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

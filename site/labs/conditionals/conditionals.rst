@@ -2,30 +2,17 @@
 Conditionals
 ************
 
-* Feel free to use your laptop if you have it
-* Ensure I have recorded your completion --- failure to do so will result in a grade of 0
-* I strongly encourage you to work with others in the lab
+* Feel free to use your laptop
+* You are strongly encourage to work with others
 
-    * When you get stuck, do me a favour and ask those sitting around you for help
-    * I want people to get used to working together in the labs
-    * Peer teaching and peer learning is super effective
+    * When you get stuck, ask those sitting around you for help
+    * Get used to working together in the labs
+    * Peer teaching and peer learning has been empirically shown to be very effective
 
-.. note::
-
-    To obtain full marks for the lab, you must:
-
-        #. Have completed the pre-lab exercises
-        #. Have been working on the lab content
-        #. Demonstrate competency in the topics
 
 
 Pre Lab Exercises
 =================
-
-.. warning::
-
-    You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
-    you will be asked to leave and you will obtain a grade of 0 for the lab.
 
 #. `Chapter 5 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/conditionals.html#exercises>`_
 
@@ -33,7 +20,9 @@ Pre Lab Exercises
     * 10
     * 11
 
+
 #. Write assertion tests for each of your functions above
+
 
 
 Before Kattis
@@ -43,15 +32,18 @@ Before Kattis
 
     * Be sure to write some ``assert`` tests to verify correctness
 
+
 #. Write a function called ``letter_grade(percent_grade: float) -> str:`` that takes a grade as a percentage and returns the appropriate letter grade
 
     * 0 - 49 -> F, 50 - 59 -> D, 60 - 69 -> C, 70 - 79 -> B, 80 - 89 -> A, 90 - 100 -> A+
     * Write ``assert`` tests to verify correctness
 
+
 #. Rewrite ``letter_grade(percent_grade: float) -> str:`` such that you reverse the order you check the grade in
 
     * For example, if you checked ``if grade < 50:`` first, start with checking for an A+
     * Run the ``assert`` tests from the previous question
+
 
 
 Kattis Problems
@@ -80,7 +72,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/spavanac
 #. https://open.kattis.com/problems/cetvrta
 #. https://open.kattis.com/problems/bus
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

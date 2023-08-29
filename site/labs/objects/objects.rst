@@ -2,21 +2,13 @@
 Objects
 *******
 
-* Feel free to use your laptop if you have it
-* Ensure I have recorded your completion --- failure to do so will result in a grade of 0
-* I strongly encourage you to work with others in the lab
+* Feel free to use your laptop
+* You are strongly encourage to work with others
 
-    * When you get stuck, do me a favour and ask those sitting around you for help
-    * I want people to get used to working together in the labs
-    * Peer teaching and peer learning is super effective
+    * When you get stuck, ask those sitting around you for help
+    * Get used to working together in the labs
+    * Peer teaching and peer learning has been empirically shown to be very effective
 
-.. note::
-
-    To obtain full marks for the lab, you must:
-
-        #. Have completed the pre-lab exercises
-        #. Have been working on the lab content
-        #. Demonstrate competency in the topics
 
 
 Pre Lab Exercises
@@ -25,8 +17,8 @@ Pre Lab Exercises
 * Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/introduction>`
 
     * You can obtain the source code from :download:`here <../../../src/circle.py>`
-    * Yes, this week's pre-lab exercise is intended to be simple
     * It will provide a nice template for all the classes you will make in this lab
+
 
 
 Before Kattis
@@ -78,8 +70,11 @@ Before Kattis
 
         * Be sure to remove the ``from src.circle import Circle`` line
 
+
     * Run the tests with ``unittest.main(argv=[''], verbosity=2, exit=False)``
     * Ensure all tests pass
+
+
 
 Kattis Problems
 ===============
@@ -95,8 +90,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/oddmanout
 #. https://open.kattis.com/problems/securedoors
 #. https://open.kattis.com/problems/modulo
-
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.

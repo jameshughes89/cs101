@@ -2,41 +2,29 @@
 Data Structures
 ***************
 
-* Feel free to use your laptop if you have it
-* Ensure I have recorded your completion --- failure to do so will result in a grade of 0
-* I strongly encourage you to work with others in the lab
+* Feel free to use your laptop
+* You are strongly encourage to work with others
 
-    * When you get stuck, do me a favour and ask those sitting around you for help
-    * I want people to get used to working together in the labs
-    * Peer teaching and peer learning is super effective
+    * When you get stuck, ask those sitting around you for help
+    * Get used to working together in the labs
+    * Peer teaching and peer learning has been empirically shown to be very effective
 
-.. note::
-
-    To obtain full marks for the lab, you must:
-
-        #. Have completed the pre-lab exercises
-        #. Have been working on the lab content
-        #. Demonstrate competency in the topics
 
 
 Pre Lab Exercises
 =================
-
-.. warning::
-
-    You must have completed the specified exercises prior to the start of the lab. If you have not come to lab prepared,
-    you will be asked to leave and you will obtain a grade of 0 for the lab.
-
 
 #. Have all classes from the previous lab complete
 #. `Chapter 15 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html#exercises>`_
 
     * 6
 
+
 #. Write *unit tests* for the class
 
     * Writing tests for collections can be difficult, so do your best
     * Use the `CountryCatalogueTest` class as an example from assignment 4.
+
 
 
 Before Kattis
@@ -58,15 +46,19 @@ Before Kattis
 
         * If someone tries to ``add`` a duplicate/equivalent ``Person``, the method should ``raise`` a ``ValueError``
 
+
     * A method to remove a ``Person`` called ``remove`` that takes a ``Person`` as a parameter (the one to be removed)
 
         * If someone tries to ``remove`` a nonexistent ``Person``, the method should ``raise`` a ``ValueError``
+
 
     * A ``__repr__`` that returns a string containing the details of all ``Person`` objects
 
         * Be sure to make use of the ``Person`` class' ``__repr__`` method
 
+
     * Make an instance of the class, add/remove ``Person`` objects to it, and write ``assert`` tests to verify correctness
+
 
 
 Kattis Problems
@@ -75,7 +67,3 @@ Kattis Problems
 Go back and work on Kattis problems from previous labs that you have yet to solve. I'm betting there are several of the
 earlier ones you can revisit and solve. Remember, the Kattis problems are great for practice, and practice is the only
 way to get better at programming.
-
-.. warning::
-
-    Ensure that your your completion has been recorded. Failure to do so may result in a grade of 0.
