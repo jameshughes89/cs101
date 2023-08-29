@@ -174,7 +174,7 @@ to read and follow the instructions. Failure to follow the submission instructio
 receiving a mark of zero.
 
 You will be required to submit each programming assignment electronically. Details will be given in the assignment
-descriptions. Similarity detection software to detect possible cheating cases will be used.
+descriptions. Similarity detection software to identify possible cheating cases will be used.
 
 
 Due Dates
