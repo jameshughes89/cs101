@@ -168,7 +168,7 @@ Variables
 
 
 * In the above example, the variable ``a`` now has the value ``5``
-* Both the *variable* ``a`` and the literal ``5`` both have the same value
+* Both the *variable* ``a`` and the literal ``5`` have the same value
 
     * If I say ``print(5)``, Python will print out the literal ``5``
     * If I say ``print(a)``, Python will print out the value stored in the variable ``a``, which is ``5``
