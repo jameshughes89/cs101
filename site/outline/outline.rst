@@ -268,7 +268,7 @@ email is not an acceptable excuse for not knowing about the information that was
 Students are encouraged to contact their course instructor via email with brief, email appropriate questions regarding
 lecture materials or clarification of assignments. However, before sending email to an instructor, the student should
 check the course website to see if the requested information is already there. Students must send email from their StFX
-account and include CSCI 162 in the subject line of the email. Lengthy and in-depth questions are to be asked during
+account and include CSCI 161 in the subject line of the email. Lengthy and in-depth questions are to be asked during
 office hours.
 
 

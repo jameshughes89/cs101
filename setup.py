@@ -34,11 +34,11 @@ if __name__ == "__main__":
             "flake8-black==0.3.6",
             "flake8-isort==6.0.0",
             "isort==5.12.0",
-            "mdformat==0.7.16",
+            "mdformat==0.7.17",
             "mdformat-gfm==0.3.5",
             "mdformat-black==0.1.1",
-            "sphinx==6.1.3",
-            "sphinx-rtd-theme==1.2.2",
+            "sphinx==7.2.5",
+            "sphinx-rtd-theme==1.3.0",
         ],
         entry_points={
             "console_scripts": [
