@@ -140,7 +140,7 @@ Student Evaluation (Tentative Dates)
       - Due Date
     * - Assignment 1
       - 5%
-      - End of September-ish
+      - October 2nd
     * - Assignment 2
       - 5%
       - Mid October-ish
@@ -152,7 +152,7 @@ Student Evaluation (Tentative Dates)
       - End of November-ish
     * - Test 1
       - 20%
-      - End of September-ish
+      - October 4th
     * - Test 2
       - 20%
       - End of October-ish
