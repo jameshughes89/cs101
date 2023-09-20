@@ -69,4 +69,3 @@ Kattis Problems
 #. https://open.kattis.com/problems/ovissa
 #. https://open.kattis.com/problems/fifa
 #. https://open.kattis.com/problems/vidsnuningur
-#.

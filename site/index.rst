@@ -97,6 +97,7 @@ Lab Sections
    
     labs/hello-world/hello-world
     labs/functions/functions
+    labs/testing/testing
     labs/conditionals/conditionals
     labs/car-rental/car-rental
     labs/loops/loops
