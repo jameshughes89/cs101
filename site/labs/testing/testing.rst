@@ -32,8 +32,38 @@ Before Kattis
 
 * :doc:`If you forget how to do the testing and type hint related stuff, go back to the class notes </topics/testing/testing>`
 
+#. Write a function to calculate the density of an object
 
-????
+    * :math:`d = \frac{m}{V}`
+    * The function will have the mass and volume as parameters
+    * The function will return the density
+    * Write an effective docstring for this function
+    * Include typehints for this function
+    * Write assertion tests for this function
+
+
+#. Write a function to calculate acceleration
+
+    * :math:`a = \frac{u - v}{t}`
+    * The function will have the starting speed, ending speed, and time as parameters
+    * The function will return the acceleration
+    * Write an effective docstring for this function
+    * Include typehints for this function
+    * Write assertion tests for this function
+
+
+#. Write a function to convert latitudes/longitudes from degrees, minutes, and seconds to a decimal value of a degree
+
+    * :math:`1 minute = \frac{1}{60} degrees`
+    * :math:`1 second = \frac{1}{60} minute = \frac{1}{3600} degrees`
+    * `Wikipedia explains this in more detail <https://en.wikipedia.org/wiki/Minute_and_second_of_arc>`_
+    * This function will have the degrees, minutes, and seconds as parameters
+    * This function will return the latitude/longitude value as degrees with a decimal
+    * Write an effective docstring for this function
+    * Include typehints for this function
+    * Write assertion tests for this function
+
+
 
 Kattis Problems
 ===============
