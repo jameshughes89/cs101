@@ -35,7 +35,7 @@ Before Kattis
 #. Write a function to calculate the density of an object
 
     * :math:`d = \frac{m}{V}`
-    * The function will have the mass and volume as parameters
+    * The function will have the mass and volume of the object as parameters
     * The function will return the density
     * Write an effective docstring for this function
     * Include typehints for this function
@@ -44,8 +44,8 @@ Before Kattis
 
 #. Write a function to calculate acceleration
 
-    * :math:`a = \frac{u - v}{t}`
-    * The function will have the starting speed, ending speed, and time as parameters
+    * :math:`a = \frac{\Delta v}{t}`
+    * The function will have the starting velocity, ending velocity, and time as parameters
     * The function will return the acceleration
     * Write an effective docstring for this function
     * Include typehints for this function
