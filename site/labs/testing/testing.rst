@@ -22,7 +22,6 @@ Pre Lab Exercises
 
 #. `Chapter 4 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/functions.html#exercises>`_
 
-    * 7 **but** write assertion tests for the function, include type hints, and write a docstring
     * 8 **but** write assertion tests for the function, include type hints, and write a docstring
 
 
