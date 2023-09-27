@@ -37,7 +37,7 @@ Before Kattis
     * The function will have the mass and volume of the object as parameters
     * The function will return the density
     * Write an effective docstring for this function
-    * Include typehints for this function
+    * Include type hints for this function
     * Write assertion tests for this function
 
 
@@ -47,7 +47,7 @@ Before Kattis
     * The function will have the starting velocity, ending velocity, and time as parameters
     * The function will return the acceleration
     * Write an effective docstring for this function
-    * Include typehints for this function
+    * Include type hints for this function
     * Write assertion tests for this function
 
 
@@ -59,7 +59,7 @@ Before Kattis
     * This function will have the degrees, minutes, and seconds as parameters
     * This function will return the latitude/longitude value as degrees with a decimal
     * Write an effective docstring for this function
-    * Include typehints for this function
+    * Include type hints for this function
     * Write assertion tests for this function
 
 
@@ -85,7 +85,7 @@ Kattis Problems
 
 
 * Skip any of the following problems if you did them already.
-* Although not necessary, for practice, write each solution in a function with docstrings, typehints, and assertion tests
+* Although not necessary, for practice, write each solution in a function with docstrings, s, and assertion tests
 
 #. https://open.kattis.com/problems/hello
 #. https://open.kattis.com/problems/carrots
