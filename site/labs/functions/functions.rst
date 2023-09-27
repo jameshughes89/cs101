@@ -131,3 +131,8 @@ Kattis Problems
 #. https://open.kattis.com/problems/faktor
 #. https://open.kattis.com/problems/ladder
 #. https://open.kattis.com/problems/planina
+#. https://open.kattis.com/problems/leggjasaman
+#. https://open.kattis.com/problems/metronome
+#. https://open.kattis.com/problems/ovissa
+#. https://open.kattis.com/problems/fifa
+#. https://open.kattis.com/problems/vidsnuningur
