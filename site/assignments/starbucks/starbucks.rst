@@ -3,7 +3,7 @@ Density of Starbucks
 ********************
 
 * **Worth**: 5%
-* **DUE**: Monday October 2, 2023 at 11:55pm; submitted on MOODLE.
+* **DUE**: Monday October 9, 2023 at 11:55pm; submitted on MOODLE.
 * **Files**: :download:`asn1.ipynb <asn1.ipynb>`/:download:`asn1.py <asn1.py>` and :download:`starbucks2018.csv <starbucks2018.csv>`
 
 

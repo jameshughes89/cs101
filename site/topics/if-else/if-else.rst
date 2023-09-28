@@ -42,7 +42,7 @@ Conditional Expressions
         """
         return_value = a_number
         if a_number > 0:
-            return_value = return_value / 2
+            return_value = a_number / 2
         return return_value
 
 
