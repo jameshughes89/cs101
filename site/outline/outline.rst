@@ -140,7 +140,7 @@ Student Evaluation (Tentative Dates)
       - Due Date
     * - Assignment 1
       - 5%
-      - October 2nd
+      - October 9th
     * - Assignment 2
       - 5%
       - Mid October-ish
