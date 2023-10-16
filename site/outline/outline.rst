@@ -143,7 +143,7 @@ Student Evaluation (Tentative Dates)
       - October 9th
     * - Assignment 2
       - 5%
-      - Mid October-ish
+      - October 30th
     * - Assignment 3
       - 5%
       - Early November-ish
