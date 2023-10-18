@@ -155,7 +155,7 @@ Student Evaluation (Tentative Dates)
       - October 4th
     * - Test 2
       - 20%
-      - End of October-ish
+      - November 15
     * - Final Exam
       - 40%
       - TBD
