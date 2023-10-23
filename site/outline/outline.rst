@@ -146,10 +146,10 @@ Student Evaluation (Tentative Dates)
       - October 30th
     * - Assignment 3
       - 5%
-      - Early November-ish
+      - November 20th
     * - Assignment 4
       - 5%
-      - End of November-ish
+      - December 4th
     * - Test 1
       - 20%
       - October 4th
