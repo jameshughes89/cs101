@@ -2,8 +2,8 @@
 Tic-Tac-Toe
 ***********
 
-* **Worth**: TBD%
-* **DUE**: TBD at 11:55pm; submitted on MOODLE.
+* **Worth**: 5%
+* **DUE**: Monday November 20 at 11:55pm; submitted on MOODLE.
 * **Files**: :download:`asn3.ipynb <asn3.ipynb>`/:download:`asn3.py <asn3.py>`
 
 
