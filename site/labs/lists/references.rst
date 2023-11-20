@@ -48,11 +48,11 @@ Before Kattis
         b = [a,a,a]
 
         for row in b:
-            toPrint = ''
+            to_print = ''
             for d in row:
-                toPrint += str(d) + ' '
+                to_print += str(d) + ' '
 
-            print(toPrint)
+            print(to_print)
 
 
 #. Add ``b[1][1] = 1`` to line 3 and run it again and see what happens
