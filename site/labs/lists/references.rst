@@ -31,7 +31,7 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-#. Run the following code and figure out what what it does and how it does it
+#. Run the following code and figure out what it does and how it does it
 
     * I want to see everyone with paper here working through the logic
     * If you can't figure it out, hack around with the code
