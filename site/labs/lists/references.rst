@@ -60,7 +60,7 @@ Before Kattis
     * Is this what you expected?
 
 
-#. Alter the code such that the output will be what's below.
+#. Alter the code such that the output will be what's below
 
     * Change the list setup/creation part, not the loops
 
