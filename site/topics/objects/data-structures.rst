@@ -118,7 +118,7 @@ Course Class
 
 * Above is the constructor for the class
 * The only two attributes the class has are ``course_name`` and ``_students``
-* Notice how the ``Students`` attribute starts with an underscore ``_``
+* Notice how the ``_students`` attribute starts with an underscore ``_``
 * We don't really want to access the list of ``Student`` objects directly
 * Instead, to give us more control over how the list is used, we want to add and remove ``Students`` through the methods we write in the class
 * Nothing will actually stop us from accessing the list directly
