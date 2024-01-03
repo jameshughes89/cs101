@@ -238,7 +238,7 @@ Subtests
             expecteds = [...]
             for i in range(len(cases)):
                 with self.subTest():
-                    self.assertAlmostEqual(cases[i], expecteds[i].diameter(), 5)
+                    self.assertAlmostEqual(expecteds[i], cases[i].diameter(), 5)
 
 
 * It is possible to do multiple tests within a single test by just using a loop without the use of ``subTest``
