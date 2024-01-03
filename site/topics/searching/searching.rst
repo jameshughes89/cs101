@@ -8,7 +8,7 @@ Searching and Complexity
     * You know how to ``print`` and ``input`` information
     * You know about types, values, and variables
     * You have been making use of functions
-    * You have learned about basic logic and know how to use``if`` and ``else``
+    * You have learned about basic logic and know how to use ``if`` and ``else``
     * ``for`` and ``while`` loops are tools you have used
     * You learned how to use objects
     * Linear data structures, like a ``List``, are familiar and you are used to working with reference variables
@@ -181,7 +181,7 @@ Python
 .. code-block:: python
     :linenos:
 	
-    def linear_search(haystack, needle):
+    def linear_search(haystack: list[int], needle: int) -> bool:
         for i in range(len(haystack)):
             if haystack[i] == needle:
                 return True

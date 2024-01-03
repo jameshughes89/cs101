@@ -127,8 +127,6 @@ class CountryCatalogue:
 
         :param country: Country object to add to the collection.
         :type country: Country object.
-        :param area: Area of the country.
-        :type area: float.
         """
 
 

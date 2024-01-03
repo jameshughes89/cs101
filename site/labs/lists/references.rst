@@ -31,7 +31,7 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-#. Run the following code and figure out what what it does and how it does it
+#. Run the following code and figure out what it does and how it does it
 
     * I want to see everyone with paper here working through the logic
     * If you can't figure it out, hack around with the code
@@ -48,11 +48,11 @@ Before Kattis
         b = [a,a,a]
 
         for row in b:
-            toPrint = ''
+            to_print = ''
             for d in row:
-                toPrint += str(d) + ' '
+                to_print += str(d) + ' '
 
-            print(toPrint)
+            print(to_print)
 
 
 #. Add ``b[1][1] = 1`` to line 3 and run it again and see what happens
@@ -60,7 +60,7 @@ Before Kattis
     * Is this what you expected?
 
 
-#. Alter the code such that the output will be what's below.
+#. Alter the code such that the output will be what's below
 
     * Change the list setup/creation part, not the loops
 
