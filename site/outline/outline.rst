@@ -24,9 +24,6 @@ Prerequisites
 * An interest in learning a bit about what programming can do for *you*!
 
 
-Instructor
-==========
-
 
 Instructor
 ==========
