@@ -42,40 +42,22 @@ Instructor
 Lecture Times
 =============
 
-Lecture Section 11
-------------------
-
-* Tue 11:30 -- 12:20 (K4), MULH 2070
-* Wed 13:30 -- 14:20 (K5), MULH 2070
-* Fri 12:30 -- 13:20 (K6), MULH 2070
-
-
-Lecture Section 12
-------------------
-
-* Mon 10:30 -- 11:20 (C1), SCHW 110
-* Wed 09:30 -- 10:20 (C2), SCHW 110
-* Fri 08:30 -- 09:20 (C3), SCHW 110
+N/A --- This course is offered asynchronously. Working through the topics is to be done independently while following
+the course schedule.
 
 
 
 Lab Sections
 ============
 
-* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
-* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
-* Lab Sec 13: Mon 13:30 -- 15:20 (C4-A7), MULH 4024
-* Lab Sec 14: Tue 13:30 -- 15:20 (A5-K7), MULH 4024
-
+N/A --- This course is offered asynchronously. Working through the labs is to be done independently while following the
+course schedule.
 
 
 Office Hours
 ============
 
-* Tue 12:30 -- 13:30, Annex 20B
-* Wed 12:30 -- 13:30, Annex 20B
-* Thr 13:30 -- 14:30, Annex 20B
-* Fri 13:30 -- 14:30, Annex 20B
+By appointment.
 
 
 
@@ -84,6 +66,7 @@ Website
 
 * Mostly :doc:`this website </index>`
 * MOODLE
+
 
 
 Textbook and Lecture Notes
@@ -130,8 +113,8 @@ are fairly optimistic and we'll probably not get to them, but whatever.
 
 
 
-Student Evaluation (Tentative Dates)
-====================================
+Student Evaluation
+==================
 
 .. list-table:: Final Grade Breakdown
     :widths: 50 50 50
@@ -142,22 +125,22 @@ Student Evaluation (Tentative Dates)
       - Due Date
     * - Assignment 1
       - 5%
-      - October 9th
+      - TBD
     * - Assignment 2
       - 5%
-      - October 30th
+      - TBD
     * - Assignment 3
       - 5%
-      - November 20th
+      - TBD
     * - Assignment 4
       - 5%
-      - December 4th
+      - TBD
     * - Test 1
       - 20%
-      - October 4th
+      - TBD
     * - Test 2
       - 20%
-      - November 15
+      - TBD
     * - Final Exam
       - 40%
       - TBD
