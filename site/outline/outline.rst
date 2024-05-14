@@ -1,9 +1,13 @@
-=====================================================================
-Computer Science 161 Sections 11 & 12 --- Introduction to Programming
-=====================================================================
+================================================================
+Computer Science 161 Sections 66 --- Introduction to Programming
+================================================================
 
-Fall 2023
-=========
+Summer 2024
+===========
+
+This course is offered asynchronously.
+
+
 
 Course Description
 ==================
@@ -16,6 +20,7 @@ problem analysis, algorithm development, data representation, control structures
 manipulation.
 
 This class will use the programming language Python.
+
 
 
 Prerequisites
