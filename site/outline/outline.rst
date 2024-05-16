@@ -226,13 +226,30 @@ revolve around `Kattis <https://open.kattis.com/>`_.
 
 Labs begin on the 1st week of class for lab.
 
-Lab attendance is mandatory and it is your responsibility to ensure your attendance is recorded.
 
-You may only attend the lab session for which you are registered. Students must bring their student identification to
-all labs.
+Lab Procedure
+-------------
 
-There are no make-up labs, and students who are absent for a lab do not have the option of attending another lab.
-Students who encounter serious health or other personal difficulties are encouraged to contact the professor.
+Each lab consists of three parts:
+
+    #. Pre-lab exercises
+    #. Before Kattis exercises
+    #. Kattis Problems
+
+
+The "pre-lab" exercises are from the free course textbook and are selected based on their relevance to the course
+material.
+
+The "before Kattis exercises" are the core part of each lab. These questions are designed to directly complement the
+course material covered in the topics and emphasize specific technical skills.
+
+The "Kattis problems" are problems selected from Kattis, a website with programming competition style problems where
+people can submit their solutions for automated evaluation. A select set of Kattis problems related to course material
+are included at the end of each lab for students to work on. It is not necessary to complete all these problems for each
+lab as they can be quite challenging.
+
+Students are not to submit any lab work for evaluation, but students are recommended to attend office hours to discuss
+any questions they have regarding the material.
 
 
 
