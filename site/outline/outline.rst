@@ -42,22 +42,21 @@ Instructor
 Lecture Times
 =============
 
-N/A --- This course is offered asynchronously. Working through the topics is to be done independently while following
-the course schedule.
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Lab Sections
 ============
 
-N/A --- This course is offered asynchronously. Working through the labs is to be done independently while following the
-course schedule.
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
+
 
 
 Office Hours
 ============
 
-By appointment.
+* By appointment
 
 
 
@@ -125,22 +124,22 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - TBD
+      - Monday July 8, 2024, 11:55pm
     * - Assignment 2
       - 5%
-      - TBD
+      - Monday July 22, 2024, 11:55pm
     * - Assignment 3
       - 5%
-      - TBD
+      - Monday August 5, 2024, 11:55pm
     * - Assignment 4
       - 5%
-      - TBD
+      - Sunday August 18, 2024, 11:55pm
     * - Test 1
       - 20%
-      - TBD
+      - Wednesday July 10, 2024
     * - Test 2
       - 20%
-      - TBD
+      - Wednesday July 31, 2024
     * - Final Exam
       - 40%
       - TBD
@@ -225,7 +224,7 @@ Labs
 The purpose of the weekly labs is to give students hands-on experience. Labs will have required assigned work and will
 revolve around `Kattis <https://open.kattis.com/>`_.
 
-Labs begin on the 1st week of class for lab sections 11 and 12. Lab sections 13 and 14 begin week 2.
+Labs begin on the 1st week of class for lab.
 
 Lab attendance is mandatory and it is your responsibility to ensure your attendance is recorded.
 
@@ -267,13 +266,6 @@ Students must understand that the professors and TAs are not there to provide th
 students solving their problems.
 
 
-Attendance
-==========
-
-Students missing three classes without reasonable cause will be reported to the Assistant Vice-President Academic
-Affairs. See section 3.7 of the academic calendar for more details. You will be reported if you are repeatedly
-delinquent in assignments or attendance at classes or laboratories.
-
 
 Copyright Policy
 ================
@@ -284,13 +276,6 @@ law and is strictly prohibited.
 
 The course copyright policy will be aggressively enforced.
 
-
-Class Recording Policy
-======================
-
-Students may not create audio and/or video recordings of classes. Students creating unauthorized recording of lectures
-violate an instructor's intellectual property rights and the Canadian Copyright Act. Students violating this policy will
-be subject to disciplinary actions.
 
 
 Statement of Academic Offenses and Academic Integrity
