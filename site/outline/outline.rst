@@ -225,6 +225,9 @@ see the Proctoring section of your course Moodle page. For information on polici
 please see
 `StFX Online / Student Support - Proctoring <https://www.stfx.ca/programs-courses/stfx-online/student-support>`_.
 
+Online proctored exams open at 5am and close at 8pm to account for time differences and schedules. Students will create
+a ProctorU account and book a time through that platform.
+
 
 
 Labs
