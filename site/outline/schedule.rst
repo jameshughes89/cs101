@@ -66,7 +66,7 @@ must be prepared for the pacing of the course.
     * - Assignment 3
       - Monday August 5, 2024, 11:55pm
     * - Assignment 4
-      - Monday August 19, 2024, 11:55pm
+      - Sunday August 18, 2024, 11:55pm
 
 
 
@@ -81,4 +81,4 @@ must be prepared for the pacing of the course.
     * - Test 2
       - Wednesday July 31, 2024
     * - Test 3 (Final Exam)
-      - Wednesday August 21, 2024
+      - TBD
