@@ -1,9 +1,13 @@
-=====================================================================
-Computer Science 161 Sections 11 & 12 --- Introduction to Programming
-=====================================================================
+================================================================
+Computer Science 161 Sections 66 --- Introduction to Programming
+================================================================
 
-Fall 2023
-=========
+Summer 2024
+===========
+
+This course is offered asynchronously. The course schedule can be found :doc:`here </outline/schedule>`.
+
+
 
 Course Description
 ==================
@@ -16,6 +20,7 @@ problem analysis, algorithm development, data representation, control structures
 manipulation.
 
 This class will use the programming language Python.
+
 
 
 Prerequisites
@@ -37,40 +42,21 @@ Instructor
 Lecture Times
 =============
 
-Lecture Section 11
-------------------
-
-* Tue 11:30 -- 12:20 (K4), MULH 2070
-* Wed 13:30 -- 14:20 (K5), MULH 2070
-* Fri 12:30 -- 13:20 (K6), MULH 2070
-
-
-Lecture Section 12
-------------------
-
-* Mon 10:30 -- 11:20 (C1), SCHW 110
-* Wed 09:30 -- 10:20 (C2), SCHW 110
-* Fri 08:30 -- 09:20 (C3), SCHW 110
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Lab Sections
 ============
 
-* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
-* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
-* Lab Sec 13: Mon 13:30 -- 15:20 (C4-A7), MULH 4024
-* Lab Sec 14: Tue 13:30 -- 15:20 (A5-K7), MULH 4024
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Office Hours
 ============
 
-* Tue 12:30 -- 13:30, Annex 20B
-* Wed 12:30 -- 13:30, Annex 20B
-* Thr 13:30 -- 14:30, Annex 20B
-* Fri 13:30 -- 14:30, Annex 20B
+* By appointment
 
 
 
@@ -79,6 +65,7 @@ Website
 
 * Mostly :doc:`this website </index>`
 * MOODLE
+
 
 
 Textbook and Lecture Notes
@@ -125,8 +112,8 @@ are fairly optimistic and we'll probably not get to them, but whatever.
 
 
 
-Student Evaluation (Tentative Dates)
-====================================
+Student Evaluation
+==================
 
 .. list-table:: Final Grade Breakdown
     :widths: 50 50 50
@@ -137,22 +124,22 @@ Student Evaluation (Tentative Dates)
       - Due Date
     * - Assignment 1
       - 5%
-      - October 9th
+      - Monday July 8, 2024, 11:55pm
     * - Assignment 2
       - 5%
-      - October 30th
+      - Monday July 22, 2024, 11:55pm
     * - Assignment 3
       - 5%
-      - November 20th
+      - Monday August 5, 2024, 11:55pm
     * - Assignment 4
       - 5%
-      - December 4th
+      - Sunday August 18, 2024, 11:55pm
     * - Test 1
       - 20%
-      - October 4th
+      - Wednesday July 10, 2024
     * - Test 2
       - 20%
-      - November 15
+      - Wednesday July 31, 2024
     * - Final Exam
       - 40%
       - TBD
@@ -230,6 +217,18 @@ following test or final exam, whichever comes first. If both tests are missed, t
 the final exam.
 
 
+ProctorU
+--------
+
+The online exams in this course require a proctor. For instructions on how to schedule your exam with ProctorU, please
+see the Proctoring section of your course Moodle page. For information on policies governing your use of ProctorU,
+please see
+`StFX Online / Student Support - Proctoring <https://www.stfx.ca/programs-courses/stfx-online/student-support>`_.
+
+Online proctored exams open at 5am and close at 8pm to account for time differences and schedules. Students will create
+a ProctorU account and book a time through that platform.
+
+
 
 Labs
 ====
@@ -237,15 +236,32 @@ Labs
 The purpose of the weekly labs is to give students hands-on experience. Labs will have required assigned work and will
 revolve around `Kattis <https://open.kattis.com/>`_.
 
-Labs begin on the 1st week of class for lab sections 11 and 12. Lab sections 13 and 14 begin week 2.
+Labs begin on the 1st week of class for lab.
 
-Lab attendance is mandatory and it is your responsibility to ensure your attendance is recorded.
 
-You may only attend the lab session for which you are registered. Students must bring their student identification to
-all labs.
+Lab Procedure
+-------------
 
-There are no make-up labs, and students who are absent for a lab do not have the option of attending another lab.
-Students who encounter serious health or other personal difficulties are encouraged to contact the professor.
+Each lab consists of three parts:
+
+    #. Pre-lab exercises
+    #. Before Kattis exercises
+    #. Kattis Problems
+
+
+The "pre-lab" exercises are from the free course textbook and are selected based on their relevance to the course
+material.
+
+The "before Kattis exercises" are the core part of each lab. These questions are designed to directly complement the
+course material covered in the topics and emphasize specific technical skills.
+
+The "Kattis problems" are problems selected from Kattis, a website with programming competition style problems where
+people can submit their solutions for automated evaluation. A select set of Kattis problems related to course material
+are included at the end of each lab for students to work on. It is not necessary to complete all these problems for each
+lab as they can be quite challenging.
+
+Students are not to submit any lab work for evaluation, but students are recommended to attend office hours to discuss
+any questions they have regarding the material.
 
 
 
@@ -279,13 +295,6 @@ Students must understand that the professors and TAs are not there to provide th
 students solving their problems.
 
 
-Attendance
-==========
-
-Students missing three classes without reasonable cause will be reported to the Assistant Vice-President Academic
-Affairs. See section 3.7 of the academic calendar for more details. You will be reported if you are repeatedly
-delinquent in assignments or attendance at classes or laboratories.
-
 
 Copyright Policy
 ================
@@ -296,13 +305,6 @@ law and is strictly prohibited.
 
 The course copyright policy will be aggressively enforced.
 
-
-Class Recording Policy
-======================
-
-Students may not create audio and/or video recordings of classes. Students creating unauthorized recording of lectures
-violate an instructor's intellectual property rights and the Canadian Copyright Act. Students violating this policy will
-be subject to disciplinary actions.
 
 
 Statement of Academic Offenses and Academic Integrity
