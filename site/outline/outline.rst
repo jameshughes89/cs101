@@ -217,6 +217,15 @@ following test or final exam, whichever comes first. If both tests are missed, t
 the final exam.
 
 
+ProctorU
+--------
+
+The online exams in this course require a proctor. For instructions on how to schedule your exam with ProctorU, please
+see the Proctoring section of your course Moodle page. For information on policies governing your use of ProctorU,
+please see
+`StFX Online / Student Support - Proctoring <https://www.stfx.ca/programs-courses/stfx-online/student-support>`_.
+
+
 
 Labs
 ====
