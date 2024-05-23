@@ -135,13 +135,10 @@ Student Evaluation
       - 5%
       - Sunday August 18, 2024, 11:55pm
     * - Test 1
-      - 20%
-      - Wednesday July 10, 2024
-    * - Test 2
-      - 20%
-      - Wednesday July 31, 2024
+      - 30%
+      - Wednesday July 17, 2024
     * - Final Exam
-      - 40%
+      - 50%
       - TBD
 
 
@@ -213,8 +210,7 @@ Missed Tests
 ------------
 
 There are no make-up tests. If a student is unable to write a test, the weight of their test will be added to the
-following test or final exam, whichever comes first. If both tests are missed, the weight of the tests will be added to
-the final exam.
+final exam.
 
 
 ProctorU
