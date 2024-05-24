@@ -77,6 +77,6 @@ must be prepared for the pacing of the course.
     * - Test Number
       - Date
     * - Test 1
-      - Wednesday July 17, 2024
+      - Wednesday July 24, 2024
     * - Test 2 (Final Exam)
       - TBD

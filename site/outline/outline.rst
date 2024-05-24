@@ -136,7 +136,7 @@ Student Evaluation
       - Sunday August 18, 2024, 11:55pm
     * - Test 1
       - 30%
-      - Wednesday July 17, 2024
+      - Wednesday July 24, 2024
     * - Final Exam
       - 50%
       - TBD
