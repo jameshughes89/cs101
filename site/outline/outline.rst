@@ -139,7 +139,7 @@ Student Evaluation
       - Wednesday July 24, 2024
     * - Final Exam
       - 50%
-      - TBD
+      - Wednesday August 21, 2024
 
 
 
