@@ -42,16 +42,6 @@ Why Are The Course Notes A Website?
     * `Here's an example <https://docs.python.org/3/library/math.html>`_
 
 
-There Are Two Sections?
-=======================
-
-* Yes
-* Section 11 is taught by Dr. Hughes
-* Section 12 is also taught by Dr. Hughes
-
-* The reason for two sections is to accommodate more students' timetables
-
-
 
 How Will This Class Work?
 =========================
