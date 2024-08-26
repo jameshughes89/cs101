@@ -118,22 +118,25 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Monday July 8, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday July 22, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Assignment 3
       - 5%
-      - Monday August 5, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Assignment 4
       - 5%
-      - Sunday August 18, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Test 1
-      - 30%
-      - Wednesday July 24, 2024
+      - 20%
+      - TBD, 2024
+    * - Test 2
+      - 20%
+      - TBD, 2024
     * - Final Exam
-      - 50%
-      - Wednesday August 21, 2024
+      - 40%
+      - TBD, 2024
 
 
 
