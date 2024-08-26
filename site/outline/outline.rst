@@ -5,9 +5,6 @@ Computer Science 161 Sections 66 --- Introduction to Programming
 Summer 2024
 ===========
 
-This course is offered asynchronously. The course schedule can be found :doc:`here </outline/schedule>`.
-
-
 
 Course Description
 ==================
@@ -42,14 +39,11 @@ Instructor
 Lecture Times
 =============
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Lab Sections
 ============
-
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 

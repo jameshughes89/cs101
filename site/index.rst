@@ -27,14 +27,11 @@ Dr. James Hughes
 Lecture
 ^^^^^^^
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
-
 
 
 Lab Sections
 ^^^^^^^^^^^^
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
