@@ -1,6 +1,6 @@
-***********************************
-Welcome to CSCI 161 --- Summer 2024
-***********************************
+*********************************
+Welcome to CSCI 161 --- Fall 2024
+*********************************
 
 An introduction to computer science, programming, algorithms, and data structures. No experience with programming is
 required.
@@ -12,8 +12,8 @@ algorithm development, data representation, control structures, functions, lists
 
 
 
-Professors
-==========
+Professor
+=========
 
 Dr. James Hughes
 ----------------
@@ -27,18 +27,26 @@ Dr. James Hughes
 Lecture
 ^^^^^^^
 
+* Tue 11:30 -- 12:20 (K4), MULH 2070
+* Wed 13:30 -- 14:20 (K5), MULH 2070
+* Fri 12:30 -- 13:20 (K6), MULH 2070
 
 
 Lab Sections
 ^^^^^^^^^^^^
 
-
+* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
 
 
 `Office Hours <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* By appointment
+* Tue 12:30 -- 13:30, Annex 20B
+* Wed 12:30 -- 13:30, Annex 20B
+* Thr 13:30 -- 14:30, Annex 20B
+* Fri 13:30 -- 14:30, Annex 20B
+
 
 
 .. toctree::
