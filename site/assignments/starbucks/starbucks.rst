@@ -136,11 +136,16 @@ Part 5 --- Counting Starbucks
 =============================
 
 In order to calculate the density of Starbucks, the number of Starbucks within the specified area needs to be known.
-With the data available, the way to do this is to check each Starbucks' latitude & longitude and check if it falls
+With the data available, the way to do this is to check each Starbucks' latitude & longitude and see if it falls
 within the specified "rectangle". In other words, check if the Starbucks' latitude falls between the "rectangle's"
 latitudes and if the longitude falls between the "rectangle's" longitudes. See the below image for an example.
 
 .. image:: a1-LatLongSquareCount.png
+
+For the purpose of this assignment, only count Starbucks if they are strictly between the specified latitudes and
+longitudes; don't count them if they fall on any of the latitude/longitude lines. In other words, when checking if
+the location is within the rectangle, use greater than/less than instead of greater than or equal to/less than or equal
+to. 
 
 The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
 specifying the "rectangle" as parameters. For simplicity, assume ``latitude_line_1 < latitude_line_2`` and
