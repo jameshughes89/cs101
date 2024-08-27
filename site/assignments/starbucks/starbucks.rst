@@ -143,7 +143,9 @@ latitudes and if the longitude falls between the "rectangle's" longitudes. See t
 .. image:: a1-LatLongSquareCount.png
 
 For the purpose of this assignment, only count Starbucks if they are strictly between the specified latitudes and
-longitudes; don't count them if they fall on any of the latitude/longitude lines. 
+longitudes; don't count them if they fall on any of the latitude/longitude lines. In other words, when checking if
+the location is within the rectangle, use greater than/less than instead of greater than or equal to/less than or equal
+to. 
 
 The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
 specifying the "rectangle" as parameters. For simplicity, assume ``latitude_line_1 < latitude_line_2`` and
