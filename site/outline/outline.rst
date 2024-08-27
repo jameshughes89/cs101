@@ -1,12 +1,9 @@
-================================================================
-Computer Science 161 Sections 66 --- Introduction to Programming
-================================================================
+===============================================================
+Computer Science 161 Section 11 --- Introduction to Programming
+===============================================================
 
-Summer 2024
-===========
-
-This course is offered asynchronously. The course schedule can be found :doc:`here </outline/schedule>`.
-
+Fall 2024
+=========
 
 
 Course Description
@@ -42,21 +39,27 @@ Instructor
 Lecture Times
 =============
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
+* Tue 11:30 -- 12:20 (K4), MULH 2070
+* Wed 13:30 -- 14:20 (K5), MULH 2070
+* Fri 12:30 -- 13:20 (K6), MULH 2070
 
 
 
 Lab Sections
 ============
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
+* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
 
 
 
 Office Hours
 ============
 
-* By appointment
+* Tue 12:30 -- 13:30, Annex 20B
+* Wed 12:30 -- 13:30, Annex 20B
+* Thr 13:30 -- 14:30, Annex 20B
+* Fri 13:30 -- 14:30, Annex 20B
 
 
 
@@ -97,18 +100,12 @@ are fairly optimistic and we'll probably not get to them, but whatever.
 - Lists, Tuples
 - Dictionaries
 - Pointers and RAM
-- Arrays, Numpy, and APIs
 - File Input/Output
 - Debugging
 - Searching
 - Sorting
-- Recursion
 - Objects
 - Computational Complexity
-- Data Visualization
-- Machine Learning
-- Dynamic Programming
-- Monte Carlo Methods
 
 
 
@@ -124,22 +121,25 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Monday July 8, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday July 22, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Assignment 3
       - 5%
-      - Monday August 5, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Assignment 4
       - 5%
-      - Sunday August 18, 2024, 11:55pm
+      - Monday TBD, 2024, 11:55pm
     * - Test 1
-      - 30%
-      - Wednesday July 24, 2024
+      - 20%
+      - TBD, 2024
+    * - Test 2
+      - 20%
+      - TBD, 2024
     * - Final Exam
-      - 50%
-      - Wednesday August 21, 2024
+      - 40%
+      - TBD, 2024
 
 
 
@@ -210,19 +210,8 @@ Missed Tests
 ------------
 
 There are no make-up tests. If a student is unable to write a test, the weight of their test will be added to the
-final exam.
-
-
-ProctorU
---------
-
-The online exams in this course require a proctor. For instructions on how to schedule your exam with ProctorU, please
-see the Proctoring section of your course Moodle page. For information on policies governing your use of ProctorU,
-please see
-`StFX Online / Student Support - Proctoring <https://www.stfx.ca/programs-courses/stfx-online/student-support>`_.
-
-Online proctored exams open at 5am and close at 8pm to account for time differences and schedules. Students will create
-a ProctorU account and book a time through that platform.
+following test or final exam, whichever comes first. If both tests are missed, the weight of the tests will be added to
+the final exam.
 
 
 
@@ -232,7 +221,7 @@ Labs
 The purpose of the weekly labs is to give students hands-on experience. Labs will have required assigned work and will
 revolve around `Kattis <https://open.kattis.com/>`_.
 
-Labs begin on the 1st week of class for lab.
+Labs begin on the 1st week of class.
 
 
 Lab Procedure
@@ -289,6 +278,14 @@ Office hours are provided to students to facilitate their success --- students a
 
 Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
 students solving their problems.
+
+
+
+Attendance
+==========
+Students missing three classes without reasonable cause will be reported to the Assistant Vice-President Academic
+Affairs. See section 3.7 of the academic calendar for more details. You will be reported if you are repeatedly
+delinquent in assignments or attendance at classes or laboratories.
 
 
 
