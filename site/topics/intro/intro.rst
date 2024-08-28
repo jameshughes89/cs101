@@ -185,6 +185,12 @@ Can I Write A Program Now?
 
 * You're now officially a computer programmer
 
+.. warning::
+
+    If not already done, turn off the generative AI features within Google Colab, as described in
+    :doc:`getting set </getting-set/getting-set>`.
+
+
 
 For Next Class
 ==============

@@ -37,6 +37,7 @@ Hello World
     * If you do not have a Google account, you can make one for the purpose of this course
 
 
+#. Turn off the generative AI features within Google Colab, as described in :doc:`getting set </getting-set/getting-set>`
 #. Get *Hello World* working on Colab
 
     * If you are unsure of what this is, review :doc:`Topic 1 </topics/intro/intro>`
