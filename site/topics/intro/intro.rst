@@ -187,19 +187,8 @@ Can I Write A Program Now?
 
 .. warning::
 
-    We must turn off the generative AI feature within Google Colab to help ensure your success. The use of the
-    generative AI feature within Colab will be a problem for this course for two major reasons. The first is that it
-    tries to help programmers write the code that you are to learn in this course, thereby eliminating your ability to
-    learn the content. The second reason is that it is often incorrect, which is a nightmare for new programmers.
-
-    To turn this feature off, select "Tools" on the top menu, then select "Settings".
-
-    .. image:: tools_settings.png
-
-    Within the settings window, select the "AI Assistance" option on the left, then uncheck "Consented to use generative
-    AI features" and check "Hide generative AI features".
-
-    .. image:: ai_options_settings.png
+    If not already done, turn off the generative AI features within Google Colab, as described in
+    :doc:`getting set </getting-set/getting-set>`.
 
 
 
