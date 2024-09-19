@@ -133,7 +133,7 @@ Student Evaluation
       - Monday TBD, 2024, 11:55pm
     * - Test 1
       - 20%
-      - TBD, 2024
+      - Wednesday October 2, 2024, in classgit status
     * - Test 2
       - 20%
       - TBD, 2024
