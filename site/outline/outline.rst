@@ -121,7 +121,7 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Monday September 30, 2024, 11:55pm
+      - Tuesday October 1, 2024, 11:55pm
     * - Assignment 2
       - 5%
       - Monday TBD, 2024, 11:55pm
