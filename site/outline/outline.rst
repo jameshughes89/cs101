@@ -124,7 +124,7 @@ Student Evaluation
       - Tuesday October 1, 2024, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday TBD, 2024, 11:55pm
+      - Monday October 21, 2024, 11:55pm
     * - Assignment 3
       - 5%
       - Monday TBD, 2024, 11:55pm
