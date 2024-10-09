@@ -1,6 +1,6 @@
-*************
-Linear Search
-*************
+*********************
+Loops & Linear Search
+*********************
 
 * Feel free to use your laptop
 * You are strongly encourage to work with others
@@ -14,6 +14,13 @@ Linear Search
 Pre Lab Exercises
 =================
 
+#. `Chapter 7 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/iteration.html#exercises>`_
+
+    * 9 `What is a "triangle number"? <https://en.wikipedia.org/wiki/Triangular_number>`_ (no ``assert`` test for this)
+    * 14 (use ``assert`` to test instead of their ``test`` function)
+    * 15 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
+
+
 #. `Chapter 8 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/strings.html#exercises>`_
 
     * 3
@@ -24,12 +31,24 @@ Pre Lab Exercises
     * 13 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
 
 
-#. Write assertion tests for each of your functions above
+#. Write assertion tests for each of your functions above, except for exercise 9, since it requires ``print``
 
 
 
 Before Kattis
 =============
+
+#. Write a function ``count_to_n_while(n: int):`` to print out each number from :math:`0` -- :math:`(n - 1)`
+
+    * This function must use a ``while`` loop
+    * This function will not return anything
+
+
+#. Write a function ``count_to_n_for(n: int):`` to print out each number from :math:`0` -- :math:`(n - 1)`
+
+    * This function must use a ``for`` loop
+    * This function will not return anything
+
 
 #. Write a function ``character_is_in_while(needle: str, haystack:str) -> bool:``
 
@@ -65,17 +84,10 @@ Kattis Problems
     * Trying to solve problems by just typing away will not yield success
 
 
-.. note::
-
-    If you find yourself having a particularly difficult time on any of the problems, just move on to the next one.
-
-
-#. https://open.kattis.com/problems/autori
-#. https://open.kattis.com/problems/apaxiaaans
-#. https://open.kattis.com/problems/hissingmicrophone
-#. https://open.kattis.com/problems/trik
-#. https://open.kattis.com/problems/pot
-#. https://open.kattis.com/problems/filip
-#. https://open.kattis.com/problems/reversebinary
-#. https://open.kattis.com/problems/sevenwonders
-#. https://open.kattis.com/problems/zamka
+#. https://open.kattis.com/problems/timeloop
+#. https://open.kattis.com/problems/oddities
+#. https://open.kattis.com/problems/fizzbuzz
+#. https://open.kattis.com/problems/sibice
+#. https://open.kattis.com/problems/bus
+#. https://open.kattis.com/problems/datum
+#. https://open.kattis.com/problems/dicecup
