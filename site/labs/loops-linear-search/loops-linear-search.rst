@@ -91,3 +91,12 @@ Kattis Problems
 #. https://open.kattis.com/problems/bus
 #. https://open.kattis.com/problems/datum
 #. https://open.kattis.com/problems/dicecup
+#. https://open.kattis.com/problems/autori
+#. https://open.kattis.com/problems/apaxiaaans
+#. https://open.kattis.com/problems/hissingmicrophone
+#. https://open.kattis.com/problems/trik
+#. https://open.kattis.com/problems/pot
+#. https://open.kattis.com/problems/filip
+#. https://open.kattis.com/problems/reversebinary
+#. https://open.kattis.com/problems/sevenwonders
+#. https://open.kattis.com/problems/zamka
