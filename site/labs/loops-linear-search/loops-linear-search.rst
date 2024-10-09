@@ -31,7 +31,7 @@ Pre Lab Exercises
     * 13 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
 
 
-#. Write assertion tests for each of your functions above, except for exercise 9, since it requires ``print``
+#. Write assertion tests for each of your functions above, except for Chapter 7 exercise 9, as it requires ``print``
 
 
 
