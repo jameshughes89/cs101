@@ -136,7 +136,7 @@ Student Evaluation
       - Wednesday October 2, 2024, in class
     * - Test 2
       - 20%
-      - TBD, 2024
+      - Wednesday November 13, 2024, in class
     * - Final Exam
       - 40%
       - TBD, 2024
