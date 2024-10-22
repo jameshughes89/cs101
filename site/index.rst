@@ -92,8 +92,7 @@ Lab Sections
     labs/testing/testing
     labs/conditionals/conditionals
     labs/car-rental/car-rental
-    labs/loops/loops
-    labs/linear-search/linear-search
+    labs/loops-linear-search/loops-linear-search
     labs/lists/1d-lists
     labs/lists/2d-lists
     labs/lists/references
