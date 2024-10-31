@@ -52,9 +52,9 @@ Given the following code:
 
     .. code-block:: python
 
-        two_D = [['a', 'b', 'c'],
-                ['d', 'e', 'f'],
-                ['g', 'h', 'i']]
+        two_dimensional = [['a', 'b', 'c'],
+                           ['d', 'e', 'f'],
+                           ['g', 'h', 'i']]
 
 
 #. Write a function ``print_row(matrix, row: int):``
