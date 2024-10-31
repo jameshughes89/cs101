@@ -42,7 +42,7 @@ Before Kattis
 
         .. code-block:: python
 
-            def printRow(mat, row):
+            def print_row(mat, row):
                 print(mat[row][0])
                 print(mat[row][1])
                 print(mat[row][2])
@@ -52,7 +52,7 @@ Given the following code:
 
     .. code-block:: python
 
-        twoD = [['a', 'b', 'c'],
+        two_D = [['a', 'b', 'c'],
                 ['d', 'e', 'f'],
                 ['g', 'h', 'i']]
 
@@ -132,7 +132,7 @@ Given the following code:
 
     .. code-block:: python
 
-       fourXfour = [['a', 'b', 'c', 'w'],
+       four_x_four = [['a', 'b', 'c', 'w'],
                     ['d', 'e', 'f', 'x'],
                     ['g', 'h', 'i', 'y'],
                     ['j', 'k', 'l', 'z']]
