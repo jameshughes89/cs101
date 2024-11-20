@@ -30,13 +30,7 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-#. Add to the ``Person`` class from the previous lab
-
-    * A reasonable ``__repr__`` method --- you can decide what the string looks like
-    * A reasonable ``__eq__`` method --- you can decide what it means for two ``Person`` objects to be equivalent
-    * Make instances of the class and write ``assert`` tests to verify correctness
-
-
+#. Have a complete ``Person`` class from the previous lab
 #. Write a ``Contacts`` class that will manage a collection of ``Person`` objects
 
     * The class will keep track of many instances of ``Person`` objects

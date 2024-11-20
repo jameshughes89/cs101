@@ -1,6 +1,6 @@
-*******
-Objects
-*******
+********************
+Unit Testing Objects
+********************
 
 * Feel free to use your laptop
 * You are strongly encourage to work with others
@@ -28,8 +28,8 @@ Before Kattis
     * Attribute for ``email_address``
     * The constructor will take three parameters for specifying the values of the attributes
     * A method returning a string of their ``full_name()`` --- e.g. ``Bob Smith``
-    * Write a reasonable ``__eq__`` method
-    * Write a reasonable ``__repr__`` method
+    * Write a reasonable ``__eq__`` method --- you can decide what it means for two ``Person`` objects to be equivalent
+    * Write a reasonable ``__repr__`` method --- you can decide what the string looks like
     * Make instances of the class and write ``assert`` tests to verify correctness
 
 

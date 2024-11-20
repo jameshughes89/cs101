@@ -97,6 +97,7 @@ Lab Sections
     labs/lists/2d-lists
     labs/lists/references
     labs/objects/objects
+    labs/testing/unittest-objects
     labs/objects/data-structures
     
 
