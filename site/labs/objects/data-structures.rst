@@ -54,6 +54,14 @@ Before Kattis
     * Make an instance of the class, add/remove ``Person`` objects to it, and write ``assert`` tests to verify correctness
 
 
+#. Create unittest classes for the ``Contacts`` class
+
+    * Write tests for each of the methods in each class
+    * You may find the ``Course`` class' :download:`unittests helpful <../../../test/test_course.py>`
+    * Run the tests with ``unittest.main(argv=[''], verbosity=2, exit=False)``
+    * Ensure all tests pass
+
+
 
 Kattis Problems
 ===============
