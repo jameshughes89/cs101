@@ -30,13 +30,7 @@ Pre Lab Exercises
 Before Kattis
 =============
 
-#. Add to the ``Person`` class from the previous lab
-
-    * A reasonable ``__repr__`` method --- you can decide what the string looks like
-    * A reasonable ``__eq__`` method --- you can decide what it means for two ``Person`` objects to be equivalent
-    * Make instances of the class and write ``assert`` tests to verify correctness
-
-
+#. Have a complete ``Person`` class from the previous lab
 #. Write a ``Contacts`` class that will manage a collection of ``Person`` objects
 
     * The class will keep track of many instances of ``Person`` objects
@@ -58,6 +52,14 @@ Before Kattis
 
 
     * Make an instance of the class, add/remove ``Person`` objects to it, and write ``assert`` tests to verify correctness
+
+
+#. Create unittest classes for the ``Contacts`` class
+
+    * Write tests for each of the methods in each class
+    * You may find the ``Course`` class' :download:`unittests helpful <../../../test/test_course.py>`
+    * Run the tests with ``unittest.main(argv=[''], verbosity=2, exit=False)``
+    * Ensure all tests pass
 
 
 
