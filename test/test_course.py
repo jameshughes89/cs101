@@ -124,6 +124,11 @@ class CourseTest(TestCase):
         student_not_there = Student("Not", "There", 918273645)
         self.assertFalse(course.contains(student_not_there))
 
+    def test_contains_zero_students_student_does_not_exist_returns_false(self):
+        course = Course("CS161")
+        student_not_there = Student("Not", "There", 918273645)
+        self.assertFalse(course.contains(student_not_there))
+
     def test_contains_many_students_student_exists_returns_true(self):
         course = Course("CS101")
         course.add(Student("Bob", "Smith", 123456789))
@@ -168,6 +173,12 @@ class CourseTest(TestCase):
         student_there = Student("Jane", "Doe", 987654321)
         course.remove(student_there)
         self.assertEqual(2, course._find(student_there))
+
+    def test_remove_zero_students_raises_value_error(self):
+        course = Course("CS101")
+        student_not_there = Student("Not", "There", 918273645)
+        with self.assertRaises(ValueError):
+            course.remove(student_not_there)
 
     def test_repr_many_student_returns_correct_string(self):
         course = Course("CS101")
