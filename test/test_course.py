@@ -129,7 +129,6 @@ class CourseTest(TestCase):
         student_not_there = Student("Not", "There", 918273645)
         self.assertFalse(course.contains(student_not_there))
 
-
     def test_contains_many_students_student_exists_returns_true(self):
         course = Course("CS101")
         course.add(Student("Bob", "Smith", 123456789))
