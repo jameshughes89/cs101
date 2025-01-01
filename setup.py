@@ -35,7 +35,7 @@ if __name__ == "__main__":
             "flake8-isort==6.1.1",
             "isort==5.13.2",
             "mdformat==0.7.21",
-            "mdformat-gfm==0.3.7",
+            "mdformat-gfm==0.4.1",
             "mdformat-black==0.1.1",
             "sphinx==8.1.3",
             "sphinx-rtd-theme==3.0.2",
