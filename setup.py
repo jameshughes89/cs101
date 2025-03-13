@@ -32,7 +32,7 @@ if __name__ == "__main__":
             "black[jupyter]==25.1.0",
             "flake8==7.1.2",
             "flake8-black==0.3.6",
-            "flake8-isort==6.1.1",
+            "flake8-isort==6.1.2",
             "isort==5.13.2",
             "mdformat==0.7.22",
             "mdformat-gfm==0.4.1",
