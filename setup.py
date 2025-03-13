@@ -37,7 +37,7 @@ if __name__ == "__main__":
             "mdformat==0.7.22",
             "mdformat-gfm==0.4.1",
             "mdformat-black==0.1.1",
-            "sphinx==8.1.3",
+            "sphinx==8.2.3",
             "sphinx-rtd-theme==3.0.2",
         ],
         entry_points={
