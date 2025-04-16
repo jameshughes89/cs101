@@ -1,9 +1,12 @@
-===============================================================
-Computer Science 161 Section 11 --- Introduction to Programming
-===============================================================
+***************************************************************
+Computer Science 161 Section 66 --- Introduction to Programming
+***************************************************************
 
-Fall 2024
-=========
+Summer 2025
+===========
+
+This course is offered asynchronously. The course schedule can be found :doc:`here </outline/schedule>`.
+
 
 
 Course Description
@@ -39,27 +42,21 @@ Instructor
 Lecture Times
 =============
 
-* Tue 11:30 -- 12:20 (K4), MULH 2070
-* Wed 13:30 -- 14:20 (K5), MULH 2070
-* Fri 12:30 -- 13:20 (K6), MULH 2070
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Lab Sections
 ============
 
-* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
-* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Office Hours
 ============
 
-* Tue 12:30 -- 13:30, Annex 20B
-* Wed 12:30 -- 13:30, Annex 20B
-* Thr 13:30 -- 14:30, Annex 20B
-* Fri 13:30 -- 14:30, Annex 20B
+* By appointment
 
 
 
@@ -87,25 +84,25 @@ We will not necessarily cover everything listed here, nor in this order. Due to 
 material covered will adapt to the interests, and abilities, of the class. Many of the things near the end of the list
 are fairly optimistic and we'll probably not get to them, but whatever.
 
-- Introduction to Programming
-- Variables and Statements 
-- Types
-- Functions
-- Testing
-- Conditionals (If/Else)
-- Booleans
-- Iteration (loops)
-- Comments
-- Strings, and Input/Output
-- Lists, Tuples
-- Dictionaries
-- Pointers and RAM
-- File Input/Output
-- Debugging
-- Searching
-- Sorting
-- Objects
-- Computational Complexity
+* Introduction to Programming
+* Variables and Statements
+* Types
+* Functions
+* Testing
+* Conditionals (If/Else)
+* Booleans
+* Iteration (loops)
+* Comments
+* Strings, and Input/Output
+* Lists, Tuples
+* Dictionaries
+* Pointers and RAM
+* File Input/Output
+* Debugging
+* Searching
+* Sorting
+* Objects
+* Computational Complexity
 
 
 
@@ -121,25 +118,22 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Tuesday October 1, 2024, 11:55pm
+      - Monday May 12, 2025, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday October 28, 2024, 11:55pm
+      - Monday May 26, 2025, 11:55pm
     * - Assignment 3
       - 5%
-      - Tuesday November 12, 2024, 11:55pm
+      - Monday June 9, 2025, 11:55pm
     * - Assignment 4
       - 5%
-      - Monday TBD, 2024, 11:55pm
+      - Monday June 23, 2025, 11:55pm
     * - Test 1
-      - 20%
-      - Wednesday October 2, 2024, in class
-    * - Test 2
-      - 20%
-      - Wednesday November 13, 2024, in class
+      - 30%
+      - Wednesday May 28, 2025
     * - Final Exam
-      - 40%
-      - TBD, 2024
+      - 50%
+      - Wednesday June 25, 2025
 
 
 
@@ -214,6 +208,18 @@ following test or final exam, whichever comes first. If both tests are missed, t
 the final exam.
 
 
+ProctorU
+--------
+
+The online exams in this course require a proctor. For instructions on how to schedule your exam with ProctorU, please
+see the Proctoring section of your course Moodle page. For information on policies governing your use of ProctorU,
+please see
+`StFX Online / Student Support - Proctoring <https://www.stfx.ca/programs-courses/stfx-online/student-support>`_.
+
+Online proctored exams open at 5am and close at 8pm to account for time differences and schedules. Students will create
+a ProctorU account and book a time through that platform.
+
+
 
 Labs
 ====
@@ -278,14 +284,6 @@ Office hours are provided to students to facilitate their success --- students a
 
 Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
 students solving their problems.
-
-
-
-Attendance
-==========
-Students missing three classes without reasonable cause will be reported to the Assistant Vice-President Academic
-Affairs. See section 3.7 of the academic calendar for more details. You will be reported if you are repeatedly
-delinquent in assignments or attendance at classes or laboratories.
 
 
 

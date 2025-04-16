@@ -52,6 +52,7 @@ Course Schedule
        - 12
 
 
+
  .. list-table:: Assignment Schedule
      :widths: 50 50
      :header-rows: 1
@@ -66,6 +67,7 @@ Course Schedule
        - Monday June 9, 2025, 11:55pm
      * - Assignment 4
        - Monday June 23, 2025, 11:55pm
+
 
 
 
