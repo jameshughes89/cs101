@@ -66,7 +66,7 @@ Course Schedule
      * - Assignment 3
        - Monday June 9, 2025, 11:55pm
      * - Assignment 4
-       - Monday June 23, 2025, 11:55pm
+       - Sunday June 22, 2025, 11:55pm
 
 
 
@@ -80,4 +80,4 @@ Course Schedule
      * - Test 1 (Midterm)
        - Wednesday May 28, 2025
      * - Test 2 (Final)
-       - Wednesday June 25, 2025
+       - Monday June 23, 2025
