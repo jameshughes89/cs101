@@ -2,7 +2,7 @@
 Computer Science 161 Section 66 --- Introduction to Programming
 ***************************************************************
 
-Summer 2025
+Spring 2025
 ===========
 
 This course is offered asynchronously. The course schedule can be found :doc:`here </outline/schedule>`.

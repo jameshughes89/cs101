@@ -1,5 +1,5 @@
 ***********************************
-Welcome to CSCI 161 --- Summer 2025
+Welcome to CSCI 161 --- Spring 2025
 ***********************************
 
 An introduction to computer science, programming, algorithms, and data structures. No experience with programming is
