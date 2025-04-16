@@ -127,3 +127,4 @@ Lab Sections
     :maxdepth: 1
  
     /outline/outline
+    /outline/schedule
