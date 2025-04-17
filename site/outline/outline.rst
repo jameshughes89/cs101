@@ -127,13 +127,13 @@ Student Evaluation
       - Monday June 9, 2025, 11:55pm
     * - Assignment 4
       - 5%
-      - Monday June 23, 2025, 11:55pm
+      - Sunday June 22, 2025, 11:55pm
     * - Test 1
       - 30%
       - Wednesday May 28, 2025
     * - Final Exam
       - 50%
-      - Wednesday June 25, 2025
+      - Monday June 23, 2025
 
 
 
