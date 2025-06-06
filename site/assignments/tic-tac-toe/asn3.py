@@ -284,7 +284,7 @@ def check_for_winner(board: list, player: str) -> bool:
 def render_cell(board: list, x: int, y: int) -> str:
     """
     Render the specified cell from the game board as a string and return the string. The possible return values are 'X',
-    'Y', or ' ' (empty). The origin of the board (0, 0) is the top left corner of the game board.
+    'O', or ' ' (empty). The origin of the board (0, 0) is the top left corner of the game board.
 
     :param board: The current game board.
     :type board: A list of n lists containing n characters (strings) each.
