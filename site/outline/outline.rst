@@ -128,12 +128,18 @@ Student Evaluation
     * - Assignment 4
       - 5%
       - Monday TBD, 2025, 11:55pm
+    * - Lecture & Lab Activities
+      - 10%
+      - Ongoing, in class
     * - Test 1
-      - 30%
-      - Wednesday May 28, 2025
+      - 10%
+      - Wednesday Early October, 2025
+    * - Test 2
+      - 10%
+      - Wednesday Early/Mid November, 2025
     * - Final Exam
       - 50%
-      - Monday June 23, 2025
+      - TBD, 2025
 
 
 
