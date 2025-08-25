@@ -118,16 +118,16 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Monday May 12, 2025, 11:55pm
+      - Monday TBD, 2025, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday May 26, 2025, 11:55pm
+      - Monday TBD, 2025, 11:55pm
     * - Assignment 3
       - 5%
-      - Monday June 9, 2025, 11:55pm
+      - Monday TBD, 2025, 11:55pm
     * - Assignment 4
       - 5%
-      - Sunday June 22, 2025, 11:55pm
+      - Monday TBD, 2025, 11:55pm
     * - Test 1
       - 30%
       - Wednesday May 28, 2025
