@@ -254,7 +254,7 @@ any questions they have regarding the material.
 Lecture & Lab Activities
 ========================
 
-Lcture & lab activities will take during certain lectures and labs.
+Lecture & lab activities will take during certain lectures and labs.
 
 * The date and time of each activity will be determined *ad hoc*
 * These activities may take place during lecture or lab
