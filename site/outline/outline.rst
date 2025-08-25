@@ -1,5 +1,5 @@
 ***************************************************************
-Computer Science 161 Section 66 --- Introduction to Programming
+Computer Science 161 Section 10 --- Introduction to Programming
 ***************************************************************
 
 Fall 2025
