@@ -41,6 +41,7 @@ dependencies = [
   "flake8==7.3.0",
   "flake8-black==0.3.6",
   "flake8-isort==6.1.2",
+  "flake8-pyproject==1.2.3",
   "isort==6.0.1",
   "matplotlib==3.10.5",
   "mdformat==0.7.22",
@@ -55,3 +56,4 @@ dependencies = [
 format = "console_scripts.cli:run_code_formatters"
 verify = "console_scripts.cli:run_code_verification"
 site = "console_scripts.cli:run_sphinx_build"
+
