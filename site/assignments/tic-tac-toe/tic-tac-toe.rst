@@ -3,7 +3,7 @@ Tic-Tac-Toe
 ***********
 
 * **Worth**: 5%
-* **DUE**: Monday June 9, 2025 at 11:55pm; submitted on MOODLE.
+* **DUE**: Monday TBD, 2025 at 11:55pm; submitted on MOODLE.
 * **Files**: :download:`asn3.ipynb <asn3.ipynb>`/:download:`asn3.py <asn3.py>`
 
 

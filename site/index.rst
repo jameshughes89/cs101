@@ -1,6 +1,6 @@
-***********************************
-Welcome to CSCI 161 --- Spring 2025
-***********************************
+*********************************
+Welcome to CSCI 161 --- Fall 2025
+*********************************
 
 An introduction to computer science, programming, algorithms, and data structures. No experience with programming is
 required.
@@ -26,20 +26,25 @@ Dr. James Hughes
 Lecture
 ^^^^^^^
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
-* Recordings of past lectures are available `here <https://www.youtube.com/@modsurski/playlists>`_
+* Tue 11:30 -- 12:20 (K4), MULH 4024
+* Wed 13:30 -- 14:20 (K5), MULH 4024
+* Fri 12:30 -- 13:20 (K6), MULH 4024
 
 
 Lab Sections
 ^^^^^^^^^^^^
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
+* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
 
 
 `Office Hours <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* By appointment
+* Tue 10:00 -- 11:00, Annex 20B
+* Wed 10:00 -- 11:00, Annex 20B
+* Thr 10:00 -- 11:00, Annex 20B
+* Fri 10:00 -- 11:00, Annex 20B
 
 
 
@@ -121,4 +126,3 @@ Lab Sections
     :maxdepth: 1
  
     /outline/outline
-    /outline/schedule
