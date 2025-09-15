@@ -137,7 +137,7 @@ Student Evaluation
       - Ongoing, in class
     * - Test 1
       - 10%
-      - Wednesday Early October, 2025
+      - Wednesday October 1, 2025
     * - Test 2
       - 10%
       - Wednesday Early/Mid November, 2025
