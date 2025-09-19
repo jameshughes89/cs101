@@ -17,11 +17,16 @@ Pre Lab Exercises
 #. `Chapter 5 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/conditionals.html#exercises>`_
 
     * 1
+    * 2
+    * 3
+    * 4
+    * 5
     * 10
     * 11
+    * 12
 
 
-#. Write assertion tests for each of your functions above
+#. Where appropriate, include type hints, docstrings, and assertion tests for each of your functions
 
 
 
