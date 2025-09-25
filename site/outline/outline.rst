@@ -122,7 +122,7 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Tuesday September 230 2025, 11:55pm
+      - Tuesday September 30 2025, 11:55pm
     * - Assignment 2
       - 5%
       - Monday TBD, 2025, 11:55pm
