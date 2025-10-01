@@ -37,7 +37,7 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 dependencies = [
-  "black[jupyter]==25.1.0",
+  "black[jupyter]==25.9.0",
   "flake8==7.3.0",
   "flake8-black==0.3.6",
   "flake8-isort==6.1.2",
