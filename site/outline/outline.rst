@@ -125,7 +125,7 @@ Student Evaluation
       - Tuesday September 30 2025, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday TBD, 2025, 11:55pm
+      - Monday October 20, 2025, 11:55pm
     * - Assignment 3
       - 5%
       - Monday TBD, 2025, 11:55pm
