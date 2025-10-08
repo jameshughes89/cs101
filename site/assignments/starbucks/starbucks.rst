@@ -3,7 +3,7 @@ Density of Starbucks
 ********************
 
 * **Worth**: 5%
-* **DUE**: Monday September 29, 2025 at 11:55pm; submitted on MOODLE.
+* **DUE**: Tuesday September 30, 2025 at 11:55pm; submitted on MOODLE.
 * **Files**: :download:`asn1.ipynb <asn1.ipynb>`/:download:`asn1.py <asn1.py>` and :download:`starbucks2018.csv <starbucks2018.csv>`
 
 
@@ -150,7 +150,7 @@ to.
 The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
 specifying the "rectangle" as parameters. For simplicity, assume ``latitude_line_1 < latitude_line_2`` and
 ``longitude_line_1 < longitude_line_2``. The function is already set up to *loop* over every Starbucks location in a
-*list*. Have a look a the loop --- even if we haven't formally discussed this in class, there is a good chance you can
+*list*. Have a look at the loop --- even if we haven't formally discussed this in class, there is a good chance you can
 make sense of what it's doing.
 
 You are to complete the body of the loop. Each time through the loop, we'll be considering a new Starbucks location. The
