@@ -23,7 +23,9 @@ Pre Lab Exercises
 
 #. `Chapter 8 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/strings.html#exercises>`_
 
-    * 3
+    * 3 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
+    * 7 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
+    * 8 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
     * 9 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
     * 10 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
     * 11 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
