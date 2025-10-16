@@ -24,6 +24,7 @@ Pre Lab Exercises
 
     * 5
     * 6
+	* 7
 
 
 #. Write assertion tests for each of your functions above
