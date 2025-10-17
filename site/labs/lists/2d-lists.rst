@@ -22,11 +22,13 @@ Pre Lab Exercises
 
 #. `Chapter 11 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/lists.html#exercises>`_
 
-    * 7
-    * 8
+    * 1 --- Only worry about playing around with the ``range`` function
+    * 3
+    * 4 --- Figure out with the ``is`` operator does, and also modify the code to use f-strings
+    * 8 --- If you did not finish it last week
 
 
-#. Write assertion tests for each of your functions above
+#. Write assertion tests for each of your functions above where appropriate 
 
 
 
