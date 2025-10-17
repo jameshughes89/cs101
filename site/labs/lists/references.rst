@@ -21,8 +21,11 @@ Pre Lab Exercises
 
 #. `Chapter 14 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html#exercises>`_
 
-    * 2 --- note the portions of solutions within the chapter text
-
+    * 2 --- Note the portions of solutions within the chapter text
+    * 3
+    * 4
+    * 5
+    
 
 #. Write assertion tests for each of your functions above
 
