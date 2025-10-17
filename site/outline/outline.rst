@@ -128,7 +128,7 @@ Student Evaluation
       - Monday October 20, 2025, 11:55pm
     * - Assignment 3
       - 5%
-      - Monday TBD, 2025, 11:55pm
+      - Monday November 3, 2025, 11:55pm
     * - Assignment 4
       - 5%
       - Monday TBD, 2025, 11:55pm
@@ -140,7 +140,7 @@ Student Evaluation
       - Wednesday October 1, 2025
     * - Test 2
       - 10%
-      - Wednesday Early/Mid November, 2025
+      - Wednesday November 5, 2025
     * - Final Exam
       - 50%
       - TBD, 2025
