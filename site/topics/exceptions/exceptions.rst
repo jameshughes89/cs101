@@ -22,7 +22,7 @@ Exceptions
 
 * Both ``ValueError`` and ``IndexError`` are exceptions, but there are many more kinds of exceptions
 
-* Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and indexing elements from a list
+* Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and for indexing elements from a list
 * If I am the one writing the code for converting strings to integers, what should I make my code do if someone asks my code to convert the string ``"hello"`` to an integer?
 
     * Obviously there is no single obvious and natural way to convert the string ``"hello"`` to an integer
@@ -50,7 +50,7 @@ Exceptions
 * Obviously we're going to have an issue if we try to divide a number by zero
 * But what should happen if someone tries to?
 * That's entirely up to the programmer making use of the ``divide`` function
-* All I need to do is communicate to them that something exceptional happened by ``raise``\ing an exception
+* All I need to do is communicate to them that something exceptional happened by ``raise``\-ing an exception
 
     * The function first checks if ``b`` is ``0``
     * If ``b`` is ``0``, then the exception is ``raise``\ed
