@@ -190,7 +190,7 @@ Example 4
 * Sometimes the exception may be inconsequential for the program's functionality
 
     * Perhaps your program is rapidly reading input from some sensors for calculations and a ``ZeroDivisionError`` is likely caused by sensor precision
-    * Given this, it may be the case that periodic ``ZeroDivisionError`` are meaningless, so they can be ignored
+    * Given this, it may be the case that periodic ``ZeroDivisionError``\s are meaningless, so they can be ignored
 
 
 .. code-block:: python
