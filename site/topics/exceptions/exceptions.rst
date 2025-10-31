@@ -20,9 +20,9 @@ Exceptions
 
 * In the above example, when we tried to access the 11th thing in the list containing only 5 things, Python *raised* an exception
 
-* Both ``ValueError`` and ``indexError`` are exceptions, but there are many more kinds of exceptions
+* Both ``ValueError`` and ``IndexError`` are exceptions, but there are many more kinds of exceptions
 
-* Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and indexing elements form a list
+* Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and for indexing elements from a list
 * If I am the one writing the code for converting strings to integers, what should I make my code do if someone asks my code to convert the string ``"hello"`` to an integer?
 
     * Obviously there is no single obvious and natural way to convert the string ``"hello"`` to an integer
@@ -50,7 +50,7 @@ Exceptions
 * Obviously we're going to have an issue if we try to divide a number by zero
 * But what should happen if someone tries to?
 * That's entirely up to the programmer making use of the ``divide`` function
-* All I need to do is communicate to them that something exceptional happened by ``rais``\int an exception
+* All I need to do is communicate to them that something exceptional happened by ``raise``\-ing an exception
 
     * The function first checks if ``b`` is ``0``
     * If ``b`` is ``0``, then the exception is ``raise``\ed
@@ -190,7 +190,7 @@ Example 4
 * Sometimes the exception may be inconsequential for the program's functionality
 
     * Perhaps your program is rapidly reading input from some sensors for calculations and a ``ZeroDivisionError`` is likely caused by sensor precision
-    * Given this, it may be the case that periodic ``ZeroDivisionError`` are meaningless, so they can be ignored
+    * Given this, it may be the case that periodic ``ZeroDivisionError``\s are meaningless, so they can be ignored
 
 
 .. code-block:: python
