@@ -22,7 +22,7 @@ Exceptions
 
 * Both ``ValueError`` and ``IndexError`` are exceptions, but there are many more kinds of exceptions
 
-* Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and indexing elements form a list
+* Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and indexing elements from a list
 * If I am the one writing the code for converting strings to integers, what should I make my code do if someone asks my code to convert the string ``"hello"`` to an integer?
 
     * Obviously there is no single obvious and natural way to convert the string ``"hello"`` to an integer
