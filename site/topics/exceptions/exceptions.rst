@@ -20,7 +20,7 @@ Exceptions
 
 * In the above example, when we tried to access the 11th thing in the list containing only 5 things, Python *raised* an exception
 
-* Both ``ValueError`` and ``indexError`` are exceptions, but there are many more kinds of exceptions
+* Both ``ValueError`` and ``IndexError`` are exceptions, but there are many more kinds of exceptions
 
 * Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and indexing elements form a list
 * If I am the one writing the code for converting strings to integers, what should I make my code do if someone asks my code to convert the string ``"hello"`` to an integer?
