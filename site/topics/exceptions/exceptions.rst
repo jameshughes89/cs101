@@ -50,7 +50,7 @@ Exceptions
 * Obviously we're going to have an issue if we try to divide a number by zero
 * But what should happen if someone tries to?
 * That's entirely up to the programmer making use of the ``divide`` function
-* All I need to do is communicate to them that something exceptional happened by ``rais``\int an exception
+* All I need to do is communicate to them that something exceptional happened by ``raise``\ing an exception
 
     * The function first checks if ``b`` is ``0``
     * If ``b`` is ``0``, then the exception is ``raise``\ed
