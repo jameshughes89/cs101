@@ -40,7 +40,7 @@ dependencies = [
   "black[jupyter]==25.9.0",
   "flake8==7.3.0",
   "flake8-black==0.4.0",
-  "flake8-isort==6.1.2",
+  "flake8-isort==7.0.0",
   "flake8-pyproject==1.2.3",
   "isort==6.0.1",
   "matplotlib==3.10.6",
