@@ -43,7 +43,7 @@ dependencies = [
   "flake8-isort==7.0.0",
   "flake8-pyproject==1.2.3",
   "isort==7.0.0",
-  "matplotlib==3.10.6",
+  "matplotlib==3.10.7",
   "mdformat==1.0.0",
   "mdformat-gfm==1.0.0",
   "mdformat-black==0.1.1",
