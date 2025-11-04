@@ -43,7 +43,7 @@ jobs:
       run: |
         site
     - name: Upload Build Artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: website
         path: out/
@@ -59,7 +59,7 @@ jobs:
     - name: Create Site Directory
       run: mkdir out
     - name: Download Build Artifact
-      uses: actions/download-artifact@v5
+      uses: actions/download-artifact@v6
       with:
         name: website
         path: out
