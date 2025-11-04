@@ -3,7 +3,7 @@ Country Catalogue
 *****************
 
 * **Worth**: 5%
-* **DUE**: Monday TBD, 2025 at 11:55pm; submitted on MOODLE.
+* **DUE**: Monday December 1, 2025 at 11:55pm; submitted on MOODLE.
 * **Files**: :download:`asn4.ipynb <asn4.ipynb>`/:download:`asn4.py <asn4.py>` and :download:`country_data.csv <country_data.csv>`
 
 

@@ -131,7 +131,7 @@ Student Evaluation
       - Monday November 3, 2025, 11:55pm
     * - Assignment 4
       - 5%
-      - Monday TBD, 2025, 11:55pm
+      - Monday December 1, 2025, 11:55pm
     * - Lecture & Lab Activities
       - 10%
       - Ongoing, in class
