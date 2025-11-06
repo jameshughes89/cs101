@@ -14,12 +14,24 @@ Objects
 Pre Lab Exercises
 =================
 
-* Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/introduction>`
+#. Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/introduction>`
 
     * You can obtain the source code from :download:`here <../../../src/circle.py>`
     * It will provide a nice template for all the classes you will make in this lab
 
 
+#. `Chapter 15 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html#exercises>`_
+
+    * Create the ``Point`` class described in the chapter
+    
+    	* Only worry about the constructor, attributes, and the ``distance_from_origin`` & ``midpoint`` methods
+    	
+    
+    * 2
+    * 3
+    * 4
+    
+    
 
 Before Kattis
 =============
