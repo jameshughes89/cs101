@@ -100,7 +100,7 @@ html_theme = "sphinx_rtd_theme"
 # documentation.
 html_theme_options = {
     'logo_only': False,
-    'display_version': False,
+    'version_selector': False,
     'sticky_navigation': True,
 }
 
