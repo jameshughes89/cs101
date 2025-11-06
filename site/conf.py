@@ -92,7 +92,6 @@ pygments_style = "sphinx"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-# html_theme = 'agogo'
 html_theme = "sphinx_rtd_theme"
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -100,7 +99,7 @@ html_theme = "sphinx_rtd_theme"
 # documentation.
 html_theme_options = {
     'logo_only': False,
-    'display_version': False,
+    'version_selector': False,
     'sticky_navigation': True,
 }
 
