@@ -458,7 +458,7 @@ Testing
     assert True == sphere_origin_0.overlaps(Sphere(0, 0, 0, 0))
     assert True == (sphere_origin_0 == Sphere(0, 0, 0, 0))
     assert False == (sphere_origin_0 == Sphere(0, 0, 0, 1))
-    assert "Sphere(0, 0, 0, 0)" == str(sphere_origin_0)
+    assert "Sphere(x=0, y=0, z=0, radius=0)" == str(sphere_origin_0)
 
     sphere = Sphere(1, 2, 3, 4)
     assert 1 == sphere.x
@@ -473,7 +473,7 @@ Testing
     assert True == sphere.overlaps(Sphere(0, 0, 0, 0))
     assert False == (sphere == Sphere(0, 0, 0, 0))
     assert True == (sphere == Sphere(1, 2, 3, 4))
-    assert "Sphere(1, 2, 3, 4)" == str(sphere)
+    assert "Sphere(x=1, y=2, z=3, radius=4)" == str(sphere)
 
 
 For Next Class
