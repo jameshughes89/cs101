@@ -324,7 +324,7 @@ Magic Methods
 
 .. code-block:: python
     :linenos:
-    :emphasize-lines: 5
+    :emphasize-lines: 9
 
     import math
 
