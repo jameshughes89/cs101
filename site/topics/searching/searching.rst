@@ -148,7 +148,7 @@ Complexity Analysis
 
     * Doubling the size to :math:`2n` only adds one more guess
 
-* Given that binary search requires :math:`log{2}(n)` basic operations vs. linear search's :math:`n`, binary search is the clear winner
+* Given that binary search requires :math:`log_{2}(n)` basic operations vs. linear search's :math:`n`, binary search is the clear winner
 * But, there is no such thing as a free lunch
 * With binary search, we have the catch that the data must be sorted
 
