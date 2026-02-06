@@ -48,7 +48,7 @@ dependencies = [
   "mdformat-gfm==1.0.0",
   "mdformat-black==0.1.1",
   "networkx==3.6.1",
-  "sphinx==8.2.3",
+  "sphinx==9.0.4",
   "sphinx-rtd-theme==3.0.2",
 ]
 
