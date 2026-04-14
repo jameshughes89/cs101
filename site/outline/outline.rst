@@ -1,9 +1,11 @@
 ***************************************************************
-Computer Science 161 Section 10 --- Introduction to Programming
+Computer Science 161 Section 66 --- Introduction to Programming
 ***************************************************************
 
-Fall 2025
-=========
+Spring 2026
+===========
+
+This course is offered asynchronously. The course schedule can be found :doc:`here </outline/schedule>`.
 
 
 
@@ -40,27 +42,21 @@ Instructor
 Lecture Times
 =============
 
-* Tue 11:30 -- 12:20 (K4), MULH 4024
-* Wed 13:30 -- 14:20 (K5), MULH 4024
-* Fri 12:30 -- 13:20 (K6), MULH 4024
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Lab Sections
 ============
 
-* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
-* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
+* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 
 Office Hours
 ============
 
-* Tue 10:00 -- 11:00, Annex 20B
-* Wed 10:00 -- 11:00, Annex 20B
-* Thr 10:00 -- 11:00, Annex 20B
-* Fri 10:00 -- 11:00, Annex 20B
+* By appointment
 
 
 
@@ -122,28 +118,22 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Tuesday September 30 2025, 11:55pm
+      - Monday May 11 2026, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday October 20, 2025, 11:55pm
+      - Monday May 25, 2026, 11:55pm
     * - Assignment 3
       - 5%
-      - Monday November 3, 2025, 11:55pm
+      - Monday June 1, 2026, 11:55pm
     * - Assignment 4
       - 5%
-      - Monday December 1, 2025, 11:55pm
-    * - Lecture & Lab Activities
-      - 10%
-      - Ongoing, in class
+      - Sunday June 14, 2026, 11:55pm
     * - Test 1
-      - 10%
-      - Wednesday October 1, 2025
-    * - Test 2
-      - 10%
-      - Wednesday November 5, 2025
+      - 30%
+      - Wednesday May 20, 2026
     * - Final Exam
       - 50%
-      - TBD, 2025
+      - TBD, 2026
 
 
 
@@ -215,6 +205,18 @@ following test or final exam, whichever comes first. If both tests are missed, t
 the final exam.
 
 
+ProctorU
+--------
+
+The online exams in this course require a proctor. For instructions on how to schedule your exam with ProctorU, please
+see the Proctoring section of your course Moodle page. For information on policies governing your use of ProctorU,
+please see
+`StFX Online / Student Support - Proctoring <https://www.stfx.ca/programs-courses/stfx-online/student-support>`_.
+
+Online proctored exams open at 5am and close at 8pm to account for time differences and schedules. Students will create
+a ProctorU account and book a time through that platform.
+
+
 
 Labs
 ====
@@ -251,42 +253,6 @@ any questions they have regarding the material.
 
 
 
-Lecture & Lab Activities
-========================
-
-Lecture & lab activities will take during certain lectures and labs.
-
-* The date and time of each activity will be determined *ad hoc*
-* These activities may take place during lecture or lab
-* Questions will be related to important concepts covered in their respective lecture or lab
-* Answers must be written legibly by hand, on a clean letter/A4 size blank paper
-
-    * Paper will not be provided
-    * Students must have their own paper
-
-
-* All submissions must include the student's name, student number, stfx email address, and date
-* All submissions must be made by the student completing the task
-
-    * You may not submit an activity on behalf of another student
-    * Similarly, you may not have another student submit an activity on your behalf
-    * Violations are considered academic misconduct and a grade of 0 will be applied to all lecture & lab activities
-
-
-* Activities are to be submitted to the lecturer within the allowed time
-
-If any of the requirements are violated, a mark of 0 will be applied to the specific activity. The only exception to
-this is if academic misconduct is detected, in which case a grade of 0 will be applied to the entire lecture and lab
-activity portion of the final grade.
-
-These activities are open book, students are strongly encouraged to collaborate and share ideas, and students may check
-the course content and internet; however, all submitted work must ultimately be done individually.
-
-There are no make-up activities. If a student misses an activity and obtains an approved accommodation, the weight of
-the missed activity will be shifted to the final exam.
-
-
-
 Email Contact
 =============
 
@@ -315,14 +281,6 @@ Office hours are provided to students to facilitate their success --- students a
 
 Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
 students solving their problems.
-
-
-
-Attendance
-==========
-Students missing three classes without reasonable cause will be reported to the Assistant Vice-President Academic
-Affairs. See section 3.7 of the academic calendar for more details. You will be reported if you are repeatedly
-delinquent in assignments or attendance at classes or laboratories.
 
 
 
