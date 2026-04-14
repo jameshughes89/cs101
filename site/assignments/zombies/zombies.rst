@@ -3,7 +3,7 @@ Zombie Infections
 *****************
 
 * **Worth**: 5%
-* **DUE**: Monday October 20, 2025 at 11:55pm; submitted on MOODLE.
+* **DUE**: Monday May 25, 2026 at 11:55pm; submitted on MOODLE.
 * **Files**: :download:`asn2.ipynb <asn2.ipynb>`/:download:`asn2.py <asn2.py>`
 
 
