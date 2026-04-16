@@ -84,7 +84,7 @@ Methods
             """
             Calculate the Euclidean distance from this Point3D (self) and the Point3D passed as a parameter.
 
-            :param other: A Point3D to find the the Euclidean distance to from the self Point3D
+            :param other: A Point3D to find the Euclidean distance to from the self Point3D
             :type other: Point3D
             :return: The Euclidean distance between the self Point3D and the parameter Point3D other
             :rtype: float
