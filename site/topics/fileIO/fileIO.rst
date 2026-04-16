@@ -97,7 +97,7 @@ Comma Separated Values (CSV)
     * Data that can be stored in a table
     * Think of rows and columns of data, like in a spreadsheet
 
-* CSV files are stored in plain text, but values are seperated with commas
+* CSV files are stored in plain text, but values are separated with commas
 
     * You may come across CSV files that use tabs or spaces to separate data
 
