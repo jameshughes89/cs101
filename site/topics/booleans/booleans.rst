@@ -199,7 +199,7 @@ Evaluating Example Expressions
 ``False``
 
 * Once we evaluated ``(101 == 100)`` as ``False``, we didn't need to evaluate the remainder of the expression
-* With ``and``, if one of the operands are ``False``, the whole expression evaluated to ``False``
+* With ``and``, if one of the operands is ``False``, the whole expression evaluated to ``False``
 
 
 ``(14 > 0) or ((6 != 7) and ((4 + 17) < 20))``
