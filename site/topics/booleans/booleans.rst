@@ -93,7 +93,7 @@ Boolean Type
 Boolean Operators
 -----------------
 
-* Just like the arithmatic operators we use on integers and floats, Booleans have operators too
+* Just like the arithmetic operators we use on integers and floats, Booleans have operators too
 
     * The ones we just used
 
@@ -101,7 +101,7 @@ Boolean Operators
         * ``or``
         * ``not``
 
-* Consider the arithmatic operator ``+``
+* Consider the arithmetic operator ``+``
 
     * It takes two number *operands*
     * It produces a new number as a result
