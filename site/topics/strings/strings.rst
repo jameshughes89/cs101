@@ -352,7 +352,7 @@ f-Strings
     print(to_print)    # The following is an integer 123, and this is a float to 2 decimal places 456.79.
 
 
-* You can even specify align output nicely with f-Strings
+* You can even specify how to align output nicely with f-Strings
 * For example, if you wanted to format some output of something like a bill and you wrote the following, it wouldn't look too nice
 
 .. code-block:: python
