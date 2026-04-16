@@ -122,7 +122,7 @@ References
 * If we wanted to make a copy of ``z`` like we did with the integers ``x`` and ``y``\, we could write something like ``w = z``
 * And just like with the integers, this copies the contents of the memory location of ``z`` and puts it into a new location labelled with a ``w``
 * However, the catch is that the contents of ``z`` is the memory address of the list
-* After making the copy into ``w``,  how many references do have that get me to the memory location of the list?
+* After making the copy into ``w``,  how many references do we have that get me to the memory location of the list?
 
 .. image:: array_pointer_copy.png
 
