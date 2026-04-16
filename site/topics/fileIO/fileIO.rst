@@ -92,7 +92,7 @@ Writing to a Text File
 Comma Separated Values (CSV)
 ============================
 
-* CSV files are are a popular file format for tabular data
+* CSV files are a popular file format for tabular data
 
     * Data that can be stored in a table
     * Think of rows and columns of data, like in a spreadsheet
