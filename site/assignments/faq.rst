@@ -2,11 +2,12 @@
 General Assignment Frequently Asked Questions (FAQ)
 ***************************************************
 
-* I don't know how to do *X*
+* How do I do *X*?
 
     * This is typical and sometimes intentional as independent learning is critically important
     * Go to `google.ca <https://www.google.ca>`_ and type in *X*
     * This is not to dismiss your question --- it's how experienced programmers figure out how to do *X*
+    * However, do not use the AI generated response from Google --- this is not the same as *Googling*
 
 
 * How long should this assignment take?
@@ -17,7 +18,7 @@ General Assignment Frequently Asked Questions (FAQ)
     * Remember, you would not expect to write a high quality essay in a single one hour sitting
 
 
-* I think I did everything correctly, but it's still not working
+* I think I did everything correctly, but it's still not working, what's going on?
 
     * This is typical
     * Sometimes bugs are simple and easy to find, and others are sneaky
@@ -34,7 +35,7 @@ General Assignment Frequently Asked Questions (FAQ)
     * Learning to look at unfamiliar code is a critically important skill to learn
 
 
-* Some of the code in the provided functions looks like magic
+* Why does some of the code in the provided functions looks like magic?
 
     * This is normal, even with experienced programmers
     * It would be unusual if one were to look at a non-trivial block of code and immediately know what it is doing
@@ -61,6 +62,14 @@ General Assignment Frequently Asked Questions (FAQ)
 * Can I work with a friend?
 
     * No
+
+
+* Can I use AI to help?
+
+    * No
+    * This will hurt your learning significantly
+    * Even if you think you are using in a way that's teaching you, it will still probably hurt your learning
+    * Struggling through these problems is an important part of learning these concepts
 
 
 * If the deadline is 11:55pm and I submit it shortly after that, will it still get marked?
