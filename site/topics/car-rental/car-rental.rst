@@ -204,7 +204,7 @@ Total Kilometers
 
         :rtype: float
         :param odometer_start: The number of kms the car had before renting
-        :param odometer_finish: The number of kms the car had after rending
+        :param odometer_finish: The number of kms the car had after returning
         :return: The total kms driven
         """
 
