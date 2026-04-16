@@ -191,7 +191,7 @@ Constructor Parameters
 Functionality and Methods
 -------------------------
 
-* The ``Circle`` class has the attribute ``radius``. but as of now, that's all it can do --- store a radius value
+* The ``Circle`` class has the attribute ``radius``\, but as of now, that's all it can do --- store a radius value
 * Further, there are other features of a circle  we may want to capture
 
     * Diameter of a circle
