@@ -131,7 +131,7 @@ Comparison Operators
 * More generally, these comparison operators take values to be compared
 * Consider the greater than (``>``) comparison operator
 
-    * It two values as operands
+    * It takes two values as operands
     * It produces a Boolean as a result
     * e.g., ``1 > 7`` is ``False``
 
