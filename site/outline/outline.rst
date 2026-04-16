@@ -401,7 +401,7 @@ appropriate changes to my records. See policies at
 Support Services
 ================
 
-There are various support services around campus and these include, but are not limited to:
+There are various support services around campus, including:
 
 #. Student Life: `Student Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services>`_
 #. Office of the Registrar: `Registrar’s Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/registrars-office>`_
