@@ -7,7 +7,7 @@ Propositional Logic
     * This course focuses on introductory computer science --- ``True``
     * This topic is titled "Not Logic" --- ``False``
 
-* This is rather intuitive since you use this type of simple logic in every day life to make decisions
+* This is rather intuitive since you use this type of simple logic in everyday life to make decisions
 * Additionally, you are already familiar with some *operators* we can use on these ``True``/``False`` statements
 
     * ``and``
