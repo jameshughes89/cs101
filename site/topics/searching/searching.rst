@@ -170,7 +170,7 @@ Linear Search in Other Programming Languages
 
 * Below is a collection of linear search algorithms in various popular programming languages
 
-    * The purpose of their inclusion here is to get a sense of how similar and dissimilar programing languages can be
+    * The purpose of their inclusion here is to get a sense of how similar and dissimilar programming languages can be
 
 * Despite never learning the various languages, chances are you can still understand much of the code completely
 
