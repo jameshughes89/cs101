@@ -54,7 +54,6 @@ Also keep in mind that there are categories of content
   - Getting Started
   - .md files
   - IDE setup
-  - Gradle stuff
 
 ## How to Contribute
 
