@@ -549,7 +549,7 @@ Docstring
 
 
 * The stuff between the ``"""`` is the docstring and should appear immediately after the ``def`` line
-* It explains what the function does in plane English
+* It explains what the function does in plain English
 * It explains what each parameter is
 
     * Mind the use of ``:``\s
