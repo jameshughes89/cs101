@@ -33,7 +33,7 @@ Before Kattis
 #. Have a complete ``Person`` class from the previous lab
 #. Write a ``Contacts`` class that will manage a collection of ``Person`` objects
 
-    * The class will keep track of many instances of ``Person`` objects
+    * The class will keep track of many ``Person`` instances
     * A method for getting the ``size()`` of the ``Contacts``
     * No duplicate/equivalent ``Person`` objects are allowed to be in the collection
     * A method for adding a ``Person`` to the ``Contacts`` called ``add`` that takes a ``Person`` as a parameter
