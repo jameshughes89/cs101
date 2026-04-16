@@ -125,7 +125,7 @@ Complexity Analysis
 
 * With linear search, every guess only eliminated one number
 
-* Once again, let's consider the worse case scenario --- the ``needle`` is not within the ``haystack`` of size :math:`1024`
+* Once again, let's consider the worst case scenario --- the ``needle`` is not within the ``haystack`` of size :math:`1024`
 
     * One guess gets me to :math:`512` numbers
     * Two guesses gets me to :math:`256` numbers
