@@ -84,7 +84,7 @@ An Incremental Solution
 
 * Understand the problem
 
-    * This cannot be understated --- this is a big part of solving any problem
+    * This cannot be overstated --- this is a big part of solving any problem
 
 * Half of the description is IO
 * We know how to do this, so we will start here
