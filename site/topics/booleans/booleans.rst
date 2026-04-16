@@ -188,7 +188,7 @@ Evaluating Example Expressions
 ``True``
 
 
-``(101 == 100) and  ((66 - 17) < 54))``
+``(101 == 100) and  ((66 - 17) < 54)``
 
 ``False and ((66 - 17) < 54)``
 
