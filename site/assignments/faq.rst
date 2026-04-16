@@ -42,7 +42,7 @@ General Assignment Frequently Asked Questions (FAQ)
     * This is an important skill to develop
 
 
-* Is it OK to solve the problems in a way you did not describe, since I believe my solution is better
+* Is it OK to solve the problems in a way you did not describe, since I believe my solution is better?
 
     * It may be the case that you truly found a better way to solve the problem, but follow the provided instructions
     * Sometimes constraints are provided to you to emphasize a specific skill you are to learn and develop
