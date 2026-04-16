@@ -50,7 +50,7 @@ Truth Table
 
 
 * The above *truth table* is a rather formal representation of some everyday ideas
-* To put it slightly different
+* To put it slightly differently
 
     * Is *the sky blue* ``and`` is *water wet*? --- ``True``
     * Is *the sky blue* ``and`` is it *over 100 degrees Celsius outside*? --- ``False``
