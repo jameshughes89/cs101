@@ -35,7 +35,7 @@ Before Kattis
 
 #. Create unittest classes for the ``Person`` class
 
-    * Write tests for each of the methods in each class
+    * Write tests for each of the methods in the class
     * Be sure to reference the :doc:`unittest topic </topics/testing/unittest>`
     * You may find the ``Circle`` class' :download:`unittests helpful <../../../test/test_circle.py>`
 
