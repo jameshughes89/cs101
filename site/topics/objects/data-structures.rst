@@ -30,7 +30,7 @@ Objects IV --- Data Structures
 * You have all been taking advantage of these features, but the lists are provided to us at a certain level of abstraction
 * If you dig deeper and look under the hood, all the functionality of the list needs to be programmed
 
-* Data structures are an important part of a programmers toolbox
+* Data structures are an important part of a programmer's toolbox
 * Actually understanding *how* they do what they do is critical
 * To start learning about data structures, we will be constructing our own simple collection --- a ``Course`` that will manage ``Student`` objects
 
