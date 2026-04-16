@@ -81,7 +81,7 @@ While loops
 
 * So far, if we need to run the same code multiple times, we repeat the code as many times as we need
 
-    * For example, if I wanted to ``print("Hello, world!)`` five times, I need to write that print statement 5 times
+    * For example, if I wanted to ``print("Hello, world!")`` five times, I need to write that print statement 5 times
 
 * The trouble with this is
 
