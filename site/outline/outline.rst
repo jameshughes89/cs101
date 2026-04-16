@@ -280,7 +280,7 @@ Office Hours
 Office hours are provided to students to facilitate their success --- students are encouraged to come to office hours.
 
 Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
-students solving their problems.
+students in solving their problems.
 
 
 
