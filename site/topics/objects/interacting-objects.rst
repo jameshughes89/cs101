@@ -340,7 +340,7 @@ Methods
 
     * With f-strings, Python will automatically convert the ``Point3D`` object to a string
 
-* The final string representation of the ``Sphere`` class will not be slightly different from before
+* The final string representation of the ``Sphere`` class will now be slightly different from before
 * Before, we would see something like ``Sphere(x=1, y=2, z=3, radius=4)``
 * Now we would see something like ``Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)``
 
