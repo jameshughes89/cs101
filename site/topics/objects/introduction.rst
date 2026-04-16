@@ -44,7 +44,7 @@ Classes vs Objects
 Circle Class
 ============
 
-* Just like the rest of the class, we will lean by doing
+* Just like the rest of the class, we will learn by doing
 * In other words, we will define the ``Circle`` class and then make a few instances of ``Circle`` objects
 
 * However, there is one big question --- what is a circle; what data and functionality should it have?
