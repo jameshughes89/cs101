@@ -35,7 +35,7 @@ General Assignment Frequently Asked Questions (FAQ)
     * Learning to look at unfamiliar code is a critically important skill to learn
 
 
-* Why does some of the code in the provided functions looks like magic?
+* Why does some of the code in the provided functions look like magic?
 
     * This is normal, even with experienced programmers
     * It would be unusual if one were to look at a non-trivial block of code and immediately know what it is doing
