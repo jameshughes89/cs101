@@ -270,7 +270,7 @@ Constants
 * Now, just by looking at those lines of code, I know exactly what we are multiplying the numbers with
 * If the sales tax rate is ever lowered, all I need to do is change the one line of code (``SALES_TAX = 1.15``)
 
-* The naming convention for constants is all uppercase letters separate with underscores
+* The naming convention for constants is all uppercase letters separated with underscores
 
 * The idea behind the constants are that once the value is set by you, they are not to change
 
