@@ -54,7 +54,7 @@ Dictionaries
 
     * Much of their complexity is hidden from us so we will not worry about it here
 
-* Simply, they are like list that you could index with *strings*, or various other types, instead of just integers
+* Simply, they are like lists that you can index with *strings*, or various other types, instead of just integers
 * Consider the following example of storing grades for students
 
 .. code-block:: python
