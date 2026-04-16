@@ -145,10 +145,10 @@ Obviously you should know where the problem is given that you fixed this above, 
 2. Set a *break point* on line 13 **NOTE, THIS WILL PROBABLY BE A DIFFERENT LINE NUMBER WHEN YOU COPY IT**	 
 3. Start the **debugger**. 
 4. Add a *watch* for the condition on line 13 (``c < len(aList)``)
-5. Add a *watch* for the condition on like 14 (``aList[c] > curMax``)
+5. Add a *watch* for the condition on line 14 (``aList[c] > curMax``)
 6. Now you will press the *step into* button. Take your time with this, for real. If you don't, you're using the debugger wrong and it won't actually be helpful. This is where the magic happens. The trick is to (a) do **not** skip a step, (b) do **not** make any assumptions, (c) critically think about what *should* happen if the code was correct, and compare your hypothesis to what is *actually* happening, (d) oh, and TAKE YOUR TIME. 
 
-7. I know you know where the problem is, so just spay special attention to what your hypothesis for ``curMaxIndex`` should be when ``curMax`` is set to 8, and how the code actually reacts.
+7. I know you know where the problem is, so just pay special attention to what your hypothesis for ``curMaxIndex`` should be when ``curMax`` is set to 8, and how the code actually reacts.
 	  
 
 **5 Use whatever you want now**
@@ -257,7 +257,7 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
     
     def message(text, plain, encryp):
         '''
-        Perform a simple encription.
+        Perform a simple encryption.
         Eg.
         plaintext  =  list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
         encryptedtext=list('DEFGHIJKLMNOPQRSTUVWXYZABC')
@@ -267,9 +267,9 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
             has been encrypted to:
             WKLV LV D WHVW
 		 
-        :param text: The message to encript
+        :param text: The message to encrypt
         :param plain: The alphabet that the text exists in
-        :param encryp: The alphabet that we want o encript to. order matters.
+        :param encryp: The alphabet that we want to encrypt to. order matters.
         :return:
         '''
 
