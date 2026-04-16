@@ -322,7 +322,7 @@ Revisit Calculating the Total Charge
         :rtype: float
         :param num_days: Number of days the car was rented.
         :param age: Age of the driver.
-        :param rental_code: The classification code (B ord D).
+        :param rental_code: The classification code (B or D).
         :param odometer_start: Odometer when the renter took the car.
         :param odometer_finish: Odometer when the renter returned the car.
         :return: The amount to charge the renter.
