@@ -2,7 +2,7 @@
 Tuples, Dictionaries, and Sets
 ******************************
 
-* In addition to lists, there are a few other noteworthy datastructures we will look at in this course
+* In addition to lists, there are a few other noteworthy data structures we will look at in this course
 * Although they will not be used as much as lists, it's important to be aware of the tools you have at your disposal
 
 
