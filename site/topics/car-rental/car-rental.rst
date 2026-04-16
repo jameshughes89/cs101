@@ -303,7 +303,7 @@ Kilometers Above Allowable Average
     for the limit as that would make it far more general.
 
     Remember, with these small differences discussed, one is not more correct than the other. There is literally an
-    infinite number of ways one could go about solving this problems.
+    infinite number of ways one could go about solving this problem.
 
 
 Revisit Calculating the Total Charge
