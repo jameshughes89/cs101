@@ -51,7 +51,7 @@ Before Kattis
         * Be sure to make use of the ``Person`` class' ``__repr__`` method
 
 
-    * Make an instance of the class, add/remove ``Person`` objects to it, and write ``assert`` tests to verify correctness
+    * Make an instance of the class, add/remove ``Person`` objects to/from it, and write ``assert`` tests to verify correctness
 
 
 #. Create unittest classes for the ``Contacts`` class
