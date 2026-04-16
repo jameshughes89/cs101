@@ -160,7 +160,7 @@ Why They Are Great
 Sets
 ====
 
-* Another common data structure is sets
+* Another common data structure is a set
 
     * You may already be familiar with the idea of sets from math
 
@@ -205,7 +205,7 @@ Sets
 
     * Iterating over the contents with a ``for`` loop
     * Remove elements from the set
-    * Check is sets are equal
+    * Check if sets are equal
     * Check if something is a subset of another set
     * Turn the set into a list (and you can turn a list into a set)
     * ...
