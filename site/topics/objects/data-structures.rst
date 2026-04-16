@@ -235,7 +235,7 @@ Course Class
 * Then, we loop over all ``Student`` objects within the ``_students`` list, and for each ``Student``
 
     * Convert them to a string (which the f-string will do automatically) with a newline character
-    * And then appends the whole new string to tne end of the string ``s``
+    * And then appends the whole new string to the end of the string ``s``
 
 * What's interesting here is how the ``Course`` class' ``__repr__`` makes use of the ``Student`` class' ``__repr__``
 * Below is an example of a ``Course`` object and it's string representation
