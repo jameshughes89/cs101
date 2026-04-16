@@ -259,8 +259,8 @@ Execution Flow
 
 * Line 8 prints out the value of ``fahrenheit``
 * Line 10 assigns a value to a variable
-* Like 11 calls the function ``celsius_to_fahrenheit`` again, which means our execution jumps to line 1 again
-* Once the function is complete (lines 1 -- 4), the value is returned to like 11 and the returned value is assigned to ``fahrenheit``
+* Line 11 calls the function ``celsius_to_fahrenheit`` again, which means our execution jumps to line 1 again
+* Once the function is complete (lines 1 -- 4), the value is returned to line 11 and the returned value is assigned to ``fahrenheit``
 * Line 12 prints out the value of ``fahrenheit``
 * The program is now complete
 
