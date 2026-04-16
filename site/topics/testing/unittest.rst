@@ -195,7 +195,7 @@ Subtests
             self.assertEqual(20, sphere.diameter())
 
 
-* Although there is nothing wrong with the above tests, we can instead, we can make use of ``subTest`` in this scenario
+* Although there is nothing wrong with the above tests, we can instead make use of ``subTest`` in this scenario
 
 
 .. code-block:: python
