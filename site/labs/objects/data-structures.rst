@@ -23,7 +23,7 @@ Pre Lab Exercises
 #. Write *unit tests* for the class
 
     * Writing tests for collections can be difficult, so do your best
-    * Use the `CountryCatalogueTest` class as an example from assignment 4.
+    * Use the ``CountryCatalogueTest`` class as an example from assignment 4.
 
 
 
