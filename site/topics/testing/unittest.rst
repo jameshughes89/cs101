@@ -49,7 +49,7 @@ Starting a Unit Test Class
 
 * As a convention, we call our test classes ``SomeClassTest``, where ``SomeClass`` is the name of the class we are testing
 
-    * Since the tests will be fore the ``Sphere`` class, we call it ``SphereTest``
+    * Since the tests will be for the ``Sphere`` class, we call it ``SphereTest``
 
 * You will also notice the ``unittest.TestCase`` within parentheses next to the class name
 
