@@ -128,7 +128,7 @@ Methods
             """
             Generate and return a string representation of the Point3D object.
 
-            This os a "magic method" that can be used with `str(some_point3d)` or for printing.
+            This is a "magic method" that can be used with `str(some_point3d)` or for printing.
 
             :return: A string representation of the Point3D
             :rtype: string
@@ -144,7 +144,7 @@ Testing
 -------
 
 * Below is a series of ``assert`` tests verifying the ``Point3D`` class' correctness
-* Like before, these tests *work*, but we area pushing the limits of our simple ``assert`` tests
+* Like before, these tests *work*, but we are pushing the limits of our simple ``assert`` tests
 
 .. code-block:: python
     :linenos:
