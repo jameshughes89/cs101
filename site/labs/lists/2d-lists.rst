@@ -24,7 +24,7 @@ Pre Lab Exercises
 
     * 1 --- Only worry about playing around with the ``range`` function
     * 3
-    * 4 --- Figure out with the ``is`` operator does, and also modify the code to use f-strings
+    * 4 --- Figure out what the ``is`` operator does, and also modify the code to use f-strings
     * 8 --- If you did not finish it last week
 
 
