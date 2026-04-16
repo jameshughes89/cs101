@@ -95,7 +95,7 @@ Functions and Aliasing
     print(a_list)   # Results in ['a', 'b', 'c', 99]
 
 
-* In the above example, although never access through ``a_list``, the list ``a_list`` references is altered through the alias ``some_list`` within the function ``add_to_list``
+* In the above example, although never accessed through ``a_list``, the list ``a_list`` references is altered through the alias ``some_list`` within the function ``add_to_list``
 
 
 Side Effects & Pure Functions
