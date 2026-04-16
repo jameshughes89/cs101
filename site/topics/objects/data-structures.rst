@@ -152,7 +152,7 @@ Course Class
 
 * To eliminate any duplicate code, we can write a helper method --- ``_find``
 
-    * Like the attribute ``_students``, the method ``_find`` is not really indented to be used outside the class, thus, by convention, it starts with an underscore
+    * Like the attribute ``_students``, the method ``_find`` is not really intended to be used outside the class, thus, by convention, it starts with an underscore
 
 * ``_find`` will be a method that performs the linear search on the list
 
