@@ -118,7 +118,7 @@ Comparison Operators
 --------------------
 
 * As you have probably noticed, asking ``True and False`` is not overly helpful as it is
-* Based how we use this logic in real life, we need a way to evaluate statements into their Boolean values
+* Based on how we use this logic in real life, we need a way to evaluate statements into their Boolean values
 * For example, is it ``not`` *over 100 degrees Celsius outside*?
 
     * We need a way to check if the given temperature is greater than 100 degrees Celsius
