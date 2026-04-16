@@ -118,7 +118,7 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Monday May 11 2026, 11:55pm
+      - Monday May 11, 2026, 11:55pm
     * - Assignment 2
       - 5%
       - Monday May 25, 2026, 11:55pm
