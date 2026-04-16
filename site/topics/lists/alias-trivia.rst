@@ -74,7 +74,7 @@ Aliases & List Trivia
     #. Create an alias of ``l`` called ``l_alias``\.
     #. Create a copy of ``l`` called ``l_copy``\.
 
-    Convince yourself that you did in fact make an alias with ``l_alias`` and a copy with ``l_copy``\,
+    Convince yourself that you did in fact make an alias with ``l_alias`` and a copy with ``l_copy``\.
 
 
 Functions and Aliasing
