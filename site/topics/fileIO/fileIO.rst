@@ -89,7 +89,7 @@ Writing to a Text File
     file, it *flushes the buffer*, meaning that anything left in the buffer will be written to the file.
 
 
-Comma Seperated Values (CSV)
+Comma Separated Values (CSV)
 ============================
 
 * CSV files are are a popular file format for tabular data
