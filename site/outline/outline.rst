@@ -133,7 +133,7 @@ Student Evaluation
       - Wednesday May 20, 2026
     * - Final Exam
       - 50%
-      - TBD, 2026
+      - Monday June 15, 2026
 
 
 

@@ -76,4 +76,4 @@ Course Schedule
      * - Test 1 (Midterm)
        - Wednesday May 20, 2026
      * - Test 2 (Final)
-       - TBD
+       - Monday June 15, 2026
