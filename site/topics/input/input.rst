@@ -85,7 +85,7 @@ Changing Types
 
     Write a program to:
     
-    #. Ask the user to input their weight in pounds and save the value to variable
+    #. Ask the user to input their weight in pounds and save the value to a variable
     #. Convert the inputted value to a float and save the result to a variable
     #. Calculate the mass of the individual in kilograms based on the inputted weight and save the result to a variable
     #. Print out the mass in kilograms
