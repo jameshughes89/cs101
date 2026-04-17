@@ -2,7 +2,7 @@
 Tuples, Dictionaries, and Sets
 ******************************
 
-* In addition to lists, there are a few other noteworthy datastructures we will look at in this course
+* In addition to lists, there are a few other noteworthy data structures we will look at in this course
 * Although they will not be used as much as lists, it's important to be aware of the tools you have at your disposal
 
 
@@ -54,7 +54,7 @@ Dictionaries
 
     * Much of their complexity is hidden from us so we will not worry about it here
 
-* Simply, they are like list that you could index with *strings*, or various other types, instead of just integers
+* Simply, they are like lists that you can index with *strings*, or various other types, instead of just integers
 * Consider the following example of storing grades for students
 
 .. code-block:: python
@@ -160,7 +160,7 @@ Why They Are Great
 Sets
 ====
 
-* Another common data structure is sets
+* Another common data structure is a set
 
     * You may already be familiar with the idea of sets from math
 
@@ -205,7 +205,7 @@ Sets
 
     * Iterating over the contents with a ``for`` loop
     * Remove elements from the set
-    * Check is sets are equal
+    * Check if sets are equal
     * Check if something is a subset of another set
     * Turn the set into a list (and you can turn a list into a set)
     * ...

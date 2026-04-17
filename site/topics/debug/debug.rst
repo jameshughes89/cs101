@@ -278,8 +278,8 @@ Rubber Duck Debugging
 ---------------------
 
 * `Rubber Duck Debugging <https://en.wikipedia.org/wiki/Rubber_duck_debugging>`_
-* A shockingly effectively form of debugging
-* This is not a joke --- one of the best debugging strategy is to explain your code to *something*
+* A shockingly effective form of debugging
+* This is not a joke --- one of the best debugging strategies is to explain your code to *something*
 * Sometimes you have a friend
 * Sometimes you have your mom
 * Sometimes you have a pet

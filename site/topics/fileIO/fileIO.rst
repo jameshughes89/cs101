@@ -11,7 +11,7 @@ File IO
 Text Files
 ==========
 
-* Text files are great way to store textual data
+* Text files are a great way to store textual data
 * They typically have the file extension ".txt", but the actual extension doesn't really matter
 * Most of what we are about to see will work on many different file types too (not just text files)
 
@@ -89,15 +89,15 @@ Writing to a Text File
     file, it *flushes the buffer*, meaning that anything left in the buffer will be written to the file.
 
 
-Comma Seperated Values (CSV)
+Comma Separated Values (CSV)
 ============================
 
-* CSV files are are a popular file format for tabular data
+* CSV files are a popular file format for tabular data
 
     * Data that can be stored in a table
     * Think of rows and columns of data, like in a spreadsheet
 
-* CSV files are stored in plain text, but values are seperated with commas
+* CSV files are stored in plain text, but values are separated with commas
 
     * You may come across CSV files that use tabs or spaces to separate data
 
