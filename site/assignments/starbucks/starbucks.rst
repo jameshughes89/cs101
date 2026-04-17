@@ -33,7 +33,7 @@ Provided Files
 
 You are provided with
 
-* A notebook file called :download:`asn1.ipynp <asn1.ipynb>` containing the starting point of the assignment
+* A notebook file called :download:`asn1.ipynb <asn1.ipynb>` containing the starting point of the assignment
 
     * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
     * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn1.py <asn1.py>` file
