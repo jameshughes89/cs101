@@ -49,7 +49,7 @@ Starting a Unit Test Class
 
 * As a convention, we call our test classes ``SomeClassTest``, where ``SomeClass`` is the name of the class we are testing
 
-    * Since the tests will be fore the ``Sphere`` class, we call it ``SphereTest``
+    * Since the tests will be for the ``Sphere`` class, we call it ``SphereTest``
 
 * You will also notice the ``unittest.TestCase`` within parentheses next to the class name
 
@@ -195,7 +195,7 @@ Subtests
             self.assertEqual(20, sphere.diameter())
 
 
-* Although there is nothing wrong with the above tests, we can instead, we can make use of ``subTest`` in this scenario
+* Although there is nothing wrong with the above tests, we can instead make use of ``subTest`` in this scenario
 
 
 .. code-block:: python

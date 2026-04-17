@@ -125,7 +125,7 @@ Complexity Analysis
 
 * With linear search, every guess only eliminated one number
 
-* Once again, let's consider the worse case scenario --- the ``needle`` is not within the ``haystack`` of size :math:`1024`
+* Once again, let's consider the worst case scenario --- the ``needle`` is not within the ``haystack`` of size :math:`1024`
 
     * One guess gets me to :math:`512` numbers
     * Two guesses gets me to :math:`256` numbers
@@ -170,7 +170,7 @@ Linear Search in Other Programming Languages
 
 * Below is a collection of linear search algorithms in various popular programming languages
 
-    * The purpose of their inclusion here is to get a sense of how similar and dissimilar programing languages can be
+    * The purpose of their inclusion here is to get a sense of how similar and dissimilar programming languages can be
 
 * Despite never learning the various languages, chances are you can still understand much of the code completely
 
