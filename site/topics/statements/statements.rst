@@ -102,7 +102,7 @@ Large Series of Statements
 .. admonition:: Activity
     :class: activity
 
-    Consider the sentence "I am taking CSCI 161". Write a program that stores each word of that sentence in it's own
+    Consider the sentence "I am taking CSCI 161". Write a program that stores each word of that sentence in its own
     variable, and then prints the whole sentence to the screen, using only a single ``print``.
 
     .. raw:: html
