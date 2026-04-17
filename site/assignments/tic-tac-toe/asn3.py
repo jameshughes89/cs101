@@ -331,11 +331,10 @@ def render_row(board: list, y: int) -> str:
 
 def render_board(board: list) -> str:
     """
-    Render the current game board as a string and return the string. The board will always be a square, and each cell
-    is 3x3 characters. The cell, of occupied by a player, will have the player's symbol ('X' or 'O') in the centre of
-    the 3x3 cell. Vertical lines are represented as pipe characters '|', horizontal lines are hyphen-minus '-', and
-    intersections of vertical and horizontal lines are represented as addition signs '+'. An example 3x3 game board
-    populated with player moves is presented below:
+    Render the current game board as a string and return the string. The board will always be a square. The cell, if
+    occupied by a player, will have the player's symbol ('X' or 'O') in it. Vertical lines are represented as pipe
+    characters '|', horizontal lines are hyphen-minus '-', and intersections of vertical and horizontal lines are
+    represented as addition signs '+'. An example 3x3 game board populated with player moves is presented below:
 
                 X|O|X
                 -+-+-
