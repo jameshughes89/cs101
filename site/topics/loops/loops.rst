@@ -54,7 +54,7 @@ Reusing Variables
     * Calculate ``a + 1``, which is ``6`` in this example
     * Store the newly calculated value of ``6`` in ``a``
 
-* This and similar pattens are so common that many programming languages have shorthands for this
+* This and similar patterns are so common that many programming languages have shorthands for this
 
 
 .. code-block:: python
@@ -81,7 +81,7 @@ While loops
 
 * So far, if we need to run the same code multiple times, we repeat the code as many times as we need
 
-    * For example, if I wanted to ``print("Hello, world!)`` five times, I need to write that print statement 5 times
+    * For example, if I wanted to ``print("Hello, world!")`` five times, I need to write that print statement 5 times
 
 * The trouble with this is
 

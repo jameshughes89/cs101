@@ -50,7 +50,7 @@ For loops
         Print out a string vertically. In other words, print out a single character on each line.
 
         :param a_string: Some string to print out
-        :type a_string String
+        :type a_string: String
         """
         character_index = 0
         while character_index < len(a_string):
@@ -81,7 +81,7 @@ For loops
         Print out a string vertically. In other words, print out a single character on each line.
 
         :param a_string: Some string to print out
-        :type a_string String
+        :type a_string: String
         """
         for char in a_string:
             print(char)
@@ -352,7 +352,7 @@ f-Strings
     print(to_print)    # The following is an integer 123, and this is a float to 2 decimal places 456.79.
 
 
-* You can even specify align output nicely with f-Strings
+* You can even specify how to align output nicely with f-Strings
 * For example, if you wanted to format some output of something like a bill and you wrote the following, it wouldn't look too nice
 
 .. code-block:: python

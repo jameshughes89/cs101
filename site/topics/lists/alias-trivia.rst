@@ -74,7 +74,7 @@ Aliases & List Trivia
     #. Create an alias of ``l`` called ``l_alias``\.
     #. Create a copy of ``l`` called ``l_copy``\.
 
-    Convince yourself that you did in fact make an alias with ``l_alias`` and a copy with ``l_copy``\,
+    Convince yourself that you did in fact make an alias with ``l_alias`` and a copy with ``l_copy``\.
 
 
 Functions and Aliasing
@@ -95,7 +95,7 @@ Functions and Aliasing
     print(a_list)   # Results in ['a', 'b', 'c', 99]
 
 
-* In the above example, although never access through ``a_list``, the list ``a_list`` references is altered through the alias ``some_list`` within the function ``add_to_list``
+* In the above example, although never accessed through ``a_list``, the list ``a_list`` references is altered through the alias ``some_list`` within the function ``add_to_list``
 
 
 Side Effects & Pure Functions

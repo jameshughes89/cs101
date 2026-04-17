@@ -165,7 +165,7 @@ Range
 
 * Notice that the integer ``5`` was specified in the ``range`` function, and the loop ran a total of ``5`` times
 
-    * But because of ``0`` based indexing, the the number ``5`` is not actually included
+    * But because of ``0`` based indexing, the number ``5`` is not actually included
 
 * A big reason we like to use ``for`` loops this way is because the syntax is so simple and clean
 * The above functionality can be achieved with a ``while`` loop, but the code needed is a little more cumbersome
