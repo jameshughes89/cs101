@@ -7,7 +7,7 @@ Propositional Logic
     * This course focuses on introductory computer science --- ``True``
     * This topic is titled "Not Logic" --- ``False``
 
-* This is rather intuitive since you use this type of simple logic in every day life to make decisions
+* This is rather intuitive since you use this type of simple logic in everyday life to make decisions
 * Additionally, you are already familiar with some *operators* we can use on these ``True``/``False`` statements
 
     * ``and``
@@ -50,7 +50,7 @@ Truth Table
 
 
 * The above *truth table* is a rather formal representation of some everyday ideas
-* To put it slightly different
+* To put it slightly differently
 
     * Is *the sky blue* ``and`` is *water wet*? --- ``True``
     * Is *the sky blue* ``and`` is it *over 100 degrees Celsius outside*? --- ``False``
@@ -93,7 +93,7 @@ Boolean Type
 Boolean Operators
 -----------------
 
-* Just like the arithmatic operators we use on integers and floats, Booleans have operators too
+* Just like the arithmetic operators we use on integers and floats, Booleans have operators too
 
     * The ones we just used
 
@@ -101,7 +101,7 @@ Boolean Operators
         * ``or``
         * ``not``
 
-* Consider the arithmatic operator ``+``
+* Consider the arithmetic operator ``+``
 
     * It takes two number *operands*
     * It produces a new number as a result
@@ -118,7 +118,7 @@ Comparison Operators
 --------------------
 
 * As you have probably noticed, asking ``True and False`` is not overly helpful as it is
-* Based how we use this logic in real life, we need a way to evaluate statements into their Boolean values
+* Based on how we use this logic in real life, we need a way to evaluate statements into their Boolean values
 * For example, is it ``not`` *over 100 degrees Celsius outside*?
 
     * We need a way to check if the given temperature is greater than 100 degrees Celsius
@@ -131,7 +131,7 @@ Comparison Operators
 * More generally, these comparison operators take values to be compared
 * Consider the greater than (``>``) comparison operator
 
-    * It two values as operands
+    * It takes two values as operands
     * It produces a Boolean as a result
     * e.g., ``1 > 7`` is ``False``
 
@@ -188,7 +188,7 @@ Evaluating Example Expressions
 ``True``
 
 
-``(101 == 100) and  ((66 - 17) < 54))``
+``(101 == 100) and  ((66 - 17) < 54)``
 
 ``False and ((66 - 17) < 54)``
 
@@ -199,7 +199,7 @@ Evaluating Example Expressions
 ``False``
 
 * Once we evaluated ``(101 == 100)`` as ``False``, we didn't need to evaluate the remainder of the expression
-* With ``and``, if one of the operands are ``False``, the whole expression evaluated to ``False``
+* With ``and``, if one of the operands is ``False``, the whole expression evaluated to ``False``
 
 
 ``(14 > 0) or ((6 != 7) and ((4 + 17) < 20))``
