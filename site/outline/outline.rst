@@ -73,7 +73,7 @@ Textbook and Lecture Notes
 
 Lecture notes will be posted to the website. Assignments will be submitted through Moodle. 
 
-The textbook for this class is `FREE <http://openbookproject.net/thinkcs/python/english3e/>`_ !
+The textbook for this class is `FREE <http://openbookproject.net/thinkcs/python/english3e/>`_!
 
 
 
@@ -118,7 +118,7 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Monday May 11 2026, 11:55pm
+      - Monday May 11, 2026, 11:55pm
     * - Assignment 2
       - 5%
       - Monday May 25, 2026, 11:55pm
@@ -280,7 +280,7 @@ Office Hours
 Office hours are provided to students to facilitate their success --- students are encouraged to come to office hours.
 
 Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
-students solving their problems.
+students in solving their problems.
 
 
 
@@ -401,7 +401,7 @@ appropriate changes to my records. See policies at
 Support Services
 ================
 
-There are various support services around campus and these include, but are not limited to:
+There are various support services around campus, including:
 
 #. Student Life: `Student Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services>`_
 #. Office of the Registrar: `Registrar’s Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/registrars-office>`_
