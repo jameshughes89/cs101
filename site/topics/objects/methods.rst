@@ -60,7 +60,7 @@ Constructor and Attributes
 
     class Sphere:
         """
-        Class for managing Spheres within a 3D space. This includes tracking it's location in three dimensional space and
+        Class for managing Spheres within a 3D space. This includes tracking its location in three dimensional space and
         radius. Additionally, it allows for some basic geometry calculations, distance measurements between Spheres, and
         checking if two Spheres overlap.
         """
@@ -213,7 +213,7 @@ Methods
 
 
 * In ``distance_between_edges`` above, notice how the method makes a call to the method ``distance_between_centres``
-* Since the ``distance_between_edges`` needs the distance between centres in order to complete it's calculation, there is no need to re-write that code --- just call ``distance_between_centres``
+* Since the ``distance_between_edges`` needs the distance between centres in order to complete its calculation, there is no need to re-write that code --- just call ``distance_between_centres``
 * But, like the attributes, if we want to access the instance's methods, we must access them via the reference variable ``self``
 
 
@@ -232,7 +232,7 @@ Methods
             Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
             between edges) are considered overlapping.
 
-            :param other: Sphere to check if it overlaps the self Sphere overlaps
+            :param other: Sphere to check if it overlaps the self Sphere
             :type other: Sphere
             :return: Boolean indicating if the two Spheres overlap
             :rtype: bool

@@ -84,7 +84,7 @@ Methods
             """
             Calculate the Euclidean distance from this Point3D (self) and the Point3D passed as a parameter.
 
-            :param other: A Point3D to find the the Euclidean distance to from the self Point3D
+            :param other: A Point3D to find the Euclidean distance to from the self Point3D
             :type other: Point3D
             :return: The Euclidean distance between the self Point3D and the parameter Point3D other
             :rtype: float
@@ -128,7 +128,7 @@ Methods
             """
             Generate and return a string representation of the Point3D object.
 
-            This os a "magic method" that can be used with `str(some_point3d)` or for printing.
+            This is a "magic method" that can be used with `str(some_point3d)` or for printing.
 
             :return: A string representation of the Point3D
             :rtype: string
@@ -144,7 +144,7 @@ Testing
 -------
 
 * Below is a series of ``assert`` tests verifying the ``Point3D`` class' correctness
-* Like before, these tests *work*, but we area pushing the limits of our simple ``assert`` tests
+* Like before, these tests *work*, but we are pushing the limits of our simple ``assert`` tests
 
 .. code-block:: python
     :linenos:
@@ -340,7 +340,7 @@ Methods
 
     * With f-strings, Python will automatically convert the ``Point3D`` object to a string
 
-* The final string representation of the ``Sphere`` class will not be slightly different from before
+* The final string representation of the ``Sphere`` class will now be slightly different from before
 * Before, we would see something like ``Sphere(x=1, y=2, z=3, radius=4)``
 * Now we would see something like ``Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)``
 
