@@ -300,8 +300,8 @@ Setting Type Hints
 What You Get
 ------------
 
-* Now, whenever some reads the description of the function they will know what the types are intended to be
-* In Colab, you will also see a popup when trying to call the function with the details of the function. including the types
+* Now, whenever someone reads the description of the function they will know what the types are intended to be
+* In Colab, you will also see a popup when calling the function with the details of the function, including the types
 
 .. image:: popup.png
 

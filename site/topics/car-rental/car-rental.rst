@@ -84,7 +84,7 @@ An Incremental Solution
 
 * Understand the problem
 
-    * This cannot be understated --- this is a big part of solving any problem
+    * This cannot be overstated --- this is a big part of solving any problem
 
 * Half of the description is IO
 * We know how to do this, so we will start here
@@ -204,7 +204,7 @@ Total Kilometers
 
         :rtype: float
         :param odometer_start: The number of kms the car had before renting
-        :param odometer_finish: The number of kms the car had after rending
+        :param odometer_finish: The number of kms the car had after returning
         :return: The total kms driven
         """
 
@@ -303,7 +303,7 @@ Kilometers Above Allowable Average
     for the limit as that would make it far more general.
 
     Remember, with these small differences discussed, one is not more correct than the other. There is literally an
-    infinite number of ways one could go about solving this problems.
+    infinite number of ways one could go about solving this problem.
 
 
 Revisit Calculating the Total Charge
@@ -322,7 +322,7 @@ Revisit Calculating the Total Charge
         :rtype: float
         :param num_days: Number of days the car was rented.
         :param age: Age of the driver.
-        :param rental_code: The classification code (B ord D).
+        :param rental_code: The classification code (B or D).
         :param odometer_start: Odometer when the renter took the car.
         :param odometer_finish: Odometer when the renter returned the car.
         :return: The amount to charge the renter.

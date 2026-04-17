@@ -95,7 +95,7 @@ Compound Conditions
 * This means that we can make use of more complex compound Boolean expressions
 
     * Comparison operators
-    * Arithmatic operators
+    * Arithmetic operators
     * Boolean operators
 
 .. code-block:: python
@@ -412,7 +412,7 @@ Nesting Conditionals
     # Find quadrant with 'and's
     if x > 0 and y > 0:
         print("First Quadrant")
-    elif x > 0 and y < 0
+    elif x > 0 and y < 0:
         print("Fourth Quadrant")
     elif x < 0 and y > 0:
         print("Second Quadrant")
