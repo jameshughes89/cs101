@@ -3,7 +3,7 @@ Testing
 *******
 
 * Feel free to use your laptop
-* You are strongly encourage to work with others
+* You are strongly encouraged to work with others
 
     * When you get stuck, ask those sitting around you for help
     * Get used to working together in the labs
@@ -54,7 +54,7 @@ Before Kattis
 #. Write a function to convert latitudes/longitudes from degrees, minutes, and seconds to a decimal value of a degree
 
     * :math:`1 minute = \frac{1}{60} degrees`
-    * :math:`1 second = \frac{1}{60} minute = \frac{1}{3600} degrees`
+    * :math:`1 second = \frac{1}{60} minutes = \frac{1}{3600} degrees`
     * `Wikipedia explains this in more detail <https://en.wikipedia.org/wiki/Minute_and_second_of_arc>`_
     * This function will have the degrees, minutes, and seconds as parameters
     * This function will return the latitude/longitude value as degrees with a decimal
@@ -85,7 +85,7 @@ Kattis Problems
 
 
 * Skip any of the following problems if you did them already.
-* Although not necessary, for practice, write each solution in a function with docstrings, s, and assertion tests
+* Although not necessary, for practice, write each solution in a function with docstrings, type hints, and assertion tests
 
 #. https://open.kattis.com/problems/hello
 #. https://open.kattis.com/problems/carrots

@@ -3,7 +3,7 @@ Unit Testing Objects
 ********************
 
 * Feel free to use your laptop
-* You are strongly encourage to work with others
+* You are strongly encouraged to work with others
 
     * When you get stuck, ask those sitting around you for help
     * Get used to working together in the labs
@@ -35,7 +35,7 @@ Before Kattis
 
 #. Create unittest classes for the ``Person`` class
 
-    * Write tests for each of the methods in each class
+    * Write tests for each of the methods in the class
     * Be sure to reference the :doc:`unittest topic </topics/testing/unittest>`
     * You may find the ``Circle`` class' :download:`unittests helpful <../../../test/test_circle.py>`
 

@@ -3,7 +3,7 @@ Hello World
 ***********
 
 * Feel free to use your laptop
-* You are strongly encourage to work with others
+* You are strongly encouraged to work with others
 
     * When you get stuck, ask those sitting around you for help
     * Get used to working together in the labs

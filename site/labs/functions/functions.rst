@@ -3,7 +3,7 @@ Functions
 *********
 
 * Feel free to use your laptop
-* You are strongly encourage to work with others
+* You are strongly encouraged to work with others
 
     * When you get stuck, ask those sitting around you for help
     * Get used to working together in the labs
@@ -47,7 +47,7 @@ Before Kattis
 #. Write a function called ``add_two_numbers_print(some_integer, some_other_integer)``
 
     * The code you write must be within a function
-    * The function will take two parameters ``some_integer`` and  ``some_other_integer``
+    * The function will take two parameters ``some_integer`` and ``some_other_integer``
     * The function will calculate their sum and ``print`` out the result
     * The function will not return anything
     * Call the function a few times to verify that it works properly
@@ -62,7 +62,7 @@ Before Kattis
 #. Write a function called ``add_two_numbers_return(some_integer, some_other_integer)``
 
     * The code you write must be within a function
-    * The function will take two parameters ``some_integer`` and  ``some_other_integer``
+    * The function will take two parameters ``some_integer`` and ``some_other_integer``
     * The function will calculate their sum
     * The function will ``return`` the result
     * Call the function a few times to verify that it works properly

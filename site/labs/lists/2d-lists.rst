@@ -3,7 +3,7 @@
 ********
 
 * Feel free to use your laptop
-* You are strongly encourage to work with others
+* You are strongly encouraged to work with others
 
     * When you get stuck, ask those sitting around you for help
     * Get used to working together in the labs
@@ -24,7 +24,7 @@ Pre Lab Exercises
 
     * 1 --- Only worry about playing around with the ``range`` function
     * 3
-    * 4 --- Figure out with the ``is`` operator does, and also modify the code to use f-strings
+    * 4 --- Figure out what the ``is`` operator does, and also modify the code to use f-strings
     * 8 --- If you did not finish it last week
 
 

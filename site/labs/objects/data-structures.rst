@@ -3,7 +3,7 @@ Data Structures
 ***************
 
 * Feel free to use your laptop
-* You are strongly encourage to work with others
+* You are strongly encouraged to work with others
 
     * When you get stuck, ask those sitting around you for help
     * Get used to working together in the labs
@@ -23,7 +23,7 @@ Pre Lab Exercises
 #. Write *unit tests* for the class
 
     * Writing tests for collections can be difficult, so do your best
-    * Use the `CountryCatalogueTest` class as an example from assignment 4.
+    * Use the ``CountryCatalogueTest`` class as an example from assignment 4.
 
 
 
@@ -33,7 +33,7 @@ Before Kattis
 #. Have a complete ``Person`` class from the previous lab
 #. Write a ``Contacts`` class that will manage a collection of ``Person`` objects
 
-    * The class will keep track of many instances of ``Person`` objects
+    * The class will keep track of many ``Person`` instances
     * A method for getting the ``size()`` of the ``Contacts``
     * No duplicate/equivalent ``Person`` objects are allowed to be in the collection
     * A method for adding a ``Person`` to the ``Contacts`` called ``add`` that takes a ``Person`` as a parameter
@@ -51,7 +51,7 @@ Before Kattis
         * Be sure to make use of the ``Person`` class' ``__repr__`` method
 
 
-    * Make an instance of the class, add/remove ``Person`` objects to it, and write ``assert`` tests to verify correctness
+    * Make an instance of the class, add/remove ``Person`` objects to/from it, and write ``assert`` tests to verify correctness
 
 
 #. Create unittest classes for the ``Contacts`` class
