@@ -11,8 +11,8 @@
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * For all exercises
 
@@ -32,8 +32,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 .. note::
 
