@@ -11,8 +11,8 @@ Functions
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 #. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
 
@@ -24,8 +24,8 @@ Pre Lab Exercises
     * 8
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 * :doc:`If you forget how to do the function related stuff, go back to the class notes </topics/functions/functions>`
 
