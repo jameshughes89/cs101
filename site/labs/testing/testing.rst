@@ -11,8 +11,8 @@ Testing
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 #. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
 
@@ -26,8 +26,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 * :doc:`If you forget how to do the testing and type hint related stuff, go back to the class notes </topics/testing/testing>`
 
