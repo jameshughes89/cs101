@@ -11,8 +11,8 @@ References & More Lists
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * For all exercises
 
@@ -31,8 +31,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Run the following code and figure out what it does and how it does it
 
