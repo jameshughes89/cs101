@@ -11,8 +11,8 @@ Data Structures
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 #. Have all classes from the previous lab complete
 #. `Chapter 15 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html#exercises>`_
@@ -27,8 +27,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Have a complete ``Person`` class from the previous lab
 #. Write a ``Contacts`` class that will manage a collection of ``Person`` objects
