@@ -11,15 +11,15 @@ Car Rental
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * There are no exercises to complete before this lab
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 .. image:: /topics/car-rental/carRental.png
 
