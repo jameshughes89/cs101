@@ -167,6 +167,18 @@ Google?
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
+What about Generative AI?
+-------------------------
+
+when talking about google, I am not talking about AI
+    the friction of searching for a solution is important to learning
+
+ai use is prohibited
+yes its a great tool for prgramming, for programmers
+you are to lean this, so AI will only get in your wya
+Even using it in good faith to learn is a problem as you dont learn
+
+
 Can I Write A Program Now?
 ==========================
 
