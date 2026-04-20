@@ -63,8 +63,8 @@ Core Exercises
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 * You should be using a scrap piece of paper to work out the ideas for the following problems
 

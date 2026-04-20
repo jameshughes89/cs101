@@ -63,8 +63,8 @@ Core Exercises
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 Go back and work on Kattis problems from previous labs that you have yet to solve. I'm betting there are several of the
 earlier ones you can revisit and solve. Remember, the Kattis problems are great for practice, and practice is the only

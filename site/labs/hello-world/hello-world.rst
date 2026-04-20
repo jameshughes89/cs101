@@ -83,8 +83,8 @@ Refreshing What We Learned
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 .. admonition:: Note
     :class: note

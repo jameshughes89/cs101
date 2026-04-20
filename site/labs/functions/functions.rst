@@ -103,8 +103,8 @@ Core Exercises
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 * Do not forget the code we used last time to read input on Kattis
 
