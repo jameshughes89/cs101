@@ -11,8 +11,8 @@ Objects
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 #. Have a working implementation of the ``Circle`` class from :doc:`lecture </topics/objects/introduction>`
 
@@ -33,8 +33,8 @@ Pre Lab Exercises
     
     
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Create a ``Square`` class
 
