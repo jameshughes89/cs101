@@ -215,7 +215,7 @@ happened to not get cured, there is no harm in setting it to infected anyways.
 Part 8 --- Simulate Infectious Disease Scenario
 ===============================================
 
-Write a function ``simulate_infections_disease`` that simulates a full infectious disease scenario. The function will
+Write a function ``simulate_infectious_disease`` that simulates a full infectious disease scenario. The function will
 have a world (list of cities) and the spread and cure probabilities as parameters. The function also has an optional
 parameter for setting a cutoff for the simulation (more on this below). The function will return a list of the number of
 cities infected at each step of the simulation.
@@ -258,13 +258,13 @@ Below is some pseudocode to help with writing the function.
 Part 9 --- Using Your Code and Plotting
 =======================================
 
-Call the ``simulate_infections_disease`` function a few times and make use of the provided
+Call the ``simulate_infectious_disease`` function a few times and make use of the provided
 ``draw_number_of_cities_infected`` function to visualize the results. Be sure to try varying parameter values,
 especially for the spread and cure probabilities.
 
 Typically, when analyzing a stochastic simulation of something, we run the simulation many times in order to get an idea
 of how things work *in general*. Run the full simulation 100 times and, in a list, keep track of the number of
-iterations each of the 100 simulations took to finish (remember, the ``simulate_infections_disease`` returns a list
+iterations each of the 100 simulations took to finish (remember, the ``simulate_infectious_disease`` returns a list
 whose length minus one would be the number of steps the simulation took). Visualize the distribution of steps of the
 infections disease scenario with the provided ``draw_distribution`` function. Like before, be sure to try varying values
 for the spread and cure probabilities.
