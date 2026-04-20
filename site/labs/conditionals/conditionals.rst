@@ -11,8 +11,8 @@ Conditionals
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 #. `Chapter 5 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/conditionals.html#exercises>`_
 
@@ -27,8 +27,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Write a function ``did_pass(grade: float) -> bool:`` that returns ``True`` if the grade is 50 or above, and ``False`` otherwise
 
