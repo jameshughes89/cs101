@@ -34,7 +34,7 @@ Provided Files
 
 You are provided with
 
-* A notebook file called :download:`asn4.ipynp <asn4.ipynb>` containing the starting point of the assignment
+* A notebook file called :download:`asn4.ipynb <asn4.ipynb>` containing the starting point of the assignment
 
     * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
     * The notebook contains the start of the ``Country`` and ``CountryCatalogue`` classes
@@ -80,7 +80,7 @@ Country Class
 
 The ``Country`` class is simply going to represent an individual country. For our purposes, a ``Country`` will know its
 ``name``, ``continent``, ``population``, and land ``area``. In addition to the attributes, a ``Country`` will also be
-able to determine it's population density (``population/area``). A method for determining equality (``__eq__``) and
+able to determine its population density (``population/area``). A method for determining equality (``__eq__``) and
 generating a nice, human readable string representation of the ``Country`` object (``__repr__``) will be written.
 
 
@@ -144,7 +144,7 @@ Part 6 --- Country Catalogue Constructor
 Write the constructor (``__init__``) for the ``CountryCatalogue`` class. The constructor for the class is simple ---
 initialize the object with an attribute assigned to a reference to an empty list. It is recommended to call the
 attribute ``_catalogue``. The underscore is included before since this attribute is not intended to be accessed directly
-from outside the clas. 
+from outside the class.
 
 
 Part 7 --- Private Find Method
@@ -217,7 +217,7 @@ Part 14 --- Most Populous Continent
 -----------------------------------
 
 Write a method ``most_populous_continent`` that returns the name of the continent (as a string) that has the largest
-population based on information within the ``CountryCatalogue``. If the the ``CountryCatalogue`` is empty, this method
+population based on information within the ``CountryCatalogue``. If the ``CountryCatalogue`` is empty, this method
 raises an ``IndexError`` exception.
 
 This method will only consider the ``Country`` objects contained within the ``CountryCatalogue``. In other words,
@@ -248,7 +248,7 @@ of each individual ``Country`` object's string representation, each on their own
 
 
 Write the ``__getitem__`` magic method for the ``CountryCatalogue`` class. This method takes an index as a parameter and
-returns a reference to the ``Country`` object at ths specified index. For more details on this method,
+returns a reference to the ``Country`` object at the specified index. For more details on this method,
 `see the relevant documentation <https://docs.python.org/3/reference/datamodel.html#object.__getitem__>`_.
 
 Write the ``__len__`` magic method for the ``CountryCatalogue`` class. This method returns the number of ``Country``

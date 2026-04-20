@@ -38,7 +38,7 @@ Provided Files
 
 You are provided with
 
-* A notebook file called :download:`asn2.ipynp <asn2.ipynb>` containing the starting point of the assignment
+* A notebook file called :download:`asn2.ipynb <asn2.ipynb>` containing the starting point of the assignment
 
     * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
     * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn2.py <asn2.py>` file
@@ -67,7 +67,7 @@ Every *city* in the simulation is represented as a list ``[name, infected, [neig
 * ``infected`` is a ``bool`` --- ``True`` if the city is infected with zombies, ``False`` otherwise
 * ``[neighbours]`` is a *list* containing the city numbers (indexes) of the cities connected to this city
 
-For example, a city named ``"City 0`` that is not infected and three neighbours: cities with indices ``3``, ``6``, and
+For example, a city named ``"City 0"`` that is not infected and three neighbours: cities with indices ``3``, ``6``, and
 ``7``, would be represented as ``["City 0", False, [3, 6, 7]]``.
 
 The *world* is made up of multiple cities, which are also stored in a list. Therefore, a world with cities 0, 1, 2, ...
@@ -89,7 +89,7 @@ Part 2 --- Read Over Provided Code
 ==================================
 
 There are many functions already completed within the assignment 2 notebook file. These functions provide important
-functionality for the assignment. They contains ideas that you are likely not familiar with, but do spend some time going
+functionality for the assignment. They contain ideas that you are likely not familiar with, but do spend some time going
 over the code to see if you can get a high-level idea of what each is doing.
 
 Get used to looking at code that is not yours, using unfamiliar ideas, and trying to figure out what existing code does.
@@ -98,7 +98,7 @@ This is not a trivial thing, but as a programmer, it is something you will end u
 You will notice that each of the provided functions has corresponding assert tests, but some are commented with a
 "eyeball test" note. For these functions, there is no way to easily test the function with an assertion, so in order to
 test it, one would need to visually inspect the result to verify correctness. These tests are commented out by default,
-but if you are interested, feel free uncommenting them to see what happens.
+but if you are interested, feel free to uncomment them to see what happens.
 
 
 Part 3 --- Check if a City is Infected
@@ -155,7 +155,7 @@ Write a function ``simulation_step`` that simulates a single iteration of the zo
 the world (list of cities) as a parameter, along with spread and cure probabilities as parameters. The function will
 return a copy of the world after performing a step of the simulation.
 
-The parameter ``spread_probability`` is a floating point values between 0 -- 1 representing the percent probability that
+The parameter ``spread_probability`` is a floating point value between 0 -- 1 representing the percent probability that
 a given infected city will spread the disease to one of its neighbours in the current simulation step. The parameter
 ``cure_probability`` is the percent probability that a given infected city will cure *itself* in the current simulation
 step. 
@@ -173,7 +173,7 @@ simulation step is retrieved from the *before* state, and all changes to the wor
 Consider the below image as an example. In the *before state*, cities 0 and 2 are infected, and cities 1, 3, and 4 are
 not infected. If during the simulation step city 0 were to become cured, and cities 1 and 4 become infected, the changes
 are made to the *after* state while the *before* state is left alone, unchanged. Again, note that *before state* and
-*after state* are two separate world (two separate lists of cities).
+*after state* are two separate worlds (two separate lists of cities).
 
 .. image:: before_after_states.png
 
@@ -212,10 +212,10 @@ happened to not get cured, there is no harm in setting it to infected anyways.
         Return after state
 
 
-Part 8 --- Simulate Infections Disease Scenario
+Part 8 --- Simulate Infectious Disease Scenario
 ===============================================
 
-Write a function ``simulate_infections_disease`` that simulates a full infections disease scenario. The function will
+Write a function ``simulate_infections_disease`` that simulates a full infectious disease scenario. The function will
 have a world (list of cities) and the spread and cure probabilities as parameters. The function also has an optional
 parameter for setting a cutoff for the simulation (more on this below). The function will return a list of the number of
 cities infected at each step of the simulation.
@@ -234,7 +234,7 @@ Before the simulation starts looping through steps, city 0 needs to be set to in
 step 0 needs to be recorded in the list too. This means that the function should start with some simple setup work.
 
 Lastly, there is a special optional ``cutoff`` parameter for the function. Since it is possible that the spread and cure
-probabilities are set such that the loop may run excessively long, the `cutoff`` value is used to ensure that the
+probabilities are set such that the loop may run excessively long, the ``cutoff`` value is used to ensure that the
 simulation will stop in some reasonable time. Since a list is used to keep track of the number of infected cities after
 each simulation step, the length of that list can be used to know how many times the loop ran (since the list grows by 1
 every time the loop runs). In other words, a way to check how many times the loop has run would be
@@ -266,8 +266,8 @@ Typically, when analyzing a stochastic simulation of something, we run the simul
 of how things work *in general*. Run the full simulation 100 times and, in a list, keep track of the number of
 iterations each of the 100 simulations took to finish (remember, the ``simulate_infections_disease`` returns a list
 whose length minus one would be the number of steps the simulation took). Visualize the distribution of steps of the
-infections disease scenario with the provided ``draw_distribution`` function. Like before, be sure to run try varying
-values for the spread and cure probabilities.
+infections disease scenario with the provided ``draw_distribution`` function. Like before, be sure to try varying values
+for the spread and cure probabilities.
 
     .. code-block:: text
 
@@ -366,21 +366,21 @@ Assignment FAQ
 
 * :doc:`See the general FAQ </assignments/faq>`
 
-* My plots and figures look different every time I run the program
+* My plots and figures look different every time I run the program, is that OK?
 
     * This is expected
     * The world configuration will be random every time
-    * When a city spreads the infection is random
+    * Whether a city spreads the infection is random
     * Which city the infection spreads to is random
     * When a city is cured is random
 
 
-* My drawing isn't updating for each step
+* Why isn't my drawing updating for each step?
 
     * Depending on your programming environment, this may be because it's running so fast
 
 
-* My program seems to be running forever
+* Why does it seem that my program is running forever?
 
     * This could be because of a bug in your code
     * Could be the probabilities for spreading and curing are set in such a way that the simulation has yet to end

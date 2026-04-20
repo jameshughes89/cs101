@@ -11,15 +11,15 @@ Unit Testing Objects
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * Have the previous lab complete
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Create a ``Person`` class
 
@@ -47,8 +47,8 @@ Before Kattis
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 * You should be using a scrap piece of paper to work out the ideas for the following problems
 
