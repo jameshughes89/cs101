@@ -11,15 +11,15 @@ Debug
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * There are no exercises to complete before this lab
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 **1**
 
