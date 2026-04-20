@@ -11,8 +11,8 @@ Loops & Linear Search
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 #. `Chapter 7 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/iteration.html#exercises>`_
 
@@ -37,8 +37,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Write a function ``count_to_n_while(n: int):`` to print out each number from :math:`0` -- :math:`(n - 1)`
 
@@ -77,8 +77,8 @@ Before Kattis
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 * You should be using a scrap piece of paper to work out the ideas for the following problems
 
