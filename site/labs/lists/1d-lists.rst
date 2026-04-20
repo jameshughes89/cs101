@@ -11,8 +11,8 @@ Lists
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * For all exercises
 
@@ -32,8 +32,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Write a function ``linear_search(needle, haystack) -> bool:``
 
