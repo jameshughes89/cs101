@@ -240,8 +240,8 @@ Each lab consists of three parts:
 The "Textbook Exercises" are from the free course textbook and are selected based on their relevance to the course
 material.
 
-The "Core Exercises" are the core part of each lab. These questions are designed to directly complement the
-course material covered in the topics and emphasize specific technical skills.
+The "Core Exercises" are the core part of each lab. These questions are designed to directly complement the course
+material covered in the topics and emphasize specific technical skills.
 
 The "Kattis Problems" are problems selected from Kattis, a website with programming competition style problems where
 people can submit their solutions for automated evaluation. A select set of Kattis problems related to course material
