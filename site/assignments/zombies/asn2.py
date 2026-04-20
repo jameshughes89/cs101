@@ -365,11 +365,11 @@ def simulation_step(world: list, spread_probability: float, cure_probability: fl
 # assert False == next_world[4][1]
 
 
-def simulate_infections_disease(
+def simulate_infectious_disease(
     world: list, spread_probability: float, cure_probability: float, cutoff: int = 100000
 ) -> list:
     """
-    Run a simulation of an infections disease scenario on the provided world with the specified parameters and return a
+    Run a simulation of an infectious disease scenario on the provided world with the specified parameters and return a
     list of the number of cities infected for each step of the simulation, with index 0 being the first step. Note that
     index 0 should always be 1 as city 0 always starts as the only infected city. Although the provided world may have
     cities having different infection statuses, this function will automatically set city 0 as infected before the
@@ -391,10 +391,10 @@ def simulate_infections_disease(
 
 
 # world = make_world(10, 4, 0.33)
-# assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infections_disease(world, 0, 0, 10)
-# assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infections_disease(world, 0, 1, 10)
+# assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infectious_disease(world, 0, 0, 10)
+# assert [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] == simulate_infectious_disease(world, 0, 1, 10)
 # Eyeball test required --- uncomment to view test
-# draw_number_of_cities_infected(simulate_infections_disease(world, 0.4, 0.25))
+# draw_number_of_cities_infected(simulate_infectious_disease(world, 0.4, 0.25))
 
 # Run a simulation on a new world
 
