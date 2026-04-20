@@ -175,7 +175,11 @@ What about Generative AI?
 * When talking about Googling, I am not talking about generative AI
 
     * The friction of searching for a solution is an important part in learning
-    * Formulating the right question, reading various answers, piecing together an answer, is part of learning
+
+        * Formulate the right question
+        * Reading various answers to similar problems
+        * Piecing together a solution
+        * Hacking at it until it works
 
 * AI is a great tool for programmers
 * AI is *not* a great tool for those learning to program
