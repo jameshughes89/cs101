@@ -185,6 +185,8 @@ What about Generative AI?
 * AI is *not* a great tool for those learning to program
 
     * To learn these concepts, students need to grind out the solutions on their own
+    * Knowing when AI is right/wrong/hallucinating requires a deep understanding of these core ideas
+    * You cannot develop the necessary expertise by offloading the learning to the tool
 
 * Even using AI in good faith as a mechanism to learn when stuck is a recipe for disaster
 
