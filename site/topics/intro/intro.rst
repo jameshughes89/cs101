@@ -188,6 +188,8 @@ What about Generative AI?
 
 * Even using AI in good faith as a mechanism to learn when stuck is a recipe for disaster
 
+    * Having answers, even if well explained, eliminates the struggle required to truly understand
+
 
 
 Can I Write A Program Now?
