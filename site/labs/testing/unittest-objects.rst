@@ -11,15 +11,15 @@ Unit Testing Objects
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * Have the previous lab complete
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 #. Create a ``Person`` class
 
