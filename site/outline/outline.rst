@@ -165,7 +165,7 @@ Marking
 Assignments are marked by the Teaching Assistants, who follow marking schemes provided by instructors.
 
 A request for adjustment in an assignment mark must be made within 2 weeks of the date on which it was first available
-after marking. (Beyond that date, regrading will not be considered, regardless of whether you retrieved your
+after marking. (Beyond that date, re-grading will not be considered, regardless of whether you retrieved your
 assignment). Such a request must be submitted to the course instructor in writing, and must include specific reasons why
 you believe you deserve more marks. The request must be accompanied by all materials that were originally handed in, as
 well as the original marker's grade summary sheet. The instructor will inform you by email when the reevaluation process
