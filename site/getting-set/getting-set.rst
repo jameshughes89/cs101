@@ -55,6 +55,6 @@ programmers life easier, at this stage of learning it will likely impede your le
 A popular IDE many use is called *PyCharm*. You can obtain the community or education edition for free from *JetBrains*.
 `Visit their download website to obtain the software <https://www.jetbrains.com/pycharm/download/>`_.
 
-Note, I will not be providing IT support for IDEs (or really any IT support in general). 
+Note, I will not be providing IT support for IDEs (or really any IT support in general).
 
 .. image:: pyCharm.png

@@ -22,7 +22,7 @@ You will
 * Write a function to calculate the density of Starbucks within an area
 
 .. warning::
-   
+
     You should **not** expect to be able to sit down and just start coding a solution. Programming does not work like
     that. Expect this assignment to take hours. Expect to get things wrong, and then, expect to get them wrong again ---
     this is normal.
@@ -145,7 +145,7 @@ latitudes and if the longitude falls between the "rectangle's" longitudes. See t
 For the purpose of this assignment, only count Starbucks if they are strictly between the specified latitudes and
 longitudes; don't count them if they fall on any of the latitude/longitude lines. In other words, when checking if
 the location is within the rectangle, use greater than/less than instead of greater than or equal to/less than or equal
-to. 
+to.
 
 The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
 specifying the "rectangle" as parameters. For simplicity, assume ``latitude_line_1 < latitude_line_2`` and

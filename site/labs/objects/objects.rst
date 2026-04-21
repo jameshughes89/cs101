@@ -23,15 +23,15 @@ Textbook Exercises
 #. `Chapter 15 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html#exercises>`_
 
     * Create the ``Point`` class described in the chapter
-    
-    	* Only worry about the constructor, attributes, and the ``distance_from_origin`` & ``midpoint`` methods
-    	
-    
+
+        * Only worry about the constructor, attributes, and the ``distance_from_origin`` & ``midpoint`` methods
+
+
     * 2
     * 3
     * 4
-    
-    
+
+
 
 Core Exercises
 ==============

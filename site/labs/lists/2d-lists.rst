@@ -28,7 +28,7 @@ Textbook Exercises
     * 8 --- If you did not finish it last week
 
 
-#. Write assertion tests for each of your functions above where appropriate 
+#. Write assertion tests for each of your functions above where appropriate
 
 
 

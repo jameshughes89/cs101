@@ -158,7 +158,7 @@ return a copy of the world after performing a step of the simulation.
 The parameter ``spread_probability`` is a floating point value between 0 -- 1 representing the percent probability that
 a given infected city will spread the disease to one of its neighbours in the current simulation step. The parameter
 ``cure_probability`` is the percent probability that a given infected city will cure *itself* in the current simulation
-step. 
+step.
 
 The overall idea of simulating a step requires that each city in the world is investigated and checked if it will spread
 the disease to a neighbouring city and/or cure itself. Details are provided below and, given the complexity of this
