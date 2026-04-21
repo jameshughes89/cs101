@@ -66,6 +66,15 @@ Calling a Function
 
     * More on this later
 
+.. note::
+
+    Python has a nice REPL (*Read Eval Print Loop*). This is great for debugging as it allows one to try small pieces
+    of code to test if it's behaving correctly.
+
+    If things are not working quite right, try adding some ``print``\s to the code to output the values of variables
+    along the way to see if they are what you expect. The tight REPL makes adding and moving ``print``\s around not
+    overly painful.
+
 
 .. admonition:: Quick Activity
     :class: activity
