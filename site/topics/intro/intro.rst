@@ -80,6 +80,14 @@ What Should I Bring To Class
     * If you can bring a laptop, I strongly recommend it as there will be opportunity for you to program during activities
 
 
+.. note::
+
+    Despite having these course notes available, handwritten notes during lecture are strongly recommended. Typed notes
+    are better than nothing, but studies consistently show handwritten notes are more effective for retention and
+    understanding.
+
+
+
 Is This Class Easy?
 ===================
 
