@@ -38,6 +38,7 @@ classifiers = [
 ]
 dependencies = [
   "black[jupyter]==26.3.1",
+  "codespell==2.4.2",
   "flake8==7.3.0",
   "flake8-black==0.4.0",
   "flake8-isort==7.0.0",
