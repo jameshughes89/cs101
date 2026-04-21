@@ -161,12 +161,12 @@ lists and not just the outside list. If we perform a copy naively, we may accide
 copies of the references --- this is called a "shallow copy". Refer to the following images to see the difference
 between a "shallow" copy and a "deep" copy in this context.
 
-.. figure:: shallow_copy.png
+.. figure:: shallow_copy_board_state.png
 
     Example of a "shallow copy" --- only the references to the internal lists were copied. The actual internal lists
     were never copied.
 
-.. figure:: deep_copy.png
+.. figure:: deep_copy_board_state.png
 
     Example of a "deep copy" --- copies of the internal lists were made.
 
