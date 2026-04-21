@@ -21,7 +21,7 @@ Textbook Exercises
 Core Exercises
 ==============
 
-.. image:: /topics/car-rental/carRental.png
+.. image:: /topics/car-rental/car_rental_sign.png
 
 A car rental place needs our help. They want a program to calculate how much a customer is to be charged based on their
 rental agreement, age, how far they drove, and how long they had the car.

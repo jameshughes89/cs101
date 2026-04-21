@@ -41,7 +41,7 @@ Writing Bigger Programs
 Car Rental
 ==========
 
-.. image:: carRental.png
+.. image:: car_rental_sign.png
 
 * Here we solve a bigger problem than we are used to, but we will follow the incremental approach
 * In fact, we will take it to another extreme
@@ -395,5 +395,4 @@ For Next Class
 ==============
 
 * Read `Chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
-
 
