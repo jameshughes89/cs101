@@ -11,8 +11,8 @@
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * For all exercises
 
@@ -32,8 +32,8 @@ Pre Lab Exercises
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 .. note::
 
@@ -140,8 +140,8 @@ Given the following code:
                     ['j', 'k', 'l', 'z']]
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 * You should be using a scrap piece of paper to work out the ideas for the following problems
 

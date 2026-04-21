@@ -11,8 +11,8 @@ Hello World
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 #. `Chapter 1 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html#exercises>`_
 
@@ -28,8 +28,11 @@ Pre Lab Exercises
 
 
 
+Core Exercises
+==============
+
 Hello World
-===========
+-----------
 
 #. Log onto your computer
 #. Log into Colab
@@ -45,7 +48,7 @@ Hello World
 
 
 Refreshing What We Learned
-==========================
+--------------------------
 
 #. Enter and run the following code
 
@@ -80,8 +83,8 @@ Refreshing What We Learned
 
 
 
-Kattis
-======
+Kattis Based Practice
+=====================
 
 .. admonition:: Note
     :class: note

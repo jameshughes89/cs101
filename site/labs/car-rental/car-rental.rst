@@ -11,15 +11,15 @@ Car Rental
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * There are no exercises to complete before this lab
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 .. image:: /topics/car-rental/carRental.png
 
@@ -60,8 +60,8 @@ rental agreement, age, how far they drove, and how long they had the car.
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 * Work on the Kattis problems you have not solved from previous weeks
 * Remember, I encourage you to work with others to solve the problems

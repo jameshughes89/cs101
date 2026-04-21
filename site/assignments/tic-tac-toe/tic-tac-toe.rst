@@ -28,7 +28,7 @@ Provided Files
 
 You are provided with
 
-* A notebook file called :download:`asn3.ipynp <asn3.ipynb>` containing the starting point of the assignment
+* A notebook file called :download:`asn3.ipynb <asn3.ipynb>` containing the starting point of the assignment
 
     * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
     * This notebook contains the function definition lines with docstrings and ``assert`` tests
@@ -126,7 +126,7 @@ For example, consider the current game board being ``board = [["X", " ", " "], [
 
 * ``is_move_valid((2, 2), board)`` returns ``True``
 * ``is_move_valid((2, 1), board)`` returns ``False`` since ``(2, 1)`` already contains an ``"O"``
-* ``is_move_valid((-2, 1), board)``returns ``False`` since the move location does not exist on the provided game board
+* ``is_move_valid((-2, 1), board)`` returns ``False`` since the move location does not exist on the provided game board
 
 
 .. note::
@@ -140,7 +140,7 @@ For example, consider the current game board being ``board = [["X", " ", " "], [
     --- the column --- and ``y`` specifies the vertical positioning --- the row, we must be mindful of how we use these
     values to index the board. By following this convention, it would mean that one needs to index the board with ``y``
     first to specify the row and then once the row is selected, the ``x`` value is used to indicate which column in the
-    row the cell/location is. In other worse, the correct indexing would be ``board[y][x]``.
+    row the cell/location is. In other words, the correct indexing would be ``board[y][x]``.
 
 
 Part 5 --- Apply Move
@@ -190,13 +190,13 @@ Check Row & Column
 The process for checking the row and column conditions will be very similar.
 
 Write a function ``check_row`` that takes the current game board, an integer representing a specific row to check, and
-the player's symbol as a string as parameters, and returns ``True`` if the specified player occupy all cells in the
+the player's symbol as a string as parameters, and returns ``True`` if the specified player occupies all cells in the
 specified row and ``False`` otherwise. For example, if ``board = [["X", "O", "O"], [" ", "O", "O"], ["X ", "X", "X"]]``,
 calling ``check_row(board, 2, "X")`` would return ``True``.
 
 Similarly, write a function ``check_column`` that takes the current game board, an integer representing a specific
-column to check, and the player's symbol as a string as parameters, and returns ``True`` if the specified player occupy
-all cells in the specified column and ``False`` otherwise. For example, if
+column to check, and the player's symbol as a string as parameters, and returns ``True`` if the specified player
+occupies all cells in the specified column and ``False`` otherwise. For example, if
 ``board = [["X", "O", "O"], ["X", "O", "X"], ["X ", "O", " "]]``, calling ``check_column(board, 1, "O")`` would return
 ``True``.
 
@@ -238,7 +238,7 @@ humans; typically humans represent tic-tac-toe as a grid. For example, consider 
          | |
 
 
-In the above example, since it is an empty board, each cell is an empty space and the cells are seperated by horizontal
+In the above example, since it is an empty board, each cell is an empty space and the cells are separated by horizontal
 (``-``) or vertical (``|``) lines. Intersecting lines are drawn as plus signs (``+``).
 
 Below is an example of a game board with player moves applied:
@@ -262,7 +262,7 @@ entire board. This function will include all horizontal (``-``) and vertical (``
 intersecting symbol (``+``).
 
 Given ``board = [["X", " ", " "], [" ", " ", "O"], [" ", " ", " "]]``, calling ``render_board(board)`` would return the
-the following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be printed out as the following:
+following string ``"X| | \n-+-+-\n | |O\n-+-+-\n | | \n"``, which would be printed out as the following:
 
     .. code-block:: text
 
@@ -294,8 +294,8 @@ Below are examples of using the function with ``board = [["X", " ", " "], [" ", 
 * ``render_row(board, 1)`` returns the string ``" | |O\n"``
 * ``render_row(board, 2)`` returns the string ``" | | \n"``
 
-Once again, however, one may feel that the complexity of rendering a whole row to still be rather complex. Instead, if
-a function to render individual cells existed, then that portion of the rendering can be offloaded.
+Once again, however, one may feel that rendering a whole row is still rather complex. Instead, if a function to render
+individual cells existed, then that portion of the rendering can be offloaded.
 
 
 Render Cell
