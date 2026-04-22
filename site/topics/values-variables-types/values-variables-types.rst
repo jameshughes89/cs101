@@ -67,7 +67,7 @@ Values And Types
    
 * To a computer, the integer ``1`` is not necessarily the same thing as the floating point number ``1.0`` or the string ``"1"``
 
-* Some of the errors you will make will be a result from mixing types incorrectly
+* Some errors you'll encounter will come from mixing types incorrectly
 * Some languages (e.g., C, Java) are strict about types
 
     * You have to be totally explicit about them
@@ -191,13 +191,13 @@ Constants
 .. code-block:: python
     :linenos:
 
-    some_bill = 10.45 * 1.15
-    another_bill = 4.99 * 1.15
+    some_bill = 10.45 * 1.14
+    another_bill = 4.99 * 1.14
 
 
-* This is clearly correct, however
+* This is correct and works fine, however
 
-    * What if someone else looks at this code and wonders what 1.15 is?
+    * What if someone else looks at this code and wonders what 1.14 is?
     * What if the government changes the sales tax in the future?
 
 * Although there is nothing wrong with the above code, one could do the following instead
@@ -205,17 +205,17 @@ Constants
 .. code-block:: python
     :linenos:
 
-    SALES_TAX = 1.15
+    SALES_TAX = 1.14
     some_bill = 10.45 * SALES_TAX
     another_bill = 4.99 * SALES_TAX
 
 
 * Now, just by looking at those lines of code, I know exactly what we are multiplying the numbers with
-* If the sales tax rate is ever lowered, all I need to do is change the one line of code (``SALES_TAX = 1.15``)
+* If the sales tax rate is ever lowered, all I need to do is change the one line of code (``SALES_TAX = 1.14``)
 
 * The naming convention for constants is all uppercase letters separated with underscores
 
-* The idea behind the constants are that once the value is set by you, they are not to change
+* Constants are not intended to change once set
 
     * You can change them in the code, but the code should not alter the value of ``SALES_TAX``
 
