@@ -243,8 +243,8 @@ class CountryCatalogueTest(unittest.TestCase):
 
     def test_getitem_empty_collection_raises_index_error(self):
         empty_country_catalogue = CountryCatalogue()
-        indicies = [-1, 0, 1]
-        for index in indicies:
+        indices = [-1, 0, 1]
+        for index in indices:
             with self.subTest(index=index):
                 with self.assertRaises(IndexError):
                     empty_country_catalogue[index]

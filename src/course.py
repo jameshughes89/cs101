@@ -45,7 +45,7 @@ class Course:
 
     def remove(self, student: Student):
         """
-        Remove the first occurence of the specified student from the collection. If the student does not exist, raise
+        Remove the first occurrence of the specified student from the collection. If the student does not exist, raise
         an exception.
 
         :raise Value error: If the student does not exist within the collection, a ValueError is raised.

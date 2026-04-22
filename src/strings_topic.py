@@ -54,7 +54,7 @@ assert True == character_is_in("o", "hello")
 def character_is_at(needle: str, haystack: str) -> int:
     """
     Search through a string to determine if a given character is contained within it. Returns the index of the first
-    occurence of the character if it exists, return -1 if the character does not exist in the string.
+    occurrence of the character if it exists, return -1 if the character does not exist in the string.
 
     :param needle:  Character to look for
     :type needle: String
