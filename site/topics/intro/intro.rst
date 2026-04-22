@@ -43,10 +43,10 @@ Why Are The Course Notes A Website?
 
 
 
-How Will This Class Work?
-=========================
+How Will This Course Work?
+==========================
 
-* This class is going to be run somewhat differently from other courses you may have experienced at university
+* This course is going to be run somewhat differently from other courses you may have experienced at university
 * I have a number of activities throughout the topics that we will take time to work on
 
     * They also help with breaking up the monotony of listening to a lecture for an hour straight
@@ -64,13 +64,13 @@ How Will This Class Work?
 
     * What are their majors?
     * Why did you come to StFX?
-    * Why are they taking this class?
+    * Why are they taking this course?
     * What do you hope to learn?
     * How do you think you will use what you learn in the future?
 
 
-What Should I Bring To Class
-============================
+What Should I Bring To Lecture
+==============================
 
 * Curiosity
 * Readiness to do stuff, rather than just listen
@@ -88,8 +88,8 @@ What Should I Bring To Class
 
 
 
-Is This Class Easy?
-===================
+Is This Course Easy?
+====================
 
 The quick answer is, it depends...
 
@@ -103,13 +103,11 @@ The quick answer is, it depends...
     * ...
     * Who here knows how to build a house?
 
-
 * Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
-* These topics really are going to be shockingly different from what you are probably used to
+* These topics are likely going to be different from what you are used to
 
-    * Very few classes can prepare you for the way of thinking that will be required for this class
+    * The type of thinking required for this course is something students may not have encountered before
 
-* Unfortunately, intro to computer science classes do often have an unusually high fail rate
 * The best way to set yourself up for success is
 
     * Practice
@@ -117,29 +115,29 @@ The quick answer is, it depends...
     * Stay on top of the content
 
 
-So I Should Be Terrified?
-=========================
+Is This Course Hard?
+====================
 
 * No
 * It's entirely doable **if you put in the effort**
-* Warning though --- the class is dense and very cumulative, do not fall behind
-
+* The course is dense and cumulative --- staying on top of the content is important
 * The good news is, you get to make mistakes
 
     * In fact, expect to make **a lot** of mistakes
 
 * You get to see if what you did works or not
-* Most of this class will be you beating your head against your keyboard until you get it right
-* Not many classes or disciplines give you this luxury
+* Much of this course will be you *beating your head against your keyboard*, so to speak, until you get it right
+* Not many courses or disciplines give you this luxury
 
 * I really can't stress this enough
 
-    * Most of the time when you're *working* on the course material you will be getting things wrong
+    * Most of the time when you're working on the course material you will be getting things wrong
     * The majority of programming is actually *debugging*
-    * Get used to making mistakes
+    * Getting it wrong is normal and expected
 
         * This is a good thing
-        * This is normal
+        * This is not because you're new
+        * This is the nature of programming, even for experienced programmers
 
 
 I Need Help!
