@@ -30,62 +30,6 @@ What Is A Program/Algorithm?
 * What kind of computer was executing this program?
 
 
-What Is Debugging?
-==================
-
-* Most of the time your code will be wrong
-
-    * This is true for both new and experienced programmers
-
-* Debugging is the process of addressing the bugs in your code
-* Realistically, expect to debug a lot
-
-* Remember, you will be wrong every time you run your program before you get it right
-
-    * The point is, you will be wrong a lot more than you will be right --- get used to this
-
-
-.. admonition:: Quick Activity
-    :class: activity
-
-    Have you seen any Python errors yet?
-
-    What were they?
-
-    Did you understand them?
-
-
-Languages
-=========
-
-* What is a natural language?
-* What is a formal language?
-* Why is ambiguity so important to natural language?
-* Why is ambiguity deadly for a formal language?
-
-.. admonition:: Activity
-    :class: activity
-
-    Do you think there is a limit to what I can describe with a formal language?
-
-    Can I describe *anything*? *Any* computation?
-
-    **HINT**: Is the following statement true or false: "This statement is false."
-
-
-Terminology
-===========
-
-* Hardware/Software
-* Input/Output (I/O)
-* Processors
-* Storage --- Hard Disk Drive/Solid State Drive
-* Memory and Random Access Memory (RAM)
-* Binary
-* Compiling
-* Interpreter vs Integrated Development Environment (IDE)
-
-
 Print
 =====
 
@@ -123,7 +67,7 @@ Values And Types
 
 * To a computer, the integer ``1`` is not necessarily the same thing as the floating point number ``1.0`` or the string ``"1"``
 
-* Some of the errors you will make will be a result from mixing types incorrectly
+* Some errors you'll encounter will come from mixing types incorrectly
 * Some languages (e.g., C, Java) are strict about types
 
     * You have to be totally explicit about them
@@ -139,7 +83,6 @@ Values And Types
     * ``print(type(12))`` would print out ``<class 'int'>``
     * ``print(type("Hello, World"))`` would print out ``<class 'str'>``
     * ``print(type(3.75))`` would print out ``<class 'float'>``
-    * ``print(type(type(1.1)))`` would print out ``<class 'type'>``
 
 * Notice that we are using two functions in the above examples
 
@@ -180,6 +123,20 @@ Variables
 
     In Python, and many other programming languages, it is not a statement about equality, but an assignment. In Python,
     if one writes ``a = 5``, it means that the variable ``a`` is now storing the value ``5`` within it.
+
+    This also means that assignment captures the value at that moment in time, not the relationship between variables.
+    Consider the following:
+
+    .. code-block:: python
+        :linenos:
+
+        x = 1
+        y = x + 2
+        x = 9
+        print(y)
+
+    The value of ``y`` is still ``3``, not ``11``. When ``y = x + 2`` was executed, Python evaluated the right side to
+    ``3`` and stored that value in ``y``. Changing ``x`` afterwards has no effect on ``y``.
 
 
 Using Variables
@@ -248,31 +205,31 @@ Constants
 .. code-block:: python
     :linenos:
 
-    some_bill = 10.45 * 1.15
-    another_bill = 4.99 * 1.15
+    some_bill = 10.45 * 1.14
+    another_bill = 4.99 * 1.14
 
 
-* This is clearly correct, however
+* This is correct and works fine, however
 
-    * What if someone else looks at this code and wonders what 1.15 is?
-    * What if the gov changes the sales tax in the future?
+    * What if someone else looks at this code and wonders what 1.14 is?
+    * What if the government changes the sales tax in the future?
 
 * Although there is nothing wrong with the above code, one could do the following instead
 
 .. code-block:: python
     :linenos:
 
-    SALES_TAX = 1.15
+    SALES_TAX = 1.14
     some_bill = 10.45 * SALES_TAX
     another_bill = 4.99 * SALES_TAX
 
 
 * Now, just by looking at those lines of code, I know exactly what we are multiplying the numbers with
-* If the sales tax rate is ever lowered, all I need to do is change the one line of code (``SALES_TAX = 1.15``)
+* If the sales tax rate is ever lowered, all I need to do is change the one line of code (``SALES_TAX = 1.14``)
 
 * The naming convention for constants is all uppercase letters separated with underscores
 
-* The idea behind the constants are that once the value is set by you, they are not to change
+* Constants are not intended to change once set
 
     * You can change them in the code, but the code should not alter the value of ``SALES_TAX``
 
