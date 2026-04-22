@@ -7,7 +7,7 @@ def run_formatters():
 
 
 def run_verification():
-    for tool in ["flake8 src/ test/", "sphinx-lint site/"]:
+    for tool in ["flake8 src/ test/", "sphinx-lint site/", "codespell site/ src/ test/"]:
         print(f"running `{tool}`")
         subprocess.run(tool, shell=True)
 
