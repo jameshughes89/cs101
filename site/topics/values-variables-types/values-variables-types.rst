@@ -30,19 +30,6 @@ What Is A Program/Algorithm?
 * What kind of computer was executing this program?
 
 
-Terminology
-===========
-
-* Hardware/Software
-* Input/Output (I/O)
-* Processors
-* Storage --- Hard Disk Drive/Solid State Drive
-* Memory and Random Access Memory (RAM)
-* Binary
-* Compiling
-* Interpreter vs Integrated Development Environment (IDE)
-   
-
 Print
 =====
 
