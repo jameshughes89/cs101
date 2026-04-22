@@ -56,9 +56,9 @@ Operators
 .. admonition:: Activity
     :class: activity
 
-    Now for a tougher one. Convert a temperature from Celsius to Fahrenheit.
+    Convert a temperature from Celsius to Fahrenheit.
 
-        * `But I don't know how to convert Celsius to Fahrenheit!!!! <https://www.google.com/search?q=how+to+convert+celsius+to+fahrenheit>`_
+        * `But I don't know how to convert Celsius to Fahrenheit? <https://www.google.com/search?q=how+to+convert+celsius+to+fahrenheit>`_
 
     .. raw:: html
 
