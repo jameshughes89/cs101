@@ -83,7 +83,6 @@ Values And Types
     * ``print(type(12))`` would print out ``<class 'int'>``
     * ``print(type("Hello, World"))`` would print out ``<class 'str'>``
     * ``print(type(3.75))`` would print out ``<class 'float'>``
-    * ``print(type(type(1.1)))`` would print out ``<class 'type'>``
 
 * Notice that we are using two functions in the above examples
 
