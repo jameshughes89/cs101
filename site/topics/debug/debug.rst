@@ -19,7 +19,7 @@ Debugging
     * It's about understanding your program and understanding why it is behaving the way it is
 
 
-.. image:: hi.jpg
+.. image:: debugging_bug.png
 
 
 The Importance of Debugging
@@ -71,18 +71,18 @@ Syntax Errors
 
 .. admonition:: Activity
     :class: activity
-   
+
     See if you can find all the errors in the following example. You may be able to find them all just by looking at the
     code, but feel free to copy/paste the code into Colab to see if the error messages help.
 
     .. code-block:: python
         :linenos:
-   
+
         deff borken(a(
             a = a + * 3
             walrus
-            return a + 2   
-		 
+            return a + 2
+
         broken(5)
 
 
@@ -212,7 +212,7 @@ Print
     <iframe width="560" height="315" src="https://www.youtube.com/embed/EnJhV2j8YR0" frameborder="0" allowfullscreen></iframe>
 
 
-   
+
 Pencil & Paper
 --------------
 
@@ -285,7 +285,7 @@ Rubber Duck Debugging
 * Sometimes you have a pet
 * And sometimes you have a rubber duck
 
-   
+
 For Next Class
 ==============
 

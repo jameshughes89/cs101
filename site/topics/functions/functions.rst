@@ -79,7 +79,7 @@ Calling a Function
 .. admonition:: Quick Activity
     :class: activity
 
-    Write your own function to do something with math. Honestly, whatever you want. 
+    Write your own function to do something with math. Honestly, whatever you want.
 
 
 Function Parameters
@@ -280,11 +280,11 @@ Abstraction
 .. admonition:: Activity
     :class: activity
 
-    Write down a "program" to make spaghetti (not in python, like on paper). You can only use the following statements: 
+    Write down a "program" to make spaghetti (not in python, like on paper). You can only use the following statements:
 
-    * ``locate [object]`` 
-    * ``grasp [limb]`` 
-    * ``release [limb]`` 
+    * ``locate [object]``
+    * ``grasp [limb]``
+    * ``release [limb]``
     * ``move_limb_to [location]``
     * ``wait [time in seconds]``
 
@@ -373,14 +373,14 @@ Format of a Function
     .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/cMTPTq7xpOA" frameborder="0" allowfullscreen></iframe>
-   
-   
+
+
 .. admonition:: Activity
     :class: activity
 
     **Warning:** This one is tricky. If you're still stuck after lecture, be sure to take your time to figure this out.
     There's a YouTube video to help.
-   
+
     Now write a function ``criss_cross_concatenation`` that will take four strings and return the concatenation of the
     first, third, second, and fourth, in that order. **BUT** your function isn't allowed to directly use the ``+`` to
     concatenate strings. You can, however, use the ``concatenate_strings`` function.
@@ -388,7 +388,7 @@ Format of a Function
     .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/DESQnHsGYss" frameborder="0" allowfullscreen></iframe>
-	
+
 
 Composition
 ===========
@@ -581,7 +581,7 @@ Docstring
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/eD1iff-zLLo" frameborder="0" allowfullscreen></iframe>
 
-	
+
 For Next Class
 ==============
 
