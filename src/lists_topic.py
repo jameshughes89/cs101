@@ -30,7 +30,7 @@ assert True == contains_while(False, ["a", 1, 2.0, False])
 
 def index_of_for(needle, haystack) -> int:
     """
-    Linear search on a list. Return the index of the first occurence of needle if it is found within haystack and -1 if
+    Linear search on a list. Return the index of the first occurrence of needle if it is found within haystack and -1 if
     it is not. Note that type hints are not included in the definition of the function as we can search for things of
     arbitrary types within a list containing a variety of arbitrary types.
 
