@@ -266,7 +266,7 @@ String Trivia
         a = "CSCI" + " " + "161"
         print(a)    # results in "CSCI 161"
 
-   
+
 * We can make a string repeat with ``*``
 
     .. code-block:: python
@@ -275,7 +275,7 @@ String Trivia
         a = "CSCI" * 3
         print(a)    # results in "CSCICSCICSCI"
 
-   
+
 * We can convert an ``int`` to a ``str``
 
     .. code-block:: python
@@ -316,16 +316,16 @@ String Trivia
     .. code-block:: python
         :linenos:
 
-        wut = ord('a')	# get the num of "a"
+        wut = ord('a')    # get the num of "a"
         print(wut)      # results in 97
 
-        wut = chr(65)	# convert num to char
+        wut = chr(65)    # convert num to char
         print(wut)      # results in "A"
 
 
-.. image:: ascii.gif
+.. image:: ascii_table.png
 
-   
+
 f-Strings
 =========
 
@@ -445,7 +445,7 @@ Methods
 
     You should see a menu pop up that looks like the following:
 
-    .. image:: methods2.png
+    .. image:: string_methods_autocomplete.png
 
 
 * The menu that popped up contains methods that can be run on a string

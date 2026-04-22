@@ -24,7 +24,7 @@ Objects I --- Introduction
 * But you have not defined your own objects
 * In this topic, the basics of how to define your own objects will be covered
 
-	  
+
 Classes vs Objects
 ==================
 

@@ -336,5 +336,5 @@ Running Unit Tests
 For Next Topic
 ==============
 
-* Check out the test folder in the `GitHub repo <https://github.com/jameshughes89/cs101>`_  to see the unit tests written for the course content 
+* Check out the test folder in the `GitHub repo <https://github.com/jameshughes89/cs101>`_  to see the unit tests written for the course content
 * Read `Chapter 22 of the text <http://openbookproject.net/thinkcs/python/english3e/collections.html>`_

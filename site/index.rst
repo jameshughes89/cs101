@@ -8,7 +8,7 @@ required.
 This course is devoted to learning problem solving and elementary programming skills. Topics include problem analysis,
 algorithm development, data representation, control structures, functions, lists, and objects.
 
-`The content used to generate the course can be found on GitHub <https://github.com/jameshughes89/cs101>`_ 
+`The content used to generate the course can be found on GitHub <https://github.com/jameshughes89/cs101>`_
 
 
 
@@ -47,7 +47,7 @@ Lab Sections
     :caption: Course Notes
     :maxdepth: 1
     :numbered:
-   
+
     topics/intro/intro
     topics/values-variables-types/values-variables-types
     topics/statements/statements
@@ -80,7 +80,7 @@ Lab Sections
     :caption: Labs
     :maxdepth: 1
     :numbered:
-   
+
     labs/hello-world/hello-world
     labs/functions/functions
     labs/testing/testing
@@ -93,14 +93,14 @@ Lab Sections
     labs/objects/objects
     labs/testing/unittest-objects
     labs/objects/data-structures
-    
+
 
 
 .. toctree::
     :caption: Assignments
     :maxdepth: 1
     :numbered:
-   
+
     assignments/starbucks/starbucks
     assignments/zombies/zombies
     assignments/tic-tac-toe/tic-tac-toe
@@ -119,6 +119,6 @@ Lab Sections
 .. toctree::
     :caption: Outline
     :maxdepth: 1
- 
+
     /outline/outline
     /outline/schedule

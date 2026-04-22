@@ -213,7 +213,7 @@ Sets
 
 * Three operations of note for sets are *union*, *intersection*, and *difference*
 
-.. image:: union.png
+.. image:: set_union_diagram.png
    :width: 333 px
    :align: center
    :target: https://en.wikipedia.org/wiki/Union_(set_theory)
@@ -229,7 +229,7 @@ Sets
     print(all_students)     # Results in {'Ryan', 'Greg', 'Frank', 'Sally', 'Anna', 'Linda', 'Xavier', 'Francis', 'Lynn'}
 
 
-.. image:: intersection.png
+.. image:: set_intersection_diagram.png
    :width: 333 px
    :align: center
    :target: https://en.wikipedia.org/wiki/Intersection_(set_theory)
@@ -245,7 +245,7 @@ Sets
     print(taking_both_courses)  # Results in {'Frank', 'Sally'}
 
 
-.. image:: difference.png
+.. image:: set_difference_diagram.png
    :width: 333 px
    :align: center
    :target: https://en.wikipedia.org/wiki/Complement_(set_theory)

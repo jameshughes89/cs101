@@ -41,7 +41,7 @@ Writing Bigger Programs
 Car Rental
 ==========
 
-.. image:: carRental.png
+.. image:: car_rental_sign.png
 
 * Here we solve a bigger problem than we are used to, but we will follow the incremental approach
 * In fact, we will take it to another extreme
@@ -59,23 +59,23 @@ rental agreement, age, how far they drove, and how long they had the car.
     * Number of days rented
     * Starting odometer reading
     * Ending odometer reading
-    
+
 * If the classification code is **B**
 
     * Base charge of $20.00/day
     * Plus $0.30 for every km driven
-    
+
 * If the classification is **D**
 
     * Base charge of $50.00/day
-    * Plus $0.30 for every km driven above the 100km/day average allowance 
-    
+    * Plus $0.30 for every km driven above the 100km/day average allowance
+
 * All renters under the age of 25 are charged an additional $10.00/day
 
 
 An Incremental Solution
 -----------------------
-   
+
 **Step 1**
 
 * Read the problem
@@ -193,10 +193,10 @@ Total Kilometers
     * What do we know?
 
         * Odometer readings
-   
+
 .. code-block:: python
     :linenos:
-   
+
     def total_kms(odometer_start: float, odometer_finish: float) -> float:
         """
         This function calculates the total number of kilometers driven based
@@ -236,7 +236,7 @@ Average Kilometers Per Day
 
 .. code-block:: python
     :linenos:
-   
+
     def average_kms_per_day(num_days: float, num_kms: float) -> float:
         """
         Calculate the average number of kilometers driven per day
@@ -265,10 +265,10 @@ Kilometers Above Allowable Average
 * What do we know?
 
     * Average kms/day given the function ``average_kms_per_day`` we wrote
-   
+
 .. code-block:: python
     :linenos:
-   
+
     def num_kms_above_average(avg_num_kms: float) -> float:
         """
         Calculates the number of kms the renter went over of their daily allowance.
@@ -310,10 +310,10 @@ Revisit Calculating the Total Charge
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * With the functions we wrote, solving the big ``calculate_total_charge`` becomes simpler
-  
+
 .. code-block:: python
     :linenos:
-   
+
     def calculate_total_charge(num_days: float, age: float, rental_code: str, odometer_start: float, odometer_finish: float) -> float:
         """
         Calculate how much the renter needs to be charged based on the classification,
@@ -390,7 +390,6 @@ Revisit Calculating the Total Charge
         * Would you add additional functions?
         * Would you use constants? Where?
 
-      
 For Next Topic
 ==============
 

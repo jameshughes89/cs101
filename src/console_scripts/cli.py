@@ -1,15 +1,15 @@
 import subprocess
 
-def run_code_formatters():
+def run_formatters():
     for tool in ["isort .", "black .", "mdformat ."]:
         print(f"running `{tool}`")
         subprocess.run(tool, shell=True)
 
 
-def run_code_verification():
-    tool = "flake8 src/ test/"
-    print(f"running `{tool}`")
-    subprocess.run(tool, shell=True)
+def run_verification():
+    for tool in ["flake8 src/ test/", "sphinx-lint site/"]:
+        print(f"running `{tool}`")
+        subprocess.run(tool, shell=True)
 
 
 def run_sphinx_build():

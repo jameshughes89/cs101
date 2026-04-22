@@ -23,7 +23,7 @@ class CourseTest(TestCase):
         student = Student("Bob", "Smith", 123456789)
         with self.assertRaises(ValueError):
             course.remove(student)
-            
+
     def test_contains_empty_course_returns_false(self):
         course = Course("CS101")
         student_not_there = Student("Not", "There", 918273645)
