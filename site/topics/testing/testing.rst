@@ -303,7 +303,7 @@ What You Get
 * Now, whenever someone reads the description of the function they will know what the types are intended to be
 * In Colab, you will also see a popup when calling the function with the details of the function, including the types
 
-.. image:: popup.png
+.. image:: colab_function_details_popup.png
 
 
 What You Don't Get
@@ -334,11 +334,11 @@ What You Don't Get
     result = add_together(x, y)
     print(result)
 
-* In the above example, despite type hints being included, it would behave the same way as it did without type hints.   
-    
+* In the above example, despite type hints being included, it would behave the same way as it did without type hints.
+
     * It would still concatenate the strings
 
-	
+
 For Next Class
 ==============
 

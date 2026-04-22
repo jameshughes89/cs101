@@ -10,7 +10,7 @@ enabled = true
 
 [tool.black]
 line-length = 120
-target-version = ["py310"]
+target-version = ["py312"]
 
 [tool.isort]
 profile = "black"
@@ -19,6 +19,7 @@ multi_line_output = 3
 [tool.flake8]
 max-line-length = 120
 max-complexity = 10
+extend-ignore = ["E712"]
 
 [project]
 name = "cs101"
@@ -28,7 +29,7 @@ authors = [
 ]
 description = "Introduction to Computer Science"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 license = { text = "GPL-3.0" }
 urls = { "Homepage" = "https://github.com/jameshughes89/cs101" }
 classifiers = [
@@ -50,10 +51,11 @@ dependencies = [
   "networkx==3.6.1",
   "sphinx==9.0.4",
   "sphinx-rtd-theme==3.1.0",
+  "sphinx-lint==1.0.2",
 ]
 
 [project.scripts]
-format = "console_scripts.cli:run_code_formatters"
-verify = "console_scripts.cli:run_code_verification"
+format = "console_scripts.cli:run_formatters"
+verify = "console_scripts.cli:run_verification"
 site = "console_scripts.cli:run_sphinx_build"
 
