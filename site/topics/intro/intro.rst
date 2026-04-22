@@ -98,7 +98,7 @@ The quick answer is, it depends...
 * Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
 * These topics are likely going to be different from what you are used to
 
-    * Very few classes can prepare you for the way of thinking that will be required for this class
+    * The type of thinking required for this course is something students may not have encountered before
 
 * The best way to set yourself up for success is
 
@@ -119,7 +119,7 @@ So I Should Be Terrified?
     * In fact, expect to make **a lot** of mistakes
 
 * You get to see if what you did works or not
-* Most of this class will be you beating your head against your keyboard until you get it right
+* Most of this class will be you *beating your head against your keyboard*, so to speak, until you get it right
 * Not many classes or disciplines give you this luxury
 
 * I really can't stress this enough
