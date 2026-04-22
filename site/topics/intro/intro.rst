@@ -112,8 +112,7 @@ So I Should Be Terrified?
 
 * No
 * It's entirely doable **if you put in the effort**
-* Warning though --- the class is dense and very cumulative, do not fall behind
-
+* The course is dense and cumulative --- staying on top of the content is important
 * The good news is, you get to make mistakes
 
     * In fact, expect to make **a lot** of mistakes
