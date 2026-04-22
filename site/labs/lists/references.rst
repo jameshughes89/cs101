@@ -25,7 +25,7 @@ Textbook Exercises
     * 3
     * 4
     * 5
-    
+
 
 #. Write assertion tests for each of your functions above
 
@@ -95,7 +95,7 @@ Core Exercises
     * Can you somehow think of a better algorithm that would do less work?
     * Don't spend too much time on this if you can't come up with a solution
     * **Hint:** Dictionaries (but leave the ``nums`` list alone)
- 
+
 
 
 Kattis Based Practice

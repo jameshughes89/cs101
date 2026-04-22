@@ -30,7 +30,7 @@ pip install -e .
 ## Bash
 
 ```sh
-python3.11 -m venv --clear --prompt cs101 venv
+python3 -m venv --clear --prompt cs101 venv
 . venv/bin/activate
 pip install -e .
 ```

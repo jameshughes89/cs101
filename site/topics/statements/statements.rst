@@ -64,7 +64,7 @@ Operators
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/R1ScWDNUEnM" frameborder="0" allowfullscreen></iframe><br><br>
 
-   
+
 Operators On Other Types
 ========================
 
@@ -73,12 +73,12 @@ Operators On Other Types
 
 .. admonition:: Activity
     :class: activity
-   
+
     #. Experiment with the operators you know on *strings* (instead of just integers).
     #. Which ones work? What do they do?
     #. Try mixing strings and integers with various operators. What happens there?
 
-   
+
 Large Series of Statements
 ==========================
 

@@ -41,7 +41,7 @@ Using ``print`` statements, fix this code...
         while c < n:
             c += 1
             total += c
-        
+
         return total
 
 **2**
@@ -66,15 +66,15 @@ Using pencil and paper, fix this code...
             if aList[c] > curMax:
                 curMax = aList[c]
                 curMaxIndex += 1
-            
+
             c +=1
 
         return curMaxIndex
 
-	  
+
 **3**
 
-Using delta debugging (comment out all code, and then start un-commenting the code one-ish line at a time), fix this code... **HINT**: You're going to want to combine this strategy with the ``print`` strategy.  
+Using delta debugging (comment out all code, and then start un-commenting the code one-ish line at a time), fix this code... **HINT**: You're going to want to combine this strategy with the ``print`` strategy.
 
 .. code-block:: python
 
@@ -91,7 +91,7 @@ Using delta debugging (comment out all code, and then start un-commenting the co
         :param n: the size of the square matrix
         :return:
         '''
-	  
+
         # setup a single row of n ' ' (space) chars
         row = ['0'] * n
 
@@ -104,19 +104,19 @@ Using delta debugging (comment out all code, and then start un-commenting the co
         mat[0][n-1] ='1'
         mat[n-1][0] = '1'
         mat[n-1][n-1] = '1'
-        return mat	  
-	  
-	    
+        return mat
+
+
 **4 Using a debugger**
 
-To get our hands dirty, let's start by re-fixing one of the above problems with a debugger. 
+To get our hands dirty, let's start by re-fixing one of the above problems with a debugger.
 
-Obviously you should know where the problem is given that you fixed this above, but still go through this exercise. 
+Obviously you should know where the problem is given that you fixed this above, but still go through this exercise.
 
 
 .. code-block:: python
     :linenos:
-    
+
     def find_max_index(aList):
         '''
         This function takes a list and returns the INDEX of where the largest
@@ -142,29 +142,29 @@ Obviously you should know where the problem is given that you fixed this above, 
 
 
 1. Copy this into PyCharm.
-2. Set a *break point* on line 13 **NOTE, THIS WILL PROBABLY BE A DIFFERENT LINE NUMBER WHEN YOU COPY IT**	 
-3. Start the **debugger**. 
+2. Set a *break point* on line 13 **NOTE, THIS WILL PROBABLY BE A DIFFERENT LINE NUMBER WHEN YOU COPY IT**
+3. Start the **debugger**.
 4. Add a *watch* for the condition on line 13 (``c < len(aList)``)
 5. Add a *watch* for the condition on line 14 (``aList[c] > curMax``)
-6. Now you will press the *step into* button. Take your time with this, for real. If you don't, you're using the debugger wrong and it won't actually be helpful. This is where the magic happens. The trick is to (a) do **not** skip a step, (b) do **not** make any assumptions, (c) critically think about what *should* happen if the code was correct, and compare your hypothesis to what is *actually* happening, (d) oh, and TAKE YOUR TIME. 
+6. Now you will press the *step into* button. Take your time with this, for real. If you don't, you're using the debugger wrong and it won't actually be helpful. This is where the magic happens. The trick is to (a) do **not** skip a step, (b) do **not** make any assumptions, (c) critically think about what *should* happen if the code was correct, and compare your hypothesis to what is *actually* happening, (d) oh, and TAKE YOUR TIME.
 
 7. I know you know where the problem is, so just pay special attention to what your hypothesis for ``curMaxIndex`` should be when ``curMax`` is set to 8, and how the code actually reacts.
-	  
+
 
 **5 Use whatever you want now**
 
-I'm just going to throw a bunch of buggy code your way. Fix it however you want. 
+I'm just going to throw a bunch of buggy code your way. Fix it however you want.
 
 .. code-block:: python
     :linenos:
-    
+
     def make_a_string_from_list(a):
         '''
         Take a list, and convert it to a string version of the contents of the list
         eg.
         a = [1,2,'a','b']
         return '12ab'
-        
+
         :param a: the list we want turned into a string
         :return: a string version of the list
         '''
@@ -184,7 +184,7 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
 
 .. code-block:: python
     :linenos:
-    
+
     def grocery_bill(a, b):
         prices = {'apple': 0.40, 'banana': 0.50}
         my_purchase = {'apple': a, 'banana': a}
@@ -192,15 +192,15 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
         for fruit in my_purchase:
             grocery_bill = prices[fruit] * my_purchase[fruit]
         return 'I owe the grocer ' + str(grocery_bill)
-   
+
     # Should be 2.90
     print(grocery_bill(1, 5))
 
-``set_up_game`` is tricky because it's hard to even discover that there is a problem. Test this a lot to see if you can find the error. 
-   
+``set_up_game`` is tricky because it's hard to even discover that there is a problem. Test this a lot to see if you can find the error.
+
 .. code-block:: python
     :linenos:
-    
+
     def set_up_game(size):
         '''
         Sets up the game board based to be the size we want.
@@ -209,9 +209,9 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
         [[' ', ' ', ' '],
         [' ', ' ', ' '],
         [' ', ' ', ' ']]
-        
+
         :param size: The size of the world. Will be size x size.
-        :return: The list of lists representing the game world. 
+        :return: The list of lists representing the game world.
         '''
         a = [' '] * size
         b = [a] * size
@@ -219,16 +219,16 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
 
 .. code-block:: python
     :linenos:
-    
+
     def give_me_5_words():
         '''
         This function will ask the user for 5 words.
         It will print out the full word they entered
         And also add the full word to a list that will be returned
-        
+
         :return: The list of the 5 words they entered
         '''
-        
+
         a = []
         for _ in range(5):
             word = input('Gimmie: ')
@@ -251,10 +251,10 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
     ['ab', 'bc', 'cd', 'ef', 'gh']
     '''
     print(give_me_5_words())
-	  
+
 .. code-block:: python
     :linenos:
-    
+
     def message(text, plain, encryp):
         '''
         Perform a simple encryption.
@@ -266,7 +266,7 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
             THIS IS A TEST
             has been encrypted to:
             WKLV LV D WHVW
-		 
+
         :param text: The message to encrypt
         :param plain: The alphabet that the text exists in
         :param encryp: The alphabet that we want to encrypt to. order matters.
@@ -288,13 +288,13 @@ I'm just going to throw a bunch of buggy code your way. Fix it however you want.
 
     plaintext = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     encryptedtext = list('DEFGHIJKLMNOPQRSTUVWXYZABC')
-    message("This is a test", plaintext, encryptedtext)  
+    message("This is a test", plaintext, encryptedtext)
 
-This one is very buggy :( 
+This one is very buggy :(
 
 .. code-block:: python
-    :linenos:  
-    
+    :linenos:
+
     import random
 
     guesses_made = 0
@@ -331,10 +331,10 @@ Kattis Based Practice
 
 I'm willing to bet that in previous weeks you were working on Kattis problems that you couldn't quite debug. You may have been close, or way off, but the problem was you were stuck wondering how best to *fix* your code. Now that you're equipped with the debugger, go back and work on them! Seriously, GO BACK! But make use of this debugger. Whenever you can, USE THE DEBUGGER. Stuck on Kattis? DEBUGGER! Stuck on assignment? DEBUGGER! Stuck in life? DEBUGGER?
 
-If you're done everything I have listed so far, try some of the *easy* Kattis problems on the website that I didn't assign. 
+If you're done everything I have listed so far, try some of the *easy* Kattis problems on the website that I didn't assign.
 
 
 LeetCode Problems
 =================
 
-If you have somehow finished everything so far, go check out `LeetCode <https://leetcode.com/problemset/all/>`_. Sort the problems by *Acceptance* (click the table header) and start seeing if you can solve some of these problems. 
+If you have somehow finished everything so far, go check out `LeetCode <https://leetcode.com/problemset/all/>`_. Sort the problems by *Acceptance* (click the table header) and start seeing if you can solve some of these problems.
