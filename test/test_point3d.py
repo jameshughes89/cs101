@@ -24,7 +24,7 @@ class Point3DTest(unittest.TestCase):
             (Point3D(-1, 1, 4), Point3D(-2, -3, -4)),
         ]
         expecteds = [0, 1.732051, 5.196152, 9]
-        for (case, expect) in zip(cases, expecteds):
+        for case, expect in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case[0].distance_from_point(case[1]), 5)
 

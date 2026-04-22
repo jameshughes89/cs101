@@ -175,7 +175,7 @@ not infected. If during the simulation step city 0 were to become cured, and cit
 are made to the *after* state while the *before* state is left alone, unchanged. Again, note that *before state* and
 *after state* are two separate worlds (two separate lists of cities).
 
-.. image:: before_after_states.png
+.. image:: before_after_world_states.png
 
 The simulation of a step requires checking if a city will either spread the disease or cure itself. This is where the
 ``spread_probability`` and ``cure_probability`` values come in. These parameters will have some value between 0 -- 1
@@ -392,5 +392,4 @@ Assignment FAQ
     * Probably
     * The shorter the better
     * The marker just wants to see that you played around a little and found answers to the questions
-
 

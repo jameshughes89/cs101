@@ -323,7 +323,7 @@ String Trivia
         print(wut)      # results in "A"
 
 
-.. image:: ascii.gif
+.. image:: ascii_table.png
 
 
 f-Strings
@@ -445,7 +445,7 @@ Methods
 
     You should see a menu pop up that looks like the following:
 
-    .. image:: methods2.png
+    .. image:: string_methods_autocomplete.png
 
 
 * The menu that popped up contains methods that can be run on a string
@@ -490,4 +490,3 @@ For Next Class
 ==============
 
 * Read `Chapter 11 of the text <http://openbookproject.net/thinkcs/python/english3e/lists.html>`_
-
