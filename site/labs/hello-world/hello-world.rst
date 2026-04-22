@@ -96,7 +96,7 @@ Kattis Based Practice
 .. admonition:: Note
     :class: note
 
-    It will be a lot easier to build your solutions on Colab and then copy/paste them into Kattis. 
+    It will be a lot easier to build your solutions on Colab and then copy/paste them into Kattis.
 
 
 #. Kattis sign up (be sure to set affiliation)
@@ -123,15 +123,15 @@ Kattis Based Practice
 
     .. code-block:: python
         :linenos:
-   
+
         # This loads in the first line (it's of type STRING!)
         # For example, if we take the first sample input of --- 2 1
         # Then the contents of data after this line is complete is '2 1'
         data = input()
 
-        # This is going to sadly be *magic* code at this stage. 
+        # This is going to sadly be *magic* code at this stage.
         # This line *splits* the string ('2 1' in this case)
-        # into separate smaller strings. The split happens on space characters 
+        # into separate smaller strings. The split happens on space characters
         # The result is a *list* of the split string (['2', '1'] in our example)
         # We then overwrite the contents of data with this result (['2', '1'])
         data = data.split()
@@ -145,8 +145,8 @@ Kattis Based Practice
 
         # Now we just print out what we stored in carrots
         print(carrots)
-      
-      
+
+
     .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/wWG9eOrEW3Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -46,7 +46,7 @@ Why Are The Course Notes A Website?
 How Will This Class Work?
 =========================
 
-* This class is going to be run somewhat differently from other courses you may have experienced at university 
+* This class is going to be run somewhat differently from other courses you may have experienced at university
 * I have a number of activities throughout the topics that we will take time to work on
 
     * They also help with breaking up the monotony of listening to a lecture for an hour straight
@@ -60,15 +60,15 @@ How Will This Class Work?
 .. admonition:: Activity
     :class: activity
 
-    Have a chat with the people sitting around you: 
+    Have a chat with the people sitting around you:
 
-    * What are their majors?    
+    * What are their majors?
     * Why did you come to StFX?
-    * Why are they taking this class?   
-    * What do you hope to learn? 
+    * Why are they taking this class?
+    * What do you hope to learn?
     * How do you think you will use what you learn in the future?
-   
-   
+
+
 What Should I Bring To Class
 ============================
 
@@ -145,7 +145,7 @@ So I Should Be Terrified?
 I Need Help!
 ============
 
-.. image:: beforeGoogle.jpg
+.. image:: life_before_google_comic.png
 
 * Knowing the challenges students face, we have provided many resources to help you succeed
 
@@ -171,7 +171,7 @@ Google?
     * This is intentional
 
 * Independent learning is one of the most important things you will learn
-* Further, it will be your go to tool when you're programming in the future 
+* Further, it will be your go to tool when you're programming in the future
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
@@ -216,7 +216,7 @@ Can I Write A Program Now?
     print("Hello, world!")
 
 
-.. image:: HelloWorldColab.png
+.. image:: hello_world_colab.png
 
 * You're now officially a computer programmer
 

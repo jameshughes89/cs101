@@ -22,7 +22,7 @@ You will
 * Write a function to calculate the density of Starbucks within an area
 
 .. warning::
-   
+
     You should **not** expect to be able to sit down and just start coding a solution. Programming does not work like
     that. Expect this assignment to take hours. Expect to get things wrong, and then, expect to get them wrong again ---
     this is normal.
@@ -62,14 +62,14 @@ After downloading the notebook file above, you will need to upload it to Colab t
 help find how to do this. I recommend saving a copy of this notebook file to your Google drive and then work with that
 one. You don't have to, but you will have to re-upload the project every time you want to work on it.
 
-.. image:: uploadColab.png
+.. image:: colab_upload_notebook_menu.png
 
 Additionally, you will need to upload the Starbucks location data file to Colab. The way you upload a data file like
 this is different from uploading the notebook file. See the below image for an example of how to upload this file.
 Unfortunately, you must re-upload this data file every time you open your Colab project. Not a big deal, but something
 you will need to remember.
 
-.. image:: uploadStarbucks.png
+.. image:: colab_upload_data_file.png
 
 
 Part 2 --- Read Over Loading Function
@@ -140,12 +140,12 @@ With the data available, the way to do this is to check each Starbucks' latitude
 within the specified "rectangle". In other words, check if the Starbucks' latitude falls between the "rectangle's"
 latitudes and if the longitude falls between the "rectangle's" longitudes. See the below image for an example.
 
-.. image:: a1-LatLongSquareCount.png
+.. image:: starbucks_area_count_example.png
 
 For the purpose of this assignment, only count Starbucks if they are strictly between the specified latitudes and
 longitudes; don't count them if they fall on any of the latitude/longitude lines. In other words, when checking if
 the location is within the rectangle, use greater than/less than instead of greater than or equal to/less than or equal
-to. 
+to.
 
 The function ``number_starbucks_within_area()`` takes the list of Starbucks locations and the latitude and longitudes
 specifying the "rectangle" as parameters. For simplicity, assume ``latitude_line_1 < latitude_line_2`` and
@@ -253,7 +253,7 @@ What to Submit to Moodle
     Verify that your submission to Moodle worked. If you submit incorrectly, you will get a 0.
 
 
-.. image:: downloadPy.png
+.. image:: colab_download_py_menu.png
 
 
 Assignment FAQ
