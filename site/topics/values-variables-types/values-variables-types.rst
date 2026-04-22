@@ -30,24 +30,6 @@ What Is A Program/Algorithm?
 * What kind of computer was executing this program?
 
 
-Languages
-=========
-
-* What is a natural language?
-* What is a formal language?
-* Why is ambiguity so important to natural language?
-* Why is ambiguity deadly for a formal language?
-
-.. admonition:: Activity
-    :class: activity
-
-    Do you think there is a limit to what I can describe with a formal language? 
-
-    Can I describe *anything*? *Any* computation? 
-
-    **HINT**: Is the following statement true or false: "This statement is false."
-
-
 Terminology
 ===========
 
