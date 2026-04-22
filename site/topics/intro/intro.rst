@@ -118,7 +118,7 @@ Is This Course Hard?
     * In fact, expect to make **a lot** of mistakes
 
 * You get to see if what you did works or not
-* Most of this course will be you *beating your head against your keyboard*, so to speak, until you get it right
+* Much of this course will be you *beating your head against your keyboard*, so to speak, until you get it right
 * Not many courses or disciplines give you this luxury
 
 * I really can't stress this enough
