@@ -30,31 +30,6 @@ What Is A Program/Algorithm?
 * What kind of computer was executing this program?
 
 
-What Is Debugging?
-==================
-
-* Most of the time your code will be wrong
-
-    * This is true for both new and experienced programmers
-
-* Debugging is the process of addressing the bugs in your code
-* Realistically, expect to debug a lot
-
-* Remember, you will be wrong every time you run your program before you get it right
-
-    * The point is, you will be wrong a lot more than you will be right --- get used to this
-
-
-.. admonition:: Quick Activity
-    :class: activity
-
-    Have you seen any Python errors yet? 
-
-    What were they? 
-
-    Did you understand them?
-
-   
 Languages
 =========
 
