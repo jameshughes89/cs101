@@ -211,7 +211,7 @@ Reading a CSV File
     ``load_airports`` such that you do not need a linear search?
 
     .. raw:: html
-	
+
         <iframe width="560" height="315" src="https://www.youtube.com/embed/9wunG22ivJ0" frameborder="0" allowfullscreen></iframe>
 
 
@@ -226,13 +226,13 @@ Writing to a CSV File
     # Create a file to write to
     out_file = open("nameOfOutputFile.csv", "w")
     csv_out_file = csv.writer(out_file)
-    
+
     # Write a row to the file
     csv_out_file.writerow(['First cell','Second cell', 'Third cell'])
 
     # Be sure to close the file when done!!!
     out_file.close()
-    
+
 
 * In the above example, notice that all the data for the row is contained within a list
 

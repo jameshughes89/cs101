@@ -334,11 +334,11 @@ What You Don't Get
     result = add_together(x, y)
     print(result)
 
-* In the above example, despite type hints being included, it would behave the same way as it did without type hints.   
-    
+* In the above example, despite type hints being included, it would behave the same way as it did without type hints.
+
     * It would still concatenate the strings
 
-	
+
 For Next Class
 ==============
 

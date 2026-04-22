@@ -151,9 +151,9 @@ Example 2
         return quotient
 
 
-	  
-	  
-	  
+
+
+
 Example 3
 ---------
 
@@ -167,7 +167,7 @@ Example 3
         try:
             quotient = divide(a,b)
         except ZeroDivisionError:
-            exit()	# Immediately stop!
+            exit()    # Immediately stop!
         return quotient
 
 

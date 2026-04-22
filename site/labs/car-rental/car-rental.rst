@@ -27,7 +27,7 @@ A car rental place needs our help. They want a program to calculate how much a c
 rental agreement, age, how far they drove, and how long they had the car.
 
 .. note::
-   
+
     Obviously this is directly from lecture. Do not just copy/paste the solution --- take this as an opportunity to
     re-implement the solution from scratch while taking care to truly understand what is going on. In fact, I will be
     very happy if you have slightly different solutions than what I provided in lecture. Use this lab to work out what

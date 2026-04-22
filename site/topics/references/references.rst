@@ -117,7 +117,7 @@ References
     :class: activity
 
     Take a moment to look at this image and see if you can explain why we start counting at 0 when indexing lists.
-   
+
 
 * If we wanted to make a copy of ``z`` like we did with the integers ``x`` and ``y``\, we could write something like ``w = z``
 * And just like with the integers, this copies the contents of the memory location of ``z`` and puts it into a new location labelled with a ``w``
