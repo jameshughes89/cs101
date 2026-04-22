@@ -41,6 +41,11 @@ Operators
 
     * example arithmetic operators --- ``+``, ``-``, ``*``, ``/``
 
+* Python follows an order of operations like you are familiar with in math
+
+    * PEDMAS/BEDMAS
+    * ``2 + 3 * 4`` is not the same as ``(2 + 3) * 4``
+    * When in doubt, add parentheses
 
 .. admonition:: Activity
     :class: activity
@@ -56,9 +61,9 @@ Operators
 .. admonition:: Activity
     :class: activity
 
-    Now for a tougher one. Convert a temperature from Celsius to Fahrenheit.
+    Convert a temperature from Celsius to Fahrenheit.
 
-        * `But I don't know how to convert Celsius to Fahrenheit!!!! <https://www.google.com/search?q=how+to+convert+celsius+to+fahrenheit>`_
+        * `But I don't know how to convert Celsius to Fahrenheit? <https://www.google.com/search?q=how+to+convert+celsius+to+fahrenheit>`_
 
     .. raw:: html
 
@@ -83,7 +88,7 @@ Large Series of Statements
 ==========================
 
 * So far we have been writing programs that are about one line long
-* There is nothing stopping us from writing large programs with many lines of code
+* We can write large programs with many lines of code
 
     * Saved in Colab or some other file
 
@@ -93,8 +98,6 @@ Large Series of Statements
 * Technically you can write your script in any text editor, but there are editors/environments designed for programming languages
 
     * Colab (use through the internet)
-    * Notepad++ (Windows)
-    * Sublime (Windows and Mac)
     * PyCharm (Windows, Linux, and Mac)
     * VS Code (Windows, Linux, and Mac)
 
