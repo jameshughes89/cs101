@@ -41,6 +41,11 @@ Operators
 
     * example arithmetic operators --- ``+``, ``-``, ``*``, ``/``
 
+* Python follows an order of operations like you are familiar with in math
+
+    * PEDMAS/BEDMAS
+    * ``2 + 3 * 4`` is not the same as ``(2 + 3) * 4``
+    * When in doubt, add parentheses
 
 .. admonition:: Activity
     :class: activity
@@ -83,7 +88,7 @@ Large Series of Statements
 ==========================
 
 * So far we have been writing programs that are about one line long
-* There is nothing stopping us from writing large programs with many lines of code
+* We can write large programs with many lines of code
 
     * Saved in Colab or some other file
 
