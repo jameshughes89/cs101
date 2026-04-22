@@ -124,6 +124,20 @@ Variables
     In Python, and many other programming languages, it is not a statement about equality, but an assignment. In Python,
     if one writes ``a = 5``, it means that the variable ``a`` is now storing the value ``5`` within it.
 
+    This also means that assignment captures the value at that moment in time, not the relationship between variables.
+    Consider the following:
+
+    .. code-block:: python
+        :linenos:
+
+        x = 1
+        y = x + 2
+        x = 9
+        print(y)
+
+    The value of ``y`` is still ``3``, not ``11``. When ``y = x + 2`` was executed, Python evaluated the right side to
+    ``3`` and stored that value in ``y``. Changing ``x`` afterwards has no effect on ``y``.
+
 
 Using Variables
 ---------------
