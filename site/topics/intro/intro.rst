@@ -137,7 +137,7 @@ So I Should Be Terrified?
 I Need Help!
 ============
 
-.. image:: beforeGoogle.jpg
+.. image:: life_before_google_comic.png
 
 * Knowing the challenges students face, we have provided many resources to help you succeed
 
@@ -208,7 +208,7 @@ Can I Write A Program Now?
     print("Hello, world!")
 
 
-.. image:: HelloWorldColab.png
+.. image:: hello_world_colab.png
 
 * You're now officially a computer programmer
 

@@ -383,7 +383,7 @@ Exclusive Alternatives
 Nesting Conditionals
 ====================
 
-.. image:: dolls.jpeg
+.. image:: nesting_dolls.png
 
 * You can "nest" conditionals inside other conditionals
 
@@ -424,4 +424,3 @@ For Next Class
 ==============
 
 * Read `Chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
-

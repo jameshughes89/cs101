@@ -19,7 +19,7 @@ Debugging
     * It's about understanding your program and understanding why it is behaving the way it is
 
 
-.. image:: hi.jpg
+.. image:: debugging_bug.png
 
 
 The Importance of Debugging
