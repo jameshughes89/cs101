@@ -93,8 +93,6 @@ Large Series of Statements
 * Technically you can write your script in any text editor, but there are editors/environments designed for programming languages
 
     * Colab (use through the internet)
-    * Notepad++ (Windows)
-    * Sublime (Windows and Mac)
     * PyCharm (Windows, Linux, and Mac)
     * VS Code (Windows, Linux, and Mac)
 
