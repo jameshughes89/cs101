@@ -107,8 +107,8 @@ The quick answer is, it depends...
     * Stay on top of the content
 
 
-So I Should Be Terrified?
-=========================
+Is This Course Hard?
+====================
 
 * No
 * It's entirely doable **if you put in the effort**
