@@ -167,6 +167,33 @@ Google?
 * `Get used to "Googling it" <https://www.youtube.com/watch?v=e9C_cgL2150>`_
 
 
+
+What about Generative AI?
+-------------------------
+
+* The use of AI is prohibited in this course
+* When talking about Googling, I am not talking about generative AI
+
+    * The friction of searching for a solution is an important part in learning
+
+        * Formulate the right question
+        * Reading various answers to similar problems
+        * Piecing together a solution
+        * Hacking at it until it works
+
+* AI is a great tool for programmers
+* AI is *not* a great tool for those learning to program
+
+    * To learn these concepts, students need to grind out the solutions on their own
+    * Knowing when AI is right/wrong/hallucinating requires a deep understanding of these core ideas
+    * You cannot develop the necessary expertise by offloading the learning to the tool
+
+* Even using AI in good faith as a mechanism to learn when stuck is a recipe for disaster
+
+    * Having answers, even if well explained, eliminates the struggle required to truly understand
+
+
+
 Can I Write A Program Now?
 ==========================
 

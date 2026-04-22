@@ -11,15 +11,15 @@ Debug
 
 
 
-Pre Lab Exercises
-=================
+Textbook Exercises
+==================
 
 * There are no exercises to complete before this lab
 
 
 
-Before Kattis
-=============
+Core Exercises
+==============
 
 **1**
 
@@ -326,8 +326,8 @@ This one is very buggy :(
 
 
 
-Kattis Problems
-===============
+Kattis Based Practice
+=====================
 
 I'm willing to bet that in previous weeks you were working on Kattis problems that you couldn't quite debug. You may have been close, or way off, but the problem was you were stuck wondering how best to *fix* your code. Now that you're equipped with the debugger, go back and work on them! Seriously, GO BACK! But make use of this debugger. Whenever you can, USE THE DEBUGGER. Stuck on Kattis? DEBUGGER! Stuck on assignment? DEBUGGER! Stuck in life? DEBUGGER?
 

@@ -18,7 +18,7 @@ You will
 * Use a provided function to load data into your program
 * Write a function to convert latitude/longitude units from degrees, minutes, and seconds to decimal
 * Write a function to calculate the surface area of a sphere as defined by latitudes and longitudes
-* Write a function to count the number of starbucks contained within an area defined by latitudes and longitudes
+* Write a function to count the number of Starbucks contained within an area defined by latitudes and longitudes
 * Write a function to calculate the density of Starbucks within an area
 
 .. warning::
@@ -33,7 +33,7 @@ Provided Files
 
 You are provided with
 
-* A notebook file called :download:`asn1.ipynp <asn1.ipynb>` containing the starting point of the assignment
+* A notebook file called :download:`asn1.ipynb <asn1.ipynb>` containing the starting point of the assignment
 
     * This file is to be uploaded to `Google Colab <https://colab.research.google.com/>`_
     * Alternatively, if you prefer to complete the assignment with an IDE on your own computer, you may download and use the :download:`asn1.py <asn1.py>` file
@@ -96,10 +96,10 @@ Humans like to express `latitudes <http://en.wikipedia.org/wiki/Latitude>`_ and
 `longitudes <http://en.wikipedia.org/wiki/Longitude>`_ in degrees, minutes, and seconds. You *could* work with those
 units in Python, but your computations (and, hence, code) will be much cleaner and easier to follow if you convert the
 data into the single unit "degrees", using decimals of a degree to represent "arcminutes" (1/60th of a degree) and
-"arcseconds" (1/60th of a arcminute).
+"arcseconds" (1/60th of an arcminute).
 
 Complete the function ``convert_degrees_to_decimal`` such that it converts the provided degrees, arcminutes, and
-arcseconds to decimal. The parameters are a latitude/longitude in degrees, arcminutes, and arcseonds. The function
+arcseconds to decimal. The parameters are a latitude/longitude in degrees, arcminutes, and arcseconds. The function
 should return the same latitude/longitude as a single value in decimal degrees (a single value of type ``float``).
 
 If you are not familiar with the conversion, check `Wikipedia <http://en.wikipedia.org/wiki/Arcminute>`_.
@@ -111,7 +111,7 @@ do not actually need to use this function to convert the data from the Starbucks
 Part 4 --- Subtended Area
 =========================
 
-Since we want to calculate the *density* of starbucks, we need to consider the units used. A reasonable measure would be
+Since we want to calculate the *density* of Starbucks, we need to consider the units used. A reasonable measure would be
 *Starbucks per square kilometers*. In order to compute this, we must first calculate the area of the "rectangle" defined
 by two latitude and two longitudes. You are to complete the function ``subtended_area`` that takes four parameters. Two
 latitudes defining the top and bottom of the "rectangle" and two longitudes defining the sides of the "rectangle". The
@@ -128,7 +128,7 @@ In our case we will use :math:`R = 6371` for Earth, which is stored in the provi
 
 .. warning::
 
-    Does Python's trig functions (eg., ``math.sin``) expect parameters in *degrees* or *radians*?
+    Do Python's trig functions (eg., ``math.sin``) expect parameters in *degrees* or *radians*?
     `Read the relevant documentation to find out <https://docs.python.org/3/library/math.html#math.sin>`_.
 
 
@@ -261,24 +261,24 @@ Assignment FAQ
 
 * :doc:`See the general FAQ </assignments/faq>`
 
-* Python keeps saying ``No such file or directory: 'starbucks2018.csv'``
+* Why does python keep saying ``No such file or directory: 'starbucks2018.csv'``?
 
     * This means Python can't find the file it needs
     * Ensure you actually uploaded the file to Colab correctly
 
 
-* I never used the ``convert_degrees_to_decimal`` function
+* I never used the ``convert_degrees_to_decimal`` function, is that OK?
 
     * That is correct
     * Although you do not need to use the function to calculate the density, one may want to add additional locations
 
 
-* The degree values do not specify a cardinal direction
+* The degree values do not specify a cardinal direction; how do I deal with cardinal directions?
 
     * Although a N/S or E/W direction is not included, positive and negative values are used to change hemispheres
 
 
-* I keep getting a density value of 0, no matter what I do
+* I keep getting a density value of 0, no matter what I do, why?
 
     * Check that you are not selecting an area over an ocean or desert
     * Ensure your parameters are ordered such that the lower latitude/longitude values are first
@@ -294,4 +294,4 @@ Assignment FAQ
 * Are the high and low density values I found OK?
 
     * It does not matter how high or low they are
-    * Simply try few areas to see what you get
+    * Simply try a few areas to see what you get
