@@ -286,7 +286,7 @@ Rubber Duck Debugging
 * And sometimes you have a rubber duck
 
    
-For Next Class
+For Next Topic
 ==============
 
 * Read `Appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_

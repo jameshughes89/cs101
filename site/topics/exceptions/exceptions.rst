@@ -218,9 +218,8 @@ Why Care?
     * They provide a nice logical division between normal code and exceptional code
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 15 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
-
 

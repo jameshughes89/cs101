@@ -339,7 +339,7 @@ What You Don't Get
     * It would still concatenate the strings
 
 	
-For Next Class
+For Next Topic
 ==============
 
 * If you have not yet, read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_

@@ -270,9 +270,8 @@ Haskell
    
   
 			
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
-
 

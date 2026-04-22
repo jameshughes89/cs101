@@ -369,7 +369,7 @@ Testing
 * The next topic will cover details on how to start transitioning our tests to the ``unittest`` framework for improved tests
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 21 of the text <http://openbookproject.net/thinkcs/python/english3e/even_more_oop.html>`_

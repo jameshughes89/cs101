@@ -290,9 +290,8 @@ Bubble Sort
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NfmAFOlM5Jw" frameborder="0" allowfullscreen></iframe>
 	
 
-For Next Class
+For Next Topic
 ==============
 
 * `Check out these visualizations of sorting algorithms being compared to one another <http://www.sorting-algorithms.com/>`_
 * Read `Chapter 18 of the text <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_
-

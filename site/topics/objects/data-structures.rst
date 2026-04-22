@@ -259,7 +259,7 @@ Course Class
 * The string printed out is one single string that spans multiple lines
 
 
-For Next Class
+For Next Topic
 ==============
 
 * `Check out the unit tests for the Student class <https://github.com/jameshughes89/cs101/blob/main/test/test_student.py>`_

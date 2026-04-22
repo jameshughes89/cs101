@@ -150,10 +150,9 @@ References
     .. image:: array_pointer_pointers.png
 
 
-For Next Class
+For Next Topic
 ==============
 
 * If you have not already, read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 * If you have not already, read `Chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
-
 
