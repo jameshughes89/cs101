@@ -198,7 +198,7 @@ Constants
 * This is clearly correct, however
 
     * What if someone else looks at this code and wonders what 1.15 is?
-    * What if the gov changes the sales tax in the future?
+    * What if the government changes the sales tax in the future?
 
 * Although there is nothing wrong with the above code, one could do the following instead
 
