@@ -123,12 +123,13 @@ So I Should Be Terrified?
 
 * I really can't stress this enough
 
-    * Most of the time when you're *working* on the course material you will be getting things wrong
+    * Most of the time when you're working on the course material you will be getting things wrong
     * The majority of programming is actually *debugging*
-    * Get used to making mistakes
+    * Getting it wrong is normal and expected
 
         * This is a good thing
-        * This is normal
+        * This is not because you're new
+        * This is the nature of programming, even for experienced programmers
 
 
 I Need Help!
