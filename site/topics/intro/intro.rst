@@ -96,7 +96,7 @@ The quick answer is, it depends...
     * Who here knows how to build a house?
 
 * Each of the things you will learn are perhaps simple on their own, but using them together to achieve something is challenging
-* These topics really are going to be shockingly different from what you are probably used to
+* These topics are likely going to be different from what you are used to
 
     * Very few classes can prepare you for the way of thinking that will be required for this class
 
