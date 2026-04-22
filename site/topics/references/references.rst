@@ -150,7 +150,7 @@ References
     .. image:: multiple_list_references.png
 
 
-For Next Class
+For Next Topic
 ==============
 
 * If you have not already, read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_

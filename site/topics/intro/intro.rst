@@ -225,7 +225,7 @@ Can I Write A Program Now?
 
 
 
-For Next Class
+For Next Topic
 ==============
 
 * If you have not yet, :doc:`go through set up for CSCI 161 </getting-set/getting-set>`

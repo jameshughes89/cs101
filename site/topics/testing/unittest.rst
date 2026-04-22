@@ -333,7 +333,7 @@ Running Unit Tests
 * Demonstrating that your code is correct, to yourself or anyone else that may use your code, is another big part of writing code
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Check out the test folder in the `GitHub repo <https://github.com/jameshughes89/cs101>`_  to see the unit tests written for the course content

@@ -420,7 +420,7 @@ Nesting Conditionals
         print("Third Quadrant")
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_

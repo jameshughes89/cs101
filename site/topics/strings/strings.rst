@@ -486,7 +486,7 @@ How to Remember What's What
 * `In the meantime, just look up what you need <https://www.google.com/search?q=make+a+string+uppercase+python>`_
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 11 of the text <http://openbookproject.net/thinkcs/python/english3e/lists.html>`_

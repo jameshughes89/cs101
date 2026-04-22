@@ -279,7 +279,7 @@ Sets
     #. What If I wanted to know which words were in one book, but not the other?
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read `Appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_

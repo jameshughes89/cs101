@@ -244,9 +244,8 @@ Writing to a CSV File
     * ``writerows``, which takes a list of lists to write a large block of data
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 19 of the text <http://openbookproject.net/thinkcs/python/english3e/exceptions.html>`_
-
 

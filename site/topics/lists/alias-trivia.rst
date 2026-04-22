@@ -221,9 +221,7 @@ List Trivia
     #. If you had a list of length :math:`10`, how many things does your function need to add together?
     #. What if your list was length :math:`10,000`?
 
-
-For Next Class
+For Next Topic
 ==============
 * Read `Chapter 9 of the text <http://openbookproject.net/thinkcs/python/english3e/tuples.html>`_
 * Read `Chapter 20 of the text <http://openbookproject.net/thinkcs/python/english3e/dictionaries.html>`_
-

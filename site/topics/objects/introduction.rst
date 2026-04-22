@@ -305,7 +305,7 @@ Testing the Class
     assert 0.001 > abs(circle_10.circumference() - 62.8319)
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Download and look through the :download:`Circle class <../../../src/circle.py>`

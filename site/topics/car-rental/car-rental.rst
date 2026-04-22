@@ -390,8 +390,7 @@ Revisit Calculating the Total Charge
         * Would you add additional functions?
         * Would you use constants? Where?
 
-
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_

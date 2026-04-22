@@ -290,9 +290,7 @@ Bubble Sort
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NfmAFOlM5Jw" frameborder="0" allowfullscreen></iframe>
 
 
-For Next Class
-==============
+For Next Course
+===============
 
-* `Check out these visualizations of sorting algorithms being compared to one another <http://www.sorting-algorithms.com/>`_
-* Read `Chapter 18 of the text <http://openbookproject.net/thinkcs/python/english3e/recursion.html>`_
-
+* `Check out the Python vs. Java content in CSCI 162 <http://modsurski.com/csci162/topics/java-vs-python/java-vs-python.html>`_

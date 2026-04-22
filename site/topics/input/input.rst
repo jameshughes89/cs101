@@ -93,7 +93,7 @@ Changing Types
     **Hint:** :math:`1 lbs = 0.453592 kg`
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read `Chapter 4 of the text <http://openbookproject.net/thinkcs/python/english3e/functions.html>`_

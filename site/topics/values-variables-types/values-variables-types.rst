@@ -243,7 +243,7 @@ Constants
     <iframe width="560" height="315" src="https://www.youtube.com/embed/8M0uZ5gclOQ" frameborder="0" allowfullscreen></iframe><br><br>
 
 
-For Next Class
+For Next Topic
 ==============
 
 * Read the rest of `Chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
