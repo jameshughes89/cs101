@@ -43,10 +43,10 @@ Why Are The Course Notes A Website?
 
 
 
-How Will This Class Work?
-=========================
+How Will This Course Work?
+==========================
 
-* This class is going to be run somewhat differently from other courses you may have experienced at university 
+* This course is going to be run somewhat differently from other courses you may have experienced at university
 * I have a number of activities throughout the topics that we will take time to work on
 
     * They also help with breaking up the monotony of listening to a lecture for an hour straight
@@ -64,13 +64,13 @@ How Will This Class Work?
 
     * What are their majors?    
     * Why did you come to StFX?
-    * Why are they taking this class?   
+    * Why are they taking this course?
     * What do you hope to learn? 
     * How do you think you will use what you learn in the future?
    
    
-What Should I Bring To Class
-============================
+What Should I Bring To Lecture
+==============================
 
 * Curiosity
 * Readiness to do stuff, rather than just listen
@@ -80,8 +80,8 @@ What Should I Bring To Class
     * If you can bring a laptop, I strongly recommend it as there will be opportunity for you to program during activities
 
 
-Is This Class Easy?
-===================
+Is This Course Easy?
+====================
 
 The quick answer is, it depends...
 
@@ -118,8 +118,8 @@ So I Should Be Terrified?
     * In fact, expect to make **a lot** of mistakes
 
 * You get to see if what you did works or not
-* Most of this class will be you *beating your head against your keyboard*, so to speak, until you get it right
-* Not many classes or disciplines give you this luxury
+* Most of this course will be you *beating your head against your keyboard*, so to speak, until you get it right
+* Not many courses or disciplines give you this luxury
 
 * I really can't stress this enough
 
