@@ -48,13 +48,13 @@ What Is Debugging?
 .. admonition:: Quick Activity
     :class: activity
 
-    Have you seen any Python errors yet? 
+    Have you seen any Python errors yet?
 
-    What were they? 
+    What were they?
 
     Did you understand them?
 
-   
+
 Languages
 =========
 
@@ -66,9 +66,9 @@ Languages
 .. admonition:: Activity
     :class: activity
 
-    Do you think there is a limit to what I can describe with a formal language? 
+    Do you think there is a limit to what I can describe with a formal language?
 
-    Can I describe *anything*? *Any* computation? 
+    Can I describe *anything*? *Any* computation?
 
     **HINT**: Is the following statement true or false: "This statement is false."
 
@@ -84,7 +84,7 @@ Terminology
 * Binary
 * Compiling
 * Interpreter vs Integrated Development Environment (IDE)
-   
+
 
 Print
 =====
@@ -120,7 +120,7 @@ Values And Types
     * Strings
     * Integers
     * Float
-   
+
 * To a computer, the integer ``1`` is not necessarily the same thing as the floating point number ``1.0`` or the string ``"1"``
 
 * Some of the errors you will make will be a result from mixing types incorrectly
@@ -201,7 +201,7 @@ Using Variables
     * The first one adds the literals ``5`` and ``6``
     * The second one adds the variables ``a`` and ``b``
 
-   
+
 .. admonition:: Activity
     :class: activity
 
@@ -210,7 +210,7 @@ Using Variables
     #. Try adding variables of different types. What happens?
     #. Try the assignment ``5 = a``. What happens?
     #. Figure out how to display the current contents of a variable.
-   
+
 
 Naming Variables
 ----------------

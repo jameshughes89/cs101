@@ -97,4 +97,4 @@ General Assignment Frequently Asked Questions (FAQ)
     * No
     * Like the others, this is another common cheating strategy
     * Because this is commonly used for cheating, we can't accept the submission
-    * To hedge against this, aim to submit your assignment well before the deadline 
+    * To hedge against this, aim to submit your assignment well before the deadline

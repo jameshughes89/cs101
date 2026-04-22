@@ -118,7 +118,7 @@ Kattis Based Practice
 
 
 .. warning::
-   
+
     The above code will only work when the input is 2 integers on the same line. You may need to hack this code to make
     it work for your particular problem.
 

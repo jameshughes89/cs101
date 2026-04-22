@@ -21,7 +21,7 @@ class SphereTest(unittest.TestCase):
             Sphere(Point3D(10, 11, 12), 10.1),
         ]
         expecteds = [0, 2, 0, 20.2]
-        for (case, expect) in zip(cases, expecteds):
+        for case, expect in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case.diameter(), 5)
 
@@ -33,7 +33,7 @@ class SphereTest(unittest.TestCase):
             Sphere(Point3D(10, 11, 12), 10),
         ]
         expecteds = [0, 12.56637, 0, 1256.63706]
-        for (case, expect) in zip(cases, expecteds):
+        for case, expect in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case.surface_area(), 5)
 
@@ -45,7 +45,7 @@ class SphereTest(unittest.TestCase):
             Sphere(Point3D(10, 11, 12), 10),
         ]
         expecteds = [0, 4.18879, 0, 4188.7902]
-        for (case, expect) in zip(cases, expecteds):
+        for case, expect in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case.volume(), 5)
 
@@ -57,7 +57,7 @@ class SphereTest(unittest.TestCase):
             (Sphere(Point3D(-1, -1, -1), 1), Sphere(Point3D(1, 1, 1), 10)),
         ]
         expecteds = [0, 1.732051, 0, 3.464102]
-        for (case, expect) in zip(cases, expecteds):
+        for case, expect in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case[0].distance_between_centres(case[1]), 5)
 
@@ -69,7 +69,7 @@ class SphereTest(unittest.TestCase):
             (Sphere(Point3D(-1, -1, -1), 1), Sphere(Point3D(10, 10, 10), 10)),
         ]
         expecteds = [-2, -0.267949, 15.320508, 8.052559]
-        for (case, expect) in zip(cases, expecteds):
+        for case, expect in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertAlmostEqual(expect, case[0].distance_between_edges(case[1]), 5)
 
@@ -82,7 +82,7 @@ class SphereTest(unittest.TestCase):
             (Sphere(Point3D(-1, 1, 4), 5), Sphere(Point3D(-2, -3, -4), 4)),
         ]
         expecteds = [True, True, False, True, True]
-        for (case, expect) in zip(cases, expecteds):
+        for case, expect in zip(cases, expecteds):
             with self.subTest(case=case, expect=expect):
                 self.assertEqual(expect, case[0].overlaps(case[1]))
 

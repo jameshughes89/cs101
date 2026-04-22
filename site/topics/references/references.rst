@@ -20,7 +20,7 @@ References
 
 * Here is an idealized view of memory inside a computer
 
-.. image:: RAM.png
+.. image:: ram_overview.png
 
 
 Primitive Types in Memory
@@ -42,7 +42,7 @@ Primitive Types in Memory
     * The value ``17`` gets assigned to one of the 32 bit sections of memory
     * A label ``x`` is created for that location
 
-.. image:: int_in_RAM.png
+.. image:: int_in_memory.png
 
 * If we wanted to copy the value of ``x`` into another variable, I could write something like ``y = x``
 * When this happens
@@ -53,7 +53,7 @@ Primitive Types in Memory
 
 * **The contents of** ``x`` **are copied to** ``y``
 
-.. image:: copy_int_in_RAM.png
+.. image:: copied_int_in_memory.png
 
 * This strategy works great for types that have a nicely defined sizes
 * But what happens when we do not know beforehand how much memory something needs in order to store it?
@@ -62,7 +62,7 @@ Primitive Types in Memory
 Lists in Memory
 ===============
 
-.. image:: array_1.png
+.. image:: list_elements_overview.png
 
 * Above is a list with length ``8``
 * The contents are labeled ``a`` -- ``h``, but these are arbitrary labels and we can think of them as integers
@@ -83,7 +83,7 @@ Lists in Memory
 
 * For example, the following image shows how we can think of storing the list ``[a, b, c, d, e, f, g, h]``
 
-.. image:: array_in_RAM.png
+.. image:: list_contents_in_memory.png
 
 * Just put each integer into its own memory location
 
@@ -110,25 +110,25 @@ References
 
     * The list is **not** stored in ``z``\; the *location* of the list in memory is stored in ``z``
 
-.. image:: array_pointer.png
+.. image:: list_reference_in_memory.png
 
 
 .. admonition:: Activity
     :class: activity
 
     Take a moment to look at this image and see if you can explain why we start counting at 0 when indexing lists.
-   
+
 
 * If we wanted to make a copy of ``z`` like we did with the integers ``x`` and ``y``\, we could write something like ``w = z``
 * And just like with the integers, this copies the contents of the memory location of ``z`` and puts it into a new location labelled with a ``w``
 * However, the catch is that the contents of ``z`` is the memory address of the list
 * After making the copy into ``w``,  how many references do we have that get me to the memory location of the list?
 
-.. image:: array_pointer_copy.png
+.. image:: copied_list_reference_in_memory.png
 
 * If I want to make a change to ``w`` and I write something like ``w[4] = P``, the computer goes to the list referenced by ``w`` and alters the value at index ``4``
 
-.. image:: array_pointer_copy_change.png
+.. image:: aliased_list_after_update.png
 
 * This does not alter the contents of the memory location of ``w``\; this alters the data at the memory location that is referenced to by ``w``
 * In fact, this also alters the data at the memory location that is referenced by ``z``
@@ -147,7 +147,7 @@ References
     allocated for the list. Instead, Python stores the contents in their own memory locations and the list stores
     references to the contents.
 
-    .. image:: array_pointer_pointers.png
+    .. image:: multiple_list_references.png
 
 
 For Next Class
@@ -155,5 +155,4 @@ For Next Class
 
 * If you have not already, read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 * If you have not already, read `Chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
-
 

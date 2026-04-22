@@ -17,10 +17,8 @@ no worries, either use the options below or make a Google account just for Colab
 
 .. warning::
 
-    We must turn off the generative AI feature within Google Colab to help ensure your success. The use of the
-    generative AI feature within Colab will be a problem for this course for two major reasons. The first is that it
-    tries to help programmers write the code that you are to learn in this course, thereby eliminating your ability to
-    learn the content. The second reason is that it is often incorrect, which is a nightmare for new programmers.
+    We must turn off the generative AI features in Google Colab to help ensure your success in this course. These
+    features try to help write the code that you are here to learn, which undermines your ability to learn the content.
 
     To turn this feature off, select "Tools" on the top menu, then select "Settings".
 
@@ -55,6 +53,6 @@ programmers life easier, at this stage of learning it will likely impede your le
 A popular IDE many use is called *PyCharm*. You can obtain the community or education edition for free from *JetBrains*.
 `Visit their download website to obtain the software <https://www.jetbrains.com/pycharm/download/>`_.
 
-Note, I will not be providing IT support for IDEs (or really any IT support in general). 
+Note, I will not be providing IT support for IDEs (or really any IT support in general).
 
 .. image:: pyCharm.png
