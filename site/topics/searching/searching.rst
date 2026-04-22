@@ -46,16 +46,16 @@ Linear Search
 
 .. admonition:: Activity
     :class: activity
-   
+
     Discuss this with your neighbours:
-      
+
         * On average, how many iterations of the loop does ``linear_search`` need before it finds the ``needle``?
         * If the element you are looking for is *not* in the list, how many times will the loop run?
         * What would be the situation to cause the loop to only need to run one iteration?
         * How much *space* does your algorithm require?
         * Is your solution the best possible?
-        * Might there exist some super clever algorithm that is somehow better (faster) than yours?   
-	  
+        * Might there exist some super clever algorithm that is somehow better (faster) than yours?
+
 
 .. raw:: html
 
@@ -180,7 +180,7 @@ Python
 
 .. code-block:: python
     :linenos:
-	
+
     def linear_search(haystack: list[int], needle: int) -> bool:
         for i in range(len(haystack)):
             if haystack[i] == needle:
@@ -263,13 +263,13 @@ Haskell
 
 .. code-block:: haskell
     :linenos:
-	
+
     linear_search :: Eq a => [a] -> a -> Bool
     linear_search [] _ = False
     linear_search (x:xs) y = x==y || linear_search xs y
-   
-  
-			
+
+
+
 For Next Class
 ==============
 

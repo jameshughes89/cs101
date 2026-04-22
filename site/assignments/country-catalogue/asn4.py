@@ -5,7 +5,7 @@ class Country:
     """
 
     def __init__(self, name: str, continent: str, population: int, area: float):
-
+        pass # Delete me and write your code here
 
     def population_density(self) -> float:
         """
@@ -38,6 +38,7 @@ class Country:
         """
 
 import unittest
+
 
 class CountryTest(unittest.TestCase):
     def test_country_name_returns_correct_country_name(self):
@@ -95,7 +96,7 @@ class CountryCatalogue:
     """
 
     def __init__(self):
-
+        pass  # Delete me and write your code here
 
     def _find(self, country: Country) -> int:
         """
@@ -193,17 +194,19 @@ class CountryCatalogue:
 
 
     def __getitem__(self, item: int) -> Country:
-
+        pass  # Delete me and write your code here
 
     def __len__(self) -> int:
-
+        pass  # Delete me and write your code here
 
     def __eq__(self, other: "CountryCatalogue") -> bool:
-
+        pass  # Delete me and write your code here
 
     def __repr__(self) -> str:
+        pass  # Delete me and write your code here
 
 import unittest
+
 
 class CountryCatalogueTest(unittest.TestCase):
     def test_len_empty_collection_returns_0(self):

@@ -49,7 +49,7 @@ Data Structures
     Apply what you know about loops, strings, and lists to solve the following problems --- combining algorithms and
     data structures is a big part of programming. **Hint:** You will probably find the linear searches from the strings
     topic to be helpful.
-   
+
     #. Write a function ``contains_while(needle, haystack) -> bool:`` that uses a ``while`` loop and returns ``True`` if needle is contained in the haystack and ``False`` otherwise.
     #. Write a function ``index_of_for(needle, haystack) -> int:`` that uses a ``for`` loop and returns the index of needle within the haystack or ``-1`` if it is not found.
     #. Write some ``assert`` tests for both functions to verify correctness.
@@ -93,7 +93,7 @@ List Operators and Methods
     #. Play around with some of the methods you see
 
 
-Mutability 
+Mutability
 ==========
 
 * Although lists and strings have some things in common, one thing they do not have in common is *mutability*
@@ -270,7 +270,7 @@ Looping Over Indices and Enumerate
 
 
 
-	  	  
+
 For Next Class
 ==============
 * Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_

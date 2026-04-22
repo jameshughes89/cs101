@@ -86,8 +86,8 @@ Conditional Expressions
     Write a function ``is_negative(a_number)`` that returns ``True`` if ``a_number`` is negative and ``False``
     otherwise.
 
-   
-   
+
+
 Compound Conditions
 ===================
 
@@ -168,10 +168,10 @@ Compound Conditions
 
 .. raw:: html
 
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/8OAsHilB0jw" frameborder="0" allowfullscreen></iframe>
-   
-   
-   
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8OAsHilB0jw" frameborder="0" allowfullscreen></iframe>
+
+
+
 Alternative Execution
 =====================
 
@@ -211,11 +211,11 @@ Alternative Execution
     that integer divided by 2. If it is odd, return the value multiplied by 3 and with one added. In other words,
     given a number :math:`n`, return :math:`n/2` when it is even and :math:`3n + 1` when it is odd. **Hint:** Don't
     forget about ``%``.
-   
+
     .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/k0LcSJzANgU" frameborder="0" allowfullscreen></iframe>
-		
+
     `This is actually some neat math stuff <https://en.wikipedia.org/wiki/Collatz_conjecture>`_. Isn't it cool that
     we're writing a Python function that's doing exactly what the math is saying?
 
@@ -269,7 +269,7 @@ Alternative Execution
     ``return``\s in the ``if`` and ``else`` blocks. Again, this is not *more correct* and it is only shown here to
     demonstrate how the same functionality can be implemented differently.
 
-   
+
 Exclusive Alternatives
 ======================
 
@@ -378,12 +378,12 @@ Exclusive Alternatives
 .. raw:: html
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpxIvRshzg" frameborder="0" allowfullscreen></iframe>
-   
-   
+
+
 Nesting Conditionals
 ====================
 
-.. image:: dolls.jpeg
+.. image:: nesting_dolls.png
 
 * You can "nest" conditionals inside other conditionals
 
@@ -424,4 +424,3 @@ For Next Class
 ==============
 
 * Read `Chapter 6 of the text <http://openbookproject.net/thinkcs/python/english3e/fruitful_functions.html>`_
-
