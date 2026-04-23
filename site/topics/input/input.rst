@@ -44,6 +44,19 @@ The Type Of The Entered Value
     * If you enter ``1``, the value of ``my_inputted_value`` would be the string ``"1"``
 
 * This may be fine in some cases, but if we want to do some math with the entered values, we do not have numbers
+
+.. code-block:: python
+    :linenos:
+
+    first = input("Enter a number: ")           # Enter 1
+    second = input("Enter another number: ")    # Enter 2
+    print(first + second)                       # Results in 12 (not 3)
+
+* If you enter ``1`` and ``2``, you might expect ``3``, but you will get ``12``
+
+    * Since both values are strings, ``+`` concatenates the strings
+    * Remember, the ``+`` operator is context sensitive
+
 * Fortunately, there is a simple way to *try* to change the type of the value
 * For example, if we want to enter the integer ``1``
 
@@ -76,7 +89,7 @@ Changing Types
 
 * However, this assumes that the value whose type is being changed can actually be changed to that type
 * Python is happy to change the type of the integer ``1`` to a float or a string
-* However, if I try to change the type of the string ``"Hello world"`` to an integer, we run into a problem
+* But, if I try to change the type of the string ``"Hello world"`` to an integer, we run into a problem
 
     * ``int("Hello world")`` will cause an error
     * Python will say ``ValueError: invalid literal for int() with base 10: 'Hello world'``
