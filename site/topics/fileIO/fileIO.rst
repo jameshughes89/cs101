@@ -247,5 +247,5 @@ Writing to a CSV File
 For Next Topic
 ==============
 
-* Read `Chapter 19 of the text <http://openbookproject.net/thinkcs/python/english3e/exceptions.html>`_
+* Read `Chapter 19 of the text <https://openbookproject.net/thinkcs/python/english3e/exceptions.html>`_
 

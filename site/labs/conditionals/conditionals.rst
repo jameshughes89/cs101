@@ -14,7 +14,7 @@ Conditionals
 Textbook Exercises
 ==================
 
-#. `Chapter 5 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/conditionals.html#exercises>`_
+#. `Chapter 5 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/conditionals.html#exercises>`_
 
     * 1
     * 2

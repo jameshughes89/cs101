@@ -267,8 +267,10 @@ Haskell
     linear_search :: Eq a => [a] -> a -> Bool
     linear_search [] _ = False
     linear_search (x:xs) y = x==y || linear_search xs y
+
+
 For Next Topic
 ==============
 
-* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
+* Read `Chapter 14 of the text <https://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 

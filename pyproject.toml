@@ -13,7 +13,7 @@ line-length = 120
 target-version = ["py312"]
 
 [tool.codespell]
-ignore-words-list = "faktor, trik, borken"
+ignore-words-list = "faktor,trik,borken"
 skip = "site/topics/fileIO/airports.csv"
 
 [tool.flake8]
@@ -62,5 +62,6 @@ dependencies = [
 [project.scripts]
 format = "console_scripts.cli:run_formatters"
 verify = "console_scripts.cli:run_verification"
+links = "console_scripts.cli:run_linkcheck"
 site = "console_scripts.cli:run_sphinx_build"
 

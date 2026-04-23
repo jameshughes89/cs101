@@ -20,7 +20,7 @@ Textbook Exercises
     * Use ``assert`` to test instead of their ``test`` function
 
 
-#. `Chapter 11 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/lists.html#exercises>`_
+#. `Chapter 11 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/lists.html#exercises>`_
 
     * 1 --- Only worry about playing around with the ``range`` function
     * 3

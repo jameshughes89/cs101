@@ -14,13 +14,13 @@ Testing
 Textbook Exercises
 ==================
 
-#. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
+#. `Chapter 2 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
 
     * 5 but have it in a function that returns the result
     * Also write assertion tests for the function, include type hints, and write a docstring
 
 
-#. `Chapter 4 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/functions.html#exercises>`_
+#. `Chapter 4 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/functions.html#exercises>`_
 
     * 8 **but** write assertion tests for the function, include type hints, and write a docstring
 

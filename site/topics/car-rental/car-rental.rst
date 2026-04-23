@@ -393,5 +393,5 @@ Revisit Calculating the Total Charge
 For Next Topic
 ==============
 
-* Read `Chapter 7 of the text <http://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
+* Read `Chapter 7 of the text <https://openbookproject.net/thinkcs/python/english3e/iteration.html>`_
 

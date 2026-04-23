@@ -341,4 +341,4 @@ What You Don't Get
 For Next Topic
 ==============
 
-* If you have not yet, read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
+* If you have not yet, read `Chapter 5 of the text <https://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_

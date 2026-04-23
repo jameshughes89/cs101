@@ -211,5 +211,5 @@ Algorithm
 For Next Topic
 ==============
 
-* Read `Chapter 8 of the text <http://openbookproject.net/thinkcs/python/english3e/strings.html>`_
+* Read `Chapter 8 of the text <https://openbookproject.net/thinkcs/python/english3e/strings.html>`_
 

@@ -96,4 +96,4 @@ Changing Types
 For Next Topic
 ==============
 
-* Read `Chapter 4 of the text <http://openbookproject.net/thinkcs/python/english3e/functions.html>`_
+* Read `Chapter 4 of the text <https://openbookproject.net/thinkcs/python/english3e/functions.html>`_

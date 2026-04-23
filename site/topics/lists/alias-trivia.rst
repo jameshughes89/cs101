@@ -223,5 +223,5 @@ List Trivia
 
 For Next Topic
 ==============
-* Read `Chapter 9 of the text <http://openbookproject.net/thinkcs/python/english3e/tuples.html>`_
-* Read `Chapter 20 of the text <http://openbookproject.net/thinkcs/python/english3e/dictionaries.html>`_
+* Read `Chapter 9 of the text <https://openbookproject.net/thinkcs/python/english3e/tuples.html>`_
+* Read `Chapter 20 of the text <https://openbookproject.net/thinkcs/python/english3e/dictionaries.html>`_

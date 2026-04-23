@@ -116,4 +116,4 @@ Large Series of Statements
 For Next Topic
 ==============
 
-* If you have not yet, read the rest of `Chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
+* If you have not yet, read the rest of `Chapter 2 of the text <https://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_

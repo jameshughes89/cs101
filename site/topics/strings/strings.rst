@@ -489,4 +489,4 @@ How to Remember What's What
 For Next Topic
 ==============
 
-* Read `Chapter 11 of the text <http://openbookproject.net/thinkcs/python/english3e/lists.html>`_
+* Read `Chapter 11 of the text <https://openbookproject.net/thinkcs/python/english3e/lists.html>`_

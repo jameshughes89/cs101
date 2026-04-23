@@ -309,4 +309,4 @@ For Next Topic
 ==============
 
 * Download and look through the :download:`Circle class <../../../src/circle.py>`
-* Read `Chapter 16 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html>`_
+* Read `Chapter 16 of the text <https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_II.html>`_

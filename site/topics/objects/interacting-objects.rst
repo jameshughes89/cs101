@@ -372,4 +372,4 @@ Testing
 For Next Topic
 ==============
 
-* Read `Chapter 21 of the text <http://openbookproject.net/thinkcs/python/english3e/even_more_oop.html>`_
+* Read `Chapter 21 of the text <https://openbookproject.net/thinkcs/python/english3e/even_more_oop.html>`_
