@@ -23,7 +23,7 @@ Input and Changing Types
 * The string between the parentheses is what will be displayed to the user, but it is entirely optional
 
     * ``my_inputted_value = input()``
-    * If you do leave it blank, nothing will be displayed to the user (this is what we will want when using Kattis)
+    * If you do leave it blank, nothing will be displayed to the user (this is what we want when using Kattis in lab)
 
 .. admonition:: Activity
     :class: activity
@@ -38,7 +38,7 @@ Input and Changing Types
 The Type Of The Entered Value
 =============================
 
-* Whenever data is input like this, Python will always treat the data is a string
+* Whenever data is input like this, Python will always treat the data as a string
 
     * If you enter ``Hello world``, the value of ``my_inputted_value`` would be the string ``"Hello world"``
     * If you enter ``1``, the value of ``my_inputted_value`` would be the string ``"1"``
@@ -50,7 +50,7 @@ The Type Of The Entered Value
 .. code-block:: python
     :linenos:
 
-    my_value_as_string = input("give me a value: ")
+    my_value_as_string = input("Enter a value: ")
     my_value_as_int = int(my_value_as_string)
 
 * In the above example, on the first line of code, if we enter ``1`` as the input, the value of ``my_value_as_string`` will be the string ``"1"``
@@ -67,7 +67,7 @@ The Type Of The Entered Value
 Changing Types
 ==============
 
-* It is possible to use the same idea to convert the types of values, not just when inputting
+* It is possible to use the same idea to convert the types of values, not just when reading input
 * For example, if I had the integer ``1`` stored in ``some_integer``, but wanted it to be a string, I could write ``str(some_integer)``
 
 * ``int`` is used to convert something to an integer
