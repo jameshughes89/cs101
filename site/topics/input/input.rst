@@ -35,15 +35,15 @@ Input and Changing Types
         * **Hint:** ``type``
 
 
-The Type Of The Inputted Value
-==============================
+The Type Of The Entered Value
+=============================
 
-* Whenever data is input like this, Python will always assume the data is a string
+* Whenever data is input like this, Python will always treat the data is a string
 
     * If you enter ``Hello world``, the value of ``my_inputted_value`` would be the string ``"Hello world"``
     * If you enter ``1``, the value of ``my_inputted_value`` would be the string ``"1"``
 
-* This may be fine in some cases, but if we want to input numbers for the purpose of doing some math, this is a problem
+* This may be fine in some cases, but if we want to do some math with the entered values, we do not have numbers
 * Fortunately, there is a simple way to *try* to change the type of the value
 * For example, if we want to enter the integer ``1``
 
