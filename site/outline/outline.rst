@@ -406,7 +406,7 @@ There are various support services around campus, including:
 #. Student Life: `Student Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services-department>`_
 #. Office of the Registrar: `Registrar’s Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/registrars-office>`_
 #. Health & Counselling Centre: `Health and Counselling Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/support-services/health-counselling>`_
-#. Academic Advising: `Academic Advising | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/academic-advising>`_
+#. Academic Advising: `Academic Advising | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/academic-services/academic-advising>`_
 #. Academic Success Centre: `Academic Success Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/academic-services/academic-success-centre>`_
 #. Student Career Centre: `Student Career Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/support-services/student-career-centre>`_
 #. Office of Internationalization: `Internationalization | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/international>`_
@@ -422,7 +422,7 @@ and wellness a priority. StFX provides several on-campus health-related services
 engage in healthy living while pursuing your degree. For example, to support physical activity, all students receive
 membership to the StFX Athletics & Recreation Centre as part of their registration fees. Please visit the Athletics &
 Recreation website at
-`Campus Recreation | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/campus-life/campus-recreation>`_
+`Campus Recreation | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/recreation-active-living>`_
 for opportunities including intramural sports. Numerous cultural events are offered throughout the year. Please check
 out the Department of Music web page
 `Music | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/programs-courses/programs/music>`_,
