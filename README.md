@@ -41,6 +41,12 @@ pip install -e .
 format # just type this
 ```
 
+# Link Checker
+
+```sh
+links # just type this
+```
+
 # Unit Tests
 
 ```sh
