@@ -267,6 +267,8 @@ Haskell
     linear_search :: Eq a => [a] -> a -> Bool
     linear_search [] _ = False
     linear_search (x:xs) y = x==y || linear_search xs y
+
+
 For Next Topic
 ==============
 
