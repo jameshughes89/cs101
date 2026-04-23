@@ -351,7 +351,7 @@ student-centered program of support. Located in Room 108 of the Angus L MacDonal
 meet with program staff to discuss options for support. Deadline for registering with the Center is two weeks prior to
 the end of classes each semester and 3 Business Days’ notice is required for booking all accommodated tests and exams.
 To book an appointment please use the following link:
-`Accessible Learning | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/accessible-learning>`_.
+`Accessible Learning | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/academic-services/accessible-learning>`_.
 
 * Phone --- 902 867 5349
 * Email --- tramble@stfx.ca
@@ -395,7 +395,7 @@ differences of race, culture, religion, politics, sexual orientation, gender, ge
 rosters are provided to the instructor with the student's legal name. I will gladly honor your request to address you by
 an alternate name or gender pronoun. Please advise me of this preference early in the semester so that I may make
 appropriate changes to my records. See policies at
-`Policies | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/human-rights-equity/policies>`_.
+`Policies | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/support-services/human-rights-equity/policies>`_.
 
 
 Support Services
@@ -403,13 +403,13 @@ Support Services
 
 There are various support services around campus, including:
 
-#. Student Life: `Student Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services>`_
+#. Student Life: `Student Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services-department>`_
 #. Office of the Registrar: `Registrar’s Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/registrars-office>`_
-#. Health & Counselling Centre: `Health and Counselling Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/health-counselling-centre>`_
+#. Health & Counselling Centre: `Health and Counselling Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/support-services/health-counselling>`_
 #. Academic Advising: `Academic Advising | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/academic-advising>`_
-#. Academic Success Centre: `Academic Success Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services/academic-success-centre>`_
-#. Student Career Centre: `Student Career Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/student-services/student-career-centre>`_
-#. Office of Internationalization: `Internationalization | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/internationalization>`_
+#. Academic Success Centre: `Academic Success Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/academic-services/academic-success-centre>`_
+#. Student Career Centre: `Student Career Centre | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/support-services/student-career-centre>`_
+#. Office of Internationalization: `Internationalization | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/international>`_
 #. Financial Aid Office: `Financial Aid Office | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/applications-admissions/financial-support/financial-aid-office>`_
 
 
@@ -428,11 +428,11 @@ out the Department of Music web page
 `Music | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/programs-courses/programs/music>`_,
 the StFX Art Gallery (https://www.stfx.ca/art-gallery) or
 Theatre Antigonish
-`(Theatre Antigonish | St. Francis Xavier University) (stfx.ca) <https://www.stfx.ca/about/theater-antigonish>`_
+`(Theatre Antigonish | St. Francis Xavier University) (stfx.ca) <https://www.stfx.ca/about/theatre-antigonish>`_
 for various events.
 
 Further information regarding health and wellness-related services available to students may be found at
-`Wellness@X | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/human-resources/wellnessx>`_.
+`Wellness@X | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/people-culture/wellnessx>`_.
 If you are in emotional or mental distress please refer to the various mental
 health supports provided through
-`Health & Counselling at Health and Counselling Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-life-support/health-counselling/services>`_.
+`Health & Counselling at Health and Counselling Services | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/support-services/health-counselling/medical-health>`_.
