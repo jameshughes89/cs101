@@ -57,7 +57,7 @@ The Type Of The Entered Value
 * On the next line of code we are then taking the value of ``my_value_as_string`` (``"1"``) and converting it to an integer with ``int(my_value_as_string)``
 * After everything, the value of ``my_value_as_int`` will be the integer ``1``
 
-* Writing ``my_value_as_int = int(input("give me a value: "))`` would achieve the same thing, but on one line of code
+* Writing ``my_value_as_int = int(input("Enter a value: "))`` would achieve the same thing, but on one line of code
 
     * Removing the middleman (``my_value_as_string``)
     * However, this does have one line of code doing multiple things
