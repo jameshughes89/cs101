@@ -28,8 +28,8 @@ Input and Changing Types
 .. admonition:: Activity
     :class: activity
 
-    #. Read in some value into the computer.
-    #. Print out the value you inputted.
+    #. Read in some value from the user.
+    #. Print out the value you entered.
     #. What is the type of the value? How can I test this?
 
         * **Hint:** ``type``
