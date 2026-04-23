@@ -14,58 +14,73 @@ Input and Changing Types
 .. code-block:: python
     :linenos:
 
-    my_inputted_value = input("give me a value: ")
+    my_inputted_value = input("Enter a value: ")
 
-* If you run the above code, you will see ``give me a value:``
+* If you run the above code, you will see ``Enter a value:``
 * Python will wait for the user to enter the value they want
 * Once the user enters the value, it will be stored in the ``my_inputted_value`` variable
 
 * The string between the parentheses is what will be displayed to the user, but it is entirely optional
 
     * ``my_inputted_value = input()``
-    * If you do leave it blank, nothing will be displayed to the user (this is what we will want when using Kattis)
+    * If you do leave it blank, nothing will be displayed to the user (this is what we want when using Kattis in lab)
 
 .. admonition:: Activity
     :class: activity
 
-    #. Read in some value into the computer.
-    #. Print out the value you inputted.
+    #. Read in some value from the user.
+    #. Print out the value you entered.
     #. What is the type of the value? How can I test this?
 
         * **Hint:** ``type``
 
 
-The Type Of The Inputted Value
-==============================
+The Type Of The Entered Value
+=============================
 
-* Whenever data is input like this, Python will always assume the data is a string
+* Whenever data is input like this, Python will always treat the data as a string
 
     * If you enter ``Hello world``, the value of ``my_inputted_value`` would be the string ``"Hello world"``
     * If you enter ``1``, the value of ``my_inputted_value`` would be the string ``"1"``
 
-* This may be fine in some cases, but if we want to input numbers for the purpose of doing some math, this is a problem
+* This may be fine in some cases, but if we want to do some math with the entered values, we do not have numbers
+
+.. code-block:: python
+    :linenos:
+
+    first = input("Enter a number: ")           # Enter 1
+    second = input("Enter another number: ")    # Enter 2
+    print(first + second)                       # Results in 12 (not 3)
+
+* If you enter ``1`` and ``2``, you might expect ``3``, but you will get ``12``
+
+    * Since both values are strings, ``+`` concatenates the strings
+    * Remember, the ``+`` operator is context sensitive
+
 * Fortunately, there is a simple way to *try* to change the type of the value
 * For example, if we want to enter the integer ``1``
 
 .. code-block:: python
     :linenos:
 
-    my_value_as_string = input("give me a value: ")
+    my_value_as_string = input("Enter a value: ")
     my_value_as_int = int(my_value_as_string)
 
 * In the above example, on the first line of code, if we enter ``1`` as the input, the value of ``my_value_as_string`` will be the string ``"1"``
-* On the next line of code we are then taking the value of ``my_value_as_string`` (``"1"``) and converting it to an integer with ``int(...)``
+* On the next line of code we are then taking the value of ``my_value_as_string`` (``"1"``) and converting it to an integer with ``int(my_value_as_string)``
 * After everything, the value of ``my_value_as_int`` will be the integer ``1``
 
-* Note that writing ``my_value_as_int = int(input("give me a value: "))`` would achieve the same thing, but on one line of code
+* Writing ``my_value_as_int = int(input("Enter a value: "))`` would achieve the same thing, but on one line of code
 
     * Removing the middleman (``my_value_as_string``)
+    * However, this does have one line of code doing multiple things
+    * There is something nice about having one line of code do one thing
 
 
 Changing Types
 ==============
 
-* It is possible to use the same idea to convert the types of values, not just when inputting
+* It is possible to use the same idea to convert the types of values, not just when reading input
 * For example, if I had the integer ``1`` stored in ``some_integer``, but wanted it to be a string, I could write ``str(some_integer)``
 
 * ``int`` is used to convert something to an integer
@@ -74,10 +89,10 @@ Changing Types
 
 * However, this assumes that the value whose type is being changed can actually be changed to that type
 * Python is happy to change the type of the integer ``1`` to a float or a string
-* But if I try to change the type of ``"Hello world"`` to an integer, that's going to be a problem
+* But, if I try to change the type of the string ``"Hello world"`` to an integer, we run into a problem
 
     * ``int("Hello world")`` will cause an error
-    * Python will even say ``ValueError: invalid literal for int() with base 10: 'Hello world'``
+    * Python will say ``ValueError: invalid literal for int() with base 10: 'Hello world'``
 
 
 .. admonition:: Activity
