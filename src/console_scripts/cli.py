@@ -1,5 +1,6 @@
 import subprocess
 
+
 def run_formatters():
     for tool in ["isort .", "black .", "mdformat ."]:
         print(f"running `{tool}`")

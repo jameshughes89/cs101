@@ -5,7 +5,7 @@ class Country:
     """
 
     def __init__(self, name: str, continent: str, population: int, area: float):
-        pass # Delete me and write your code here
+        pass  # Delete me and write your code here
 
     def population_density(self) -> float:
         """
@@ -15,7 +15,6 @@ class Country:
         :return: The population density of the Country.
         :rtype: float.
         """
-
 
     def __eq__(self, other: "Country") -> bool:
         """
@@ -28,7 +27,6 @@ class Country:
         :rtype: boolean.
         """
 
-
     def __repr__(self) -> str:
         """
         Returns a string representation of the Country object. The string is "name, continent, population, area".
@@ -36,6 +34,7 @@ class Country:
         :return: String representation of the Country object of the form "name, continent, population, area".
         :rtype: String.
         """
+
 
 import unittest
 
@@ -89,6 +88,7 @@ class CountryTest(unittest.TestCase):
         country = Country("Name", "Continent", 123456789, 987654321)
         self.assertEqual("Country(name=Name, continent=Continent, population=123456789, area=987654321)", str(country))
 
+
 class CountryCatalogue:
     """
     Class for managing a collection of Country Objects. The class maintains a list of the Country objects and provides
@@ -109,7 +109,6 @@ class CountryCatalogue:
         :rtype: integer.
         """
 
-
     def contains(self, country: Country) -> bool:
         """
         Check if a Country with the provided values exists within the collection. Returns True if it does and False
@@ -121,7 +120,6 @@ class CountryCatalogue:
         :rtype: bool.
         """
 
-
     def add(self, country: Country) -> None:
         """
         Add the provided Country object to the Country Catalogue.
@@ -129,7 +127,6 @@ class CountryCatalogue:
         :param country: Country object to add to the collection.
         :type country: Country object.
         """
-
 
     def remove(self, country: Country) -> Country:
         """
@@ -141,7 +138,6 @@ class CountryCatalogue:
         :type country: Country object.
         """
 
-
     def country_with_largest_population_density(self) -> Country:
         """
         Find and return the Country object with the largest population density. A reference to the Country object with
@@ -152,7 +148,6 @@ class CountryCatalogue:
         :rtype: Country.
         """
 
-
     def country_with_smallest_population_density(self) -> Country:
         """
         Find and return the Country object with the smallest population density. A reference to the Country object with
@@ -162,7 +157,6 @@ class CountryCatalogue:
         :return: Country object with the smallest population density.
         :rtype: Country.
         """
-
 
     def filter_countries_by_population_density(self, low_limit: float, high_limit: float) -> "CountryCatalogue":
         """
@@ -180,7 +174,6 @@ class CountryCatalogue:
         :rtype: CountryCatalogue
         """
 
-
     def most_populous_continent(self) -> str:
         """
         Find and return the name of the continent with the largest population based on the Country objects within the
@@ -191,7 +184,6 @@ class CountryCatalogue:
         :return: Name of the continent with the largest population.
         :rtype: str.
         """
-
 
     def __getitem__(self, item: int) -> Country:
         pass  # Delete me and write your code here
@@ -204,6 +196,7 @@ class CountryCatalogue:
 
     def __repr__(self) -> str:
         pass  # Delete me and write your code here
+
 
 import unittest
 
@@ -671,8 +664,9 @@ class CountryCatalogueTest(unittest.TestCase):
             with self.subTest(country_a=country_a, country_b=country_b):
                 self.assertNotEqual(country_a, country_b)
 
+
 # Run this cell to run all unit tests
-unittest.main(argv=[''], verbosity=2, exit=False)
+unittest.main(argv=[""], verbosity=2, exit=False)
 
 # NAME:
 # ST-NUMBER:
