@@ -13,7 +13,7 @@ line-length = 120
 target-version = ["py312"]
 
 [tool.codespell]
-ignore-words-list = "faktor, trik, borken"
+ignore-words-list = "faktor,trik,borken"
 skip = "site/topics/fileIO/airports.csv"
 
 [tool.flake8]
