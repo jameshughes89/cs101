@@ -54,12 +54,14 @@ The Type Of The Inputted Value
     my_value_as_int = int(my_value_as_string)
 
 * In the above example, on the first line of code, if we enter ``1`` as the input, the value of ``my_value_as_string`` will be the string ``"1"``
-* On the next line of code we are then taking the value of ``my_value_as_string`` (``"1"``) and converting it to an integer with ``int(...)``
+* On the next line of code we are then taking the value of ``my_value_as_string`` (``"1"``) and converting it to an integer with ``int(my_value_as_string)``
 * After everything, the value of ``my_value_as_int`` will be the integer ``1``
 
-* Note that writing ``my_value_as_int = int(input("give me a value: "))`` would achieve the same thing, but on one line of code
+* Writing ``my_value_as_int = int(input("give me a value: "))`` would achieve the same thing, but on one line of code
 
     * Removing the middleman (``my_value_as_string``)
+    * However, this does have one line of code doing multiple things
+    * There is something nice about having one line of code do one thing
 
 
 Changing Types
