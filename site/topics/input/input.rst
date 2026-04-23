@@ -14,9 +14,9 @@ Input and Changing Types
 .. code-block:: python
     :linenos:
 
-    my_inputted_value = input("give me a value: ")
+    my_inputted_value = input("Enter a value: ")
 
-* If you run the above code, you will see ``give me a value:``
+* If you run the above code, you will see ``Enter a value:``
 * Python will wait for the user to enter the value they want
 * Once the user enters the value, it will be stored in the ``my_inputted_value`` variable
 
