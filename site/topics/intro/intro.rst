@@ -206,7 +206,7 @@ Can I Write A Program Now?
 * If you have gone through :doc:`get set up for CSCI 161 </getting-set/getting-set>`, then yes
 * Go to `Google Colab <https://colab.research.google.com/>`_ and make your "Hello, world!" program
 
-    * `"Hello, world!" <http://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language
+    * `"Hello, world!" <https://en.wikipedia.org/wiki/Hello_world_program>`_ is traditionally the first program one writes in a new language
 
 .. code-block:: python
     :linenos:
@@ -229,5 +229,5 @@ For Next Topic
 ==============
 
 * If you have not yet, :doc:`go through set up for CSCI 161 </getting-set/getting-set>`
-* `Read Chapter 1 of the text <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html>`_
-* `Read Sections 2.1-2.5 of Chapter 2 of the text <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_
+* `Read Chapter 1 of the text <https://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html>`_
+* `Read Sections 2.1-2.5 of Chapter 2 of the text <https://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html>`_

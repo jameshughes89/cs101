@@ -14,14 +14,14 @@ Hello World
 Textbook Exercises
 ==================
 
-#. `Chapter 1 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html#exercises>`_
+#. `Chapter 1 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/way_of_the_program.html#exercises>`_
 
     * Although the exercises mention "the interpreter", you are to use Google Colab
     * 2
     * 4
 
 
-#. `Chapter 2 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
+#. `Chapter 2 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/variables_expressions_statements.html#exercises>`_
 
     * 1
     * 5

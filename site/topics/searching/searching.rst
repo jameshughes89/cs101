@@ -270,5 +270,5 @@ Haskell
 For Next Topic
 ==============
 
-* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
+* Read `Chapter 14 of the text <https://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
 

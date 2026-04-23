@@ -288,4 +288,4 @@ Rubber Duck Debugging
 For Next Topic
 ==============
 
-* Read `Appendix A of the text <http://openbookproject.net/thinkcs/python/english3e/app_a.html>`_
+* Read `Appendix A of the text <https://openbookproject.net/thinkcs/python/english3e/app_a.html>`_

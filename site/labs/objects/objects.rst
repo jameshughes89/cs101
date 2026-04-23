@@ -20,7 +20,7 @@ Textbook Exercises
     * It will provide a nice template for all the classes you will make in this lab
 
 
-#. `Chapter 15 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html#exercises>`_
+#. `Chapter 15 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html#exercises>`_
 
     * Create the ``Point`` class described in the chapter
 

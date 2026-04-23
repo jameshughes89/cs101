@@ -14,14 +14,14 @@ Loops & Linear Search
 Textbook Exercises
 ==================
 
-#. `Chapter 7 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/iteration.html#exercises>`_
+#. `Chapter 7 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/iteration.html#exercises>`_
 
     * 9 `What is a "triangle number"? <https://en.wikipedia.org/wiki/Triangular_number>`_ (no ``assert`` test for this)
     * 14 (use ``assert`` to test instead of their ``test`` function)
     * 15 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
 
 
-#. `Chapter 8 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/strings.html#exercises>`_
+#. `Chapter 8 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/strings.html#exercises>`_
 
     * 3 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended
     * 7 (use ``assert`` to test instead of their ``test`` function) --- not required, but recommended

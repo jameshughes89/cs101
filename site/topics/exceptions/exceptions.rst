@@ -221,5 +221,5 @@ Why Care?
 For Next Topic
 ==============
 
-* Read `Chapter 15 of the text <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
+* Read `Chapter 15 of the text <https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
 

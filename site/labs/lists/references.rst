@@ -19,7 +19,7 @@ Textbook Exercises
     * Use ``assert`` to test instead of their ``test`` function
 
 
-#. `Chapter 14 exercise(s) <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html#exercises>`_
+#. `Chapter 14 exercise(s) <https://openbookproject.net/thinkcs/python/english3e/list_algorithms.html#exercises>`_
 
     * 2 --- Note the portions of solutions within the chapter text
     * 3

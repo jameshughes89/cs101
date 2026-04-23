@@ -272,6 +272,6 @@ Looping Over Indices and Enumerate
 
 For Next Topic
 ==============
-* Read `Chapter 14 of the text <http://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
-* Read `Chapter 15 of the text (only lightly though) <http://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
+* Read `Chapter 14 of the text <https://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
+* Read `Chapter 15 of the text (only lightly though) <https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
 

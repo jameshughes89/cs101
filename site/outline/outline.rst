@@ -73,7 +73,7 @@ Textbook and Lecture Notes
 
 Lecture notes will be posted to the website. Assignments will be submitted through Moodle.
 
-The textbook for this class is `FREE <http://openbookproject.net/thinkcs/python/english3e/>`_!
+The textbook for this class is `FREE <https://openbookproject.net/thinkcs/python/english3e/>`_!
 
 
 

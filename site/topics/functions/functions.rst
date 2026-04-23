@@ -584,4 +584,4 @@ Docstring
 For Next Topic
 ==============
 
-* Read `Chapter 5 of the text <http://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
+* Read `Chapter 5 of the text <https://openbookproject.net/thinkcs/python/english3e/conditionals.html>`_
