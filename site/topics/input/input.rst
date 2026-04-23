@@ -76,10 +76,10 @@ Changing Types
 
 * However, this assumes that the value whose type is being changed can actually be changed to that type
 * Python is happy to change the type of the integer ``1`` to a float or a string
-* But if I try to change the type of ``"Hello world"`` to an integer, that's going to be a problem
+* However, if I try to change the type of the string ``"Hello world"`` to an integer, we run into a problem
 
     * ``int("Hello world")`` will cause an error
-    * Python will even say ``ValueError: invalid literal for int() with base 10: 'Hello world'``
+    * Python will say ``ValueError: invalid literal for int() with base 10: 'Hello world'``
 
 
 .. admonition:: Activity
