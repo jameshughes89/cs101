@@ -79,7 +79,7 @@ Writing Tests
 Square of Sums Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def square_of_sum(a, b):
@@ -166,7 +166,7 @@ Square of Sums Example Tests
 Celsius to Fahrenheit Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def celsius_to_fahrenheit(temp_in_celsius: float) -> float:
@@ -240,7 +240,7 @@ Type Hints
 * Unfortunately, when types get mixed up, we can end up with some serious bugs in our code
 * Try running the following code and see if it acts the way you expect
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def add_together(a, b):
@@ -272,7 +272,7 @@ Setting Type Hints
 * We do this with *type hints*
 * Below is the ``add_together`` function with type hints included
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
     :emphasize-lines: 1,5
 
@@ -316,7 +316,7 @@ What You Don't Get
 
 * In other words, the inclusion of type hints would not actually address the original problem
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def add_together(a: float, b: float) -> float:
