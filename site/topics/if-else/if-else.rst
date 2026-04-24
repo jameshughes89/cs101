@@ -19,7 +19,7 @@ Conditional Expressions
     * How to use Boolean operators
     * How to use comparison operators
 
-* But Booleans allow us to do a lot more than just evaluate an expression to ``True``/``False``
+* But Boolean expressions are helpful for more than just evaluating to ``True``/``False`` values
 * Consider ``smush`` from the above activity
 * We know how to *ask* if ``a_number`` is positive
 
@@ -200,9 +200,9 @@ Alternative Execution
         do_something_else()
 
 
-* The two examples above will effectively do the same thing, but the 2nd is nicer
+* The two examples above will effectively do the same thing, but the second is nicer
 
-    * Write less
+    * Less code to write
     * Intuitive and easy to read/understand
     * Eliminate potential bugs
 
@@ -304,12 +304,12 @@ Exclusive Alternatives
             letter_grade = "F"
         return letter_grade
 
-* The above example ``letter_grade_broken`` may be one of the first ideas you come up with, but unfortunately it has a problem
+* The above ``letter_grade_broken`` has a subtle problem
 * If we run ``assert "A+" == letter_grade_broken(99)``
 
     * ``letter_grade_broken(99)`` would actually return ``"D"``
 
-* The trick to understanding the problem is to take our time and look at the code
+* To understand the problem, follow the execution carefully
 
     * Call ``letter_grade_broken(99)``
     * ``percent_grade`` is assigned the value ``99``
@@ -348,7 +348,10 @@ Exclusive Alternatives
     * Can be read as *else, if...*
 
 * These allow us to have at most one of the code blocks in the chain of conditions to run
-* In other words, as soon as one of the ``if``\s is true, all other ``if``\s are skipped and the program continues running after the ``else``
+
+    * As soon as one of the ``if``\s is true, all other ``if``\s are skipped
+    * The program continues after the ``if/elif/else`` chain
+
 * When using ``elif``\s, it's good practice to end with a final ``else``
 
 .. code-block:: python
