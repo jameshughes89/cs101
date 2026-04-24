@@ -578,17 +578,12 @@ Docstring
 
 * This may feel like a lot of work, especially with such a simple function in the above example
 * But having these describing the functions makes it easier for anyone looking at your code
+* Over time, you will appreciate clear comments and docstrings
 
-    * `This includes yourself one weeks from now <https://i.redd.it/p172loj7q7j31.jpg>`_
+    * Especially when returning to code that you have not touched in a while
 
-* Trust me when I say, there will be a time in your life where you regret not writing comments/docstrings
+* Get into the habit of writing clear, descriptive, and brief docstrings
 
-    * `And when that time comes, I want you to remember that I warned you <https://i.redd.it/b9e4xbeg40151.jpg>`_
-
-
-    .. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eD1iff-zLLo" frameborder="0" allowfullscreen></iframe>
 
 For Next Topic
 ==============
