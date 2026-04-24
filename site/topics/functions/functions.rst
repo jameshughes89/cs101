@@ -250,30 +250,18 @@ Execution Flow
     fahrenheit = celsius_to_fahrenheit(celsius)
     print(fahrenheit)
 
-    celsius = 32
-    fahrenheit = celsius_to_fahrenheit(celsius)
-    print(fahrenheit)
 
-
-* In the above example, the program starts running at line 1, however Python notes that this is a function definition
-
-    * It is not *called* yet --- it does not run yet
-
-* Python takes note of the function and knows that it exists
-* The first line to get executed in this program is line 6 where the value of ``24`` is assigned to ``celsius``
-* Line 7 makes a call to the function ``celsius_to_fahrenheit``, and so the execution jumps to line 1
-* The program will run the whole function (lines 1 -- 4) and return the value to where it was called (line 7) and the value is stored in the variable ``fahrenheit``
+* The program starts at line 1 --- Python notes it's a function *definition* and does not run the function yet
+* The first statement to execute is line 6, where the value of ``24`` is assigned to ``celsius``
+* Line 7 calls the function ``celsius_to_fahrenheit``, jumping execution into the function defined on line 1
+* The function runs (lines 1 -- 4) and returns a value back to line 7, where it is stored in ``fahrenheit``
 
     * Functions end when there are no more lines to execute, or a ``return`` statement is hit
 
         * Code after ``return`` within a function will never run
 
 * Line 8 prints out the value of ``fahrenheit``
-* Line 10 assigns a value to a variable
-* Line 11 calls the function ``celsius_to_fahrenheit`` again, which means our execution jumps to line 1 again
-* Once the function is complete (lines 1 -- 4), the value is returned to line 11 and the returned value is assigned to ``fahrenheit``
-* Line 12 prints out the value of ``fahrenheit``
-* The program is now complete
+
 
 .. note::
 
