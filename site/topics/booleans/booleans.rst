@@ -227,11 +227,9 @@ Evaluating Example Expressions
 * Notice that once we evaluated ``(14 > 0)`` as ``True``, we really didn't need to finish evaluating the remainder of the expression
 * This is because, as long as one of the operands for an ``or`` is ``True``, we know the whole expression is ``True``
 
-.. warning::
+.. note::
 
-    If you find yourself writing long and complex boolean expressions, it's worth stepping back --- there's usually a
-    cleaner way. Even with a long list of conditions needing to be checked, there are ways to make them more manageable
-    and easier to follow.
+    The above examples are intentionally complex. In general, we avoid writing long and complex boolean expressions.
 
 
 For Next Topic
