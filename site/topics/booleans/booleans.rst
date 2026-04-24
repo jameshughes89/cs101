@@ -74,8 +74,8 @@ Truth Table
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
-Boolean Type
-============
+Boolean Type and Values
+=======================
 
 * `Booleans <https://en.wikipedia.org/wiki/George_Boole>`_ are a type in Python, like integers, strings, and floats
 
@@ -85,6 +85,11 @@ Boolean Type
 
     * ``True``
     * ``False``
+
+* Like other types of values, they can be assigned to variables
+
+    * ``some_boolean = True``
+    * ``some_other_boolean = False``
 
 
 Boolean Operators
@@ -109,6 +114,17 @@ Boolean Operators
     * It takes two *Boolean* operands
     * It produces a new Boolean as a result
     * e.g., ``True and False`` is ``False``
+
+
+.. code-block:: python
+    :linenos:
+
+    is_raining = True
+    is_cold = False
+
+    print(is_raining and is_cold)   # False
+    print(is_raining or is_cold)    # True
+    print(not is_raining)           # False
 
 
 Comparison Operators
