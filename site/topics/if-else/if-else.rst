@@ -5,9 +5,11 @@ If/Else
 .. admonition:: Activity
     :class: activity
 
-    Using only what we have learned so far, write a function ``smush(a_number)`` that checks if the number is
+    Using only what we have learned so far, try to write a function ``smush(a_number)`` that checks if the number is
     positive or negative. If ``a_number`` is positive, the function will return half the value of ``a_number``. If
     the number is not positive, simply return ``a_number``.
+
+    You may quickly discover that you can't quite get there yet.
 
 
 Conditional Expressions
