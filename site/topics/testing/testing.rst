@@ -244,14 +244,14 @@ Type Hints
     :linenos:
 
     def add_together(a, b):
-      """
-      Calculate and return the sum of the two provided numbers.
+        """
+        Calculate and return the sum of the two provided numbers.
 
-      :param a: First number
-      :param b: Second number
-      :return: The sum of the two numbers
-      """
-      return a + b
+        :param a: First number
+        :param b: Second number
+        :return: The sum of the two numbers
+        """
+        return a + b
 
     x = input("First number: ")
     y = input("Second number: ")
@@ -277,15 +277,15 @@ Setting Type Hints
     :emphasize-lines: 1,5
 
     def add_together(a: float, b: float) -> float:
-      """
-      Calculate and return the sum of the two provided values.
+        """
+        Calculate and return the sum of the two provided values.
 
-      :rtype: float
-      :param a: First number
-      :param b: Second number
-      :return: The sum of the two numbers
-      """
-      return a + b
+        :rtype: float
+        :param a: First number
+        :param b: Second number
+        :return: The sum of the two numbers
+        """
+        return a + b
 
 
 * In the parameter list, each parameter's type is explicitly stated
@@ -320,15 +320,15 @@ What You Don't Get
     :linenos:
 
     def add_together(a: float, b: float) -> float:
-      """
-      Calculate and return the sum of the two provided values.
+        """
+        Calculate and return the sum of the two provided values.
 
-      :rtype: float
-      :param a: First number
-      :param b: Second number
-      :return: The sum of the two numbers
-      """
-      return a + b
+        :rtype: float
+        :param a: First number
+        :param b: Second number
+        :return: The sum of the two numbers
+        """
+        return a + b
 
     x = input("First number: ")
     y = input("Second number: ")
