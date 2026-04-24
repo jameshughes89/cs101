@@ -37,14 +37,18 @@ pip install -e .
 
 # Project CLI Scripts
 
-| Command  | Description                                            |
-|----------|--------------------------------------------------------|
-| `format` | Automatically format Python and Markdown files         |
-| `verify` | Check for code style, RST issues, and spelling errors  |
-| `links`  | Check  URLs in the site for broken or redirected links |
-| `test`   | Run the project unit tests                             | 
-| `site`   | Build the course website to `out/`                     |
+| Command  | Description                                           |
+| -------- | ----------------------------------------------------- |
+| `format` | Automatically format Python and Markdown files        |
+| `verify` | Check for code style, RST issues, and spelling errors |
+| `links`  | Check URLs in the site for broken or redirected links |
+| `site`   | Build the course website to `out/`                    |
 
+Run project unit tests with the following
+
+```sh
+python -m unittest # May need python3
+```
 
 # Contribute
 
