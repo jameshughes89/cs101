@@ -177,13 +177,15 @@ Composing Operators and Values
 Evaluating Example Expressions
 ------------------------------
 
-``(5 > 3) and (2 > 10)``
+``(5 > 3) and not (2 > 10)``
 
-``True and (2 > 10)``
+``True and not (2 > 10)``
 
-``True and False``
+``True and not False``
 
-``False``
+``True and True``
+
+``True``
 
 
 ``((17 + 2) < 18) or (17 != 18)``
