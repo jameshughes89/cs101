@@ -236,7 +236,7 @@ Type Hints
 
 * Python does a pretty good job at figuring out the types of data for us
 * However, it can only do so much, and at the end of the day it's going to follow the code that you write
-* Unfortunately, when types get mixed up, we can end up with some serious bugs in our code
+* Unfortunately, when types get mixed up, we can end up with unexpected behaviour
 * Try running the following code and see if it acts the way you expect
 
 .. code-block:: python
