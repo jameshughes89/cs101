@@ -114,7 +114,7 @@ Boolean Operators
 Comparison Operators
 --------------------
 
-* As you have probably noticed, asking ``True and False`` is not overly helpful as it is
+* Writing ``True and False`` isn't very useful on its own
 * Based on how we use this logic in real life, we need a way to evaluate statements into their Boolean values
 * For example, is it ``not`` *over 100 degrees Celsius outside*?
 
@@ -229,8 +229,8 @@ Evaluating Example Expressions
 
 .. warning::
 
-    If you find yourself writing long and complex boolean expressions, chances are you are doing something wrong. Even
-    if we have a long list of conditions you need to check in your program, there are ways to make them more manageable
+    If you find yourself writing long and complex boolean expressions, it's worth stepping back --- there's usually a
+    cleaner way. Even with a long list of conditions needing to be checked, there are ways to make them more manageable
     and easier to follow.
 
 
