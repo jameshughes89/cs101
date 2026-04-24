@@ -427,6 +427,43 @@ Nesting Conditionals
         print("Third Quadrant")
 
 
+ .. note::
+
+    If you find yourself writing long and complex conditional expressions, it's worth stepping back --- there's usually
+    a cleaner way. Even with a long list of conditions needing to be checked, there are ways to make them more
+    manageable and easier to follow.
+
+    #. Use nesting, like in the above example
+    #. Save sub-expressions
+
+        .. code-block:: python
+            :linenos:
+
+            # Hard to read at a glance
+            if a_number % 3 == 0 and a_number % 5 == 0 and a_number > 0:
+
+            # Clearer
+            divisible_by_three = a_number % 3 == 0
+            divisible_by_five = a_number % 5 == 0
+            is_positive = a_number > 0
+
+            if divisible_by_three and divisible_by_five and is_positive:
+                # Some Code
+
+
+    #. Extract condition into its own function
+
+        .. code-block:: python
+            :linenos:
+
+
+            def is_eligible(a_number):
+                return a_number % 3 == 0 and a_number % 5 == 0
+
+            if is_eligible(a_number):
+                # Some Code
+
+
 For Next Topic
 ==============
 
