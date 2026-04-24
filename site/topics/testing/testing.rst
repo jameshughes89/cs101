@@ -2,8 +2,8 @@
 Testing Your Code and Type Hints
 ********************************
 
-* Writing code is a big part of your job when programming
-* But testing and debugging your code is a bigger part
+* Writing code and ensuring it's correct go hand in hand
+* However, ensuring correctness often takes more time than you'd expect
 
 
 Testing
@@ -159,7 +159,6 @@ Square of Sums Example Tests
     * ``square_of_sum(-1, 1)``
 
 * Including these tests is not unreasonable, so maybe they should have been included
-* If you had included these cases in your tests, and perhaps some others, you would not be wrong
 * Testing can feel a lot more like an art than a science
 
 
@@ -188,7 +187,7 @@ Celsius to Fahrenheit Example Tests
     assert 23 == celsius_to_fahrenheit(-5)
     assert 86 == celsius_to_fahrenheit(30)
     # To address precision issues, we can look for a sufficiently small difference between the expected and actual
-    assert 0.001 >  abs(celsius_to_fahrenheit(32) - 89.6)
+    assert 0.001 > abs(celsius_to_fahrenheit(32) - 89.6)
     assert 0.001 > abs(celsius_to_fahrenheit(37.7777) - 100)
 
 
@@ -206,8 +205,8 @@ Celsius to Fahrenheit Example Tests
 
 .. note::
 
-    It needs to be re-emphasized how important testing is. Writing code is only a small part of programming, and if your
-    code isn't even correct, then you haven't solved the problem.
+    It needs to be re-emphasized how important testing is. Writing code is only a small part of programming. Correctness
+    is what matters most.
 
     There is an argument for thinking about your tests *before* actually writing the function. This gets you to really
     think about the problem to better prepare yourself for writing the code.
@@ -259,7 +258,7 @@ Type Hints
     print(result)
 
 
-* The trouble here is, chances are, one would expect the function to work on numbers
+* The trouble here is tha tone would naturally expect the function to work on numbers
 * But when we read the input, we didn't change the strings to numbers
 * So, although we intended for the function to add two numbers together, Python assumed you knew what you were doing when you provided strings as arguments to the function
 
