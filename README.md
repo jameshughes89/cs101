@@ -41,6 +41,12 @@ pip install -e .
 format # just type this
 ```
 
+# Verifier 
+
+```sh
+verify # just type this
+```
+
 # Link Checker
 
 ```sh
@@ -54,6 +60,10 @@ python -m unittest # May need python3
 ```
 
 # Build
+
+```sh
+site # just type this
+```
 
 ```sh
 sphinx-build -b html "$SOURCEDIR" "$OUTPUTDIR"
