@@ -329,8 +329,9 @@ Exclusive Alternatives
         * ``True``
 
     * Since the expression is evaluated to ``True``, the indented code is run
-    * Assign ``letter_grade`` the value ``"A"``
+    * Updates ``letter_grade`` the value ``"A"``
     * ...
+    * This continues for each ``if``
 
 * The trouble here is that we really only want one of these ``if`` code blocks to run
 
@@ -348,7 +349,7 @@ Exclusive Alternatives
 
 * These allow us to have at most one of the code blocks in the chain of conditions to run
 * In other words, as soon as one of the ``if``\s is true, all other ``if``\s are skipped and the program continues running after the ``else``
-* When using ``elif``\s, always end with a final ``else``
+* When using ``elif``\s, it's good practice to end with a final ``else``
 
 .. code-block:: python
     :linenos:
