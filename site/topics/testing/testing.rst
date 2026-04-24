@@ -27,6 +27,21 @@ Writing Tests
 -------------
 
 * For simplicity, we will keep our testing strategy to assertions about the data
+* We use the ``assert`` keyword
+
+    * ``assert`` takes a boolean expression
+    * If the expression evaluates to ``True``, nothing happens and the program continues
+    * If it's ``False``, Python raises an ``AssertionError``
+
+        * This is how we indicate that the test fails
+
+.. code-block:: python
+    :linenos:
+
+    assert 1 + 1 == 2   # True, nothing happens
+    assert 1 + 1 == 3   # False, raises AssertionError, program crashes
+
+
 * Let's say we want to test the absolute value function ``abs``
 
     * This function is provided to you by Python, so there is no actual need to test it here
@@ -258,7 +273,7 @@ Type Hints
     print(result)
 
 
-* The trouble here is tha tone would naturally expect the function to work on numbers
+* The trouble here is that one would naturally expect the function to work on numbers
 * But when we read the input, we didn't change the strings to numbers
 * So, although we intended for the function to add two numbers together, Python assumed you knew what you were doing when you provided strings as arguments to the function
 
