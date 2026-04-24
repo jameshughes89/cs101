@@ -290,7 +290,6 @@ Exclusive Alternatives
         :param percent_grade: A grade as a percent
         :return: Letter grade for the provided percentage
         """
-        letter_grade = ""
         if percent_grade >= 90:
             letter_grade = "A+"
         if percent_grade >= 80:
@@ -362,7 +361,6 @@ Exclusive Alternatives
         :param percent_grade: A grade as a percent
         :return: Letter grade for the provided percentage
         """
-        letter_grade = ""
         if percent_grade >= 90:
             letter_grade = "A+"
         elif percent_grade >= 80:
