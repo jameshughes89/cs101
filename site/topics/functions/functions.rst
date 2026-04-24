@@ -275,6 +275,12 @@ Execution Flow
 * Line 12 prints out the value of ``fahrenheit``
 * The program is now complete
 
+.. note::
+
+    A function must be defined before it can be called. If Python encounters a call to a function it has not yet seen,
+    it will raise a ``NameError``. This means function definitions generally appear near the top of a file, before the
+    code that calls them.
+
 
 Abstraction
 ===========
@@ -491,7 +497,7 @@ Import
 ------
 
 * Scope does not only apply to variables
-* Sometimes you need to access complex functions that already exist out there that you don't want to write
+* Sometimes you need to access complex functions that already exist that you don't want to write yourself
 * For example, you may have already found that you wanted to make use of the square root (``sqrt``) function
 * Fortunately the ``sqrt`` function exists in Python
 * Unfortunately, you don't get it by default when you start up Python
@@ -581,7 +587,7 @@ Docstring
 
     * Especially when returning to code that you have not touched in a while
 
-* Get into the habit of writing clear, descriptive, and brief docstrings
+* Get into the habit of writing clear and concise docstrings
 
 
 For Next Topic
