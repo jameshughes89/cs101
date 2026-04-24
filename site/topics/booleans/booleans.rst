@@ -7,7 +7,7 @@ Propositional Logic
     * This course focuses on introductory computer science --- ``True``
     * This topic is titled "Not Logic" --- ``False``
 
-* This is rather intuitive since you use this type of simple logic in everyday life to make decisions
+* You already use this type of logic in everyday life to make decisions
 * Additionally, you are already familiar with some *operators* we can use on these ``True``/``False`` statements
 
     * ``and``
@@ -58,12 +58,9 @@ Truth Table
     * Is it ``not`` *over 100 degrees Celsius outside*? --- ``True``
     * Is *the sky blue* ``and`` is it ``not`` *over 100 degrees Celsius outside*? --- ``True``
 
-
-* You may have observed that
-
-    * For ``and``, both statements must be ``True`` to produce ``True``, otherwise it is ``False``
-    * For ``or``, only one statement must be ``True`` to produce ``True``, otherwise it is ``False``
-    * ``not`` changes ``True`` -> ``False`` and ``False`` -> ``True``
+* For ``and``, both statements must be ``True`` to produce ``True``, otherwise it is ``False``
+* For ``or``, only one statement must be ``True`` to produce ``True``, otherwise it is ``False``
+* ``not`` changes ``True`` -> ``False`` and ``False`` -> ``True``
 
 .. note::
 
