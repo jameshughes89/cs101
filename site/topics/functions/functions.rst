@@ -337,9 +337,7 @@ Creating Abstraction
     Often there isn't even a *right* way to do it. Some may be better than others, but that does not mean that the
     others are not "correct".
 
-    The point is, however, that no one is expecting you to be an expert in this at this stage. Expect this to not be
-    trivial.
-
+    The point is, however, that no one is expecting you to be an expert in this at this stage. This comes with practice.
 
 Format of a Function
 ====================
