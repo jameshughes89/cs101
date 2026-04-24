@@ -27,6 +27,9 @@ Conditional Expressions
 
 * The key now is to tell Python that, ``if`` some condition is ``True``, do something
 
+    * ``if some_condition:``
+    * The code to be run if the condition is ``True```` is
+
 .. code-block:: python
     :linenos:
     :emphasize-lines: 11
