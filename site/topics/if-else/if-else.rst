@@ -9,7 +9,7 @@ If/Else
     positive or negative. If ``a_number`` is positive, the function will return half the value of ``a_number``. If
     the number is not positive, simply return ``a_number``.
 
-    You may quickly discover that you can't quite get there yet.
+    You may quickly discover that you can't quite get there yet. Think about *why*.
 
 
 Conditional Expressions
@@ -345,14 +345,14 @@ Exclusive Alternatives
     * Reverse the order of the ``if``\s
     * Check upper and lower bounds (e.g. ``percent_grade >= 80 and percent_grade < 90``)
 
-* But arguably the better way to address this is with ``elif``\s
+* The cleaner way to address this is with ``elif``\s
 
     * Can be read as *else, if...*
 
 * These allow us to have at most one of the code blocks in the chain of conditions to run
 
     * As soon as one of the ``if``\s is true, all other ``if``\s are skipped
-    * The program continues after the ``if/elif/else`` chain
+    * The program continues after the ``if``/``elif``/``else`` chain
 
 * When using ``elif``\s, it's good practice to end with a final ``else``
 
