@@ -22,6 +22,7 @@ Testing
     * If there are any *edge cases*
 
 
+
 Writing Tests
 -------------
 
@@ -85,7 +86,7 @@ Square of Sums Example Tests
         """
         Calculate the square of the sum of the two provided numbers.
         E.g.
-            square_if_sum(2, 3) -> 25
+            square_of_sum(2, 3) -> 25
 
         :param a: First number
         :param b: Second number
