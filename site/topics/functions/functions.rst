@@ -4,7 +4,7 @@ Functions
 
 
 * Script/program files are a nice way to organize many statements
-* However, eventually you will find yourself writing the same series of statements over and over
+* Eventually you will find yourself writing the same series of statements over and over
 
     * Or copying and pasting in your editor
 
@@ -62,7 +62,7 @@ Calling a Function
     * Maintainability --- If there is a bug in the function, you only need to change the function once
     * Readability --- ``celsius_to_fahrenheit`` is a lot easier to recognize when compared to something like ``(C * 9/5) + 32``
 
-* More importantly they *facilitate abstraction*
+* They also facilitate *abstraction*
 
     * More on this later
 
@@ -303,7 +303,7 @@ Abstraction
     Assume you start from a clean, empty, kitchen.
 
 
-* You have now created two different programs for making spaghetti at two different levels of abstraction, which version was easier?
+* You have now created two different programs for making spaghetti at two different levels of abstraction --- which version was easier?
 
 
 Making Use of Abstraction
@@ -357,7 +357,7 @@ Format of a Function
 
 
 * ``function_name`` is what the function is named
-* ``parameter_1, parameter_2`` , etc. are called the parameters, you can have as many as you like and call them almost whatever you want
+* ``parameter_1, parameter_2``, etc. are called the parameters, you can have as many as you like and call them almost whatever you want
 
     * You can think of these like variables
 
@@ -413,13 +413,13 @@ Composition
     * ``2704``
 
 * It is a good exercise to work these out by hand to help with your understanding
-* If you get confused tracking what is happening in the above example
+* If you get confused tracking what is happening in the above example, slow down, there is one trick --- follow the code
 
-    #. Slow down; there is one trick --- follow the code
     #. Functions get *evaluated*  and turned into values
     #. Find a function you can evaluate and evaluate it
     #. Cross out the function and replace it with the returned value
     #. Keep going
+
 
 .. admonition:: Activity
     :class: activity
@@ -495,8 +495,8 @@ Import
 * Sometimes you need to access complex functions that already exist out there and you don't want to write
 * For example, you may have already found that you wanted to make use of the square root (``sqrt``) function
 * Fortunately the ``sqrt`` function exists in Python
-* Unfortunately, you don't get it by default when you start up Python as it is not in scope
-* Fortunately, in spite of this, there is a rather simple way to access the function
+* Unfortunately, you don't get it by default when you start up Python
+* However, there is a rather simple way to access the function
 * We ``import`` the math module, which is where the function is stored
 
     * `Within the math module is many common mathematical functions you may want to use <https://docs.python.org/3/library/math.html>`_
