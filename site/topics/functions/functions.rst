@@ -484,6 +484,9 @@ Variable scope
     There is a way to set a variable to have *global* scope, which allows the variable to be accessed everywhere. This,
     however is generally bad practice and something we will not do.
 
+    Even without setting a variable to `global`, python allows you to access variables from outside functions, which can
+    cause issues and is something that should not be done.
+
 
 Import
 ------
