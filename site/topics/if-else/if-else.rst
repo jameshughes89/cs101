@@ -427,14 +427,14 @@ Nesting Conditionals
         print("Third Quadrant")
 
 
- .. note::
+.. note::
 
     If you find yourself writing long and complex conditional expressions, it's worth stepping back --- there's usually
     a cleaner way. Even with a long list of conditions needing to be checked, there are ways to make them more
     manageable and easier to follow.
 
     #. Use nesting, like in the above example
-    #. Save sub-expressions
+    #. Save sub-expression results
 
         .. code-block:: python
             :linenos:
