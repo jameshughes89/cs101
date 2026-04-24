@@ -42,22 +42,9 @@ pip install -e .
 | `format` | Automatically format Python and Markdown files         |
 | `verify` | Check for code style, RST issues, and spelling errors  |
 | `links`  | Check  URLs in the site for broken or redirected links |
+| `test`   | Run the project unit tests                             | 
 | `site`   | Build the course website to `out/`                     |
-----------------------------------------------------------------------
 
-Alternatively, use `sphinx-build` directly to specify the build type and directories.
-
-```sh
-sphinx-build -b html "$SOURCEDIR" "$OUTPUTDIR"
-```
-
-# Unit Tests
-
-Runs the project unit tests.
-
-```sh
-python -m unittest # May need python3
-```
 
 # Contribute
 
