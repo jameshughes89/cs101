@@ -444,6 +444,9 @@ Variable scope
         return temp_in_fahrenheit
 
 * With the ``celsius_to_fahrenheit`` function, the variables ``temp_in_celsius``, ``partial_conversion``, and ``temp_in_fahrenheit`` are local
+
+    * Note that the function parameter ``temp_in_celsius`` is included here too
+
 * If I were to call the function and then later try to access the ``partial_conversion`` variable, I would have a problem
 
 .. code-block:: python
