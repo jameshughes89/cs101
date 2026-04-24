@@ -35,28 +35,20 @@ python3 -m venv --clear --prompt cs101 venv
 pip install -e .
 ```
 
-# Formatter
+# Project CLI Scripts
 
-Automatically format Python and Markdown files.
+| Command  | Description                                            |
+|----------|--------------------------------------------------------|
+| `format` | Automatically format Python and Markdown files         |
+| `verify` | Check for code style, RST issues, and spelling errors  |
+| `links`  | Check  URLs in the site for broken or redirected links |
+| `site`   | Build the course website to `out/`                     |
+----------------------------------------------------------------------
 
-```sh
-format # just type this
-```
-
-# Verifier
-
-Checks for code style, RST issues, and spelling errors.
-
-```sh
-verify # just type this
-```
-
-# Link Checker
-
-Checks all URLs in the site for broken or redirected links.
+Alternatively, use `sphinx-build` directly to specify the build type and directories.
 
 ```sh
-links # just type this
+sphinx-build -b html "$SOURCEDIR" "$OUTPUTDIR"
 ```
 
 # Unit Tests
@@ -65,20 +57,6 @@ Runs the project unit tests.
 
 ```sh
 python -m unittest # May need python3
-```
-
-# Build
-
-Builds the course website to `out/`.
-
-```sh
-site # just type this
-```
-
-Alternatively, use sphinx's `sphinx-build` to specify the built type and the source and output directories.
-
-```sh
-sphinx-build -b html "$SOURCEDIR" "$OUTPUTDIR"
 ```
 
 # Contribute
