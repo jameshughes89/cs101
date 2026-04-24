@@ -346,30 +346,6 @@ Creating Abstraction
 
     The point is, however, that no one is expecting you to be an expert in this at this stage. This comes with practice.
 
-Format of a Function
-====================
-
-* The format for defining a function is as follows
-
-.. code-block:: python
-    :linenos:
-
-    def function_name(parameter_1, parameter_2, parameter_3, parameter_4, ... parameter_n):
-        statement 1
-        statement 2
-        ...
-        statement m
-
-
-* ``function_name`` is what the function is named
-* ``parameter_1, parameter_2``, etc. are called the parameters, you can have as many as you like and call them almost whatever you want
-
-    * You can think of these like variables
-
-* You tell Python which statements make up the body of the function by using *indentation*
-
-    * Some languages use other syntax, like ``begin`` and ``end`` or braces (``{ }``)
-
 
 .. admonition:: Activity
     :class: activity
