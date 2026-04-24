@@ -185,7 +185,7 @@ Alternative Execution
 
     if x > 10:
         do_something()
-    if not(x > 10):
+    if not x > 10:
         do_something_else()
 
 
