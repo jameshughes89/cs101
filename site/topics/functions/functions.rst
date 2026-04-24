@@ -113,7 +113,7 @@ Function Parameters
 
     * The value you want printed out is the value you are setting for the parameter that ``print`` takes
 
-* In reality, you have been using this idea in math class for years
+* You may recognize this idea from math class
 
     :math:`f(x) = x * 9/5 + 32`
 
@@ -267,7 +267,6 @@ Execution Flow
     * Functions end when there are no more lines to execute, or a ``return`` statement is hit
 
         * Code after ``return`` within a function will never run
-        * Return causes an immediate exit from the function
 
 * Line 8 prints out the value of ``fahrenheit``
 * Line 10 assigns a value to a variable
@@ -325,8 +324,10 @@ Creating Abstraction
     * Or, do you need to think about neurons firing and ion pumps to move your arm?
 
 * You are already experts at this in real life
-* That said, knowing how and when to create abstraction takes time and practice
-* Knowing how and where to create levels of abstraction requires a deep understanding of the problem you are trying to address
+* That said, knowing how and where to create levels of abstraction requires a deep understanding of the problem you are trying to address
+
+    * This comes with practice
+
 
 .. warning::
 
@@ -379,8 +380,8 @@ Format of a Function
 .. admonition:: Activity
     :class: activity
 
-    **Warning:** This one is tricky. If you're still stuck after lecture, be sure to take your time to figure this out.
-    There's a YouTube video to help.
+    This one is a bit more challenging --- be sure to give yourself enough time to succeed. If you are stuck, there is a
+    YouTube video to help.
 
     Now write a function ``criss_cross_concatenation`` that will take four strings and return the concatenation of the
     first, third, second, and fourth, in that order. **BUT** your function isn't allowed to directly use the ``+`` to
@@ -411,7 +412,7 @@ Composition
     * ``2704``
 
 * It is a good exercise to work these out by hand to help with your understanding
-* If you get confused tracking what is happening in the above example, slow down, there is one trick --- follow the code
+* If you get confused tracking what is happening in the above example, slow down --- follow the code
 
     #. Functions get *evaluated*  and turned into values
     #. Find a function you can evaluate and evaluate it
@@ -482,7 +483,7 @@ Variable scope
     There is a way to set a variable to have *global* scope, which allows the variable to be accessed everywhere. This,
     however is generally bad practice and something we will not do.
 
-    Even without setting a variable to `global`, python allows you to access variables from outside functions, which can
+    Even without setting a variable to `global`, Python allows you to access variables from outside functions, which can
     cause issues and is something that should not be done.
 
 
@@ -490,7 +491,7 @@ Import
 ------
 
 * Scope does not only apply to variables
-* Sometimes you need to access complex functions that already exist out there and you don't want to write
+* Sometimes you need to access complex functions that already exist out there that you don't want to write
 * For example, you may have already found that you wanted to make use of the square root (``sqrt``) function
 * Fortunately the ``sqrt`` function exists in Python
 * Unfortunately, you don't get it by default when you start up Python
