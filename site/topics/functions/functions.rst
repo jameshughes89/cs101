@@ -266,6 +266,9 @@ Execution Flow
 
     * Functions end when there are no more lines to execute, or a ``return`` statement is hit
 
+        * Code after ``return`` within a function will never run
+        * Return causes an immediate exit from the function
+
 * Line 8 prints out the value of ``fahrenheit``
 * Line 10 assigns a value to a variable
 * Line 11 calls the function ``celsius_to_fahrenheit`` again, which means our execution jumps to line 1 again
