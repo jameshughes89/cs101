@@ -343,7 +343,7 @@ Revisit Calculating the Total Charge
 
         # if they're under 25, add additional charge
         if age < 25:
-            total_charge += 10 * num_days
+            total_charge = total_charge + 10 * num_days
 
         # Return the final total charge
         return total_charge
