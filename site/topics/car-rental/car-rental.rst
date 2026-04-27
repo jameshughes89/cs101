@@ -88,7 +88,7 @@ An Incremental Solution
 
     * This cannot be overstated --- this is a big part of solving any problem
 
-* Half of the description is IO
+* Half of the description is Input/Output (I/O)
 * We know how to do this, so we will start here
 * The other half of the description is the calculation
 
