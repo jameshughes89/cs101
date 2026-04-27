@@ -7,7 +7,7 @@ Propositional Logic
     * This course focuses on introductory computer science --- ``True``
     * This topic is titled "Not Logic" --- ``False``
 
-* This is rather intuitive since you use this type of simple logic in everyday life to make decisions
+* You already use this type of logic in everyday life to make decisions
 * Additionally, you are already familiar with some *operators* we can use on these ``True``/``False`` statements
 
     * ``and``
@@ -58,12 +58,9 @@ Truth Table
     * Is it ``not`` *over 100 degrees Celsius outside*? --- ``True``
     * Is *the sky blue* ``and`` is it ``not`` *over 100 degrees Celsius outside*? --- ``True``
 
-
-* You may have observed that
-
-    * For ``and``, both statements must be ``True`` to produce ``True``, otherwise it is ``False``
-    * For ``or``, only one statement must be ``True`` to produce ``True``, otherwise it is ``False``
-    * ``not`` changes ``True`` -> ``False`` and ``False`` -> ``True``
+* For ``and``, both statements must be ``True`` to produce ``True``, otherwise it is ``False``
+* For ``or``, only one statement must be ``True`` to produce ``True``, otherwise it is ``False``
+* ``not`` changes ``True`` -> ``False`` and ``False`` -> ``True``
 
 .. note::
 
@@ -77,8 +74,8 @@ Truth Table
     <iframe width="560" height="315" src="https://www.youtube.com/embed/NmeQHw0rOaY" frameborder="0" allowfullscreen></iframe>
 
 
-Boolean Type
-============
+Boolean Type and Values
+=======================
 
 * `Booleans <https://en.wikipedia.org/wiki/George_Boole>`_ are a type in Python, like integers, strings, and floats
 
@@ -88,6 +85,11 @@ Boolean Type
 
     * ``True``
     * ``False``
+
+* Like other types of values, they can be assigned to variables
+
+    * ``some_boolean = True``
+    * ``some_other_boolean = False``
 
 
 Boolean Operators
@@ -114,10 +116,21 @@ Boolean Operators
     * e.g., ``True and False`` is ``False``
 
 
+.. code-block:: python
+    :linenos:
+
+    is_raining = True
+    is_cold = False
+
+    print(is_raining and is_cold)   # False
+    print(is_raining or is_cold)    # True
+    print(not is_raining)           # False
+
+
 Comparison Operators
 --------------------
 
-* As you have probably noticed, asking ``True and False`` is not overly helpful as it is
+* Writing ``True and False`` isn't very useful on its own
 * Based on how we use this logic in real life, we need a way to evaluate statements into their Boolean values
 * For example, is it ``not`` *over 100 degrees Celsius outside*?
 
@@ -219,11 +232,9 @@ Evaluating Example Expressions
 * Notice that once we evaluated ``(14 > 0)`` as ``True``, we really didn't need to finish evaluating the remainder of the expression
 * This is because, as long as one of the operands for an ``or`` is ``True``, we know the whole expression is ``True``
 
-.. warning::
+.. note::
 
-    If you find yourself writing long and complex boolean expressions, chances are you are doing something wrong. Even
-    if we have a long list of conditions you need to check in your program, there are ways to make them more manageable
-    and easier to follow.
+    The above examples are intentionally complex. In general, we avoid writing long and complex boolean expressions.
 
 
 For Next Topic

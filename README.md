@@ -35,28 +35,19 @@ python3 -m venv --clear --prompt cs101 venv
 pip install -e .
 ```
 
-# Formatter
+# Project CLI Scripts
 
-```sh
-format # just type this
-```
+| Command  | Description                                           |
+| -------- | ----------------------------------------------------- |
+| `format` | Automatically format Python and Markdown files        |
+| `verify` | Check for code style, RST issues, and spelling errors |
+| `links`  | Check URLs in the site for broken or redirected links |
+| `site`   | Build the course website to `out/`                    |
 
-# Link Checker
-
-```sh
-links # just type this
-```
-
-# Unit Tests
+Run project unit tests with the following
 
 ```sh
 python -m unittest # May need python3
-```
-
-# Build
-
-```sh
-sphinx-build -b html "$SOURCEDIR" "$OUTPUTDIR"
 ```
 
 # Contribute
