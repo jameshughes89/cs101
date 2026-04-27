@@ -5,9 +5,11 @@ If/Else
 .. admonition:: Activity
     :class: activity
 
-    Using only what we have learned so far, write a function ``smush(a_number)`` that checks if the number is
+    Using only what we have learned so far, try to write a function ``smush(a_number)`` that checks if the number is
     positive or negative. If ``a_number`` is positive, the function will return half the value of ``a_number``. If
     the number is not positive, simply return ``a_number``.
+
+    You may quickly discover that you can't quite get there yet. Think about *why*.
 
 
 Conditional Expressions
@@ -19,13 +21,16 @@ Conditional Expressions
     * How to use Boolean operators
     * How to use comparison operators
 
-* But Booleans allow us to do a lot more than just evaluate an expression to ``True``/``False``
+* But Boolean expressions are helpful for more than just evaluating to ``True``/``False`` values
 * Consider ``smush`` from the above activity
 * We know how to *ask* if ``a_number`` is positive
 
     * ``a_number > 0``
 
 * The key now is to tell Python that, ``if`` some condition is ``True``, do something
+
+    * ``if some_condition:``
+    * The code to be run if the condition is ``True`` is
 
 .. code-block:: python
     :linenos:
@@ -182,7 +187,7 @@ Alternative Execution
 
     if x > 10:
         do_something()
-    if not(x > 10):
+    if not x > 10:
         do_something_else()
 
 
@@ -197,9 +202,9 @@ Alternative Execution
         do_something_else()
 
 
-* The two examples above will effectively do the same thing, but the 2nd is nicer
+* The two examples above will effectively do the same thing, but the second is nicer
 
-    * Write less
+    * Less code to write
     * Intuitive and easy to read/understand
     * Eliminate potential bugs
 
@@ -287,7 +292,6 @@ Exclusive Alternatives
         :param percent_grade: A grade as a percent
         :return: Letter grade for the provided percentage
         """
-        letter_grade = ""
         if percent_grade >= 90:
             letter_grade = "A+"
         if percent_grade >= 80:
@@ -302,12 +306,12 @@ Exclusive Alternatives
             letter_grade = "F"
         return letter_grade
 
-* The above example ``letter_grade_broken`` may be one of the first ideas you come up with, but unfortunately it has a problem
+* The above ``letter_grade_broken`` has a subtle problem
 * If we run ``assert "A+" == letter_grade_broken(99)``
 
     * ``letter_grade_broken(99)`` would actually return ``"D"``
 
-* The trick to understanding the problem is to take our time and look at the code
+* To understand the problem, follow the execution carefully
 
     * Call ``letter_grade_broken(99)``
     * ``percent_grade`` is assigned the value ``99``
@@ -327,8 +331,9 @@ Exclusive Alternatives
         * ``True``
 
     * Since the expression is evaluated to ``True``, the indented code is run
-    * Assign ``letter_grade`` the value ``"A"``
+    * *Updates* ``letter_grade`` the value ``"A"``
     * ...
+    * This continues for each ``if``
 
 * The trouble here is that we really only want one of these ``if`` code blocks to run
 
@@ -340,13 +345,16 @@ Exclusive Alternatives
     * Reverse the order of the ``if``\s
     * Check upper and lower bounds (e.g. ``percent_grade >= 80 and percent_grade < 90``)
 
-* But arguably the better way to address this is with ``elif``\s
+* The cleaner way to address this is with ``elif``\s
 
     * Can be read as *else, if...*
 
 * These allow us to have at most one of the code blocks in the chain of conditions to run
-* In other words, as soon as one of the ``if``\s is true, all other ``if``\s are skipped and the program continues running after the ``else``
-* When using ``elif``\s, always end with a final ``else``
+
+    * As soon as one of the ``if``\s is true, all other ``if``\s are skipped
+    * The program continues after the ``if``/``elif``/``else`` chain
+
+* When using ``elif``\s, it's good practice to end with a final ``else``
 
 .. code-block:: python
     :linenos:
@@ -359,7 +367,6 @@ Exclusive Alternatives
         :param percent_grade: A grade as a percent
         :return: Letter grade for the provided percentage
         """
-        letter_grade = ""
         if percent_grade >= 90:
             letter_grade = "A+"
         elif percent_grade >= 80:
@@ -418,6 +425,17 @@ Nesting Conditionals
         print("Second Quadrant")
     else:
         print("Third Quadrant")
+
+
+.. note::
+
+    If you find yourself writing long and complex conditional expressions, it's worth stepping back --- there's usually
+    a cleaner way. Even with a long list of conditions needing to be checked, there are ways to make them more
+    manageable and easier to follow.
+
+    #. Use nesting, like in the above example
+    #. Save sub-expression results
+    #. Extract condition into its own function
 
 
 For Next Topic
