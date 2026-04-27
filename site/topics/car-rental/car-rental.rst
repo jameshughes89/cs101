@@ -216,14 +216,11 @@ Total Kilometers
     assert 100.5 == total_kms(100.5, 201)
 
 
-* You may be thinking that turning this simple sub-problem (calculating the total kilometers) into a function is overkill
+* Even for a simple sub-problem like this, a named function has real benefits
 
-    * This is a fair question
-
-* But, it's also really straightforward to confirm correctness of this function
-* It is solving an important sub-problem
-* It is facilitating our incremental development approach
-* Although the functionality and purpose of ``odometer_finish - odometer_start`` is by no means difficult to understand, ``total_kms`` is even clearer
+    * ``total_kms`` is more readable than ``odometer_finish - odometer_start``
+    * It is easy to test in isolation
+    * It keeps the incremental approach consistent
 
 
 Average Kilometers Per Day
