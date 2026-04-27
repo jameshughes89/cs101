@@ -2,8 +2,8 @@
 Testing Your Code and Type Hints
 ********************************
 
-* Writing code is a big part of your job when programming
-* But testing and debugging your code is a bigger part
+* Writing code and ensuring it's correct go hand in hand
+* However, ensuring correctness often takes more time than you'd expect
 
 
 Testing
@@ -22,10 +22,26 @@ Testing
     * If there are any *edge cases*
 
 
+
 Writing Tests
 -------------
 
 * For simplicity, we will keep our testing strategy to assertions about the data
+* We use the ``assert`` keyword
+
+    * ``assert`` takes a boolean expression
+    * If the expression evaluates to ``True``, nothing happens and the program continues
+    * If it's ``False``, Python raises an ``AssertionError``
+
+        * This is how we indicate that the test fails
+
+.. code-block:: python
+    :linenos:
+
+    assert 1 + 1 == 2   # True, nothing happens
+    assert 1 + 1 == 3   # False, raises AssertionError, program crashes
+
+
 * Let's say we want to test the absolute value function ``abs``
 
     * This function is provided to you by Python, so there is no actual need to test it here
@@ -78,14 +94,14 @@ Writing Tests
 Square of Sums Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def square_of_sum(a, b):
         """
         Calculate the square of the sum of the two provided numbers.
         E.g.
-            square_if_sum(2, 3) -> 25
+            square_of_sum(2, 3) -> 25
 
         :param a: First number
         :param b: Second number
@@ -158,14 +174,13 @@ Square of Sums Example Tests
     * ``square_of_sum(-1, 1)``
 
 * Including these tests is not unreasonable, so maybe they should have been included
-* If you had included these cases in your tests, and perhaps some others, you would not be wrong
 * Testing can feel a lot more like an art than a science
 
 
 Celsius to Fahrenheit Example Tests
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def celsius_to_fahrenheit(temp_in_celsius: float) -> float:
@@ -187,7 +202,7 @@ Celsius to Fahrenheit Example Tests
     assert 23 == celsius_to_fahrenheit(-5)
     assert 86 == celsius_to_fahrenheit(30)
     # To address precision issues, we can look for a sufficiently small difference between the expected and actual
-    assert 0.001 >  abs(celsius_to_fahrenheit(32) - 89.6)
+    assert 0.001 > abs(celsius_to_fahrenheit(32) - 89.6)
     assert 0.001 > abs(celsius_to_fahrenheit(37.7777) - 100)
 
 
@@ -205,8 +220,8 @@ Celsius to Fahrenheit Example Tests
 
 .. note::
 
-    It needs to be re-emphasized how important testing is. Writing code is only a small part of programming, and if your
-    code isn't even correct, then you haven't solved the problem.
+    It needs to be re-emphasized how important testing is. Writing code is only a small part of programming. Correctness
+    is what matters most.
 
     There is an argument for thinking about your tests *before* actually writing the function. This gets you to really
     think about the problem to better prepare yourself for writing the code.
@@ -236,21 +251,21 @@ Type Hints
 
 * Python does a pretty good job at figuring out the types of data for us
 * However, it can only do so much, and at the end of the day it's going to follow the code that you write
-* Unfortunately, when types get mixed up, we can end up with some serious bugs in our code
+* Unfortunately, when types get mixed up, we can end up with unexpected behaviour
 * Try running the following code and see if it acts the way you expect
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def add_together(a, b):
-      """
-      Calculate and return the sum of the two provided numbers.
+        """
+        Calculate and return the sum of the two provided numbers.
 
-      :param a: First number
-      :param b: Second number
-      :return: The sum of the two numbers
-      """
-      return a + b
+        :param a: First number
+        :param b: Second number
+        :return: The sum of the two numbers
+        """
+        return a + b
 
     x = input("First number: ")
     y = input("Second number: ")
@@ -258,7 +273,7 @@ Type Hints
     print(result)
 
 
-* The trouble here is, chances are, one would expect the function to work on numbers
+* The trouble here is that one would naturally expect the function to work on numbers
 * But when we read the input, we didn't change the strings to numbers
 * So, although we intended for the function to add two numbers together, Python assumed you knew what you were doing when you provided strings as arguments to the function
 
@@ -271,20 +286,20 @@ Setting Type Hints
 * We do this with *type hints*
 * Below is the ``add_together`` function with type hints included
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
     :emphasize-lines: 1,5
 
     def add_together(a: float, b: float) -> float:
-      """
-      Calculate and return the sum of the two provided values.
+        """
+        Calculate and return the sum of the two provided values.
 
-      :rtype: float
-      :param a: First number
-      :param b: Second number
-      :return: The sum of the two numbers
-      """
-      return a + b
+        :rtype: float
+        :param a: First number
+        :param b: Second number
+        :return: The sum of the two numbers
+        """
+        return a + b
 
 
 * In the parameter list, each parameter's type is explicitly stated
@@ -315,19 +330,19 @@ What You Don't Get
 
 * In other words, the inclusion of type hints would not actually address the original problem
 
- .. code-block:: python
+.. code-block:: python
     :linenos:
 
     def add_together(a: float, b: float) -> float:
-      """
-      Calculate and return the sum of the two provided values.
+        """
+        Calculate and return the sum of the two provided values.
 
-      :rtype: float
-      :param a: First number
-      :param b: Second number
-      :return: The sum of the two numbers
-      """
-      return a + b
+        :rtype: float
+        :param a: First number
+        :param b: Second number
+        :return: The sum of the two numbers
+        """
+        return a + b
 
     x = input("First number: ")
     y = input("Second number: ")
