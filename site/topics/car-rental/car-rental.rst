@@ -44,8 +44,10 @@ Car Rental
 .. image:: car_rental_sign.png
 
 * Here we solve a bigger problem than we are used to, but we will follow the incremental approach
-* In fact, we will take it to another extreme
-* Instead of just writing a few lines of code, we will make each part a function we can test easily, regardless of how "simple" the part seems
+* In fact, we will take it to the extreme
+* Instead of just writing a few lines of code, we will make each part a function we can test easily
+
+    * Regardless of how "simple" the part seems
 
 **Problem**
 
