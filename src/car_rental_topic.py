@@ -89,7 +89,9 @@ def calculate_total_charge(
     if rental_code == "B":
         total_charge = 20.00 * num_days + 0.30 * total_kms_traveled
     else:
-        total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(average_kms)
+        average_kms = average_kms_per_day(num_days, total_kms_traveled)
+        num_kms_above_allowance = num_kms_above_average(average_kms)
+        total_charge = 50.00 * num_days + 0.30 * num_kms_above_allowance
 
     # if they're under 25, add additional charge
     if age < 25:

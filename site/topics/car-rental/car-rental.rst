@@ -159,14 +159,12 @@ Calculating The Total Charge
         # Calculate the number of kilometres traveled.
         total_kms_traveled =
 
-        # Calculate the average number of kilometers travelled per day
-        average_kms =
-
         # Calculate the charge based on rental code
         if rental_code == 'B':
             # Base charge of $20.00/days + $0.30 for every km driven
         else:
             # Base charge of $50.00/days + $0.30 for every km driven above the 100km/day average allowance
+            average_kms =
             num_kms_above_allowance =
 
         # if they're under 25, add additional charge
@@ -333,13 +331,12 @@ Revisit Calculating the Total Charge
         # Calculate the number of kilometres traveled.
         total_kms_traveled = total_kms(odometer_start, odometer_finish)
 
-        # Calculate the average number of kilometers travelled per day
-        average_kms = average_kms_per_day(num_days, total_kms_traveled)
-
         if rental_code == "B":
             total_charge = 20.00 * num_days + 0.30 * total_kms_traveled
         else:
-            total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(average_kms)
+            average_kms = average_kms_per_day(num_days, total_kms_traveled)
+            num_kms_above_allowance = num_kms_above_average(average_kms)
+            total_charge = 50.00 * num_days + 0.30 * num_kms_above_allowance
 
         # if they're under 25, add additional charge
         if age < 25:
