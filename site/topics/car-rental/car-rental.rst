@@ -293,12 +293,9 @@ Kilometers Above Allowable Average
 
 .. note::
 
-    There is a good argument for making use of a constant instead of hard coding the ``100`` for the daily average
-    limit. Perhaps something like ``AVERAGE_DAILY_LIMIT``. Or maybe have the function include another parameter for the
-    limit as that would make it far more general.
-
-    Remember, with these small differences discussed, one is not more correct than the other. There is literally an
-    infinite number of ways one could go about solving this problem.
+    Notice that ``100`` is hardcoded in the function. There is a good argument for making it a constant instead,
+    something like ``AVERAGE_DAILY_LIMIT = 100``, which would make it clearer what the number represents and easier to
+    change in the future.
 
 
 Revisit Calculating the Total Charge
@@ -363,13 +360,6 @@ Revisit Calculating the Total Charge
     * The new functions were used to simplify much of the calculation
     * The ``if`` for the rental classification simply evaluates the corresponding cost calculation
     * The ``if`` for the age adds an additional $10/day
-
-
-.. note::
-
-    There was nothing stopping us from writing a function for the rental classification calculation or the age
-    calculation. If you feel that would be better, then I would encourage you to do that. Again, assuming your
-    implementation does what is required, it would not be any more or less correct than this implementation.
 
 
 .. admonition:: Activity
