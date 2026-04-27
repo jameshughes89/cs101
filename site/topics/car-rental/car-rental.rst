@@ -136,7 +136,7 @@ Input
         print(ending_kms, type(ending_kms))
 
 
-* The above example of reading user input seems to be sufficient for what we need; however, obviously we are far from solving the problem
+* The above example of reading user input seems to be sufficient for what we need; however, we are far from solving the problem
 * Line 7 is currently non-functional; it is simply a placeholder for the actual ``total_charge`` calculation
 
     * If you were to run the example code, it would not work since ``total_charge`` is currently not being assigned to anything
@@ -260,7 +260,6 @@ Average Kilometers Per Day
 Kilometers Above Allowable Average
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Now for something a little harder
 * Number of kms over the daily average allowance
 * What do we know?
 
@@ -369,7 +368,6 @@ Revisit Calculating the Total Charge
     * The ``if`` for the rental classification simply evaluates the corresponding cost calculation
     * The ``if`` for the age adds an additional $10/day
 
-* Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGziwmxh9-PjaqsP91tRRkk?usp=sharing>`_.
 
 .. note::
 
