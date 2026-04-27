@@ -66,13 +66,13 @@ def calculate_total_charge(
     num_days: float, age: float, rental_code: str, odometer_start: float, odometer_finish: float
 ) -> float:
     """
-    Calculate how much the renter needs to be charged based on the classification,
+    Calculate how much the renter needs to be charged based on the rental code classification,
     the number of kms travelled and the age of the driver.
 
     :rtype: float
     :param num_days: Number of days the car was rented.
     :param age: Age of the driver.
-    :param rental_code: The classification code (B or D).
+    :param rental_code: The rental code classification code (B or D).
     :param odometer_start: Odometer when the renter took the car.
     :param odometer_finish: Odometer when the renter returned the car.
     :return: The amount to charge the renter.
