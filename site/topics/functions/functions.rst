@@ -4,7 +4,7 @@ Functions
 
 
 * Script/program files are a nice way to organize many statements
-* However, eventually you will find yourself writing the same series of statements over and over
+* Eventually you will find yourself writing the same series of statements over and over
 
     * Or copying and pasting in your editor
 
@@ -62,7 +62,7 @@ Calling a Function
     * Maintainability --- If there is a bug in the function, you only need to change the function once
     * Readability --- ``celsius_to_fahrenheit`` is a lot easier to recognize when compared to something like ``(C * 9/5) + 32``
 
-* More importantly they *facilitate abstraction*
+* They also facilitate *abstraction*
 
     * More on this later
 
@@ -113,7 +113,7 @@ Function Parameters
 
     * The value you want printed out is the value you are setting for the parameter that ``print`` takes
 
-* In reality, you have been using this idea in math class for years
+* You may recognize this idea from math class
 
     :math:`f(x) = x * 9/5 + 32`
 
@@ -250,28 +250,24 @@ Execution Flow
     fahrenheit = celsius_to_fahrenheit(celsius)
     print(fahrenheit)
 
-    celsius = 32
-    fahrenheit = celsius_to_fahrenheit(celsius)
-    print(fahrenheit)
 
-
-* In the above example, the program starts running at line 1, however Python notes that this is a function definition
-
-    * It is not *called* yet --- it does not run yet
-
-* Python takes note of the function and knows that it exists
-* The first line to get executed in this program is line 6 where the value of ``24`` is assigned to ``celsius``
-* Line 7 makes a call to the function ``celsius_to_fahrenheit``, and so the execution jumps to line 1
-* The program will run the whole function (lines 1 -- 4) and return the value to where it was called (line 7) and the value is stored in the variable ``fahrenheit``
+* The program starts at line 1 --- Python notes it's a function *definition* and does not run the function yet
+* The first statement to execute is line 6, where the value of ``24`` is assigned to ``celsius``
+* Line 7 calls the function ``celsius_to_fahrenheit``, jumping execution into the function defined on line 1
+* The function runs (lines 1 -- 4) and returns a value back to line 7, where it is stored in ``fahrenheit``
 
     * Functions end when there are no more lines to execute, or a ``return`` statement is hit
 
+        * Code after ``return`` within a function will never run
+
 * Line 8 prints out the value of ``fahrenheit``
-* Line 10 assigns a value to a variable
-* Line 11 calls the function ``celsius_to_fahrenheit`` again, which means our execution jumps to line 1 again
-* Once the function is complete (lines 1 -- 4), the value is returned to line 11 and the returned value is assigned to ``fahrenheit``
-* Line 12 prints out the value of ``fahrenheit``
-* The program is now complete
+
+
+.. note::
+
+    A function must be defined before it can be called. If Python encounters a call to a function it has not yet seen,
+    it will raise a ``NameError``. This means function definitions generally appear near the top of a file, before the
+    code that calls them.
 
 
 Abstraction
@@ -300,7 +296,7 @@ Abstraction
     Assume you start from a clean, empty, kitchen.
 
 
-* You have now created two different programs for making spaghetti at two different levels of abstraction, which version was easier?
+* You have now created two different programs for making spaghetti at two different levels of abstraction --- which version was easier?
 
 
 Making Use of Abstraction
@@ -322,8 +318,10 @@ Creating Abstraction
     * Or, do you need to think about neurons firing and ion pumps to move your arm?
 
 * You are already experts at this in real life
-* Unfortunately, however, it is not simple to just start creating abstraction in your code
-* Knowing how and where to create levels of abstraction requires a deep understanding of the problem you are trying to address
+* That said, knowing how and where to create levels of abstraction requires a deep understanding of the problem you are trying to address
+
+    * This comes with practice
+
 
 .. warning::
 
@@ -334,33 +332,7 @@ Creating Abstraction
     Often there isn't even a *right* way to do it. Some may be better than others, but that does not mean that the
     others are not "correct".
 
-    The point is, however, that no one is expecting you to be an expert in this at this stage. Expect this to not be
-    trivial.
-
-
-Format of a Function
-====================
-
-* The format for defining a function is as follows
-
-.. code-block:: python
-    :linenos:
-
-    def function_name(parameter_1, parameter_2, parameter_3, parameter_4, ... parameter_n):
-        statement 1
-        statement 2
-        ...
-        statement m
-
-
-* ``function_name`` is what the function is named
-* ``parameter_1, parameter_2`` , etc. are called the parameters, you can have as many as you like and call them almost whatever you want
-
-    * You can think of these like variables
-
-* You tell Python which statements make up the body of the function by using *indentation*
-
-    * Some languages use other syntax, like ``begin`` and ``end`` or braces (``{ }``)
+    The point is, however, that no one is expecting you to be an expert in this at this stage. This comes with practice.
 
 
 .. admonition:: Activity
@@ -378,8 +350,8 @@ Format of a Function
 .. admonition:: Activity
     :class: activity
 
-    **Warning:** This one is tricky. If you're still stuck after lecture, be sure to take your time to figure this out.
-    There's a YouTube video to help.
+    This one is a bit more challenging --- be sure to give yourself enough time to succeed. If you are stuck, there is a
+    YouTube video to help.
 
     Now write a function ``criss_cross_concatenation`` that will take four strings and return the concatenation of the
     first, third, second, and fourth, in that order. **BUT** your function isn't allowed to directly use the ``+`` to
@@ -410,13 +382,13 @@ Composition
     * ``2704``
 
 * It is a good exercise to work these out by hand to help with your understanding
-* If you get confused tracking what is happening in the above example
+* If you get confused tracking what is happening in the above example, slow down --- follow the code
 
-    #. Slow down; there is one trick --- follow the code
     #. Functions get *evaluated*  and turned into values
     #. Find a function you can evaluate and evaluate it
     #. Cross out the function and replace it with the returned value
     #. Keep going
+
 
 .. admonition:: Activity
     :class: activity
@@ -441,6 +413,9 @@ Variable scope
         return temp_in_fahrenheit
 
 * With the ``celsius_to_fahrenheit`` function, the variables ``temp_in_celsius``, ``partial_conversion``, and ``temp_in_fahrenheit`` are local
+
+    * Note that the function parameter ``temp_in_celsius`` is included here too
+
 * If I were to call the function and then later try to access the ``partial_conversion`` variable, I would have a problem
 
 .. code-block:: python
@@ -478,16 +453,19 @@ Variable scope
     There is a way to set a variable to have *global* scope, which allows the variable to be accessed everywhere. This,
     however is generally bad practice and something we will not do.
 
+    Even without setting a variable to ``global``, Python allows you to access variables from outside functions, which can
+    cause issues and is something that should not be done.
+
 
 Import
 ------
 
 * Scope does not only apply to variables
-* Sometimes you need to access complex functions that already exist out there and you don't want to write
+* Sometimes you need to access complex functions that already exist that you don't want to write yourself
 * For example, you may have already found that you wanted to make use of the square root (``sqrt``) function
 * Fortunately the ``sqrt`` function exists in Python
-* Unfortunately, you don't get it by default when you start up Python as it is not in scope
-* Fortunately, in spite of this, there is a rather simple way to access the function
+* Unfortunately, you don't get it by default when you start up Python
+* However, there is a rather simple way to access the function
 * We ``import`` the math module, which is where the function is stored
 
     * `Within the math module is many common mathematical functions you may want to use <https://docs.python.org/3/library/math.html>`_
@@ -569,17 +547,12 @@ Docstring
 
 * This may feel like a lot of work, especially with such a simple function in the above example
 * But having these describing the functions makes it easier for anyone looking at your code
+* Over time, you will appreciate clear comments and docstrings
 
-    * `This includes yourself one weeks from now <https://i.redd.it/p172loj7q7j31.jpg>`_
+    * Especially when returning to code that you have not touched in a while
 
-* Trust me when I say, there will be a time in your life where you regret not writing comments/docstrings
+* Get into the habit of writing clear and concise docstrings
 
-    * `And when that time comes, I want you to remember that I warned you <https://i.redd.it/b9e4xbeg40151.jpg>`_
-
-
-    .. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/eD1iff-zLLo" frameborder="0" allowfullscreen></iframe>
 
 For Next Topic
 ==============
