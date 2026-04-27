@@ -331,7 +331,7 @@ Exclusive Alternatives
         * ``True``
 
     * Since the expression is evaluated to ``True``, the indented code is run
-    * Updates ``letter_grade`` the value ``"A"``
+    * *Updates* ``letter_grade`` the value ``"A"``
     * ...
     * This continues for each ``if``
 
