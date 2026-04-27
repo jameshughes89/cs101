@@ -143,7 +143,7 @@ Input
 
 * In other words, we need to actually write some function to do the actual calculation for us
 
-    * The calculation may seem intimidating, but let's take the same approach as above
+    * The calculation may seem complex, but let's take the same approach as above
     * We will write the code we can and leave comments for the parts we still need to tackle
 
 
@@ -217,7 +217,9 @@ Total Kilometers
 
 
 * You may be thinking that turning this simple sub-problem (calculating the total kilometers) into a function is overkill
-* Perhaps you are right
+
+    * This is a fair question
+
 * But, it's also really straightforward to confirm correctness of this function
 * It is solving an important sub-problem
 * It is facilitating our incremental development approach
@@ -362,7 +364,7 @@ Revisit Calculating the Total Charge
 
 
 * Take the time to go over all the parts of this function
-* If any part feels intimidating, slow down
+* Slow down on anything that doesn't feel clear
 
     * The new functions were used to simplify much of the calculation
     * The ``if`` for the rental classification simply evaluates the corresponding cost calculation
