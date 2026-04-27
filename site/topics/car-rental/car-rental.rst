@@ -176,7 +176,7 @@ Calculating The Total Charge
         return some_total_charge
 
 
-* Although it may feel like this is a rather silly function so far, it did help us outline what we need to know in order to solve the problem
+* Although this is an incomplete function, it did help us outline what we need to know in order to solve the problem
 
     * We need to know the total kilometers travelled
     * We need to know the average kms/day
@@ -226,7 +226,7 @@ Total Kilometers
 Average Kilometers Per Day
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* A Function to calculate the daily average number of kms
+* A function to calculate the daily average number of kms
 
     * What do we know?
 
