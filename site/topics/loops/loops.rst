@@ -148,7 +148,10 @@ Tracing Through A Function By Hand
         return result
 
 
-* ``while`` loops can get complex quickly (if only there were comments)
+* ``while`` loops can get complex quickly (
+
+    * Comments here would have helped make the intent clearer
+
 * When tracing through the code, don't try to do it all in your head
 * Create a table to keep track of the values
 * Below is an example with ``trace_through_me_by_hand(4)``
