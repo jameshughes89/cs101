@@ -142,6 +142,8 @@ While loops
 
     To stop the infinite loop, select the stop button in Colab.
 
+    A loop usually needs something inside to change, otherwise the condition may never become ``False``.
+
 
 .. raw:: html
 
@@ -167,7 +169,7 @@ Tracing Through A Function By Hand
         return result
 
 
-* ``while`` loops can get complex quickly (
+* ``while`` loops can get complex quickly
 
     * Comments here would have helped make the intent clearer
 
