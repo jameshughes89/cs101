@@ -135,6 +135,8 @@ Tracing Through A Function By Hand
 * Trace through the below code by hand for a few values of ``n``
 * See if you can figure out what this function is doing
 
+    * Note that ``n -= 1`` is short hand for ``n = n - 1``
+
 .. code-block:: python
     :linenos:
 
