@@ -121,6 +121,8 @@ While loops
     What would happen if ``counter += 1`` was not included in the loop? Try to answer based on what you know. Confirm
     what happens by trying to run the code.
 
+    To stop the infinite loop, select the stop button in Colab.
+
 
 .. raw:: html
 
