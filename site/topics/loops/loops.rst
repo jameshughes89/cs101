@@ -115,6 +115,22 @@ While loops
         * Repeat the loop until the condition is ``False``
 
 
+.. warning::
+
+    Off-by-one errors are very common when writing loops. For example, be careful about whether your stopping condition
+    should *include* the final value or stop *before* it.
+
+    Starting with ``counter = 0``:
+
+    * ``while counter < 10:`` prints ``0`` through ``9``
+
+        * Runs 10 times
+
+    * ``while counter <= 10:`` prints ``0`` through ``10``
+
+        * Runs 11 times
+
+
 .. admonition:: Activity
     :class: activity
 
@@ -219,4 +235,3 @@ For Next Topic
 ==============
 
 * Read `Chapter 8 of the text <https://openbookproject.net/thinkcs/python/english3e/strings.html>`_
-
