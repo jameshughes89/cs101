@@ -44,8 +44,10 @@ Car Rental
 .. image:: car_rental_sign.png
 
 * Here we solve a bigger problem than we are used to, but we will follow the incremental approach
-* In fact, we will take it to another extreme
-* Instead of just writing a few lines of code, we will make each part a function we can test easily, regardless of how "simple" the part seems
+* In fact, we will take it to the extreme
+* Instead of just writing a few lines of code, we will make each part a function we can test easily
+
+    * Regardless of how "simple" the part seems
 
 **Problem**
 
@@ -86,7 +88,7 @@ An Incremental Solution
 
     * This cannot be overstated --- this is a big part of solving any problem
 
-* Half of the description is IO
+* Half of the description is Input/Output (I/O)
 * We know how to do this, so we will start here
 * The other half of the description is the calculation
 
@@ -134,14 +136,14 @@ Input
         print(ending_kms, type(ending_kms))
 
 
-* The above example of reading user input seems to be sufficient for what we need; however, obviously we are far from solving the problem
+* The above example of reading user input seems to be sufficient for what we need; however, we are far from solving the problem
 * Line 7 is currently non-functional; it is simply a placeholder for the actual ``total_charge`` calculation
 
     * If you were to run the example code, it would not work since ``total_charge`` is currently not being assigned to anything
 
 * In other words, we need to actually write some function to do the actual calculation for us
 
-    * The calculation may seem intimidating, but let's take the same approach as above
+    * The calculation may seem complex, but let's take the same approach as above
     * We will write the code we can and leave comments for the parts we still need to tackle
 
 
@@ -157,26 +159,25 @@ Calculating The Total Charge
         total_charge = 0
 
         # Calculate the number of kilometres traveled.
-        total_kms_traveled =
-
-        # Calculate the average number of kilometers travelled per day
-        average_kms =
+        total_kms_traveled = ???
 
         # Calculate the charge based on rental code
         if rental_code == 'B':
             # Base charge of $20.00/days + $0.30 for every km driven
         else:
             # Base charge of $50.00/days + $0.30 for every km driven above the 100km/day average allowance
-            num_kms_above_allowance =
+            average_kms = ???
+            num_kms_above_allowance = ???
 
         # if they're under 25, add additional charge
         if something :
+            ???
 
         # Return the final total charge
         return some_total_charge
 
 
-* Although it may feel like this is a rather silly function so far, it did help us outline what we need to know in order to solve the problem
+* Although this is an incomplete function, it did help us outline what we need to know in order to solve the problem
 
     * We need to know the total kilometers travelled
     * We need to know the average kms/day
@@ -216,18 +217,17 @@ Total Kilometers
     assert 100.5 == total_kms(100.5, 201)
 
 
-* You may be thinking that turning this simple sub-problem (calculating the total kilometers) into a function is overkill
-* Perhaps you are right
-* But, it's also really straightforward to confirm correctness of this function
-* It is solving an important sub-problem
-* It is facilitating our incremental development approach
-* Although the functionality and purpose of ``odometer_finish - odometer_start`` is by no means difficult to understand, ``total_kms`` is even clearer
+* Even for a simple sub-problem like this, a named function has real benefits
+
+    * ``total_kms`` is more readable than ``odometer_finish - odometer_start``
+    * It is easy to test in isolation
+    * It keeps the incremental approach consistent
 
 
 Average Kilometers Per Day
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* A Function to calculate the daily average number of kms
+* A function to calculate the daily average number of kms
 
     * What do we know?
 
@@ -260,7 +260,6 @@ Average Kilometers Per Day
 Kilometers Above Allowable Average
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-* Now for something a little harder
 * Number of kms over the daily average allowance
 * What do we know?
 
@@ -295,15 +294,9 @@ Kilometers Above Allowable Average
 
 .. note::
 
-    If you were wondering why ``num_kms_above_average`` had the two ``return`` statements instead of having only one,
-    good observation; however, having two vs. one is not any more or less correct --- it's simply different.
-
-    Further, there is a good argument for making use of a constant instead of hard coding the ``100`` for the daily
-    average limit. Perhaps something like ``AVERAGE_DAILY_LIMIT``. Or maybe have the function include another parameter
-    for the limit as that would make it far more general.
-
-    Remember, with these small differences discussed, one is not more correct than the other. There is literally an
-    infinite number of ways one could go about solving this problem.
+    Notice that ``100`` is hardcoded in the function. There is a good argument for making it a constant instead,
+    something like ``AVERAGE_DAILY_LIMIT = 100``, which would make it clearer what the number represents and easier to
+    change in the future.
 
 
 Revisit Calculating the Total Charge
@@ -316,13 +309,13 @@ Revisit Calculating the Total Charge
 
     def calculate_total_charge(num_days: float, age: float, rental_code: str, odometer_start: float, odometer_finish: float) -> float:
         """
-        Calculate how much the renter needs to be charged based on the classification,
+        Calculate how much the renter needs to be charged based on the rental code classification,
         the number of kms travelled and the age of the driver.
 
         :rtype: float
         :param num_days: Number of days the car was rented.
         :param age: Age of the driver.
-        :param rental_code: The classification code (B or D).
+        :param rental_code: The rental code classification code (B or D).
         :param odometer_start: Odometer when the renter took the car.
         :param odometer_finish: Odometer when the renter returned the car.
         :return: The amount to charge the renter.
@@ -333,17 +326,16 @@ Revisit Calculating the Total Charge
         # Calculate the number of kilometres traveled.
         total_kms_traveled = total_kms(odometer_start, odometer_finish)
 
-        # Calculate the average number of kilometers travelled per day
-        average_kms = average_kms_per_day(num_days, total_kms_traveled)
-
         if rental_code == "B":
             total_charge = 20.00 * num_days + 0.30 * total_kms_traveled
         else:
-            total_charge = 50.00 * num_days + 0.30 * num_kms_above_average(average_kms)
+            average_kms = average_kms_per_day(num_days, total_kms_traveled)
+            num_kms_above_allowance = num_kms_above_average(average_kms)
+            total_charge = 50.00 * num_days + 0.30 * num_kms_above_allowance
 
         # if they're under 25, add additional charge
         if age < 25:
-            total_charge += 10 * num_days
+            total_charge = total_charge + 10 * num_days
 
         # Return the final total charge
         return total_charge
@@ -364,19 +356,11 @@ Revisit Calculating the Total Charge
 
 
 * Take the time to go over all the parts of this function
-* If any part feels intimidating, slow down
+* Slow down on anything that doesn't feel clear
 
     * The new functions were used to simplify much of the calculation
     * The ``if`` for the rental classification simply evaluates the corresponding cost calculation
     * The ``if`` for the age adds an additional $10/day
-
-* Let's try: `Google colab <https://colab.research.google.com/drive/1FRZ7MbPOdbGziwmxh9-PjaqsP91tRRkk?usp=sharing>`_.
-
-.. note::
-
-    There was nothing stopping us from writing a function for the rental classification calculation or the age
-    calculation. If you feel that would be better, then I would encourage you to do that. Again, assuming your
-    implementation does what is required, it would not be any more or less correct than this implementation.
 
 
 .. admonition:: Activity
