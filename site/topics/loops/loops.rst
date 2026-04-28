@@ -54,7 +54,7 @@ Reusing and Updating Variables
     * Calculate ``a + 1``, which is ``6`` in this example
     * Store the newly calculated value of ``6`` in ``a``
 
-* This and similar patterns are so common that many programming languages have shorthands for this
+* This and similar patterns are so common that many programming languages have shorthand operators for this
 
 
 .. code-block:: python
@@ -85,7 +85,7 @@ While loops
 
 * The trouble with this is
 
-    * It's annoying
+    * It's tedious
     * It doesn't scale well
     * It's prone to errors
     * It will not work for some variable number of times
@@ -201,7 +201,7 @@ Algorithm
     * Driving directions and cookie recipes are algorithms
 
 * Although algorithms can be explained in a natural language like English, when programming we write our algorithms in code
-* Finding an algorithm to solve a problem is non-trivial
+* Finding an algorithm for a problem takes practice
 
     * You can make a career out of coming up with algorithms
     * `There are certain open problems that, if you solve, will literally get you a million dollars and plenty of fame <https://en.wikipedia.org/wiki/Millennium_Prize_Problems>`_
