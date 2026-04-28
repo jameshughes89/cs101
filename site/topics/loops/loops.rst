@@ -195,7 +195,7 @@ Tracing Through A Function By Hand
 Algorithm
 =========
 
-* The above functions are all examples of *algorithms*
+* Functions like ``trace_through_me_by_hand`` and ``int_sum`` are examples of *algorithms*
 * An algorithm is a description of steps one could take to solve a given problem
 
     * Driving directions and cookie recipes are algorithms
