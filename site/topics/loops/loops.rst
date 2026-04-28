@@ -6,8 +6,8 @@ Loops
 * Sometimes we need a block to repeatedly run *while* some condition is ``True``
 
 
-Reusing Variables
-=================
+Reusing and Updating Variables
+==============================
 
 * Before we look at loops, consider the following code
 
