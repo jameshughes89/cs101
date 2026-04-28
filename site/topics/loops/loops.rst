@@ -28,7 +28,7 @@ Reusing Variables
     print(a)
 
 
-.. admonition:: Very Quick Activity
+.. admonition:: Activity
 
     What is the value of ``a`` at each print statement? In other words, ``a`` is printed out four times --- what values
     are printed out?
