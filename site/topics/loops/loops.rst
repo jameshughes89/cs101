@@ -95,6 +95,9 @@ While loops
 * This is where the ``while`` statement comes in
 * It will repeat some code ``while`` some condition is ``True``
 
+    * ``while some_condition:``
+    * The indented code will run while the condition is ``True``
+
 .. code-block:: python
     :linenos:
 
