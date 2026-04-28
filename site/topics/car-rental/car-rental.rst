@@ -159,18 +159,19 @@ Calculating The Total Charge
         total_charge = 0
 
         # Calculate the number of kilometres traveled.
-        total_kms_traveled =
+        total_kms_traveled = ???
 
         # Calculate the charge based on rental code
         if rental_code == 'B':
             # Base charge of $20.00/days + $0.30 for every km driven
         else:
             # Base charge of $50.00/days + $0.30 for every km driven above the 100km/day average allowance
-            average_kms =
-            num_kms_above_allowance =
+            average_kms = ???
+            num_kms_above_allowance = ???
 
         # if they're under 25, add additional charge
         if something :
+            ???
 
         # Return the final total charge
         return some_total_charge
