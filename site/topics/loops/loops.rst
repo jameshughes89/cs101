@@ -110,11 +110,11 @@ While loops
 * The above example will print out the numbers ``0`` -- ``9``
 
     * We initialized a ``counter`` variable outside the loop
-    * The ``while`` has a conditional expression that gets evaluated
-    * If it is evaluated to ``True``, the indented code runs
+    * Before each iteration, Python checks the ``while`` condition
+    * If the condition is ``True``, the indented code runs
 
         * ``print`` out the value of ``counter``
-        * Increment the value of ``counter``
+        * Increment ``counter``
         * Repeat the loop until the condition is ``False``
 
 
