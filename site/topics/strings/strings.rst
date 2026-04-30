@@ -24,7 +24,7 @@ Strings & Objects
 .. admonition:: Activity
     :class: activity
 
-    #. Write a single line command to print the first 4 characters of some string.
+    #. Write a single line command to print the first 4 characters of some string stored in ``a``.
     #. How about the 2nd to 7th characters?
     #. Get the last three characters? **Hint:** what does a *negative* index do?
     #. `Get the length of a string. <https://www.google.com/search?q=get+the+length+of+a+string+python>`_
