@@ -194,6 +194,8 @@ Linear Search
                     return False
                 count = count + 1
 
+    Can ``count = count + 1`` ever be reached?
+
 
 Underlying Idea
 ---------------
