@@ -311,6 +311,7 @@ String Trivia
 
 
 * ASCII Table
+
     * Every *character* is a *number*
 
     .. code-block:: python
@@ -389,7 +390,7 @@ f-Strings
 * Literal values were included in the above example, but this would also work with variables
 
 
-.. warning::
+.. note::
 
     This only scratches the surface of what you can do with f-Strings. Further, much of the same functionality can be
     done without f-Strings, but f-Strings are very popular and simple.
