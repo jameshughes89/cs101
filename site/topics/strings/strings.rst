@@ -147,7 +147,7 @@ Linear Search
 
 * Searching through some collection of elements to see if something exists within it is a very common problem
 * This is something you have done in real life many times
-* However, when writing the algorithm to perform a linear search, many new programmers rush through it and make some common mistakes
+* However, this is a problem where it is easy to make subtle mistakes
 
 .. admonition:: Activity
     :class: activity
@@ -482,7 +482,7 @@ Method vs. Function
 How to Remember What's What
 ---------------------------
 
-* Don't
+* Don't try to memorize
 * Things will stick once you get enough practice
 * `In the meantime, just look up what you need <https://www.google.com/search?q=make+a+string+uppercase+python>`_
 
