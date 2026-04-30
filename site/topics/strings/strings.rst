@@ -63,7 +63,7 @@ For loops
     Write the ``vertical_print_while`` function yourself. Try not to just copy/paste the provided solution. Call the
     function on a few different strings to see if it behaves the way you expect.
 
-     .. raw:: html
+    .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YS2TVVTIaPQ" frameborder="0" allowfullscreen></iframe>
 
@@ -316,10 +316,10 @@ String Trivia
     .. code-block:: python
         :linenos:
 
-        wut = ord('a')    # get the num of "a"
+        wut = ord('a')  # get the num of "a"
         print(wut)      # results in 97
 
-        wut = chr(65)    # convert num to char
+        wut = chr(65)   # convert num to char
         print(wut)      # results in "A"
 
 
