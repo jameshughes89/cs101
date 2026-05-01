@@ -6,16 +6,9 @@ References
 
 .. warning::
 
-    The ideas below are presented at a very high level and are not quite entirely correct for Python and other similar
-    programming languages. The differences come up in the nuances, but the following is sufficient to cover the
-    important ideas that you need to know. In fact, where there are differences between the following and how Python
-    actually works is not overly important for us, especially in introductory computer science.
-
-
-.. note::
-
-    We typically use *hexadecimal* (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F) when referring to memory addresses,
-    but for simplicity, we will use decimal numbers throughout this topic.
+    The ideas below are presented at a high level and are a simplification of how Python actually works. The
+    simplification is sufficient for what we need to understand, and the details that differ are not important at
+    this stage.
 
 
 * Here is an idealized view of memory inside a computer
@@ -78,17 +71,11 @@ Lists in Memory
     * Similar to how the integer ``17`` was stored above
 
 * Section off a large block of memory for the list to hold *references* to each of the elements of the list
-
-    * For simplicity, instead of storing references within the list, we will pretend that the contents of the list are stored within the block of memory sectioned off for the list
-
 * For example, the following image shows how we can think of storing the list ``[a, b, c, d, e, f, g, h]``
 
 .. image:: list_contents_in_memory.png
 
 * Just put each integer into its own memory location
-
-    * Again, in reality we actually store a reference to the integers, but we are ignoring this for now
-
 * Keep track of the fact that our list starts at memory address 677 and goes to 684
 * The trick is in how this is managed
 
@@ -122,7 +109,7 @@ References
 * If we wanted to make a copy of ``z`` like we did with the integers ``x`` and ``y``\, we could write something like ``w = z``
 * And just like with the integers, this copies the contents of the memory location of ``z`` and puts it into a new location labelled with a ``w``
 * However, the catch is that the contents of ``z`` is the memory address of the list
-* After making the copy into ``w``,  how many references do we have that get me to the memory location of the list?
+* After making the copy into ``w``, how many references are there to the memory location of the list?
 
 .. image:: copied_list_reference_in_memory.png
 
@@ -130,8 +117,8 @@ References
 
 .. image:: aliased_list_after_update.png
 
-* This does not alter the contents of the memory location of ``w``\; this alters the data at the memory location that is referenced to by ``w``
-* In fact, this also alters the data at the memory location that is referenced by ``z``
+* This does not alter the contents of the memory location of ``w``\; this alters the data at the memory location referenced by ``w``
+* In fact, this also alters the data at the memory location referenced by ``z``
 
     * What would happen if I wrote ``print(z[4])``\?
 
@@ -143,9 +130,7 @@ References
 
 .. note::
 
-    As mentioned earlier, in reality Python would not actually store the contents of the list within the block of memory
-    allocated for the list. Instead, Python stores the contents in their own memory locations and the list stores
-    references to the contents.
+    In reality, Python stores each list element in its own memory location and the list holds references to them.
 
     .. image:: multiple_list_references.png
 
@@ -153,6 +138,6 @@ References
 For Next Topic
 ==============
 
-* If you have not already, read `Chapter 14 of the text <https://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
-* If you have not already, read `Chapter 15 of the text (only lightly though) <https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
+* Read `Chapter 14 of the text <https://openbookproject.net/thinkcs/python/english3e/list_algorithms.html>`_
+* Read `Chapter 15 of the text (only lightly though) <https://openbookproject.net/thinkcs/python/english3e/classes_and_objects_I.html>`_
 
