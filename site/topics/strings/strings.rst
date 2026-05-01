@@ -24,11 +24,11 @@ Strings & Objects
 .. admonition:: Activity
     :class: activity
 
-    #. Write a single line command to print the first 4 characters of some string.
+    #. Write a single line command to print the first 4 characters of some string stored in ``a``.
     #. How about the 2nd to 7th characters?
     #. Get the last three characters? **Hint:** what does a *negative* index do?
     #. `Get the length of a string. <https://www.google.com/search?q=get+the+length+of+a+string+python>`_
-    #. What does ``print(a[0:4])`` do?
+    #. What does ``print(a[1:4])`` do? How about ``print(a[:4])`` and ``print(a[2:])``?
 
     .. raw:: html
 
@@ -50,7 +50,6 @@ For loops
         Print out a string vertically. In other words, print out a single character on each line.
 
         :param a_string: Some string to print out
-        :type a_string: String
         """
         character_index = 0
         while character_index < len(a_string):
@@ -64,7 +63,7 @@ For loops
     Write the ``vertical_print_while`` function yourself. Try not to just copy/paste the provided solution. Call the
     function on a few different strings to see if it behaves the way you expect.
 
-     .. raw:: html
+    .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YS2TVVTIaPQ" frameborder="0" allowfullscreen></iframe>
 
@@ -81,7 +80,6 @@ For loops
         Print out a string vertically. In other words, print out a single character on each line.
 
         :param a_string: Some string to print out
-        :type a_string: String
         """
         for char in a_string:
             print(char)
@@ -149,7 +147,7 @@ Linear Search
 
 * Searching through some collection of elements to see if something exists within it is a very common problem
 * This is something you have done in real life many times
-* However, when writing the algorithm to perform a linear search, many new programmers rush through it and make some common mistakes
+* However, this is a problem where it is easy to make subtle mistakes
 
 .. admonition:: Activity
     :class: activity
@@ -193,6 +191,8 @@ Linear Search
                 else:
                     return False
                 count = count + 1
+
+    Can ``count = count + 1`` ever be reached?
 
 
 Underlying Idea
@@ -311,15 +311,16 @@ String Trivia
 
 
 * ASCII Table
+
     * Every *character* is a *number*
 
     .. code-block:: python
         :linenos:
 
-        wut = ord('a')    # get the num of "a"
+        wut = ord('a')  # get the num of "a"
         print(wut)      # results in 97
 
-        wut = chr(65)    # convert num to char
+        wut = chr(65)   # convert num to char
         print(wut)      # results in "A"
 
 
@@ -389,7 +390,7 @@ f-Strings
 * Literal values were included in the above example, but this would also work with variables
 
 
-.. warning::
+.. note::
 
     This only scratches the surface of what you can do with f-Strings. Further, much of the same functionality can be
     done without f-Strings, but f-Strings are very popular and simple.
@@ -481,7 +482,7 @@ Method vs. Function
 How to Remember What's What
 ---------------------------
 
-* Don't
+* Don't try to memorize
 * Things will stick once you get enough practice
 * `In the meantime, just look up what you need <https://www.google.com/search?q=make+a+string+uppercase+python>`_
 
