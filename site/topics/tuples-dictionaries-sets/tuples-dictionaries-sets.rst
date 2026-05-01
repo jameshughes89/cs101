@@ -48,11 +48,8 @@ Tuples
 Dictionaries
 ============
 
-* Dictionaries are amazing data structures that are a little more complex than lists and tuples
-
-    * Much of their complexity is hidden from us so we will not worry about it here
-
-* Simply, they are like lists that you can index with *strings*, or various other types, instead of just integers
+* Dictionaries are a powerful data structure that are a little more complex than lists and tuples under the hood
+* They are like lists that you can index with *strings*, or various other types, instead of just integers
 * Consider the following example of storing grades for students
 
 .. code-block:: python
@@ -70,8 +67,7 @@ Dictionaries
     print(some_dictionary)      # Results in {'Billy': 74, 'Sally': 88, 'Jimmy-Bob': 99}
 
 
-* In the example, a dictionary was created and three values were added to the dictionary
-* But values are associated with unique *keys*
+* Values are associated with unique *keys*
 
     * The keys must be unique, but the values do not need to be
 
@@ -129,7 +125,7 @@ Why Use One?
     .. code-block:: python
         :linenos:
 
-        grade = my_grades["Sally"]
+        grade = some_dictionary["Sally"]
         print(grade)                        # Results in 88
 
 
@@ -168,7 +164,7 @@ Sets
 .. code-block:: python
     :linenos:
 
-    csci_161 = set({"Greg", "Anna", "Sally", "Frank", "Frank"})
+    csci_161 = {"Greg", "Anna", "Sally", "Frank", "Frank"}
     print(csci_161)                     # Results in {'Frank', 'Sally', 'Greg', 'Anna'}
 
 
@@ -180,7 +176,7 @@ Sets
 .. code-block:: python
     :linenos:
 
-    math_106 = set({"Frank", "Ryan", "Sally", "Francis", "Xavier", "Linda"})
+    math_106 = {"Frank", "Ryan", "Sally", "Francis", "Xavier", "Linda"}
     math_106.add("Lynn")
     print(math_106)                     # Results in {'Ryan', 'Xavier', 'Frank', 'Sally', 'Francis', 'Lynn', 'Linda'}
 
