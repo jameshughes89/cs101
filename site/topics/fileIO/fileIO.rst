@@ -65,10 +65,10 @@ Writing to a Text File
 * Unlike reading however, the file does not need to exist
 * Python will create a new file with the name ``"anotherFileName.txt"``
 
-* The most commonly used methods you will likely use when writing to a file will be ``.write(text)`` and ``.writelines(listOfText)``
+* The main methods for writing to a file are ``.write(text)`` and ``.writelines(listOfText)``
 
     * ``write`` will write the provided text to the file
-    * ``writelines`` will write multiple lines of text to a file based on a list of strings --- each string in the list will be its own line
+    * ``writelines`` will write multiple strings to a file based on a list of strings --- note that it does not add newlines between them, so include ``"\n"`` in each string if needed
 
 
 .. admonition:: Activity
@@ -82,11 +82,8 @@ Writing to a Text File
 
 .. warning::
 
-    It is very important to ``.close()`` your files when you are done with them, especially when writing to a file.
-    Based on how Python writes to files, the contents you write are not sent to the file right away. Instead, it goes to
-    something called a *buffer* that periodically writes to the file. If you fail to ``.close()`` your file, there is a
-    chance that the buffer never finished writing to the file before the program terminated. When you ``.close()`` the
-    file, it *flushes the buffer*, meaning that anything left in the buffer will be written to the file.
+    Always ``.close()`` your files when done, especially when writing. Python may not immediately write all contents to
+    disk --- calling ``.close()`` ensures everything is flushed and saved properly.
 
 
 Comma Separated Values (CSV)
@@ -223,6 +220,8 @@ Writing to a CSV File
 .. code-block:: python
     :linenos:
 
+    import csv
+
     # Create a file to write to
     out_file = open("nameOfOutputFile.csv", "w")
     csv_out_file = csv.writer(out_file)
@@ -230,13 +229,11 @@ Writing to a CSV File
     # Write a row to the file
     csv_out_file.writerow(['First cell','Second cell', 'Third cell'])
 
-    # Be sure to close the file when done!!!
+    # Close the file when done
     out_file.close()
 
 
-* In the above example, notice that all the data for the row is contained within a list
-
-    * This is similar to how the data is read in as a list
+* Notice that the row data is a list --- symmetric with how it's read in
 
 * With a csv writer, there are two important methods for us to know
 
