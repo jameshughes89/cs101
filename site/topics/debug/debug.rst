@@ -146,13 +146,7 @@ Logic errors
 * Everything may seem like it's working, but the program still behaves incorrectly
 * Sometimes the errors may be obvious, like an infinite loop
 * Sometimes they show up only in *edge cases*, so things work *most of the time*
-
-    * Here's hoping you tested your code thoroughly
-
-* There are a few strategies for narrowing these bugs down
-* A few accessible strategies for debugging are discussed below
-* Most people develop their own habits as they gain experience
-* Like anything else, debugging improves with practice
+* Most people develop their own habits as they gain experience --- a few strategies are discussed below
 
 
 Print
@@ -168,8 +162,8 @@ Print
 .. admonition:: Activity
     :class: activity
 
-    There is a problem with the following function. It almost works, but it is slightly off. Read the description, see if
-    you can identify the issue, and then use ``print``\s to inspect values and track down the problem.
+    There is a problem with the following function. It almost works, but it is slightly off. Read the description, see
+    if you can identify the issue, and then use ``print``\s to inspect values and track down the problem.
 
     .. code-block:: python
         :linenos:
@@ -230,22 +224,14 @@ Pencil & Paper
     * Create a table to keep track of each variable and the current value
     * *Execute* the program on paper one line at a time, keeping track of the values of the variables
 
-* Benefits of this approach include
-
-    * It slows you down
-    * It becomes easier to *not* make assumptions
-    * It requires you to be deliberate and thoughtful
-
+* The benefit is that it forces you to slow down and be deliberate --- assumptions are harder to make when you have to write everything out
 * This can feel tedious, but it often helps
 
 .. note::
 
     The point here is to take your time and think about every line of code. Rushing through and making assumptions will
-    inevitably cause this strategy to fail.
-
-    Remember, you are here in the first place because what your program is actually doing is different from what you
-    expected --- it would be rather silly to use your incorrect assumptions about what is going on in your program to
-    solve the problem caused by your incorrect assumptions.
+    inevitably cause this strategy to fail --- the program is behaving unexpectedly precisely because something you
+    assumed was true, isn't.
 
 
 Delta Debugging
@@ -267,9 +253,7 @@ Delta Debugging
         * Yes? Keep looking
 
 
-* You may have realized that this is effectively the recommended coding strategy from earlier in the course
-
-    * Write only a few lines at a time and validate that it is working correctly with tests
+* This mirrors the recommended coding strategy from earlier --- write a little, test, repeat
 
 
 Rubber Duck Debugging
