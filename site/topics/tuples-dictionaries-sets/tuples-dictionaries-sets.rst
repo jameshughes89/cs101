@@ -2,59 +2,54 @@
 Tuples, Dictionaries, and Sets
 ******************************
 
-* In addition to lists, there are a few other noteworthy data structures we will look at in this course
-* Although they will not be used as much as lists, it's important to be aware of the tools you have at your disposal
+* Lists are not the only collection type in Python
+* Tuples, dictionaries, and sets each fit a slightly different job
 
 
 Tuples
 ======
 
-* A tuple looks and behaves similar to a list, but has slightly different syntax
+* A tuple is an ordered collection, similar to a list
+* Tuples use parentheses ``(``\, ``)``
 
-    * Tuples use parentheses ``(``\, ``)``
+.. code-block:: python
+    :linenos:
 
-    .. code-block:: python
-        :linenos:
-
-        some_tuple = (10, 11)
-        print(some_tuple)   # Results in (10, 11)
-
-
-* They are both ordered sequences of data
-* They can be indexed like lists
-
-    .. code-block:: python
-        :linenos:
-
-        some_tuple = (10, 11)
-        print(some_tuple[0])   # Results in 10
+    some_tuple = (10, 11)
+    print(some_tuple)   # Results in (10, 11)
 
 
-* But unlike lists, tuples are immutable
+* Tuples can be indexed just like lists
 
-    * Once they are created, we cannot change them
+.. code-block:: python
+    :linenos:
 
-* They're ideal for when we need to pack some data together
+    some_tuple = (10, 11)
+    print(some_tuple[0])   # Results in 10
+
+
+* The main difference is that tuples are immutable
+
+    * After a tuple is created, its contents do not change
+
+* Tuples are a nice fit when a few values belong together
 
     * For example, a tuple would be great for storing cartesian coordinate ``(x, y)``
     * Tuples were also used in the Starbucks assignment to store the latitude and longitude pairs
 
-    .. code-block:: python
-        :linenos:
+.. code-block:: python
+    :linenos:
 
-        for row in starbucks_file_reader:
-            location_tuple = (float(row[0]), float(row[1]))
-            starbucks_locations.append(location_tuple)
+    for row in starbucks_file_reader:
+        location_tuple = (float(row[0]), float(row[1]))
+        starbucks_locations.append(location_tuple)
 
 
 Dictionaries
 ============
 
-* Dictionaries are amazing data structures that are a little more complex than lists and tuples
-
-    * Much of their complexity is hidden from us so we will not worry about it here
-
-* Simply, they are like lists that you can index with *strings*, or various other types, instead of just integers
+* Dictionaries are a powerful data structure that are a little more complex than lists and tuples under the hood
+* They are like lists that you can index with *strings*, or various other types, instead of just integers
 * Consider the following example of storing grades for students
 
 .. code-block:: python
@@ -72,8 +67,7 @@ Dictionaries
     print(some_dictionary)      # Results in {'Billy': 74, 'Sally': 88, 'Jimmy-Bob': 99}
 
 
-* In the example, a dictionary was created and three values were added to the dictionary
-* But values are associated with unique *keys*
+* Values are associated with unique *keys*
 
     * The keys must be unique, but the values do not need to be
 
@@ -100,8 +94,8 @@ Dictionaries
     print(some_dictionary["Sally"])         # Results in 90
 
 
-Why They Are Great
-------------------
+Why Use One?
+------------
 
 * Instead of using a dictionary to store the grades, imagine using a 2D list
 
@@ -116,10 +110,7 @@ Why They Are Great
     print(my_grades)                        # Results in [['Billy', 74], ['Sally', 88], ['Jimmy-Bob', 99]]
 
 
-* How would I obtain the grade for a specific student?
-
-    * I would need to do a linear search for the student's name before I could access the grade
-    * Assuming I have some ``linear_search`` function
+* To find a specific student's grade here, I would first need to search for the student's name
 
     .. code-block:: python
         :linenos:
@@ -129,14 +120,12 @@ Why They Are Great
         print(grade)                        # Results in 88
 
 
-* Alternatively, with a dictionary, it's much simpler --- just index the dictionary on the student's name
-
-    * Assuming ``my_grades`` was a dictionary like ``some_dictionary`` instead of a list of lists
+* With a dictionary, I can go straight to the value by using the student's name as the key
 
     .. code-block:: python
         :linenos:
 
-        grade = my_grades["Sally"]
+        grade = some_dictionary["Sally"]
         print(grade)                        # Results in 88
 
 
@@ -168,30 +157,31 @@ Sets
 
     * Elements in the set are unique, but lists can have multiple copies of the same value
     * Sets have no intrinsic ordering, but lists do (starting at index ``0``)
+    * Sets are not indexed
 
-* Consider the below example of students in a course
+* Consider the following example of students in a course
 
 .. code-block:: python
     :linenos:
 
-    csci_161 = set({"Greg", "Anna", "Sally", "Frank", "Frank"})
+    csci_161 = {"Greg", "Anna", "Sally", "Frank", "Frank"}
     print(csci_161)                     # Results in {'Frank', 'Sally', 'Greg', 'Anna'}
 
 
-* Notice that, although ``"Frank"`` was included twice, it only exists once in the set
-* Also notice that the order of the elements is not the order they appear when the set was created
+* Notice that, although ``"Frank"`` was included twice, it only appears once in the set
+* Also notice that the order of the elements may not match the order they were written
 
-* Below is another example of a set, but this time an additional name was added to the set after creation
+* Here is another example, this time adding a name after the set is created
 
 .. code-block:: python
     :linenos:
 
-    math_106 = set({"Frank", "Ryan", "Sally", "Francis", "Xavier", "Linda"})
+    math_106 = {"Frank", "Ryan", "Sally", "Francis", "Xavier", "Linda"}
     math_106.add("Lynn")
     print(math_106)                     # Results in {'Ryan', 'Xavier', 'Frank', 'Sally', 'Francis', 'Lynn', 'Linda'}
 
 
-* One can check if a given thing exists within a set with the ``in`` operator
+* You can check if a given thing exists within a set with the ``in`` operator
 * Like a dictionary, checking if something is ``in`` the set does not require a linear search
 
 .. code-block:: python
@@ -201,14 +191,13 @@ Sets
     print("Ryan" in math_106)           # Results in True
 
 
-* There are many other things you could do with a set, such as
+* Some other things you can do with a set are
 
     * Iterating over the contents with a ``for`` loop
     * Remove elements from the set
     * Check if sets are equal
     * Check if something is a subset of another set
-    * Turn the set into a list (and you can turn a list into a set)
-    * ...
+    * Turn the set into a list (and turn a list into a set)
 
 
 * Three operations of note for sets are *union*, *intersection*, and *difference*
@@ -261,7 +250,7 @@ Sets
     print(only_taking_csci)     # Results in {'Greg', 'Anna'}
 
 
-* Unlike union and intersection, the order of the operands for set difference matter
+* Unlike union and intersection, the order of the operands matters for set difference
 
 .. code-block:: python
     :linenos:
@@ -273,10 +262,10 @@ Sets
 .. admonition:: Activity
     :class: activity
 
-    #. Imagine I gave you the text from a book that you could load up into Python. What's the easiest way to count the number of unique words?
-    #. What would you do if I gave you another book and asked you which words do they have in common?
-    #. What if I wanted to know the number of unique words that exist between the two books?
-    #. What If I wanted to know which words were in one book, but not the other?
+    #. If you loaded the text from a book into Python, how could you count the unique words?
+    #. If you loaded a second book, how could you find the words they have in common?
+    #. How could you find all unique words across both books?
+    #. How could you find the words in one book but not the other?
 
 
 For Next Topic
