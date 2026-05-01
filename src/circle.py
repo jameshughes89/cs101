@@ -62,7 +62,7 @@ class Circle:
         """
         Generate and return a string representation of the Circle object.
 
-        This os a "magic method" that can be used with `str(some_circle)` or for printing.
+        This is a "magic method" that can be used with `str(some_circle)` or for printing.
 
         :return: A string representation of the Circle
         :rtype: string
