@@ -6,8 +6,8 @@ Loops
 * Sometimes we need a block to repeatedly run *while* some condition is ``True``
 
 
-Reusing Variables
-=================
+Reusing and Updating Variables
+==============================
 
 * Before we look at loops, consider the following code
 
@@ -28,7 +28,7 @@ Reusing Variables
     print(a)
 
 
-.. admonition:: Very Quick Activity
+.. admonition:: Activity
 
     What is the value of ``a`` at each print statement? In other words, ``a`` is printed out four times --- what values
     are printed out?
@@ -54,7 +54,7 @@ Reusing Variables
     * Calculate ``a + 1``, which is ``6`` in this example
     * Store the newly calculated value of ``6`` in ``a``
 
-* This and similar patterns are so common that many programming languages have shorthands for this
+* This and similar patterns are so common that many programming languages have shorthand operators for this
 
 
 .. code-block:: python
@@ -85,7 +85,7 @@ While loops
 
 * The trouble with this is
 
-    * It's annoying
+    * It's tedious
     * It doesn't scale well
     * It's prone to errors
     * It will not work for some variable number of times
@@ -94,6 +94,9 @@ While loops
 
 * This is where the ``while`` statement comes in
 * It will repeat some code ``while`` some condition is ``True``
+
+    * ``while some_condition:``
+    * The indented code will run while the condition is ``True``
 
 .. code-block:: python
     :linenos:
@@ -107,12 +110,28 @@ While loops
 * The above example will print out the numbers ``0`` -- ``9``
 
     * We initialized a ``counter`` variable outside the loop
-    * The ``while`` has a conditional expression that gets evaluated
-    * If it is evaluated to ``True``, the indented code runs
+    * Before each iteration, Python checks the ``while`` condition
+    * If the condition is ``True``, the indented code runs
 
         * ``print`` out the value of ``counter``
-        * Increment the value of ``counter``
+        * Increment ``counter``
         * Repeat the loop until the condition is ``False``
+
+
+.. warning::
+
+    Off-by-one errors are very common when writing loops. For example, be careful about whether your stopping condition
+    should *include* the final value or stop *before* it.
+
+    Starting with ``counter = 0``:
+
+    * ``while counter < 10:`` prints ``0`` through ``9``
+
+        * Runs 10 times
+
+    * ``while counter <= 10:`` prints ``0`` through ``10``
+
+        * Runs 11 times
 
 
 .. admonition:: Activity
@@ -120,6 +139,10 @@ While loops
 
     What would happen if ``counter += 1`` was not included in the loop? Try to answer based on what you know. Confirm
     what happens by trying to run the code.
+
+    To stop the infinite loop, select the stop button in Colab.
+
+    A loop usually needs something inside to change, otherwise the condition may never become ``False``.
 
 
 .. raw:: html
@@ -133,6 +156,8 @@ Tracing Through A Function By Hand
 * Trace through the below code by hand for a few values of ``n``
 * See if you can figure out what this function is doing
 
+    * Note that ``n -= 1`` is short hand for ``n = n - 1``
+
 .. code-block:: python
     :linenos:
 
@@ -144,7 +169,10 @@ Tracing Through A Function By Hand
         return result
 
 
-* ``while`` loops can get complex quickly (if only there were comments)
+* ``while`` loops can get complex quickly
+
+    * Comments here would have helped make the intent clearer
+
 * When tracing through the code, don't try to do it all in your head
 * Create a table to keep track of the values
 * Below is an example with ``trace_through_me_by_hand(4)``
@@ -188,13 +216,13 @@ Tracing Through A Function By Hand
 Algorithm
 =========
 
-* The above functions are all examples of *algorithms*
+* Functions like ``trace_through_me_by_hand`` and ``int_sum`` are examples of *algorithms*
 * An algorithm is a description of steps one could take to solve a given problem
 
     * Driving directions and cookie recipes are algorithms
 
 * Although algorithms can be explained in a natural language like English, when programming we write our algorithms in code
-* Finding an algorithm to solve a problem is non-trivial
+* Finding an algorithm for a problem takes practice
 
     * You can make a career out of coming up with algorithms
     * `There are certain open problems that, if you solve, will literally get you a million dollars and plenty of fame <https://en.wikipedia.org/wiki/Millennium_Prize_Problems>`_
@@ -212,4 +240,3 @@ For Next Topic
 ==============
 
 * Read `Chapter 8 of the text <https://openbookproject.net/thinkcs/python/english3e/strings.html>`_
-
