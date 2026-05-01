@@ -25,7 +25,7 @@ Exceptions
 * Consider how, like the ``print`` function, someone had to write the code for converting strings to integers and for indexing elements from a list
 * If I am the one writing the code for converting strings to integers, what should I make my code do if someone asks my code to convert the string ``"hello"`` to an integer?
 
-    * Obviously there is no single obvious and natural way to convert the string ``"hello"`` to an integer
+    * There is no single natural way to convert the string ``"hello"`` to an integer
     * Should my code simply ignore the request and carry on like nothing ever happened?
     * Should my code crash the whole program?
     * Maybe some user entered some input wrong?
@@ -47,7 +47,7 @@ Exceptions
             return a/b
 
 
-* Obviously we're going to have an issue if we try to divide a number by zero
+* Dividing a number by zero is going to be a problem
 * But what should happen if someone tries to?
 * That's entirely up to the programmer making use of the ``divide`` function
 * All I need to do is communicate to them that something exceptional happened by ``raise``\-ing an exception
@@ -99,9 +99,7 @@ Catching Exceptions
         regardless
 
 
-* In the above example, the code in the ``try`` would be something that may cause an exception we want to deal with
-* If it turns out that the code does ``raise`` an exception, the code within the ``except`` block runs
-* If no exception arises, then the ``except`` block is skipped
+* The code in the ``try`` block runs normally; if an exception is raised, control jumps to the ``except`` block instead
 
 
 
@@ -139,10 +137,10 @@ Example 2
 
     def continue_asking_for_input() -> float:
         while True:
-            data = input("Provide operands for division: ").split()
-            a = float(data[0])
-            b = float(data[1])
             try:
+                data = input("Provide operands for division: ").split()
+                a = float(data[0])
+                b = float(data[1])
                 quotient = divide(a, b)
                 break
             except ZeroDivisionError:
@@ -171,17 +169,17 @@ Example 3
         return quotient
 
 
-* Alternatively, a simpler and better implementation would be to just let the exception propagate up and have the program eventually stop as a result
+* A simpler and better approach is to just let the exception propagate --- no try/except needed
 
 .. code-block:: python
     :linenos:
 
-    def stop_running_immediately(a,b) -> float:
-        quotient = divide(a,b)
+    def let_it_propagate(a, b) -> float:
+        quotient = divide(a, b)
         return quotient
 
 
-* In the above example, if ``divide`` causes an exception, the exception would keep being handed to the calling function until it is dealt with or ultimately crashes the program
+* If ``divide`` raises an exception, it keeps being passed up the call stack until something handles it or the program crashes
 
 
 Example 4
@@ -196,10 +194,10 @@ Example 4
 .. code-block:: python
     :linenos:
 
-        try:
-            quotient = divide(a,b)
-        except ZeroDivisionError:
-            pass
+    try:
+        quotient = divide(a, b)
+    except ZeroDivisionError:
+        pass
 
 
 
