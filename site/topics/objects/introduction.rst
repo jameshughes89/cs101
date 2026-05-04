@@ -44,8 +44,7 @@ Classes vs Objects
 Circle Class
 ============
 
-* Just like the rest of the class, we will learn by doing
-* In other words, we will define the ``Circle`` class and then make a few instances of ``Circle`` objects
+* We will define the ``Circle`` class and then make a few instances of ``Circle`` objects
 
 * However, there is one big question --- what is a circle; what data and functionality should it have?
 
@@ -73,13 +72,8 @@ Starting the Class
         calculations (diameter, area, circumference).
         """
 
-* The above example contains the start of the class
-* The ``class Circle:`` starts the class
-
-    * Anything indented is part of the ``Circle`` class definition
-    * Like how anything indented under an ``if`` is part of the ``if`` block
-
-* The docstring comment is a simple description of the class
+* Anything indented under ``class Circle:`` is part of the class definition --- the same indentation rules as ``if`` blocks and functions
+* The docstring is a simple description of the class
 
 
 Constructor/Initialization and Attributes
@@ -147,8 +141,7 @@ Constructor
     print(circle_b.radius)      # Results in 5
 
 
-* In the above example, we created two ``Circle`` objects and then assigned a value to their respective ``radius`` attributes
-* Both ``circle_a`` and ``circle_b`` are of the class ``Circle``, but they are two separate instances of the class with two separate ``radius`` attributes
+* Both ``circle_a`` and ``circle_b`` are instances of ``Circle``, but each has its own ``radius`` attribute
 
 
 Constructor Parameters
@@ -198,8 +191,8 @@ Functionality and Methods
     * Area of a circle
     * Circumference of a circle
 
-* Fortunately, although these values are not stored within the ``Circle`` class as attributes, they can be calculated based on the ``Circle``\'s ``radius``
-* Consider the ``diameter`` method below that we could add to the ``Circle`` class below ``__init__``
+* These values are not stored as attributes, but they can be calculated from the ``radius``
+* Consider the ``diameter`` method added to the ``Circle`` class
 
 .. code-block:: python
     :linenos:

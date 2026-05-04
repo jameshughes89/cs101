@@ -2,11 +2,8 @@
 Lists
 *****
 
-* We saw that strings were a little different when compared to the other types we've seen (``int``, ``float``, ``bool``)
-* We can generalize the idea of strings to more types
-
-    * A string is a collection of characters
-    * We can use lists to have a collection of other types
+* Strings are collections of characters --- we can generalize that idea
+* A ``list`` is a collection that can hold any types, not just characters
 
 
 .. admonition:: Activity
@@ -137,10 +134,6 @@ Lists & Loops
 
 * Iterating over a *collection of things* is very common
 * Expect to start using ``for`` loops like this a lot
-* In fact, this was used in assignment 1 multiple times
-
-    * Iterating over the contents of the file being read
-    * Iterating over the list of ``(latitude, longitude)`` pairs
 
 
 Range
@@ -167,8 +160,7 @@ Range
 
     * But because of ``0`` based indexing, the number ``5`` is not actually included
 
-* A big reason we like to use ``for`` loops this way is because the syntax is so simple and clean
-* The above functionality can be achieved with a ``while`` loop, but the code needed is a little more cumbersome
+* The same can be done with a ``while`` loop, but the syntax is more cumbersome
 
 .. code-block:: python
     :linenos:
@@ -191,8 +183,6 @@ Range
 
     Write a function ``beer_on_wall`` that prints out ``"n bottles of beer on the wall"`` for all ``n`` from ``99`` down
     to ``0``. This function must use a ``for`` loop with the ``range`` function.
-
-    The difficulty here is the need to count backwards.
 
     `Perhaps a read of the documentation can help. <https://docs.python.org/3/library/stdtypes.html#typesseq-range>`_
 
@@ -266,7 +256,7 @@ Looping Over Indices and Enumerate
     #   4 e
 
 
-* Here there is no need to actually index the list since the ``element`` variable already has the value ``another_list[i]``
+* Here ``element`` already holds the value at each index --- no need to index the list manually
 
 
 

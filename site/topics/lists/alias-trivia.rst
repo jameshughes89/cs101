@@ -2,7 +2,7 @@
 Aliases & List Trivia
 *********************
 
-* The following code should be simple to understand at this stage
+* The following code should look familiar at this stage
 
 .. code-block:: python
     :linenos:
@@ -15,7 +15,7 @@ Aliases & List Trivia
     print(a, b)     # Results in 5 7 --- a is left unchanged
 
 
-* And similarly, the below example should not surprise you
+* And the below example should follow naturally
 
 .. code-block:: python
     :linenos:
@@ -70,11 +70,11 @@ Aliases & List Trivia
 .. admonition:: Activity
     :class: activity
 
-    #. Create a list ``l`` with arbitrary contents.
-    #. Create an alias of ``l`` called ``l_alias``\.
-    #. Create a copy of ``l`` called ``l_copy``\.
+    #. Create a list ``my_list`` with arbitrary contents.
+    #. Create an alias of ``my_list`` called ``my_list_alias``\.
+    #. Create a copy of ``my_list`` called ``my_list_copy``\.
 
-    Convince yourself that you did in fact make an alias with ``l_alias`` and a copy with ``l_copy``\.
+    Verify that ``my_list_alias`` is an alias and ``my_list_copy`` is a copy.
 
 
 Functions and Aliasing
@@ -95,7 +95,7 @@ Functions and Aliasing
     print(a_list)   # Results in ['a', 'b', 'c', 99]
 
 
-* In the above example, although never accessed through ``a_list``, the list ``a_list`` references is altered through the alias ``some_list`` within the function ``add_to_list``
+* Even though we never used ``a_list`` inside the function, the list it references was changed through the alias ``some_list``
 
 
 Side Effects & Pure Functions
@@ -214,7 +214,7 @@ List Trivia
         * ``max``
         * ``sum``
 
-    However, just because Python provides these functions, someone still had to write these functions.
+    Python provides these, but someone still had to write them.
 
     #. Without using the built in ``sum``, write your own function ``my_sum`` to add up the contents of a list.
     #. How different do you think your algorithm is compared to the one Python gave you?
