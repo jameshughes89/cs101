@@ -12,7 +12,6 @@ class Circle:
         Creates a Circle object with the specified radius.
 
         :param radius: The radius of the Circle
-        :type radius: float
         """
         self.radius = radius
 
@@ -21,7 +20,6 @@ class Circle:
         Calculate and return the diameter of the Circle based on its radius.
 
         :return: diameter of the Circle
-        :rtype: float
         """
         return 2 * self.radius
 
@@ -30,7 +28,6 @@ class Circle:
         Calculate and return the area of the Circle based on its radius.
 
         :return: Area of the Circle
-        :rtype: float
         """
         return math.pi * self.radius**2
 
@@ -39,7 +36,6 @@ class Circle:
         Calculate and return the circumference of the Circle based on its radius.
 
         :return: Circumference of the Circle
-        :rtype: float
         """
         return 2 * math.pi * self.radius
 
@@ -50,8 +46,7 @@ class Circle:
 
         This is a "magic method" that can be used with `==`.
 
-        :param other: A Circle to be compared to self Circle
-        :type other: Circle
+        :param other: A Circle to be compared to the self Circle
         :return: A boolean indicating if the two Circles are equivalent
         """
         if isinstance(other, Circle):
@@ -62,10 +57,9 @@ class Circle:
         """
         Generate and return a string representation of the Circle object.
 
-        This os a "magic method" that can be used with `str(some_circle)` or for printing.
+        This is a "magic method" that can be used with `str(some_circle)` or for printing.
 
         :return: A string representation of the Circle
-        :rtype: string
         """
         return f"Circle(radius={self.radius})"
 
