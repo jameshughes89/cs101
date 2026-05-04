@@ -62,9 +62,7 @@ Student Class
             among students.
 
             :param other: A student to compare the self Student to
-            :type other: Student
             :return: True if the students have the same student number, false otherwise
-            :rtype: boolean
             """
             if isinstance(other, Student):
                 return self.student_number == other.student_number
@@ -174,9 +172,7 @@ Course Class
             sentinel value of -1.
 
             :param student: The student to search for
-            :type student: Student
             :return: Index of the student, or -1 if it is not found
-            :rtype: int
             """
             for i, s in enumerate(self._students):
                 if s == student:

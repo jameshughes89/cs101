@@ -85,9 +85,7 @@ Methods
             Calculate the Euclidean distance from this Point3D (self) and the Point3D passed as a parameter.
 
             :param other: A Point3D to find the Euclidean distance to from the self Point3D
-            :type other: Point3D
             :return: The Euclidean distance between the self Point3D and the parameter Point3D other
-            :rtype: float
             """
             return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
@@ -115,9 +113,7 @@ Methods
             This is a "magic method" that can be used with `==`.
 
             :param other: A Point3D to compare to the self point3D
-            :type other: Point3D
             :return: A boolean indicating if the two Point3Ds are equivalent.
-            :rtype: boolean
             """
             if isinstance(other, Point3D):
                 return self.x == other.x and self.y == other.y and self.z == other.z
@@ -131,7 +127,6 @@ Methods
             This is a "magic method" that can be used with `str(some_point3d)` or for printing.
 
             :return: A string representation of the Point3D
-            :rtype: string
             """
             return f"Point3D(x={self.x}, y={self.y}, z={self.z})"
 
@@ -191,7 +186,7 @@ Constructor and Attributes
 
     class Sphere:
         """
-        Class for managing Spheres within a 3D space. This includes tracking it's centre point and radius. Additionally, it
+        Class for managing Spheres within a 3D space. This includes tracking its centre point and radius. Additionally, it
         allows for some basic geometry calculations, distance measurements between Spheres, and checking if two Spheres
         overlap.
         """
@@ -249,9 +244,7 @@ Methods
             Calculate and return the distance between the centres of two Spheres.
 
             :param other: Sphere whose centre to find the distance to from the self Sphere.
-            :type other: Sphere
             :return: Distance between the Sphere centres.
-            :rtype: float
             """
             return self.centre_point.distance_from_point(other.centre_point)
 
@@ -276,9 +269,7 @@ Methods
             overlap.
 
             :param other: Sphere whose edge to find the distance to from the self Sphere.
-            :type other: Sphere
             :return: Distance between the Sphere edges.
-            :rtype: float
             """
             return self.distance_between_centres(other) - self.radius - other.radius
 
@@ -287,10 +278,8 @@ Methods
             Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
             between edges) are considered overlapping.
 
-            :param other: Sphere to check if it overlaps the self Sphere overlaps
-            :type other: Sphere
+            :param other: Sphere to check if it overlaps the self Sphere
             :return: Boolean indicating if the two Spheres overlap
-            :rtype: bool
             """
             return self.distance_between_edges(other) <= 0
 

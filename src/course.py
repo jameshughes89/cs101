@@ -23,9 +23,7 @@ class Course:
         sentinel value of -1.
 
         :param student: The student to search for
-        :type student: Student
         :return: Index of the student, or -1 if it is not found
-        :rtype: int
         """
         for i, s in enumerate(self._students):
             if s == student:
@@ -37,9 +35,7 @@ class Course:
         Checks if a given student exists within the Course.
 
         :param student: The Student object to be checked if it exists within the Course
-        :type student: Student
         :return: True if the Student exists, False otherwise
-        :rtype: bool
         """
         return -1 != self._find(student)
 
@@ -50,7 +46,6 @@ class Course:
 
         :raise Value error: If the student does not exist within the collection, a ValueError is raised.
         :param student: The student to be removed
-        :type student: Student
         """
         if not self.contains(student):
             raise ValueError("No such student to remove")
