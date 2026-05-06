@@ -9,7 +9,6 @@ def contains_while(needle, haystack) -> bool:
     :param haystack: List to search through
     :type haystack: A list of arbitrary types
     :return: True if needle is contained in haystack, false otherwise
-    :rtype: Boolean
     """
     index = 0
     while index < len(haystack):
@@ -39,7 +38,6 @@ def index_of_for(needle, haystack) -> int:
     :param haystack: List to search through
     :type haystack: A list of arbitrary types
     :return: Index of the needle within haystack if it is found, -1 otherwise
-    :rtype: Integer
     """
     counter = 0
     for thing in haystack:
@@ -66,7 +64,6 @@ def my_sum(a_list) -> float:
     :param a_list:  Some list of numbers to be added together
     :type a_list: A list of some type that can be added together
     :return: The sum of the contents of the list
-    :rtype: Float
     """
     sum = 0
     for value in a_list:
