@@ -44,7 +44,7 @@ class Course:
         Remove the first occurrence of the specified student from the collection. If the student does not exist, raise
         an exception.
 
-        :raise Value error: If the student does not exist within the collection, a ValueError is raised.
+        :raises ValueError: If the student does not exist within the collection.
         :param student: The student to be removed
         """
         if not self.contains(student):
