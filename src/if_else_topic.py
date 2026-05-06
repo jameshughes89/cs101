@@ -3,7 +3,6 @@ def smush(a_number: float) -> float:
     Returns half the value of the parameter a_number if the value is positive,
     otherwise, return the value of a_number.
 
-    :rtype: float
     :param a_number: Some arbitrary number.
     :return: Half of a_number when it is positive, a_number when not positive.
     """
@@ -24,7 +23,6 @@ def smush_version_2(a_number: float) -> float:
     Returns half the value of the parameter a_number if the value is positive,
     otherwise, return the value of a_number.
 
-    :rtype: float
     :param a_number: Some arbitrary number.
     :return: Half of a_number when it is positive, a_number when not positive.
     """
@@ -46,7 +44,6 @@ def smush_version_3(a_number: float) -> float:
     Returns half the value of the parameter a_number if the value is positive,
     otherwise, return the value of a_number.
 
-    :rtype: float
     :param a_number: Some arbitrary number.
     :return: Half of a_number when it is positive, a_number when not positive.
     """
@@ -67,7 +64,6 @@ def is_negative(a_number: float) -> bool:
     Checks if the provided number is negative or not. Returns True if a_number
     is negative, False otherwise.
 
-    :rtype: float
     :param a_number: Some arbitrary number.
     :return: True if a_number is negative, False otherwise.
     """
@@ -87,7 +83,6 @@ def is_negative_version_2(a_number: float) -> bool:
     Checks if the provided number is negative or not. Returns True if a_number
     is negative, False otherwise.
 
-    :rtype: float
     :param a_number: Some arbitrary number.
     :return: True if a_number is negative, False otherwise.
     """
@@ -105,7 +100,6 @@ def three_five_divisible(a_number: float) -> str:
     Checks if a number is divisible by both three and five. If it is, return
     a string "It is!", otherwise "Nope".
 
-    :rtype: str
     :param a_number: Some arbitrary number.
     :return: String indicating if the number is divisible by three and five
     """
@@ -127,7 +121,6 @@ def hail(n: float) -> float:
     """
     Hailstone Numbers. Return n/2 if n is even, otherwise return 3n+1.
 
-    :rtype: float
     :param n: Some arbitrary number.
     :return: n/2 if n is even, 3n+1 when n is odd.
     """
@@ -148,7 +141,6 @@ def letter_grade(percent_grade: float) -> str:
     """
     Calculate the letter grade associated with the provided percent grade.
 
-    :rtype: str
     :param percent_grade: A grade as a percent
     :return: Letter grade for the provided percentage
     """

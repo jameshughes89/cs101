@@ -41,7 +41,6 @@ Conditional Expressions
         Returns half the value of the parameter a_number if the value is positive,
         otherwise, return the value of a_number.
 
-        :rtype: float
         :param a_number: Some arbitrary number.
         :return: Half of a_number when it is positive, a_number when not positive.
         """
@@ -112,7 +111,6 @@ Compound Conditions
         Checks if a number is divisible by both three and five. If it is, return
         a string "It is!", otherwise "Nope".
 
-        :rtype: str
         :param a_number: Some arbitrary number.
         :return: String indicating if the number is divisible by three and five
         """
@@ -237,7 +235,6 @@ Alternative Execution
             Returns half the value of the parameter a_number if the value is positive,
             otherwise, return the value of a_number.
 
-            :rtype: float
             :param a_number: Some arbitrary number.
             :return: Half of a_number when it is positive, a_number when not positive.
             """
@@ -261,7 +258,6 @@ Alternative Execution
             Returns half the value of the parameter a_number if the value is positive,
             otherwise, return the value of a_number.
 
-            :rtype: float
             :param a_number: Some arbitrary number.
             :return: Half of a_number when it is positive, a_number when not positive.
             """
@@ -288,7 +284,6 @@ Exclusive Alternatives
         """
         Calculate the letter grade associated with the provided percent grade.
 
-        :rtype: str
         :param percent_grade: A grade as a percent
         :return: Letter grade for the provided percentage
         """
@@ -363,7 +358,6 @@ Exclusive Alternatives
         """
         Calculate the letter grade associated with the provided percent grade.
 
-        :rtype: str
         :param percent_grade: A grade as a percent
         :return: Letter grade for the provided percentage
         """
