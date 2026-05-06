@@ -75,34 +75,13 @@ Writing Unit Tests
             self.assertEqual(11, sphere.radius)
 
 
-* Above are two tests confirming the correctness of the constructor and the assigning of the ``Sphere`` class' attributes
-* Key things to note here are
+* Above are two tests confirming the correctness of the constructor and attributes
+* Key things to note
 
-    * The tests are methods that belong to the class
-    * Each method's parameter list is just ``self``
-    * Each method starts with the name ``test_``
-
-        * The method names are descriptive so it's easy to know what it tests
-        * The ``test_`` prefix is required, but after ``test_``, the name does not matter
-
-    * We make use of ``assertEqual``, which is a method referenced by the ``self`` reference variable
-
-        * Although we did not write this method, we inherit it from ``unittest.TestCase``
-        * We used ``assertEqual`` here, but there are many other methods for various types of tests, some of which will be covered here
-
-    * The method provides a simple mechanism for setup code to be grouped with the test itself
-
-        * Create a ``Sphere`` object
-        * Test something about the object
-
-    * Each test should test one thing
-
-        * This makes it easier to isolate what exactly went wrong
-
-
-* Other than those points, so far there is not much more to point out here since we have been writing tests for a while
-* The basic idea of how we write the tests is the same
-* The only difference is the syntax of writing the tests with ``unittest``
+    * Tests are methods that belong to the class, each with just ``self`` in the parameter list
+    * Each method name starts with ``test_`` --- this prefix is required; the rest of the name should be descriptive
+    * ``assertEqual`` is called via ``self`` --- it comes from ``unittest.TestCase`` and checks that two values are equal
+    * Each test method handles its own setup and tests one thing, making it easy to isolate failures
 
 
 .. code-block:: python
@@ -195,7 +174,7 @@ Subtests
             self.assertEqual(20, sphere.diameter())
 
 
-* Although there is nothing wrong with the above tests, we can instead make use of ``subTest`` in this scenario
+* We can instead make use of ``subTest`` to consolidate these into one test method
 
 
 .. code-block:: python
@@ -216,8 +195,8 @@ Subtests
                 Sphere(Point3D(10, 11, 12), 10.1),
             ]
             expecteds = [0, 2, 0, 20.2]
-            for (case, expect) in zip(cases, expecteds):
-                with self.subTest():
+            for case, expect in zip(cases, expecteds):
+                with self.subTest(case=case, expect=expect):
                     self.assertAlmostEqual(expect, case.diameter(), 5)
 
 
@@ -328,9 +307,7 @@ Running Unit Tests
     * Just because a test failed, all other tests still ran
 
 
-* Writing and running these tests may feel like a lot of work
-* But writing code is only part of your job when programming
-* Demonstrating that your code is correct, to yourself or anyone else that may use your code, is another big part of writing code
+* Writing tests may feel like extra work, but demonstrating correctness is just as important as writing the code itself
 
 
 For Next Topic

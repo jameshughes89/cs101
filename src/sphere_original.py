@@ -3,7 +3,7 @@ import math
 
 class Sphere:
     """
-    Class for managing Spheres within a 3D space. This includes tracking it's location in three dimensional space and
+    Class for managing Spheres within a 3D space. This includes tracking its location in three dimensional space and
     radius. Additionally, it allows for some basic geometry calculations, distance measurements between Spheres, and
     checking if two Spheres overlap.
     """
@@ -28,9 +28,7 @@ class Sphere:
         Calculate and return the distance between the centres of two Spheres.
 
         :param other: Sphere whose centre to find the distance to from the self Sphere.
-        :type other: Sphere
         :return: Distance between the Sphere centres.
-        :rtype: float
         """
         return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
@@ -40,9 +38,7 @@ class Sphere:
         overlap.
 
         :param other: Sphere whose edge to find the distance to from the self Sphere.
-        :type other: Sphere
         :return: Distance between the Sphere edges.
-        :rtype: float
         """
         return self.distance_between_centres(other) - self.radius - other.radius
 
@@ -51,10 +47,8 @@ class Sphere:
         Determine if two Sphere objects overlap within the 3D space. Two Spheres that are touching (distance of 0
         between edges) are considered overlapping.
 
-        :param other: Sphere to check if it overlaps the self Sphere overlaps
-        :type other: Sphere
+        :param other: Sphere to check if it overlaps the self Sphere
         :return: Boolean indicating if the two Spheres overlap
-        :rtype: bool
         """
         return self.distance_between_edges(other) <= 0
 
