@@ -187,7 +187,6 @@ Celsius to Fahrenheit Example Tests
         """
         Convert a temperature from Celsius units to Fahrenheit units.
 
-        :rtype: float
         :param temp_in_celsius: The temperature in Celsius to be converted.
         :return: The temperature in Fahrenheit.
         """
@@ -294,7 +293,6 @@ Setting Type Hints
         """
         Calculate and return the sum of the two provided values.
 
-        :rtype: float
         :param a: First number
         :param b: Second number
         :return: The sum of the two numbers
@@ -307,9 +305,7 @@ Setting Type Hints
 
     * This part ``-> float:``
 
-* It is also good to include the return type in the docstring for the function
-
-    * ``:rtype: float``
+* Since the type hint already documents the return type, ``:rtype:`` is not needed in the docstring
 
 
 What You Get
@@ -337,7 +333,6 @@ What You Don't Get
         """
         Calculate and return the sum of the two provided values.
 
-        :rtype: float
         :param a: First number
         :param b: Second number
         :return: The sum of the two numbers

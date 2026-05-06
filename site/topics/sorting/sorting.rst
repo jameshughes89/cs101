@@ -2,20 +2,14 @@
 Sorting Algorithms
 ******************
 
-.. Warning::
+.. note::
 
-    At this stage of the course we are starting to see nontrivial algorithms. Although you may have been able to quickly
-    understand the previous algorithms, going forward you should not expect to observe an algorithm and immediately
-    understand how it works.
-
-    Although you are all equipped with the requisite skills to understand these algorithms, they require *careful study*
-    to understand. The best strategy for approaching these algorithms is to carefully trace through their operation,
-    step by step, making no assumptions of the code.
+    These algorithms require careful tracing --- don't expect them to click on first read.
 
 
 * Similar to searching, sorting is a problem you are all familiar with
 * Unlike searching, we have not investigated any sorting algorithms
-* Believe it or not, there are many ways one could sort a list
+* There are many ways one could sort a list
 
     * Some are better than others
     * Some are better than others under certain conditions
@@ -144,7 +138,7 @@ Insertion Sort
 .. admonition:: Activity
     :class: activity
 
-    Perform a insertion sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
+    Perform an insertion sort, with pencil and paper, on the list ``[3,7,4,1,5,2]``. Keep track of both the unsorted list
     and sorted list at each step of the algorithm.
 
 
@@ -267,7 +261,7 @@ Bubble Sort
 * It would be rather silly doing :math:`n` passes on the list to sort it if we know it's already sorted
 * Instead, we can repeatedly do passes on the list until we complete a full scan without any swaps
 
-    * If there was no swaps, it means nothing was out of order, which means the list is sorted
+    * If there were no swaps, it means nothing was out of order, which means the list is sorted
 
 .. code-block:: python
     :linenos:
