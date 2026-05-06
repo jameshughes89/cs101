@@ -58,9 +58,8 @@ Part 1 --- Uploading Files to Colab
 ===================================
 
 After downloading the notebook file above, you will need to upload it to Colab to get started. See the respective
-section from assignment 1 for an example on how to do this. I recommend saving a copy of this notebook file to your
-Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you
-want to work on it.
+section from assignment 1 for an example on how to do this. Saving a copy to your Google Drive and working from that
+is recommended --- otherwise you will need to re-upload it each time you open Colab.
 
 
 Part 2 --- Setup Game
@@ -155,7 +154,7 @@ return the new list of lists of strings ``[["X", " ", " "], ["X", " ", "O"], [" 
 
 This function should **not** have any side effect --- the game board passed as a parameter to the function should
 **not** be altered in any way. Instead, a copy of the game board is to be created that is then modified and returned by
-the function. Be warned, however, that one needs to be careful how they perform the copy --- when we have a list of
+the function. One needs to be careful how they perform the copy --- when we have a list of
 lists, we *really* have a list of *references* to other lists; we need to ensure we are making copies of the internal
 lists and not just the outside list. If we perform a copy naively, we may accidentally make a copy of the list with
 copies of the references --- this is called a "shallow copy". Refer to the following images to see the difference
@@ -278,7 +277,7 @@ cell will have different symbols, and further, each cell has different separatio
 
 If, on the other hand, it were possible to break the problem down such that there was a mechanism to render a whole row,
 then the complexity in ``render_board`` feels much lower --- no need to think of the details of rendering the individual
-cells, just render rows with horizontal lines between them.
+cells, render rows with horizontal lines between them.
 
 
 Render Row
@@ -323,10 +322,10 @@ Part 8 --- Putting it Together
 ==============================
 
 The main game loop is now needed. More accurately, we need the setup for a game, the game loop, and the displaying of
-the final result. Fortunately, with all the core functionality already written, much of this is just a matter of putting
+the final result. Fortunately, with all the core functionality already written, much of this is a matter of putting
 things together.
 
-The setup is fairly straight forward:
+The setup is fairly straightforward:
 
     * Prompt the user for the game size
     * Create the game board with the specified size
@@ -362,12 +361,12 @@ Some additional things to note about Xtreme tic-tac-toe:
    * X will always win a game that's smaller than 3x3 (think about why that is)
 
 
-Below is some pseudocode that you may find helpful. For the most part, it is just restating the above points. The first
+Below is some pseudocode that you may find helpful. For the most part, it restates the above points. The first
 line of code, the ``if`` statement, is not actual pseudocode and is something you need in your code. It is required for
 our marking and basically means that the code within the block will only run if we are directly running this script. For
 example, if one were to ``import`` your code into another script (which is done for marking), Python would try to run
 all the code within the imported script. By having this line of code, it says to not bother running the block unless the
-script was ran directly.
+script was run directly.
 
 .. code-block:: text
 
@@ -487,9 +486,8 @@ they should.
 There are no assertion tests for the final game loop, so you will need to run the game in order to get a sense of if it
 is working or not. When testing by playing, actively try to break the game.
 
-Realistically you should have been running tests after you complete each of the above parts, but this part is here to
-remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
-for the marker to return your assignment before you have an idea of if it works correctly.
+Run the tests as you complete each part, not all at once at the end. One of the nice things about programming is that
+you can check your work as you go --- you don't have to wait for it to be marked to know if something is working.
 
 
 Some Hints
@@ -521,7 +519,7 @@ Below is a list of both *quantitative* and *qualitative* things we will look for
 * Comments?
 * Variable Names?
 * Style?
-* Did you do just weird things that make no sense?
+* Does the code make sense?
 
 
 What to Submit to Moodle

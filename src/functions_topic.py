@@ -2,7 +2,6 @@ def celsius_to_fahrenheit(temp_in_celsius: float) -> float:
     """
     Convert a temperature from Celsius units to Fahrenheit units.
 
-    :rtype: float
     :param temp_in_celsius: The temperature in Celsius to be converted.
     :return: The temperature in Fahrenheit.
     """
@@ -27,7 +26,6 @@ def square_of_sum(a: float, b: float) -> float:
     E.g.
         square_if_sum(2, 3) -> 25
 
-    :rtype: float
     :param a: First number
     :param b: Second number
     :return: The square of the sum of a and b
@@ -52,7 +50,6 @@ def concatenate_strings(string1: str, string2: str) -> str:
     E.g.
         concatenate_strings("hello", "world") -> "helloworld"
 
-    :rtype: str
     :param string1: First string of the concatenation
     :param string2: Second string of the concatenation
     :return: The concatenation of string1 and string2
@@ -72,7 +69,6 @@ def criss_cross_concatenation(string1: str, string2: str, string3: str, string4:
     E.g.
         criss_cross_concatenation("hello", "world", "CSCI", "161") -> "helloCSCIworld161"
 
-    :rtype: str
     :param string1: First string of the concatenation
     :param string2: Second string of the concatenation (that should be the third one on output)
     :param string3: Third string of the concatenation (that should be the second one on the output)

@@ -23,9 +23,8 @@ You will
 
 .. warning::
 
-    You should **not** expect to be able to sit down and just start coding a solution. Programming does not work like
-    that. Expect this assignment to take hours. Expect to get things wrong, and then, expect to get them wrong again ---
-    this is normal.
+    Expect this assignment to take several hours spread across multiple sessions. Getting stuck, backtracking, and
+    trying again is a normal part of the process.
 
 
 Provided Files
@@ -59,8 +58,8 @@ Part 1 --- Uploading Files to Colab
 ===================================
 
 After downloading the notebook file above, you will need to upload it to Colab to get started. See the below image to
-help find how to do this. I recommend saving a copy of this notebook file to your Google drive and then work with that
-one. You don't have to, but you will have to re-upload the project every time you want to work on it.
+help find how to do this. Saving a copy to your Google Drive and working from that is recommended --- otherwise you
+will need to re-upload it each time you open Colab.
 
 .. image:: colab_upload_notebook_menu.png
 
@@ -79,8 +78,8 @@ The function that loads the data, ``load_starbucks_data``, is already provided f
 discuss in class, but it shouldn't be too difficult to get an intuition about what exactly it is doing if you look over
 it and play with it a little.
 
-Get used to looking at code that is not yours, using unfamiliar ideas, and trying to figure out what existing code does.
-This is not a trivial thing, but as a programmer, it is something you will end up spending a lot of time doing.
+Reading code you didn't write and making sense of unfamiliar ideas is something programmers do constantly --- this is
+good practice.
 
 .. warning::
 
@@ -104,8 +103,8 @@ should return the same latitude/longitude as a single value in decimal degrees (
 
 If you are not familiar with the conversion, check `Wikipedia <https://en.wikipedia.org/wiki/Arcminute>`_.
 
-If you had a look at the data file, you will have noticed that the data is already stored as a decimal. This means you
-do not actually need to use this function to convert the data from the Starbucks location file.
+If you look at the data file, you will notice that the data is already stored as a decimal. This means you do not
+actually need to use this function to convert the data from the Starbucks location file.
 
 
 Part 4 --- Subtended Area
@@ -198,9 +197,8 @@ them not comments (remove the ``#``) to include them in your running program. Th
 passes all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as
 they should.
 
-Realistically you should have been running tests after you complete each of the above parts, but this part is here to
-remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
-for the marker to return your assignment before you have an idea of if it works correctly.
+Run the tests as you complete each part, not all at once at the end. One of the nice things about programming is that
+you can check your work as you go --- you don't have to wait for it to be marked to know if something is working.
 
 
 Some Hints
@@ -232,7 +230,7 @@ Below is a list of both *quantitative* and *qualitative* things we will look for
 * Comments?
 * Variable Names?
 * Style?
-* Did you do just weird things that make no sense?
+* Does the code make sense?
 
 
 What to Submit to Moodle

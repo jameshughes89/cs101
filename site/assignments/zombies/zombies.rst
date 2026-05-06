@@ -80,9 +80,8 @@ Part 1 --- Uploading Files to Colab
 ===================================
 
 After downloading the notebook file above, you will need to upload it to Colab to get started. See the respective
-section from assignment 1 for an example on how to do this. I recommend saving a copy of this notebook file to your
-Google drive and then work with that one. You don't have to, but you will have to re-upload the project every time you
-want to work on it.
+section from assignment 1 for an example on how to do this. Saving a copy to your Google Drive and working from that
+is recommended --- otherwise you will need to re-upload it each time you open Colab.
 
 
 Part 2 --- Read Over Provided Code
@@ -92,8 +91,8 @@ There are many functions already completed within the assignment 2 notebook file
 functionality for the assignment. They contain ideas that you are likely not familiar with, but do spend some time going
 over the code to see if you can get a high-level idea of what each is doing.
 
-Get used to looking at code that is not yours, using unfamiliar ideas, and trying to figure out what existing code does.
-This is not a trivial thing, but as a programmer, it is something you will end up spending a lot of time doing.
+Reading code you didn't write and making sense of unfamiliar ideas is something programmers do constantly --- this is
+good practice.
 
 You will notice that each of the provided functions has corresponding assert tests, but some are commented with a
 "eyeball test" note. For these functions, there is no way to easily test the function with an assertion, so in order to
@@ -189,14 +188,12 @@ occurrences of the events we want. For example, if ``cure_probability`` was set 
 80% of the time.
 
 When it comes to randomly selecting a neighbour to infect, the ``random`` library provides many functions that may work
-effectively. I suggest investigating the
-`choice function <https://docs.python.org/3/library/random.html#random.choice>`_ as you may find it to be the simplest
-to get working for your needs.
+effectively. The
+`choice function <https://docs.python.org/3/library/random.html#random.choice>`_ is worth investigating.
 
 Finally, for the purposes of our simulation, we want to make sure city 0 is always infected. There are a few ways one
-could implement this, but perhaps the simplest is to just update city 0 to infected in the after state before the
-function finishes. That way, if city 0 was cured during the simulation step, it is reset to infected, and if city 0
-happened to not get cured, there is no harm in setting it to infected anyways.
+could implement this, but perhaps the simplest is to update city 0 to infected in the after state before the function
+finishes. That way, if city 0 was cured during the simulation step, it is reset to infected.
 
     .. code-block:: text
 
@@ -220,7 +217,7 @@ have a world (list of cities) and the spread and cure probabilities as parameter
 parameter for setting a cutoff for the simulation (more on this below). The function will return a list of the number of
 cities infected at each step of the simulation.
 
-The purpose of this function is to just run the simulation step repeatedly until it is the end of the world (all cities
+The purpose of this function is to run the simulation step repeatedly until it is the end of the world (all cities
 infected). In other words, loop the simulation step while the world is not completely infected. This will require the
 use of ``simulation_step`` and ``is_world_completely_infected``. Remember, the function ``simulation_step`` takes the
 before state of the world as an argument and returns the after state --- be sure to be keeping track of the most recent
@@ -304,9 +301,8 @@ not comments (remove the ``#``) to include them in your running program. There i
 all the tests that you will be correct, but it certainly helps provide peace of mind that things are working as they
 should.
 
-Realistically you should have been running tests after you complete each of the above parts, but this part is here to
-remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
-for the marker to return your assignment before you have an idea of if it works correctly.
+Run the tests as you complete each part, not all at once at the end. One of the nice things about programming is that
+you can check your work as you go --- you don't have to wait for it to be marked to know if something is working.
 
 
 Some Hints
@@ -338,7 +334,7 @@ Below is a list of both *quantitative* and *qualitative* things we will look for
 * Comments?
 * Variable Names?
 * Style?
-* Did you do just weird things that make no sense?
+* Does the code make sense?
 
 
 What to Submit to Moodle
@@ -391,5 +387,5 @@ Assignment FAQ
 
     * Probably
     * The shorter the better
-    * The marker just wants to see that you played around a little and found answers to the questions
+    * The marker wants to see that you played around a little and found answers to the questions
 
