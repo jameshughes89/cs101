@@ -2,21 +2,16 @@
 Objects III --- Interacting Objects
 ***********************************
 
-* We completed the ``Sphere`` class in the previous topic, and it will work for our needs
-* However, there are a few things we could do to improve the design and implementation
-* One idea is to make a ``Point3D`` class to manage all the point related things
+* The ``Sphere`` class from the previous topic works, but there are a few design improvements worth making
+* One idea is to introduce a ``Point3D`` class to manage all the coordinate-related concerns
 
     * Location in three dimensional space
     * Distance between points
     * Equality on points
 
-* Although there is nothing wrong with the original ``Sphere`` implementation, let's consider that
-
-    * It will make our ``Sphere`` class simpler and easier to understand
-    * It allows us to write the methods at a higher-level of abstraction since can deal with ``Point3D`` objects instead of individual coordinates
-    * If we wanted to make other three dimensional shapes, they could use something like a ``Point3D`` class to represent their position
-    * It allows us to abstract and delegate some functionality to another class
-    * It will help with testing since we can test the ``Point3D`` class' functionality and the ``Sphere``\s independently
+* Doing so will make the ``Sphere`` class simpler, since it can delegate coordinate work to ``Point3D``
+* It also means any other three dimensional shape we write could reuse ``Point3D``
+* And it makes testing easier --- we can test ``Point3D`` and ``Sphere`` independently
 
 
 Point3D Class
@@ -90,8 +85,7 @@ Methods
             return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
 
-* The above method is following the same pattern as before
-* Like within the ``Sphere`` class, we have a method making use of another class method
+* This follows the same pattern as the ``distance_between_centres`` method from the previous topic --- a method that takes another instance of the same class as a parameter
 
 
 
@@ -112,7 +106,7 @@ Methods
 
             This is a "magic method" that can be used with `==`.
 
-            :param other: A Point3D to compare to the self point3D
+            :param other: A Point3D to compare to the self Point3D
             :return: A boolean indicating if the two Point3Ds are equivalent.
             """
             if isinstance(other, Point3D):
@@ -196,9 +190,8 @@ Constructor and Attributes
             self.radius = radius
 
 
-* From looking at the above code, we see that we have removed the ``x``, ``y``, and ``z`` coordinates as explicit attributes for the ``Sphere``
-* Instead, we make use of a ``Point3D`` object
-* And, as we know, those coordinate attributes exist within the ``Point3D`` class, which are entirely accessible from within the ``Sphere`` class
+* The ``x``, ``y``, and ``z`` attributes are gone --- replaced by a single ``Point3D`` object
+* The coordinate data still exists, just inside the ``Point3D``
 
 
 
@@ -284,18 +277,13 @@ Methods
             return self.distance_between_edges(other) <= 0
 
 
-* The above ``distance_between_edges`` and ``overlaps`` methods remain unchanged from the original implementation of the ``Sphere``
-
-    * They had already offloaded the Euclidean distance calculations to the ``distance_between_centres`` method
+* ``distance_between_edges`` and ``overlaps`` are unchanged --- they already delegated to ``distance_between_centres``
 
 
-* And finally, the magic methods end up getting updated slightly
+* The magic methods are also updated slightly
 
 .. code-block:: python
     :linenos:
-
-    import math
-
 
     class Sphere:
 
@@ -306,16 +294,10 @@ Methods
                 return self.radius == other.radius and self.centre_point == other.centre_point
             return False
 
-* The above updated ``__eq__`` now checks if the ``centre_point`` attributes are the same instead of checking the ``x``, ``y``, and ``z`` explicitly
-
-    * Remember, we defined the ``__eq__`` within the ``Point3D`` class
-
+* ``__eq__`` now compares ``centre_point`` attributes instead of ``x``, ``y``, ``z`` individually --- it uses the ``__eq__`` we defined on ``Point3D``
 
 .. code-block:: python
     :linenos:
-
-    import math
-
 
     class Sphere:
 
@@ -325,13 +307,8 @@ Methods
             return f"Sphere(centre_point={self.centre_point}, radius={self.radius})"
 
 
-* And lastly, instead of having our ``__repr__`` extract the ``x``, ``y``, and ``z`` attributes, we simply get the string version of the ``Point3D``
-
-    * With f-strings, Python will automatically convert the ``Point3D`` object to a string
-
-* The final string representation of the ``Sphere`` class will now be slightly different from before
-* Before, we would see something like ``Sphere(x=1, y=2, z=3, radius=4)``
-* Now we would see something like ``Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)``
+* ``__repr__`` now embeds the ``Point3D`` string directly --- Python will automatically call ``Point3D``\'s ``__repr__`` inside the f-string
+* The result changes from ``Sphere(x=1, y=2, z=3, radius=4)`` to ``Sphere(centre_point=Point3D(x=1, y=2, z=3), radius=4)``
 
 
 Testing
@@ -345,7 +322,7 @@ Testing
 * It's also difficult to tell the tests apart as they feel a little jumbled together
 * It's not easy to know what a test is doing just by looking at it anymore
 
-    * For example, ``assert 0.01 > abs(sphere.distance_between_edges(Sphere(0, 0, 0, 0)) - (-0.26))``
+    * For example, ``assert 0.01 > abs(sphere.distance_between_edges(Sphere(Point3D(0, 0, 0), 0)) - (-0.26))``
     * We can piece it together, but it's not immediately clear
 
 * It's also hard to get a sense of how thorough the tests are
@@ -361,4 +338,6 @@ Testing
 For Next Topic
 ==============
 
+* Download and look through the :download:`Point3D class <../../../src/point3d.py>`
+* Download and look through the :download:`Sphere class <../../../src/sphere.py>`
 * Read `Chapter 21 of the text <https://openbookproject.net/thinkcs/python/english3e/even_more_oop.html>`_
