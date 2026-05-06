@@ -52,11 +52,8 @@ def character_is_at(needle: str, haystack: str) -> int:
     occurrence of the character if it exists, return -1 if the character does not exist in the string.
 
     :param needle:  Character to look for
-    :type needle: String
     :param haystack: String to search through
-    :type haystack: String
     :return: Index of the first occurrence of the character, or -1 if the character does not exist within the string
-    :rtype: Integer
     """
     index = 0
     while index < len(haystack):

@@ -3,9 +3,7 @@ def factorial(n: int) -> int:
     Calculate factorial of n.
 
     :param n:   Number to calculate factorial of
-    :type n:    Integer
     :return:    The factorial of n
-    :rtype:     Integer
     """
     result = 1
     while n > 1:
@@ -25,9 +23,7 @@ def int_sum(n: int) -> int:
     Returns the sum of all numbers between 0 and n inclusively (be sure to include the value of n in the sum).
 
     :param n: Number to sum to
-    :type n: Integer
     :return: The sum of all numbers between 0 and n inclusively
-    :rtype: Integer
     """
     current_integer = 0
     running_total = 0
@@ -49,9 +45,7 @@ def int_sum_print(n: int) -> int:
     the values of the summation along the way.
 
     :param n: Number to sum to
-    :type n: Integer
     :return: The sum of all numbers between 0 and n inclusively
-    :rtype: Integer
     """
     current_integer = 0
     running_total = 0
@@ -74,9 +68,7 @@ def sum_even_numbers(n: int) -> int:
     Sums all the even numbers between 0 and n inclusively.
 
     :param n: Number to sum to inclusively.
-    :type n: Integer
     :return: Sum of all the even numbers between 0 and n inclusively.
-    :rtype: Integer.
     """
     current_integer = 0
     running_total = 0
