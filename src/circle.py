@@ -46,7 +46,7 @@ class Circle:
 
         This is a "magic method" that can be used with `==`.
 
-        :param other: A Circle to be compared to self Circle
+        :param other: A Circle to be compared to the self Circle
         :return: A boolean indicating if the two Circles are equivalent
         """
         if isinstance(other, Circle):

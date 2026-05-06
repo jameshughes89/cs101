@@ -2,16 +2,8 @@
 Objects II --- More on Methods
 ******************************
 
-* The ``Circle`` class discussed in the previous topic introduced:
-
-    * How to write classes
-    * How to write and make use of a constructor
-    * Attributes, both how to set them and how to access them
-    * How to write and use methods
-    * How to make instances of the class
-
-* In this topic, we will create more classes containing more complex functionality
-* Additionally, we will see objects interacting with one another and how objects can provide a nice level of abstraction
+* The previous topic covered the basics of classes, constructors, attributes, and methods using a ``Circle`` class
+* Here, we build on that by defining a ``Sphere`` class with more complex methods --- including methods that take another ``Sphere`` as a parameter
 
 * The goal is to define a ``Sphere`` class
 
@@ -72,9 +64,8 @@ Constructor and Attributes
             self.radius = radius
 
 
-* That's it --- that is all we need to get started with the ``Sphere`` class
-* Like before, we can even start making instances of a ``Sphere``
-* However, like before, the class will not be particularly useful here without the needed functionality
+* That's all we need to get started with the ``Sphere`` class
+* Like before, the class won't be very useful until we add methods
 
 
 Methods
@@ -110,15 +101,13 @@ Methods
             return (4 / 3) * math.pi * self.radius**3
 
 
-* The above three methods follow the same pattern we saw with the ``Circle``
-* These look like regular functions, but the difference is
+* The above three methods follow the same pattern as the ``Circle`` methods from the previous topic
 
     * They are associated with an instance of a ``Sphere``
     * They have a ``self`` parameter, which is a reference variable to the ``Sphere`` instance
     * Accessing any of the object's attributes are done through the use of the ``self`` reference variable
 
-
-* Below is the ``distance_between_centres`` method, where we see some things that may feel odd
+* Below is the ``distance_between_centres`` method, which introduces something new
 
 .. code-block:: python
     :linenos:
@@ -181,10 +170,9 @@ Methods
 
 .. note::
 
-    You may have also noticed how the type hint for ``other`` is the *string* ``"Sphere"``, as opposed to just
-    ``Sphere``, like how the function's return type hint is just ``float`` instead of the string ``"float"``.  This is
-    because the ``Sphere`` class, as far as Python is concerned, is not defined yet as the method
-    ``distance_between_centres`` is being defined within the class ``Sphere`` that is currently being defined.
+    You may have noticed that the type hint for ``other`` is the *string* ``"Sphere"`` rather than just ``Sphere``.
+    This is because when the method is being defined, the ``Sphere`` class itself is not fully defined yet --- it is
+    still being written. Using the string form tells Python to resolve the type later.
 
 
 .. code-block:: python
@@ -208,9 +196,8 @@ Methods
             return self.distance_between_centres(other) - self.radius - other.radius
 
 
-* In ``distance_between_edges`` above, notice how the method makes a call to the method ``distance_between_centres``
-* Since the ``distance_between_edges`` needs the distance between centres in order to complete its calculation, there is no need to re-write that code --- just call ``distance_between_centres``
-* But, like the attributes, if we want to access the instance's methods, we must access them via the reference variable ``self``
+* ``distance_between_edges`` calls ``distance_between_centres`` rather than duplicating the calculation
+* Like attributes, calling a method on the same instance requires ``self``
 
 
 .. code-block:: python
@@ -234,7 +221,7 @@ Methods
             return self.distance_between_edges(other) <= 0
 
 
-* Similarly, the ``overlaps`` method can be written by making use of the already existing method ``distance_between_edges``
+* ``overlaps`` follows the same idea, reusing ``distance_between_edges``
 
 Magic Methods
 ^^^^^^^^^^^^^
@@ -258,20 +245,13 @@ Magic Methods
 ``__eq__``
 """"""""""
 
-* It is common to want to check if two things are equal
-* For example, like numbers --- ``if some_number == 10:``
-* With numbers, strings, booleans, and other types, Python already knows what equality is
-* However, with custom classes, Python will not know what it means for instances of that class to be equal, unless you tell it
+* With numbers, strings, and booleans, Python already knows what equality means
+* With custom classes, Python has no way to know what equality means unless you define it
 
-* In the context of the ``Sphere`` class, you may have a good idea of what it means for two instances of this object to be equal
-* But Python cannot read your mind; you need to tell Python what it means for two ``Sphere`` objects to be equal
-* By default, Python will try to be helpful if you ask it if two objects of a custom class are equal
+* By default, Python falls back to checking if two reference variables point to literally the same object in memory (aliases)
+* For ``Sphere`` objects, a more useful equality check is whether they are the same size and in the same location
 
-    * The default equality check is checking if two reference variables are referencing literally the exact same object in memory (aliases)
-
-* A more reasonable equality check for ``Sphere`` objects would be if they are the same size and  exist in the same location within the three dimensional space
-
-    * That is, if the ``radius``, ``x``, ``y``, and ``z`` attributes are equal
+    * That is, if the ``radius``, ``x``, ``y``, and ``z`` attributes are all equal
 
 .. code-block:: python
     :linenos:
@@ -287,16 +267,8 @@ Magic Methods
             return self.x == other.x and self.y == other.y and self.z == other.z and self.radius == other.radius
 
 
-* The above code showing the ``__eq__`` method is how we define our equals magic method
-
-    * For our needs, check if ``self`` and ``other`` have all their attributes being the same
-
-* You may be tempted to then check equality by calling the ``__eq__`` method explicitly
-
-    * ``sphere_a.__eq__(sphere_b)``
-
-* Although this will work, it is a little clunky and bad style
-* Instead, we will indirectly invoke the equality method by using ``==`` like we have used for every other equality check
+* The above defines equality for ``Sphere`` --- if all attributes match, the two instances are equal
+* Rather than calling ``sphere_a.__eq__(sphere_b)`` directly, use ``==`` as you would for any other type
 
     * ``sphere_a == sphere_b``
 
@@ -313,8 +285,8 @@ Magic Methods
 
 
 * Running this code results in ``AttributeError: 'Circle' object has no attribute 'x'``
-* The trouble is that the ``Circle`` instance, which would be ``other`` in the ``Sphere``\'s equality method, does not have an ``x``, ``y``, or ``z`` attribute
-* A simple way to fix this is to check if the ``other`` reference variable is even referencing something that can be properly compared to
+* The ``Circle`` instance doesn't have ``x``, ``y``, or ``z`` attributes, so the comparison crashes
+* The fix is to first check whether ``other`` is actually a ``Sphere`` before comparing --- using ``isinstance``
 
 .. code-block:: python
     :linenos:
@@ -335,8 +307,7 @@ Magic Methods
 
 .. note::
 
-    There was nothing stopping us from defining ``__eq__`` for our ``Circle`` class. In fact, it is arguably something
-    we should do. Below is an example of an equality check for the ``Circle`` class.
+    We could also add ``__eq__`` to the ``Circle`` class. Below is an example.
 
     .. code-block:: python
         :linenos:
@@ -378,16 +349,10 @@ Magic Methods
     print(sphere)                   # Results in <__main__.Sphere object at 0x7f99a2edac10>
 
 
-* The default behaviour will be the name of the class along with the memory address of where the object is
-* Chances are, this is not overly helpful to you
+* The default behaviour is the class name and memory address --- not particularly useful
 * To address this, we write another magic method --- ``__repr__``
 
-* ``__repr__`` is the representation function, which is for getting a nice string representation of the instance of the class
-* This ``__repr__`` method is called whenever we need a string representation of our object
-
-    * ``print(some_sphere)`` will automatically call it
-    * ``str(some_sphere)`` will call it
-    * ``repr(some_sphere)`` will call it too
+* ``__repr__`` is called whenever Python needs a string representation of the object --- via ``print``, ``str()``, or ``repr()``
 
 * Based on what the object is, there may be a very natural way one would want to represent the object as a string
 
@@ -414,7 +379,7 @@ Magic Methods
 
 .. note::
 
-    Like with the ``__eq__`` method, we could go back and write a ``__repr__`` for the ``Circle`` class.
+    We could also add ``__repr__`` to the ``Circle`` class.
 
     .. code-block:: python
         :linenos:
@@ -473,4 +438,5 @@ Testing
 For Next Topic
 ==============
 
+* Download and look through the :download:`Sphere class <../../../src/sphere_original.py>`
 * Read `Chapter 21 of the text <https://openbookproject.net/thinkcs/python/english3e/even_more_oop.html>`_
