@@ -103,9 +103,9 @@ Methods
 
 * The above three methods follow the same pattern as the ``Circle`` methods from the previous topic
 
-      * They are associated with an instance of a ``Sphere``
-      * They have a ``self`` parameter, which is a reference variable to the ``Sphere`` instance
-      * Accessing any of the object's attributes are done through the use of the ``self`` reference variable
+    * They are associated with an instance of a ``Sphere``
+    * They have a ``self`` parameter, which is a reference variable to the ``Sphere`` instance
+    * Accessing any of the object's attributes are done through the use of the ``self`` reference variable
 
 * Below is the ``distance_between_centres`` method, which introduces something new
 
