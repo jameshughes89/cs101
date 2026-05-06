@@ -62,9 +62,7 @@ Student Class
             among students.
 
             :param other: A student to compare the self Student to
-            :type other: Student
             :return: True if the students have the same student number, false otherwise
-            :rtype: boolean
             """
             if isinstance(other, Student):
                 return self.student_number == other.student_number
@@ -74,11 +72,9 @@ Student Class
             return f"{self.last_name}, {self.first_name}\t{self.student_number}"
 
 
-* Above is the entire ``Student`` class
-* The only functionality is defined in the magic methods
-* The main purpose of the ``Student`` class is to store data
+* The ``Student`` class is mostly a data container --- its only logic is in the magic methods
 
-* Notice the ``__eq__`` defines equality for the ``Student`` class strictly on the ``student_number`` attribute
+* Notice the ``__eq__`` defines equality strictly on the ``student_number`` attribute
 
     * The ``first_name`` and ``last_name`` values may change for a ``Student``
     * However, the ``student_number`` of each ``Student`` should be unique and not change
@@ -142,8 +138,7 @@ Course Class
             self._students.append(student)
 
 
-* For ``size``, we just hijack the ``len`` of the ``_students`` list and return that value
-* Similarly for ``add``, we can make use of the list's ``append`` method
+* ``size`` delegates to ``len`` on the list; ``add`` delegates to ``append``
 
 * The methods to ``remove`` a ``Student`` and check if the ``Course`` ``contains`` a specific ``Student`` both need a linear search
 
@@ -174,9 +169,7 @@ Course Class
             sentinel value of -1.
 
             :param student: The student to search for
-            :type student: Student
             :return: Index of the student, or -1 if it is not found
-            :rtype: int
             """
             for i, s in enumerate(self._students):
                 if s == student:
@@ -184,12 +177,9 @@ Course Class
             return -1
 
 
-* In the above ``_find`` method, we actually make use of the ``Student`` class' ``__eq__`` method
-
-    * ``s == student`` calls the ``__eq__`` magic method from the ``Student`` class
-
-* Overall, the ``_find`` method is not particularly remarkable --- it's a linear search
-* With ``_find`` written, the ``remove`` and ``contains`` methods are simple to write
+* ``s == student`` uses the ``Student`` class' ``__eq__`` method
+* ``enumerate`` gives both the index and the value on each iteration --- ``i`` is the index, ``s`` is the element
+* With ``_find`` written, ``remove`` and ``contains`` are straightforward
 
 .. code-block:: python
     :linenos:
@@ -208,10 +198,8 @@ Course Class
                 self._students.pop(self._find(student))
 
 
-* ``contains`` just calls ``_find`` and checks if the sentinel value was returned
-* ``remove`` checks if the ``Student`` exists, and if it does, it removes it
-
-    * Note that if the ``Student`` is not found, an exception is raised by the method
+* ``contains`` calls ``_find`` and checks if the sentinel value was returned
+* ``remove`` raises a ``ValueError`` if the ``Student`` isn't found, otherwise removes them
 
 * The last method we will add to the ``Course`` class is the ``__repr__`` magic method
 * Since we wrote the ``__repr__`` method for the ``Student`` class, we know how to format the string for an individual ``Student`` object
@@ -238,7 +226,7 @@ Course Class
     * And then appends the whole new string to the end of the string ``s``
 
 * What's interesting here is how the ``Course`` class' ``__repr__`` makes use of the ``Student`` class' ``__repr__``
-* Below is an example of a ``Course`` object and it's string representation
+* Below is an example of a ``Course`` object and its string representation
 
 .. code-block:: python
     :linenos:

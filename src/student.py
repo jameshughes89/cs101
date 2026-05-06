@@ -15,9 +15,7 @@ class Student:
         among students.
 
         :param other: A student to compare the self Student to
-        :type other: Student
         :return: True if the students have the same student number, false otherwise
-        :rtype: boolean
         """
         if isinstance(other, Student):
             return self.student_number == other.student_number
