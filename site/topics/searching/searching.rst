@@ -10,9 +10,9 @@ Searching and Complexity
     * You have been making use of functions
     * You have learned about basic logic and know how to use ``if`` and ``else``
     * ``for`` and ``while`` loops are tools you have used
-    * You learned how to use objects
     * Linear data structures, like a ``List``, are familiar and you are used to working with reference variables
     * You know how to read and write data from/to files
+    * You learned how to use objects
     * You have learned how to write classes and define your own objects
     * You can look at Python code and have a reasonable understanding of what it is doing
     * You know how to write your own code, one step at a time
@@ -84,9 +84,7 @@ Complexity Analysis
     * If ``haystack`` has length of 10,000,000, the loop will run 10,000,000 times
     * If ``haystack`` has length of :math:`n`, the loop will run :math:`n` times
 
-* As for space complexity, this ``linear_search`` only requires space for storing ``haystack``
-
-    * Assuming ``haystack`` has length :math:`n`, then we require :math:`n` amount of space
+* As for space complexity, ``linear_search`` only requires space for the ``haystack`` itself --- :math:`n` elements, :math:`n` space
 
 
 
@@ -149,13 +147,9 @@ Complexity Analysis
     * Doubling the size to :math:`2n` only adds one more guess
 
 * Given that binary search requires :math:`log_{2}(n)` basic operations vs. linear search's :math:`n`, binary search is the clear winner
-* But, there is no such thing as a free lunch
-* With binary search, we have the catch that the data must be sorted
+* The catch is that binary search requires the data to be sorted
 
-* This is a *very* common pattern in developing algorithms
-
-    * The more *general* your algorithm is, the worse the solution
-    * The more you know about the *structure* of your problem, the more opportunities you have to use that knowledge to improve your algorithm
+* This is a common pattern --- the more you know about the *structure* of your data, the more you can exploit it to build a better algorithm
 
 
 Linear Search in Other Programming Languages
@@ -210,8 +204,8 @@ C#
 .. code-block:: c#
     :linenos:
 
-    public static boolean linearSearch(int[] haystack, int needle){
-        for(int i = 0 ; i < haystack.length ; i++){
+    public static bool LinearSearch(int[] haystack, int needle){
+        for(int i = 0 ; i < haystack.Length ; i++){
             if(haystack[i] == needle){
                 return true;
             }
@@ -256,9 +250,7 @@ Haskell
 -------
 
 * Below you will see a linear search that looks quite different from the previous
-* Haskell is an entirely different kind of programming language --- it is a *functional* programming language
-
-    * It is, for better or worse, not nearly as popular as the languages seen in the above examples
+* Haskell is a *functional* programming language --- an entirely different style from what we have been writing
 
 
 .. code-block:: haskell

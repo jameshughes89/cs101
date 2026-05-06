@@ -163,7 +163,6 @@ Constructor Parameters
             Creates a Circle object with the specified radius.
 
             :param radius: The radius of the Circle
-            :type radius: float
             """
             self.radius = radius
 
@@ -206,7 +205,6 @@ Functionality and Methods
             Calculate and return the diameter of the Circle based on its radius.
 
             :return: diameter of the Circle
-            :rtype: float
             """
             return 2 * self.radius
 
@@ -234,7 +232,6 @@ Functionality and Methods
             Calculate and return the area of the Circle based on its radius.
 
             :return: Area of the Circle
-            :rtype: float
             """
             return math.pi * self.radius**2
 
@@ -243,7 +240,6 @@ Functionality and Methods
             Calculate and return the circumference of the Circle based on its radius.
 
             :return: Circumference of the Circle
-            :rtype: float
             """
             return 2 * math.pi * self.radius
 
