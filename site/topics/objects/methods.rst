@@ -124,9 +124,7 @@ Methods
             Calculate and return the distance between the centres of two Spheres.
 
             :param other: Sphere whose centre to find the distance to from the self Sphere.
-            :type other: Sphere
             :return: Distance between the Sphere centres.
-            :rtype: float
             """
             return math.sqrt((self.x - other.x) ** 2 + (self.y - other.y) ** 2 + (self.z - other.z) ** 2)
 
@@ -193,9 +191,7 @@ Methods
             overlap.
 
             :param other: Sphere whose edge to find the distance to from the self Sphere.
-            :type other: Sphere
             :return: Distance between the Sphere edges.
-            :rtype: float
             """
             return self.distance_between_centres(other) - self.radius - other.radius
 
@@ -220,9 +216,7 @@ Methods
             between edges) are considered overlapping.
 
             :param other: Sphere to check if it overlaps the self Sphere
-            :type other: Sphere
             :return: Boolean indicating if the two Spheres overlap
-            :rtype: bool
             """
             return self.distance_between_edges(other) <= 0
 
