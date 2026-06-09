@@ -70,9 +70,9 @@ Part 1 --- Uploading Files to Colab
 ===================================
 
 After downloading the notebook and data files above, you will need to upload them to Colab to get started. See the
-respective section from assignment 1 for an example on how to do this. I recommend saving a copy of this notebook file
-and csv data file to your Google drive and then work with that one. You don't have to, but you will have to re-upload
-the project every time you want to work on it.
+respective section from assignment 1 for an example on how to do this. Saving copies of the notebook and csv data file
+to your Google Drive and working from those is recommended --- otherwise you will need to re-upload them each time you
+open Colab.
 
 
 Country Class
@@ -280,7 +280,7 @@ The *main* portion of the code that was provided is what *puts everything togeth
 * Filters the ``CountryCatalogue`` based on population density
 * Saves the filtered data to a file
 
-If everything was implemented correctly, this code should run with no issue. Although no unit tests are provided for
+If everything was implemented correctly, this code should run with no issues. Although no unit tests are provided for
 this portion of code, you can likely determine if everything worked correctly by checking the output of the program.
 
 
@@ -293,9 +293,8 @@ it certainly helps provide peace of mind that things are working as they should.
 
 There are no unittests for the *main* portion of the assignment discussed in the previous part.
 
-Realistically you should have been running tests after you complete each of the above parts, but this part is here to
-remind you. Remember, we are lucky that we get to test our solutions for correctness ourselves; you don't need to wait
-for the marker to return your assignment before you have an idea of if it works correctly.
+Run the tests as you complete each part, not all at once at the end. One of the nice things about programming is that
+you can check your work as you go --- you don't have to wait for it to be marked to know if something is working.
 
 To run the tests, run the cell in the notebook containing the following
 
@@ -334,7 +333,7 @@ Below is a list of both *quantitative* and *qualitative* things we will look for
 * Comments?
 * Variable Names?
 * Style?
-* Did you do just weird things that make no sense?
+* Does the code make sense?
 
 
 What to Submit to Moodle
