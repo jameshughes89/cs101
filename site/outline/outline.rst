@@ -430,7 +430,6 @@ the StFX Art Gallery (https://www.stfx.ca/art-gallery) or
 Theatre Antigonish
 `(Theatre Antigonish | St. Francis Xavier University) (stfx.ca) <https://www.stfx.ca/about/theatre-antigonish>`_
 for various events.
-
 Further information regarding health and wellness-related services available to students may be found at
 `Wellness@X | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/people-culture/wellnessx>`_.
 If you are in emotional or mental distress please refer to the various mental
