@@ -349,7 +349,7 @@ Tramble Center for Accessible Learning
 The Tramble Center for Accessible Learning welcomes students with documented permanent disabilities and offers them a
 student-centered program of support. Located in Room 108 of the Angus L MacDonald Library, new and returning students
 meet with program staff to discuss options for support. Deadline for registering with the Center is two weeks prior to
-the end of classes each semester and 3 Business Days’ notice is required for booking all accommodated tests and exams.
+the end of classes each semester and 3 Business Days' notice is required for booking all accommodated tests and exams.
 To book an appointment please use the following link:
 `Accessible Learning | St. Francis Xavier University (stfx.ca) <https://www.stfx.ca/student-services/academic-services/accessible-learning>`_.
 
