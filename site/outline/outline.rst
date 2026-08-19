@@ -1,9 +1,9 @@
 ***************************************************************
-Computer Science 161 Section 66 --- Introduction to Programming
+Computer Science 161 Section 10 --- Introduction to Programming
 ***************************************************************
 
-Spring 2026
-===========
+Fall 2026
+=========
 
 
 
@@ -40,21 +40,27 @@ Instructor
 Lecture Times
 =============
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
+* Tue 11:30 -- 12:20 (K4), MULH 4024
+* Wed 13:30 -- 14:20 (K5), MULH 4024
+* Fri 12:30 -- 13:20 (K6), MULH 4024
 
 
 
 Lab Sections
 ============
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
+* Lab Sec 11: Thr 14:30 -- 16:20 (L8-A9), MULH 4024
+* Lab Sec 12: Fri 14:30 -- 16:20 (C9-K9), MULH 4024
 
 
 
 Office Hours
 ============
 
-* By appointment
+* Tue 10:00 -- 11:00, Annex 20B
+* Wed 10:00 -- 11:00, Annex 20B
+* Thr 10:00 -- 11:00, Annex 20B
+* Fri 10:00 -- 11:00, Annex 20B
 
 
 
@@ -206,18 +212,6 @@ following test or final exam, whichever comes first. If both tests are missed, t
 the final exam.
 
 
-ProctorU
---------
-
-The online exams in this course require a proctor. For instructions on how to schedule your exam with ProctorU, please
-see the Proctoring section of your course Moodle page. For information on policies governing your use of ProctorU,
-please see
-`StFX Online / Student Support - Proctoring <https://www.stfx.ca/programs-courses/stfx-online/student-support>`_.
-
-Online proctored exams open at 5am and close at 8pm to account for time differences and schedules. Students will create
-a ProctorU account and book a time through that platform.
-
-
 
 Labs
 ====
@@ -282,6 +276,14 @@ Office hours are provided to students to facilitate their success --- students a
 
 Students must understand that the professors and TAs are not there to provide them answers to problems, but to assist
 students in solving their problems.
+
+
+
+Attendance
+==========
+Students missing three classes without reasonable cause will be reported to the Assistant Vice-President Academic
+Affairs. See section 3.7 of the academic calendar for more details. You will be reported if you are repeatedly
+delinquent in assignments or attendance at classes or laboratories.
 
 
 
