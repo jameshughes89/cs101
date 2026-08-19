@@ -26,14 +26,10 @@ Dr. James Hughes
 Lecture
 ^^^^^^^
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
-* Recordings of past lectures are available `here <https://www.youtube.com/@modsurski/playlists>`_
-
 
 Lab Sections
 ^^^^^^^^^^^^
 
-* Asynchronous --- Content is to be covered independently while following the :doc:`schedule </outline/schedule>`.
 
 
 `Office Hours <https://www.youtube.com/watch?v=lOTyUfOHgas>`_
@@ -121,4 +117,3 @@ Lab Sections
     :maxdepth: 1
 
     /outline/outline
-    /outline/schedule

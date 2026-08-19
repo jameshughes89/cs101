@@ -5,8 +5,6 @@ Computer Science 161 Section 66 --- Introduction to Programming
 Spring 2026
 ===========
 
-This course is offered asynchronously. The course schedule can be found :doc:`here </outline/schedule>`.
-
 
 
 Course Description
