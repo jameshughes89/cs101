@@ -116,19 +116,22 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - Monday TBD, 2026, 11:55pm
+      - TBD, 2026, 11:55pm
     * - Assignment 2
       - 5%
-      - Monday TBD, 2026, 11:55pm
+      - TBD, 2026, 11:55pm
     * - Assignment 3
       - 5%
-      - Monday TBD, 2026, 11:55pm
+      - TBD, 2026, 11:55pm
     * - Assignment 4
       - 5%
-      - Monday TBD, 2026, 11:55pm
+      - TBD, 2026, 11:55pm
     * - Test 1
-      - 30%
-      - Wednesday May 20, 2026
+      - 10%
+      - Late Sept/Early Oct-ish, 2026
+    * - Test 2
+      - 20%
+      - Late Oct/Early Nov-ish, 2026
     * - Final Exam
       - 50%
       - Monday June 15, 2026
