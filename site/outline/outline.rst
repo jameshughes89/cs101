@@ -212,6 +212,12 @@ following test or final exam, whichever comes first. If both tests are missed, t
 the final exam.
 
 
+Final Exam Requirement
+----------------------
+
+You must earn at least 40% on the final exam. If your final exam mark is below this threshold, your course grade will be the lower of your calculated course grade and your final exam mark.
+
+
 
 Labs
 ====
