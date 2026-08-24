@@ -132,11 +132,14 @@ Student Evaluation
     * - Assignment 4
       - 5%
       - TBD, 2026, 11:55pm
+    * - Labs
+      - 10%
+      - Weekly, Throughout
     * - Test 1
       - 10%
       - Late Sept/Early Oct-ish, 2026
     * - Test 2
-      - 20%
+      - 10%
       - Late Oct/Early Nov-ish, 2026
     * - Final Exam
       - 50%
