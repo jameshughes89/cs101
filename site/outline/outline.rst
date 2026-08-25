@@ -236,8 +236,7 @@ your responsibility to ensure your attendance and completion is recorded.
 There are no make-up labs. If a student misses a lab and obtains an approved accommodation, the weight of the missed
 lab will be shifted to the final exam.
 
-The use of generative AI is prohibited. Students using generative AI will be asked to leave and will obtain a zero for
-the lab.
+The use of AI is prohibited. Students using AI will be asked to leave and will obtain a zero for the lab.
 
 
 Lab Procedure
