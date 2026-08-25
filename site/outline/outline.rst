@@ -132,11 +132,14 @@ Student Evaluation
     * - Assignment 4
       - 5%
       - TBD, 2026, 11:55pm
+    * - Labs
+      - 10%
+      - Weekly, Throughout
     * - Test 1
       - 10%
       - Late Sept/Early Oct-ish, 2026
     * - Test 2
-      - 20%
+      - 10%
       - Late Oct/Early Nov-ish, 2026
     * - Final Exam
       - 50%
@@ -215,17 +218,25 @@ the final exam.
 Final Exam Requirement
 ----------------------
 
-You must earn at least 40% on the final exam. If your final exam mark is below this threshold, your course grade will be the lower of your calculated course grade and your final exam mark.
+You must earn at least 40% on the final exam. If your final exam mark is below this threshold, your course grade will be
+the lower of your calculated course grade and your final exam mark.
 
 
 
 Labs
 ====
 
-The purpose of the weekly labs is to give students hands-on experience. Labs will have required assigned work and will
-revolve around `Kattis <https://open.kattis.com/>`_.
+The purpose of the weekly labs is to give students hands-on experience. Labs will have required assigned work.
 
-Labs begin on the 1st week of class.
+Labs begin on the 1st week of class. You must attend the lab session for which you are registered.
+
+To obtain lab marks, the exercises must be completed to a satisfactory level, as determined by the instructor. It is
+your responsibility to ensure your attendance and completion is recorded.
+
+There are no make-up labs. If a student misses a lab and obtains an approved accommodation, the weight of the missed
+lab will be shifted to the final exam.
+
+The use of AI is prohibited. Students using AI will be asked to leave and will obtain a zero for the lab.
 
 
 Lab Procedure
