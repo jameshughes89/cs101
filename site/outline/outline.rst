@@ -122,7 +122,7 @@ Student Evaluation
       - Due Date
     * - Assignment 1
       - 5%
-      - TBD, 2026, 11:55pm
+      - Sept 28, 2026, 11:55pm
     * - Assignment 2
       - 5%
       - TBD, 2026, 11:55pm
