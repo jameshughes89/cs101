@@ -137,7 +137,7 @@ Student Evaluation
       - Weekly, Throughout
     * - Test 1
       - 10%
-      - Late Sept/Early Oct-ish, 2026
+      - Sept 30, 2026 in Class
     * - Test 2
       - 10%
       - Late Oct/Early Nov-ish, 2026
