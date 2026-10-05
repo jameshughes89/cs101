@@ -128,7 +128,7 @@ Student Evaluation
       - Oct 26, 2026, 11:55pm
     * - Assignment 3
       - 5%
-      - TBD, 2026, 11:55pm
+      - Nov 9, 2026, 11:55pm
     * - Assignment 4
       - 5%
       - TBD, 2026, 11:55pm
