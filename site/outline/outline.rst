@@ -140,7 +140,7 @@ Student Evaluation
       - Sept 29, 2026 in Class
     * - Test 2
       - 10%
-      - Late Oct/Early Nov-ish, 2026
+      - Nov 10, 2026 in Class
     * - Final Exam
       - 50%
       - TBD, 2026
