@@ -442,7 +442,7 @@ Methods
         #. Assign a string to some variable and print it out
         #. After running the code, type the name of the variable
         #. Press ``.`` (period)
-        #. Wait (or press space, or tab, or ctrl-space
+        #. Wait (or press space, or tab, or ctrl-space)
 
     You should see a menu pop up that looks like the following:
 
