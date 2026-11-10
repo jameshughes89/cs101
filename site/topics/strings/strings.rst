@@ -258,6 +258,10 @@ Underlying Idea
         assert 2 == character_is_at("l", "hello")
 
 
+    .. image:: character_is_at.gif
+       :align: center
+
+
 String Trivia
 =============
 
