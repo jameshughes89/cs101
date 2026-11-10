@@ -61,6 +61,10 @@ For loops
             character_index += 1
 
 
+.. image:: vertical_print_while.gif
+   :align: center
+
+
 .. admonition:: Activity
     :class: activity
 
