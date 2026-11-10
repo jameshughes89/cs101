@@ -14,6 +14,10 @@ Strings & Objects
     print(some_string[4])   # prints out 'o'
 
 
+.. image:: string_indexing.gif
+   :align: center
+
+
 .. note::
 
     In Python, and many other programming languages, the index for the beginning is actually ``0``, not ``1``. There are
