@@ -456,7 +456,7 @@ Methods
     :class: activity
 
     #. Assign some string to a variable called ``a_string``
-    #. Add the line of code ``a_string.upper()`` and then ``print`` out ``a_string``
+    #. Print the result of running ``a_string.upper()``
     #. Try some of the other methods and see what they do
 
 
