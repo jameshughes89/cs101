@@ -376,6 +376,10 @@ Exclusive Alternatives
         return letter_grade
 
 
+.. image:: letter_grade.gif
+   :align: center
+
+
 .. raw:: html
 
     <iframe width="560" height="315" src="https://www.youtube.com/embed/-ZpxIvRshzg" frameborder="0" allowfullscreen></iframe>
