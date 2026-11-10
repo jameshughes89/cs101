@@ -93,6 +93,10 @@ For loops
             print(char)
 
 
+.. image:: vertical_print_for.gif
+   :align: center
+
+
 * The ``while`` loop will continue to run ``while`` the condition is ``True``
 * The ``for`` loop will run for each *thing*
 * In this example, the ``for`` loop will run for each character in the string
