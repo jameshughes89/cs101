@@ -263,6 +263,10 @@ Execution Flow
 * Line 8 prints out the value of ``fahrenheit``
 
 
+.. image:: function_call.gif
+   :align: center
+
+
 .. note::
 
     A function must be defined before it can be called. If Python encounters a call to a function it has not yet seen,
