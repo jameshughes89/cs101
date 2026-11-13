@@ -24,7 +24,7 @@ Textbook Exercises
 
     * Create the ``Point`` class described in the chapter
 
-        * Only worry about the constructor, attributes, and the ``distance_from_origin`` & ``midpoint`` methods
+        * Only worry about the constructor, attributes, and the ``distance_from_origin`` & ``halfway`` methods
 
 
     * 2
