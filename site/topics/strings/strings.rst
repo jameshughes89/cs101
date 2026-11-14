@@ -14,6 +14,10 @@ Strings & Objects
     print(some_string[4])   # prints out 'o'
 
 
+.. image:: string_indexing.gif
+   :align: center
+
+
 .. note::
 
     In Python, and many other programming languages, the index for the beginning is actually ``0``, not ``1``. There are
@@ -57,6 +61,10 @@ For loops
             character_index += 1
 
 
+.. image:: vertical_print_while.gif
+   :align: center
+
+
 .. admonition:: Activity
     :class: activity
 
@@ -83,6 +91,10 @@ For loops
         """
         for char in a_string:
             print(char)
+
+
+.. image:: vertical_print_for.gif
+   :align: center
 
 
 * The ``while`` loop will continue to run ``while`` the condition is ``True``
@@ -220,7 +232,7 @@ Underlying Idea
     * I would need to keep going
 
 * I can only confirm that something is **not** in the sequence until I have looked at all elements in the sequence
-* If I had a sequence of length :math:`10`, I would need to look at all :math:`10` before I can guarantee that something is or is not within it
+* If I had a sequence of length :math:`10`, I would need to look at all :math:`10` before I can guarantee that something is not within it
 * If it was length :math:`20`, I would need to look at all :math:`20`
 * If it was length :math:`n`, I would need to look at all :math:`n`
 
@@ -244,6 +256,10 @@ Underlying Idea
         assert 0 == character_is_at("h", "hello")
         assert 4 == character_is_at("o", "hello")
         assert 2 == character_is_at("l", "hello")
+
+
+    .. image:: character_is_at.gif
+       :align: center
 
 
 String Trivia
@@ -442,7 +458,7 @@ Methods
         #. Assign a string to some variable and print it out
         #. After running the code, type the name of the variable
         #. Press ``.`` (period)
-        #. Wait (or press space, or tab, or ctrl-space
+        #. Wait (or press space, or tab, or ctrl-space)
 
     You should see a menu pop up that looks like the following:
 
@@ -456,7 +472,7 @@ Methods
     :class: activity
 
     #. Assign some string to a variable called ``a_string``
-    #. Add the line of code ``a_string.upper()`` and then ``print`` out ``a_string``
+    #. Print the result of running ``a_string.upper()``
     #. Try some of the other methods and see what they do
 
 
