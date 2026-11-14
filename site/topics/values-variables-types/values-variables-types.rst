@@ -138,6 +138,9 @@ Variables
     The value of ``y`` is still ``3``, not ``11``. When ``y = x + 2`` was executed, Python evaluated the right side to
     ``3`` and stored that value in ``y``. Changing ``x`` afterwards has no effect on ``y``.
 
+    .. image:: assignment.gif
+       :align: center
+
 
 Using Variables
 ---------------
