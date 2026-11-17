@@ -131,7 +131,7 @@ Student Evaluation
       - Nov 9, 2026, 11:55pm
     * - Assignment 4
       - 5%
-      - TBD, 2026, 11:55pm
+      - Dec 7, 2026, 11:55pm
     * - Labs
       - 10%
       - Weekly, Throughout
