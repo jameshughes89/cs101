@@ -33,7 +33,7 @@ Core Exercises
     * Make instances of the class and write ``assert`` tests to verify correctness
 
 
-#. Create unittest classes for the ``Person`` class
+#. Create a unittest class for the ``Person`` class
 
     * Write tests for each of the methods in the class
     * Be sure to reference the :doc:`unittest topic </topics/testing/unittest>`
